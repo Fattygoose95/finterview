@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="finterview - Finance interview preparation platform">
+    <title>Industry Questions - finterview (Debug)</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load questions.js early -->
+    <script src="questions.js"></script>
+    <style>
+        .debug-panel {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 300px;
+            max-height: 400px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.9);
+            color: #0f0;
+            font-family: monospace;
+            font-size: 12px;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 9999;
+            border: 2px solid #0f0;
+        }
+        .debug-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #0f0;
+        }
+        .debug-log {
+            margin: 2px 0;
+            line-height: 1.2;
+        }
+        .debug-error { color: #f00; }
+        .debug-success { color: #0f0; }
+        .debug-warning { color: #ff0; }
+        .debug-info { color: #0af; }
+    </style>
+</head>
+<body>
+    <!-- Debug Panel -->
+    <div class="debug-panel" id="debugPanel">
+        <div class="debug-header">
+            <span>DEBUG CONSOLE</span>
+            <button onclick="document.getElementById('debugPanel').style.display='none'" style="color:#fff;background:transparent;border:none;cursor:pointer;">X</button>
+        </div>
+        <div id="debugLogs"></div>
+    </div>
+    
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="flex items-center justify-between">
+                    <div class="logo">
+                        <h1>finterview</h1>
+                        <p>Finance Interview Prep Platform</p>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <button class="menu-toggle" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="industry.html" class="active">Industry Questions</a></li>
+                            <li><a href="high-frequency-list.html">High Frequency</a></li>
+                            <li><a href="random-list.html">Random Practice</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Title & Navigation -->
+                <div class="flex items-center justify-between mb-8">
+                    <div>
+                        <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                            <i class="fas fa-arrow-left"></i> Back to Industry List
+                        </a>
+                        <h2 class="text-3xl font-bold mt-2" id="industryTitle">Industry Questions</h2>
+                        <p class="text-lg text-secondary mt-1" id="industryStats">Loading questions...</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-outline" onclick="runTests()">
+                            <i class="fas fa-bug"></i> Run Tests
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <!-- Filter Panel -->
+                    <aside class="lg:col-span-1">
+                        <div class="filter-panel">
+                            <div class="filter-header">
+                                <h3>Filter Options</h3>
+                                <button class="btn-clear" id="clearFilters">Clear All</button>
+                            </div>
+                            
+                            <!-- Industry Selector -->
+                            <div class="filter-section">
+                                <h4 class="section-title">Industry</h4>
+                                <div class="difficulty-filters">
+                                    <label class="filter-checkbox">
+                                        <input type="radio" name="industry" value="ib" checked>
+                                        <span>Investment Banking</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="radio" name="industry" value="am">
+                                        <span>Asset Management</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="radio" name="industry" value="quant">
+                                        <span>Quantitative Finance</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="radio" name="industry" value="markets">
+                                        <span>Sales & Trading</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Actions -->
+                            <div class="filter-section">
+                                <button class="btn btn-primary w-full" id="applyFilters">
+                                    <i class="fas fa-filter"></i> Apply Filters
+                                </button>
+                                <button class="btn btn-outline w-full mt-2" onclick="reloadWithCurrentIndustry()">
+                                    <i class="fas fa-sync-alt"></i> Reload
+                                </button>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Question List -->
+                    <div class="lg:col-span-3">
+                        <!-- Question Grid -->
+                        <div class="question-grid" id="questionGrid">
+                            <div style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                                <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: #6c757d;"></i>
+                                <h3>Initializing...</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Debug Info -->
+                        <div class="mt-8 p-4 bg-gray-100 border border-gray-300 rounded-lg">
+                            <h4 class="font-semibold text-gray-800 mb-2"><i class="fas fa-code"></i> Debug Information</h4>
+                            <div id="debugInfo" style="font-family: monospace; font-size: 12px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <p class="text-sm text-secondary">© 2024 finterview. Finance Interview Prep Platform</p>
+                    </div>
+                    
+                    <ul class="footer-links">
+                        <li><a href="validate-industry-data.html">Data Validator</a></li>
+                        <li><a href="debug-industry.html">Debug Tool</a></li>
+                        <li><a href="https://github.com/Fattygoose95/finterview">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Main Script -->
+    <script>
+        // Debug logging
+        function debugLog(message, type = 'info') {
+            const logEl = document.getElementById('debugLogs');
+            const logEntry = document.createElement('div');
+            logEntry.className = `debug-log debug-${type}`;
+            logEntry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logEl.appendChild(logEntry);
+            logEl.scrollTop = logEl.scrollHeight;
+            console.log(`[${type.toUpperCase()}] ${message}`);
+        }
+        
+        // Update debug info
+        function updateDebugInfo(info) {
+            const debugEl = document.getElementById('debugInfo');
+            if (debugEl) {
+                debugEl.innerHTML = info;
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            debugLog('DOM loaded', 'success');
+            initPage();
+        });
+        
+        function initPage() {
+            debugLog('Initializing page...', 'info');
+            
+            // Get industry from URL or default to ib
+            const urlParams = new URLSearchParams(window.location.search);
+            let industryId = urlParams.get('industry');
+            
+            // If no industry in URL, check radio buttons
+            if (!industryId) {
+                const selectedRadio = document.querySelector('input[name="industry"]:checked');
+                industryId = selectedRadio ? selectedRadio.value : 'ib';
+            }
+            
+            debugLog(`Industry ID: ${industryId}`, 'info');
+            
+            // Update UI
+            updatePageTitle(industryId);
+            
+            // Set radio button
+            const radio = document.querySelector(`input[name="industry"][value="${industryId}"]`);
+            if (radio) {
+                radio.checked = true;
+            }
+            
+            // Load questions
+            loadQuestions(industryId);
+            
+            // Bind events
+            bindEvents(industryId);
+            
+            // Run initial tests
+            setTimeout(runInitialTests, 1000);
+        }
+        
+        function runInitialTests() {
+            debugLog('Running initial tests...', 'warning');
+            
+            // Test 1: Check questionBank
+            if (typeof window.questionBank === 'undefined') {
+                debugLog('❌ questionBank is undefined', 'error');
+                updateDebugInfo('❌ questionBank is undefined. questions.js may not be loaded.');
+                return;
+            }
+            
+            const qb = window.questionBank;
+            debugLog(`✅ questionBank loaded: ${Array.isArray(qb) ? qb.length + ' questions' : 'invalid type'}`, 'success');
+            
+            if (!Array.isArray(qb)) {
+                debugLog('❌ questionBank is not an array', 'error');
+                updateDebugInfo(`❌ questionBank is not an array: ${typeof qb}`);
+                return;
+            }
+            
+            // Test 2: Check URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const industryId = urlParams.get('industry') || 'ib';
+            debugLog(`✅ URL parameter: industry=${industryId}`, 'success');
+            
+            // Test 3: Count questions for this industry
+            const industryQuestions = qb.filter(q => q.role === industryId);
+            debugLog(`✅ Questions for ${industryId}: ${industryQuestions.length}`, 'success');
+            
+            // Update debug info
+            let info = `Data Status: ✅ Loaded\\n`;
+            info += `Total Questions: ${qb.length}\\n`;
+            info += `Current Industry: ${industryId}\\n`;
+            info += `Industry Questions: ${industryQuestions.length}\\n`;
+            info += `Sample Question: ${industryQuestions.length > 0 ? industryQuestions[0].title?.substring(0, 30) + '...' : 'None'}`;
+            
+            updateDebugInfo(info);
+        }
+        
+        function runTests() {
+            debugLog('--- RUNNING MANUAL TESTS ---', 'warning');
+            runInitialTests();
+        }
+        
+        function updatePageTitle(industryId) {
+            const industryNames = {
+                'ib': { name: 'Investment Banking', chinese: '投资银行' },
+                'am': { name: 'Asset Management', chinese: '资产管理' },
+                'quant': { name: 'Quantitative Finance', chinese: '量化金融' },
+                'markets': { name: 'Sales & Trading', chinese: '销售交易' },
+                'corpfin': { name: 'Corporate Finance', chinese: '公司金融' },
+                'risk': { name: 'Risk Management', chinese: '风险管理' },
+                'fintech': { name: 'FinTech', chinese: '金融科技' },
+                'fo': { name: 'Family Office', chinese: '家族办公室' }
+            };
+            
+            const industry = industryNames[industryId] || industryNames['ib'];
+            const titleElement = document.getElementById('industryTitle');
+            if (titleElement) {
+                titleElement.textContent = `${industry.chinese} (${industry.name}) Questions`;
+            }
+        }
+        
+        function loadQuestions(industryId) {
+            debugLog(`Loading questions for: ${industryId}`, 'info');
+            
+            const questionGrid = document.getElementById('questionGrid');
+            if (!questionGrid) {
+                debugLog('❌ Question grid not found', 'error');
+                return;
+            }
+            
+            // Show loading
+            questionGrid.innerHTML = `
+                <div style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: #3498db;"></i>
+                    <h3>Loading questions for ${industryId}...</h3>
+                    <p id="loadingDetails">Checking data source...</p>
+                </div>
+            `;
+            
+            // Check data
+            setTimeout(() => {
+                if (typeof window.questionBank === 'undefined') {
+                    showError('Data not loaded. Please check if questions.js is properly loaded.');
+                    return;
+                }
+                
+                const allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) {
+                    showError('Invalid data format.');
+                    return;
+                }
+                
+                debugLog(`Total questions: ${allQuestions.length}`, 'info');
+                
+                // Filter questions
+                const filteredQuestions = allQuestions.filter(q => q.role === industryId);
+                debugLog(`Filtered questions: ${filteredQuestions.length}`, filteredQuestions.length > 0 ? 'success' : 'warning');
+                
+                // Update stats
+                updateStats(filteredQuestions.length, allQuestions.length);
+                
+                // Render or show empty state
+                if (filteredQuestions.length === 0) {
+                    showNoQuestions(industryId);
+                } else {
+                    renderQuestions(filteredQuestions);
+                }
+            }, 500);
+        }
+        
+        function updateStats(industryCount, totalCount) {
+            const statsElement = document.getElementById('industryStats');
+            if (statsElement) {
+                statsElement.textContent = `Total ${industryCount} questions (${totalCount} in total database)`;
+            }
+        }
+        
+        function renderQuestions(questions) {
+            debugLog(`Rendering ${questions.length} questions`, 'success');
+            
+            const questionGrid = document.getElementById('questionGrid');
+            questionGrid.innerHTML = '';
+            
+            if (questions.length === 0) {
+                questionGrid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: #666;">
+                        <i class="fas fa-search" style="font-size: 3rem;"></i>
+                        <h3>No Questions Found</h3>
+                        <p>Try another industry or check back later.</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Render each question
+            questions.forEach((question, index) => {
+                const card = createQuestionCard(question, index + 1);
+                questionGrid.appendChild(card);
+            });
+            
+            // Bind events
+            bindQuestionEvents();
+        }
+        
+        function createQuestionCard(question, index) {
+            const card = document.createElement('div');
+            card.className = 'question-card';
+            card.dataset.id = question.id || index;
+            
+            // Get answer
+            const answer = getAnswer(question);
+            
+            // Difficulty
+            const difficulty = question.difficulty || 'medium';
+            const difficultyText = difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+            const difficultyColor = difficulty === 'easy' ? '#27ae60' : 
+                                   difficulty === 'hard' ? '#e74c3c' : '#f39c12';
+            
+            card.innerHTML = `
+                <div class="question-header">
+                    <h4 class="question-title">${index}. ${escapeHtml(question.title || 'Untitled Question')}</h4>
+                    <div class="question-tags">
+                        <span class="tag ${question.category || 'technical'}">${question.category || 'technical'}</span>
+                        <span class="tag difficulty" style="background: ${difficultyColor}">${difficultyText}</span>
+                    </div>
+                </div>
+                
+                <div class="question-content">
+                    <p>${escapeHtml(question.question || '')}</p>
+                </div>
+                
+                <div class="question-meta">
+                    <div class="difficulty">
+                        <span class="label">Difficulty:</span>
+                        <span class="text">${difficultyText}</span>
+                    </div>
+                    <div class="rating">
+                        <span class="label">Type:</span>
+                        <span class="text">${question.category || 'technical'}</span>
+                    </div>
+                </div>
+                
+                <div class="answer-section" style="display: none; margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 6px; border-left: 3px solid #3498db;">
+                    <h5 style="margin: 0 0 10px 0; color: #2c3e50;"><i class="fas fa-lightbulb"></i> Answer</h5>
+                    <div style="white-space: pre-wrap;">${escapeHtml(answer)}</div>
+                </div>
+                
+                <div class="question-actions" style="margin-top: 15px;">
+                    <button class="btn btn-primary" onclick="toggleAnswer(this)">
+                        <i class="fas fa-eye"></i> Show Answer
+                    </button>
+                    <button class="btn btn-outline" onclick="console.log('Question ID:', ${question.id || index})">
+                        <i class="fas fa-code"></i> Debug
+                    </button>
+                </div>
+            `;
+            
+            return card;
+        }
+        
+        function getAnswer(question) {
+            if (question.answers?.concise?.answer) return question.answers.concise.answer;
+            if (question.answers?.detailed?.answer) return question.answers.detailed.answer;
+            if (question.conciseAnswer) return question.conciseAnswer;
+            if (question.modelAnswer) return question.modelAnswer;
+            if (question.answer) return question.answer;
+            return 'No answer available.';
+        }
+        
+        function toggleAnswer(button) {
+            const card = button.closest('.question-card');
+            const answerSection = card.querySelector('.answer-section');
+            const isVisible = answerSection.style.display !== 'none';
+            
+            answerSection.style.display = isVisible ? 'none' : 'block';
+            button.innerHTML = isVisible ? 
+                '<i class="fas fa-eye"></i> Show Answer' : 
+                '<i class="fas fa-eye-slash"></i> Hide Answer';
+        }
+        
+        function showError(message) {
+            debugLog(`Error: ${message}`, 'error');
+            
+            const questionGrid = document.getElementById('questionGrid');
+            if (questionGrid) {
+                questionGrid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 40px; background: #fee2e2; border-radius: 8px;">
+                        <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: #e74c3c;"></i>
+                        <h3 style="color: #991b1b;">Error</h3>
+                        <p style="color: #7f1d1d;">${escapeHtml(message)}</p>
+                        <button class="btn btn-primary" onclick="window.location.reload()">
+                            <i class="fas fa-sync-alt"></i> Reload Page
+                        </button>
+                    </div>
+                `;
+            }
+        }
+        
+        function showNoQuestions(industryId) {
+            debugLog(`No questions for ${industryId}`, 'warning');
+            
+            const questionGrid = document.getElementById('questionGrid');
+            if (questionGrid) {
+                questionGrid.innerHTML = `
+                    <div style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                        <i class="fas fa-search" style="font-size: 3rem; color: #3498db;"></i>
+                        <h3>No Questions Available</h3>
+                        <p>There are no questions for ${industryId} yet.</p>
+                        <p>Try another industry or check back later.</p>
+                        <div style="margin-top: 20px;">
+                            <button class="btn btn-outline" onclick="loadQuestions('ib')">
+                                <i class="fas fa-building"></i> View Investment Banking
+                            </button>
+                            <button class="btn btn-outline" onclick="window.history.back()" style="margin-left: 10px;">
+                                <i class="fas fa-arrow-left"></i> Go Back
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        function bindEvents(industryId) {
+            // Industry radio buttons
+            document.querySelectorAll('input[name="industry"]').forEach(radio => {
+                radio.addEventListener('change', function() {
+                    if (this.checked) {
+                        reloadWithIndustry(this.value);
+                    }
+                });
+            });
+            
+            // Apply filters button
+            const applyBtn = document.getElementById('applyFilters');
+            if (applyBtn) {
+                applyBtn.addEventListener('click', function() {
+                    const selectedRadio = document.querySelector('input[name="industry"]:checked');
+                    if (selectedRadio) {
+                        reloadWithIndustry(selectedRadio.value);
+                    }
+                });
+            }
+            
+            // Clear filters button
+            const clearBtn = document.getElementById('clearFilters');
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    document.querySelector('input[name="industry"][value="ib"]').checked = true;
+                    reloadWithIndustry('ib');
+                });
+            }
+        }
+        
+        function bindQuestionEvents() {
+            // Already bound via inline onclick
+        }
+        
+        function reloadWithIndustry(industryId) {
+            debugLog(`Switching to industry: ${industryId}`, 'info');
+            window.location.href = `industry-debug.html?industry=${industryId}`;
+        }
+        
+        function reloadWithCurrentIndustry() {
+            const selectedRadio = document.querySelector('input[name="industry"]:checked');
+            if (selectedRadio) {
+                loadQuestions(selectedRadio.value);
+            }
+        }
+        
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // Global functions
+        window.toggleAnswer = toggleAnswer;
+        window.runTests = runTests;
+        window.reloadWithCurrentIndustry = reloadWithCurrentIndustry;
+    </script>
+</body>
+</html>
