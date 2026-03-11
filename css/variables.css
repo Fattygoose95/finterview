@@ -20,15 +20,15 @@
   --danger-color: #ef4444;         /* 错误 - 红色 */
   --info-color: #3b82f6;           /* 信息 - 蓝色 */
   
-  /* 中性色 - 专业灰度 */
-  --bg-color: #f9fafb;             /* 背景色 - 浅灰 */
+  /* 中性色 - 专业灰度 (增强对比度) */
+  --bg-color: #ffffff;             /* 背景色 - 纯白色，提高对比度 */
   --bg-card: #ffffff;              /* 卡片背景 */
-  --bg-hover: #f3f4f6;             /* 悬停背景 */
+  --bg-hover: #f8f9fa;             /* 悬停背景 - 更浅的灰色 */
   
-  --text-primary: #111827;         /* 主要文字色 - 深灰 */
-  --text-secondary: #374151;       /* 次要文字 */
-  --text-tertiary: #6b7280;        /* 辅助文字 */
-  --text-light: #9ca3af;           /* 浅色文字 */
+  --text-primary: #0a0a0a;         /* 主要文字色 - 深黑色，提高可读性 */
+  --text-secondary: #1a1a1a;       /* 次要文字 - 深灰色 */
+  --text-tertiary: #2d2d2d;        /* 辅助文字 - 中灰色 */
+  --text-light: #6b7280;           /* 浅色文字 */
   --text-inverse: #ffffff;         /* 反色文字 */
   
   /* 边框颜色 */

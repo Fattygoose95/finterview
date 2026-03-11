@@ -279,26 +279,159 @@ function loadIndustryQuestions(industryId) {
     const questionGrid = document.getElementById('questionGrid');
     if (!questionGrid) return;
     
-    // 显示加载状态
-    questionGrid.innerHTML = '<div class="loading-state"><i class="fas fa-spinner fa-spin"></i> Loading questions...</div>';
+    // 先检查是否已有示例卡片
+    const existingCards = questionGrid.querySelectorAll('.question-card');
+    if (existingCards.length > 0) {
+        // 标记这些卡片为示例卡片，以便稍后可能移除
+        existingCards.forEach(card => {
+            card.classList.add('example-card');
+        });
+    }
+    
+    // 显示加载状态（但保留现有卡片可见，避免闪烁）
+    const loadingDiv = document.createElement('div');
+    loadingDiv.className = 'loading-state';
+    loadingDiv.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 正在加载题目...';
+    loadingDiv.style.textAlign = 'center';
+    loadingDiv.style.padding = '20px';
+    loadingDiv.style.color = 'var(--color-gray-700)';
+    
+    // 插入加载指示器，但不移除现有卡片
+    questionGrid.insertBefore(loadingDiv, questionGrid.firstChild);
+    
+    // 设置超时，防止无限等待
+    const timeoutId = setTimeout(() => {
+        console.warn('题目加载超时，显示后备内容');
+        loadingDiv.remove();
+        showFallbackQuestions(questionGrid, industryId);
+    }, 10000);
     
     // Load data
     DataLoader.init()
         .then(() => {
+            clearTimeout(timeoutId);
+            loadingDiv.remove();
+            
             const questions = DataLoader.getQuestionsByIndustry(industryId);
             
-            // 渲染题目卡片
-            renderQuestionCards(questions);
-            
-            // 更新统计数据
-            updateQuestionStats(questions.length, questions.length);
-            
-            console.log(`行业 ${industryId} 题目加载完成: ${questions.length}题`);
+            if (questions && questions.length > 0) {
+                // 移除示例卡片（如果有）
+                const exampleCards = questionGrid.querySelectorAll('.example-card');
+                exampleCards.forEach(card => card.remove());
+                
+                // 渲染新题目卡片
+                renderQuestionCards(questions);
+                
+                // 更新统计数据
+                updateQuestionStats(questions.length, questions.length);
+                
+                console.log(`行业 ${industryId} 题目加载完成: ${questions.length}题`);
+            } else {
+                console.warn(`行业 ${industryId} 没有找到题目，显示后备内容`);
+                showFallbackQuestions(questionGrid, industryId);
+            }
         })
         .catch(error => {
+            clearTimeout(timeoutId);
             console.error('加载题目失败:', error);
-            questionGrid.innerHTML = '<div class="error-state"><i class="fas fa-exclamation-triangle"></i> Loading failed, please refresh the page and try again</div>';
+            loadingDiv.remove();
+            showFallbackQuestions(questionGrid, industryId, error.message);
         });
+}
+
+// 显示后备题目（当数据加载失败时）
+function showFallbackQuestions(questionGrid, industryId, errorMessage = '') {
+    // 先检查是否已有示例卡片
+    const exampleCards = questionGrid.querySelectorAll('.example-card');
+    
+    if (exampleCards.length > 0) {
+        // 已有示例卡片，显示通知但不移除卡片
+        const noticeDiv = document.createElement('div');
+        noticeDiv.className = 'info-state';
+        noticeDiv.style.cssText = 'background: var(--color-warning-100); border-left: 4px solid var(--color-warning-500); padding: 15px; margin-bottom: 20px; border-radius: 6px;';
+        noticeDiv.innerHTML = `
+            <p style="margin: 0; color: var(--color-gray-800);">
+                <i class="fas fa-info-circle" style="color: var(--color-warning-600);"></i>
+                正在使用示例题目（实际题目加载${errorMessage ? '失败: ' + errorMessage : '中'}）
+            </p>
+        `;
+        questionGrid.insertBefore(noticeDiv, questionGrid.firstChild);
+        
+        // 更新统计信息为示例卡片数量
+        updateQuestionStats(exampleCards.length, exampleCards.length);
+    } else {
+        // 没有示例卡片，显示后备题目
+        questionGrid.innerHTML = '';
+        
+        // 创建3个示例题目卡片
+        const fallbackQuestions = [
+            {
+                id: 'fallback_1',
+                title: '示例题目: DCF估值模型的三个主要组成部分是什么？',
+                category: 'technical',
+                difficulty: 'medium',
+                overallRating: 4.2,
+                dimensionRatings: {
+                    contentAccuracy: 4.5,
+                    structureClarity: 4.0,
+                    jobRelevance: 4.2
+                },
+                tags: ['technical', 'high-frequency', 'calculation']
+            },
+            {
+                id: 'fallback_2',
+                title: '示例题目: 如何准备投资银行面试？',
+                category: 'behavioral',
+                difficulty: 'easy',
+                overallRating: 4.5,
+                dimensionRatings: {
+                    contentAccuracy: 4.7,
+                    structureClarity: 4.3,
+                    jobRelevance: 4.6
+                },
+                tags: ['behavioral', 'high-frequency', 'preparation']
+            },
+            {
+                id: 'fallback_3',
+                title: '示例题目: 描述资产管理的投资流程？',
+                category: 'technical',
+                difficulty: 'medium',
+                overallRating: 4.0,
+                dimensionRatings: {
+                    contentAccuracy: 4.2,
+                    structureClarity: 3.8,
+                    jobRelevance: 4.1
+                },
+                tags: ['technical', 'process', 'am']
+            }
+        ];
+        
+        // 渲染后备题目
+        fallbackQuestions.forEach(question => {
+            const card = createQuestionCard(question);
+            questionGrid.appendChild(card);
+        });
+        
+        // 绑定事件
+        bindQuestionCardEvents();
+        
+        // 更新统计信息
+        updateQuestionStats(fallbackQuestions.length, fallbackQuestions.length);
+        
+        // 显示通知
+        const noticeDiv = document.createElement('div');
+        noticeDiv.className = 'info-state';
+        noticeDiv.style.cssText = 'background: var(--color-warning-100); border-left: 4px solid var(--color-warning-500); padding: 15px; margin-bottom: 20px; border-radius: 6px;';
+        noticeDiv.innerHTML = `
+            <p style="margin: 0; color: var(--color-gray-800);">
+                <i class="fas fa-info-circle" style="color: var(--color-warning-600);"></i>
+                正在使用示例题目（实际题目加载${errorMessage ? '失败: ' + errorMessage : '中'}）
+            </p>
+        `;
+        questionGrid.insertBefore(noticeDiv, questionGrid.firstChild);
+    }
+    
+    console.log(`显示后备题目 for ${industryId}`);
 }
 
 // 渲染题目卡片
