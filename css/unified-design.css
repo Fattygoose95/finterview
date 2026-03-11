@@ -695,6 +695,43 @@ body {
 }
 
 /* ====================================================================
+ * ANSWER FORMATTING
+ ==================================================================== */
+
+.answer-content ul,
+.answer-content ol {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-xl);
+}
+
+.answer-content li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+.answer-bullet-list {
+  list-style-type: disc;
+  margin: var(--spacing-md) 0 var(--spacing-md) var(--spacing-xl);
+  padding-left: var(--spacing-md);
+}
+
+.answer-bullet-list li {
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-xs);
+}
+
+.answer-content br {
+  margin-bottom: var(--spacing-sm);
+  display: block;
+  content: "";
+}
+
+.answer-content p {
+  margin-bottom: var(--spacing-md);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ====================================================================
  * UTILITY CLASSES
  ==================================================================== */
 

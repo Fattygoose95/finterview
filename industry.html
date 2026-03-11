@@ -326,6 +326,7 @@
                         <li><a href="industry.html" class="active">Practice Mode</a></li>
                         <li><a href="high-frequency-list.html">High Frequency</a></li>
                         <li><a href="random-list.html">Random Practice</a></li>
+                        <li><a href="industry-filter.html">Advanced Filter</a></li>
                     </ul>
                 </nav>
             </div>
@@ -445,6 +446,7 @@
                         <li><a href="industry.html">Practice</a></li>
                         <li><a href="high-frequency-list.html">High Frequency</a></li>
                         <li><a href="random-list.html">Random</a></li>
+                        <li><a href="industry-filter.html">Filter</a></li>
                     </ul>
                 </div>
                 
@@ -503,18 +505,25 @@
             function init() {
                 console.log('Initializing practice mode...');
                 
-                // Get industry from URL
+                // Get URL parameters
                 const urlParams = new URLSearchParams(window.location.search);
                 const industryId = urlParams.get('industry') || 'ib';
+                const questionId = urlParams.get('questionId');
+                const filteredIds = urlParams.get('filtered_ids');
+                
                 currentIndustry = industryId;
                 
-                console.log(`Industry: ${industryId}`);
+                console.log(`Industry: ${industryId}, Question ID: ${questionId}, Filtered IDs: ${filteredIds}`);
                 
                 // Update UI
                 updateIndustryInfo(industryId);
                 
-                // Load questions
-                loadQuestions(industryId);
+                // Load questions - if we have filtered IDs, use them to preserve filter order
+                if (filteredIds) {
+                    loadQuestionsFromFilter(industryId, filteredIds, questionId);
+                } else {
+                    loadQuestions(industryId, questionId);
+                }
                 
                 // Bind events
                 bindEvents();
@@ -539,7 +548,7 @@
                 if (industryStats) industryStats.textContent = 'Loading practice questions...';
             }
             
-            function loadQuestions(industryId) {
+            function loadQuestions(industryId, targetQuestionId) {
                 console.log(`Loading questions for ${industryId}...`);
                 
                 // Check if questions.js is loaded
@@ -568,8 +577,18 @@
                 if (currentQuestions.length === 0) {
                     showNoQuestions(industryId);
                 } else {
-                    // Start with first question
-                    currentIndex = 0;
+                    // Find target question if provided
+                    if (targetQuestionId) {
+                        const targetIndex = currentQuestions.findIndex(q => q.id === targetQuestionId || q.id == targetQuestionId);
+                        if (targetIndex !== -1) {
+                            currentIndex = targetIndex;
+                        } else {
+                            currentIndex = 0;
+                        }
+                    } else {
+                        currentIndex = 0;
+                    }
+                    
                     loadQuestion(currentIndex);
                     
                     // Show answer input section
@@ -577,6 +596,74 @@
                     answerToggleSection.style.display = 'flex';
                     navigationControls.style.display = 'flex';
                 }
+            }
+            
+            function loadQuestionsFromFilter(industryId, filteredIds, targetQuestionId) {
+                console.log(`Loading questions from filter for ${industryId}...`);
+                console.log(`Filtered IDs: ${filteredIds}`);
+                
+                // Check if questions.js is loaded
+                if (typeof window.questionBank === 'undefined') {
+                    showError('Data not loaded. Please check if questions.js is properly loaded.');
+                    return;
+                }
+                
+                const allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) {
+                    showError('Invalid data format.');
+                    return;
+                }
+                
+                // Parse filtered IDs
+                const idArray = filteredIds.split(',').map(id => id.trim());
+                
+                // Create a map for quick lookup
+                const questionMap = {};
+                allQuestions.forEach(q => {
+                    if (q.id) questionMap[q.id] = q;
+                });
+                
+                // Build question list in filter order
+                currentQuestions = [];
+                idArray.forEach(id => {
+                    const question = questionMap[id];
+                    if (question) {
+                        currentQuestions.push(question);
+                    }
+                });
+                
+                // If we have no questions from filter, fall back to regular loading
+                if (currentQuestions.length === 0) {
+                    console.log('No questions found from filter IDs, falling back to regular loading');
+                    loadQuestions(industryId, targetQuestionId);
+                    return;
+                }
+                
+                console.log(`Questions from filter: ${currentQuestions.length}`);
+                
+                // Update stats
+                if (industryStats) {
+                    industryStats.textContent = `${currentQuestions.length} questions from your filter`;
+                }
+                
+                // Find target question if provided
+                if (targetQuestionId) {
+                    const targetIndex = currentQuestions.findIndex(q => q.id === targetQuestionId || q.id == targetQuestionId);
+                    if (targetIndex !== -1) {
+                        currentIndex = targetIndex;
+                    } else {
+                        currentIndex = 0;
+                    }
+                } else {
+                    currentIndex = 0;
+                }
+                
+                loadQuestion(currentIndex);
+                
+                // Show answer input section
+                answerInputSection.style.display = 'block';
+                answerToggleSection.style.display = 'flex';
+                navigationControls.style.display = 'flex';
             }
             
             function loadQuestion(index) {
@@ -647,17 +734,61 @@
                     detailedAnswer = question.answer;
                 }
                 
-                // Format concise answer as bullet points if it's long
-                if (conciseAnswer.length > 100 && !conciseAnswer.includes('<ul>')) {
-                    const sentences = conciseAnswer.split('. ').filter(s => s.trim());
-                    if (sentences.length > 1) {
-                        conciseAnswer = '<ul>' + sentences.map(s => `<li>${s.trim()}.</li>`).join('') + '</ul>';
-                    }
-                }
+                // Format answers for better display
+                conciseAnswer = formatAnswerForDisplay(conciseAnswer);
+                detailedAnswer = formatAnswerForDisplay(detailedAnswer);
                 
                 // Update answer content
                 conciseAnswerContent.innerHTML = conciseAnswer;
                 detailedAnswerContent.innerHTML = detailedAnswer;
+            }
+            
+            function formatAnswerForDisplay(answerText) {
+                if (!answerText || answerText === 'No concise answer available.' || answerText === 'No detailed answer available.') {
+                    return answerText;
+                }
+                
+                // First, escape HTML to prevent XSS
+                let safeText = escapeHtml(answerText);
+                
+                // Check if already has HTML formatting
+                if (safeText.includes('<ul>') || safeText.includes('<ol>') || safeText.includes('<li>')) {
+                    return safeText; // Already formatted
+                }
+                
+                // Check for bullet point indicators
+                // Common patterns: lines starting with -, *, •, or numbered lists
+                const lines = safeText.split('\n').filter(line => line.trim());
+                
+                if (lines.length > 1) {
+                    // Check if lines look like bullet points
+                    const hasBulletPoints = lines.some(line => /^[-*•·]\s+/.test(line.trim()) || /^\d+[\.\)]\s+/.test(line.trim()));
+                    
+                    if (hasBulletPoints) {
+                        // Format as unordered list
+                        const listItems = lines.map(line => {
+                            line = line.trim();
+                            // Remove bullet markers and convert to list items
+                            line = line.replace(/^[-*•·]\s+/, '');
+                            line = line.replace(/^\d+[\.\)]\s+/, '');
+                            return `<li>${line}</li>`;
+                        }).join('');
+                        return `<ul class="answer-bullet-list">${listItems}</ul>`;
+                    }
+                }
+                
+                // For long answers, try to split by sentences
+                if (safeText.length > 100) {
+                    const sentences = safeText.split(/[.!?]+/).filter(s => s.trim().length > 10);
+                    if (sentences.length > 1) {
+                        const listItems = sentences.map(s => `<li>${s.trim()}.</li>`).join('');
+                        return `<ul class="answer-bullet-list">${listItems}</ul>`;
+                    }
+                }
+                
+                // Otherwise, just preserve newlines
+                safeText = safeText.replace(/\n/g, '<br>');
+                return safeText;
             }
             
             function updateNavigation(index) {

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="finterview - Filter questions by multiple dimensions: difficulty, type, frequency, and industry. Advanced filtering for targeted interview preparation.">
+    <title>Advanced Filter - finterview</title>
+    <link rel="stylesheet" href="css/unified-design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load questions.js early -->
+    <script src="questions.js"></script>
+    <style>
+        /* Filter page specific styles */
+        .filter-page-wrapper {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+        
+        .filter-layout {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+        
+        @media (min-width: 992px) {
+            .filter-layout {
+                flex-direction: row;
+            }
+            .filter-sidebar {
+                flex: 0 0 280px;
+            }
+            .filter-main {
+                flex: 1;
+            }
+        }
+        
+        .filter-sidebar {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .filter-group {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .filter-group:last-child {
+            margin-bottom: 0;
+        }
+        
+        .filter-group-title {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-xs);
+            border-bottom: 2px solid var(--light-border);
+        }
+        
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
+        
+        .filter-tag {
+            padding: 8px 16px;
+            background-color: var(--light-bg);
+            border: 2px solid var(--light-border);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+        
+        .filter-tag:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .filter-tag.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .selected-tags-container {
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius-sm);
+            padding: var(--spacing-md);
+            margin-top: var(--spacing-md);
+            min-height: 60px;
+            border: 1px dashed var(--light-border);
+        }
+        
+        .selected-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
+        
+        .selected-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background-color: var(--white);
+            border: 1px solid var(--primary-light);
+            border-radius: 20px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--primary-color);
+            box-shadow: 0 2px 4px rgba(67, 97, 238, 0.1);
+        }
+        
+        .selected-tag-remove {
+            cursor: pointer;
+            color: var(--medium-gray);
+            font-size: var(--font-size-xs);
+            padding-left: 4px;
+        }
+        
+        .selected-tag-remove:hover {
+            color: var(--error-color);
+        }
+        
+        .clear-all-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: var(--spacing-md);
+            background-color: var(--white);
+            border: 2px solid var(--light-border);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .clear-all-btn:hover {
+            background-color: var(--error-color);
+            color: var(--white);
+            border-color: var(--error-color);
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+        }
+        
+        .results-count {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+        }
+        
+        .results-count strong {
+            color: var(--primary-color);
+        }
+        
+        .sort-controls {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+        
+        .sort-btn {
+            padding: 8px 16px;
+            background-color: var(--white);
+            border: 2px solid var(--light-border);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .sort-btn.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .question-grid.filtered {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: var(--spacing-3xl) var(--spacing-xl);
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+        }
+        
+        .no-results-icon {
+            font-size: 3rem;
+            color: var(--medium-gray);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .url-params-info {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-lg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .url-params-info.hidden {
+            display: none;
+        }
+        
+        .url-param-close {
+            cursor: pointer;
+            font-size: var(--font-size-lg);
+            opacity: 0.8;
+        }
+        
+        .url-param-close:hover {
+            opacity: 1;
+        }
+        
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            .filter-page-wrapper {
+                padding: 0 var(--spacing-sm);
+            }
+            
+            .question-grid.filtered {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-sidebar {
+                position: static;
+                margin-bottom: var(--spacing-lg);
+            }
+            
+            .results-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        
+        /* High frequency badge (from high-frequency-list.html) */
+        .high-frequency-badge {
+            background-color: #f72585;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-bold);
+            display: inline-block;
+            margin-right: var(--spacing-sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Advanced Filter</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice Mode</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html">Random Practice</a></li>
+                        <li><a href="industry-filter.html" class="active">Advanced Filter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container filter-page-wrapper">
+                <!-- Page Header -->
+                <div class="mb-6">
+                    <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h2 class="text-3xl font-bold mt-2">Advanced Question Filter</h2>
+                    <p class="text-lg text-secondary mt-1">Filter questions by multiple dimensions to target your preparation.</p>
+                </div>
+                
+                <!-- URL Parameters Info (for ?industry=ib etc.) -->
+                <div class="url-params-info hidden" id="urlParamsInfo">
+                    <div>
+                        <i class="fas fa-info-circle"></i> 
+                        <span id="urlParamsText">Filter applied from URL parameters.</span>
+                    </div>
+                    <div class="url-param-close" id="urlParamsClose">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                
+                <!-- Filter Layout -->
+                <div class="filter-layout">
+                    <!-- Sidebar with filters -->
+                    <div class="filter-sidebar">
+                        <!-- Selected Tags -->
+                        <div class="filter-group">
+                            <div class="filter-group-title">Selected Filters</div>
+                            <div class="selected-tags-container">
+                                <div class="selected-tags" id="selectedTags">
+                                    <!-- Selected tags will appear here -->
+                                    <div class="empty-selection">No filters selected. Click tags below to add filters.</div>
+                                </div>
+                            </div>
+                            <button class="clear-all-btn" id="clearAllBtn">
+                                <i class="fas fa-trash-alt"></i> Clear All Filters
+                            </button>
+                        </div>
+                        
+                        <!-- Industry Filter -->
+                        <div class="filter-group">
+                            <div class="filter-group-title">Industry / Role</div>
+                            <div class="filter-tags" id="industryFilter">
+                                <!-- Industry tags will be populated by JS -->
+                            </div>
+                        </div>
+                        
+                        <!-- Difficulty Filter -->
+                        <div class="filter-group">
+                            <div class="filter-group-title">Difficulty</div>
+                            <div class="filter-tags" id="difficultyFilter">
+                                <!-- Difficulty tags will be populated by JS -->
+                            </div>
+                        </div>
+                        
+                        <!-- Question Type Filter -->
+                        <div class="filter-group">
+                            <div class="filter-group-title">Question Type</div>
+                            <div class="filter-tags" id="typeFilter">
+                                <!-- Type tags will be populated by JS -->
+                            </div>
+                        </div>
+                        
+                        <!-- Frequency Filter -->
+                        <div class="filter-group">
+                            <div class="filter-group-title">Frequency</div>
+                            <div class="filter-tags" id="frequencyFilter">
+                                <!-- Frequency tags will be populated by JS -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Main content with results -->
+                    <div class="filter-main">
+                        <!-- Results Header -->
+                        <div class="results-header">
+                            <div class="results-count">
+                                Showing <strong id="resultsCount">0</strong> of <strong id="totalCount">0</strong> questions
+                            </div>
+                            <div class="sort-controls">
+                                <button class="sort-btn active" data-sort="relevance">
+                                    <i class="fas fa-star"></i> Relevance
+                                </button>
+                                <button class="sort-btn" data-sort="difficulty">
+                                    <i class="fas fa-chart-line"></i> Difficulty
+                                </button>
+                                <button class="sort-btn" data-sort="industry">
+                                    <i class="fas fa-industry"></i> Industry
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Question Grid -->
+                        <div class="question-grid filtered" id="questionGrid">
+                            <div class="loading-state">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <h3>Loading Questions</h3>
+                                <p>Initializing filter system...</p>
+                            </div>
+                        </div>
+                        
+                        <!-- No Results State -->
+                        <div class="no-results hidden" id="noResults">
+                            <div class="no-results-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>No Questions Found</h3>
+                            <p>No questions match your current filter criteria. Try adjusting your filters.</p>
+                            <button class="btn btn-primary mt-4" id="resetFiltersBtn">
+                                <i class="fas fa-redo"></i> Reset All Filters
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <h3>finterview</h3>
+                        <p>Advanced Filter System</p>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html">Random</a></li>
+                        <li><a href="industry-filter.html" class="active">Filter</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <p class="text-sm text-secondary">© 2024 finterview. Filter questions by multiple dimensions for targeted preparation.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/industry-filter.js"></script>
+    
+    <!-- Initialize -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Filter page loaded');
+            // IndustryFilter will auto-initialize from js/industry-filter.js
+        });
+    </script>
+</body>
+</html>
