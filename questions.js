@@ -3832,6 +3832,171 @@ const questionBank = [
         "source": "simplified"
       }
     }
+  },
+  {
+    "id": 1104,
+    "role": "am",
+    "category": "technical",
+    "difficulty": "easy",
+    "title": "Systematic vs Unsystematic Risk",
+    "question": "What is the difference between systematic risk and unsystematic risk, and how can diversification reduce risk?",
+    "modelAnswer": "Systematic risk refers to market-wide risk factors that affect all assets in the market, such as inflation, interest rate changes, political events, and economic recessions. This type of risk cannot be eliminated through diversification because it impacts the entire market.\n\nUnsystematic risk, also known as specific risk or idiosyncratic risk, is unique to a particular company or industry. Examples include management changes, product recalls, labor strikes, or competitive pressures.\n\nDiversification reduces unsystematic risk by combining assets with returns that are not perfectly correlated. As more uncorrelated assets are added to a portfolio, the overall portfolio volatility decreases while the expected return remains a weighted average of the individual assets' returns. Modern portfolio theory shows that a well-diversified portfolio can eliminate most unsystematic risk, leaving only systematic risk.",
+    "conciseAnswer": "- Systematic risk: market-wide risk affecting all assets; cannot be diversified away (e.g., inflation, interest rates)\n- Unsystematic risk: specific to a company or industry; can be reduced through diversification across sectors and geographies\n- Diversification benefit: combining uncorrelated assets lowers portfolio volatility while maintaining expected return",
+    "answers": {
+      "detailed": {
+        "answer": "Systematic risk refers to market-wide risk factors that affect all assets in the market, such as inflation, interest rate changes, political events, and economic recessions. This type of risk cannot be eliminated through diversification because it impacts the entire market.\n\nUnsystematic risk, also known as specific risk or idiosyncratic risk, is unique to a particular company or industry. Examples include management changes, product recalls, labor strikes, or competitive pressures.\n\nDiversification reduces unsystematic risk by combining assets with returns that are not perfectly correlated. As more uncorrelated assets are added to a portfolio, the overall portfolio volatility decreases while the expected return remains a weighted average of the individual assets' returns. Modern portfolio theory shows that a well-diversified portfolio can eliminate most unsystematic risk, leaving only systematic risk.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "- Systematic risk: market-wide risk affecting all assets; cannot be diversified away (e.g., inflation, interest rates)\n- Unsystematic risk: specific to a company or industry; can be reduced through diversification across sectors and geographies\n- Diversification benefit: combining uncorrelated assets lowers portfolio volatility while maintaining expected return",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": ["risk-management", "diversification", "basic-concepts"],
+    "frequencyScore": 85,
+    "stars": 4,
+    "scoringKeywords": {
+      "systematic risk": 30,
+      "unsystematic risk": 30,
+      "diversification": 25,
+      "portfolio volatility": 15
+    },
+    "expectedStructure": []
+  },
+  {
+    "id": 1105,
+    "role": "am",
+    "category": "technical",
+    "difficulty": "medium",
+    "title": "Sharpe Ratio Explanation",
+    "question": "Explain the concept of Sharpe ratio and its significance in evaluating investment performance.",
+    "modelAnswer": "The Sharpe ratio is a risk-adjusted performance measure developed by Nobel laureate William F. Sharpe. It is calculated as the difference between the portfolio's return and the risk-free rate, divided by the portfolio's standard deviation (volatility).\n\nFormula: Sharpe Ratio = (Rp - Rf) / σp\nWhere:\n- Rp = Portfolio return\n- Rf = Risk-free rate (typically the yield on government bonds)\n- σp = Standard deviation of portfolio returns (a measure of total risk)\n\nThe Sharpe ratio measures the excess return earned per unit of total risk taken. A higher Sharpe ratio indicates better risk-adjusted performance. For example, a Sharpe ratio of 1.0 means the investment earned 1% excess return for each 1% of volatility.\n\nSignificance:\n1. Allows comparison across different investments with varying risk levels\n2. Helps investors determine if higher returns are due to smart investment decisions or simply taking more risk\n3. Useful for portfolio optimization and asset allocation decisions\n\nLimitations:\n- Assumes returns are normally distributed\n- Uses standard deviation as the sole measure of risk (does not capture tail risk or skewness)\n- Sensitive to the choice of risk-free rate",
+    "conciseAnswer": "- Sharpe ratio formula: (Portfolio return - Risk-free rate) / Standard deviation; measures excess return per unit of total risk\n- Significance: higher ratio indicates better risk-adjusted performance; allows comparison across different investments\n- Limitations: assumes normal distribution of returns and that volatility captures all risk",
+    "answers": {
+      "detailed": {
+        "answer": "The Sharpe ratio is a risk-adjusted performance measure developed by Nobel laureate William F. Sharpe. It is calculated as the difference between the portfolio's return and the risk-free rate, divided by the portfolio's standard deviation (volatility).\n\nFormula: Sharpe Ratio = (Rp - Rf) / σp\nWhere:\n- Rp = Portfolio return\n- Rf = Risk-free rate (typically the yield on government bonds)\n- σp = Standard deviation of portfolio returns (a measure of total risk)\n\nThe Sharpe ratio measures the excess return earned per unit of total risk taken. A higher Sharpe ratio indicates better risk-adjusted performance. For example, a Sharpe ratio of 1.0 means the investment earned 1% excess return for each 1% of volatility.\n\nSignificance:\n1. Allows comparison across different investments with varying risk levels\n2. Helps investors determine if higher returns are due to smart investment decisions or simply taking more risk\n3. Useful for portfolio optimization and asset allocation decisions\n\nLimitations:\n- Assumes returns are normally distributed\n- Uses standard deviation as the sole measure of risk (does not capture tail risk or skewness)\n- Sensitive to the choice of risk-free rate",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "- Sharpe ratio formula: (Portfolio return - Risk-free rate) / Standard deviation; measures excess return per unit of total risk\n- Significance: higher ratio indicates better risk-adjusted performance; allows comparison across different investments\n- Limitations: assumes normal distribution of returns and that volatility captures all risk",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": ["performance-measurement", "risk-adjusted-returns", "portfolio-management"],
+    "frequencyScore": 90,
+    "stars": 4,
+    "scoringKeywords": {
+      "formula": 25,
+      "risk-adjusted performance": 25,
+      "comparison across investments": 20,
+      "limitations": 15,
+      "standard deviation": 15
+    },
+    "expectedStructure": []
+  },
+  {
+    "id": 1106,
+    "role": "am",
+    "category": "technical",
+    "difficulty": "easy",
+    "title": "Mutual Funds vs ETFs",
+    "question": "What are the key differences between mutual funds and exchange-traded funds (ETFs)?",
+    "modelAnswer": "Mutual funds and exchange-traded funds (ETFs) are both pooled investment vehicles, but they have significant structural and operational differences.\n\n1. **Trading and Pricing:**\n   - Mutual funds are priced once daily at the net asset value (NAV) after market close. Investors buy and sell shares directly from the fund company.\n   - ETFs trade intraday on stock exchanges like individual stocks, with prices fluctuating throughout the trading day.\n\n2. **Cost Structure:**\n   - Mutual funds often have sales loads (front-end or back-end), higher expense ratios, and may charge redemption fees.\n   - ETFs typically have lower expense ratios, no sales loads, and only brokerage commissions for trading.\n\n3. **Tax Efficiency:**\n   - Mutual funds may generate capital gains distributions when managers sell holdings, creating taxable events for investors.\n   - ETFs are more tax-efficient due to the in-kind creation/redemption process, which allows them to avoid realizing capital gains.\n\n4. **Minimum Investment:**\n   - Mutual funds often have minimum investment requirements (e.g., $1,000-$3,000 initial investment).\n   - ETFs can be purchased for the price of a single share, making them more accessible.\n\n5. **Investment Strategies:**\n   - Both offer similar strategies (index tracking, active management, sector focus), but ETFs are more commonly used for passive indexing.\n\n6. **Transparency:**\n   - Mutual funds disclose holdings quarterly.\n   - ETFs typically disclose holdings daily.",
+    "conciseAnswer": "- Mutual funds: priced once daily at NAV; bought/sold directly from fund company; often have sales loads and higher expense ratios\n- ETFs: trade intraday on exchanges like stocks; lower expense ratios; tax-efficient due to in-kind creation/redemption\n- Key differences: trading flexibility, cost structure, tax treatment, minimum investment requirements",
+    "answers": {
+      "detailed": {
+        "answer": "Mutual funds and exchange-traded funds (ETFs) are both pooled investment vehicles, but they have significant structural and operational differences.\n\n1. **Trading and Pricing:**\n   - Mutual funds are priced once daily at the net asset value (NAV) after market close. Investors buy and sell shares directly from the fund company.\n   - ETFs trade intraday on stock exchanges like individual stocks, with prices fluctuating throughout the trading day.\n\n2. **Cost Structure:**\n   - Mutual funds often have sales loads (front-end or back-end), higher expense ratios, and may charge redemption fees.\n   - ETFs typically have lower expense ratios, no sales loads, and only brokerage commissions for trading.\n\n3. **Tax Efficiency:**\n   - Mutual funds may generate capital gains distributions when managers sell holdings, creating taxable events for investors.\n   - ETFs are more tax-efficient due to the in-kind creation/redemption process, which allows them to avoid realizing capital gains.\n\n4. **Minimum Investment:**\n   - Mutual funds often have minimum investment requirements (e.g., $1,000-$3,000 initial investment).\n   - ETFs can be purchased for the price of a single share, making them more accessible.\n\n5. **Investment Strategies:**\n   - Both offer similar strategies (index tracking, active management, sector focus), but ETFs are more commonly used for passive indexing.\n\n6. **Transparency:**\n   - Mutual funds disclose holdings quarterly.\n   - ETFs typically disclose holdings daily.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "- Mutual funds: priced once daily at NAV; bought/sold directly from fund company; often have sales loads and higher expense ratios\n- ETFs: trade intraday on exchanges like stocks; lower expense ratios; tax-efficient due to in-kind creation/redemption\n- Key differences: trading flexibility, cost structure, tax treatment, minimum investment requirements",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": ["investment-vehicles", "etf", "mutual-funds", "costs"],
+    "frequencyScore": 80,
+    "stars": 4,
+    "scoringKeywords": {
+      "trading differences": 25,
+      "cost structure": 25,
+      "tax efficiency": 20,
+      "minimum investment": 15,
+      "transparency": 15
+    },
+    "expectedStructure": []
+  },
+  {
+    "id": 1107,
+    "role": "am",
+    "category": "technical",
+    "difficulty": "medium",
+    "title": "Interest Rate Impact on Bonds and Equities",
+    "question": "Describe the impact of interest rate changes on bond prices and equity markets.",
+    "modelAnswer": "Interest rate changes have significant and often opposite effects on bond prices and equity markets.\n\n**Impact on Bond Prices:**\n1. **Inverse Relationship:** Bond prices move inversely to interest rates. When rates rise, existing bonds with lower coupon rates become less attractive, causing their prices to fall.\n2. **Duration Sensitivity:** The magnitude of price change depends on the bond's duration. Longer-duration bonds are more sensitive to rate changes.\n3. **Example:** A 1% increase in interest rates could cause a 10-year bond with a 5-year duration to lose approximately 5% of its value.\n\n**Impact on Equity Markets:**\n1. **Discount Rate Effect:** Higher interest rates increase the discount rate used in valuation models (like DCF), reducing the present value of future earnings and cash flows.\n2. **Sector Sensitivity:**\n   - Rate-sensitive sectors (utilities, real estate, telecommunications) typically underperform when rates rise.\n   - Financials (banks, insurance) may benefit from higher net interest margins.\n   - Growth stocks (tech, biotech) are particularly sensitive due to their reliance on future earnings.\n3. **Economic Growth:** Moderate rate increases in a growing economy may not harm equities, but aggressive hikes to combat inflation can slow economic growth and reduce corporate profits.\n\n**Portfolio Implications:**\n- Asset allocation should consider the interest rate outlook.\n- Diversification across duration (short, intermediate, long) and credit quality can mitigate interest rate risk.\n- Alternative investments (floating rate notes, inflation-protected securities) can provide protection in rising rate environments.",
+    "conciseAnswer": "- Bond prices: inversely related to interest rates; duration measures sensitivity; rising rates cause bond prices to fall\n- Equity markets: higher rates increase discount rate, lowering present value of future earnings; sectors like utilities and real estate are more sensitive\n- Overall portfolio: asset allocation should consider interest rate outlook; diversification across duration and credit quality mitigates risk",
+    "answers": {
+      "detailed": {
+        "answer": "Interest rate changes have significant and often opposite effects on bond prices and equity markets.\n\n**Impact on Bond Prices:**\n1. **Inverse Relationship:** Bond prices move inversely to interest rates. When rates rise, existing bonds with lower coupon rates become less attractive, causing their prices to fall.\n2. **Duration Sensitivity:** The magnitude of price change depends on the bond's duration. Longer-duration bonds are more sensitive to rate changes.\n3. **Example:** A 1% increase in interest rates could cause a 10-year bond with a 5-year duration to lose approximately 5% of its value.\n\n**Impact on Equity Markets:**\n1. **Discount Rate Effect:** Higher interest rates increase the discount rate used in valuation models (like DCF), reducing the present value of future earnings and cash flows.\n2. **Sector Sensitivity:**\n   - Rate-sensitive sectors (utilities, real estate, telecommunications) typically underperform when rates rise.\n   - Financials (banks, insurance) may benefit from higher net interest margins.\n   - Growth stocks (tech, biotech) are particularly sensitive due to their reliance on future earnings.\n3. **Economic Growth:** Moderate rate increases in a growing economy may not harm equities, but aggressive hikes to combat inflation can slow economic growth and reduce corporate profits.\n\n**Portfolio Implications:**\n- Asset allocation should consider the interest rate outlook.\n- Diversification across duration (short, intermediate, long) and credit quality can mitigate interest rate risk.\n- Alternative investments (floating rate notes, inflation-protected securities) can provide protection in rising rate environments.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "- Bond prices: inversely related to interest rates; duration measures sensitivity; rising rates cause bond prices to fall\n- Equity markets: higher rates increase discount rate, lowering present value of future earnings; sectors like utilities and real estate are more sensitive\n- Overall portfolio: asset allocation should consider interest rate outlook; diversification across duration and credit quality mitigates risk",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": ["fixed-income", "interest-rates", "macro-economics", "asset-allocation"],
+    "frequencyScore": 85,
+    "stars": 4,
+    "scoringKeywords": {
+      "bond price relationship": 30,
+      "duration sensitivity": 25,
+      "equity discount rate": 25,
+      "sector sensitivity": 15,
+      "portfolio implications": 5
+    },
+    "expectedStructure": []
+  },
+  {
+    "id": 1108,
+    "role": "am",
+    "category": "technical",
+    "difficulty": "medium",
+    "title": "Investment Policy Statement (IPS)",
+    "question": "What is an Investment Policy Statement (IPS) and what key elements should it include?",
+    "modelAnswer": "An Investment Policy Statement (IPS) is a formal document that outlines the framework for managing a client's investment portfolio. It serves as a guiding agreement between the client and the investment manager or advisor.\n\n**Purpose of an IPS:**\n1. Establishes clear investment objectives and constraints\n2. Provides a disciplined investment process\n3. Aligns manager actions with client expectations\n4. Serves as a benchmark for performance evaluation and accountability\n\n**Key Elements of an IPS:**\n1. **Investment Objectives:**\n   - Return requirements (absolute or relative to benchmark)\n   - Risk tolerance (willingness and ability to bear risk)\n   - Time horizon (investment period and liquidity needs)\n\n2. **Constraints:**\n   - Liquidity requirements (cash flow needs, emergency funds)\n   - Tax considerations (taxable vs. tax-advantaged accounts)\n   - Legal and regulatory restrictions\n   - Unique circumstances (ethical/ESG preferences, concentrated positions)\n\n3. **Asset Allocation:**\n   - Target allocation across asset classes (stocks, bonds, alternatives, cash)\n   - Ranges for rebalancing (e.g., ±5% from target)\n   - Guidelines for tactical adjustments\n\n4. **Investment Guidelines:**\n   - Permitted and prohibited investments\n   - Quality standards (credit ratings, market capitalization)\n   - Diversification requirements\n   - Use of derivatives and leverage\n\n5. **Roles and Responsibilities:**\n   - Client responsibilities (providing timely information, funding)\n   - Manager responsibilities (monitoring, reporting, rebalancing)\n   - Custodian and other service providers\n\n6. **Performance Measurement and Reporting:**\n   - Benchmarks for comparison\n   - Frequency and format of performance reports\n   - Review schedule (quarterly, annually)\n\n7. **Rebalancing Policy:**\n   - Trigger points for rebalancing (time-based or threshold-based)\n   - Process for executing rebalancing trades\n\nAn effective IPS provides clarity, reduces emotional decision-making, and ensures the investment process remains aligned with the client's long-term goals.",
+    "conciseAnswer": "- IPS is a formal document outlining client objectives, constraints, and guidelines for portfolio management\n- Key elements: investment goals, risk tolerance, time horizon, liquidity needs, tax considerations, asset allocation targets, rebalancing policy\n- Purpose: ensures disciplined investment process, aligns manager with client expectations, and provides a benchmark for performance evaluation",
+    "answers": {
+      "detailed": {
+        "answer": "An Investment Policy Statement (IPS) is a formal document that outlines the framework for managing a client's investment portfolio. It serves as a guiding agreement between the client and the investment manager or advisor.\n\n**Purpose of an IPS:**\n1. Establishes clear investment objectives and constraints\n2. Provides a disciplined investment process\n3. Aligns manager actions with client expectations\n4. Serves as a benchmark for performance evaluation and accountability\n\n**Key Elements of an IPS:**\n1. **Investment Objectives:**\n   - Return requirements (absolute or relative to benchmark)\n   - Risk tolerance (willingness and ability to bear risk)\n   - Time horizon (investment period and liquidity needs)\n\n2. **Constraints:**\n   - Liquidity requirements (cash flow needs, emergency funds)\n   - Tax considerations (taxable vs. tax-advantaged accounts)\n   - Legal and regulatory restrictions\n   - Unique circumstances (ethical/ESG preferences, concentrated positions)\n\n3. **Asset Allocation:**\n   - Target allocation across asset classes (stocks, bonds, alternatives, cash)\n   - Ranges for rebalancing (e.g., ±5% from target)\n   - Guidelines for tactical adjustments\n\n4. **Investment Guidelines:**\n   - Permitted and prohibited investments\n   - Quality standards (credit ratings, market capitalization)\n   - Diversification requirements\n   - Use of derivatives and leverage\n\n5. **Roles and Responsibilities:**\n   - Client responsibilities (providing timely information, funding)\n   - Manager responsibilities (monitoring, reporting, rebalancing)\n   - Custodian and other service providers\n\n6. **Performance Measurement and Reporting:**\n   - Benchmarks for comparison\n   - Frequency and format of performance reports\n   - Review schedule (quarterly, annually)\n\n7. **Rebalancing Policy:**\n   - Trigger points for rebalancing (time-based or threshold-based)\n   - Process for executing rebalancing trades\n\nAn effective IPS provides clarity, reduces emotional decision-making, and ensures the investment process remains aligned with the client's long-term goals.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "- IPS is a formal document outlining client objectives, constraints, and guidelines for portfolio management\n- Key elements: investment goals, risk tolerance, time horizon, liquidity needs, tax considerations, asset allocation targets, rebalancing policy\n- Purpose: ensures disciplined investment process, aligns manager with client expectations, and provides a benchmark for performance evaluation",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": ["portfolio-management", "client-advisory", "investment-policy"],
+    "frequencyScore": 75,
+    "stars": 4,
+    "scoringKeywords": {
+      "investment objectives": 25,
+      "constraints": 20,
+      "asset allocation": 20,
+      "roles and responsibilities": 15,
+      "performance measurement": 10,
+      "rebalancing policy": 10
+    },
+    "expectedStructure": []
   }
 ];
 
