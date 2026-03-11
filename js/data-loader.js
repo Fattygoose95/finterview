@@ -92,6 +92,14 @@ const DataLoader = (function() {
         },
         
         /**
+         * 检查模块是否已初始化
+         * @returns {boolean} 是否已初始化
+         */
+        isInitialized: function() {
+            return _isInitialized;
+        },
+        
+        /**
          * 加载所有数据（题目、行业统计、缓存）
          * @returns {Promise} 加载结果
          */
@@ -148,15 +156,23 @@ const DataLoader = (function() {
          * @returns {Promise<Array>} 原始题目数组
          */
         loadRawQuestions: async function() {
+            console.log('[DataLoader] 加载原始题目数据...');
+            
             // 尝试从全局变量获取（questions.js已加载）
             if (typeof window !== 'undefined' && window.questionBank && Array.isArray(window.questionBank)) {
-                console.log('[DataLoader] 从全局变量questionBank加载数据');
+                console.log('[DataLoader] 从全局变量questionBank加载数据:', window.questionBank.length, '题');
                 return window.questionBank;
             }
             
-            // 尝试加载questions.js文件
-            console.log('[DataLoader] 尝试加载questions.js文件');
-            return this.loadQuestionsFromFile();
+            // 尝试从questions_179.js获取
+            if (typeof window !== 'undefined' && window.questions && window.questions.questions) {
+                console.log('[DataLoader] 从questions_179.js加载数据:', window.questions.questions.length, '题');
+                return window.questions.questions;
+            }
+            
+            // 使用模拟数据作为后备方案
+            console.warn('[DataLoader] 未找到questionBank，使用模拟数据');
+            return this.getMockQuestions();
         },
         
         /**
@@ -212,7 +228,8 @@ const DataLoader = (function() {
             console.log('[DataLoader] 转换数据格式...');
             
             if (!rawQuestions || !Array.isArray(rawQuestions)) {
-                throw new Error('无效的题目数据');
+                console.warn('[DataLoader] 无效的题目数据，使用空数组');
+                rawQuestions = [];
             }
             
             // 1. 按行业分组
@@ -768,6 +785,54 @@ const DataLoader = (function() {
          */
         getGlobalStats: function() {
             return _cache.stats || {};
+        },
+        
+        /**
+         * 获取模拟题目数据
+         * @returns {Array} 模拟题目数组
+         */
+        getMockQuestions: function() {
+            return [
+                {
+                    id: 'mock_1',
+                    role: 'ib',
+                    category: 'technical',
+                    difficulty: 'medium',
+                    title: '投资银行面试准备',
+                    question: '如何准备投资银行面试？',
+                    answer: '详细答案：1. 准备技术问题 2. 练习行为面试 3. 了解市场动态',
+                    conciseAnswer: '• 准备技术问题和行为面试\n• 了解最新市场趋势',
+                    frequencyScore: 4.5,
+                    stars: 4.2,
+                    entryLevel: true
+                },
+                {
+                    id: 'mock_2',
+                    role: 'am',
+                    category: 'technical',
+                    difficulty: 'medium',
+                    title: '资产管理投资流程',
+                    question: '描述资产管理的投资流程？',
+                    answer: '详细答案：1. 研究分析 2. 投资决策 3. 组合管理 4. 风险控制',
+                    conciseAnswer: '• 研究分析和投资决策\n• 组合管理和风险控制',
+                    frequencyScore: 4.0,
+                    stars: 4.0,
+                    entryLevel: true
+                },
+                {
+                    id: 'mock_3',
+                    role: 'quant',
+                    category: 'technical',
+                    difficulty: 'hard',
+                    title: '量化金融模型',
+                    question: '什么是Black-Scholes模型？',
+                    answer: '详细答案：期权定价模型，考虑股价、行权价、时间、波动率、无风险利率',
+                    conciseAnswer: '• 期权定价模型\n• 考虑股价、行权价、时间等因素',
+                    frequencyScore: 4.8,
+                    stars: 4.5,
+                    entryLevel: false
+                }
+            ];
         }
     };
     
