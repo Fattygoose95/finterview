@@ -377,10 +377,9 @@
             // Clear loading state
             industryGrid.innerHTML = '';
             
-            // Create industry cards
+            // Create industry cards with hover options
             industries.forEach(industry => {
-                const card = document.createElement('a');
-                card.href = `industry.html?industry=${industry.id}`;
+                const card = document.createElement('div');
                 card.className = `industry-card ${industry.color}`;
                 
                 card.innerHTML = `
@@ -392,7 +391,42 @@
                     <div class="stats">
                         ${industry.questionCount} questions available
                     </div>
+                    
+                    <!-- Hover overlay with mode options -->
+                    <div class="industry-hover-overlay">
+                        <div class="hover-content">
+                            <button class="hover-btn random-btn" data-industry="${industry.id}">
+                                <i class="fas fa-random"></i>
+                                Random Practice
+                            </button>
+                            <button class="hover-btn filter-btn" data-industry="${industry.id}">
+                                <i class="fas fa-filter"></i>
+                                Browse with Filters
+                            </button>
+                        </div>
+                    </div>
                 `;
+                
+                // Add event listeners for buttons
+                const randomBtn = card.querySelector('.random-btn');
+                const filterBtn = card.querySelector('.filter-btn');
+                
+                randomBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const industryId = this.getAttribute('data-industry');
+                    window.location.href = `random-list.html?industry=${industryId}`;
+                });
+                
+                filterBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    const industryId = this.getAttribute('data-industry');
+                    window.location.href = `high-frequency-list.html?industry=${industryId}`;
+                });
+                
+                // Optional: Keep card clickable as backup (goes to industry practice page)
+                card.addEventListener('click', function() {
+                    window.location.href = `industry.html?industry=${industry.id}`;
+                });
                 
                 industryGrid.appendChild(card);
             });

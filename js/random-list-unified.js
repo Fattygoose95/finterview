@@ -19,6 +19,7 @@ let currentFilters = {
     type: 'all',
     difficulty: 'all',
     tag: 'all',
+    industry: 'all',
     sort: CONFIG.DEFAULT_SORT
 };
 
@@ -42,8 +43,27 @@ const resetFiltersBtn = document.getElementById('resetFilters');
 async function init() {
     console.log('Initializing random practice...');
     
+    // Parse URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const industryParam = urlParams.get('industry');
+    
     // Load questions
     await loadQuestions();
+    
+    // If industry parameter is present, update filters
+    if (industryParam) {
+        console.log(`Filtering by industry: ${industryParam}`);
+        currentFilters.industry = industryParam;
+        
+        // Update page title to show industry filter
+        document.title = `Random Practice - ${getIndustryName(industryParam)} | finterview`;
+        
+        // Update header to show industry
+        const header = document.querySelector('h2');
+        if (header) {
+            header.textContent = `Random Practice - ${getIndustryName(industryParam)}`;
+        }
+    }
     
     // Initialize filters
     initFilters();
@@ -173,6 +193,12 @@ function applyFilters() {
     
     // Start with all questions
     filteredQuestions = [...allQuestions];
+    
+    // Apply industry filter (if specified via URL or filter)
+    if (currentFilters.industry && currentFilters.industry !== 'all') {
+        filteredQuestions = filteredQuestions.filter(q => q.role === currentFilters.industry);
+        console.log(`Filtered by industry ${currentFilters.industry}: ${filteredQuestions.length} questions`);
+    }
     
     // Apply star filter
     if (currentFilters.star !== 'all') {

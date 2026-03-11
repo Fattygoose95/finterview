@@ -309,6 +309,8 @@ body {
   text-decoration: none;
   color: inherit;
   display: block;
+  position: relative;
+  overflow: hidden;
 }
 
 .industry-card:hover {
@@ -358,6 +360,79 @@ body {
 .industry-risk .industry-icon { background-color: var(--industry-risk); }
 .industry-fintech .industry-icon { background-color: var(--industry-fintech); }
 .industry-fo .industry-icon { background-color: var(--industry-fo); }
+
+/* ====================================================================
+ * INDUSTRY CARD HOVER OVERLAY
+ ==================================================================== */
+
+.industry-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 10;
+  padding: var(--spacing-xl);
+}
+
+.industry-card:hover .industry-hover-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hover-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+  max-width: 200px;
+}
+
+.hover-btn {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  text-align: center;
+}
+
+.hover-btn.random-btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.hover-btn.random-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.hover-btn.filter-btn {
+  background-color: var(--white);
+  color: var(--text-primary);
+  border: 2px solid var(--primary-color);
+}
+
+.hover-btn.filter-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: translateY(-2px);
+}
 
 /* ====================================================================
  * QUESTION GRID
