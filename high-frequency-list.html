@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投资银行高频题 - finterview</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --high-frequency-color: #f72585;
+            --random-mode-color: #4cc9f0;
+            --light-bg: #f8f9fa;
+            --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            --border-radius: 12px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .back-button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 20px;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: rgba(67, 97, 238, 0.1);
+        }
+        
+        .header-info h1 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .header-info .subtitle {
+            font-size: 1rem;
+            color: #666;
+        }
+        
+        .mode-switch-button {
+            background: var(--random-mode-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .mode-switch-button:hover {
+            background: #00b4d8;
+        }
+        
+        .mode-switch-button i {
+            font-size: 1.1rem;
+        }
+        
+        .search-bar {
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--high-frequency-color);
+            box-shadow: 0 5px 15px rgba(247, 37, 133, 0.1);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+            font-size: 1.2rem;
+        }
+        
+        .questions-container {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+        }
+        
+        .questions-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            background: rgba(247, 37, 133, 0.03);
+        }
+        
+        .questions-header h2 {
+            font-size: 1.3rem;
+            color: #444;
+        }
+        
+        .questions-count {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .questions-list {
+            list-style: none;
+        }
+        
+        .question-item {
+            padding: 25px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .question-item:last-child {
+            border-bottom: none;
+        }
+        
+        .question-item:hover {
+            background: rgba(247, 37, 133, 0.03);
+        }
+        
+        .question-content {
+            flex: 1;
+            margin-right: 20px;
+        }
+        
+        .question-text {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        
+        .question-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+        
+        .frequency-score {
+            background: linear-gradient(135deg, #f72585, #b5179e);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            min-width: 120px;
+            justify-content: center;
+        }
+        
+        .frequency-score i {
+            font-size: 0.9rem;
+        }
+        
+        .frequency-value {
+            font-size: 1.1rem;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #888;
+        }
+        
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ccc;
+        }
+        
+        .empty-state h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #666;
+        }
+        
+        .empty-state p {
+            max-width: 400px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+        
+        .mode-switch-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .mode-switch-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .mode-switch-modal {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+        
+        .mode-switch-overlay.active .mode-switch-modal {
+            transform: translateY(0);
+        }
+        
+        .mode-switch-modal h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+            text-align: center;
+        }
+        
+        .mode-switch-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .mode-switch-option {
+            padding: 20px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .mode-switch-option:hover {
+            border-color: var(--primary-color);
+            background: rgba(67, 97, 238, 0.03);
+        }
+        
+        .mode-switch-option.selected {
+            border-color: var(--primary-color);
+            background: rgba(67, 97, 238, 0.08);
+        }
+        
+        .mode-switch-icon {
+            font-size: 1.8rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .mode-switch-option.high-frequency .mode-switch-icon {
+            background: var(--high-frequency-color);
+        }
+        
+        .mode-switch-option.random .mode-switch-icon {
+            background: var(--random-mode-color);
+        }
+        
+        .mode-switch-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+        
+        .mode-switch-text p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .mode-switch-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        
+        .mode-switch-button {
+            padding: 12px 25px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .mode-switch-button.cancel {
+            background: #f0f0f0;
+            color: #555;
+        }
+        
+        .mode-switch-button.cancel:hover {
+            background: #e0e0e0;
+        }
+        
+        .mode-switch-button.confirm {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .mode-switch-button.confirm:hover {
+            background: var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            
+            .mode-switch-button {
+                align-self: flex-end;
+            }
+            
+            .question-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .question-content {
+                margin-right: 0;
+            }
+            
+            .frequency-score {
+                align-self: flex-start;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 15px;
+            }
+            
+            .header-info h1 {
+                font-size: 1.5rem;
+            }
+            
+            .question-item {
+                padding: 20px 15px;
+            }
+            
+            .question-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <button class="back-button" onclick="goBack()">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="header-info">
+                    <h1>投资银行高频题 ⚡️</h1>
+                    <p class="subtitle">快速面试准备 - 按出现频率排序</p>
+                </div>
+            </div>
+            <button class="mode-switch-button" onclick="openModeSwitch()">
+                <i class="fas fa-exchange-alt"></i>
+                切换到随机模式
+            </button>
+        </div>
+        
+        <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="搜索题目..." id="searchInput">
+        </div>
+        
+        <div class="questions-container">
+            <div class="questions-header">
+                <h2>高频题目列表</h2>
+                <div class="questions-count">共 <span id="questionsCount">8</span> 题</div>
+            </div>
+            
+            <ul class="questions-list" id="questionsList">
+                <!-- 题目将通过JavaScript动态加载 -->
+            </ul>
+            
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>未找到匹配的题目</h3>
+                <p>请尝试其他搜索关键词，或切换到随机模式查看更多题目。</p>
+                <button class="mode-switch-button" onclick="openModeSwitch()">
+                    <i class="fas fa-exchange-alt"></i>
+                    切换到随机模式
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 模式切换浮层 -->
+    <div class="mode-switch-overlay" id="modeSwitchOverlay">
+        <div class="mode-switch-modal">
+            <h3>切换练习模式</h3>
+            <p style="text-align: center; color: #666; margin-bottom: 25px;">选择要切换到的模式</p>
+            
+            <div class="mode-switch-options">
+                <div class="mode-switch-option high-frequency" data-mode="high-frequency">
+                    <div class="mode-switch-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="mode-switch-text">
+                        <h4>高频题模式 ⚡️</h4>
+                        <p>按面试出现频率排序，简洁高效，适合时间紧迫的面试准备者</p>
+                    </div>
+                </div>
+                
+                <div class="mode-switch-option random" data-mode="random">
+                    <div class="mode-switch-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="mode-switch-text">
+                        <h4>随机模式 📚</h4>
+                        <p>显示星级和多维度筛选，适合系统性学习和长期专业提升</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mode-switch-actions">
+                <button class="mode-switch-button cancel" onclick="closeModeSwitch()">取消</button>
+                <button class="mode-switch-button confirm" onclick="switchMode()">确认切换</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="questions.js"></script>
+    <script src="js/high-frequency-list.js"></script>
+    <script>
+        // 内联脚本用于快速功能
+        function goBack() {
+            // 返回模式选择页面
+            window.location.href = 'mode-selection.html';
+        }
+        
+        function openModeSwitch() {
+            document.getElementById('modeSwitchOverlay').classList.add('active');
+        }
+        
+        function closeModeSwitch() {
+            document.getElementById('modeSwitchOverlay').classList.remove('active');
+        }
+        
+        function switchMode() {
+            const selectedOption = document.querySelector('.mode-switch-option.selected');
+            if (!selectedOption) {
+                alert('请选择一个模式');
+                return;
+            }
+            
+            const mode = selectedOption.dataset.mode;
+            if (mode === 'random') {
+                // 切换到随机模式
+                window.location.href = 'random-list.html';
+            } else {
+                // 已经在高频题模式
+                closeModeSwitch();
+            }
+        }
+        
+        // 模式选择交互
+        document.querySelectorAll('.mode-switch-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.mode-switch-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                this.classList.add('selected');
+            });
+        });
+        
+        // 搜索功能
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            filterQuestions(searchTerm);
+        });
+        
+        // 点击遮罩层关闭浮层
+        document.getElementById('modeSwitchOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModeSwitch();
+            }
+        });
+        
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            // 默认选择高频题模式选项
+            document.querySelector('.mode-switch-option.high-frequency').classList.add('selected');
+        });
+    </script>
+</body>
+</html>
