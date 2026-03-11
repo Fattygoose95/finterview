@@ -1,140 +1,38 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>投资银行题库 - finterview</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
+    <meta name="description" content="finterview - Random finance interview questions across all industries. Practice with randomized questions to test your knowledge comprehensively.">
+    <title>Random Practice - finterview</title>
+    <link rel="stylesheet" href="css/unified-design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load questions.js early -->
+    <script src="questions.js"></script>
     <style>
-        :root {
-            --primary-color: #4361ee;
-            --secondary-color: #3a0ca3;
-            --high-frequency-color: #f72585;
-            --random-mode-color: #4cc9f0;
-            --light-bg: #f8f9fa;
-            --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            --border-radius: 12px;
-            --star-color: #FFD700;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-        }
-        
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            gap: 30px;
-        }
-        
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-        }
-        
-        .header-left {
-            display: flex;
-            align-items: center;
-        }
-        
-        .back-button {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-right: 20px;
-            cursor: pointer;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.3s ease;
-        }
-        
-        .back-button:hover {
-            background: rgba(67, 97, 238, 0.1);
-        }
-        
-        .header-info h1 {
-            font-size: 1.8rem;
-            color: var(--secondary-color);
-            margin-bottom: 5px;
-            font-weight: 700;
-        }
-        
-        .header-info .subtitle {
-            font-size: 1rem;
-            color: #666;
-        }
-        
-        .mode-switch-button {
-            background: var(--high-frequency-color);
+        .random-mode-badge {
+            background-color: #4cc9f0;
             color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-bold);
+            display: inline-block;
+            margin-right: var(--spacing-sm);
         }
         
-        .mode-switch-button:hover {
-            background: #e01e75;
-        }
-        
-        .mode-switch-button i {
-            font-size: 1.1rem;
-        }
-        
-        /* 筛选面板 */
-        .filter-panel {
-            flex: 0 0 280px;
-            background: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-            padding: 25px;
-            height: fit-content;
-            position: sticky;
-            top: 20px;
-        }
-        
-        .filter-panel h3 {
-            font-size: 1.3rem;
-            margin-bottom: 25px;
-            color: var(--secondary-color);
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        .question-card.random-mode {
+            border-left: 4px solid #4cc9f0;
         }
         
         .filter-section {
-            margin-bottom: 25px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--light-border);
         }
         
         .filter-section:last-child {
@@ -144,518 +42,367 @@
         }
         
         .filter-section h4 {
-            font-size: 1rem;
-            margin-bottom: 15px;
-            color: #555;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-sm);
         }
         
         .filter-options {
             display: flex;
-            flex-direction: column;
-            gap: 12px;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
         }
         
         .filter-option {
+            padding: 6px 12px;
+            background-color: var(--white);
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-option:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .filter-option.selected {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .sort-select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-sm);
+            color: var(--text-primary);
+            background-color: var(--white);
+            cursor: pointer;
+        }
+        
+        .sort-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+        }
+        
+        .results-header {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            cursor: pointer;
+            margin-bottom: var(--spacing-lg);
         }
         
-        .filter-option input {
-            margin-right: 10px;
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
+        .results-count {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            font-weight: var(--font-weight-medium);
         }
         
-        .filter-option label {
+        .mobile-filter-toggle {
+            display: none;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-weight: var(--font-weight-semibold);
             cursor: pointer;
-            user-select: none;
-            display: flex;
+            margin-bottom: var(--spacing-lg);
+            width: 100%;
+            justify-content: center;
             align-items: center;
-            gap: 8px;
-        }
-        
-        .stars {
-            display: flex;
-            gap: 2px;
-        }
-        
-        .star {
-            color: #ddd;
-            font-size: 1.1rem;
-        }
-        
-        .star.filled {
-            color: var(--star-color);
-        }
-        
-        .tag-badge {
-            background: #e9ecef;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            color: #495057;
-        }
-        
-        .difficulty-badge {
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-        
-        .difficulty-easy {
-            background: #d4edda;
-            color: #155724;
-        }
-        
-        .difficulty-medium {
-            background: #fff3cd;
-            color: #856404;
-        }
-        
-        .difficulty-hard {
-            background: #f8d7da;
-            color: #721c24;
+            gap: var(--spacing-sm);
         }
         
         .reset-filters {
             width: 100%;
-            padding: 12px;
-            background: #6c757d;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
+            padding: var(--spacing-md);
+            background-color: var(--white);
+            color: var(--text-secondary);
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius);
+            font-weight: var(--font-weight-semibold);
             cursor: pointer;
-            transition: background 0.3s ease;
-            margin-top: 10px;
+            transition: all 0.2s ease;
+            margin-top: var(--spacing-lg);
         }
         
         .reset-filters:hover {
-            background: #545b62;
-        }
-        
-        /* 主内容区域 */
-        .main-content {
-            flex: 1;
-        }
-        
-        .controls-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 25px;
-            padding: 20px;
-            background: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-        }
-        
-        .sort-options {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        
-        .sort-label {
-            font-weight: 600;
-            color: #555;
-        }
-        
-        .sort-select {
-            padding: 10px 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background: white;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        
-        .results-count {
-            color: #666;
-            font-size: 0.95rem;
-        }
-        
-        .questions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-        }
-        
-        .question-card {
-            background: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-            padding: 25px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-top: 4px solid var(--random-mode-color);
-            cursor: pointer;
-        }
-        
-        .question-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .question-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 15px;
-        }
-        
-        .question-title {
-            font-size: 1.2rem;
-            font-weight: 600;
-            line-height: 1.5;
-            margin-bottom: 10px;
-            flex: 1;
+            background-color: var(--light-bg);
+            border-color: var(--text-secondary);
         }
         
         .star-rating {
             display: flex;
             align-items: center;
-            gap: 5px;
-            margin-bottom: 15px;
+            gap: var(--spacing-xs);
+            margin-bottom: var(--spacing-sm);
         }
         
-        .rating-value {
-            font-weight: 600;
-            color: #333;
+        .star {
+            color: #FFD700;
         }
         
-        .question-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 15px;
-        }
-        
-        .question-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-            padding-top: 15px;
-            border-top: 1px solid #f0f0f0;
-        }
-        
-        .frequency-badge {
-            background: linear-gradient(135deg, #f72585, #b5179e);
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
-            color: #888;
-            background: white;
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-            grid-column: 1 / -1;
-        }
-        
-        .empty-state i {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            color: #ccc;
-        }
-        
-        .empty-state h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: #666;
-        }
-        
-        .empty-state p {
-            max-width: 400px;
-            margin: 0 auto 20px;
-            line-height: 1.6;
-        }
-        
-        .mobile-filter-toggle {
-            display: none;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-bottom: 20px;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        /* 响应式设计 */
-        @media (max-width: 1200px) {
-            .questions-grid {
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .container {
-                flex-direction: column;
+        @media (max-width: 768px) {
+            .mobile-filter-toggle {
+                display: flex;
             }
             
             .filter-panel {
-                position: static;
                 display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: var(--white);
+                z-index: 1000;
+                padding: var(--spacing-xl);
+                overflow-y: auto;
             }
             
             .filter-panel.active {
                 display: block;
             }
             
-            .mobile-filter-toggle {
-                display: flex;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .header {
+            .results-header {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 20px;
-            }
-            
-            .mode-switch-button {
-                align-self: flex-end;
-            }
-            
-            .controls-bar {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 15px;
-            }
-            
-            .questions-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 15px;
-            }
-            
-            .header {
-                padding: 15px;
-            }
-            
-            .header-info h1 {
-                font-size: 1.5rem;
-            }
-            
-            .question-card {
-                padding: 20px;
-            }
-            
-            .question-title {
-                font-size: 1.1rem;
+                gap: var(--spacing-md);
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <button class="mobile-filter-toggle" id="mobileFilterToggle">
-            <i class="fas fa-filter"></i>
-            筛选题目
-        </button>
-        
-        <div class="filter-panel" id="filterPanel">
-            <h3><i class="fas fa-sliders-h"></i> 筛选条件</h3>
-            
-            <div class="filter-section">
-                <h4><i class="fas fa-star"></i> 星级</h4>
-                <div class="filter-options" id="starFilter">
-                    <!-- 星级选项将通过JavaScript动态生成 -->
-                </div>
-            </div>
-            
-            <div class="filter-section">
-                <h4><i class="fas fa-tag"></i> 题型</h4>
-                <div class="filter-options" id="typeFilter">
-                    <!-- 题型选项将通过JavaScript动态生成 -->
-                </div>
-            </div>
-            
-            <div class="filter-section">
-                <h4><i class="fas fa-chart-line"></i> 难度</h4>
-                <div class="filter-options" id="difficultyFilter">
-                    <!-- 难度选项将通过JavaScript动态生成 -->
-                </div>
-            </div>
-            
-            <div class="filter-section">
-                <h4><i class="fas fa-hashtag"></i> 标签</h4>
-                <div class="filter-options" id="tagFilter">
-                    <!-- 标签选项将通过JavaScript动态生成 -->
-                </div>
-            </div>
-            
-            <button class="reset-filters" id="resetFilters">重置所有筛选</button>
-        </div>
-        
-        <div class="main-content">
-            <div class="header">
-                <div class="header-left">
-                    <button class="back-button" onclick="goBack()">
-                        <i class="fas fa-arrow-left"></i>
-                    </button>
-                    <div class="header-info">
-                        <h1>投资银行题库 📚</h1>
-                        <p class="subtitle">系统知识提升 - 多维度筛选学习</p>
-                    </div>
-                </div>
-                <button class="mode-switch-button" onclick="openModeSwitch()">
-                    <i class="fas fa-exchange-alt"></i>
-                    切换到高频题模式
-                </button>
-            </div>
-            
-            <div class="controls-bar">
-                <div class="sort-options">
-                    <span class="sort-label">排序：</span>
-                    <select class="sort-select" id="sortSelect">
-                        <option value="star-desc">综合星级降序</option>
-                        <option value="frequency-desc">频率降序</option>
-                        <option value="difficulty-asc">难度升序</option>
-                        <option value="random">随机排序</option>
-                    </select>
-                </div>
-                <div class="results-count">共 <span id="resultsCount">15</span> 题</div>
-            </div>
-            
-            <div class="questions-grid" id="questionsGrid">
-                <!-- 题目卡片将通过JavaScript动态生成 -->
-            </div>
-        </div>
-    </div>
-    
-    <!-- 模式切换浮层（与高频题模式共用） -->
-    <div class="mode-switch-overlay" id="modeSwitchOverlay" style="display: none;">
-        <div class="mode-switch-modal">
-            <h3>切换练习模式</h3>
-            <p style="text-align: center; color: #666; margin-bottom: 25px;">选择要切换到的模式</p>
-            
-            <div class="mode-switch-options">
-                <div class="mode-switch-option high-frequency" data-mode="high-frequency">
-                    <div class="mode-switch-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <div class="mode-switch-text">
-                        <h4>高频题模式 ⚡️</h4>
-                        <p>按面试出现频率排序，简洁高效，适合时间紧迫的面试准备者</p>
-                    </div>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Random Practice</p>
                 </div>
                 
-                <div class="mode-switch-option random" data-mode="random">
-                    <div class="mode-switch-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="mode-switch-text">
-                        <h4>随机模式 📚</h4>
-                        <p>显示星级和多维度筛选，适合系统性学习和长期专业提升</p>
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice Mode</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html" class="active">Random Practice</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <div class="mb-6">
+                    <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h2 class="text-3xl font-bold mt-2">Random Practice Questions</h2>
+                    <p class="text-lg text-secondary mt-1">Test your knowledge across all finance industries with randomized questions.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <!-- Filter Panel -->
+                    <aside class="lg:col-span-1">
+                        <button class="mobile-filter-toggle" id="mobileFilterToggle">
+                            <i class="fas fa-filter"></i> Filter Questions
+                        </button>
+                        
+                        <div class="filter-panel" id="filterPanel">
+                            <div class="filter-section">
+                                <h4>Star Rating</h4>
+                                <div class="filter-options" id="starFilter">
+                                    <!-- Star rating options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Ratings</span>
+                                    <span class="filter-option" data-value="5">★★★★★</span>
+                                    <span class="filter-option" data-value="4">★★★★☆+</span>
+                                    <span class="filter-option" data-value="3">★★★☆☆+</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Question Type</h4>
+                                <div class="filter-options" id="typeFilter">
+                                    <!-- Question type options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Types</span>
+                                    <span class="filter-option" data-value="technical">Technical</span>
+                                    <span class="filter-option" data-value="behavioral">Behavioral</span>
+                                    <span class="filter-option" data-value="case">Case Study</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Difficulty</h4>
+                                <div class="filter-options" id="difficultyFilter">
+                                    <!-- Difficulty options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Levels</span>
+                                    <span class="filter-option" data-value="easy">Easy</span>
+                                    <span class="filter-option" data-value="medium">Medium</span>
+                                    <span class="filter-option" data-value="hard">Hard</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Tags</h4>
+                                <div class="filter-options" id="tagFilter">
+                                    <!-- Tag options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Tags</span>
+                                    <span class="filter-option" data-value="high-frequency">High Frequency</span>
+                                    <span class="filter-option" data-value="interview">Common Interview</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Sort By</h4>
+                                <select class="sort-select" id="sortSelect">
+                                    <option value="random">Random</option>
+                                    <option value="star-desc">Highest Rated</option>
+                                    <option value="difficulty-asc">Easiest First</option>
+                                    <option value="difficulty-desc">Hardest First</option>
+                                    <option value="industry">By Industry</option>
+                                </select>
+                            </div>
+                            
+                            <button class="reset-filters" id="resetFilters">
+                                <i class="fas fa-undo"></i> Reset All Filters
+                            </button>
+                        </div>
+                    </aside>
+                    
+                    <!-- Main Content Area -->
+                    <div class="lg:col-span-3">
+                        <div class="results-header">
+                            <div class="results-count">
+                                Showing <span id="resultsCount">0</span> questions
+                            </div>
+                            <div>
+                                <button class="btn btn-outline" onclick="refreshRandomQuestions()">
+                                    <i class="fas fa-sync-alt"></i> Refresh Questions
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Questions Grid -->
+                        <div class="question-grid" id="questionsGrid">
+                            <div class="loading-state">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <h3>Loading Random Questions</h3>
+                                <p>Preparing your randomized practice session...</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Info Section -->
+                        <div class="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">
+                                <i class="fas fa-info-circle"></i> About Random Practice
+                            </h4>
+                            <p class="text-blue-700 text-sm">
+                                This mode randomly selects questions from all finance industries to test your comprehensive knowledge. 
+                                Use filters to focus on specific areas, or embrace the randomness to simulate a real interview experience.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="mode-switch-actions">
-                <button class="mode-switch-button cancel" onclick="closeModeSwitch()">取消</button>
-                <button class="mode-switch-button confirm" onclick="switchMode()">确认切换</button>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <h3>finterview</h3>
+                        <p>Master Finance Interviews</p>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html" class="active">Random</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <p class="text-sm text-secondary">© 2024 finterview. Embrace the challenge.</p>
+                </div>
             </div>
-        </div>
+        </footer>
     </div>
+
+    <!-- Load JavaScript files -->
+    <script src="js/random-list-unified.js"></script>
     
-    <script src="questions.js"></script>
-    <script src="js/random-list.js"></script>
+    <!-- Initialize page -->
     <script>
-        // 内联脚本用于快速功能
-        function goBack() {
-            // 返回模式选择页面
-            window.location.href = 'mode-selection.html';
-        }
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
         
-        function openModeSwitch() {
-            document.getElementById('modeSwitchOverlay').style.display = 'block';
-            setTimeout(() => {
-                document.getElementById('modeSwitchOverlay').classList.add('active');
-            }, 10);
-        }
-        
-        function closeModeSwitch() {
-            document.getElementById('modeSwitchOverlay').classList.remove('active');
-            setTimeout(() => {
-                document.getElementById('modeSwitchOverlay').style.display = 'none';
-            }, 300);
-        }
-        
-        function switchMode() {
-            const selectedOption = document.querySelector('.mode-switch-option.selected');
-            if (!selectedOption) {
-                alert('请选择一个模式');
-                return;
-            }
-            
-            const mode = selectedOption.dataset.mode;
-            if (mode === 'high-frequency') {
-                // 切换到高频题模式
-                window.location.href = 'high-frequency-list.html';
-            } else {
-                // 已经在随机模式
-                closeModeSwitch();
-            }
-        }
-        
-        // 模式选择交互
-        document.querySelectorAll('.mode-switch-option').forEach(option => {
-            option.addEventListener('click', function() {
-                document.querySelectorAll('.mode-switch-option').forEach(opt => {
-                    opt.classList.remove('selected');
-                });
-                this.classList.add('selected');
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('show');
             });
-        });
+        }
         
-        // 移动端筛选面板切换
+        // Mobile filter toggle
         const mobileFilterToggle = document.getElementById('mobileFilterToggle');
         const filterPanel = document.getElementById('filterPanel');
         
-        mobileFilterToggle.addEventListener('click', () => {
-            filterPanel.classList.toggle('active');
-            mobileFilterToggle.innerHTML = filterPanel.classList.contains('active') 
-                ? '<i class="fas fa-times"></i> 关闭筛选' 
-                : '<i class="fas fa-filter"></i> 筛选题目';
-        });
+        if (mobileFilterToggle && filterPanel) {
+            mobileFilterToggle.addEventListener('click', function() {
+                filterPanel.classList.toggle('active');
+                mobileFilterToggle.innerHTML = filterPanel.classList.contains('active') 
+                    ? '<i class="fas fa-times"></i> Close Filters' 
+                    : '<i class="fas fa-filter"></i> Filter Questions';
+            });
+        }
         
-        // 点击遮罩层关闭浮层
-        document.getElementById('modeSwitchOverlay').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeModeSwitch();
+        // Global function to refresh random questions
+        window.refreshRandomQuestions = function() {
+            // This function should be implemented in random-list.js
+            // For now, just reload the page
+            window.location.reload();
+        };
+        
+        // Close mobile filter panel when clicking outside
+        document.addEventListener('click', function(event) {
+            if (filterPanel && filterPanel.classList.contains('active') && 
+                !filterPanel.contains(event.target) && 
+                event.target !== mobileFilterToggle && 
+                !mobileFilterToggle.contains(event.target)) {
+                filterPanel.classList.remove('active');
+                mobileFilterToggle.innerHTML = '<i class="fas fa-filter"></i> Filter Questions';
             }
         });
         
-        // 初始化
+        // Initialize active navigation
         document.addEventListener('DOMContentLoaded', function() {
-            // 默认选择随机模式选项
-            document.querySelector('.mode-switch-option.random').classList.add('selected');
+            const currentPage = window.location.pathname.split('/').pop();
+            document.querySelectorAll('.nav-list a').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
