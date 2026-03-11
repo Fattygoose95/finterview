@@ -270,6 +270,9 @@
                         <a href="industry.html?industry=ib" class="btn btn-outline btn-lg" style="border-color: white; color: white;">
                             <i class="fas fa-play"></i> Try Demo
                         </a>
+                        <a href="industry-filter.html" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.5); color: white;">
+                            <i class="fas fa-filter"></i> Browse with Filters
+                        </a>
                     </div>
                 </section>
             </div>
@@ -411,16 +414,18 @@
                 const randomBtn = card.querySelector('.random-btn');
                 const filterBtn = card.querySelector('.filter-btn');
                 
+                // Random Practice: jump to practice mode (no filters needed)
                 randomBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
                     const industryId = this.getAttribute('data-industry');
-                    window.location.href = `random-list.html?industry=${industryId}`;
+                    window.location.href = `industry.html?industry=${industryId}`;
                 });
                 
+                // Browse with Filters: jump to random practice page (has filters)
                 filterBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
                     const industryId = this.getAttribute('data-industry');
-                    window.location.href = `high-frequency-list.html?industry=${industryId}`;
+                    window.location.href = `random-list.html?industry=${industryId}`;
                 });
                 
                 // Optional: Keep card clickable as backup (goes to industry practice page)
