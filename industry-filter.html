@@ -45,9 +45,11 @@
             padding: var(--spacing-lg);
             box-shadow: var(--card-shadow);
             border: 1px solid var(--light-border);
-            height: fit-content;
+            align-self: flex-start;
             position: sticky;
             top: 20px;
+            max-height: calc(100vh - 100px);
+            overflow-y: auto;
         }
         
         .filter-group {
@@ -435,10 +437,8 @@
                     
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="industry.html">Practice</a></li>
-                        <li><a href="high-frequency-list.html">High Frequency</a></li>
-                        <li><a href="random-list.html">Random</a></li>
-                        <li><a href="industry-filter.html" class="active">Filter</a></li>
+                        <li><a href="industry-practice.html">Practice Mode</a></li>
+                        <li><a href="industry-filter.html" class="active">Advanced Filters</a></li>
                     </ul>
                 </div>
                 
