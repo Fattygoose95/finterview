@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Bro AI - finterview</title>
+    <meta name="description" content="Chat with Finance Bro AI - Your finance interview preparation assistant. Get tips, explanations, and guidance.">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Unified Design CSS -->
+    <link rel="stylesheet" href="css/unified-design.css">
+    
+    <!-- Chat-specific CSS -->
+    <style>
+        .chat-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+        }
+        
+        .chat-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+        
+        .chat-header h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--spacing-md);
+        }
+        
+        .chat-header p {
+            font-size: var(--font-size-lg);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .finance-bro-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            margin: 0 auto var(--spacing-lg);
+            border: 4px solid white;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .chat-interface {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: var(--spacing-xl);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-lg);
+        }
+        
+        .message {
+            max-width: 80%;
+            padding: var(--spacing-md) var(--spacing-lg);
+            border-radius: var(--border-radius-lg);
+            line-height: 1.5;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .message-user {
+            align-self: flex-end;
+            background: var(--primary-color);
+            color: white;
+            border-bottom-right-radius: var(--border-radius-sm);
+        }
+        
+        .message-bot {
+            align-self: flex-start;
+            background: var(--light-bg);
+            color: var(--text-primary);
+            border-bottom-left-radius: var(--border-radius-sm);
+        }
+        
+        .message-bot .message-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .message-bot .bot-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+        
+        .message-bot .bot-name {
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-color);
+        }
+        
+        .message-time {
+            font-size: var(--font-size-xs);
+            color: var(--text-tertiary);
+            margin-top: var(--spacing-xs);
+            text-align: right;
+        }
+        
+        .chat-input-area {
+            border-top: 1px solid var(--border-color);
+            padding: var(--spacing-lg);
+            background: var(--white);
+        }
+        
+        .chat-input-wrapper {
+            display: flex;
+            gap: var(--spacing-md);
+        }
+        
+        .chat-input {
+            flex: 1;
+            padding: var(--spacing-md) var(--spacing-lg);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-full);
+            font-size: var(--font-size-md);
+            transition: var(--transition-standard);
+        }
+        
+        .chat-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+        
+        .send-button {
+            padding: var(--spacing-md) var(--spacing-xl);
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius-full);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            transition: var(--transition-standard);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .send-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        
+        .send-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .quick-questions {
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .quick-questions h3 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .quick-questions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+        }
+        
+        .quick-question {
+            padding: var(--spacing-md);
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-lg);
+            cursor: pointer;
+            transition: var(--transition-standard);
+            text-align: left;
+            font-size: var(--font-size-sm);
+        }
+        
+        .quick-question:hover {
+            background: var(--light-bg);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .disclaimer {
+            margin-top: var(--spacing-2xl);
+            padding: var(--spacing-lg);
+            background: var(--warning-light);
+            border-radius: var(--border-radius-lg);
+            color: var(--warning-color);
+            font-size: var(--font-size-sm);
+            text-align: center;
+        }
+        
+        .disclaimer i {
+            margin-right: var(--spacing-sm);
+        }
+        
+        .empty-chat {
+            text-align: center;
+            padding: var(--spacing-3xl) var(--spacing-xl);
+            color: var(--text-secondary);
+        }
+        
+        .empty-chat i {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-lg);
+            color: var(--border-color);
+        }
+        
+        .empty-chat h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+        
+        .empty-chat p {
+            max-width: 400px;
+            margin: 0 auto var(--spacing-xl);
+        }
+        
+        @media (max-width: 768px) {
+            .chat-container {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+            
+            .chat-interface {
+                height: 500px;
+            }
+            
+            .quick-questions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .message {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Finance Interview Preparation</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry-practice.html">Practice Mode</a></li>
+                        <li><a href="industry-filter.html">Advanced Filters</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li class="active"><a href="finance-bro.html">Finance Bro AI</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="finance-bro-avatar">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h1><i class="fas fa-robot"></i> Finance Bro AI</h1>
+                    <p>Your finance interview preparation assistant. Ask questions, get tips, and improve your skills. Inspired by finance bro culture but actually helpful.</p>
+                </div>
+                
+                <!-- Chat Interface -->
+                <div class="chat-interface">
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Welcome message -->
+                        <div class="message message-bot">
+                            <div class="message-header">
+                                <div class="bot-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="bot-name">Finance Bro</div>
+                            </div>
+                            <div class="message-content">
+                                Hey bro! 👋 Ready to crush those finance interviews? I'm here to help you prep. Ask me about interview tips, finance concepts, or how to use this platform. Let's get this bread! 💸
+                            </div>
+                            <div class="message-time">Just now</div>
+                        </div>
+                        
+                        <!-- Example bot message -->
+                        <div class="message message-bot">
+                            <div class="message-header">
+                                <div class="bot-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="bot-name">Finance Bro</div>
+                            </div>
+                            <div class="message-content">
+                                Quick tips: 
+                                • Practice different industries to be well-rounded
+                                • Use the filter page to target weak areas  
+                                • Check your profile to track progress
+                                • Don't just memorize - understand the concepts
+                            </div>
+                            <div class="message-time">Just now</div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input-area">
+                        <div class="chat-input-wrapper">
+                            <input type="text" class="chat-input" id="chatInput" placeholder="Ask Finance Bro about interviews, finance concepts, or tips..." maxlength="500">
+                            <button class="send-button" id="sendButton">
+                                <i class="fas fa-paper-plane"></i> Send
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Questions -->
+                <div class="quick-questions">
+                    <h3><i class="fas fa-bolt"></i> Quick Questions</h3>
+                    <div class="quick-questions-grid">
+                        <button class="quick-question" data-question="How do I prepare for an investment banking interview?">
+                            How do I prepare for an IB interview?
+                        </button>
+                        <button class="quick-question" data-question="What are the most common finance interview questions?">
+                            Common finance interview questions?
+                        </button>
+                        <button class="quick-question" data-question="How do I explain DCF in simple terms?">
+                            Explain DCF simply
+                        </button>
+                        <button class="quick-question" data-question="What should I focus on for asset management interviews?">
+                            Asset management interview tips
+                        </button>
+                        <button class="quick-question" data-question="How do I improve my accuracy in practice?">
+                            Improve my accuracy
+                        </button>
+                        <button class="quick-question" data-question="What's the best way to use this platform?">
+                            Best way to use this platform
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Disclaimer -->
+                <div class="disclaimer">
+                    <i class="fas fa-info-circle"></i>
+                    <strong>Note:</strong> Finance Bro AI is a basic assistant using pattern matching. For complex questions, refer to the practice questions and detailed answers. This is a fun feature inspired by finance bro culture.
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h3>finterview</h3>
+                        <p>Finance interview preparation platform</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Practice</h4>
+                        <ul>
+                            <li><a href="industry-practice.html">Practice Mode</a></li>
+                            <li><a href="industry-filter.html">Advanced Filters</a></li>
+                            <li><a href="high-frequency-list.html">High Frequency</a></li>
+                            <li><a href="random-list.html">Random Practice</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="profile.html">My Profile</a></li>
+                            <li><a href="finance-bro.html">Finance Bro AI</a></li>
+                            <li><a href="diagnostic.html">Data Diagnostic</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#" onclick="alert('Feedback feature coming soon!')">Give Feedback</a></li>
+                            <li><a href="#" onclick="alert('Report issue feature coming soon!')">Report Issue</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2024 finterview. Chat with Finance Bro AI for interview tips and guidance. Get that bread! 💸</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Finance Bro AI Chat
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatMessages = document.getElementById('chatMessages');
+            const chatInput = document.getElementById('chatInput');
+            const sendButton = document.getElementById('sendButton');
+            const quickQuestions = document.querySelectorAll('.quick-question');
+            
+            // Knowledge base for Finance Bro
+            const knowledgeBase = [
+                {
+                    keywords: ['hello', 'hi', 'hey', 'greetings'],
+                    response: "Hey bro! 👋 Ready to crush those finance interviews? What's on your mind?"
+                },
+                {
+                    keywords: ['investment banking', 'ib', 'banking interview'],
+                    response: "For IB interviews, focus on: 1) Technicals (accounting, valuation, M&A), 2) Behavioral/fit questions, 3) Market awareness. Practice DCF, LBO, and comps analysis. Know recent deals and market trends. Dress sharp, be confident!"
+                },
+                {
+                    keywords: ['asset management', 'am', 'portfolio management'],
+                    response: "AM interviews test: 1) Investment philosophy, 2) Stock pitching skills, 3) Market knowledge, 4) Risk management. Have a solid stock pitch ready (3-5 mins). Know different investment strategies. Understand portfolio construction principles."
+                },
+                {
+                    keywords: ['quantitative finance', 'quant', 'quant interview'],
+                    response: "Quant interviews are heavy on math/stats: 1) Probability puzzles, 2) Programming (Python/R), 3) Finance concepts, 4) Mental math. Practice brain teasers, know stochastic calculus basics, be ready to code on the spot."
+                },
+                {
+                    keywords: ['dcf', 'discounted cash flow', 'valuation'],
+                    response: "DCF in simple terms: Estimate future cash flows, discount them back to present value using WACC. Formula: DCF = Σ [CFt / (1+r)^t]. Key assumptions: growth rates, discount rate, terminal value. Common interview question!"
+                },
+                {
+                    keywords: ['accuracy', 'improve', 'better', 'progress'],
+                    response: "To improve accuracy: 1) Review answers thoroughly, 2) Note patterns in mistakes, 3) Focus on weak areas using filters, 4) Practice consistently, 5) Understand concepts, don't just memorize. Check your profile for insights!"
+                },
+                {
+                    keywords: ['platform', 'website', 'use', 'how to'],
+                    response: "Best way to use finterview: 1) Start with Practice Mode for random questions, 2) Use Advanced Filters to target specific areas, 3) Check High Frequency for common questions, 4) Track progress in My Profile, 5) Use Finance Bro for quick tips!"
+                },
+                {
+                    keywords: ['thank', 'thanks', 'appreciate'],
+                    response: "No problem bro! 💸 Go get that offer and remember: the grind doesn't stop. Keep practicing!"
+                },
+                {
+                    keywords: ['salary', 'compensation', 'pay'],
+                    response: "Comp varies by role/location: IB analysts ~$100-150K total, AM ~$80-120K, Quant ~$120-200K+. Focus on skills first, money follows. But yeah, we're in it for the tendies too 🚀"
+                },
+                {
+                    keywords: ['interview tips', 'advice', 'prepare'],
+                    response: "Top interview tips: 1) Research the firm thoroughly, 2) Have 3-5 strong questions ready, 3) Practice behavioral stories (STAR method), 4) Know your resume cold, 5) Follow up with thank you notes, 6) Be confident but humble."
+                },
+                {
+                    keywords: ['behavioral', 'fit questions', 'star'],
+                    response: "Behavioral questions use STAR: Situation, Task, Action, Result. Prepare stories for: teamwork, leadership, failure, conflict, achievement. Keep answers concise (1-2 mins). Show learning and growth."
+                },
+                {
+                    keywords: ['market trends', 'current events', 'news'],
+                    response: "Stay updated on: 1) Interest rate environment, 2) Major M&A deals, 3) IPO market, 4) Tech disruption in finance, 5) Regulatory changes. Read Financial Times, Bloomberg, Wall Street Journal daily."
+                },
+                {
+                    keywords: ['resume', 'cv', 'application'],
+                    response: "Finance resumes: 1) Quantify achievements (increased X by Y%), 2) Use action verbs, 3) Keep to one page, 4) Tailor for each role, 5) Include relevant coursework/projects, 6) No typos - triple check!"
+                },
+                {
+                    keywords: ['networking', 'connections', 'linkedin'],
+                    response: "Networking tips: 1) Be genuine, not transactional, 2) Research people before reaching out, 3) Offer value, 4) Follow up thoughtfully, 5) Use alumni networks, 6) Attend industry events (virtual too)."
+                },
+                {
+                    keywords: ['technical questions', 'finance concepts'],
+                    response: "Common technicals: 1) Financial statements (3 statements & links), 2) Valuation methods (DCF, comps, precedents), 3) M&A accretion/dilution, 4) LBO modeling, 5) Accounting concepts, 6) Brainteasers. Practice on this platform!"
+                }
+            ];
+            
+            // Default response if no match
+            const defaultResponses = [
+                "Interesting question bro! Try rephrasing or check the practice questions for detailed answers.",
+                "Hmm, not sure about that one. Want to ask about something else? Maybe interview tips or finance concepts?",
+                "Good question! I'm better at interview prep advice. Try asking about IB, AM, Quant interviews, or how to use this platform.",
+                "Not my area of expertise bro. Check the practice questions for detailed explanations on finance topics."
+            ];
+            
+            // Add message to chat
+            function addMessage(content, isUser = false) {
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${isUser ? 'message-user' : 'message-bot'}`;
+                
+                const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                
+                if (isUser) {
+                    messageDiv.innerHTML = `
+                        <div class="message-content">${escapeHtml(content)}</div>
+                        <div class="message-time">${time}</div>
+                    `;
+                } else {
+                    messageDiv.innerHTML = `
+                        <div class="message-header">
+                            <div class="bot-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="bot-name">Finance Bro</div>
+                        </div>
+                        <div class="message-content">${escapeHtml(content)}</div>
+                        <div class="message-time">${time}</div>
+                    `;
+                }
+                
+                chatMessages.appendChild(messageDiv);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+            
+            // Escape HTML to prevent XSS
+            function escapeHtml(text) {
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+            
+            // Get response from knowledge base
+            function getResponse(userMessage) {
+                const lowerMessage = userMessage.toLowerCase();
+                
+                // Check for matches in knowledge base
+                for (const item of knowledgeBase) {
+                    for (const keyword of item.keywords) {
+                        if (lowerMessage.includes(keyword)) {
+                            return item.response;
+                        }
+                    }
+                }
+                
+                // Default random response
+                return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+            }
+            
+            // Send message
+            function sendMessage() {
+                const message = chatInput.value.trim();
+                if (!message) return;
+                
+                // Add user message
+                addMessage(message, true);
+                
+                // Clear input
+                chatInput.value = '';
+                
+                // Disable send button while processing
+                sendButton.disabled = true;
+                sendButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Thinking...';
+                
+                // Simulate typing delay
+                setTimeout(() => {
+                    // Get response
+                    const response = getResponse(message);
+                    
+                    // Add bot response
+                    addMessage(response, false);
+                    
+                    // Re-enable send button
+                    sendButton.disabled = false;
+                    sendButton.innerHTML = '<i class="fas fa-paper-plane"></i> Send';
+                }, 1000 + Math.random() * 1000); // 1-2 second delay
+            }
+            
+            // Event listeners
+            sendButton.addEventListener('click', sendMessage);
+            
+            chatInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+            
+            // Quick question buttons
+            quickQuestions.forEach(button => {
+                button.addEventListener('click', function() {
+                    const question = this.getAttribute('data-question');
+                    chatInput.value = question;
+                    sendMessage();
+                });
+            });
+            
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function() {
+                    mainNav.classList.toggle('show');
+                });
+            }
+            
+            // Focus on input
+            chatInput.focus();
+        });
+    </script>
+</body>
+</html>
