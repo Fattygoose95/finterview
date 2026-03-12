@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="finterview - Practice finance interview questions with concise and detailed answers. Answer box, navigation, and answer toggles for effective learning.">
+    <title>Industry Questions - Practice Mode - finterview</title>
+    <link rel="stylesheet" href="css/unified-design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load questions.js early -->
+    <script src="questions.js"></script>
+    <style>
+        /* Practice mode specific styles */
+        .practice-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+        
+        .question-display {
+            background-color: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-2xl);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+        }
+        
+        .question-number {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            font-weight: var(--font-weight-medium);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .question-text {
+            font-size: var(--font-size-xl);
+            line-height: var(--line-height-relaxed);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .answer-input-section {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--light-border);
+        }
+        
+        .answer-input-label {
+            display: block;
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .answer-textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: var(--spacing-lg);
+            border: 2px solid var(--light-border);
+            border-radius: var(--border-radius);
+            font-family: var(--font-family-sans);
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-normal);
+            color: var(--text-primary);
+            background-color: var(--white);
+            resize: vertical;
+            transition: border-color 0.2s ease;
+        }
+        
+        .answer-textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+        }
+        
+        .answer-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--spacing-lg);
+        }
+        
+        .answer-actions {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+        
+        .action-btn {
+            padding: var(--spacing-md) var(--spacing-lg);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .action-btn.primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .action-btn.primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .action-btn.secondary {
+            background-color: var(--white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        
+        .action-btn.secondary:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .action-btn.hint {
+            background-color: var(--info-color);
+            color: var(--white);
+        }
+        
+        .action-btn.hint:hover {
+            background-color: #2563eb;
+        }
+        
+        .answer-reveal-section {
+            margin-top: var(--spacing-xl);
+            padding: var(--spacing-xl);
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--success-color);
+        }
+        
+        .answer-toggle-section {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .answer-type-btn {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            background-color: var(--white);
+            color: var(--text-secondary);
+            border: 2px solid var(--light-border);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .answer-type-btn.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .answer-type-btn:hover:not(.active) {
+            background-color: var(--light-bg);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .answer-content {
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-relaxed);
+            color: var(--text-primary);
+        }
+        
+        .answer-content.concise ul {
+            padding-left: var(--spacing-xl);
+            margin-top: var(--spacing-md);
+        }
+        
+        .answer-content.concise li {
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .navigation-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--spacing-2xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--light-border);
+        }
+        
+        .nav-btn {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            padding: var(--spacing-md) var(--spacing-xl);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            background-color: var(--white);
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 140px;
+            justify-content: center;
+        }
+        
+        .nav-btn:hover:not(:disabled) {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .progress-info {
+            text-align: center;
+        }
+        
+        .progress-text {
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+        }
+        
+        .progress-subtext {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            margin-top: 2px;
+        }
+        
+        .industry-info {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .industry-badge {
+            padding: 4px 12px;
+            background-color: var(--light-bg);
+            color: var(--text-secondary);
+            border-radius: 20px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+        }
+        
+        /* Loading and error states */
+        .loading-state, .error-state, .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: var(--spacing-3xl);
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+        }
+        
+        .loading-state i, .error-state i, .empty-state i {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .loading-state i { color: var(--primary-color); }
+        .error-state i { color: var(--error-color); }
+        .empty-state i { color: var(--text-light); }
+        
+        /* Utility Classes for Search/Filter */
+        .filter-controls {
+            background-color: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+        }
+        
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .flex-row { flex-direction: row; }
+        .flex-1 { flex: 1; }
+        
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .ml-2 { margin-left: 0.5rem; }
+        
+        .w-full { width: 100%; }
+        
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+        
+        .transform { transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+        .-translate-y-1\/2 { --tw-translate-y: -50%; }
+        
+        .left-3 { left: 0.75rem; }
+        .top-1\/2 { top: 50%; }
+        
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .pl-10 { padding-left: 2.5rem; }
+        .pr-4 { padding-right: 1rem; }
+        
+        .border { border-width: 1px; border-style: solid; }
+        .border-gray-300 { border-color: #d1d5db; }
+        
+        .rounded-lg { border-radius: 0.5rem; }
+        
+        .focus\:ring-2:focus { box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); }
+        .focus\:ring-blue-500:focus { --tw-ring-color: #3b82f6; }
+        .focus\:border-blue-500:focus { border-color: #3b82f6; }
+        
+        .bg-gray-100 { background-color: #f3f4f6; }
+        .text-gray-700 { color: #374151; }
+        .text-gray-600 { color: #4b5563; }
+        .text-gray-400 { color: #9ca3af; }
+        
+        .hover\:bg-gray-200:hover { background-color: #e5e7eb; }
+        
+        .hidden { display: none; }
+        
+        .text-sm { font-size: 0.875rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-3xl { font-size: 1.875rem; }
+        
+        .font-bold { font-weight: 700; }
+        
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .items-center { align-items: center; }
+        
+        /* Progress tags */
+        .tag.viewed {
+            background-color: #dbeafe !important;
+            color: #1e40af !important;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .tag.answered {
+            background-color: #d1fae5 !important;
+            color: #065f46 !important;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        /* Bookmark button */
+        .bookmark-btn {
+            background: none;
+            border: none;
+            color: #9ca3af;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: color 0.2s ease;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        
+        .bookmark-btn:hover {
+            color: #f59e0b;
+            background-color: rgba(245, 158, 11, 0.1);
+        }
+        
+        .bookmark-btn.bookmarked {
+            color: #f59e0b;
+        }
+        
+        @media (min-width: 768px) {
+            .md\:flex-row {
+                flex-direction: row;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .question-display {
+                padding: var(--spacing-xl);
+            }
+            
+            .question-text {
+                font-size: var(--font-size-lg);
+            }
+            
+            .answer-controls, .navigation-controls {
+                flex-direction: column;
+                gap: var(--spacing-md);
+            }
+            
+            .nav-btn, .action-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .answer-toggle-section {
+                flex-wrap: wrap;
+            }
+            
+            .industry-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Finance Interview Practice</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html" class="active">Practice Mode</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html">Random Practice</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <div class="mb-6">
+                    <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                        <i class="fas fa-arrow-left"></i> Back to Industries
+                    </a>
+                    <div class="industry-info">
+                        <h2 class="text-3xl font-bold" id="industryTitle">Practice Questions</h2>
+                        <div class="industry-badge" id="industryBadge">Loading...</div>
+                    </div>
+                    <p class="text-lg text-secondary" id="industryStats">Loading questions...</p>
+                </div>
+
+                <!-- Search and Filter Controls -->
+                <div class="filter-controls mb-6">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- Search Box -->
+                        <div class="flex-1">
+                            <div class="relative">
+                                <input 
+                                    type="text" 
+                                    id="questionSearch" 
+                                    placeholder="Search questions (e.g., 'M&A', 'valuation', 'DCF')..."
+                                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                >
+                                <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
+                                    <i class="fas fa-search text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Filter Dropdowns -->
+                        <div class="flex gap-2">
+                            <!-- Difficulty Filter -->
+                            <select id="difficultyFilter" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="all">All Difficulty</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            
+                            <!-- Question Type Filter -->
+                            <select id="typeFilter" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="all">All Types</option>
+                                <option value="technical">Technical</option>
+                                <option value="behavioral">Behavioral</option>
+                                <option value="case">Case Study</option>
+                                <option value="market">Market Insight</option>
+                            </select>
+                            
+                            <!-- Clear Filters Button -->
+                            <button id="clearFilters" class="px-4 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 flex items-center gap-2">
+                                <i class="fas fa-times"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Filter Summary -->
+                    <div class="mt-4 hidden" id="filterSummary">
+                        <div class="text-sm text-gray-600">
+                            Showing <span id="filteredCount">0</span> of <span id="totalCount">0</span> questions
+                            <span id="activeFilters" class="ml-2"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Progress Bar -->
+                    <div class="mt-4" id="progressBarContainer">
+                        <div class="text-sm text-gray-600 mb-1">Your Progress</div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div id="progressBar" class="h-full bg-green-500 transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <div class="text-xs text-gray-600" id="progressTextSmall">0/0</div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1 flex justify-between">
+                            <span id="viewedCount">0 viewed</span>
+                            <span id="answeredCount">0 answered</span>
+                            <span id="bookmarkedCount">0 bookmarked</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Practice Container -->
+                <div class="practice-container">
+                    <!-- Question Display -->
+                    <div class="question-display" id="questionDisplay">
+                        <div class="loading-state">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <h3>Loading Practice Question</h3>
+                            <p>Preparing your practice session...</p>
+                        </div>
+                    </div>
+
+                    <!-- Answer Input Section -->
+                    <div class="answer-input-section" id="answerInputSection" style="display: none;">
+                        <label class="answer-input-label">
+                            <i class="fas fa-edit"></i> Your Answer
+                        </label>
+                        <textarea 
+                            class="answer-textarea" 
+                            id="answerTextarea" 
+                            placeholder="Type your answer here... Try to answer in your own words before revealing the solution."
+                        ></textarea>
+                        
+                        <div class="answer-controls">
+                            <div class="answer-actions">
+                                <button class="action-btn primary" id="revealAnswerBtn">
+                                    <i class="fas fa-lightbulb"></i> Reveal Answer
+                                </button>
+                                <button class="action-btn hint" id="showHintBtn">
+                                    <i class="fas fa-question-circle"></i> Show Hint
+                                </button>
+                                <button class="action-btn secondary" id="clearAnswerBtn">
+                                    <i class="fas fa-eraser"></i> Clear
+                                </button>
+                            </div>
+                            
+                            <div class="answer-toggle-section" id="answerToggleSection" style="display: none;">
+                                <button class="answer-type-btn active" data-answer-type="concise">
+                                    <i class="fas fa-bars"></i> Concise Answer
+                                </button>
+                                <button class="answer-type-btn" data-answer-type="detailed">
+                                    <i class="fas fa-file-alt"></i> Detailed Answer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Answer Reveal Section -->
+                    <div class="answer-reveal-section" id="answerRevealSection" style="display: none;">
+                        <div class="answer-toggle-section">
+                            <button class="answer-type-btn active" data-answer-type="concise">
+                                <i class="fas fa-bars"></i> Concise Answer
+                            </button>
+                            <button class="answer-type-btn" data-answer-type="detailed">
+                                <i class="fas fa-file-alt"></i> Detailed Answer
+                            </button>
+                        </div>
+                        
+                        <div class="answer-content concise" id="conciseAnswerContent">
+                            <!-- Concise answer will be loaded here -->
+                        </div>
+                        
+                        <div class="answer-content detailed" id="detailedAnswerContent" style="display: none;">
+                            <!-- Detailed answer will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Navigation Controls -->
+                    <div class="navigation-controls" id="navigationControls" style="display: none;">
+                        <button class="nav-btn" id="prevBtn" disabled>
+                            <i class="fas fa-chevron-left"></i> Previous
+                        </button>
+                        
+                        <div class="progress-info">
+                            <div class="progress-text" id="progressText">Question 1 of 10</div>
+                            <div class="progress-subtext" id="progressSubtext">Investment Banking</div>
+                        </div>
+                        
+                        <button class="nav-btn" id="nextBtn">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Keyboard Shortcuts Help -->
+        <div class="container mb-6">
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-1">Keyboard Shortcuts</h4>
+                        <div class="text-sm text-gray-600 flex flex-wrap gap-3">
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">←</kbd> Previous question</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">→</kbd> Next question</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">Space</kbd> Reveal/Hide answer</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">1</kbd> Concise answer</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">2</kbd> Detailed answer</span>
+                        </div>
+                    </div>
+                    <button id="toggleHelp" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <h3>finterview</h3>
+                        <p>Professional Finance Interview Prep</p>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html">Random</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <p class="text-sm text-secondary">© 2024 finterview. Practice makes perfect.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Practice Mode Application
+        (function() {
+            'use strict';
+            
+            console.log('Practice Mode Initializing...');
+            
+            // State variables
+            let currentIndustry = 'ib';
+            let currentQuestions = [];
+            let currentIndex = 0;
+            let answerRevealed = false;
+            
+            // DOM Elements
+            const questionDisplay = document.getElementById('questionDisplay');
+            const answerInputSection = document.getElementById('answerInputSection');
+            const answerRevealSection = document.getElementById('answerRevealSection');
+            const navigationControls = document.getElementById('navigationControls');
+            const answerToggleSection = document.getElementById('answerToggleSection');
+            
+            // Buttons
+            const revealAnswerBtn = document.getElementById('revealAnswerBtn');
+            const showHintBtn = document.getElementById('showHintBtn');
+            const clearAnswerBtn = document.getElementById('clearAnswerBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            // Answer content
+            const conciseAnswerContent = document.getElementById('conciseAnswerContent');
+            const detailedAnswerContent = document.getElementById('detailedAnswerContent');
+            
+            // Text area
+            const answerTextarea = document.getElementById('answerTextarea');
+            
+            // Info elements
+            const industryTitle = document.getElementById('industryTitle');
+            const industryBadge = document.getElementById('industryBadge');
+            const industryStats = document.getElementById('industryStats');
+            const progressText = document.getElementById('progressText');
+            const progressSubtext = document.getElementById('progressSubtext');
+            
+            // Search and Filter elements
+            const questionSearch = document.getElementById('questionSearch');
+            const difficultyFilter = document.getElementById('difficultyFilter');
+            const typeFilter = document.getElementById('typeFilter');
+            const clearFiltersBtn = document.getElementById('clearFilters');
+            const filterSummary = document.getElementById('filterSummary');
+            const filteredCountEl = document.getElementById('filteredCount');
+            const totalCount = document.getElementById('totalCount');
+            const activeFilters = document.getElementById('activeFilters');
+            
+            // Progress elements
+            const progressBarContainer = document.getElementById('progressBarContainer');
+            const progressBar = document.getElementById('progressBar');
+            const progressTextSmall = document.getElementById('progressTextSmall');
+            const viewedCount = document.getElementById('viewedCount');
+            const answeredCount = document.getElementById('answeredCount');
+            const bookmarkedCount = document.getElementById('bookmarkedCount');
+            
+            // Help toggle
+            const toggleHelp = document.getElementById('toggleHelp');
+            
+            // Filter state
+            let currentFilters = {
+                search: '',
+                difficulty: 'all',
+                type: 'all'
+            };
+            let filteredQuestions = [];
+            
+            // Progress tracking
+            const PROGRESS_STORAGE_KEY = 'finterview_progress';
+            let userProgress = {};
+            
+            // Initialize
+            document.addEventListener('DOMContentLoaded', init);
+            
+            function init() {
+                console.log('Initializing practice mode...');
+                
+                // Get industry from URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const industryId = urlParams.get('industry') || 'ib';
+                currentIndustry = industryId;
+                
+                console.log(`Industry: ${industryId}`);
+                
+                // Update UI
+                updateIndustryInfo(industryId);
+                
+                // Load questions
+                loadQuestions(industryId);
+                
+                // Bind events
+                bindEvents();
+                
+                // Load user progress
+                loadProgress();
+                
+                // Add keyboard shortcuts
+                document.addEventListener('keydown', handleKeyboardShortcuts);
+                
+                // Check if help should be hidden
+                if (localStorage.getItem('finterview_hide_help') === 'true') {
+                    const helpPanel = document.querySelector('.container.mb-6');
+                    if (helpPanel) {
+                        helpPanel.style.display = 'none';
+                    }
+                }
+            }
+            
+            // Keyboard shortcuts for navigation
+            function handleKeyboardShortcuts(e) {
+                // Only handle if not typing in textarea
+                if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') {
+                    return;
+                }
+                
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            loadQuestion(currentIndex);
+                            e.preventDefault();
+                        }
+                        break;
+                    case 'ArrowRight':
+                        if (currentIndex < currentQuestions.length - 1) {
+                            currentIndex++;
+                            loadQuestion(currentIndex);
+                            e.preventDefault();
+                        }
+                        break;
+                    case ' ':
+                        // Space to reveal/hide answer
+                        if (answerRevealSection.style.display === 'none') {
+                            // Reveal answer
+                            answerRevealed = true;
+                            answerRevealSection.style.display = 'block';
+                            // Mark as answered
+                            if (currentQuestions && currentQuestions[currentIndex]) {
+                                const question = currentQuestions[currentIndex];
+                                const userAnswer = answerTextarea ? answerTextarea.value : '';
+                                markQuestionAnswered(question, userAnswer);
+                            }
+                        } else {
+                            // Hide answer
+                            answerRevealSection.style.display = 'none';
+                        }
+                        e.preventDefault();
+                        break;
+                    case '1':
+                        // Switch to concise answer
+                        document.querySelectorAll('.answer-type-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.dataset.answerType === 'concise') {
+                                btn.classList.add('active');
+                            }
+                        });
+                        conciseAnswerContent.style.display = 'block';
+                        detailedAnswerContent.style.display = 'none';
+                        break;
+                    case '2':
+                        // Switch to detailed answer
+                        document.querySelectorAll('.answer-type-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.dataset.answerType === 'detailed') {
+                                btn.classList.add('active');
+                            }
+                        });
+                        conciseAnswerContent.style.display = 'none';
+                        detailedAnswerContent.style.display = 'block';
+                        break;
+                }
+            }
+            
+            // Progress tracking functions
+            function loadProgress() {
+                try {
+                    const saved = localStorage.getItem(PROGRESS_STORAGE_KEY);
+                    if (saved) {
+                        userProgress = JSON.parse(saved);
+                        console.log('Loaded user progress:', Object.keys(userProgress).length, 'items');
+                    }
+                } catch (e) {
+                    console.error('Failed to load progress:', e);
+                    userProgress = {};
+                }
+            }
+            
+            function saveProgress() {
+                try {
+                    localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(userProgress));
+                } catch (e) {
+                    console.error('Failed to save progress:', e);
+                }
+            }
+            
+            function getQuestionKey(question) {
+                return `${question.role}_${question.id}`;
+            }
+            
+            function markQuestionViewed(question) {
+                const key = getQuestionKey(question);
+                if (!userProgress[key]) {
+                    userProgress[key] = { viewed: true, viewedAt: new Date().toISOString() };
+                } else {
+                    userProgress[key].viewed = true;
+                    userProgress[key].viewedAt = new Date().toISOString();
+                }
+                saveProgress();
+                updateProgressBar();
+            }
+            
+            function markQuestionAnswered(question, userAnswer) {
+                const key = getQuestionKey(question);
+                if (!userProgress[key]) {
+                    userProgress[key] = { answered: true, answeredAt: new Date().toISOString() };
+                } else {
+                    userProgress[key].answered = true;
+                    userProgress[key].answeredAt = new Date().toISOString();
+                }
+                if (userAnswer) {
+                    userProgress[key].userAnswer = userAnswer.substring(0, 500); // Limit length
+                }
+                saveProgress();
+                updateProgressBar();
+            }
+            
+            function getQuestionProgress(question) {
+                const key = getQuestionKey(question);
+                return userProgress[key] || {};
+            }
+            
+            function toggleBookmark(question) {
+                const key = getQuestionKey(question);
+                if (!userProgress[key]) {
+                    userProgress[key] = { bookmarked: true, bookmarkedAt: new Date().toISOString() };
+                } else {
+                    userProgress[key].bookmarked = !userProgress[key].bookmarked;
+                    userProgress[key].bookmarkedAt = userProgress[key].bookmarked ? new Date().toISOString() : null;
+                }
+                saveProgress();
+                console.log(`Question ${question.id} bookmarked: ${userProgress[key].bookmarked}`);
+                updateProgressBar();
+            }
+            
+            // Update progress bar display
+            function updateProgressBar() {
+                if (!progressBarContainer || !currentQuestions.length) return;
+                
+                const industryQuestions = currentQuestions;
+                let viewed = 0;
+                let answered = 0;
+                let bookmarked = 0;
+                
+                // Count progress for current industry questions
+                industryQuestions.forEach(q => {
+                    const progress = getQuestionProgress(q);
+                    if (progress.viewed) viewed++;
+                    if (progress.answered) answered++;
+                    if (progress.bookmarked) bookmarked++;
+                });
+                
+                // Calculate percentages
+                const total = industryQuestions.length;
+                const viewedPercent = total > 0 ? Math.round((viewed / total) * 100) : 0;
+                const answeredPercent = total > 0 ? Math.round((answered / total) * 100) : 0;
+                
+                // Update progress bar (use answered percentage)
+                if (progressBar) {
+                    progressBar.style.width = `${answeredPercent}%`;
+                }
+                
+                // Update text
+                if (progressTextSmall) {
+                    progressTextSmall.textContent = `${answered}/${total}`;
+                }
+                
+                if (viewedCount) {
+                    viewedCount.textContent = `${viewed} viewed`;
+                }
+                
+                if (answeredCount) {
+                    answeredCount.textContent = `${answered} answered`;
+                }
+                
+                if (bookmarkedCount) {
+                    bookmarkedCount.textContent = `${bookmarked} bookmarked`;
+                }
+            }
+            
+            function updateIndustryInfo(industryId) {
+                const industryNames = {
+                    'ib': { name: 'Investment Banking', badge: 'IB' },
+                    'am': { name: 'Asset Management', badge: 'AM' },
+                    'quant': { name: 'Quantitative Finance', badge: 'Quant' },
+                    'markets': { name: 'Sales & Trading', badge: 'S&T' },
+                    'corpfin': { name: 'Corporate Finance', badge: 'CorpFin' },
+                    'risk': { name: 'Risk Management', badge: 'Risk' },
+                    'fintech': { name: 'FinTech', badge: 'FinTech' },
+                    'fo': { name: 'Family Office', badge: 'FO' }
+                };
+                
+                const industry = industryNames[industryId] || industryNames.ib;
+                
+                if (industryTitle) industryTitle.textContent = `${industry.name} Practice`;
+                if (industryBadge) industryBadge.textContent = industry.badge;
+                if (industryStats) industryStats.textContent = 'Loading practice questions...';
+            }
+            
+            // Apply search and filters to questions
+            function applyFilters(questions, filters, industryId) {
+                let filtered = questions.filter(q => q.role === industryId);
+                
+                // Apply search filter
+                if (filters.search && filters.search.trim()) {
+                    const searchTerm = filters.search.toLowerCase().trim();
+                    filtered = filtered.filter(q => 
+                        (q.question && q.question.toLowerCase().includes(searchTerm)) ||
+                        (q.title && q.title.toLowerCase().includes(searchTerm)) ||
+                        (q.modelAnswer && q.modelAnswer.toLowerCase().includes(searchTerm))
+                    );
+                }
+                
+                // Apply difficulty filter
+                if (filters.difficulty !== 'all') {
+                    filtered = filtered.filter(q => q.difficulty === filters.difficulty);
+                }
+                
+                // Apply type filter
+                if (filters.type !== 'all') {
+                    filtered = filtered.filter(q => q.category === filters.type);
+                }
+                
+                return filtered;
+            }
+            
+            // Update filter summary UI
+            function updateFilterSummary(originalCount, filteredCount, filters) {
+                if (!filterSummary) return;
+                
+                if (originalCount === filteredCount && 
+                    filters.search === '' && 
+                    filters.difficulty === 'all' && 
+                    filters.type === 'all') {
+                    filterSummary.classList.add('hidden');
+                    return;
+                }
+                
+                filterSummary.classList.remove('hidden');
+                if (totalCount) totalCount.textContent = originalCount;
+                if (filteredCountEl) filteredCountEl.textContent = filteredCount;
+                
+                // Show active filters
+                const activeFiltersList = [];
+                if (filters.search) activeFiltersList.push(`Search: "${filters.search}"`);
+                if (filters.difficulty !== 'all') activeFiltersList.push(`Difficulty: ${filters.difficulty}`);
+                if (filters.type !== 'all') activeFiltersList.push(`Type: ${filters.type}`);
+                
+                if (activeFilters) {
+                    if (activeFiltersList.length > 0) {
+                        activeFilters.textContent = `(${activeFiltersList.join(', ')})`;
+                    } else {
+                        activeFilters.textContent = '';
+                    }
+                }
+            }
+            
+            function loadQuestions(industryId) {
+                console.log(`Loading questions for ${industryId}...`);
+                
+                // Check if questions.js is loaded
+                if (typeof window.questionBank === 'undefined') {
+                    showError('Data not loaded. Please check if questions.js is properly loaded.');
+                    return;
+                }
+                
+                const allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) {
+                    showError('Invalid data format.');
+                    return;
+                }
+                
+                console.log(`Total questions: ${allQuestions.length}`);
+                
+                // Get industry-filtered questions
+                const industryQuestions = allQuestions.filter(q => q.role === industryId);
+                console.log(`Questions for ${industryId} before filters: ${industryQuestions.length}`);
+                
+                // Apply current filters
+                filteredQuestions = applyFilters(allQuestions, currentFilters, industryId);
+                currentQuestions = filteredQuestions;
+                
+                // Update stats and filter summary
+                if (industryStats) {
+                    industryStats.textContent = `${currentQuestions.length} questions available`;
+                }
+                
+                updateFilterSummary(industryQuestions.length, currentQuestions.length, currentFilters);
+                
+                if (currentQuestions.length === 0) {
+                    showNoQuestions(industryId);
+                } else {
+                    // Start with first question
+                    currentIndex = 0;
+                    loadQuestion(currentIndex);
+                    
+                    // Show answer input section
+                    answerInputSection.style.display = 'block';
+                    answerToggleSection.style.display = 'flex';
+                    navigationControls.style.display = 'flex';
+                }
+            }
+            
+            function loadQuestion(index) {
+                if (index < 0 || index >= currentQuestions.length) {
+                    console.error('Invalid question index:', index);
+                    return;
+                }
+                
+                const question = currentQuestions[index];
+                console.log(`Loading question ${index + 1}/${currentQuestions.length}:`, question.title);
+                
+                // Mark question as viewed
+                markQuestionViewed(question);
+                
+                // Reset answer state
+                answerRevealed = false;
+                answerRevealSection.style.display = 'none';
+                conciseAnswerContent.style.display = 'block';
+                detailedAnswerContent.style.display = 'none';
+                
+                // Update answer type buttons
+                document.querySelectorAll('.answer-type-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.dataset.answerType === 'concise') {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // Clear textarea
+                if (answerTextarea) {
+                    answerTextarea.value = '';
+                }
+                
+                // Get progress for this question
+                const progress = getQuestionProgress(question);
+                
+                // Update question display
+                questionDisplay.innerHTML = `
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                        <div class="question-number">Question ${index + 1} of ${currentQuestions.length}</div>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            ${progress.viewed ? '<span class="tag viewed" style="background-color: #dbeafe; color: #1e40af;"><i class="fas fa-eye"></i> Viewed</span>' : ''}
+                            ${progress.answered ? '<span class="tag answered" style="background-color: #d1fae5; color: #065f46;"><i class="fas fa-check-circle"></i> Answered</span>' : ''}
+                            <button class="bookmark-btn" data-question-id="${question.id}" style="background: none; border: none; color: ${progress.bookmarked ? '#f59e0b' : '#9ca3af'}; cursor: pointer; font-size: 1.2rem;" title="${progress.bookmarked ? 'Remove bookmark' : 'Bookmark this question'}">
+                                <i class="${progress.bookmarked ? 'fas' : 'far'} fa-star"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="question-text">${escapeHtml(question.question || '')}</div>
+                    <div class="question-tags">
+                        <span class="tag ${question.category || 'technical'}">${question.category || 'technical'}</span>
+                        <span class="tag difficulty">${question.difficulty || 'medium'}</span>
+                        ${question.frequencyScore ? '<span class="tag frequent">High Frequency</span>' : ''}
+                    </div>
+                `;
+                
+                // Load answers
+                loadAnswers(question);
+                
+                // Update navigation
+                updateNavigation(index);
+                
+                // Update progress
+                updateProgress(index);
+                
+                // Update progress bar
+                updateProgressBar();
+            }
+            
+            function loadAnswers(question) {
+                // Get concise answer
+                let conciseAnswer = 'No concise answer available.';
+                if (question.answers?.concise?.answer) {
+                    conciseAnswer = question.answers.concise.answer;
+                } else if (question.conciseAnswer) {
+                    conciseAnswer = question.conciseAnswer;
+                }
+                
+                // Get detailed answer
+                let detailedAnswer = 'No detailed answer available.';
+                if (question.answers?.detailed?.answer) {
+                    detailedAnswer = question.answers.detailed.answer;
+                } else if (question.modelAnswer) {
+                    detailedAnswer = question.modelAnswer;
+                } else if (question.answer) {
+                    detailedAnswer = question.answer;
+                }
+                
+                // Format concise answer as bullet points if it's long
+                if (conciseAnswer.length > 100 && !conciseAnswer.includes('<ul>')) {
+                    const sentences = conciseAnswer.split('. ').filter(s => s.trim());
+                    if (sentences.length > 1) {
+                        conciseAnswer = '<ul>' + sentences.map(s => `<li>${s.trim()}.</li>`).join('') + '</ul>';
+                    }
+                }
+                
+                // Update answer content
+                conciseAnswerContent.innerHTML = conciseAnswer;
+                detailedAnswerContent.innerHTML = detailedAnswer;
+            }
+            
+            function updateNavigation(index) {
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === currentQuestions.length - 1;
+                
+                // Update button text for last question
+                if (index === currentQuestions.length - 1) {
+                    nextBtn.innerHTML = 'Finish <i class="fas fa-check"></i>';
+                } else {
+                    nextBtn.innerHTML = 'Next <i class="fas fa-chevron-right"></i>';
+                }
+            }
+            
+            function updateProgress(index) {
+                if (progressText) {
+                    progressText.textContent = `Question ${index + 1} of ${currentQuestions.length}`;
+                }
+                
+                if (progressSubtext) {
+                    const industryNames = {
+                        'ib': 'Investment Banking',
+                        'am': 'Asset Management',
+                        'quant': 'Quantitative Finance',
+                        'markets': 'Sales & Trading'
+                    };
+                    const industryName = industryNames[currentIndustry] || 'Finance';
+                    progressSubtext.textContent = `${industryName} • ${currentQuestions[index].difficulty || 'medium'} difficulty`;
+                }
+            }
+            
+            function bindEvents() {
+                // Reveal answer button
+                if (revealAnswerBtn) {
+                    revealAnswerBtn.addEventListener('click', function() {
+                        answerRevealed = true;
+                        answerRevealSection.style.display = 'block';
+                        this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                        
+                        // Mark as answered
+                        if (currentQuestions && currentQuestions[currentIndex]) {
+                            const question = currentQuestions[currentIndex];
+                            const userAnswer = answerTextarea ? answerTextarea.value : '';
+                            markQuestionAnswered(question, userAnswer);
+                        }
+                        
+                        // Change to "Hide Answer" after reveal
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                        
+                        this.addEventListener('click', function hideAnswer() {
+                            answerRevealSection.style.display = 'none';
+                            this.innerHTML = originalText;
+                            this.removeEventListener('click', hideAnswer);
+                            this.addEventListener('click', function() {
+                                answerRevealed = true;
+                                answerRevealSection.style.display = 'block';
+                                this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                            });
+                        }, { once: true });
+                    });
+                }
+                
+                // Show hint button
+                if (showHintBtn) {
+                    showHintBtn.addEventListener('click', function() {
+                        alert('Hint: Try to break down the question into key concepts. For technical questions, think about formulas or frameworks you know.');
+                    });
+                }
+                
+                // Clear answer button
+                if (clearAnswerBtn) {
+                    clearAnswerBtn.addEventListener('click', function() {
+                        if (answerTextarea) {
+                            answerTextarea.value = '';
+                        }
+                    });
+                }
+                
+                // Navigation buttons
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', function() {
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            loadQuestion(currentIndex);
+                        }
+                    });
+                }
+                
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', function() {
+                        if (currentIndex < currentQuestions.length - 1) {
+                            currentIndex++;
+                            loadQuestion(currentIndex);
+                        } else {
+                            // Last question - show completion message
+                            alert('Congratulations! You have completed all questions in this category. Great job!');
+                        }
+                    });
+                }
+                
+                // Answer type toggle buttons
+                document.querySelectorAll('.answer-type-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        const answerType = this.dataset.answerType;
+                        
+                        // Update active button
+                        document.querySelectorAll('.answer-type-btn').forEach(b => {
+                            b.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                        
+                        // Show/hide answer content
+                        if (answerType === 'concise') {
+                            conciseAnswerContent.style.display = 'block';
+                            detailedAnswerContent.style.display = 'none';
+                        } else {
+                            conciseAnswerContent.style.display = 'none';
+                            detailedAnswerContent.style.display = 'block';
+                        }
+                    });
+                });
+                
+                // Mobile menu toggle
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navList = document.querySelector('.nav-list');
+                
+                if (menuToggle && navList) {
+                    menuToggle.addEventListener('click', function() {
+                        navList.classList.toggle('show');
+                    });
+                }
+                
+                // Search and Filter events
+                // Search input with debounce
+                if (questionSearch) {
+                    let searchTimeout;
+                    questionSearch.addEventListener('input', function() {
+                        clearTimeout(searchTimeout);
+                        searchTimeout = setTimeout(() => {
+                            currentFilters.search = this.value.trim().toLowerCase();
+                            refreshQuestions();
+                        }, 300);
+                    });
+                }
+                
+                // Difficulty filter
+                if (difficultyFilter) {
+                    difficultyFilter.addEventListener('change', function() {
+                        currentFilters.difficulty = this.value;
+                        refreshQuestions();
+                    });
+                }
+                
+                // Type filter
+                if (typeFilter) {
+                    typeFilter.addEventListener('change', function() {
+                        currentFilters.type = this.value;
+                        refreshQuestions();
+                    });
+                }
+                
+                // Clear filters button
+                if (clearFiltersBtn) {
+                    clearFiltersBtn.addEventListener('click', function() {
+                        currentFilters = {
+                            search: '',
+                            difficulty: 'all',
+                            type: 'all'
+                        };
+                        
+                        // Reset UI
+                        if (questionSearch) questionSearch.value = '';
+                        if (difficultyFilter) difficultyFilter.value = 'all';
+                        if (typeFilter) typeFilter.value = 'all';
+                        
+                        refreshQuestions();
+                    });
+                }
+                
+                // Bookmark button event delegation
+                document.addEventListener('click', function(e) {
+                    if (e.target.closest('.bookmark-btn')) {
+                        const btn = e.target.closest('.bookmark-btn');
+                        const questionId = btn.dataset.questionId;
+                        const currentQuestion = currentQuestions[currentIndex];
+                        if (currentQuestion && currentQuestion.id == questionId) {
+                            toggleBookmark(currentQuestion);
+                            // Update button appearance
+                            const isBookmarked = getQuestionProgress(currentQuestion).bookmarked;
+                            btn.innerHTML = `<i class="${isBookmarked ? 'fas' : 'far'} fa-star"></i>`;
+                            btn.style.color = isBookmarked ? '#f59e0b' : '#9ca3af';
+                            btn.title = isBookmarked ? 'Remove bookmark' : 'Bookmark this question';
+                        }
+                    }
+                });
+                
+                // Toggle help panel
+                if (toggleHelp) {
+                    toggleHelp.addEventListener('click', function() {
+                        const helpPanel = this.closest('.container.mb-6');
+                        if (helpPanel) {
+                            helpPanel.style.display = 'none';
+                            // Save preference
+                            localStorage.setItem('finterview_hide_help', 'true');
+                        }
+                    });
+                }
+            }
+            
+            // Refresh questions based on current filters
+            function refreshQuestions() {
+                const allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) return;
+                
+                // Apply filters
+                filteredQuestions = applyFilters(allQuestions, currentFilters, currentIndustry);
+                currentQuestions = filteredQuestions;
+                
+                // Update UI
+                if (currentQuestions.length === 0) {
+                    showNoQuestions(currentIndustry);
+                    answerInputSection.style.display = 'none';
+                    answerToggleSection.style.display = 'none';
+                    navigationControls.style.display = 'none';
+                } else {
+                    // Reset to first question
+                    currentIndex = 0;
+                    loadQuestion(currentIndex);
+                    
+                    // Show sections
+                    answerInputSection.style.display = 'block';
+                    answerToggleSection.style.display = 'flex';
+                    navigationControls.style.display = 'flex';
+                }
+                
+                // Update stats
+                if (industryStats) {
+                    industryStats.textContent = `${currentQuestions.length} questions available`;
+                }
+                
+                // Update filter summary
+                const industryQuestions = allQuestions.filter(q => q.role === currentIndustry);
+                updateFilterSummary(industryQuestions.length, currentQuestions.length, currentFilters);
+                
+                // Update progress bar
+                updateProgressBar();
+            }
+            
+            function showError(message) {
+                console.error('Error:', message);
+                
+                questionDisplay.innerHTML = `
+                    <div class="error-state">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Error Loading Questions</h3>
+                        <p>${escapeHtml(message)}</p>
+                        <button class="btn btn-primary" onclick="window.location.reload()" style="margin-top: 1rem;">
+                            <i class="fas fa-sync-alt"></i> Reload Page
+                        </button>
+                    </div>
+                `;
+            }
+            
+            function showNoQuestions(industryId) {
+                questionDisplay.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-search"></i>
+                        <h3>No Questions Available</h3>
+                        <p>There are no questions for ${industryId} yet.</p>
+                        <p>Try another industry or check back later.</p>
+                        <div style="margin-top: 1.5rem;">
+                            <button class="btn btn-outline" onclick="window.location.href='industry.html?industry=ib'">
+                                <i class="fas fa-building"></i> Try Investment Banking
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            function escapeHtml(text) {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+            
+            // Global functions
+            window.practiceMode = {
+                reload: function() {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const industryId = urlParams.get('industry') || 'ib';
+                    loadQuestions(industryId);
+                },
+                nextQuestion: function() {
+                    if (currentIndex < currentQuestions.length - 1) {
+                        currentIndex++;
+                        loadQuestion(currentIndex);
+                    }
+                },
+                prevQuestion: function() {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        loadQuestion(currentIndex);
+                    }
+                }
+            };
+            
+        })();
+    </script>
+</body>
+</html>
