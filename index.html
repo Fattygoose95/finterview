@@ -155,9 +155,8 @@
                     </button>
                     <ul class="nav-list">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="industry.html">Industry Questions</a></li>
-                        <li><a href="high-frequency-list.html">High Frequency</a></li>
-                        <li><a href="random-list.html">Random Practice</a></li>
+                        <li><a href="industry-practice.html">Practice Mode</a></li>
+                        <li><a href="industry-filter.html">Advanced Filters</a></li>
                     </ul>
                 </nav>
             </div>
@@ -414,23 +413,23 @@
                 const randomBtn = card.querySelector('.random-btn');
                 const filterBtn = card.querySelector('.filter-btn');
                 
-                // Random Practice: jump to practice mode (no filters needed)
+                // Random Practice: jump to practice mode page
                 randomBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
                     const industryId = this.getAttribute('data-industry');
-                    window.location.href = `industry.html?industry=${industryId}`;
+                    window.location.href = `industry-practice.html?industry=${industryId}`;
                 });
                 
-                // Browse with Filters: jump to random practice page (has filters)
+                // Browse with Filters: jump to advanced filters page
                 filterBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
                     const industryId = this.getAttribute('data-industry');
-                    window.location.href = `random-list.html?industry=${industryId}`;
+                    window.location.href = `industry-filter.html?industry=${industryId}`;
                 });
                 
-                // Optional: Keep card clickable as backup (goes to industry practice page)
+                // Optional: Keep card clickable as backup (goes to practice mode page)
                 card.addEventListener('click', function() {
-                    window.location.href = `industry.html?industry=${industry.id}`;
+                    window.location.href = `industry-practice.html?industry=${industry.id}`;
                 });
                 
                 industryGrid.appendChild(card);

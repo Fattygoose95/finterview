@@ -439,9 +439,8 @@
                     </button>
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="industry.html" class="active">Practice Mode</a></li>
-                        <li><a href="high-frequency-list.html">High Frequency</a></li>
-                        <li><a href="random-list.html">Random Practice</a></li>
+                        <li><a href="industry-practice.html" class="active">Practice Mode</a></li>
+                        <li><a href="industry-filter.html">Advanced Filters</a></li>
                     </ul>
                 </nav>
             </div>
@@ -566,14 +565,7 @@
                                 </button>
                             </div>
                             
-                            <div class="answer-toggle-section" id="answerToggleSection" style="display: none;">
-                                <button class="answer-type-btn active" data-answer-type="concise">
-                                    <i class="fas fa-bars"></i> Concise Answer
-                                </button>
-                                <button class="answer-type-btn" data-answer-type="detailed">
-                                    <i class="fas fa-file-alt"></i> Detailed Answer
-                                </button>
-                            </div>
+
                         </div>
                     </div>
 
@@ -648,9 +640,8 @@
                     
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="industry.html">Practice</a></li>
-                        <li><a href="high-frequency-list.html">High Frequency</a></li>
-                        <li><a href="random-list.html">Random</a></li>
+                        <li><a href="industry-practice.html">Practice Mode</a></li>
+                        <li><a href="industry-filter.html">Advanced Filters</a></li>
                     </ul>
                 </div>
                 
@@ -680,7 +671,6 @@
             const answerInputSection = document.getElementById('answerInputSection');
             const answerRevealSection = document.getElementById('answerRevealSection');
             const navigationControls = document.getElementById('navigationControls');
-            const answerToggleSection = document.getElementById('answerToggleSection');
             
             // Buttons
             const revealAnswerBtn = document.getElementById('revealAnswerBtn');
@@ -1055,6 +1045,19 @@
                 // Apply current filters
                 filteredQuestions = applyFilters(allQuestions, currentFilters, industryId);
                 currentQuestions = filteredQuestions;
+            // Shuffle array for random order
+            function shuffleArray(array) {
+                const shuffled = [...array];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+                return shuffled;
+            }
+            
+            // Apply random shuffle to questions
+            filteredQuestions = shuffleArray(filteredQuestions);
+            
                 
                 // Update stats and filter summary
                 if (industryStats) {
@@ -1072,7 +1075,6 @@
                     
                     // Show answer input section
                     answerInputSection.style.display = 'block';
-                    answerToggleSection.style.display = 'flex';
                     navigationControls.style.display = 'flex';
                 }
             }
@@ -1398,7 +1400,6 @@
                 if (currentQuestions.length === 0) {
                     showNoQuestions(currentIndustry);
                     answerInputSection.style.display = 'none';
-                    answerToggleSection.style.display = 'none';
                     navigationControls.style.display = 'none';
                 } else {
                     // Reset to first question
@@ -1407,7 +1408,6 @@
                     
                     // Show sections
                     answerInputSection.style.display = 'block';
-                    answerToggleSection.style.display = 'flex';
                     navigationControls.style.display = 'flex';
                 }
                 
