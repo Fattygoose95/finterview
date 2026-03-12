@@ -9464,6 +9464,2391 @@ const questionBank = [
         "source": "generated"
       }
     }
+  },
+  {
+    "id": "gen_am_1773306469454_0",
+    "role": "am",
+    "title": "Fundamental Question 1",
+    "question": "Explain the difference between active and passive investment management.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_1",
+    "role": "am",
+    "title": "Fundamental Question 2",
+    "question": "What factors would you consider when constructing a diversified portfolio?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_2",
+    "role": "am",
+    "title": "Fundamental Question 3",
+    "question": "How do you evaluate the performance of an investment fund?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_3",
+    "role": "am",
+    "title": "Fundamental Question 4",
+    "question": "Describe the key principles of modern portfolio theory.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_4",
+    "role": "am",
+    "title": "Fundamental Question 5",
+    "question": "What is asset allocation and why is it important?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_5",
+    "role": "am",
+    "title": "Fundamental Question 6",
+    "question": "How do you assess the risk of a particular investment?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_6",
+    "role": "am",
+    "title": "Fundamental Question 7",
+    "question": "What are the main types of mutual funds and their characteristics?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_7",
+    "role": "am",
+    "title": "Fundamental Question 8",
+    "question": "Explain the concept of alpha and beta in investment management.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_8",
+    "role": "am",
+    "title": "Fundamental Question 9",
+    "question": "How does dollar-cost averaging work as an investment strategy?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_9",
+    "role": "am",
+    "title": "Fundamental Question 10",
+    "question": "What role does macroeconomic analysis play in asset management?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_10",
+    "role": "am",
+    "title": "Fundamental Question 11",
+    "question": "Explain the difference between active and passive investment management.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_11",
+    "role": "am",
+    "title": "Fundamental Question 12",
+    "question": "What factors would you consider when constructing a diversified portfolio?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_12",
+    "role": "am",
+    "title": "Fundamental Question 13",
+    "question": "How do you evaluate the performance of an investment fund?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_13",
+    "role": "am",
+    "title": "Fundamental Question 14",
+    "question": "Describe the key principles of modern portfolio theory.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_14",
+    "role": "am",
+    "title": "Fundamental Question 15",
+    "question": "What is asset allocation and why is it important?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_15",
+    "role": "am",
+    "title": "Fundamental Question 16",
+    "question": "How do you assess the risk of a particular investment?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_16",
+    "role": "am",
+    "title": "Fundamental Question 17",
+    "question": "What are the main types of mutual funds and their characteristics?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_17",
+    "role": "am",
+    "title": "Fundamental Question 18",
+    "question": "Explain the concept of alpha and beta in investment management.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_18",
+    "role": "am",
+    "title": "Fundamental Question 19",
+    "question": "How does dollar-cost averaging work as an investment strategy?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_am_1773306469454_19",
+    "role": "am",
+    "title": "Fundamental Question 20",
+    "question": "What role does macroeconomic analysis play in asset management?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_0",
+    "role": "quant",
+    "title": "Fundamental Question 1",
+    "question": "Explain the concept of value at risk (VaR) and its limitations.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_1",
+    "role": "quant",
+    "title": "Fundamental Question 2",
+    "question": "What is Monte Carlo simulation and how is it used in finance?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_2",
+    "role": "quant",
+    "title": "Fundamental Question 3",
+    "question": "Describe the Black-Scholes option pricing model.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_3",
+    "role": "quant",
+    "title": "Fundamental Question 4",
+    "question": "How do you test the validity of a quantitative trading strategy?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_4",
+    "role": "quant",
+    "title": "Fundamental Question 5",
+    "question": "What is statistical arbitrage and how does it work?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_5",
+    "role": "quant",
+    "title": "Fundamental Question 6",
+    "question": "Explain the concept of mean reversion in financial markets.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_6",
+    "role": "quant",
+    "title": "Fundamental Question 7",
+    "question": "How are machine learning techniques applied in quantitative finance?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_7",
+    "role": "quant",
+    "title": "Fundamental Question 8",
+    "question": "What is high-frequency trading and what are its key characteristics?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_8",
+    "role": "quant",
+    "title": "Fundamental Question 9",
+    "question": "Describe the process of backtesting a trading algorithm.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_9",
+    "role": "quant",
+    "title": "Fundamental Question 10",
+    "question": "What are the main challenges in building quantitative models?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_10",
+    "role": "quant",
+    "title": "Fundamental Question 11",
+    "question": "Explain the concept of value at risk (VaR) and its limitations.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_11",
+    "role": "quant",
+    "title": "Fundamental Question 12",
+    "question": "What is Monte Carlo simulation and how is it used in finance?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_12",
+    "role": "quant",
+    "title": "Fundamental Question 13",
+    "question": "Describe the Black-Scholes option pricing model.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_13",
+    "role": "quant",
+    "title": "Fundamental Question 14",
+    "question": "How do you test the validity of a quantitative trading strategy?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_14",
+    "role": "quant",
+    "title": "Fundamental Question 15",
+    "question": "What is statistical arbitrage and how does it work?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_15",
+    "role": "quant",
+    "title": "Fundamental Question 16",
+    "question": "Explain the concept of mean reversion in financial markets.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_16",
+    "role": "quant",
+    "title": "Fundamental Question 17",
+    "question": "How are machine learning techniques applied in quantitative finance?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_17",
+    "role": "quant",
+    "title": "Fundamental Question 18",
+    "question": "What is high-frequency trading and what are its key characteristics?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_18",
+    "role": "quant",
+    "title": "Fundamental Question 19",
+    "question": "Describe the process of backtesting a trading algorithm.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_quant_1773306469454_19",
+    "role": "quant",
+    "title": "Fundamental Question 20",
+    "question": "What are the main challenges in building quantitative models?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_0",
+    "role": "markets",
+    "title": "Fundamental Question 1",
+    "question": "Explain the role of a market maker in financial markets.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_1",
+    "role": "markets",
+    "title": "Fundamental Question 2",
+    "question": "What factors affect the bid-ask spread in trading?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_2",
+    "role": "markets",
+    "title": "Fundamental Question 3",
+    "question": "How do you manage risk when taking trading positions?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_3",
+    "role": "markets",
+    "title": "Fundamental Question 4",
+    "question": "Describe the different types of orders in securities trading.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_4",
+    "role": "markets",
+    "title": "Fundamental Question 5",
+    "question": "What is algorithmic trading and how does it work?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_5",
+    "role": "markets",
+    "title": "Fundamental Question 6",
+    "question": "How do you analyze market liquidity for a particular security?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_6",
+    "role": "markets",
+    "title": "Fundamental Question 7",
+    "question": "Explain the concept of market microstructure.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_7",
+    "role": "markets",
+    "title": "Fundamental Question 8",
+    "question": "What are the key differences between equity and fixed income trading?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_8",
+    "role": "markets",
+    "title": "Fundamental Question 9",
+    "question": "How do you develop and test a trading idea?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_9",
+    "role": "markets",
+    "title": "Fundamental Question 10",
+    "question": "What role does technology play in modern trading operations?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_10",
+    "role": "markets",
+    "title": "Fundamental Question 11",
+    "question": "Explain the role of a market maker in financial markets.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_11",
+    "role": "markets",
+    "title": "Fundamental Question 12",
+    "question": "What factors affect the bid-ask spread in trading?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_12",
+    "role": "markets",
+    "title": "Fundamental Question 13",
+    "question": "How do you manage risk when taking trading positions?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_13",
+    "role": "markets",
+    "title": "Fundamental Question 14",
+    "question": "Describe the different types of orders in securities trading.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_14",
+    "role": "markets",
+    "title": "Fundamental Question 15",
+    "question": "What is algorithmic trading and how does it work?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_15",
+    "role": "markets",
+    "title": "Fundamental Question 16",
+    "question": "How do you analyze market liquidity for a particular security?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_16",
+    "role": "markets",
+    "title": "Fundamental Question 17",
+    "question": "Explain the concept of market microstructure.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_17",
+    "role": "markets",
+    "title": "Fundamental Question 18",
+    "question": "What are the key differences between equity and fixed income trading?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_18",
+    "role": "markets",
+    "title": "Fundamental Question 19",
+    "question": "How do you develop and test a trading idea?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_markets_1773306469454_19",
+    "role": "markets",
+    "title": "Fundamental Question 20",
+    "question": "What role does technology play in modern trading operations?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_0",
+    "role": "risk",
+    "title": "Fundamental Question 1",
+    "question": "What are the main types of financial risk that institutions face?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_1",
+    "role": "risk",
+    "title": "Fundamental Question 2",
+    "question": "Explain the concept of credit risk and how it is measured.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_2",
+    "role": "risk",
+    "title": "Fundamental Question 3",
+    "question": "How do you calculate and interpret value at risk (VaR)?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_3",
+    "role": "risk",
+    "title": "Fundamental Question 4",
+    "question": "What is stress testing and why is it important for risk management?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_4",
+    "role": "risk",
+    "title": "Fundamental Question 5",
+    "question": "Describe the key principles of the Basel regulatory framework.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_5",
+    "role": "risk",
+    "title": "Fundamental Question 6",
+    "question": "How do you assess operational risk in a financial institution?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_6",
+    "role": "risk",
+    "title": "Fundamental Question 7",
+    "question": "What is counterparty risk and how is it managed?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_7",
+    "role": "risk",
+    "title": "Fundamental Question 8",
+    "question": "Explain the difference between systematic and unsystematic risk.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_8",
+    "role": "risk",
+    "title": "Fundamental Question 9",
+    "question": "How do you establish an appropriate risk appetite for an organization?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_9",
+    "role": "risk",
+    "title": "Fundamental Question 10",
+    "question": "What role does risk management play in the overall business strategy?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_10",
+    "role": "risk",
+    "title": "Fundamental Question 11",
+    "question": "What are the main types of financial risk that institutions face?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_11",
+    "role": "risk",
+    "title": "Fundamental Question 12",
+    "question": "Explain the concept of credit risk and how it is measured.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_12",
+    "role": "risk",
+    "title": "Fundamental Question 13",
+    "question": "How do you calculate and interpret value at risk (VaR)?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_13",
+    "role": "risk",
+    "title": "Fundamental Question 14",
+    "question": "What is stress testing and why is it important for risk management?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_14",
+    "role": "risk",
+    "title": "Fundamental Question 15",
+    "question": "Describe the key principles of the Basel regulatory framework.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_15",
+    "role": "risk",
+    "title": "Fundamental Question 16",
+    "question": "How do you assess operational risk in a financial institution?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_16",
+    "role": "risk",
+    "title": "Fundamental Question 17",
+    "question": "What is counterparty risk and how is it managed?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_17",
+    "role": "risk",
+    "title": "Fundamental Question 18",
+    "question": "Explain the difference between systematic and unsystematic risk.",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_18",
+    "role": "risk",
+    "title": "Fundamental Question 19",
+    "question": "How do you establish an appropriate risk appetite for an organization?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_risk_1773306469454_19",
+    "role": "risk",
+    "title": "Fundamental Question 20",
+    "question": "What role does risk management play in the overall business strategy?",
+    "difficulty": "easy",
+    "category": "technical",
+    "frequencyScore": 2,
+    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+    "answers": {
+      "detailed": {
+        "answer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "entry-level",
+      "fundamentals",
+      "basic"
+    ],
+    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details."
+  },
+  {
+    "id": "gen_general_1773306469454_0",
+    "role": "general",
+    "title": "General Finance Question 1",
+    "question": "Why are you interested in a career in finance?",
+    "difficulty": "easy",
+    "category": "behavioral",
+    "frequencyScore": 3,
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
+    "answers": {
+      "detailed": {
+        "answer": "Behavioral questions like this are designed to assess your motivation, industry awareness, and professional mindset. Structure your answer with: 1) Clear motivation and personal connection to finance, 2) Specific examples of how you stay informed and engaged with the industry, 3) Demonstration of ethical awareness and professional standards, 4) Connection between your skills/experience and the requirements of finance careers.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "behavioral",
+      "general",
+      "motivation",
+      "ethics"
+    ],
+    "notes": "Cross-industry general question for behavioral assessment."
+  },
+  {
+    "id": "gen_general_1773306469454_1",
+    "role": "general",
+    "title": "General Finance Question 2",
+    "question": "How do you stay informed about financial markets and economic developments?",
+    "difficulty": "easy",
+    "category": "behavioral",
+    "frequencyScore": 3,
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
+    "answers": {
+      "detailed": {
+        "answer": "Behavioral questions like this are designed to assess your motivation, industry awareness, and professional mindset. Structure your answer with: 1) Clear motivation and personal connection to finance, 2) Specific examples of how you stay informed and engaged with the industry, 3) Demonstration of ethical awareness and professional standards, 4) Connection between your skills/experience and the requirements of finance careers.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "behavioral",
+      "general",
+      "motivation",
+      "ethics"
+    ],
+    "notes": "Cross-industry general question for behavioral assessment."
+  },
+  {
+    "id": "gen_general_1773306469454_2",
+    "role": "general",
+    "title": "General Finance Question 3",
+    "question": "Describe a time when you had to analyze complex financial information.",
+    "difficulty": "easy",
+    "category": "behavioral",
+    "frequencyScore": 3,
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
+    "answers": {
+      "detailed": {
+        "answer": "Behavioral questions like this are designed to assess your motivation, industry awareness, and professional mindset. Structure your answer with: 1) Clear motivation and personal connection to finance, 2) Specific examples of how you stay informed and engaged with the industry, 3) Demonstration of ethical awareness and professional standards, 4) Connection between your skills/experience and the requirements of finance careers.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "behavioral",
+      "general",
+      "motivation",
+      "ethics"
+    ],
+    "notes": "Cross-industry general question for behavioral assessment."
+  },
+  {
+    "id": "gen_general_1773306469454_3",
+    "role": "general",
+    "title": "General Finance Question 4",
+    "question": "What do you consider the most important ethical consideration in finance?",
+    "difficulty": "easy",
+    "category": "behavioral",
+    "frequencyScore": 3,
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
+    "answers": {
+      "detailed": {
+        "answer": "Behavioral questions like this are designed to assess your motivation, industry awareness, and professional mindset. Structure your answer with: 1) Clear motivation and personal connection to finance, 2) Specific examples of how you stay informed and engaged with the industry, 3) Demonstration of ethical awareness and professional standards, 4) Connection between your skills/experience and the requirements of finance careers.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "behavioral",
+      "general",
+      "motivation",
+      "ethics"
+    ],
+    "notes": "Cross-industry general question for behavioral assessment."
+  },
+  {
+    "id": "gen_general_1773306469454_4",
+    "role": "general",
+    "title": "General Finance Question 5",
+    "question": "How do you approach learning new financial concepts or technologies?",
+    "difficulty": "easy",
+    "category": "behavioral",
+    "frequencyScore": 3,
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
+    "answers": {
+      "detailed": {
+        "answer": "Behavioral questions like this are designed to assess your motivation, industry awareness, and professional mindset. Structure your answer with: 1) Clear motivation and personal connection to finance, 2) Specific examples of how you stay informed and engaged with the industry, 3) Demonstration of ethical awareness and professional standards, 4) Connection between your skills/experience and the requirements of finance careers.",
+        "format": "detailed",
+        "source": "generated"
+      },
+      "concise": {
+        "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
+        "format": "concise",
+        "source": "generated"
+      }
+    },
+    "tags": [
+      "behavioral",
+      "general",
+      "motivation",
+      "ethics"
+    ],
+    "notes": "Cross-industry general question for behavioral assessment."
   }
 
 ];
