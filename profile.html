@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - finterview</title>
+    <meta name="description" content="Track your finterview progress, accuracy, and learning trends. Personal profile for finance interview preparation.">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Unified Design CSS -->
+    <link rel="stylesheet" href="css/unified-design.css">
+    
+    <!-- Profile-specific CSS -->
+    <style>
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--spacing-2xl) var(--spacing-lg);
+        }
+        
+        .profile-header {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+        
+        .profile-header h1 {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+        
+        .profile-header p {
+            font-size: var(--font-size-lg);
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-3xl);
+        }
+        
+        .stat-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-standard);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .stat-card .stat-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .stat-card .stat-value {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .stat-card .stat-label {
+            font-size: var(--font-size-md);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .stat-card .stat-subtext {
+            font-size: var(--font-size-sm);
+            color: var(--text-tertiary);
+        }
+        
+        .charts-section {
+            margin-bottom: var(--spacing-3xl);
+        }
+        
+        .section-title {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-xl);
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .section-title i {
+            color: var(--primary-color);
+        }
+        
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+        }
+        
+        .chart-container {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .chart-title {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-lg);
+            color: var(--text-primary);
+        }
+        
+        .simple-chart {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        
+        .bar-chart {
+            display: flex;
+            align-items: flex-end;
+            gap: var(--spacing-sm);
+            height: 200px;
+            padding: var(--spacing-md) 0;
+        }
+        
+        .bar {
+            flex: 1;
+            background: var(--primary-color);
+            border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+            position: relative;
+            transition: var(--transition-standard);
+        }
+        
+        .bar:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+        
+        .bar-label {
+            position: absolute;
+            bottom: -25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+        }
+        
+        .bar-value {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+        }
+        
+        .recent-activity {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-xl);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .activity-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .activity-item {
+            padding: var(--spacing-md) 0;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+        
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        
+        .activity-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: var(--font-size-lg);
+        }
+        
+        .activity-content {
+            flex: 1;
+        }
+        
+        .activity-title {
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .activity-details {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            display: flex;
+            gap: var(--spacing-md);
+        }
+        
+        .activity-time {
+            color: var(--text-tertiary);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: var(--spacing-3xl) var(--spacing-xl);
+            color: var(--text-secondary);
+        }
+        
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-lg);
+            color: var(--border-color);
+        }
+        
+        .empty-state h3 {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+        
+        .empty-state p {
+            max-width: 400px;
+            margin: 0 auto var(--spacing-xl);
+        }
+        
+        .accuracy-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            background: var(--success-light);
+            color: var(--success-color);
+            border-radius: var(--border-radius-full);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .accuracy-badge.low {
+            background: var(--error-light);
+            color: var(--error-color);
+        }
+        
+        .accuracy-badge.medium {
+            background: var(--warning-light);
+            color: var(--warning-color);
+        }
+        
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-container {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Finance Interview Preparation</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry-practice.html">Practice Mode</a></li>
+                        <li><a href="industry-filter.html">Advanced Filters</a></li>
+                        <li class="active"><a href="profile.html">My Profile</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="profile-container">
+                <div class="profile-header">
+                    <h1><i class="fas fa-user-circle"></i> My Learning Profile</h1>
+                    <p>Track your progress, accuracy, and improvement over time in finance interview preparation</p>
+                </div>
+                
+                <!-- Stats Overview -->
+                <div class="stats-grid" id="statsGrid">
+                    <!-- Stats will be populated by JavaScript -->
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">Questions Viewed</div>
+                        <div class="stat-subtext">Total questions you've seen</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">Questions Answered</div>
+                        <div class="stat-subtext">Questions you've responded to</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-value">0%</div>
+                        <div class="stat-label">Estimated Accuracy</div>
+                        <div class="stat-subtext">Based on your practice</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">Practice Sessions</div>
+                        <div class="stat-subtext">Days you practiced</div>
+                    </div>
+                </div>
+                
+                <!-- Charts Section -->
+                <div class="charts-section">
+                    <h2 class="section-title"><i class="fas fa-chart-bar"></i> Performance Analytics</h2>
+                    
+                    <div class="charts-grid">
+                        <!-- Industry Distribution -->
+                        <div class="chart-container">
+                            <h3 class="chart-title">Questions by Industry</h3>
+                            <div class="simple-chart">
+                                <div class="bar-chart" id="industryChart">
+                                    <!-- Bars will be populated by JavaScript -->
+                                    <div class="empty-state">
+                                        <p>No data available yet. Start practicing to see your distribution!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Difficulty Distribution -->
+                        <div class="chart-container">
+                            <h3 class="chart-title">Questions by Difficulty</h3>
+                            <div class="simple-chart">
+                                <div class="bar-chart" id="difficultyChart">
+                                    <!-- Bars will be populated by JavaScript -->
+                                    <div class="empty-state">
+                                        <p>No data available yet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recent Activity -->
+                <div class="charts-section">
+                    <h2 class="section-title"><i class="fas fa-history"></i> Recent Activity</h2>
+                    
+                    <div class="recent-activity">
+                        <div id="recentActivity">
+                            <!-- Activity list will be populated by JavaScript -->
+                            <div class="empty-state">
+                                <i class="fas fa-inbox"></i>
+                                <h3>No activity yet</h3>
+                                <p>Your practice activity will appear here once you start answering questions.</p>
+                                <a href="industry-practice.html" class="btn primary">
+                                    <i class="fas fa-play"></i> Start Practicing
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Improvement Tips -->
+                <div class="charts-section">
+                    <h2 class="section-title"><i class="fas fa-lightbulb"></i> Improvement Tips</h2>
+                    
+                    <div class="recent-activity">
+                        <div id="improvementTips">
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Balance Your Practice</div>
+                                    <div class="activity-details">
+                                        <span>Try to practice questions from all industries, not just your favorites.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Track Your Progress</div>
+                                    <div class="activity-details">
+                                        <span>Check this profile regularly to see how you're improving over time.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-redo"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <div class="activity-title">Review Difficult Questions</div>
+                                    <div class="activity-details">
+                                        <span>Revisit questions you found challenging to reinforce your learning.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h3>finterview</h3>
+                        <p>Finance interview preparation platform</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Practice</h4>
+                        <ul>
+                            <li><a href="industry-practice.html">Practice Mode</a></li>
+                            <li><a href="industry-filter.html">Advanced Filters</a></li>
+                            <li><a href="high-frequency-list.html">High Frequency</a></li>
+                            <li><a href="random-list.html">Random Practice</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="profile.html">My Profile</a></li>
+                            <li><a href="diagnostic.html">Data Diagnostic</a></li>
+                            <li><a href="#" onclick="alert('Finance Bro AI coming soon!')">Finance Bro AI</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#" onclick="alert('Feedback feature coming soon!')">Give Feedback</a></li>
+                            <li><a href="#" onclick="alert('Report issue feature coming soon!')">Report Issue</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>© 2024 finterview. Track your finance interview preparation progress and accuracy.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Profile Statistics and Analytics
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load questions data for reference
+            const questionBank = window.questionBank || [];
+            
+            // Load user progress from localStorage
+            function loadUserProgress() {
+                const progressJson = localStorage.getItem('finterview_progress');
+                if (progressJson) {
+                    try {
+                        return JSON.parse(progressJson);
+                    } catch (e) {
+                        console.error('Error parsing progress data:', e);
+                        return {};
+                    }
+                }
+                return {};
+            }
+            
+            // Calculate statistics
+            function calculateStats(userProgress) {
+                const stats = {
+                    totalViewed: 0,
+                    totalAnswered: 0,
+                    byIndustry: {},
+                    byDifficulty: {},
+                    recentActivity: [],
+                    practiceDays: new Set(),
+                    estimatedAccuracy: 0
+                };
+                
+                // Process each question in progress
+                Object.entries(userProgress).forEach(([questionKey, progress]) => {
+                    // Extract question ID from key (format: "role_id")
+                    const parts = questionKey.split('_');
+                    if (parts.length < 2) return;
+                    
+                    const role = parts[0];
+                    const id = parts.slice(1).join('_');
+                    
+                    // Find question in bank for additional info
+                    const question = questionBank.find(q => q.role === role && q.id === id);
+                    
+                    if (progress.viewed) {
+                        stats.totalViewed++;
+                        
+                        // Track by industry
+                        stats.byIndustry[role] = (stats.byIndustry[role] || 0) + 1;
+                        
+                        // Track by difficulty if available
+                        if (question && question.difficulty) {
+                            stats.byDifficulty[question.difficulty] = (stats.byDifficulty[question.difficulty] || 0) + 1;
+                        }
+                        
+                        // Track practice days
+                        if (progress.viewedAt) {
+                            const date = new Date(progress.viewedAt).toISOString().split('T')[0];
+                            stats.practiceDays.add(date);
+                        }
+                    }
+                    
+                    if (progress.answered) {
+                        stats.totalAnswered++;
+                        
+                        // Add to recent activity
+                        if (question && progress.answeredAt) {
+                            stats.recentActivity.push({
+                                questionId: question.id,
+                                title: question.title || `Question ${id}`,
+                                industry: role,
+                                difficulty: question.difficulty || 'medium',
+                                timestamp: progress.answeredAt,
+                                type: 'answered'
+                            });
+                        }
+                    }
+                });
+                
+                // Calculate estimated accuracy (simplified: answered questions with userAnswer)
+                let answeredWithResponse = 0;
+                Object.values(userProgress).forEach(progress => {
+                    if (progress.answered && progress.userAnswer && progress.userAnswer.trim().length > 10) {
+                        answeredWithResponse++;
+                    }
+                });
+                
+                if (stats.totalAnswered > 0) {
+                    // Simple heuristic: if user provided substantial answer, consider it "accurate"
+                    stats.estimatedAccuracy = Math.round((answeredWithResponse / stats.totalAnswered) * 100);
+                }
+                
+                // Sort recent activity by timestamp
+                stats.recentActivity.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+                
+                // Limit to 10 most recent
+                stats.recentActivity = stats.recentActivity.slice(0, 10);
+                
+                return stats;
+            }
+            
+            // Update stats cards
+            function updateStatsCards(stats) {
+                const statsGrid = document.getElementById('statsGrid');
+                if (!statsGrid) return;
+                
+                const statCards = statsGrid.querySelectorAll('.stat-card');
+                
+                // Questions Viewed
+                if (statCards[0]) {
+                    statCards[0].querySelector('.stat-value').textContent = stats.totalViewed;
+                    statCards[0].querySelector('.stat-subtext').textContent = 
+                        `Total questions you've seen${stats.totalViewed === 0 ? ' - start practicing!' : ''}`;
+                }
+                
+                // Questions Answered
+                if (statCards[1]) {
+                    statCards[1].querySelector('.stat-value').textContent = stats.totalAnswered;
+                    statCards[1].querySelector('.stat-subtext').textContent = 
+                        `Questions you've responded to${stats.totalAnswered === 0 ? ' - try answering some questions!' : ''}`;
+                }
+                
+                // Estimated Accuracy
+                if (statCards[2]) {
+                    statCards[2].querySelector('.stat-value').textContent = `${stats.estimatedAccuracy}%`;
+                    const accuracyBadge = statCards[2].querySelector('.accuracy-badge');
+                    
+                    // Add accuracy badge class based on level
+                    let accuracyClass = 'high';
+                    if (stats.estimatedAccuracy < 50) accuracyClass = 'low';
+                    else if (stats.estimatedAccuracy < 75) accuracyClass = 'medium';
+                    
+                    statCards[2].querySelector('.stat-subtext').innerHTML = 
+                        `Based on your practice <span class="accuracy-badge ${accuracyClass}">${getAccuracyLabel(stats.estimatedAccuracy)}</span>`;
+                }
+                
+                // Practice Sessions
+                if (statCards[3]) {
+                    statCards[3].querySelector('.stat-value').textContent = stats.practiceDays.size;
+                    statCards[3].querySelector('.stat-subtext').textContent = 
+                        `Days you practiced${stats.practiceDays.size === 0 ? ' - make today your first!' : ''}`;
+                }
+            }
+            
+            function getAccuracyLabel(accuracy) {
+                if (accuracy >= 75) return 'High';
+                if (accuracy >= 50) return 'Medium';
+                if (accuracy > 0) return 'Needs Improvement';
+                return 'No Data';
+            }
+            
+            // Update industry chart
+            function updateIndustryChart(stats) {
+                const industryChart = document.getElementById('industryChart');
+                if (!industryChart) return;
+                
+                const industryData = stats.byIndustry;
+                if (Object.keys(industryData).length === 0) {
+                    return; // Keep empty state
+                }
+                
+                // Clear empty state
+                industryChart.innerHTML = '';
+                
+                // Industry names mapping
+                const industryNames = {
+                    'ib': 'Investment Banking',
+                    'am': 'Asset Management',
+                    'quant': 'Quantitative Finance',
+                    'markets': 'Sales & Trading',
+                    'risk': 'Risk Management',
+                    'corpfin': 'Corporate Finance',
+                    'fintech': 'FinTech',
+                    'fo': 'Family Office',
+                    'general': 'General'
+                };
+                
+                // Get max value for scaling
+                const maxValue = Math.max(...Object.values(industryData));
+                
+                // Create bars
+                Object.entries(industryData).forEach(([industry, count]) => {
+                    const barHeight = maxValue > 0 ? (count / maxValue) * 100 : 0;
+                    
+                    const bar = document.createElement('div');
+                    bar.className = 'bar';
+                    bar.style.height = `${barHeight}%`;
+                    bar.style.backgroundColor = getIndustryColor(industry);
+                    
+                    const barValue = document.createElement('div');
+                    barValue.className = 'bar-value';
+                    barValue.textContent = count;
+                    
+                    const barLabel = document.createElement('div');
+                    barLabel.className = 'bar-label';
+                    barLabel.textContent = industryNames[industry] || industry;
+                    
+                    bar.appendChild(barValue);
+                    bar.appendChild(barLabel);
+                    industryChart.appendChild(bar);
+                });
+            }
+            
+            // Update difficulty chart
+            function updateDifficultyChart(stats) {
+                const difficultyChart = document.getElementById('difficultyChart');
+                if (!difficultyChart) return;
+                
+                const difficultyData = stats.byDifficulty;
+                if (Object.keys(difficultyData).length === 0) {
+                    return; // Keep empty state
+                }
+                
+                // Clear empty state
+                difficultyChart.innerHTML = '';
+                
+                // Difficulty names mapping
+                const difficultyNames = {
+                    'easy': 'Easy',
+                    'medium': 'Medium',
+                    'hard': 'Hard'
+                };
+                
+                // Get max value for scaling
+                const maxValue = Math.max(...Object.values(difficultyData));
+                
+                // Create bars
+                Object.entries(difficultyData).forEach(([difficulty, count]) => {
+                    const barHeight = maxValue > 0 ? (count / maxValue) * 100 : 0;
+                    
+                    const bar = document.createElement('div');
+                    bar.className = 'bar';
+                    bar.style.height = `${barHeight}%`;
+                    bar.style.backgroundColor = getDifficultyColor(difficulty);
+                    
+                    const barValue = document.createElement('div');
+                    barValue.className = 'bar-value';
+                    barValue.textContent = count;
+                    
+                    const barLabel = document.createElement('div');
+                    barLabel.className = 'bar-label';
+                    barLabel.textContent = difficultyNames[difficulty] || difficulty;
+                    
+                    bar.appendChild(barValue);
+                    bar.appendChild(barLabel);
+                    difficultyChart.appendChild(bar);
+                });
+            }
+            
+            // Update recent activity
+            function updateRecentActivity(stats) {
+                const recentActivity = document.getElementById('recentActivity');
+                if (!recentActivity) return;
+                
+                if (stats.recentActivity.length === 0) {
+                    return; // Keep empty state
+                }
+                
+                // Clear empty state
+                recentActivity.innerHTML = '';
+                
+                // Create activity list
+                const activityList = document.createElement('ul');
+                activityList.className = 'activity-list';
+                
+                stats.recentActivity.forEach(activity => {
+                    const activityItem = document.createElement('li');
+                    activityItem.className = 'activity-item';
+                    
+                    // Format timestamp
+                    const date = new Date(activity.timestamp);
+                    const timeString = date.toLocaleDateString('en-US', { 
+                        month: 'short', 
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    });
+                    
+                    // Industry icon
+                    const industryIcon = getIndustryIcon(activity.industry);
+                    
+                    activityItem.innerHTML = `
+                        <div class="activity-icon">
+                            <i class="${industryIcon}"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">Answered: ${activity.title}</div>
+                            <div class="activity-details">
+                                <span>${getIndustryName(activity.industry)}</span>
+                                <span>•</span>
+                                <span>${activity.difficulty} difficulty</span>
+                                <span class="activity-time">${timeString}</span>
+                            </div>
+                        </div>
+                    `;
+                    
+                    activityList.appendChild(activityItem);
+                });
+                
+                recentActivity.appendChild(activityList);
+            }
+            
+            // Helper functions
+            function getIndustryColor(industry) {
+                const colors = {
+                    'ib': '#3498db',
+                    'am': '#2ecc71',
+                    'quant': '#9b59b6',
+                    'markets': '#e74c3c',
+                    'risk': '#f39c12',
+                    'corpfin': '#1abc9c',
+                    'fintech': '#34495e',
+                    'fo': '#d35400',
+                    'general': '#7f8c8d'
+                };
+                return colors[industry] || '#3498db';
+            }
+            
+            function getDifficultyColor(difficulty) {
+                const colors = {
+                    'easy': '#2ecc71',
+                    'medium': '#f39c12',
+                    'hard': '#e74c3c'
+                };
+                return colors[difficulty] || '#3498db';
+            }
+            
+            function getIndustryIcon(industry) {
+                const icons = {
+                    'ib': 'fas fa-building',
+                    'am': 'fas fa-chart-pie',
+                    'quant': 'fas fa-calculator',
+                    'markets': 'fas fa-chart-line',
+                    'risk': 'fas fa-shield-alt',
+                    'corpfin': 'fas fa-briefcase',
+                    'fintech': 'fas fa-laptop-code',
+                    'fo': 'fas fa-home',
+                    'general': 'fas fa-question-circle'
+                };
+                return icons[industry] || 'fas fa-question-circle';
+            }
+            
+            function getIndustryName(industry) {
+                const names = {
+                    'ib': 'Investment Banking',
+                    'am': 'Asset Management',
+                    'quant': 'Quantitative Finance',
+                    'markets': 'Sales & Trading',
+                    'risk': 'Risk Management',
+                    'corpfin': 'Corporate Finance',
+                    'fintech': 'FinTech',
+                    'fo': 'Family Office',
+                    'general': 'General Finance'
+                };
+                return names[industry] || industry;
+            }
+            
+            // Initialize
+            function initProfile() {
+                const userProgress = loadUserProgress();
+                const stats = calculateStats(userProgress);
+                
+                updateStatsCards(stats);
+                updateIndustryChart(stats);
+                updateDifficultyChart(stats);
+                updateRecentActivity(stats);
+                
+                // Update page title with stats
+                if (stats.totalViewed > 0) {
+                    document.title = `My Profile (${stats.totalViewed} questions) - finterview`;
+                }
+            }
+            
+            // Initialize profile
+            initProfile();
+            
+            // Add refresh button functionality
+            const refreshBtn = document.createElement('button');
+            refreshBtn.className = 'btn secondary';
+            refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Stats';
+            refreshBtn.style.marginTop = '20px';
+            refreshBtn.addEventListener('click', function() {
+                refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Refreshing...';
+                setTimeout(() => {
+                    initProfile();
+                    refreshBtn.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh Stats';
+                }, 500);
+            });
+            
+            // Add refresh button to profile header
+            const profileHeader = document.querySelector('.profile-header');
+            if (profileHeader) {
+                profileHeader.appendChild(refreshBtn);
+            }
+            
+            // Mobile menu toggle
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+            
+            if (menuToggle && mainNav) {
+                menuToggle.addEventListener('click', function() {
+                    mainNav.classList.toggle('show');
+                });
+            }
+        });
+    </script>
+    
+    <!-- Load questions.js for question data reference -->
+    <script src="questions.js"></script>
+</body>
+</html>
