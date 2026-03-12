@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js"></script>
+    <script src="questions.js?v=20260312_1430"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -274,6 +274,122 @@
         .error-state i { color: var(--error-color); }
         .empty-state i { color: var(--text-light); }
         
+        /* Utility Classes for Search/Filter */
+        .filter-controls {
+            background-color: var(--white);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+        }
+        
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .flex-row { flex-direction: row; }
+        .flex-1 { flex: 1; }
+        
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .ml-2 { margin-left: 0.5rem; }
+        
+        .w-full { width: 100%; }
+        
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+        
+        .transform { transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
+        .-translate-y-1\/2 { --tw-translate-y: -50%; }
+        
+        .left-3 { left: 0.75rem; }
+        .top-1\/2 { top: 50%; }
+        
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .pl-10 { padding-left: 2.5rem; }
+        .pr-4 { padding-right: 1rem; }
+        
+        .border { border-width: 1px; border-style: solid; }
+        .border-gray-300 { border-color: #d1d5db; }
+        
+        .rounded-lg { border-radius: 0.5rem; }
+        
+        .focus\:ring-2:focus { box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); }
+        .focus\:ring-blue-500:focus { --tw-ring-color: #3b82f6; }
+        .focus\:border-blue-500:focus { border-color: #3b82f6; }
+        
+        .bg-gray-100 { background-color: #f3f4f6; }
+        .text-gray-700 { color: #374151; }
+        .text-gray-600 { color: #4b5563; }
+        .text-gray-400 { color: #9ca3af; }
+        
+        .hover\:bg-gray-200:hover { background-color: #e5e7eb; }
+        
+        .hidden { display: none; }
+        
+        .text-sm { font-size: 0.875rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-3xl { font-size: 1.875rem; }
+        
+        .font-bold { font-weight: 700; }
+        
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .items-center { align-items: center; }
+        
+        /* Progress tags */
+        .tag.viewed {
+            background-color: #dbeafe !important;
+            color: #1e40af !important;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .tag.answered {
+            background-color: #d1fae5 !important;
+            color: #065f46 !important;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        /* Bookmark button */
+        .bookmark-btn {
+            background: none;
+            border: none;
+            color: #9ca3af;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: color 0.2s ease;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        
+        .bookmark-btn:hover {
+            color: #f59e0b;
+            background-color: rgba(245, 158, 11, 0.1);
+        }
+        
+        .bookmark-btn.bookmarked {
+            color: #f59e0b;
+        }
+        
+        @media (min-width: 768px) {
+            .md\:flex-row {
+                flex-direction: row;
+            }
+        }
+        
         @media (max-width: 768px) {
             .question-display {
                 padding: var(--spacing-xl);
@@ -344,6 +460,75 @@
                         <div class="industry-badge" id="industryBadge">Loading...</div>
                     </div>
                     <p class="text-lg text-secondary" id="industryStats">Loading questions...</p>
+                </div>
+
+                <!-- Search and Filter Controls -->
+                <div class="filter-controls mb-6">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <!-- Search Box -->
+                        <div class="flex-1">
+                            <div class="relative">
+                                <input 
+                                    type="text" 
+                                    id="questionSearch" 
+                                    placeholder="Search questions (e.g., 'M&A', 'valuation', 'DCF')..."
+                                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                >
+                                <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
+                                    <i class="fas fa-search text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Filter Dropdowns -->
+                        <div class="flex gap-2">
+                            <!-- Difficulty Filter -->
+                            <select id="difficultyFilter" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="all">All Difficulty</option>
+                                <option value="easy">Easy</option>
+                                <option value="medium">Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                            
+                            <!-- Question Type Filter -->
+                            <select id="typeFilter" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="all">All Types</option>
+                                <option value="technical">Technical</option>
+                                <option value="behavioral">Behavioral</option>
+                                <option value="case">Case Study</option>
+                                <option value="market">Market Insight</option>
+                            </select>
+                            
+                            <!-- Clear Filters Button -->
+                            <button id="clearFilters" class="px-4 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 flex items-center gap-2">
+                                <i class="fas fa-times"></i> Clear
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Filter Summary -->
+                    <div class="mt-4 hidden" id="filterSummary">
+                        <div class="text-sm text-gray-600">
+                            Showing <span id="filteredCount">0</span> of <span id="totalCount">0</span> questions
+                            <span id="activeFilters" class="ml-2"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- Progress Bar -->
+                    <div class="mt-4" id="progressBarContainer">
+                        <div class="text-sm text-gray-600 mb-1">Your Progress</div>
+                        <div class="flex items-center gap-2">
+                            <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                <div id="progressBar" class="h-full bg-green-500 transition-all duration-300" style="width: 0%"></div>
+                            </div>
+                            <div class="text-xs text-gray-600" id="progressTextSmall">0/0</div>
+                        </div>
+                        <div class="text-xs text-gray-500 mt-1 flex justify-between">
+                            <span id="viewedCount">0 viewed</span>
+                            <span id="answeredCount">0 answered</span>
+                            <span id="bookmarkedCount">0 bookmarked</span>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Practice Container -->
@@ -431,6 +616,27 @@
             </div>
         </main>
 
+        <!-- Keyboard Shortcuts Help -->
+        <div class="container mb-6">
+            <div class="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-1">Keyboard Shortcuts</h4>
+                        <div class="text-sm text-gray-600 flex flex-wrap gap-3">
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">←</kbd> Previous question</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">→</kbd> Next question</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">Space</kbd> Reveal/Hide answer</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">1</kbd> Concise answer</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">2</kbd> Detailed answer</span>
+                        </div>
+                    </div>
+                    <button id="toggleHelp" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <footer class="main-footer">
             <div class="container">
@@ -497,6 +703,39 @@
             const progressText = document.getElementById('progressText');
             const progressSubtext = document.getElementById('progressSubtext');
             
+            // Search and Filter elements
+            const questionSearch = document.getElementById('questionSearch');
+            const difficultyFilter = document.getElementById('difficultyFilter');
+            const typeFilter = document.getElementById('typeFilter');
+            const clearFiltersBtn = document.getElementById('clearFilters');
+            const filterSummary = document.getElementById('filterSummary');
+            const filteredCountEl = document.getElementById('filteredCount');
+            const totalCount = document.getElementById('totalCount');
+            const activeFilters = document.getElementById('activeFilters');
+            
+            // Progress elements
+            const progressBarContainer = document.getElementById('progressBarContainer');
+            const progressBar = document.getElementById('progressBar');
+            const progressTextSmall = document.getElementById('progressTextSmall');
+            const viewedCount = document.getElementById('viewedCount');
+            const answeredCount = document.getElementById('answeredCount');
+            const bookmarkedCount = document.getElementById('bookmarkedCount');
+            
+            // Help toggle
+            const toggleHelp = document.getElementById('toggleHelp');
+            
+            // Filter state
+            let currentFilters = {
+                search: '',
+                difficulty: 'all',
+                type: 'all'
+            };
+            let filteredQuestions = [];
+            
+            // Progress tracking
+            const PROGRESS_STORAGE_KEY = 'finterview_progress';
+            let userProgress = {};
+            
             // Initialize
             document.addEventListener('DOMContentLoaded', init);
             
@@ -518,6 +757,201 @@
                 
                 // Bind events
                 bindEvents();
+                
+                // Load user progress
+                loadProgress();
+                
+                // Add keyboard shortcuts
+                document.addEventListener('keydown', handleKeyboardShortcuts);
+                
+                // Check if help should be hidden
+                if (localStorage.getItem('finterview_hide_help') === 'true') {
+                    const helpPanel = document.querySelector('.container.mb-6');
+                    if (helpPanel) {
+                        helpPanel.style.display = 'none';
+                    }
+                }
+            }
+            
+            // Keyboard shortcuts for navigation
+            function handleKeyboardShortcuts(e) {
+                // Only handle if not typing in textarea
+                if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') {
+                    return;
+                }
+                
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            loadQuestion(currentIndex);
+                            e.preventDefault();
+                        }
+                        break;
+                    case 'ArrowRight':
+                        if (currentIndex < currentQuestions.length - 1) {
+                            currentIndex++;
+                            loadQuestion(currentIndex);
+                            e.preventDefault();
+                        }
+                        break;
+                    case ' ':
+                        // Space to reveal/hide answer
+                        if (answerRevealSection.style.display === 'none') {
+                            // Reveal answer
+                            answerRevealed = true;
+                            answerRevealSection.style.display = 'block';
+                            // Mark as answered
+                            if (currentQuestions && currentQuestions[currentIndex]) {
+                                const question = currentQuestions[currentIndex];
+                                const userAnswer = answerTextarea ? answerTextarea.value : '';
+                                markQuestionAnswered(question, userAnswer);
+                            }
+                        } else {
+                            // Hide answer
+                            answerRevealSection.style.display = 'none';
+                        }
+                        e.preventDefault();
+                        break;
+                    case '1':
+                        // Switch to concise answer
+                        document.querySelectorAll('.answer-type-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.dataset.answerType === 'concise') {
+                                btn.classList.add('active');
+                            }
+                        });
+                        conciseAnswerContent.style.display = 'block';
+                        detailedAnswerContent.style.display = 'none';
+                        break;
+                    case '2':
+                        // Switch to detailed answer
+                        document.querySelectorAll('.answer-type-btn').forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.dataset.answerType === 'detailed') {
+                                btn.classList.add('active');
+                            }
+                        });
+                        conciseAnswerContent.style.display = 'none';
+                        detailedAnswerContent.style.display = 'block';
+                        break;
+                }
+            }
+            
+            // Progress tracking functions
+            function loadProgress() {
+                try {
+                    const saved = localStorage.getItem(PROGRESS_STORAGE_KEY);
+                    if (saved) {
+                        userProgress = JSON.parse(saved);
+                        console.log('Loaded user progress:', Object.keys(userProgress).length, 'items');
+                    }
+                } catch (e) {
+                    console.error('Failed to load progress:', e);
+                    userProgress = {};
+                }
+            }
+            
+            function saveProgress() {
+                try {
+                    localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(userProgress));
+                } catch (e) {
+                    console.error('Failed to save progress:', e);
+                }
+            }
+            
+            function getQuestionKey(question) {
+                return `${question.role}_${question.id}`;
+            }
+            
+            function markQuestionViewed(question) {
+                const key = getQuestionKey(question);
+                if (!userProgress[key]) {
+                    userProgress[key] = { viewed: true, viewedAt: new Date().toISOString() };
+                } else {
+                    userProgress[key].viewed = true;
+                    userProgress[key].viewedAt = new Date().toISOString();
+                }
+                saveProgress();
+                updateProgressBar();
+            }
+            
+            function markQuestionAnswered(question, userAnswer) {
+                const key = getQuestionKey(question);
+                if (!userProgress[key]) {
+                    userProgress[key] = { answered: true, answeredAt: new Date().toISOString() };
+                } else {
+                    userProgress[key].answered = true;
+                    userProgress[key].answeredAt = new Date().toISOString();
+                }
+                if (userAnswer) {
+                    userProgress[key].userAnswer = userAnswer.substring(0, 500); // Limit length
+                }
+                saveProgress();
+                updateProgressBar();
+            }
+            
+            function getQuestionProgress(question) {
+                const key = getQuestionKey(question);
+                return userProgress[key] || {};
+            }
+            
+            function toggleBookmark(question) {
+                const key = getQuestionKey(question);
+                if (!userProgress[key]) {
+                    userProgress[key] = { bookmarked: true, bookmarkedAt: new Date().toISOString() };
+                } else {
+                    userProgress[key].bookmarked = !userProgress[key].bookmarked;
+                    userProgress[key].bookmarkedAt = userProgress[key].bookmarked ? new Date().toISOString() : null;
+                }
+                saveProgress();
+                console.log(`Question ${question.id} bookmarked: ${userProgress[key].bookmarked}`);
+                updateProgressBar();
+            }
+            
+            // Update progress bar display
+            function updateProgressBar() {
+                if (!progressBarContainer || !currentQuestions.length) return;
+                
+                const industryQuestions = currentQuestions;
+                let viewed = 0;
+                let answered = 0;
+                let bookmarked = 0;
+                
+                // Count progress for current industry questions
+                industryQuestions.forEach(q => {
+                    const progress = getQuestionProgress(q);
+                    if (progress.viewed) viewed++;
+                    if (progress.answered) answered++;
+                    if (progress.bookmarked) bookmarked++;
+                });
+                
+                // Calculate percentages
+                const total = industryQuestions.length;
+                const viewedPercent = total > 0 ? Math.round((viewed / total) * 100) : 0;
+                const answeredPercent = total > 0 ? Math.round((answered / total) * 100) : 0;
+                
+                // Update progress bar (use answered percentage)
+                if (progressBar) {
+                    progressBar.style.width = `${answeredPercent}%`;
+                }
+                
+                // Update text
+                if (progressTextSmall) {
+                    progressTextSmall.textContent = `${answered}/${total}`;
+                }
+                
+                if (viewedCount) {
+                    viewedCount.textContent = `${viewed} viewed`;
+                }
+                
+                if (answeredCount) {
+                    answeredCount.textContent = `${answered} answered`;
+                }
+                
+                if (bookmarkedCount) {
+                    bookmarkedCount.textContent = `${bookmarked} bookmarked`;
+                }
             }
             
             function updateIndustryInfo(industryId) {
@@ -539,6 +973,64 @@
                 if (industryStats) industryStats.textContent = 'Loading practice questions...';
             }
             
+            // Apply search and filters to questions
+            function applyFilters(questions, filters, industryId) {
+                let filtered = questions.filter(q => q.role === industryId);
+                
+                // Apply search filter
+                if (filters.search && filters.search.trim()) {
+                    const searchTerm = filters.search.toLowerCase().trim();
+                    filtered = filtered.filter(q => 
+                        (q.question && q.question.toLowerCase().includes(searchTerm)) ||
+                        (q.title && q.title.toLowerCase().includes(searchTerm)) ||
+                        (q.modelAnswer && q.modelAnswer.toLowerCase().includes(searchTerm))
+                    );
+                }
+                
+                // Apply difficulty filter
+                if (filters.difficulty !== 'all') {
+                    filtered = filtered.filter(q => q.difficulty === filters.difficulty);
+                }
+                
+                // Apply type filter
+                if (filters.type !== 'all') {
+                    filtered = filtered.filter(q => q.category === filters.type);
+                }
+                
+                return filtered;
+            }
+            
+            // Update filter summary UI
+            function updateFilterSummary(originalCount, filteredCount, filters) {
+                if (!filterSummary) return;
+                
+                if (originalCount === filteredCount && 
+                    filters.search === '' && 
+                    filters.difficulty === 'all' && 
+                    filters.type === 'all') {
+                    filterSummary.classList.add('hidden');
+                    return;
+                }
+                
+                filterSummary.classList.remove('hidden');
+                if (totalCount) totalCount.textContent = originalCount;
+                if (filteredCountEl) filteredCountEl.textContent = filteredCount;
+                
+                // Show active filters
+                const activeFiltersList = [];
+                if (filters.search) activeFiltersList.push(`Search: "${filters.search}"`);
+                if (filters.difficulty !== 'all') activeFiltersList.push(`Difficulty: ${filters.difficulty}`);
+                if (filters.type !== 'all') activeFiltersList.push(`Type: ${filters.type}`);
+                
+                if (activeFilters) {
+                    if (activeFiltersList.length > 0) {
+                        activeFilters.textContent = `(${activeFiltersList.join(', ')})`;
+                    } else {
+                        activeFilters.textContent = '';
+                    }
+                }
+            }
+            
             function loadQuestions(industryId) {
                 console.log(`Loading questions for ${industryId}...`);
                 
@@ -556,14 +1048,20 @@
                 
                 console.log(`Total questions: ${allQuestions.length}`);
                 
-                // Filter by industry
-                currentQuestions = allQuestions.filter(q => q.role === industryId);
-                console.log(`Questions for ${industryId}: ${currentQuestions.length}`);
+                // Get industry-filtered questions
+                const industryQuestions = allQuestions.filter(q => q.role === industryId);
+                console.log(`Questions for ${industryId} before filters: ${industryQuestions.length}`);
                 
-                // Update stats
+                // Apply current filters
+                filteredQuestions = applyFilters(allQuestions, currentFilters, industryId);
+                currentQuestions = filteredQuestions;
+                
+                // Update stats and filter summary
                 if (industryStats) {
                     industryStats.textContent = `${currentQuestions.length} questions available`;
                 }
+                
+                updateFilterSummary(industryQuestions.length, currentQuestions.length, currentFilters);
                 
                 if (currentQuestions.length === 0) {
                     showNoQuestions(industryId);
@@ -588,6 +1086,9 @@
                 const question = currentQuestions[index];
                 console.log(`Loading question ${index + 1}/${currentQuestions.length}:`, question.title);
                 
+                // Mark question as viewed
+                markQuestionViewed(question);
+                
                 // Reset answer state
                 answerRevealed = false;
                 answerRevealSection.style.display = 'none';
@@ -607,9 +1108,21 @@
                     answerTextarea.value = '';
                 }
                 
+                // Get progress for this question
+                const progress = getQuestionProgress(question);
+                
                 // Update question display
                 questionDisplay.innerHTML = `
-                    <div class="question-number">Question ${index + 1} of ${currentQuestions.length}</div>
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                        <div class="question-number">Question ${index + 1} of ${currentQuestions.length}</div>
+                        <div style="display: flex; gap: 0.5rem; align-items: center;">
+                            ${progress.viewed ? '<span class="tag viewed" style="background-color: #dbeafe; color: #1e40af;"><i class="fas fa-eye"></i> Viewed</span>' : ''}
+                            ${progress.answered ? '<span class="tag answered" style="background-color: #d1fae5; color: #065f46;"><i class="fas fa-check-circle"></i> Answered</span>' : ''}
+                            <button class="bookmark-btn" data-question-id="${question.id}" style="background: none; border: none; color: ${progress.bookmarked ? '#f59e0b' : '#9ca3af'}; cursor: pointer; font-size: 1.2rem;" title="${progress.bookmarked ? 'Remove bookmark' : 'Bookmark this question'}">
+                                <i class="${progress.bookmarked ? 'fas' : 'far'} fa-star"></i>
+                            </button>
+                        </div>
+                    </div>
                     <div class="question-text">${escapeHtml(question.question || '')}</div>
                     <div class="question-tags">
                         <span class="tag ${question.category || 'technical'}">${question.category || 'technical'}</span>
@@ -626,6 +1139,9 @@
                 
                 // Update progress
                 updateProgress(index);
+                
+                // Update progress bar
+                updateProgressBar();
             }
             
             function loadAnswers(question) {
@@ -697,6 +1213,13 @@
                         answerRevealed = true;
                         answerRevealSection.style.display = 'block';
                         this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                        
+                        // Mark as answered
+                        if (currentQuestions && currentQuestions[currentIndex]) {
+                            const question = currentQuestions[currentIndex];
+                            const userAnswer = answerTextarea ? answerTextarea.value : '';
+                            markQuestionAnswered(question, userAnswer);
+                        }
                         
                         // Change to "Hide Answer" after reveal
                         const originalText = this.innerHTML;
@@ -784,6 +1307,121 @@
                         navList.classList.toggle('show');
                     });
                 }
+                
+                // Search and Filter events
+                // Search input with debounce
+                if (questionSearch) {
+                    let searchTimeout;
+                    questionSearch.addEventListener('input', function() {
+                        clearTimeout(searchTimeout);
+                        searchTimeout = setTimeout(() => {
+                            currentFilters.search = this.value.trim().toLowerCase();
+                            refreshQuestions();
+                        }, 300);
+                    });
+                }
+                
+                // Difficulty filter
+                if (difficultyFilter) {
+                    difficultyFilter.addEventListener('change', function() {
+                        currentFilters.difficulty = this.value;
+                        refreshQuestions();
+                    });
+                }
+                
+                // Type filter
+                if (typeFilter) {
+                    typeFilter.addEventListener('change', function() {
+                        currentFilters.type = this.value;
+                        refreshQuestions();
+                    });
+                }
+                
+                // Clear filters button
+                if (clearFiltersBtn) {
+                    clearFiltersBtn.addEventListener('click', function() {
+                        currentFilters = {
+                            search: '',
+                            difficulty: 'all',
+                            type: 'all'
+                        };
+                        
+                        // Reset UI
+                        if (questionSearch) questionSearch.value = '';
+                        if (difficultyFilter) difficultyFilter.value = 'all';
+                        if (typeFilter) typeFilter.value = 'all';
+                        
+                        refreshQuestions();
+                    });
+                }
+                
+                // Bookmark button event delegation
+                document.addEventListener('click', function(e) {
+                    if (e.target.closest('.bookmark-btn')) {
+                        const btn = e.target.closest('.bookmark-btn');
+                        const questionId = btn.dataset.questionId;
+                        const currentQuestion = currentQuestions[currentIndex];
+                        if (currentQuestion && currentQuestion.id == questionId) {
+                            toggleBookmark(currentQuestion);
+                            // Update button appearance
+                            const isBookmarked = getQuestionProgress(currentQuestion).bookmarked;
+                            btn.innerHTML = `<i class="${isBookmarked ? 'fas' : 'far'} fa-star"></i>`;
+                            btn.style.color = isBookmarked ? '#f59e0b' : '#9ca3af';
+                            btn.title = isBookmarked ? 'Remove bookmark' : 'Bookmark this question';
+                        }
+                    }
+                });
+                
+                // Toggle help panel
+                if (toggleHelp) {
+                    toggleHelp.addEventListener('click', function() {
+                        const helpPanel = this.closest('.container.mb-6');
+                        if (helpPanel) {
+                            helpPanel.style.display = 'none';
+                            // Save preference
+                            localStorage.setItem('finterview_hide_help', 'true');
+                        }
+                    });
+                }
+            }
+            
+            // Refresh questions based on current filters
+            function refreshQuestions() {
+                const allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) return;
+                
+                // Apply filters
+                filteredQuestions = applyFilters(allQuestions, currentFilters, currentIndustry);
+                currentQuestions = filteredQuestions;
+                
+                // Update UI
+                if (currentQuestions.length === 0) {
+                    showNoQuestions(currentIndustry);
+                    answerInputSection.style.display = 'none';
+                    answerToggleSection.style.display = 'none';
+                    navigationControls.style.display = 'none';
+                } else {
+                    // Reset to first question
+                    currentIndex = 0;
+                    loadQuestion(currentIndex);
+                    
+                    // Show sections
+                    answerInputSection.style.display = 'block';
+                    answerToggleSection.style.display = 'flex';
+                    navigationControls.style.display = 'flex';
+                }
+                
+                // Update stats
+                if (industryStats) {
+                    industryStats.textContent = `${currentQuestions.length} questions available`;
+                }
+                
+                // Update filter summary
+                const industryQuestions = allQuestions.filter(q => q.role === currentIndustry);
+                updateFilterSummary(industryQuestions.length, currentQuestions.length, currentFilters);
+                
+                // Update progress bar
+                updateProgressBar();
             }
             
             function showError(message) {
