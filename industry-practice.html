@@ -1732,12 +1732,12 @@
     
     <div class="finance-bro-assistant">
         <button class="assistant-toggle" id="assistantToggle">
-            <i class="fas fa-user-tie"></i>
+            <i class="fas fa-vest-patched"></i>
         </button>
         
         <div class="assistant-panel" id="assistantPanel">
             <div class="assistant-header">
-                <i class="fas fa-user-tie"></i>
+                <i class="fas fa-vest-patched"></i>
                 <h4>Finance Bro Assistant</h4>
                 <button class="assistant-close" id="assistantClose">
                     <i class="fas fa-times"></i>
@@ -1871,22 +1871,25 @@
             // Get response from knowledge base
             function getResponse(userMessage) {
                 const lowerMessage = userMessage.toLowerCase();
-                
-                // Check current question context
                 const currentQuestion = window.currentQuestions && window.currentQuestions[window.currentIndex];
-                if (currentQuestion) {
-                    // Add context-aware responses
-                    if (lowerMessage.includes('question') || lowerMessage.includes('this')) {
-                        return `For this "${currentQuestion.title}" question, focus on: ${currentQuestion.category || 'technical'} concepts. Difficulty: ${currentQuestion.difficulty || 'medium'}.`;
-                    }
-                }
                 
-                // Check knowledge base
+                // Check knowledge base first (priority)
                 for (const item of knowledgeBase) {
                     for (const keyword of item.keywords) {
                         if (lowerMessage.includes(keyword)) {
+                            // Enhance with context if available
+                            if (currentQuestion) {
+                                return `${item.response} \n\n(Context: This is a "${currentQuestion.title}" question, ${currentQuestion.difficulty || 'medium'} difficulty.)`;
+                            }
                             return item.response;
                         }
+                    }
+                }
+                
+                // Check for context-specific queries if no knowledge base match
+                if (currentQuestion) {
+                    if (lowerMessage.includes('question') || lowerMessage.includes('this') || lowerMessage.includes('current')) {
+                        return `For this "${currentQuestion.title}" question (${currentQuestion.difficulty || 'medium'} difficulty), focus on ${currentQuestion.category || 'technical'} concepts. Try breaking down key terms and structuring your answer logically.`;
                     }
                 }
                 
