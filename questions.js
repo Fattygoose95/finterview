@@ -9522,7 +9522,7 @@ const questionBank = [
     "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
     "answers": {
       "concise": {
-        "answer": "For 'Fundamental Question 1': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Market makers provide liquidity by continuously quoting bid and ask prices, earning the bid-ask spread. Responsibilities: maintaining orderly markets, managing inventory risk, complying with regulations. Types: designated market makers (DMMs) vs. electronic market makers. Challenges: adverse selection, volatility, technology requirements.",
         "format": "concise",
         "source": "generated"
       }
@@ -9666,7 +9666,7 @@ const questionBank = [
     "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
     "answers": {
       "concise": {
-        "answer": "For 'Fundamental Question 7': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Market microstructure studies trading mechanisms, price formation, and market design. Key elements: order types (market/limit/stop), execution methods, market venues (exchange/OTC/dark pools), liquidity provision, price discovery. Practical applications: trading strategy development, execution optimization, market impact analysis.",
         "format": "concise",
         "source": "generated"
       }
@@ -9762,7 +9762,7 @@ const questionBank = [
     "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
     "answers": {
       "concise": {
-        "answer": "For 'Fundamental Question 11': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Market makers provide liquidity by continuously quoting bid and ask prices, earning the bid-ask spread. Responsibilities: maintaining orderly markets, managing inventory risk, complying with regulations. Types: designated market makers (DMMs) vs. electronic market makers. Challenges: adverse selection, volatility, technology requirements.",
         "format": "concise",
         "source": "generated"
       }
@@ -9906,7 +9906,7 @@ const questionBank = [
     "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
     "answers": {
       "concise": {
-        "answer": "For 'Fundamental Question 17': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Market microstructure studies trading mechanisms, price formation, and market design. Key elements: order types (market/limit/stop), execution methods, market venues (exchange/OTC/dark pools), liquidity provision, price discovery. Practical applications: trading strategy development, execution optimization, market impact analysis.",
         "format": "concise",
         "source": "generated"
       }
@@ -13507,7 +13507,7 @@ const questionBank = [
     "modelAnswer": "## Trade Idea Generation & Pitching - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Trade Idea Generation & Pitching principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Trade Idea Generation & Pitching - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Trade idea development process: 1) Market analysis (macro trends, sector themes), 2) Security selection (fundamental/technical analysis), 3) Risk assessment (VaR, stress testing), 4) Execution plan (entry/exit points, position sizing). Successful pitches: clear thesis, catalyst identification, risk-reward analysis, concise presentation.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -13582,7 +13582,7 @@ const questionBank = [
     "modelAnswer": "## Market Structure Analysis - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Market Structure Analysis principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Market Structure Analysis - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Market structure analysis examines trading venues, participants, and regulations. Key aspects: exchange vs. OTC markets, electronic trading evolution, regulatory frameworks (MiFID II, Reg NMS), market fragmentation, liquidity dynamics. Applications: trading venue selection, execution strategy optimization, regulatory compliance.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -13682,7 +13682,7 @@ const questionBank = [
     "modelAnswer": "## Trading Psychology - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Trading Psychology - Technical Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Trading psychology focuses on emotional discipline and decision-making under pressure. Key concepts: cognitive biases (overconfidence, loss aversion), emotional regulation, risk tolerance assessment, performance routines. Development: self-awareness, journaling, mentorship, continuous learning. Critical for consistent profitability.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -13832,7 +13832,7 @@ const questionBank = [
     "modelAnswer": "## Market Structure Analysis - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Market Structure Analysis - Technical Question': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Market structure analysis examines trading venues, participants, and regulations. Key aspects: exchange vs. OTC markets, electronic trading evolution, regulatory frameworks (MiFID II, Reg NMS), market fragmentation, liquidity dynamics. Applications: trading venue selection, execution strategy optimization, regulatory compliance.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -13907,7 +13907,7 @@ const questionBank = [
     "modelAnswer": "## Regulatory Landscape - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Regulatory Landscape - Technical Question': identify the main categories or components, explain each concisely, provide relevant examples, and discuss practical applications or significance in the markets context.",
+        "answer": "Key regulations affecting trading: MiFID II (transparency, best execution), Dodd-Frank (derivatives, Volcker Rule), Basel III (capital requirements), MAR (market abuse). Compliance challenges: reporting requirements, transaction monitoring, cross-border coordination. Impact: increased costs, technology investments, business model adaptation.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -13982,7 +13982,7 @@ const questionBank = [
     "modelAnswer": "## Client Coverage & Relationship Building - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Client Coverage & Relationship Building - Technical Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Client coverage in S&T: understanding client needs (hedging, investment, financing), providing market insights, executing trades efficiently, managing risk. Relationship building: trust development, value-added services, responsive communication, long-term partnership focus. Key skills: market knowledge, communication, problem-solving.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14057,7 +14057,7 @@ const questionBank = [
     "modelAnswer": "## Electronic Trading Systems - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Electronic Trading Systems - Technical Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Electronic trading systems: algorithmic execution (VWAP, TWAP, implementation shortfall), smart order routing, market data processing, risk controls. Technology stack: low-latency infrastructure, FIX protocol, data analytics. Evolution: increasing automation, AI/ML applications, cloud migration, cybersecurity focus.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14157,7 +14157,7 @@ const questionBank = [
     "modelAnswer": "## Regulatory Landscape - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Regulatory Landscape\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Regulatory Landscape interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
     "answers": {
       "concise": {
-        "answer": "For 'Regulatory Landscape - Behavioral Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Key regulations affecting trading: MiFID II (transparency, best execution), Dodd-Frank (derivatives, Volcker Rule), Basel III (capital requirements), MAR (market abuse). Compliance challenges: reporting requirements, transaction monitoring, cross-border coordination. Impact: increased costs, technology investments, business model adaptation.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14257,7 +14257,7 @@ const questionBank = [
     "modelAnswer": "## Trade Idea Generation & Pitching - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Trade Idea Generation & Pitching principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Trade Idea Generation & Pitching - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Trade idea development process: 1) Market analysis (macro trends, sector themes), 2) Security selection (fundamental/technical analysis), 3) Risk assessment (VaR, stress testing), 4) Execution plan (entry/exit points, position sizing). Successful pitches: clear thesis, catalyst identification, risk-reward analysis, concise presentation.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14332,7 +14332,7 @@ const questionBank = [
     "modelAnswer": "## Market Structure Analysis - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Market Structure Analysis principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Market Structure Analysis - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Market structure analysis examines trading venues, participants, and regulations. Key aspects: exchange vs. OTC markets, electronic trading evolution, regulatory frameworks (MiFID II, Reg NMS), market fragmentation, liquidity dynamics. Applications: trading venue selection, execution strategy optimization, regulatory compliance.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14432,7 +14432,7 @@ const questionBank = [
     "modelAnswer": "## Trading Psychology - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Trading Psychology - Technical Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Trading psychology focuses on emotional discipline and decision-making under pressure. Key concepts: cognitive biases (overconfidence, loss aversion), emotional regulation, risk tolerance assessment, performance routines. Development: self-awareness, journaling, mentorship, continuous learning. Critical for consistent profitability.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14582,7 +14582,7 @@ const questionBank = [
     "modelAnswer": "## Market Structure Analysis - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Market Structure Analysis - Technical Question': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Market structure analysis examines trading venues, participants, and regulations. Key aspects: exchange vs. OTC markets, electronic trading evolution, regulatory frameworks (MiFID II, Reg NMS), market fragmentation, liquidity dynamics. Applications: trading venue selection, execution strategy optimization, regulatory compliance.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14632,7 +14632,7 @@ const questionBank = [
     "modelAnswer": "## Market Analysis - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Market Analysis principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Market Analysis - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Market analysis for trading: fundamental (economic indicators, company financials), technical (chart patterns, indicators), quantitative (statistical models, sentiment analysis). Application: trade idea generation, timing entry/exit, risk assessment. Key outputs: market outlook, trading recommendations, risk parameters.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14657,7 +14657,7 @@ const questionBank = [
     "modelAnswer": "## Client Communication - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Client Communication - Technical Question': identify the main categories or components, explain each concisely, provide relevant examples, and discuss practical applications or significance in the markets context.",
+        "answer": "Effective client communication in S&T: clear market updates, trade ideas, risk transparency. Skills: active listening, complex concept simplification, responsive follow-up. Tools: Bloomberg chat, email, phone, in-person meetings. Goal: build trust, understand client needs, provide value-added service.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14732,7 +14732,7 @@ const questionBank = [
     "modelAnswer": "## Product Knowledge - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Product Knowledge - Technical Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Product knowledge requirements: equity (stocks, ETFs, derivatives), fixed income (bonds, rates, credit), derivatives (options, futures, swaps), structured products. Depth: pricing mechanics, risk characteristics, regulatory considerations, market conventions. Application: client advisory, trade execution, risk management.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14807,7 +14807,7 @@ const questionBank = [
     "modelAnswer": "## Stress Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Stress Management - Technical Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Stress management in trading: psychological techniques (mindfulness, visualization), organizational (checklists, routines), physical (exercise, sleep), professional (mentorship, continuous learning). Trading-specific: emotional discipline during losses, patience during low volatility, confidence during wins.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -14957,7 +14957,7 @@ const questionBank = [
     "modelAnswer": "## Compliance Understanding - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Compliance Understanding - Technical Question': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Compliance in trading: insider trading rules, market manipulation prohibitions, best execution requirements, reporting obligations. Implementation: surveillance systems, training programs, approval processes, audit trails. Culture: ethical decision-making, transparency, accountability.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15007,7 +15007,7 @@ const questionBank = [
     "modelAnswer": "## Stress Management - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Stress Management principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Stress Management - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Stress management in trading: psychological techniques (mindfulness, visualization), organizational (checklists, routines), physical (exercise, sleep), professional (mentorship, continuous learning). Trading-specific: emotional discipline during losses, patience during low volatility, confidence during wins.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15032,7 +15032,7 @@ const questionBank = [
     "modelAnswer": "## Market Analysis - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Market Analysis - Technical Question': identify the main categories or components, explain each concisely, provide relevant examples, and discuss practical applications or significance in the markets context.",
+        "answer": "Market analysis for trading: fundamental (economic indicators, company financials), technical (chart patterns, indicators), quantitative (statistical models, sentiment analysis). Application: trade idea generation, timing entry/exit, risk assessment. Key outputs: market outlook, trading recommendations, risk parameters.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15082,7 +15082,7 @@ const questionBank = [
     "modelAnswer": "## Risk Assessment - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Risk Assessment principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Risk Assessment - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Risk assessment in trading: identify risks (market, credit, liquidity, operational), quantify (VaR, stress tests, scenario analysis), mitigate (hedging, diversification, limits), monitor (real-time dashboards, regular reviews). Framework integration into trade lifecycle.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15182,7 +15182,7 @@ const questionBank = [
     "modelAnswer": "## Technology Proficiency - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Technology Proficiency - Technical Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Technology proficiency for traders: execution platforms (Bloomberg, Reuters), analytical tools (Excel, Python, R), risk systems, data feeds. Skills: algorithmic trading basics, data analysis, system troubleshooting. Trends: AI/ML applications, cloud migration, cybersecurity awareness.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15282,7 +15282,7 @@ const questionBank = [
     "modelAnswer": "## Risk Assessment - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Risk Assessment\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Risk Assessment interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
     "answers": {
       "concise": {
-        "answer": "For 'Risk Assessment - Behavioral Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Risk assessment explanation to non-technical audience: focus on probability of loss, potential impact, mitigation strategies. Use analogies (insurance, weather forecasts), simple metrics (high/medium/low risk), practical examples (portfolio diversification, stop-loss orders). Goal: informed decision-making, not technical mastery.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15332,7 +15332,7 @@ const questionBank = [
     "modelAnswer": "## Product Knowledge - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Product Knowledge - Technical Question': break down into key concepts, show relationships, provide real-world examples, and discuss implications.",
+        "answer": "Product knowledge requirements: equity (stocks, ETFs, derivatives), fixed income (bonds, rates, credit), derivatives (options, futures, swaps), structured products. Depth: pricing mechanics, risk characteristics, regulatory considerations, market conventions. Application: client advisory, trade execution, risk management.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15382,7 +15382,7 @@ const questionBank = [
     "modelAnswer": "## Technology Proficiency - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Technology Proficiency principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
     "answers": {
       "concise": {
-        "answer": "For 'Technology Proficiency - Case Question': outline step-by-step approach, mention tools/techniques, consider constraints, and evaluate alternatives.",
+        "answer": "Technology proficiency for traders: execution platforms (Bloomberg, Reuters), analytical tools (Excel, Python, R), risk systems, data feeds. Skills: algorithmic trading basics, data analysis, system troubleshooting. Trends: AI/ML applications, cloud migration, cybersecurity awareness.",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -15407,7 +15407,7 @@ const questionBank = [
     "modelAnswer": "## Stress Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "For 'Stress Management - Technical Question': identify the main categories or components, explain each concisely, provide relevant examples, and discuss practical applications or significance in the markets context.",
+        "answer": "Stress management in trading: psychological techniques (mindfulness, visualization), organizational (checklists, routines), physical (exercise, sleep), professional (mentorship, continuous learning). Trading-specific: emotional discipline during losses, patience during low volatility, confidence during wins.",
         "format": "concise",
         "source": "systematic-generation"
       }
