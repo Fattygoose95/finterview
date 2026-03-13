@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="finterview - Practice finance interview questions with concise and detailed answers. Answer box, navigation, and answer toggles for effective learning.">
+    <meta name="description" content="finterview - Practice finance interview questions with helpful answer hints. Answer box, navigation, and answer toggles for effective learning.">
     <title>Industry Questions - Practice Mode - finterview</title>
     <link rel="stylesheet" href="css/unified-design.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260312_1430"></script>
+    <script src="questions.js?v=20260313_2251"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -574,21 +574,16 @@
                     <!-- Answer Reveal Section -->
                     <div class="answer-reveal-section" id="answerRevealSection" style="display: none;">
                         <div class="answer-toggle-section">
-                            <button class="answer-type-btn active" data-answer-type="concise">
-                                <i class="fas fa-bars"></i> Concise Answer
-                            </button>
-                            <button class="answer-type-btn" data-answer-type="detailed">
-                                <i class="fas fa-file-alt"></i> Detailed Answer
-                            </button>
+                            <div class="answer-label">
+                                <i class="fas fa-bars"></i> Answer
+                            </div>
                         </div>
                         
                         <div class="answer-content concise" id="conciseAnswerContent">
                             <!-- Concise answer will be loaded here -->
                         </div>
                         
-                        <div class="answer-content detailed" id="detailedAnswerContent" style="display: none;">
-                            <!-- Detailed answer will be loaded here -->
-                        </div>
+                        
                     </div>
 
                     <!-- Navigation Controls -->
@@ -689,7 +684,7 @@
             
             // Answer content
             const conciseAnswerContent = document.getElementById('conciseAnswerContent');
-            const detailedAnswerContent = document.getElementById('detailedAnswerContent');
+            // Note: detailedAnswerContent removed as per Charlie's request - only concise answers now
             
             // Text area
             const answerTextarea = document.getElementById('answerTextarea');
@@ -813,28 +808,7 @@
                         }
                         e.preventDefault();
                         break;
-                    case '1':
-                        // Switch to concise answer
-                        document.querySelectorAll('.answer-type-btn').forEach(btn => {
-                            btn.classList.remove('active');
-                            if (btn.dataset.answerType === 'concise') {
-                                btn.classList.add('active');
-                            }
-                        });
-                        conciseAnswerContent.style.display = 'block';
-                        detailedAnswerContent.style.display = 'none';
-                        break;
-                    case '2':
-                        // Switch to detailed answer
-                        document.querySelectorAll('.answer-type-btn').forEach(btn => {
-                            btn.classList.remove('active');
-                            if (btn.dataset.answerType === 'detailed') {
-                                btn.classList.add('active');
-                            }
-                        });
-                        conciseAnswerContent.style.display = 'none';
-                        detailedAnswerContent.style.display = 'block';
-                        break;
+                    // Note: '1' and '2' shortcuts removed - only concise answers now
                 }
             }
             
@@ -1107,15 +1081,9 @@
                 answerRevealed = false;
                 answerRevealSection.style.display = 'none';
                 conciseAnswerContent.style.display = 'block';
-                detailedAnswerContent.style.display = 'none';
+                // Note: detailedAnswerContent removed - only concise answers now
                 
-                // Update answer type buttons
-                document.querySelectorAll('.answer-type-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                    if (btn.dataset.answerType === 'concise') {
-                        btn.classList.add('active');
-                    }
-                });
+                // Note: Answer type buttons removed - only concise answers now
                 
                 // Clear textarea
                 if (answerTextarea) {
@@ -1167,16 +1135,6 @@
                     conciseAnswer = question.conciseAnswer;
                 }
                 
-                // Get detailed answer
-                let detailedAnswer = 'No detailed answer available.';
-                if (question.answers?.detailed?.answer) {
-                    detailedAnswer = question.answers.detailed.answer;
-                } else if (question.modelAnswer) {
-                    detailedAnswer = question.modelAnswer;
-                } else if (question.answer) {
-                    detailedAnswer = question.answer;
-                }
-                
                 // Format concise answer as bullet points if it's long
                 if (conciseAnswer.length > 100 && !conciseAnswer.includes('<ul>')) {
                     const sentences = conciseAnswer.split('. ').filter(s => s.trim());
@@ -1185,9 +1143,8 @@
                     }
                 }
                 
-                // Update answer content
+                // Update answer content (only concise now)
                 conciseAnswerContent.innerHTML = conciseAnswer;
-                detailedAnswerContent.innerHTML = detailedAnswer;
             }
             
             function updateNavigation(index) {
@@ -1290,27 +1247,8 @@
                     });
                 }
                 
-                // Answer type toggle buttons
-                document.querySelectorAll('.answer-type-btn').forEach(btn => {
-                    btn.addEventListener('click', function() {
-                        const answerType = this.dataset.answerType;
-                        
-                        // Update active button
-                        document.querySelectorAll('.answer-type-btn').forEach(b => {
-                            b.classList.remove('active');
-                        });
-                        this.classList.add('active');
-                        
-                        // Show/hide answer content
-                        if (answerType === 'concise') {
-                            conciseAnswerContent.style.display = 'block';
-                            detailedAnswerContent.style.display = 'none';
-                        } else {
-                            conciseAnswerContent.style.display = 'none';
-                            detailedAnswerContent.style.display = 'block';
-                        }
-                    });
-                });
+                                // Answer display (only concise now)
+                // No toggle needed since we only have concise answers
                 
                 // Mobile menu toggle
                 const menuToggle = document.querySelector('.menu-toggle');

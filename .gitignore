@@ -40,3 +40,5 @@ temp/
 # Netlify 部署缓存
 .netlify/
 .netlify/**
+# Archived files (cleaned up during project cleanup)
+archive/
