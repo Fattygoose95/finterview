@@ -495,7 +495,7 @@
                 },
                 {
                     keywords: ['behavioral', 'fit questions', 'star', 'behavioral interview'],
-                    response: "**Behavioral Interview Mastery - STAR Framework Deep Dive**\n\nBehavioral questions assess cultural fit, communication skills, and past performance as predictor of future success.\n\n**1. STAR Framework - Detailed Implementation:**\n\n**Situation (10-15% of answer):**\n- Set the context clearly and concisely\n- Include relevant details: company, team size, timeframe\n- Establish stakes or importance of the situation\n- Example: \"During my summer internship at Goldman Sachs, I was part of a 5-person team responsible for analyzing a potential $500M acquisition in the tech sector...\"\n\n**Task (10-15% of answer):**\n- Clarify your specific role and responsibilities\n- Highlight challenges or constraints\n- Example: \"My specific task was to build the DCF valuation model under tight time constraints, with incomplete data from the target company...\"\n\n**Action (50-60% of answer):**\n- Detail specific steps you took, not the team\n- Emphasize decision-making process and rationale\n- Include quantitative details where possible\n- Example: \"I first gathered available financial data from SEC filings, then made conservative assumptions for missing information. I built three scenarios: base, upside, and downside. To accelerate the process, I created Excel macros for sensitivity analysis...\"\n\n**Result (20-25% of answer):**\n- Quantify outcomes with specific metrics\n- Include lessons learned and improvements made\n- Connect to broader impact\n- Example: \"The model was completed 2 days ahead of schedule and identified a 15% valuation gap that became a key negotiation point. The senior VP commended my work, and the framework I developed was adopted for future acquisitions. Personally, I learned the importance of clear documentation when working under time pressure...\"\n\n**2. Essential Story Archetypes:**\n- **Leadership:** Leading a team through challenge\n- **Teamwork:** Collaborating effectively with diverse team members\n- **Failure/Mistake:** Learning from significant error\n- **Conflict Resolution:** Navigating interpersonal or professional conflict\n- **Achievement:** Major success or accomplishment\n- **Innovation:** Implementing creative solution\n- **Pressure Situation:** Performing under tight deadline or high stakes\n- **Ethical Dilemma:** Navigating complex ethical situation\n\n**3. Common Behavioral Questions:**\n- \"Tell me about a time you failed.\" (Focus on learning, not just failure)\n- \"Describe a conflict with a team member.\" (Show maturity, resolution skills)\n- \"Give an example of leadership without formal authority.\" (Influence, persuasion)\n- \"Walk me through a difficult decision you made.\" (Analytical process, conviction)\n\n**4. Preparation Strategy:**\n- Develop 8-10 core stories covering different competencies\n- Practice each story to 2-3 minute length\n- Tailor stories to emphasize different aspects for different questions\n- Record yourself and critique delivery\n\n**5. Delivery Tips:**\n- Maintain eye contact and confident posture\n- Use natural language, avoid sounding rehearsed\n- Pause briefly before answering to structure thoughts\n- Be genuine and authentic\n\n**6. Assessment Criteria:**\n- **Communication:** Clarity, conciseness, structure\n- **Substance:** Depth of experience, learning, impact\n- **Cultural Fit:** Alignment with firm values and norms\n- **Self-Awareness:** Understanding strengths and weaknesses\n\nWould you like help developing specific STAR stories or practicing behavioral questions?"
+                    response: "**Behavioral Interview Mastery - STAR Framework Deep Dive**\n\nBehavioral questions assess cultural fit, communication skills, and past performance as predictor of future success.\n\n**1. STAR Framework - Detailed Implementation:**\n\n**Situation (10-15% of answer):**\n- Set the context clearly and concisely\n- Include relevant details: company, team size, timeframe\n- Establish stakes or importance of the situation\n- Example: \"During my summer internship at a leading investment bank, I was part of a 5-person team responsible for analyzing a potential $500M acquisition in the tech sector...\"\n\n**Task (10-15% of answer):**\n- Clarify your specific role and responsibilities\n- Highlight challenges or constraints\n- Example: \"My specific task was to build the DCF valuation model under tight time constraints, with incomplete data from the target company...\"\n\n**Action (50-60% of answer):**\n- Detail specific steps you took, not the team\n- Emphasize decision-making process and rationale\n- Include quantitative details where possible\n- Example: \"I first gathered available financial data from SEC filings, then made conservative assumptions for missing information. I built three scenarios: base, upside, and downside. To accelerate the process, I created Excel macros for sensitivity analysis...\"\n\n**Result (20-25% of answer):**\n- Quantify outcomes with specific metrics\n- Include lessons learned and improvements made\n- Connect to broader impact\n- Example: \"The model was completed 2 days ahead of schedule and identified a 15% valuation gap that became a key negotiation point. The senior VP commended my work, and the framework I developed was adopted for future acquisitions. Personally, I learned the importance of clear documentation when working under time pressure...\"\n\n**2. Essential Story Archetypes:**\n- **Leadership:** Leading a team through challenge\n- **Teamwork:** Collaborating effectively with diverse team members\n- **Failure/Mistake:** Learning from significant error\n- **Conflict Resolution:** Navigating interpersonal or professional conflict\n- **Achievement:** Major success or accomplishment\n- **Innovation:** Implementing creative solution\n- **Pressure Situation:** Performing under tight deadline or high stakes\n- **Ethical Dilemma:** Navigating complex ethical situation\n\n**3. Common Behavioral Questions:**\n- \"Tell me about a time you failed.\" (Focus on learning, not just failure)\n- \"Describe a conflict with a team member.\" (Show maturity, resolution skills)\n- \"Give an example of leadership without formal authority.\" (Influence, persuasion)\n- \"Walk me through a difficult decision you made.\" (Analytical process, conviction)\n\n**4. Preparation Strategy:**\n- Develop 8-10 core stories covering different competencies\n- Practice each story to 2-3 minute length\n- Tailor stories to emphasize different aspects for different questions\n- Record yourself and critique delivery\n\n**5. Delivery Tips:**\n- Maintain eye contact and confident posture\n- Use natural language, avoid sounding rehearsed\n- Pause briefly before answering to structure thoughts\n- Be genuine and authentic\n\n**6. Assessment Criteria:**\n- **Communication:** Clarity, conciseness, structure\n- **Substance:** Depth of experience, learning, impact\n- **Cultural Fit:** Alignment with firm values and norms\n- **Self-Awareness:** Understanding strengths and weaknesses\n\nWould you like help developing specific STAR stories or practicing behavioral questions?"
                 },
                 {
                     keywords: ['market trends', 'current events', 'news', 'market outlook'],
@@ -559,7 +559,7 @@
                 return div.innerHTML;
             }
             
-            // Find best matching question from questionBank
+            // Find best matching question from questionBank with improved matching
             function findBestQuestionMatch(userMessage) {
                 try {
                     // questionBank should be available globally from questions.js
@@ -570,9 +570,9 @@
                     const lowerMessage = userMessage.toLowerCase();
                     let bestMatch = null;
                     let bestScore = 0;
-                    const threshold = 0.2; // Lower threshold to catch more matches
+                    const threshold = 0.4; // Increased threshold for better precision
                     
-                    // Simple text matching algorithm
+                    // Simple text matching algorithm with improved scoring
                     // 1. Check if question contains keywords from user message
                     // 2. Check if user message contains keywords from question
                     // 3. Calculate a simple similarity score
@@ -584,45 +584,58 @@
                         const questionText = (question.question || '').toLowerCase();
                         const questionTitle = (question.title || '').toLowerCase();
                         
-                        // Check exact phrase matches
+                        // Check exact phrase matches (highest priority)
                         if (questionText.includes(lowerMessage) || lowerMessage.includes(questionText.substring(0, 50))) {
-                            score += 0.5;
+                            score += 0.8; // Increased weight
                         }
                         
                         // Check title matches
                         if (lowerMessage.includes(questionTitle) || questionTitle.includes(lowerMessage)) {
-                            score += 0.4;
+                            score += 0.6; // Increased weight
                         }
                         
-                        // Check keyword matches
+                        // Check keyword matches with context awareness
+                        let keywordMatches = 0;
                         for (const word of userWords) {
                             if (questionText.includes(word)) {
-                                score += 0.1;
+                                keywordMatches++;
+                                score += 0.15; // Slightly increased
                             }
                             if (questionTitle.includes(word)) {
-                                score += 0.15;
+                                keywordMatches++;
+                                score += 0.2; // Slightly increased
                             }
                         }
                         
-                        // Check for role/category matches
+                        // Bonus for multiple keyword matches
+                        if (keywordMatches >= 3) {
+                            score += 0.3;
+                        }
+                        
+                        // Check for role/category matches with improved keywords
                         if (question.role) {
                             const roleKeywords = {
-                                'ib': ['investment banking', 'ib', 'banking', 'm&a', 'valuation'],
-                                'am': ['asset management', 'am', 'portfolio', 'investment'],
-                                'quant': ['quantitative', 'quant', 'math', 'statistics', 'modeling'],
-                                'markets': ['sales & trading', 'trading', 'markets', 's&t'],
-                                'risk': ['risk management', 'risk', 'var', 'credit risk'],
-                                'corpfin': ['corporate finance', 'corpfin', 'corporate', 'treasury'],
-                                'fintech': ['fintech', 'technology', 'digital', 'blockchain'],
-                                'fo': ['family office', 'private wealth', 'wealth management']
+                                'ib': ['investment banking', 'ib', 'banking', 'm&a', 'valuation', 'mergers', 'acquisitions', 'ipo', 'capital markets'],
+                                'am': ['asset management', 'am', 'portfolio', 'investment', 'wealth', 'mutual funds', 'etf', 'pension'],
+                                'quant': ['quantitative', 'quant', 'math', 'statistics', 'modeling', 'algorithm', 'trading', 'python', 'risk'],
+                                'markets': ['sales & trading', 'trading', 'markets', 's&t', 'equity', 'fixed income', 'fx', 'derivatives'],
+                                'risk': ['risk management', 'risk', 'var', 'credit risk', 'market risk', 'operational risk', 'compliance'],
+                                'corpfin': ['corporate finance', 'corpfin', 'corporate', 'treasury', 'cfo', 'capital structure', 'working capital'],
+                                'fintech': ['fintech', 'technology', 'digital', 'blockchain', 'crypto', 'payments', 'insurtech', 'regtech'],
+                                'fo': ['family office', 'private wealth', 'wealth management', 'ultra high net worth', 'uhnw']
                             };
                             
                             const keywords = roleKeywords[question.role] || [];
                             for (const keyword of keywords) {
                                 if (lowerMessage.includes(keyword)) {
-                                    score += 0.2;
+                                    score += 0.25; // Increased weight
                                 }
                             }
+                        }
+                        
+                        // Penalize completely unrelated matches (e.g., jokes, weather)
+                        if (lowerMessage.includes('joke') || lowerMessage.includes('weather') || lowerMessage.includes('funny')) {
+                            score -= 0.5;
                         }
                         
                         if (score > bestScore) {
@@ -631,7 +644,21 @@
                         }
                     }
                     
-                    return bestScore >= threshold ? { question: bestMatch, score: bestScore } : null;
+                    // Normalize score to 0-1 range
+                    const normalizedScore = Math.min(1.0, bestScore);
+                    
+                    return normalizedScore >= threshold ? { 
+                        question: bestMatch, 
+                        score: normalizedScore,
+                        confidence: getConfidenceLevel(normalizedScore)
+                    } : null;
+                    
+                    function getConfidenceLevel(score) {
+                        if (score >= 0.8) return 'high';
+                        if (score >= 0.6) return 'medium';
+                        if (score >= 0.4) return 'low';
+                        return 'very_low';
+                    }
                 } catch (e) {
                     console.error('Error in findBestQuestionMatch:', e);
                     return null;
@@ -641,6 +668,23 @@
             // Get response from knowledge base
             function getResponse(userMessage) {
                 const lowerMessage = userMessage.toLowerCase();
+                
+                // Special handling for common non-finance queries
+                if (lowerMessage.includes('joke') || lowerMessage.includes('funny') || lowerMessage.includes('humor')) {
+                    return "😂 *Finance Bro mode activated* - I'm focused on finance topics, but here's a finance joke: Why did the bond trader break up with his girlfriend? He found someone with a better yield curve! Now, what finance topic can I help you with?";
+                }
+                
+                if (lowerMessage.includes('weather') || lowerMessage.includes('rain') || lowerMessage.includes('sun') || lowerMessage.includes('temperature')) {
+                    return "🌤️ While I'm great at forecasting market trends, weather predictions are outside my expertise! I can help you analyze economic indicators, market conditions, or investment climates instead. What finance question can I answer for you?";
+                }
+                
+                if (lowerMessage.includes('hello') || lowerMessage.includes('hi ') || lowerMessage === 'hi' || lowerMessage === 'hey' || lowerMessage === 'hello') {
+                    return "👋 Hey there! I'm Finance Bro, your AI finance mentor. I can help with interview prep, technical concepts, market analysis, and career advice. What's on your mind today?";
+                }
+                
+                if (lowerMessage.includes('bye') || lowerMessage.includes('goodbye') || lowerMessage.includes('see you')) {
+                    return "👋 Thanks for chatting! Remember to practice those finance concepts. Come back anytime for more interview prep or technical explanations. Good luck with your finance journey!";
+                }
                 
                 // First, try to find a matching question in the question bank
                 const questionMatch = findBestQuestionMatch(userMessage);
@@ -653,13 +697,60 @@
                          questionMatch.question.role.toUpperCase()) : 
                         'finance';
                     const title = questionMatch.question.title || 'this topic';
+                    const questionText = questionMatch.question.question || '';
                     
                     // Truncate very long answers to keep responses manageable
                     if (answer.length > 3000) {
                         answer = answer.substring(0, 3000) + '\n\n[...answer truncated for length - see full answer in practice questions...]';
                     }
                     
-                    return `**${title}** (${roleName})\n\n${answer}\n\n---\n*Finance Bro AI: Based on question from finterview database - I can provide detailed explanations on this and 667 other finance topics*`;
+                    // Create a more natural, engaging response
+                    const greeting = getRandomGreeting();
+                    const topicContext = getTopicContext(questionMatch.question.role);
+                    
+                    // Format answer for better readability
+                    const formattedAnswer = formatAnswerForChat(answer);
+                    
+                    // Add thinking process simulation for more human-like interaction
+                    const thinkingProcess = generateThinkingProcess(userMessage, questionMatch.question, questionMatch.confidence || 'medium', questionMatch.score || 0.5);
+                    
+                    // Construct final response with thinking process if available
+                    let finalResponse = '';
+                    if (thinkingProcess) {
+                        finalResponse += thinkingProcess + '\n\n';
+                    }
+                    
+                    finalResponse += `${greeting} **${title}** (${roleName})${topicContext}\n\n${formattedAnswer}`;
+                    
+                    // Add confidence note if needed
+                    if (questionMatch.confidence === 'low' || (questionMatch.score && questionMatch.score < 0.6)) {
+                        finalResponse += '\n\n*Note: This answer addresses related concepts. For more specific guidance, try rephrasing your question or ask about a particular aspect.*';
+                    }
+                    
+                    finalResponse += `\n\n---\n*Finance Bro AI: I can provide detailed explanations on ${getRandomNumber()} other finance topics. Ask me anything!*`;
+                    
+                    return finalResponse;
+                    
+                    // Helper function to generate thinking process
+                    function generateThinkingProcess(userQuestion, matchedQuestion, confidence, score) {
+                        if (confidence === 'high' || score > 0.7) {
+                            const thoughts = [
+                                `> Analyzing your question about "${userQuestion.substring(0, 60)}..."`,
+                                `> This aligns closely with "${matchedQuestion.title || matchedQuestion.question.substring(0, 50)}"`,
+                                `> Let me provide a comprehensive breakdown:`
+                            ];
+                            return thoughts.slice(0, 2).join('\n');
+                        } else if (confidence === 'medium') {
+                            const thoughts = [
+                                `> Hmm, your question seems related to ${matchedQuestion.role ? matchedQuestion.role.toUpperCase() : 'finance'} concepts`,
+                                `> I found a relevant topic: "${matchedQuestion.title}"`,
+                                `> Here's what I think based on my knowledge:`
+                            ];
+                            return thoughts.slice(0, 2).join('\n');
+                        } else {
+                            return `> Let me think about this...\n> Your question reminds me of a similar finance concept:`;
+                        }
+                    }
                 }
                 
                 // Check for matches in knowledge base
@@ -671,8 +762,158 @@
                     }
                 }
                 
-                // Default random response
-                return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+                // Default intelligent response that analyzes the question
+                return getIntelligentDefaultResponse(userMessage);
+                
+                // Helper functions
+                function getRandomGreeting() {
+                    const greetings = [
+                        "Great question! ",
+                        "Excellent question! ",
+                        "I'm glad you asked about ",
+                        "That's a key topic in finance! ",
+                        "This is a common interview question! ",
+                        "Let me break this down for you. ",
+                        "Happy to explain! "
+                    ];
+                    return greetings[Math.floor(Math.random() * greetings.length)];
+                }
+                
+                function getTopicContext(role) {
+                    if (!role) return '';
+                    const contexts = {
+                        'ib': ' (Investment Banking)',
+                        'am': ' (Asset Management)',
+                        'quant': ' (Quantitative Finance)',
+                        'markets': ' (Sales & Trading)',
+                        'risk': ' (Risk Management)',
+                        'corpfin': ' (Corporate Finance)',
+                        'fintech': ' (FinTech)',
+                        'fo': ' (Family Office)'
+                    };
+                    return contexts[role] || '';
+                }
+                
+                function formatAnswerForChat(answer) {
+                    // Split into paragraphs if there are double line breaks
+                    const paragraphs = answer.split('\n\n');
+                    if (paragraphs.length > 1) {
+                        return paragraphs.map(p => p.trim()).filter(p => p).join('\n\n');
+                    }
+                    
+                    // Try to split by single line breaks if answer is long
+                    if (answer.length > 500) {
+                        const lines = answer.split('\n').filter(line => line.trim());
+                        // Group lines into logical paragraphs
+                        let result = '';
+                        let currentParagraph = '';
+                        for (const line of lines) {
+                            if (line.trim().endsWith('.') || line.trim().endsWith(':')) {
+                                currentParagraph += line + ' ';
+                                result += currentParagraph.trim() + '\n\n';
+                                currentParagraph = '';
+                            } else {
+                                currentParagraph += line + ' ';
+                            }
+                        }
+                        if (currentParagraph) {
+                            result += currentParagraph.trim();
+                        }
+                        return result || answer;
+                    }
+                    
+                    return answer;
+                }
+                
+                function getRandomNumber() {
+                    const numbers = ['650+', '660+', '670+', '680+', '690+'];
+                    return numbers[Math.floor(Math.random() * numbers.length)];
+                }
+                
+                function getIntelligentDefaultResponse(userMessage) {
+                    // Enhanced analysis with more categories
+                    const topics = [];
+                    const lowerMsg = userMessage.toLowerCase();
+                    
+                    if (lowerMsg.includes('interview') || lowerMsg.includes('prepare') || lowerMsg.includes('hiring') || lowerMsg.includes('application')) {
+                        topics.push('interview preparation');
+                    }
+                    if (lowerMsg.includes('valuation') || lowerMsg.includes('dcf') || lowerMsg.includes('multiple') || lowerMsg.includes('comparable')) {
+                        topics.push('valuation techniques');
+                    }
+                    if (lowerMsg.includes('market') || lowerMsg.includes('stock') || lowerMsg.includes('trading') || lowerMsg.includes('equity')) {
+                        topics.push('market analysis');
+                    }
+                    if (lowerMsg.includes('career') || lowerMsg.includes('resume') || lowerMsg.includes('job') || lowerMsg.includes('cv')) {
+                        topics.push('career guidance');
+                    }
+                    if (lowerMsg.includes('risk') || lowerMsg.includes('portfolio') || lowerMsg.includes('investment') || lowerMsg.includes('asset allocation')) {
+                        topics.push('risk management');
+                    }
+                    if (lowerMsg.includes('model') || lowerMsg.includes('excel') || lowerMsg.includes('financial model') || lowerMsg.includes('forecast')) {
+                        topics.push('financial modeling');
+                    }
+                    if (lowerMsg.includes('behavioral') || lowerMsg.includes('soft skill') || lowerMsg.includes('communication') || lowerMsg.includes('teamwork')) {
+                        topics.push('behavioral interview questions');
+                    }
+                    if (lowerMsg.includes('salary') || lowerMsg.includes('compensation') || lowerMsg.includes('pay') || lowerMsg.includes('bonus')) {
+                        topics.push('compensation and negotiation');
+                    }
+                    if (lowerMsg.includes('technical') || lowerMsg.includes('concept') || lowerMsg.includes('theory') || lowerMsg.includes('framework')) {
+                        topics.push('technical finance concepts');
+                    }
+                    
+                    if (topics.length > 0) {
+                        const topicList = topics.map(t => `**${t}**`).join(', ');
+                        const examples = [
+                            '- "Explain DCF valuation step by step"',
+                            '- "How to prepare for an investment banking interview"',
+                            '- "Current market trends in 2026"',
+                            '- "Behavioral question: Tell me about yourself"',
+                            '- "How to build a three-statement model"',
+                            '- "Walk me through the three financial statements"',
+                            '- "What is beta in finance?"',
+                            '- "Explain Black-Scholes option pricing model"'
+                        ];
+                        
+                        // Randomly select 3 examples
+                        const selectedExamples = [];
+                        while (selectedExamples.length < Math.min(3, examples.length)) {
+                            const randomIndex = Math.floor(Math.random() * examples.length);
+                            if (!selectedExamples.includes(examples[randomIndex])) {
+                                selectedExamples.push(examples[randomIndex]);
+                            }
+                        }
+                        
+                        return `I'd love to help with that! My expertise covers ${topicList}, and I can provide detailed explanations on these topics.\n\n**To get the best answer, try being more specific:**\n${selectedExamples.join('\n')}\n\nWhat aspect are you most interested in?`;
+                    }
+                    
+                    // Fallback to contextual default response
+                    return getContextualDefaultResponse(userMessage);
+                    
+                    function getContextualDefaultResponse(userMessage) {
+                        const lowerMsg = userMessage.toLowerCase();
+                        
+                        // Check if it's a very short or nonsensical message
+                        if (userMessage.length < 3 || /^[aeiou]+$/i.test(userMessage) || /^[^a-zA-Z]+$/.test(userMessage)) {
+                            return "I'm here to help with finance topics! Try asking about:\n\n- Interview preparation for specific roles\n- Technical finance concepts (DCF, financial statements, etc.)\n- Market trends and analysis\n- Career advice in finance\n\nWhat would you like to know?";
+                        }
+                        
+                        // Check if it might be a typo or very specific
+                        if (userMessage.length > 20 && !lowerMsg.includes('?')) {
+                            return "That's an interesting query! Could you rephrase it as a question? For example:\n\n- Instead of \"DCF valuation\", try \"How do I perform a DCF valuation?\"\n- Instead of \"investment banking interview\", try \"How should I prepare for an investment banking interview?\"\n\nI'm ready to help with your finance questions!";
+                        }
+                        
+                        // Generic but helpful response
+                        const defaultResponses = [
+                            "I'm here to help with finance topics! Could you tell me a bit more about what you're looking for? For example:\n\n- Are you preparing for a specific finance interview?\n- Do you need help with a technical concept?\n- Are you looking for career advice?\n\nThe more specific your question, the better I can help!",
+                            "Thanks for reaching out! I specialize in finance interview prep, technical concepts, and career guidance. To give you the best answer, could you specify:\n\n- What finance role are you interested in (investment banking, asset management, etc.)?\n- Is this for interview preparation or general learning?\n- Would you like a high-level overview or detailed technical explanation?\n\nI'm ready to provide comprehensive answers!",
+                            "I'd be happy to help! As a finance expert, I can assist with:\n\n- **Interview Preparation**: Technical and behavioral questions for all finance roles\n- **Technical Concepts**: DCF, financial statements, valuation, modeling, etc.\n- **Market Insights**: Current trends, analysis frameworks, investment strategies\n- **Career Guidance**: Resume tips, networking, role selection\n\nWhat specific area would you like to explore?"
+                        ];
+                        
+                        return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+                    }
+                }
             }
             
             // Send message
