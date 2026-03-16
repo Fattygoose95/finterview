@@ -23,7 +23,7 @@ Finance interviews are make‑or‑break moments that separate top candidates fr
 - **Bloomberg‑Grade Interface** – Professional trading‑floor design that trains you to think like a finance professional
 - **Competitive Edge Analytics** – Benchmark your performance against thousands of successful candidates
 
-Built by finance experts and AI engineers, finterview is the platform that top candidates use to land roles at Goldman Sachs, J.P. Morgan, BlackRock, and other elite firms.
+Built by Jiarong Yang (Finance Expert) and Goose (AI Technical Partner), finterview combines deep industry knowledge with cutting‑edge technology to deliver unparalleled interview preparation.
 
 ---
 
@@ -108,7 +108,7 @@ finterview/
 ### 🚀 **Phase 1: Market Domination (2026)**
 - **10,000+ question database** across all major finance sectors
 - **AI‑driven interview prediction engine** with 99% accuracy
-- **Enterprise partnerships** with top 10 investment banks and asset managers
+- **Strategic partnerships** with finance education providers and industry associations
 - **Global expansion** to 50+ countries with localized content
 - **Advanced analytics platform** for corporate recruitment teams
 
@@ -122,8 +122,8 @@ finterview/
 ### 💫 **Phase 3: Industry Transformation (2028+)**
 - **Financial education metaverse** with immersive interview simulations
 - **Predictive career pathing** using machine learning on success patterns
-- **Corporate training platform** adopted by Fortune 500 finance departments
-- **Industry‑standard certification** recognized by CFA Institute and top firms
+- **Corporate training platform** for finance departments and professional development
+- **Industry‑standard certification** recognized by professional finance organizations
 - **Public API ecosystem** for third‑party developers and integrations
 
 ---
@@ -131,6 +131,16 @@ finterview/
 ## 📄 License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👥 Creators
+
+**Jiarong Yang (Charlie)** – Finance domain expert with background in investment banking, asset management, and quantitative finance. University of Hong Kong MFin candidate with hands‑on experience at Ekimetrics, Sinolink Securities, and Founder Securities.
+
+**Goose (AI Technical Partner)** – Full‑stack developer and AI specialist responsible for platform architecture, UI/UX design, and technical implementation. Expert in vanilla JavaScript, modern CSS, and AI‑powered learning systems.
+
+*"这是我们共同的努力" – This is our joint effort.*
 
 ---
 
