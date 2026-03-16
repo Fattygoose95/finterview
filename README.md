@@ -21,7 +21,7 @@ Finance interviews are high‑stakes, time‑sensitive, and demand precise answe
 - **Smart filtering** – practice by frequency, difficulty, role, or industry
 - **Zero‑fluff** – no long essays, no filler content, just what you need to perform
 
-Built by a finance professional and an AI technical partner, the platform reflects how top candidates actually prepare.
+Built by a finance professional with AI‑assisted development, the platform reflects how top candidates actually prepare.
 
 ---
 
@@ -87,7 +87,7 @@ finterview/
 
 **Recent milestone (March 2026):**  
 ✅ **V1.0.0** – Unified clean‑white design, practice mode with answer toggles, and navigation.  
-User feedback: *“Very important turning point! I think the current interface UI and functionality are the best version so far.”*
+User feedback: *"Very important turning point! I think the current interface UI and functionality are the best version so far."*
 
 ---
 
@@ -112,60 +112,9 @@ User feedback: *“Very important turning point! I think the current interface U
 
 ---
 
-## 🛠️ Getting Started
-
-### Run Locally
-```bash
-git clone https://github.com/fattygoose95/finterview.git
-cd finterview/finterview-prototype
-python3 -m http.server 8080
-```
-Then open [http://localhost:8080](http://localhost:8080) in your browser.
-
-### Deploy to GitHub Pages
-1. Push the `finterview-prototype/` folder to a GitHub repository
-2. Go to **Settings → Pages**, select branch `main` and folder `/`
-3. Your site will be live at `https://<username>.github.io/finterview/`
-
-### Update Questions
-Edit `questions.js` following the existing schema, then commit and push. Changes deploy automatically.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! If you have finance interview questions, UX improvements, or code optimizations:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-idea`)
-3. Commit your changes (`git commit -m 'Add some amazing idea'`)
-4. Push to the branch (`git push origin feature/amazing-idea`)
-5. Open a Pull Request
-
-Please read our [Contribution Guidelines](CONTRIBUTING.md) (to be added) for details.
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 Team
-
-**Charlie Yang (Jiarong Yang)** – Finance domain expert, project vision, content curation  
-**Goose (AI Technical Partner)** – Full‑stack development, UI/UX design, project management
-
-*“这是我们共同的努力” – This is our joint effort.*
-
----
-
-## 📬 Contact
-
-- **GitHub**: [fattygoose95](https://github.com/fattygoose95)
-- **Project site**: [https://fattygoose95.github.io/finterview/](https://fattygoose95.github.io/finterview/)
-- **LinkedIn**: [Jiarong Yang](https://www.linkedin.com/in/jiarong-yang) *(to be added)*
 
 ---
 
