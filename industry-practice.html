@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260314_0200"></script>
+    <script src="questions.js?v=20260320_2245"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -562,6 +562,9 @@
                                 <button class="action-btn hint" id="showHintBtn">
                                     <i class="fas fa-question-circle"></i> Show Hint
                                 </button>
+                                <button class="action-btn info" id="analyzeAnswerBtn">
+                                    <i class="fas fa-chart-line"></i> Analyze Answer
+                                </button>
                                 <button class="action-btn secondary" id="clearAnswerBtn">
                                     <i class="fas fa-eraser"></i> Clear
                                 </button>
@@ -584,6 +587,57 @@
                         </div>
                         
                         
+                    </div>
+
+                    <!-- Answer Feedback Section -->
+                    <div class="answer-feedback-section" id="answerFeedbackSection" style="display: none;">
+                        <div class="feedback-header">
+                            <i class="fas fa-chart-bar"></i> Answer Analysis
+                            <button class="feedback-close-btn" id="closeFeedbackBtn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="feedback-content">
+                            <!-- Score Card -->
+                            <div class="score-card">
+                                <div class="score-value" id="scoreValue">0</div>
+                                <div class="score-label">Overall Score</div>
+                                <div class="score-description" id="scoreDescription">Submit your answer for analysis</div>
+                            </div>
+                            
+                            <!-- Keyword Matching -->
+                            <div class="feedback-section" id="keywordSection">
+                                <h4><i class="fas fa-key"></i> Keyword Coverage</h4>
+                                <div class="keywords-list" id="keywordsList">
+                                    <div class="empty-state">No keyword data available for this question</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Structure Assessment -->
+                            <div class="feedback-section" id="structureSection">
+                                <h4><i class="fas fa-sitemap"></i> Structure Assessment</h4>
+                                <div class="structure-list" id="structureList">
+                                    <div class="empty-state">No structure data available for this question</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Improvement Tips -->
+                            <div class="feedback-section" id="tipsSection">
+                                <h4><i class="fas fa-lightbulb"></i> Improvement Tips</h4>
+                                <div class="tips-content" id="tipsContent">
+                                    <div class="empty-state">Submit your answer to receive personalized feedback</div>
+                                </div>
+                            </div>
+                            
+                            <!-- Detailed Analysis -->
+                            <div class="feedback-section" id="analysisSection">
+                                <h4><i class="fas fa-search"></i> Detailed Analysis</h4>
+                                <div class="analysis-content" id="analysisContent">
+                                    <div class="empty-state">Detailed analysis will appear here after submission</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Navigation Controls -->
@@ -1135,16 +1189,89 @@
                     conciseAnswer = question.conciseAnswer;
                 }
                 
-                // Format concise answer as bullet points if it's long
-                if (conciseAnswer.length > 100 && !conciseAnswer.includes('<ul>')) {
-                    const sentences = conciseAnswer.split('. ').filter(s => s.trim());
-                    if (sentences.length > 1) {
-                        conciseAnswer = '<ul>' + sentences.map(s => `<li>${s.trim()}.</li>`).join('') + '</ul>';
+                // Convert answer to safe HTML with robust formatting
+                function formatAnswerAsSafeHTML(text) {
+                    // If text is empty, return placeholder
+                    if (!text || text.trim() === '') {
+                        return '<em>No answer available.</em>';
                     }
+                    
+                    // Check if text contains nested bullet points (indented with 2+ spaces)
+                    const lines = text.split('\n');
+                    const hasNestedBullets = lines.some(line => {
+                        const trimmed = line.trim();
+                        // Check if line starts with bullet after some spaces
+                        if (line.match(/^\s{2,}[•\-]/)) {
+                            return true;
+                        }
+                        // Check for sub-bullets (dash after bullet line)
+                        return false;
+                    });
+                    
+                    // For nested bullets or complex formatting, use simple pre-wrap style
+                    if (hasNestedBullets || text.length > 500) {
+                        // Escape HTML and preserve line breaks with <br>
+                        const tempDiv = document.createElement('div');
+                        tempDiv.textContent = text;
+                        let escaped = tempDiv.innerHTML;
+                        
+                        // Preserve multiple spaces by replacing leading spaces with &nbsp;
+                        // Replace newlines with <br>
+                        escaped = escaped.replace(/\n/g, '<br>');
+                        
+                        // Replace leading spaces (before bullets) with &nbsp; to maintain indentation
+                        // This regex matches spaces at the beginning of a line (after <br> or start)
+                        escaped = escaped.replace(/(^|<br>)( +)/g, function(match, prefix, spaces) {
+                            return prefix + '&nbsp;'.repeat(spaces.length);
+                        });
+                        
+                        // Wrap in a div with pre-wrap style for better formatting
+                        return `<div style="white-space: pre-wrap; font-family: inherit;">${escaped}</div>`;
+                    }
+                    
+                    // For simple bullet lists, convert to HTML list
+                    const bulletLines = lines.filter(line => {
+                        const trimmed = line.trim();
+                        return trimmed.startsWith('•') || trimmed.startsWith('-');
+                    });
+                    
+                    // If most lines are bullets, convert to list
+                    if (bulletLines.length >= lines.length * 0.3 && bulletLines.length >= 2) {
+                        let result = '<ul>';
+                        for (const line of lines) {
+                            const trimmed = line.trim();
+                            if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
+                                const content = trimmed.substring(1).trim();
+                                const tempDiv = document.createElement('div');
+                                tempDiv.textContent = content;
+                                const escaped = tempDiv.innerHTML;
+                                result += `<li>${escaped}</li>`;
+                            } else if (trimmed === '') {
+                                // Empty line - close list if we have content
+                                if (result.endsWith('</li>')) {
+                                    result += '</ul><br><ul>';
+                                }
+                            }
+                        }
+                        result += '</ul>';
+                        return result;
+                    }
+                    
+                    // Default: escape HTML and preserve line breaks
+                    const tempDiv = document.createElement('div');
+                    tempDiv.textContent = text;
+                    let escaped = tempDiv.innerHTML;
+                    escaped = escaped.replace(/\n/g, '<br>');
+                    return escaped;
                 }
                 
-                // Update answer content (only concise now)
-                conciseAnswerContent.innerHTML = conciseAnswer;
+                try {
+                    const safeHTML = formatAnswerAsSafeHTML(conciseAnswer);
+                    conciseAnswerContent.innerHTML = safeHTML;
+                } catch (error) {
+                    console.error('Error formatting answer:', error);
+                    conciseAnswerContent.innerHTML = '<span style="color: #e74c3c;">Error loading answer. Please try another question.</span>';
+                }
             }
             
             function updateNavigation(index) {
@@ -1220,6 +1347,29 @@
                         if (answerTextarea) {
                             answerTextarea.value = '';
                         }
+                    });
+                }
+                
+                // Analyze answer button
+                if (analyzeAnswerBtn) {
+                    analyzeAnswerBtn.addEventListener('click', function() {
+                        const userAnswer = answerTextarea ? answerTextarea.value.trim() : '';
+                        if (!userAnswer) {
+                            alert('Please enter your answer before analyzing.');
+                            return;
+                        }
+                        
+                        const currentQuestion = currentQuestions && currentQuestions[currentIndex];
+                        if (!currentQuestion) {
+                            alert('No question loaded. Please try again.');
+                            return;
+                        }
+                        
+                        // Show feedback section
+                        answerFeedbackSection.style.display = 'block';
+                        
+                        // Analyze the answer
+                        analyzeAnswer(userAnswer, currentQuestion);
                     });
                 }
                 
@@ -1666,6 +1816,187 @@
                 font-size: 1.3rem;
             }
         }
+        
+        /* Answer Feedback Styles */
+        .answer-feedback-section {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+            margin-top: var(--spacing-lg);
+            overflow: hidden;
+        }
+        
+        .feedback-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--spacing-md) var(--spacing-lg);
+            background-color: var(--light-bg);
+            border-bottom: 1px solid var(--light-border);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+        }
+        
+        .feedback-header i {
+            margin-right: var(--spacing-sm);
+            color: var(--info-color);
+        }
+        
+        .feedback-close-btn {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            cursor: pointer;
+            font-size: var(--font-size-base);
+            padding: 4px 8px;
+            border-radius: var(--border-radius-sm);
+            transition: all 0.2s ease;
+        }
+        
+        .feedback-close-btn:hover {
+            background-color: var(--light-border);
+            color: var(--text-primary);
+        }
+        
+        .feedback-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .score-card {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background: linear-gradient(135deg, var(--light-bg) 0%, #f8f9fa 100%);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--light-border);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .score-value {
+            font-size: 3.5rem;
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-color);
+            line-height: 1;
+        }
+        
+        .score-label {
+            font-size: var(--font-size-base);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .score-description {
+            font-size: var(--font-size-sm);
+            color: var(--text-light);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        .feedback-section {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .feedback-section h4 {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+        }
+        
+        .feedback-section h4 i {
+            color: var(--info-color);
+        }
+        
+        .keywords-list, .structure-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }
+        
+        .keyword-item, .structure-item {
+            padding: 6px 12px;
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+        
+        .keyword-item.matched, .structure-item.matched {
+            background-color: var(--success-light);
+            color: var(--success-color);
+            border: 1px solid var(--success-border);
+        }
+        
+        .keyword-item.matched i, .structure-item.matched i {
+            color: var(--success-color);
+        }
+        
+        .keyword-item.missing, .structure-item.missing {
+            background-color: var(--warning-light);
+            color: var(--warning-color);
+            border: 1px solid var(--warning-border);
+        }
+        
+        .keyword-item.missing i, .structure-item.missing i {
+            color: var(--warning-color);
+        }
+        
+        .keyword-weight {
+            font-size: var(--font-size-xs);
+            color: var(--text-light);
+            margin-left: var(--spacing-xs);
+        }
+        
+        .tips-content, .analysis-content {
+            background-color: var(--light-bg);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            border-left: 3px solid var(--info-color);
+            font-size: var(--font-size-sm);
+            line-height: 1.5;
+        }
+        
+        .tips-content ul, .analysis-content ul {
+            margin-left: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .tips-content li, .analysis-content li {
+            margin-bottom: var(--spacing-xs);
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: var(--spacing-lg);
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        /* Info button style */
+        .action-btn.info {
+            background-color: var(--info-color);
+            color: var(--white);
+        }
+        
+        .action-btn.info:hover:not(:disabled) {
+            background-color: var(--info-dark);
+        }
+        
+        /* Define info colors if not already defined */
+        :root {
+            --info-color: #17a2b8;
+            --info-dark: #138496;
+            --success-light: #d4edda;
+            --success-color: #28a745;
+            --success-border: #c3e6cb;
+            --warning-light: #fff3cd;
+            --warning-color: #ffc107;
+            --warning-border: #ffeaa7;
+        }
     </style>
     
     <div class="finance-bro-assistant">
@@ -1906,6 +2237,266 @@
                 
                 observer.observe(assistantPanel, { attributes: true });
             }, 1000);
+            
+            // Answer Analysis Function
+            function analyzeAnswer(userAnswer, question) {
+                // Initialize feedback elements
+                const scoreValue = document.getElementById('scoreValue');
+                const scoreDescription = document.getElementById('scoreDescription');
+                const keywordsList = document.getElementById('keywordsList');
+                const structureList = document.getElementById('structureList');
+                const tipsContent = document.getElementById('tipsContent');
+                const analysisContent = document.getElementById('analysisContent');
+                
+                // Reset previous feedback
+                keywordsList.innerHTML = '';
+                structureList.innerHTML = '';
+                tipsContent.innerHTML = '';
+                analysisContent.innerHTML = '';
+                
+                // Calculate basic metrics
+                const answerLength = userAnswer.length;
+                const wordCount = userAnswer.split(/\s+/).filter(word => word.length > 0).length;
+                const hasStructure = answerLength > 50 && (userAnswer.includes(':') || userAnswer.includes('•') || userAnswer.includes('-') || userAnswer.includes('1.'));
+                
+                let totalScore = 0;
+                let maxPossibleScore = 100;
+                const feedback = [];
+                
+                // 1. Keyword Matching (if available)
+                if (question.scoringKeywords && Object.keys(question.scoringKeywords).length > 0) {
+                    const keywords = question.scoringKeywords;
+                    const matchedKeywords = [];
+                    const missingKeywords = [];
+                    let keywordScore = 0;
+                    let maxKeywordScore = 0;
+                    
+                    // Calculate scores
+                    Object.entries(keywords).forEach(([keyword, weight]) => {
+                        maxKeywordScore += weight;
+                        const regex = new RegExp(`\\b${keyword}\\b`, 'i');
+                        if (regex.test(userAnswer)) {
+                            keywordScore += weight;
+                            matchedKeywords.push({ keyword, weight, matched: true });
+                        } else {
+                            missingKeywords.push({ keyword, weight, matched: false });
+                        }
+                    });
+                    
+                    // Display keyword matches
+                    keywordsList.innerHTML = '';
+                    
+                    // Show matched keywords
+                    matchedKeywords.forEach(item => {
+                        const keywordEl = document.createElement('div');
+                        keywordEl.className = 'keyword-item matched';
+                        keywordEl.innerHTML = `<i class="fas fa-check"></i> ${item.keyword} <span class="keyword-weight">${item.weight}pts</span>`;
+                        keywordsList.appendChild(keywordEl);
+                    });
+                    
+                    // Show missing keywords
+                    missingKeywords.forEach(item => {
+                        const keywordEl = document.createElement('div');
+                        keywordEl.className = 'keyword-item missing';
+                        keywordEl.innerHTML = `<i class="fas fa-times"></i> ${item.keyword} <span class="keyword-weight">${item.weight}pts</span>`;
+                        keywordsList.appendChild(keywordEl);
+                    });
+                    
+                    // Calculate keyword percentage
+                    const keywordPercentage = maxKeywordScore > 0 ? Math.round((keywordScore / maxKeywordScore) * 100) : 0;
+                    totalScore += keywordPercentage * 0.4; // 40% of total score from keywords
+                    
+                    feedback.push(`Keyword Coverage: ${keywordPercentage}% (${matchedKeywords.length}/${matchedKeywords.length + missingKeywords.length} keywords)`);
+                } else {
+                    keywordsList.innerHTML = '<div class="empty-state">No keyword data available for this question</div>';
+                }
+                
+                // 2. Structure Assessment (if available)
+                if (question.expectedStructure && question.expectedStructure.length > 0) {
+                    const expectedStructure = question.expectedStructure;
+                    const matchedStructure = [];
+                    const missingStructure = [];
+                    let structureScore = 0;
+                    
+                    expectedStructure.forEach(item => {
+                        // Check if the structure element is mentioned
+                        const hasItem = userAnswer.toLowerCase().includes(item.toLowerCase()) || 
+                                       item.toLowerCase().split(' ').some(word => 
+                                           word.length > 4 && userAnswer.toLowerCase().includes(word.toLowerCase())
+                                       );
+                        
+                        if (hasItem) {
+                            structureScore++;
+                            matchedStructure.push({ item, matched: true });
+                        } else {
+                            missingStructure.push({ item, matched: false });
+                        }
+                    });
+                    
+                    // Display structure assessment
+                    structureList.innerHTML = '';
+                    
+                    // Show matched structure elements
+                    matchedStructure.forEach(item => {
+                        const structureEl = document.createElement('div');
+                        structureEl.className = 'structure-item matched';
+                        structureEl.innerHTML = `<i class="fas fa-check"></i> ${item.item}`;
+                        structureList.appendChild(structureEl);
+                    });
+                    
+                    // Show missing structure elements
+                    missingStructure.forEach(item => {
+                        const structureEl = document.createElement('div');
+                        structureEl.className = 'structure-item missing';
+                        structureEl.innerHTML = `<i class="fas fa-times"></i> ${item.item}`;
+                        structureList.appendChild(structureEl);
+                    });
+                    
+                    // Calculate structure percentage
+                    const structurePercentage = expectedStructure.length > 0 ? Math.round((structureScore / expectedStructure.length) * 100) : 0;
+                    totalScore += structurePercentage * 0.3; // 30% of total score from structure
+                    
+                    feedback.push(`Structure: ${structurePercentage}% (${matchedStructure.length}/${expectedStructure.length} elements)`);
+                } else {
+                    structureList.innerHTML = '<div class="empty-state">No structure data available for this question</div>';
+                    
+                    // Fallback structure assessment based on general criteria
+                    if (hasStructure) {
+                        totalScore += 20; // Bonus for having some structure
+                        feedback.push('Good: Your answer shows some structure (bullets, numbering, or colons)');
+                    } else if (answerLength > 100) {
+                        feedback.push('Tip: Consider adding structure to your answer (use bullets, numbering, or clear sections)');
+                    }
+                }
+                
+                // 3. Answer Length Assessment
+                if (answerLength < 50) {
+                    feedback.push('Warning: Your answer is very short. Try to provide more detail.');
+                } else if (answerLength < 150) {
+                    totalScore += 10;
+                    feedback.push('Good: Your answer has reasonable length');
+                } else if (answerLength >= 150) {
+                    totalScore += 20;
+                    feedback.push('Excellent: Your answer is comprehensive in length');
+                }
+                
+                // 4. Word Count Bonus
+                if (wordCount > 100) {
+                    totalScore += 10;
+                } else if (wordCount > 50) {
+                    totalScore += 5;
+                }
+                
+                // Cap score at 100
+                totalScore = Math.min(Math.max(Math.round(totalScore), 0), 100);
+                
+                // Set score and description
+                scoreValue.textContent = totalScore;
+                
+                // Determine score category
+                let description = '';
+                if (totalScore >= 90) {
+                    description = 'Excellent answer! You covered most key points with good structure.';
+                } else if (totalScore >= 70) {
+                    description = 'Good answer! With some improvements, you can make it even better.';
+                } else if (totalScore >= 50) {
+                    description = 'Average answer. Consider reviewing the key concepts and structure.';
+                } else {
+                    description = 'Needs improvement. Focus on covering the key concepts mentioned.';
+                }
+                scoreDescription.textContent = description;
+                
+                // 5. Improvement Tips (if available)
+                if (question.detailedAnalysis && question.detailedAnalysis.improvementTips) {
+                    tipsContent.innerHTML = '';
+                    const tips = question.detailedAnalysis.improvementTips;
+                    
+                    // Handle different tip formats
+                    if (typeof tips === 'string') {
+                        // Split by numbered points or newlines
+                        const tipItems = tips.split(/\d+\.\s+/).filter(item => item.trim().length > 0);
+                        if (tipItems.length > 0) {
+                            const ul = document.createElement('ul');
+                            tipItems.forEach(tip => {
+                                const li = document.createElement('li');
+                                li.textContent = tip.trim();
+                                ul.appendChild(li);
+                            });
+                            tipsContent.appendChild(ul);
+                        } else {
+                            tipsContent.textContent = tips;
+                        }
+                    } else {
+                        tipsContent.textContent = JSON.stringify(tips);
+                    }
+                } else {
+                    // Generate generic tips based on score
+                    tipsContent.innerHTML = '';
+                    const ul = document.createElement('ul');
+                    
+                    if (totalScore < 70) {
+                        ul.innerHTML += '<li>Review the key concepts mentioned in the question</li>';
+                        ul.innerHTML += '<li>Structure your answer with clear sections or bullet points</li>';
+                        ul.innerHTML += '<li>Provide specific examples or data points when possible</li>';
+                        ul.innerHTML += '<li>Make sure to address all parts of the question</li>';
+                    } else {
+                        ul.innerHTML += '<li>Excellent work! Consider adding more specific examples</li>';
+                        ul.innerHTML += '<li>Try to connect your answer to recent market developments</li>';
+                        ul.innerHTML += '<li>Consider how your answer would apply in a real-world scenario</li>';
+                    }
+                    
+                    tipsContent.appendChild(ul);
+                }
+                
+                // 6. Detailed Analysis (if available)
+                if (question.detailedAnalysis) {
+                    analysisContent.innerHTML = '';
+                    const analysis = question.detailedAnalysis;
+                    
+                    // Create analysis sections
+                    if (analysis.overview) {
+                        const overview = document.createElement('div');
+                        overview.innerHTML = `<strong>Overview:</strong> ${analysis.overview}`;
+                        analysisContent.appendChild(overview);
+                    }
+                    
+                    if (analysis.whyWorks) {
+                        const whyWorks = document.createElement('div');
+                        whyWorks.innerHTML = `<strong>What makes a strong answer:</strong> ${analysis.whyWorks}`;
+                        whyWorks.style.marginTop = '10px';
+                        analysisContent.appendChild(whyWorks);
+                    }
+                    
+                    if (analysis.commonMistakes) {
+                        const mistakes = document.createElement('div');
+                        mistakes.innerHTML = `<strong>Common mistakes to avoid:</strong> ${analysis.commonMistakes}`;
+                        mistakes.style.marginTop = '10px';
+                        analysisContent.appendChild(mistakes);
+                    }
+                } else {
+                    analysisContent.innerHTML = '<div class="empty-state">No detailed analysis available for this question</div>';
+                }
+                
+                // Add feedback summary to console for debugging
+                console.log('Answer Analysis:', {
+                    score: totalScore,
+                    length: answerLength,
+                    wordCount: wordCount,
+                    feedback: feedback
+                });
+            }
+            
+            // Close feedback button functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const closeFeedbackBtn = document.getElementById('closeFeedbackBtn');
+                const answerFeedbackSection = document.getElementById('answerFeedbackSection');
+                
+                if (closeFeedbackBtn && answerFeedbackSection) {
+                    closeFeedbackBtn.addEventListener('click', function() {
+                        answerFeedbackSection.style.display = 'none';
+                    });
+                }
+            });
         });
     </script>
 </body>

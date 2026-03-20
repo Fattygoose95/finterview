@@ -558,6 +558,9 @@ body {
 
 .answer-content {
   line-height: var(--line-height-relaxed);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap; /* Preserve line breaks */
 }
 
 .answer-content.concise ul {

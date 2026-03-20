@@ -1,7 +1,6 @@
-// finterview Question Bank v0.6
+// finterview Question Bank v0.3
 // Finance interview questions categorized by role and question type
 // Updated: 2026-03-20 - Transformed template answers for professional presentation
-// Answer fields set: 2026-03-20
 
 // Role definitions (for filtering)
 const roles = {
@@ -10442,7 +10441,7 @@ const questionBank = [
     "difficulty": "easy",
     "category": "behavioral",
     "frequencyScore": 3,
-    "modelAnswer": "A career in finance appeals to those who enjoy analytical challenges, market dynamics, and making impactful economic decisions. Strong candidates typically mention: 1) **Intellectual curiosity** about how markets function and interact; 2) **Passion for problem-solving** using quantitative and qualitative analysis; 3) **Desire to contribute** to economic growth and efficient capital allocation; 4) **Career opportunities** for advancement and global exposure. Avoid generic answers—cite specific experiences, courses, or market events that sparked your interest.",
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
     "answers": {
       "concise": {
         "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
@@ -10456,9 +10455,7 @@ const questionBank = [
       "motivation",
       "ethics"
     ],
-    "notes": "Cross-industry general question for behavioral assessment.",
-    "conciseAnswer": "A career in finance appeals to those who enjoy analytical challenges, market dynamics, and making impactful economic decisions. Strong candidates typi...",
-    "answer": "A career in finance appeals to those who enjoy analytical challenges, market dynamics, and making impactful economic decisions. Strong candidates typi..."
+    "notes": "Cross-industry general question for behavioral assessment."
   },
   {
     "id": "gen_general_1773306469454_1",
@@ -10468,7 +10465,7 @@ const questionBank = [
     "difficulty": "easy",
     "category": "behavioral",
     "frequencyScore": 3,
-    "modelAnswer": "Staying informed requires a multi‑source approach: 1) **Primary news**: Bloomberg Terminal, Reuters Eikon, Financial Times, Wall Street Journal for real‑time updates; 2) **In‑depth analysis**: The Economist, McKinsey Quarterly, industry‑specific research reports; 3) **Digital platforms**: LinkedIn for thought leadership, Twitter/X for breaking news, specialized newsletters (Morning Brew, MoneyStuff); 4) **Podcasts/audio**: Bloomberg Surveillance, Capital Allocators, Exchanges at Goldman Sachs. Demonstrate critical thinking by explaining how you filter signal from noise and apply insights to your work.",
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
     "answers": {
       "concise": {
         "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
@@ -10482,9 +10479,7 @@ const questionBank = [
       "motivation",
       "ethics"
     ],
-    "notes": "Cross-industry general question for behavioral assessment.",
-    "conciseAnswer": "Primary news: Bloomberg Terminal, Reuters Eikon, Financial Times, Wall Street Journal for real‑time updates; 2) **In‑depth analysis**: The Economist, McKinsey Quarterly, industry‑specific research reports; 3) **Digital platforms**: LinkedIn for thought leadership, Twitter/X for breaking news, specialized newsletters (Morning Brew, MoneyStuff); 4) **Podcasts/audio**: Bloomberg Surveillance, Capital Allocators, Exchanges at Goldman Sachs. Demonstrate critical thinking by explaining how you filter signal from noise and apply insights to your work.",
-    "answer": "Primary news: Bloomberg Terminal, Reuters Eikon, Financial Times, Wall Street Journal for real‑time updates; 2) **In‑depth analysis**: The Economist, McKinsey Quarterly, industry‑specific research reports; 3) **Digital platforms**: LinkedIn for th..."
+    "notes": "Cross-industry general question for behavioral assessment."
   },
   {
     "id": "gen_general_1773306469454_2",
@@ -10494,7 +10489,7 @@ const questionBank = [
     "difficulty": "easy",
     "category": "behavioral",
     "frequencyScore": 3,
-    "modelAnswer": "Use the STAR framework: **Situation** (brief context of the complex data set), **Task** (your specific analytical objective), **Action** (step‑by‑step approach: data cleaning, model selection, assumption testing, sensitivity analysis), **Result** (key findings, business impact, lessons learned). Emphasize technical skills (Excel, Python, statistical methods) and soft skills (collaboration, communication of complex results). Prepare a concise 90‑second story that highlights both analytical rigor and practical judgment.",
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
     "answers": {
       "concise": {
         "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
@@ -10508,9 +10503,7 @@ const questionBank = [
       "motivation",
       "ethics"
     ],
-    "notes": "Cross-industry general question for behavioral assessment.",
-    "conciseAnswer": "Use the STAR framework: **Situation** (brief context of the complex data set), **Task** (your specific analytical objective), **Action** (step‑by‑step...",
-    "answer": "Use the STAR framework: **Situation** (brief context of the complex data set), **Task** (your specific analytical objective), **Action** (step‑by‑step..."
+    "notes": "Cross-industry general question for behavioral assessment."
   },
   {
     "id": "gen_general_1773306469454_3",
@@ -10520,7 +10513,7 @@ const questionBank = [
     "difficulty": "easy",
     "category": "behavioral",
     "frequencyScore": 3,
-    "modelAnswer": "The paramount ethical consideration is **fiduciary duty**—the legal and ethical obligation to act in the best interest of clients above all else. This encompasses: 1) **Transparency** in fees, risks, and conflicts of interest; 2) **Prudent stewardship** of client assets; 3) **Compliance** with regulations (SEC, FINRA, MiFID II); 4) **Avoiding insider trading**, market manipulation, and misrepresentation. Discuss how ethical behavior builds long‑term trust, reduces systemic risk, and upholds market integrity. Reference recent scandals and regulatory responses to show awareness.",
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
     "answers": {
       "concise": {
         "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
@@ -10534,9 +10527,7 @@ const questionBank = [
       "motivation",
       "ethics"
     ],
-    "notes": "Cross-industry general question for behavioral assessment.",
-    "conciseAnswer": "The paramount ethical consideration is **fiduciary duty**—the legal and ethical obligation to act in the best interest of clients above all else. This...",
-    "answer": "The paramount ethical consideration is **fiduciary duty**—the legal and ethical obligation to act in the best interest of clients above all else. This..."
+    "notes": "Cross-industry general question for behavioral assessment."
   },
   {
     "id": "gen_general_1773306469454_4",
@@ -10546,7 +10537,7 @@ const questionBank = [
     "difficulty": "easy",
     "category": "behavioral",
     "frequencyScore": 3,
-    "modelAnswer": "Adopt a structured learning framework: 1) **Foundation** (read academic papers, textbooks, regulatory documents); 2) **Application** (build simple models, analyze case studies, use simulation tools); 3) **Validation** (discuss with mentors, compare with industry best practices, test assumptions); 4) **Integration** (apply to real‑world scenarios, teach others to reinforce understanding). Mention specific resources (CFA curriculum, Coursera courses, professional certifications) and emphasize adaptability in a rapidly evolving industry.",
+    "modelAnswer": "This question assesses your motivation, industry awareness, and professional mindset. Provide specific, thoughtful examples that demonstrate your genuine interest in finance, your understanding of current trends, and your commitment to ethical professional conduct.",
     "answers": {
       "concise": {
         "answer": "• Express genuine, specific interest in finance\n• Provide concrete examples of industry engagement\n• Demonstrate ethical awareness and professionalism\n• Connect your skills to finance career requirements",
@@ -10560,9 +10551,7 @@ const questionBank = [
       "motivation",
       "ethics"
     ],
-    "notes": "Cross-industry general question for behavioral assessment.",
-    "conciseAnswer": "Adopt a structured learning framework: 1) **Foundation** (read academic papers, textbooks, regulatory documents); 2) **Application** (build simple mod...",
-    "answer": "Adopt a structured learning framework: 1) **Foundation** (read academic papers, textbooks, regulatory documents); 2) **Application** (build simple mod..."
+    "notes": "Cross-industry general question for behavioral assessment."
   },
   {
     "id": "sys_am_1773307473010_0",
@@ -16938,9 +16927,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital structure optimization.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_1",
@@ -16966,9 +16953,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital budgeting techniques.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_2",
@@ -16994,9 +16979,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers working capital management.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to working capital management."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_3",
@@ -17022,9 +17005,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers dividend policy decisions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_4",
@@ -17050,9 +17031,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers mergers & acquisitions strategy.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_5",
@@ -17078,9 +17057,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate valuation methods.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_6",
@@ -17106,9 +17083,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers financial planning & analysis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_7",
@@ -17134,9 +17109,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers treasury management.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to treasury management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to treasury management."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_8",
@@ -17162,9 +17135,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers risk management in corporations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_9",
@@ -17190,9 +17161,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers investor relations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investor relations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investor relations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_10",
@@ -17218,9 +17187,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate governance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate governance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_11",
@@ -17246,9 +17213,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers strategic financial decisions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_12",
@@ -17274,9 +17239,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers cost of capital calculation.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_13",
@@ -17302,9 +17265,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers financial reporting analysis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_14",
@@ -17330,9 +17291,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate restructuring.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_15",
@@ -17358,9 +17317,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital structure optimization.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_16",
@@ -17386,9 +17343,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital budgeting techniques.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_17",
@@ -17414,9 +17369,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers working capital management.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to working capital management."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_18",
@@ -17442,9 +17395,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers dividend policy decisions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_19",
@@ -17470,9 +17421,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers mergers & acquisitions strategy.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_20",
@@ -17498,9 +17447,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate valuation methods.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_21",
@@ -17526,9 +17473,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers financial planning & analysis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_22",
@@ -17554,9 +17499,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers treasury management.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to treasury management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to treasury management."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_23",
@@ -17582,9 +17525,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers risk management in corporations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_24",
@@ -17610,9 +17551,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers investor relations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investor relations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investor relations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_25",
@@ -17638,9 +17577,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate governance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate governance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_26",
@@ -17666,9 +17603,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers strategic financial decisions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_27",
@@ -17694,9 +17629,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers cost of capital calculation.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_28",
@@ -17722,9 +17655,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers financial reporting analysis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_29",
@@ -17750,9 +17681,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate restructuring.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_30",
@@ -17778,9 +17707,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital structure optimization.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_31",
@@ -17806,9 +17733,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital budgeting techniques.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_32",
@@ -17834,9 +17759,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers working capital management.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to working capital management."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_33",
@@ -17862,9 +17785,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers dividend policy decisions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_34",
@@ -17890,9 +17811,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers mergers & acquisitions strategy.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_35",
@@ -17918,9 +17837,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate valuation methods.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_36",
@@ -17946,9 +17863,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers financial planning & analysis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_37",
@@ -17974,9 +17889,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers treasury management.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to treasury management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to treasury management."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_38",
@@ -18002,9 +17915,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers risk management in corporations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_39",
@@ -18030,9 +17941,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers investor relations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investor relations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investor relations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_40",
@@ -18058,9 +17967,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate governance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate governance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_41",
@@ -18086,9 +17993,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers strategic financial decisions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_42",
@@ -18114,9 +18019,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers cost of capital calculation.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_43",
@@ -18142,9 +18045,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers financial reporting analysis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_44",
@@ -18170,9 +18071,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers corporate restructuring.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_45",
@@ -18198,9 +18097,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital structure optimization.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_46",
@@ -18226,9 +18123,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers capital budgeting techniques.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_47",
@@ -18254,9 +18149,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers working capital management.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to working capital management."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_48",
@@ -18282,9 +18175,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers dividend policy decisions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_corpfin_1773311903261_49",
@@ -18310,9 +18201,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Corporate Finance industry. Covers mergers & acquisitions strategy.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_0",
@@ -18338,9 +18227,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers digital payments systems.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_1",
@@ -18366,9 +18253,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers blockchain & cryptocurrency.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_2",
@@ -18394,9 +18279,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers peer-to-peer lending.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_3",
@@ -18422,9 +18305,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers robo-advisors & ai in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_4",
@@ -18450,9 +18331,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers regulatory technology (regtech).",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech)."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_5",
@@ -18478,9 +18357,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers insurtech innovations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_6",
@@ -18506,9 +18383,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers open banking & apis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_7",
@@ -18534,9 +18409,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers financial data analytics.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_8",
@@ -18562,9 +18435,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers cybersecurity in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_9",
@@ -18590,9 +18461,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers mobile banking solutions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_10",
@@ -18618,9 +18487,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers digital wallets & neobanks.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_11",
@@ -18646,9 +18513,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers smart contracts.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to smart contracts."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_12",
@@ -18674,9 +18539,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers decentralized finance (defi).",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi)."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_13",
@@ -18702,9 +18565,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers financial inclusion technologies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_14",
@@ -18730,9 +18591,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers quantum computing in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_15",
@@ -18758,9 +18617,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers digital payments systems.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_16",
@@ -18786,9 +18643,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers blockchain & cryptocurrency.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_17",
@@ -18814,9 +18669,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers peer-to-peer lending.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_18",
@@ -18842,9 +18695,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers robo-advisors & ai in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_19",
@@ -18870,9 +18721,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers regulatory technology (regtech).",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech)."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_20",
@@ -18898,9 +18747,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers insurtech innovations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_21",
@@ -18926,9 +18773,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers open banking & apis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_22",
@@ -18954,9 +18799,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers financial data analytics.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_23",
@@ -18982,9 +18825,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers cybersecurity in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_24",
@@ -19010,9 +18851,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers mobile banking solutions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_25",
@@ -19038,9 +18877,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers digital wallets & neobanks.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_26",
@@ -19066,9 +18903,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers smart contracts.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to smart contracts."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_27",
@@ -19094,9 +18929,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers decentralized finance (defi).",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi)."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_28",
@@ -19122,9 +18955,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers financial inclusion technologies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_29",
@@ -19150,9 +18981,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers quantum computing in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_30",
@@ -19178,9 +19007,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers digital payments systems.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_31",
@@ -19206,9 +19033,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers blockchain & cryptocurrency.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_32",
@@ -19234,9 +19059,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers peer-to-peer lending.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_33",
@@ -19262,9 +19085,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers robo-advisors & ai in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_34",
@@ -19290,9 +19111,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers regulatory technology (regtech).",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech)."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_35",
@@ -19318,9 +19137,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers insurtech innovations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_36",
@@ -19346,9 +19163,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers open banking & apis.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_37",
@@ -19374,9 +19189,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers financial data analytics.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_38",
@@ -19402,9 +19215,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers cybersecurity in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_39",
@@ -19430,9 +19241,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers mobile banking solutions.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_40",
@@ -19458,9 +19267,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers digital wallets & neobanks.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_41",
@@ -19486,9 +19293,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers smart contracts.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to smart contracts."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_42",
@@ -19514,9 +19319,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers decentralized finance (defi).",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi)."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_43",
@@ -19542,9 +19345,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers financial inclusion technologies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_44",
@@ -19570,9 +19371,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers quantum computing in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_45",
@@ -19598,9 +19397,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers digital payments systems.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_46",
@@ -19626,9 +19423,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers blockchain & cryptocurrency.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_47",
@@ -19654,9 +19449,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers peer-to-peer lending.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_48",
@@ -19682,9 +19475,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers robo-advisors & ai in finance.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fintech_1773311903261_49",
@@ -19710,9 +19501,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for FinTech industry. Covers regulatory technology (regtech).",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech)."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_0",
@@ -19738,9 +19527,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers wealth preservation strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_1",
@@ -19766,9 +19553,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers estate planning & trusts.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_2",
@@ -19794,9 +19579,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family governance structures.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family governance structures."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_3",
@@ -19822,9 +19605,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers philanthropic planning.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_4",
@@ -19850,9 +19631,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers investment management for uhnw.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_5",
@@ -19878,9 +19657,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers tax optimization strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_6",
@@ -19906,9 +19683,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers succession planning.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to succession planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to succession planning."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_7",
@@ -19934,9 +19709,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers risk management for family wealth.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_8",
@@ -19962,9 +19735,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers lifestyle management services.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_9",
@@ -19990,9 +19761,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family office operations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family office operations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family office operations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_10",
@@ -20018,9 +19787,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers multi-generational wealth transfer.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_11",
@@ -20046,9 +19813,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers asset protection strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_12",
@@ -20074,9 +19839,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family business advisory.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family business advisory."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_13",
@@ -20102,9 +19865,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers concierge services for families.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_14",
@@ -20130,9 +19891,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers educational planning for heirs.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_15",
@@ -20158,9 +19917,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers wealth preservation strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_16",
@@ -20186,9 +19943,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers estate planning & trusts.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_17",
@@ -20214,9 +19969,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family governance structures.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family governance structures."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_18",
@@ -20242,9 +19995,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers philanthropic planning.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_19",
@@ -20270,9 +20021,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers investment management for uhnw.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_20",
@@ -20298,9 +20047,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers tax optimization strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_21",
@@ -20326,9 +20073,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers succession planning.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to succession planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to succession planning."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_22",
@@ -20354,9 +20099,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers risk management for family wealth.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_23",
@@ -20382,9 +20125,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers lifestyle management services.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_24",
@@ -20410,9 +20151,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family office operations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family office operations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family office operations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_25",
@@ -20438,9 +20177,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers multi-generational wealth transfer.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_26",
@@ -20466,9 +20203,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers asset protection strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_27",
@@ -20494,9 +20229,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family business advisory.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family business advisory."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_28",
@@ -20522,9 +20255,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers concierge services for families.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_29",
@@ -20550,9 +20281,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers educational planning for heirs.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_30",
@@ -20578,9 +20307,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers wealth preservation strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_31",
@@ -20606,9 +20333,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers estate planning & trusts.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_32",
@@ -20634,9 +20359,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family governance structures.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family governance structures."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_33",
@@ -20662,9 +20385,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers philanthropic planning.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_34",
@@ -20690,9 +20411,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers investment management for uhnw.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_35",
@@ -20718,9 +20437,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers tax optimization strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_36",
@@ -20746,9 +20463,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers succession planning.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to succession planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to succession planning."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_37",
@@ -20774,9 +20489,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers risk management for family wealth.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_38",
@@ -20802,9 +20515,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers lifestyle management services.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_39",
@@ -20830,9 +20541,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family office operations.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family office operations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family office operations."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_40",
@@ -20858,9 +20567,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers multi-generational wealth transfer.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_41",
@@ -20886,9 +20593,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers asset protection strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_42",
@@ -20914,9 +20619,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family business advisory.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family business advisory."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_43",
@@ -20942,9 +20645,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers concierge services for families.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_44",
@@ -20970,9 +20671,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers educational planning for heirs.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_45",
@@ -20998,9 +20697,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers wealth preservation strategies.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_46",
@@ -21026,9 +20723,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers estate planning & trusts.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_47",
@@ -21054,9 +20749,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers family governance structures.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family governance structures."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_48",
@@ -21082,9 +20775,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers philanthropic planning.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning."
+    "_needs_concise_fix": true
   },
   {
     "id": "gen_fo_1773311903261_49",
@@ -21110,9 +20801,7 @@ const questionBank = [
       "entry-level"
     ],
     "notes": "Generated question for Family Office industry. Covers investment management for uhnw.",
-    "_needs_concise_fix": true,
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw."
+    "_needs_concise_fix": true
   }
 ];
 
