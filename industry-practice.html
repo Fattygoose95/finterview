@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260320_2300"></script>
+    <script src="questions.js?v=20260320_2345"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -551,8 +551,18 @@
                         <textarea 
                             class="answer-textarea" 
                             id="answerTextarea" 
-                            placeholder="Type your answer here... Try to answer in your own words before revealing the solution."
+                            placeholder="Type your answer here... Then click 'Analyze Answer' to get detailed feedback on how to improve."
+                            rows="4"
                         ></textarea>
+                        
+                        <div class="answer-input-footer">
+                            <div class="char-count" id="charCount">
+                                <span id="currentChars">0</span>/<span id="minChars">50</span> characters (minimum 50 for analysis)
+                            </div>
+                            <div class="input-hint" id="inputHint">
+                                <i class="fas fa-info-circle"></i> Write at least 50 characters for meaningful analysis
+                            </div>
+                        </div>
                         
                         <div class="answer-controls">
                             <div class="answer-actions">
@@ -570,7 +580,9 @@
                                 </button>
                             </div>
                             
-
+                            <div class="submit-guidance">
+                                <i class="fas fa-arrow-right"></i> Type your answer above, then click <strong>Analyze Answer</strong> for feedback
+                            </div>
                         </div>
                     </div>
 
@@ -1346,22 +1358,104 @@
                     clearAnswerBtn.addEventListener('click', function() {
                         if (answerTextarea) {
                             answerTextarea.value = '';
+                            updateCharCount(); // Update character count when cleared
                         }
                     });
                 }
                 
-                // Analyze answer button
+                // Character count and input validation
+                function updateCharCount() {
+                    const answerTextarea = document.getElementById('answerTextarea');
+                    const charCount = document.getElementById('charCount');
+                    const currentChars = document.getElementById('currentChars');
+                    const inputHint = document.getElementById('inputHint');
+                    
+                    if (!answerTextarea || !charCount || !currentChars || !inputHint) return;
+                    
+                    const text = answerTextarea.value;
+                    const charLength = text.length;
+                    const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+                    
+                    // Update character count
+                    currentChars.textContent = charLength;
+                    
+                    // Update styles based on length
+                    if (charLength === 0) {
+                        charCount.className = 'char-count';
+                        answerTextarea.className = 'answer-textarea';
+                        inputHint.className = 'input-hint';
+                        inputHint.innerHTML = '<i class="fas fa-info-circle"></i> Write at least 50 characters for meaningful analysis';
+                    } else if (charLength < 50) {
+                        charCount.className = 'char-count warning';
+                        answerTextarea.className = 'answer-textarea error';
+                        inputHint.className = 'input-hint error';
+                        inputHint.innerHTML = `<i class="fas fa-exclamation-circle"></i> Write ${50 - charLength} more characters for analysis`;
+                    } else if (charLength < 150) {
+                        charCount.className = 'char-count';
+                        answerTextarea.className = 'answer-textarea success';
+                        inputHint.className = 'input-hint success';
+                        inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Good! ${wordCount} words - ready for analysis`;
+                    } else {
+                        charCount.className = 'char-count success';
+                        answerTextarea.className = 'answer-textarea success';
+                        inputHint.className = 'input-hint success';
+                        inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Excellent! ${wordCount} words - detailed answer`;
+                    }
+                }
+                
+                // Add input event listener for character count
+                if (answerTextarea) {
+                    answerTextarea.addEventListener('input', updateCharCount);
+                    answerTextarea.addEventListener('focus', updateCharCount);
+                    answerTextarea.addEventListener('blur', updateCharCount);
+                    
+                    // Initialize character count
+                    setTimeout(updateCharCount, 100);
+                }
+                
+                // Analyze answer button with improved validation
                 if (analyzeAnswerBtn) {
                     analyzeAnswerBtn.addEventListener('click', function() {
                         const userAnswer = answerTextarea ? answerTextarea.value.trim() : '';
+                        const charLength = userAnswer.length;
+                        
                         if (!userAnswer) {
-                            alert('Please enter your answer before analyzing.');
+                            // Show error in input hint instead of alert
+                            const inputHint = document.getElementById('inputHint');
+                            if (inputHint) {
+                                inputHint.className = 'input-hint error';
+                                inputHint.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please enter your answer before analyzing';
+                            }
+                            
+                            // Highlight textarea
+                            if (answerTextarea) {
+                                answerTextarea.className = 'answer-textarea error';
+                                answerTextarea.focus();
+                            }
+                            return;
+                        }
+                        
+                        if (charLength < 50) {
+                            const inputHint = document.getElementById('inputHint');
+                            if (inputHint) {
+                                inputHint.className = 'input-hint error';
+                                inputHint.innerHTML = `<i class="fas fa-exclamation-circle"></i> Please write at least 50 characters (currently ${charLength})`;
+                            }
+                            
+                            if (answerTextarea) {
+                                answerTextarea.className = 'answer-textarea error';
+                                answerTextarea.focus();
+                            }
                             return;
                         }
                         
                         const currentQuestion = currentQuestions && currentQuestions[currentIndex];
                         if (!currentQuestion) {
-                            alert('No question loaded. Please try again.');
+                            const inputHint = document.getElementById('inputHint');
+                            if (inputHint) {
+                                inputHint.className = 'input-hint error';
+                                inputHint.innerHTML = '<i class="fas fa-exclamation-circle"></i> No question loaded. Please reload the page.';
+                            }
                             return;
                         }
                         
@@ -1370,6 +1464,13 @@
                         
                         // Analyze the answer
                         analyzeAnswer(userAnswer, currentQuestion);
+                        
+                        // Update hint to show success
+                        const inputHint = document.getElementById('inputHint');
+                        if (inputHint) {
+                            inputHint.className = 'input-hint success';
+                            inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Analysis complete! Check feedback below`;
+                        }
                     });
                 }
                 
@@ -1996,6 +2097,87 @@
             --warning-light: #fff3cd;
             --warning-color: #ffc107;
             --warning-border: #ffeaa7;
+            --error-color: #dc3545;
+            --error-light: #f8d7da;
+        }
+        
+        /* Answer input improvements */
+        .answer-input-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--spacing-sm);
+            font-size: var(--font-size-sm);
+        }
+        
+        .char-count {
+            color: var(--text-light);
+        }
+        
+        .char-count.warning {
+            color: var(--warning-color);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        .char-count.success {
+            color: var(--success-color);
+        }
+        
+        .input-hint {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            color: var(--info-color);
+            font-size: var(--font-size-sm);
+        }
+        
+        .input-hint i {
+            font-size: var(--font-size-base);
+        }
+        
+        .input-hint.error {
+            color: var(--error-color);
+        }
+        
+        .input-hint.success {
+            color: var(--success-color);
+        }
+        
+        .submit-guidance {
+            text-align: center;
+            margin-top: var(--spacing-md);
+            padding: var(--spacing-sm);
+            background-color: var(--light-bg);
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            border-left: 3px solid var(--info-color);
+        }
+        
+        .submit-guidance i {
+            margin-right: var(--spacing-xs);
+            color: var(--info-color);
+        }
+        
+        .submit-guidance strong {
+            color: var(--info-dark);
+            font-weight: var(--font-weight-semibold);
+        }
+        
+        /* Textarea focus states */
+        .answer-textarea:focus {
+            border-color: var(--info-color);
+            box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.1);
+        }
+        
+        .answer-textarea.error {
+            border-color: var(--error-color);
+            box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+        }
+        
+        .answer-textarea.success {
+            border-color: var(--success-color);
+            box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
         }
     </style>
     
