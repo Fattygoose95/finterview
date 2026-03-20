@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260321_0030"></script>
+    <script src="questions.js?v=20260321_0045"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -1411,6 +1411,31 @@
                     const cleanedText = text.trim();
                     const charCount = cleanedText.length;
                     
+                    // Quick pass for legitimate finance answers (length > 100 and contains finance keywords)
+                    if (charCount > 100) {
+                        const financeKeywords = [
+                            'capital', 'debt', 'equity', 'valuation', 'financial', 'analysis', 
+                            'investment', 'banking', 'markets', 'risk', 'return', 'portfolio',
+                            'structure', 'optimization', 'cost', 'benefit', 'tax', 'revenue',
+                            'profit', 'margin', 'ratio', 'growth', 'strategy', 'model', 'forecast',
+                            'projection', 'discount', 'cash', 'flow', 'balance', 'sheet', 'income',
+                            'statement', 'valuation', 'multiple', 'premium', 'discount', 'yield',
+                            'spread', 'liquidity', 'volatility', 'hedge', 'derivative', 'option'
+                        ];
+                        
+                        const lowerText = cleanedText.toLowerCase();
+                        let keywordCount = 0;
+                        for (const keyword of financeKeywords) {
+                            if (lowerText.includes(keyword)) {
+                                keywordCount++;
+                                if (keywordCount >= 3) {
+                                    // Has at least 3 finance keywords, likely legitimate
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                    
                     // If text is all spaces or mostly spaces
                     if (cleanedText.replace(/\s/g, '').length < 10) return true;
                     
@@ -1555,8 +1580,8 @@
                             return;
                         }
                         
-                        // Check for nonsense/random input (幽默检测) - TEMPORARILY DISABLED FOR TESTING
-                        /* if (isNonsenseInput(userAnswer)) {
+                        // Check for nonsense/random input (幽默检测)
+                        if (isNonsenseInput(userAnswer)) {
                             const inputHint = document.getElementById('inputHint');
                             const nonsenseMessage = getNonsenseMessage();
                             
@@ -1578,7 +1603,7 @@
                             
                             // Don't proceed to analysis
                             return;
-                        } */
+                        }
                         
                         const currentQuestion = currentQuestions && currentQuestions[currentIndex];
                         if (!currentQuestion) {
