@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260321_0005"></script>
+    <script src="questions.js?v=20260321_0030"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -1555,8 +1555,8 @@
                             return;
                         }
                         
-                        // Check for nonsense/random input (幽默检测)
-                        if (isNonsenseInput(userAnswer)) {
+                        // Check for nonsense/random input (幽默检测) - TEMPORARILY DISABLED FOR TESTING
+                        /* if (isNonsenseInput(userAnswer)) {
                             const inputHint = document.getElementById('inputHint');
                             const nonsenseMessage = getNonsenseMessage();
                             
@@ -1578,7 +1578,7 @@
                             
                             // Don't proceed to analysis
                             return;
-                        }
+                        } */
                         
                         const currentQuestion = currentQuestions && currentQuestions[currentIndex];
                         if (!currentQuestion) {
