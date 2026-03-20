@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260320_2350"></script>
+    <script src="questions.js?v=20260321_0005"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -1411,6 +1411,9 @@
                     const cleanedText = text.trim();
                     const charCount = cleanedText.length;
                     
+                    // If text is all spaces or mostly spaces
+                    if (cleanedText.replace(/\s/g, '').length < 10) return true;
+                    
                     // 1. Check for excessive repetition of single character
                     const charMap = {};
                     for (const char of cleanedText) {
@@ -1425,68 +1428,83 @@
                     
                     const maxCharPercentage = (maxCharCount / charCount) * 100;
                     
-                    // If a single character makes up more than 40% of the text, likely nonsense
-                    if (maxCharPercentage > 40) return true;
+                    // If a single character makes up more than 35% of the text, likely nonsense
+                    if (maxCharPercentage > 35) return true;
                     
                     // 2. Check for keyboard pattern sequences (like "asdfghjkl" or "qwertyuiop")
                     const keyboardPatterns = [
                         'asdfghjkl', 'qwertyuiop', 'zxcvbnm', '1234567890',
-                        'abcdefghijklmnopqrstuvwxyz', 'йцукенгшщзхъфывапролджэячсмитьбю'
+                        'abcdefghijklmnopqrstuvwxyz', 'йцукенгшщзхъфывапролджэячсмитьбю',
+                        'qazwsxedc', 'rfvtgbyhn', 'ujmikolp', '123123123', '1111111111',
+                        'aaaaaaaaaa', 'bbbbbbbbbb', 'cccccccccc', 'testtesttest', 'testingtesting'
                     ];
                     
                     const lowerText = cleanedText.toLowerCase();
                     for (const pattern of keyboardPatterns) {
-                        if (lowerText.includes(pattern) && pattern.length > 8) {
+                        if (pattern.length > 6 && lowerText.includes(pattern)) {
                             return true;
                         }
                     }
                     
                     // 3. Check for excessive repetition of short phrases
                     const words = cleanedText.split(/\s+/);
-                    if (words.length > 10) {
+                    if (words.length > 8) {
                         const wordFrequency = {};
                         for (const word of words) {
                             if (word.length > 2) { // Ignore short words
-                                wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+                                const cleanWord = word.toLowerCase().replace(/[^\w]/g, '');
+                                if (cleanWord.length > 2) {
+                                    wordFrequency[cleanWord] = (wordFrequency[cleanWord] || 0) + 1;
+                                }
                             }
                         }
                         
                         // Check if any word appears too many times relative to total words
                         for (const [word, count] of Object.entries(wordFrequency)) {
-                            if (count > words.length * 0.3) { // Same word > 30% of all words
+                            if (count > words.length * 0.25) { // Same word > 25% of all words
                                 return true;
                             }
                         }
                     }
                     
                     // 4. Check for gibberish by measuring character diversity
-                    const uniqueChars = new Set(cleanedText.replace(/\s/g, ''));
-                    const diversityRatio = uniqueChars.size / Math.max(1, cleanedText.replace(/\s/g, '').length);
-                    
-                    // Very low diversity (like "aaaaa" or "11111")
-                    if (diversityRatio < 0.2 && charCount > 30) return true;
+                    const textWithoutSpaces = cleanedText.replace(/\s/g, '');
+                    if (textWithoutSpaces.length > 20) {
+                        const uniqueChars = new Set(textWithoutSpaces);
+                        const diversityRatio = uniqueChars.size / textWithoutSpaces.length;
+                        
+                        // Very low diversity (like "aaaaa" or "11111")
+                        if (diversityRatio < 0.15) return true;
+                    }
                     
                     // 5. Check for excessive punctuation or special characters
-                    const punctuationRegex = /[^\w\s\u4e00-\u9fff]/gu; // Non-word, non-space, non-Chinese characters
+                    const punctuationRegex = /[^\w\s]/gu; // Non-word, non-space characters
                     const punctuationMatches = (cleanedText.match(punctuationRegex) || []).length;
-                    if (punctuationMatches > charCount * 0.5) { // > 50% punctuation
+                    if (punctuationMatches > charCount * 0.4) { // > 40% punctuation
+                        return true;
+                    }
+                    
+                    // 6. Check for all numbers or mostly numbers
+                    const numbersRegex = /\d/g;
+                    const numbersMatches = (cleanedText.match(numbersRegex) || []).length;
+                    if (numbersMatches > charCount * 0.7) { // > 70% numbers
                         return true;
                     }
                     
                     return false;
                 }
                 
-                // Function to get a humorous message for nonsense input
+                // Function to get a finance bro style message for nonsense input
                 function getNonsenseMessage() {
                     const messages = [
-                        "兄弟，认真点写！这可是面试，不是测试键盘好不好用 😄",
-                        "检测到'糊弄学'答案，请认真对待你的金融职业生涯！🤓",
-                        "你这是在测试我的智商吗？至少写点正经内容吧！😂",
-                        "朋友，这样糊弄面试官可不行，认真写才能进步 💪",
-                        "华尔街之狼看了都摇头... 认真写个答案吧！🐺",
-                        "你的键盘似乎有自己的想法？试试认真回答问题 📈",
-                        "这不是填空题的正确答案，这是糊弄题的答案 😅",
-                        "我理解你想测试功能，但请写个真正的面试答案吧！📊"
+                        "C'mon rookie! At least pretend you're trying. This isn't keyboard testing hour. 💼",
+                        "Bro, Wall Street isn't built on 'asdfghjkl'. Give me something real. 📈",
+                        "Detected 'interview avoidance' behavior. Try answering the actual question, bro. 🤓",
+                        "Your keyboard skills are 🔥, but your answer needs some alpha. Think like a finance pro. 🦅",
+                        "Even a monkey could type better gibberish. Show me you're smarter than that. 🐒",
+                        "That's not an answer, that's a cry for help. Let me help you - write something meaningful. 🆘",
+                        "If you type like that in a trading pit, you'd be laughed off the floor. Step up your game. 🏦",
+                        "I've seen better analysis from a broken Bloomberg terminal. Try again, but seriously. 💻"
                     ];
                     return messages[Math.floor(Math.random() * messages.length)];
                 }
