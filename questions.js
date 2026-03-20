@@ -21120,3 +21120,9 @@ const questionBank = [
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = { questionBank, roles };
 }
+
+// Make available globally in browser context
+if (typeof window !== 'undefined') {
+    window.questionBank = questionBank;
+    window.roles = roles;
+}
