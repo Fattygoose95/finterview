@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260320_2345"></script>
+    <script src="questions.js?v=20260320_2350"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -1403,6 +1403,94 @@
                     }
                 }
                 
+                // Function to detect nonsense/random input
+                function isNonsenseInput(text) {
+                    if (text.length < 50) return false; // Already handled by length check
+                    
+                    // Clean the text for analysis
+                    const cleanedText = text.trim();
+                    const charCount = cleanedText.length;
+                    
+                    // 1. Check for excessive repetition of single character
+                    const charMap = {};
+                    for (const char of cleanedText) {
+                        charMap[char] = (charMap[char] || 0) + 1;
+                    }
+                    
+                    // Find most common character and its percentage
+                    let maxCharCount = 0;
+                    for (const count of Object.values(charMap)) {
+                        if (count > maxCharCount) maxCharCount = count;
+                    }
+                    
+                    const maxCharPercentage = (maxCharCount / charCount) * 100;
+                    
+                    // If a single character makes up more than 40% of the text, likely nonsense
+                    if (maxCharPercentage > 40) return true;
+                    
+                    // 2. Check for keyboard pattern sequences (like "asdfghjkl" or "qwertyuiop")
+                    const keyboardPatterns = [
+                        'asdfghjkl', 'qwertyuiop', 'zxcvbnm', '1234567890',
+                        'abcdefghijklmnopqrstuvwxyz', 'йцукенгшщзхъфывапролджэячсмитьбю'
+                    ];
+                    
+                    const lowerText = cleanedText.toLowerCase();
+                    for (const pattern of keyboardPatterns) {
+                        if (lowerText.includes(pattern) && pattern.length > 8) {
+                            return true;
+                        }
+                    }
+                    
+                    // 3. Check for excessive repetition of short phrases
+                    const words = cleanedText.split(/\s+/);
+                    if (words.length > 10) {
+                        const wordFrequency = {};
+                        for (const word of words) {
+                            if (word.length > 2) { // Ignore short words
+                                wordFrequency[word] = (wordFrequency[word] || 0) + 1;
+                            }
+                        }
+                        
+                        // Check if any word appears too many times relative to total words
+                        for (const [word, count] of Object.entries(wordFrequency)) {
+                            if (count > words.length * 0.3) { // Same word > 30% of all words
+                                return true;
+                            }
+                        }
+                    }
+                    
+                    // 4. Check for gibberish by measuring character diversity
+                    const uniqueChars = new Set(cleanedText.replace(/\s/g, ''));
+                    const diversityRatio = uniqueChars.size / Math.max(1, cleanedText.replace(/\s/g, '').length);
+                    
+                    // Very low diversity (like "aaaaa" or "11111")
+                    if (diversityRatio < 0.2 && charCount > 30) return true;
+                    
+                    // 5. Check for excessive punctuation or special characters
+                    const punctuationRegex = /[^\w\s\u4e00-\u9fff]/gu; // Non-word, non-space, non-Chinese characters
+                    const punctuationMatches = (cleanedText.match(punctuationRegex) || []).length;
+                    if (punctuationMatches > charCount * 0.5) { // > 50% punctuation
+                        return true;
+                    }
+                    
+                    return false;
+                }
+                
+                // Function to get a humorous message for nonsense input
+                function getNonsenseMessage() {
+                    const messages = [
+                        "兄弟，认真点写！这可是面试，不是测试键盘好不好用 😄",
+                        "检测到'糊弄学'答案，请认真对待你的金融职业生涯！🤓",
+                        "你这是在测试我的智商吗？至少写点正经内容吧！😂",
+                        "朋友，这样糊弄面试官可不行，认真写才能进步 💪",
+                        "华尔街之狼看了都摇头... 认真写个答案吧！🐺",
+                        "你的键盘似乎有自己的想法？试试认真回答问题 📈",
+                        "这不是填空题的正确答案，这是糊弄题的答案 😅",
+                        "我理解你想测试功能，但请写个真正的面试答案吧！📊"
+                    ];
+                    return messages[Math.floor(Math.random() * messages.length)];
+                }
+                
                 // Add input event listener for character count
                 if (answerTextarea) {
                     answerTextarea.addEventListener('input', updateCharCount);
@@ -1446,6 +1534,31 @@
                                 answerTextarea.className = 'answer-textarea error';
                                 answerTextarea.focus();
                             }
+                            return;
+                        }
+                        
+                        // Check for nonsense/random input (幽默检测)
+                        if (isNonsenseInput(userAnswer)) {
+                            const inputHint = document.getElementById('inputHint');
+                            const nonsenseMessage = getNonsenseMessage();
+                            
+                            if (inputHint) {
+                                inputHint.className = 'input-hint error';
+                                inputHint.innerHTML = `<i class="fas fa-grin-beam-sweat"></i> ${nonsenseMessage}`;
+                            }
+                            
+                            if (answerTextarea) {
+                                answerTextarea.className = 'answer-textarea error';
+                                answerTextarea.focus();
+                                
+                                // Briefly shake the textarea for emphasis (幽默效果)
+                                answerTextarea.classList.add('shake-animation');
+                                setTimeout(() => {
+                                    answerTextarea.classList.remove('shake-animation');
+                                }, 500);
+                            }
+                            
+                            // Don't proceed to analysis
                             return;
                         }
                         
@@ -2178,6 +2291,22 @@
         .answer-textarea.success {
             border-color: var(--success-color);
             box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+        }
+        
+        /* Shake animation for humorous effect when nonsense is detected */
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        
+        .shake-animation {
+            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+        
+        /* Style for the humor emoji icon */
+        .fa-grin-beam-sweat {
+            color: var(--warning-color);
         }
     </style>
     
