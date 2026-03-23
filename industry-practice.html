@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Load questions.js early -->
-    <script src="questions.js?v=20260321_0045"></script>
+    <script src="questions.js?v=v20260323_feedback_partial"></script>
     <style>
         /* Practice mode specific styles */
         .practice-container {
@@ -1071,6 +1071,28 @@
                 }
             }
             
+            // Add data loading status indicator
+            function updateDataLoadingStatus() {
+                const statusElement = document.getElementById('dataLoadingStatus');
+                if (!statusElement) return;
+                
+                if (typeof window.questionBank === 'undefined') {
+                    statusElement.innerHTML = '<span style="color: #ef4444;"><i class="fas fa-exclamation-circle"></i> Data not loaded. questions.js may not be properly loaded.</span>';
+                    console.error('window.questionBank is undefined');
+                } else if (!Array.isArray(window.questionBank)) {
+                    statusElement.innerHTML = '<span style="color: #ef4444;"><i class="fas fa-exclamation-circle"></i> Invalid data format.</span>';
+                    console.error('window.questionBank is not an array:', typeof window.questionBank);
+                } else {
+                    statusElement.innerHTML = `<span style="color: #10b981;"><i class="fas fa-check-circle"></i> Data loaded: ${window.questionBank.length} questions</span>`;
+                    console.log('Data loaded successfully:', window.questionBank.length, 'questions');
+                }
+            }
+            
+            // Call status update on load
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(updateDataLoadingStatus, 1000);
+            });
+            
             function loadQuestions(industryId) {
                 console.log(`Loading questions for ${industryId}...`);
                 
@@ -1582,27 +1604,49 @@
                         
                         // Check for nonsense/random input (幽默检测)
                         if (isNonsenseInput(userAnswer)) {
-                            const inputHint = document.getElementById('inputHint');
-                            const nonsenseMessage = getNonsenseMessage();
+                        const inputHint = document.getElementById('inputHint');
+                        const answerFeedbackSection = document.getElementById('answerFeedbackSection');
+                        const nonsenseMessage = getNonsenseMessage();
+                        
+                        if (inputHint) {
+                            inputHint.className = 'input-hint error';
+                            inputHint.innerHTML = `<i class="fas fa-grin-beam-sweat"></i> ${nonsenseMessage}`;
+                        }
+                        
+                        if (answerTextarea) {
+                            answerTextarea.className = 'answer-textarea error';
+                            answerTextarea.focus();
                             
-                            if (inputHint) {
-                                inputHint.className = 'input-hint error';
-                                inputHint.innerHTML = `<i class="fas fa-grin-beam-sweat"></i> ${nonsenseMessage}`;
-                            }
+                            // Briefly shake the textarea for emphasis (幽默效果)
+                            answerTextarea.classList.add('shake-animation');
+                            setTimeout(() => {
+                                answerTextarea.classList.remove('shake-animation');
+                            }, 500);
+                        }
+                        
+                        // Show feedback section with explanation
+                        if (answerFeedbackSection) {
+                            answerFeedbackSection.style.display = 'block';
                             
-                            if (answerTextarea) {
-                                answerTextarea.className = 'answer-textarea error';
-                                answerTextarea.focus();
-                                
-                                // Briefly shake the textarea for emphasis (幽默效果)
-                                answerTextarea.classList.add('shake-animation');
-                                setTimeout(() => {
-                                    answerTextarea.classList.remove('shake-animation');
-                                }, 500);
-                            }
+                            // Clear previous feedback
+                            const scoreValue = document.getElementById('scoreValue');
+                            const scoreDescription = document.getElementById('scoreDescription');
+                            const keywordsList = document.getElementById('keywordsList');
+                            const structureList = document.getElementById('structureList');
+                            const tipsContent = document.getElementById('tipsContent');
+                            const analysisContent = document.getElementById('analysisContent');
                             
-                            // Don't proceed to analysis
-                            return;
+                            if (scoreValue) scoreValue.textContent = 'N/A';
+                            if (scoreDescription) scoreDescription.textContent = nonsenseMessage;
+                            if (keywordsList) keywordsList.innerHTML = '<div class="empty-state">Input detected as random typing. Please provide a meaningful answer.</div>';
+                            if (structureList) structureList.innerHTML = '<div class="empty-state">No structure analysis for random input.</div>';
+                            if (tipsContent) tipsContent.innerHTML = '<div class="tip"><strong>Tip:</strong> Try answering with actual finance concepts or examples.</div>';
+                            if (analysisContent) analysisContent.innerHTML = '<div class="empty-state">Cannot analyze random keyboard input.</div>';
+                        }
+                        
+                        // Don't proceed to analysis
+                        return;
+                    }
                         }
                         
                         const currentQuestion = currentQuestions && currentQuestions[currentIndex];
@@ -2594,6 +2638,13 @@
             
             // Answer Analysis Function
             function analyzeAnswer(userAnswer, question) {
+                console.log('=== analyzeAnswer called ===');
+                console.log('User answer length:', userAnswer.length);
+                console.log('Question:', question.title);
+                console.log('Question has scoringKeywords:', question.scoringKeywords && Object.keys(question.scoringKeywords).length > 0);
+                console.log('Question has expectedStructure:', question.expectedStructure && question.expectedStructure.length > 0);
+                console.log('Question has detailedAnalysis:', question.detailedAnalysis && Object.keys(question.detailedAnalysis).length > 0);
+                
                 // Initialize feedback elements
                 const scoreValue = document.getElementById('scoreValue');
                 const scoreDescription = document.getElementById('scoreDescription');
@@ -2853,5 +2904,10 @@
             });
         });
     </script>
+
+    <!-- Data loading status -->
+    <div style="position: fixed; bottom: 10px; right: 10px; background: #f8f9fa; padding: 8px 12px; border-radius: 6px; font-size: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 1000;">
+        <div id="dataLoadingStatus">Checking data status...</div>
+    </div>
 </body>
 </html>
