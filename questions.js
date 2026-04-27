@@ -13,7 +13,8 @@ const roles = {
     "fintech": { name: "FinTech", color: "#1abc9c", icon: "fas fa-mobile-alt" },
     "fo": { name: "Family Office", color: "#34495e", icon: "fas fa-home" },
     "risk": { name: "Risk Management", color: "#e67e22", icon: "fas fa-shield-alt" },
-    "general": { name: "General Finance", color: "#95a5a6", icon: "fas fa-globe" }
+    "general": { name: "General Finance", color: "#95a5a6", icon: "fas fa-globe" },
+    "pe": { name: "Private Equity", color: "#8B5CF6", icon: "fas fa-handshake" }
 };
 
 const questionBank = [
@@ -42154,7 +42155,809 @@ const questionBank = [
         "Connect theory to specific fo job functions and responsibilities"
       ]
     }
+  },
+  {
+  "id": 2100,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "Leveraged Buyout (LBO) Value Creation",
+  "question": "What is a leveraged buyout (LBO) and how does it create value?",
+  "modelAnswer": "A leveraged buyout (LBO) is the acquisition of a company using a significant amount of borrowed money (debt) to meet the cost of acquisition. The assets of the company being acquired are often used as collateral for the loans. Value creation in LBOs typically comes from four main sources:\n  \n  1. **Financial Engineering**:\n     - Using high leverage (debt) amplifies equity returns if the company's cash flows can service the debt.\n     - Tax shields from interest deductions reduce the effective cost of debt.\n     - Refinancing at lower rates or extending maturities can enhance returns.\n  \n  2. **Operational Improvements**:\n     - Cost reduction through streamlining operations, eliminating inefficiencies, and optimizing working capital.\n     - Revenue growth by expanding into new markets, introducing new products, or improving pricing strategies.\n     - Margin expansion via better procurement, manufacturing efficiency, and overhead control.\n  \n  3. **Multiple Expansion**:\n     - Improving the company's strategic position, growth profile, and profitability can lead to a higher exit valuation multiple (e.g., higher EBITDA multiple).\n     - Timing the exit to coincide with favorable market conditions or industry cycles.\n  \n  4. **Debt Paydown**:\n     - Using free cash flow to repay debt over the holding period increases equity value (as debt reduction directly boosts equity value).\n     - This is sometimes called the “free cash flow sweep.”\n  \n  Example: A private equity firm acquires a company for 10x EBITDA, using 70% debt and 30% equity. Over five years, EBITDA grows 50%, debt is reduced by 40%, and the exit multiple expands to 12x. The resulting equity return can exceed 25% IRR.\n  \n  Successful LBOs require a target with stable cash flows, strong asset base, and potential for operational improvement.",
+  "scoringKeywords": {
+    "leverage": 20,
+    "tax shields": 15,
+    "operational improvements": 20,
+    "multiple expansion": 15,
+    "debt paydown": 15,
+    "free cash flow": 10,
+    "equity returns": 5
+  },
+  "expectedStructure": [
+    "Definition of LBO",
+    "Four value‑creation levers",
+    "Example with numbers",
+    "Target characteristics"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.761Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "A leveraged buyout (LBO) is the acquisition of a company using a significant amount of borrowed money (debt) to meet the cost of acquisition. The assets of the company being acquired are often used as collateral for the loans. Value creation in LBOs typically comes from four main sources:\n  \n  1. **Financial Engineering**:\n     - Using high leverage (debt) amplifies equity returns if the company's cash flows can service the debt.\n     - Tax shields from interest deductions reduce the effective cost of debt.\n     - Refinancing at lower rates or extending maturities can enhance returns.\n  \n  2. **Operational Improvements**:\n     - Cost reduction through streamlining operations, eliminating inefficiencies, and optimizing working capital.\n     - Revenue growth by expanding into new markets, introducing new products, or improving pricing strategies.\n     - Margin expansion via better procurement, manufacturing efficiency, and overhead control.\n  \n  3. **Multiple Expansion**:\n     - Improving the company's strategic position, growth profile, and profitability can lead to a higher exit valuation multiple (e.g., higher EBITDA multiple).\n     - Timing the exit to coincide with favorable market conditions or industry cycles.\n  \n  4. **Debt Paydown**:\n     - Using free cash flow to repay debt over the holding period increases equity value (as debt reduction directly boosts equity value).\n     - This is sometimes called the “free cash flow sweep.”\n  \n  Example: A private equity firm acquires a company for 10x EBITDA, using 70% debt and 30% equity. Over five years, EBITDA grows 50%, debt is reduced by 40%, and the exit multiple expands to 12x. The resulting equity return can exceed 25% IRR.\n  \n  Successful LBOs require a target with stable cash flows, strong asset base, and potential for operational improvement.",
+      "format": "concise",
+      "source": "generated"
+    }
   }
+},
+  {
+  "id": 2101,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "hard",
+  "title": "LBO Model Walkthrough",
+  "question": "Walk me through an LBO model. What are the key inputs and outputs?",
+  "modelAnswer": "An LBO model is a financial tool used to evaluate the feasibility and expected returns of a leveraged buyout. The key steps are:\n  \n  1. **Transaction Assumptions**:\n     - Purchase price (equity value) and enterprise value.\n     - Sources and uses of funds: debt (senior, mezzanine, high‑yield) and equity contribution.\n     - Transaction fees and financing fees.\n  \n  2. **Operating Projections**:\n     - Revenue growth, margins, EBITDA, and capital expenditures.\n     - Working capital changes.\n     - Projection period typically 5–7 years.\n  \n  3. **Debt Schedule**:\n     - Model each debt tranche with interest rate, maturity, amortization schedule, and covenants.\n     - Calculate interest expense based on outstanding balances.\n     - Incorporate mandatory repayments (e.g., term loan amortization) and optional prepayments from excess cash flow.\n  \n  4. **Cash Flow Waterfall**:\n     - Start with EBITDA, subtract interest, taxes, capex, changes in working capital, and mandatory debt repayments to arrive at free cash flow available for optional debt paydown or dividends.\n  \n  5. **Exit Assumptions**:\n     - Exit year (typically year 5).\n     - Exit multiple (EBITDA multiple) or exit based on perpetual growth (terminal value).\n     - Calculate enterprise value at exit, subtract net debt to get equity value.\n  \n  6. **Returns Calculation**:\n     - Internal Rate of Return (IRR) and cash‑on‑cash multiple (MoM) for the equity investment.\n     - Sensitivity analysis on key drivers: purchase price, exit multiple, debt cost, and EBITDA growth.\n  \n  Key inputs: purchase price, debt/equity split, interest rates, EBITDA growth, capex, working capital, exit multiple.\n  Key outputs: IRR, MoM, debt repayment schedule, credit ratios (debt/EBITDA, interest coverage).",
+  "scoringKeywords": {
+    "transaction assumptions": 20,
+    "operating projections": 20,
+    "debt schedule": 20,
+    "cash flow waterfall": 15,
+    "exit assumptions": 15,
+    "IRR": 10
+  },
+  "expectedStructure": [
+    "Transaction assumptions",
+    "Operating projections",
+    "Debt schedule",
+    "Cash flow waterfall",
+    "Exit assumptions",
+    "Returns calculation"
+  ],
+  "detailedAnalysis": {
+    "overview": "This hard technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "medium",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 70
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "An LBO model is a financial tool used to evaluate the feasibility and expected returns of a leveraged buyout. The key steps are:\n  \n  1. **Transaction Assumptions**:\n     - Purchase price (equity value) and enterprise value.\n     - Sources and uses of funds: debt (senior, mezzanine, high‑yield) and equity contribution.\n     - Transaction fees and financing fees.\n  \n  2. **Operating Projections**:\n     - Revenue growth, margins, EBITDA, and capital expenditures.\n     - Working capital changes.\n     - Projection period typically 5–7 years.\n  \n  3. **Debt Schedule**:\n     - Model each debt tranche with interest rate, maturity, amortization schedule, and covenants.\n     - Calculate interest expense based on outstanding balances.\n     - Incorporate mandatory repayments (e.g., term loan amortization) and optional prepayments from excess cash flow.\n  \n  4. **Cash Flow Waterfall**:\n     - Start with EBITDA, subtract interest, taxes, capex, changes in working capital, and mandatory debt repayments to arrive at free cash flow available for optional debt paydown or dividends.\n  \n  5. **Exit Assumptions**:\n     - Exit year (typically year 5).\n     - Exit multiple (EBITDA multiple) or exit based on perpetual growth (terminal value).\n     - Calculate enterprise value at exit, subtract net debt to get equity value.\n  \n  6. **Returns Calculation**:\n     - Internal Rate of Return (IRR) and cash‑on‑cash multiple (MoM) for the equity investment.\n     - Sensitivity analysis on key drivers: purchase price, exit multiple, debt cost, and EBITDA growth.\n  \n  Key inputs: purchase price, debt/equity split, interest rates, EBITDA growth, capex, working capital, exit multiple.\n  Key outputs: IRR, MoM, debt repayment schedule, credit ratios (debt/EBITDA, interest coverage).",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2102,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "Private Equity vs Venture Capital",
+  "question": "What are the main differences between private equity and venture capital?",
+  "modelAnswer": "Private equity (PE) and venture capital (VC) are both forms of private capital but differ fundamentally in target companies, investment stage, risk profile, and value‑add approach.\n  \n  1. **Target Companies**:\n     - PE: Mature, established companies with stable cash flows, often in traditional industries. May be public or private.\n     - VC: Early‑stage, high‑growth startups with unproven business models, typically in technology, biotech, or disruptive sectors.\n  \n  2. **Investment Stage**:\n     - PE: Later‑stage investments: buyouts (LBOs), growth equity, distressed/turnaround situations.\n     - VC: Seed, Series A‑D, pre‑IPO. Focus on scaling the business.\n  \n  3. **Ownership & Control**:\n     - PE: Usually acquires majority or controlling stakes; actively involved in governance and operational decisions.\n     - VC: Minority stakes; board seats but less operational control; focus on strategic guidance and network.\n  \n  4. **Risk‑Return Profile**:\n     - PE: Lower relative risk due to established cash flows and use of leverage; target returns 15‑25% IRR.\n     - VC: High risk (many failures); a few “home runs” drive fund returns; target returns 25‑35%+ IRR.\n  \n  5. **Value‑Creation Levers**:\n     - PE: Financial engineering (leverage, tax optimization), operational improvements, mergers/add‑ons, cost cutting.\n     - VC: Product development, market expansion, talent acquisition, subsequent funding rounds.\n  \n  6. **Holding Period**:\n     - PE: Typically 3‑7 years.\n     - VC: 5‑10+ years (longer path to exit).\n  \n  7. **Fund Structure**:\n     - PE: Larger fund sizes ($1B+), lower number of portfolio companies (10‑15).\n     - VC: Smaller funds ($100M‑$500M), more portfolio companies (20‑30).\n  \n  8. **Due Diligence**:\n     - PE: Heavy financial, legal, operational, and commercial diligence.\n     - VC: Focus on team, market size, product differentiation, and scalability.\n  \n  Both asset classes require deep industry expertise but attract different skill sets: PE values financial modeling and operational know‑how; VC values pattern recognition in technology and markets.",
+  "scoringKeywords": {
+    "target companies": 20,
+    "investment stage": 20,
+    "ownership": 15,
+    "risk‑return": 15,
+    "value‑creation": 15,
+    "holding period": 10,
+    "fund structure": 5
+  },
+  "expectedStructure": [
+    "Target companies comparison",
+    "Investment stage",
+    "Ownership & control",
+    "Risk‑return profile",
+    "Value‑creation levers",
+    "Holding period & fund structure",
+    "Due diligence focus"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "Private equity (PE) and venture capital (VC) are both forms of private capital but differ fundamentally in target companies, investment stage, risk profile, and value‑add approach.\n  \n  1. **Target Companies**:\n     - PE: Mature, established companies with stable cash flows, often in traditional industries. May be public or private.\n     - VC: Early‑stage, high‑growth startups with unproven business models, typically in technology, biotech, or disruptive sectors.\n  \n  2. **Investment Stage**:\n     - PE: Later‑stage investments: buyouts (LBOs), growth equity, distressed/turnaround situations.\n     - VC: Seed, Series A‑D, pre‑IPO. Focus on scaling the business.\n  \n  3. **Ownership & Control**:\n     - PE: Usually acquires majority or controlling stakes; actively involved in governance and operational decisions.\n     - VC: Minority stakes; board seats but less operational control; focus on strategic guidance and network.\n  \n  4. **Risk‑Return Profile**:\n     - PE: Lower relative risk due to established cash flows and use of leverage; target returns 15‑25% IRR.\n     - VC: High risk (many failures); a few “home runs” drive fund returns; target returns 25‑35%+ IRR.\n  \n  5. **Value‑Creation Levers**:\n     - PE: Financial engineering (leverage, tax optimization), operational improvements, mergers/add‑ons, cost cutting.\n     - VC: Product development, market expansion, talent acquisition, subsequent funding rounds.\n  \n  6. **Holding Period**:\n     - PE: Typically 3‑7 years.\n     - VC: 5‑10+ years (longer path to exit).\n  \n  7. **Fund Structure**:\n     - PE: Larger fund sizes ($1B+), lower number of portfolio companies (10‑15).\n     - VC: Smaller funds ($100M‑$500M), more portfolio companies (20‑30).\n  \n  8. **Due Diligence**:\n     - PE: Heavy financial, legal, operational, and commercial diligence.\n     - VC: Focus on team, market size, product differentiation, and scalability.\n  \n  Both asset classes require deep industry expertise but attract different skill sets: PE values financial modeling and operational know‑how; VC values pattern recognition in technology and markets.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2103,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "Valuation for PE Acquisition",
+  "question": "How do you value a company for a private equity acquisition?",
+  "modelAnswer": "Valuing a company for a PE acquisition involves multiple methods to triangulate a fair price, with emphasis on cash‑flow‑based approaches.\n  \n  1. **Comparable Company Analysis (Trading Comps)**:\n     - Select publicly traded peers in the same industry.\n     - Calculate valuation multiples: EV/EBITDA, EV/EBIT, P/E.\n     - Apply median or mean multiples to the target’s financial metrics (e.g., LTM EBITDA).\n     - Adjust for differences in growth, margins, and risk.\n  \n  2. **Precedent Transactions Analysis**:\n     - Review recent M&A deals in the same sector.\n     - Analyze purchase multiples paid (EV/EBITDA, EV/Revenue).\n     - Consider control premiums, synergies, and market conditions at the time of transaction.\n  \n  3. **Discounted Cash Flow (DCF)**:\n     - Forecast unlevered free cash flows for 5‑7 years.\n     - Estimate terminal value using perpetuity growth method or exit multiple.\n     - Discount at weighted average cost of capital (WACC).\n     - Adjust for net debt, minority interest, and non‑operating assets to derive equity value.\n     - For LBOs, the DCF may be levered (account for tax shields).\n  \n  4. **LBO Analysis (Back‑of‑the‑Envelope)**:\n     - Determine the maximum purchase price that still delivers the fund’s target IRR (e.g., 20‑25%).\n     - Use assumed leverage, interest rates, and exit multiple to solve for purchase price.\n     - This sets a “walk‑away” price for the PE firm.\n  \n  5. **Liquidation / Asset‑Based Valuation**:\n     - Relevant for distressed or asset‑heavy businesses.\n     - Estimate net realizable value of assets minus liabilities.\n  \n  In practice, PE firms rely heavily on DCF and LBO models because they focus on cash‑flow generation and levered returns. Due diligence findings (quality of earnings, synergy potential, risks) adjust the final offer. The final price is also influenced by auction dynamics, seller expectations, and financing availability.",
+  "scoringKeywords": {
+    "comparable company analysis": 20,
+    "precedent transactions": 20,
+    "DCF": 20,
+    "LBO analysis": 20,
+    "liquidation value": 10,
+    "due diligence": 10
+  },
+  "expectedStructure": [
+    "Comparable company analysis",
+    "Precedent transactions",
+    "DCF methodology",
+    "LBO analysis (target IRR)",
+    "Asset‑based valuation",
+    "Role of due diligence"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "Valuing a company for a PE acquisition involves multiple methods to triangulate a fair price, with emphasis on cash‑flow‑based approaches.\n  \n  1. **Comparable Company Analysis (Trading Comps)**:\n     - Select publicly traded peers in the same industry.\n     - Calculate valuation multiples: EV/EBITDA, EV/EBIT, P/E.\n     - Apply median or mean multiples to the target’s financial metrics (e.g., LTM EBITDA).\n     - Adjust for differences in growth, margins, and risk.\n  \n  2. **Precedent Transactions Analysis**:\n     - Review recent M&A deals in the same sector.\n     - Analyze purchase multiples paid (EV/EBITDA, EV/Revenue).\n     - Consider control premiums, synergies, and market conditions at the time of transaction.\n  \n  3. **Discounted Cash Flow (DCF)**:\n     - Forecast unlevered free cash flows for 5‑7 years.\n     - Estimate terminal value using perpetuity growth method or exit multiple.\n     - Discount at weighted average cost of capital (WACC).\n     - Adjust for net debt, minority interest, and non‑operating assets to derive equity value.\n     - For LBOs, the DCF may be levered (account for tax shields).\n  \n  4. **LBO Analysis (Back‑of‑the‑Envelope)**:\n     - Determine the maximum purchase price that still delivers the fund’s target IRR (e.g., 20‑25%).\n     - Use assumed leverage, interest rates, and exit multiple to solve for purchase price.\n     - This sets a “walk‑away” price for the PE firm.\n  \n  5. **Liquidation / Asset‑Based Valuation**:\n     - Relevant for distressed or asset‑heavy businesses.\n     - Estimate net realizable value of assets minus liabilities.\n  \n  In practice, PE firms rely heavily on DCF and LBO models because they focus on cash‑flow generation and levered returns. Due diligence findings (quality of earnings, synergy potential, risks) adjust the final offer. The final price is also influenced by auction dynamics, seller expectations, and financing availability.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2104,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "Due Diligence in Private Equity",
+  "question": "What is due diligence in private equity and what are the key areas?",
+  "modelAnswer": "Due diligence (DD) is the comprehensive investigation of a target company before acquisition to validate assumptions, identify risks, and support valuation. Key areas include:\n  \n  1. **Financial Due Diligence**:\n     - Quality of earnings (adjusting for non‑recurring items, accounting policies).\n     - Historical and projected cash flows, working capital trends.\n     - Debt and contingent liabilities (off‑balance‑sheet items).\n     - Tax compliance and potential exposures.\n  \n  2. **Commercial / Market Due Diligence**:\n     - Industry attractiveness: growth, competitive landscape, barriers to entry.\n     - Customer concentration, supplier relationships, pricing power.\n     - Market positioning, brand strength, and differentiation.\n     - Regulatory and technological trends affecting the sector.\n  \n  3. **Operational Due Diligence**:\n     - Assessment of production facilities, supply chain, IT systems, and human resources.\n     - Identification of cost‑saving opportunities and efficiency improvements.\n     - Evaluation of management team capabilities and retention plans.\n  \n  4. **Legal Due Diligence**:\n     - Review of corporate structure, contracts (customer, supplier, employment), litigation, and intellectual property.\n     - Compliance with environmental, health, and safety regulations.\n     - Employment and labor issues.\n  \n  5. **Environmental, Social, and Governance (ESG) Due Diligence**:\n     - Increasingly important for reputation, regulatory compliance, and exit valuations.\n     - Assess environmental liabilities, carbon footprint, social impact, and board diversity.\n  \n  6. **IT / Cybersecurity Due Diligence**:\n     - Evaluation of IT infrastructure, data security, and resilience against cyber threats.\n  \n  DD findings directly influence the purchase price (through purchase‑price adjustments), deal structure (indemnities, escrows), and post‑acquisition integration plan. PE firms often engage third‑party advisors (accounting firms, consultants, lawyers) to conduct DD.",
+  "scoringKeywords": {
+    "financial due diligence": 25,
+    "commercial due diligence": 20,
+    "operational due diligence": 20,
+    "legal due diligence": 15,
+    "ESG due diligence": 10,
+    "IT due diligence": 10
+  },
+  "expectedStructure": [
+    "Financial due diligence",
+    "Commercial/market due diligence",
+    "Operational due diligence",
+    "Legal due diligence",
+    "ESG due diligence",
+    "IT/cybersecurity due diligence",
+    "Impact on deal terms"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "Due diligence (DD) is the comprehensive investigation of a target company before acquisition to validate assumptions, identify risks, and support valuation. Key areas include:\n  \n  1. **Financial Due Diligence**:\n     - Quality of earnings (adjusting for non‑recurring items, accounting policies).\n     - Historical and projected cash flows, working capital trends.\n     - Debt and contingent liabilities (off‑balance‑sheet items).\n     - Tax compliance and potential exposures.\n  \n  2. **Commercial / Market Due Diligence**:\n     - Industry attractiveness: growth, competitive landscape, barriers to entry.\n     - Customer concentration, supplier relationships, pricing power.\n     - Market positioning, brand strength, and differentiation.\n     - Regulatory and technological trends affecting the sector.\n  \n  3. **Operational Due Diligence**:\n     - Assessment of production facilities, supply chain, IT systems, and human resources.\n     - Identification of cost‑saving opportunities and efficiency improvements.\n     - Evaluation of management team capabilities and retention plans.\n  \n  4. **Legal Due Diligence**:\n     - Review of corporate structure, contracts (customer, supplier, employment), litigation, and intellectual property.\n     - Compliance with environmental, health, and safety regulations.\n     - Employment and labor issues.\n  \n  5. **Environmental, Social, and Governance (ESG) Due Diligence**:\n     - Increasingly important for reputation, regulatory compliance, and exit valuations.\n     - Assess environmental liabilities, carbon footprint, social impact, and board diversity.\n  \n  6. **IT / Cybersecurity Due Diligence**:\n     - Evaluation of IT infrastructure, data security, and resilience against cyber threats.\n  \n  DD findings directly influence the purchase price (through purchase‑price adjustments), deal structure (indemnities, escrows), and post‑acquisition integration plan. PE firms often engage third‑party advisors (accounting firms, consultants, lawyers) to conduct DD.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2105,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "EBITDA Importance in Private Equity",
+  "question": "Explain the concept of EBITDA and why it is important in private equity.",
+  "modelAnswer": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) is a measure of a company's operating performance, representing core profitability before financing and accounting decisions. In private equity, EBITDA is crucial for several reasons:\n  \n  1. **Valuation Metric**:\n     - EV/EBITDA is the primary multiple used to value companies in buyouts. It allows comparison across firms with different capital structures and tax rates.\n     - Provides a cash‑flow proxy that is less affected by non‑cash items (depreciation) and non‑operating factors (interest, taxes).\n  \n  2. **Debt Capacity & Leverage**:\n     - Lenders underwrite debt based on EBITDA multiples (e.g., debt/EBITDA covenants). Higher EBITDA supports more leverage.\n     - Interest coverage ratios (EBITDA / interest expense) determine the company's ability to service debt.\n  \n  3. **Performance Measurement**:\n     - EBITDA growth is a key indicator of operational improvement post‑acquisition.\n     - Used in management incentive plans (e.g., EBITDA‑based bonuses).\n  \n  4. **M&A & Add‑on Analysis**:\n     - When evaluating add‑on acquisitions, EBITDA synergies (cost savings, revenue uplifts) are quantified and valued.\n     - Purchase price adjustments often reference EBITDA.\n  \n  5. **Limitations & Adjustments**:\n     - PE firms adjust EBITDA for non‑recurring items, owner‑related expenses, and normalized working capital to calculate \"adjusted EBITDA\" or \"quality of earnings.\"\n     - Critics note EBITDA ignores capex and working capital needs, which are essential for sustaining operations.\n  \n  In summary, EBITDA serves as a common language for valuation, debt financing, and operational benchmarking in PE, but must be used with understanding of its limitations.",
+  "scoringKeywords": {
+    "valuation metric": 25,
+    "debt capacity": 20,
+    "performance measurement": 15,
+    "M&A analysis": 15,
+    "adjusted EBITDA": 15,
+    "limitations": 10
+  },
+  "expectedStructure": [
+    "Definition of EBITDA",
+    "Valuation uses (EV/EBITDA)",
+    "Role in debt underwriting",
+    "Performance tracking",
+    "Adjustments and limitations"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) is a measure of a company's operating performance, representing core profitability before financing and accounting decisions. In private equity, EBITDA is crucial for several reasons:\n  \n  1. **Valuation Metric**:\n     - EV/EBITDA is the primary multiple used to value companies in buyouts. It allows comparison across firms with different capital structures and tax rates.\n     - Provides a cash‑flow proxy that is less affected by non‑cash items (depreciation) and non‑operating factors (interest, taxes).\n  \n  2. **Debt Capacity & Leverage**:\n     - Lenders underwrite debt based on EBITDA multiples (e.g., debt/EBITDA covenants). Higher EBITDA supports more leverage.\n     - Interest coverage ratios (EBITDA / interest expense) determine the company's ability to service debt.\n  \n  3. **Performance Measurement**:\n     - EBITDA growth is a key indicator of operational improvement post‑acquisition.\n     - Used in management incentive plans (e.g., EBITDA‑based bonuses).\n  \n  4. **M&A & Add‑on Analysis**:\n     - When evaluating add‑on acquisitions, EBITDA synergies (cost savings, revenue uplifts) are quantified and valued.\n     - Purchase price adjustments often reference EBITDA.\n  \n  5. **Limitations & Adjustments**:\n     - PE firms adjust EBITDA for non‑recurring items, owner‑related expenses, and normalized working capital to calculate \"adjusted EBITDA\" or \"quality of earnings.\"\n     - Critics note EBITDA ignores capex and working capital needs, which are essential for sustaining operations.\n  \n  In summary, EBITDA serves as a common language for valuation, debt financing, and operational benchmarking in PE, but must be used with understanding of its limitations.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2106,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "Dividend Recapitalization",
+  "question": "What is a dividend recapitalization and why would a private equity firm execute one?",
+  "modelAnswer": "A dividend recapitalization (\"dividend recap\") is a transaction in which a portfolio company takes on new debt or refinances existing debt to pay a special dividend to its equity holders (typically the PE fund). It is a way to realize partial returns without selling the company.\n  \n  **Mechanics**:\n  1. The company issues additional debt (or increases existing debt facilities) based on improved performance and increased debt capacity.\n  2. The proceeds are distributed as a dividend to shareholders.\n  3. The company's capital structure becomes more leveraged, but the equity ownership remains unchanged.\n  \n  **Reasons for a Dividend Recap**:\n  1. **Early Return of Capital**: Allows the PE fund to return cash to LPs earlier in the holding period, improving fund IRR.\n  2. **Monetizing Value Creation**: If the company's EBITDA has grown or its valuation multiple has expanded, the increased debt capacity can be used to extract part of the created value.\n  3. **Avoiding Dilution**: Unlike a secondary sale, a recap does not require selling equity, so the fund retains full ownership and future upside.\n  4. **Tax Efficiency**: Dividends may be taxed more favorably than management fees or carried interest in certain jurisdictions.\n  5. **Market Timing**: When debt markets are favorable (low rates, loose covenants), recaps are cheaper and easier to execute.\n  6. **Portfolio Rebalancing**: Provides liquidity to fund new investments without exiting existing positions.\n  \n  **Risks & Considerations**:\n  - Increased leverage raises the company's risk profile and reduces financial flexibility.\n  - May limit future growth investments if cash flow is diverted to debt service.\n  - Could trigger debt covenant breaches if performance deteriorates.\n  - Lenders require robust EBITDA coverage and may impose stricter terms.\n  \n  Dividend recaps are common in the middle of a holding period after operational improvements have been realized.",
+  "scoringKeywords": {
+    "early return of capital": 20,
+    "monetizing value creation": 20,
+    "retain ownership": 15,
+    "tax efficiency": 15,
+    "market timing": 15,
+    "leverage increase": 10,
+    "risks": 5
+  },
+  "expectedStructure": [
+    "Definition and mechanics",
+    "Reasons for execution",
+    "Benefits to PE fund",
+    "Risks and considerations",
+    "Typical timing"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "A dividend recapitalization (\"dividend recap\") is a transaction in which a portfolio company takes on new debt or refinances existing debt to pay a special dividend to its equity holders (typically the PE fund). It is a way to realize partial returns without selling the company.\n  \n  **Mechanics**:\n  1. The company issues additional debt (or increases existing debt facilities) based on improved performance and increased debt capacity.\n  2. The proceeds are distributed as a dividend to shareholders.\n  3. The company's capital structure becomes more leveraged, but the equity ownership remains unchanged.\n  \n  **Reasons for a Dividend Recap**:\n  1. **Early Return of Capital**: Allows the PE fund to return cash to LPs earlier in the holding period, improving fund IRR.\n  2. **Monetizing Value Creation**: If the company's EBITDA has grown or its valuation multiple has expanded, the increased debt capacity can be used to extract part of the created value.\n  3. **Avoiding Dilution**: Unlike a secondary sale, a recap does not require selling equity, so the fund retains full ownership and future upside.\n  4. **Tax Efficiency**: Dividends may be taxed more favorably than management fees or carried interest in certain jurisdictions.\n  5. **Market Timing**: When debt markets are favorable (low rates, loose covenants), recaps are cheaper and easier to execute.\n  6. **Portfolio Rebalancing**: Provides liquidity to fund new investments without exiting existing positions.\n  \n  **Risks & Considerations**:\n  - Increased leverage raises the company's risk profile and reduces financial flexibility.\n  - May limit future growth investments if cash flow is diverted to debt service.\n  - Could trigger debt covenant breaches if performance deteriorates.\n  - Lenders require robust EBITDA coverage and may impose stricter terms.\n  \n  Dividend recaps are common in the middle of a holding period after operational improvements have been realized.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2107,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "Private Equity Fund Structure",
+  "question": "Describe the typical structure of a private equity fund (management fees, carried interest, hurdle rate).",
+  "modelAnswer": "Private equity funds are structured as limited partnerships with a finite life (usually 10–12 years). The General Partner (GP) manages the fund, and Limited Partners (LPs) provide capital.\n  \n  **Key Components**:\n  1. **Management Fees**:\n     - Annual fee (typically 1.5–2% of committed capital) paid by LPs to cover GP's operational expenses.\n     - Often calculated on committed capital during the investment period (first 3–5 years), then on invested capital or net asset value thereafter.\n     - Fees are usually paid quarterly.\n  \n  2. **Carried Interest (\"Carry\")**:\n     - The GP's share of profits, typically 20% of fund profits after returning LPs' contributed capital and preferred return.\n     - Carried interest aligns GP and LP interests; GP only profits if the fund succeeds.\n     - \"Hurdle Rate\" (Preferred Return): The minimum annual return (e.g., 8%) that must be paid to LPs before carry is calculated.\n     - \"Catch‑Up\": Once the hurdle is met, a higher percentage (e.g., 100%) of subsequent profits goes to the GP until the GP has received its full 20% share of total profits.\n  \n  3. **Waterfall Distribution**:\n     - The order in which cash flows are distributed:\n       a) Return of LP capital.\n       b) Payment of preferred return (hurdle).\n       c) Catch‑up to GP.\n       d) 80/20 split (LP/GP) thereafter.\n     - Two common structures: \"European\" (whole‑fund) waterfall vs. \"American\" (deal‑by‑deal) waterfall.\n  \n  4. **Fund Lifecycle**:\n     - **Investment Period**: 3–5 years during which the fund makes new acquisitions.\n     - **Holding Period**: Portfolio companies are managed and improved.\n     - **Exit Period**: Companies are sold via IPO, trade sale, or secondary buyout.\n     - **Extension**: Possible 1–2 year extension if needed.\n  \n  5. **Other Terms**:\n     - **Commitment Period**: LPs commit capital that is \"called\" as needed (capital calls).\n     - **Key‑Person Clause**: If key GP members leave, investment may be paused.\n     - **Clawback**: If early distributions exceed eventual profits, GP may have to return excess carry.\n  \n  This structure ensures alignment, incentivizes performance, and provides clarity on economics.",
+  "scoringKeywords": {
+    "management fees": 20,
+    "carried interest": 25,
+    "hurdle rate": 20,
+    "waterfall distribution": 15,
+    "fund lifecycle": 10,
+    "alignment of interests": 10
+  },
+  "expectedStructure": [
+    "GP/LP roles",
+    "Management fee calculation",
+    "Carried interest mechanics",
+    "Hurdle rate and catch‑up",
+    "Waterfall distribution order",
+    "Fund lifecycle phases"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "Private equity funds are structured as limited partnerships with a finite life (usually 10–12 years). The General Partner (GP) manages the fund, and Limited Partners (LPs) provide capital.\n  \n  **Key Components**:\n  1. **Management Fees**:\n     - Annual fee (typically 1.5–2% of committed capital) paid by LPs to cover GP's operational expenses.\n     - Often calculated on committed capital during the investment period (first 3–5 years), then on invested capital or net asset value thereafter.\n     - Fees are usually paid quarterly.\n  \n  2. **Carried Interest (\"Carry\")**:\n     - The GP's share of profits, typically 20% of fund profits after returning LPs' contributed capital and preferred return.\n     - Carried interest aligns GP and LP interests; GP only profits if the fund succeeds.\n     - \"Hurdle Rate\" (Preferred Return): The minimum annual return (e.g., 8%) that must be paid to LPs before carry is calculated.\n     - \"Catch‑Up\": Once the hurdle is met, a higher percentage (e.g., 100%) of subsequent profits goes to the GP until the GP has received its full 20% share of total profits.\n  \n  3. **Waterfall Distribution**:\n     - The order in which cash flows are distributed:\n       a) Return of LP capital.\n       b) Payment of preferred return (hurdle).\n       c) Catch‑up to GP.\n       d) 80/20 split (LP/GP) thereafter.\n     - Two common structures: \"European\" (whole‑fund) waterfall vs. \"American\" (deal‑by‑deal) waterfall.\n  \n  4. **Fund Lifecycle**:\n     - **Investment Period**: 3–5 years during which the fund makes new acquisitions.\n     - **Holding Period**: Portfolio companies are managed and improved.\n     - **Exit Period**: Companies are sold via IPO, trade sale, or secondary buyout.\n     - **Extension**: Possible 1–2 year extension if needed.\n  \n  5. **Other Terms**:\n     - **Commitment Period**: LPs commit capital that is \"called\" as needed (capital calls).\n     - **Key‑Person Clause**: If key GP members leave, investment may be paused.\n     - **Clawback**: If early distributions exceed eventual profits, GP may have to return excess carry.\n  \n  This structure ensures alignment, incentivizes performance, and provides clarity on economics.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2108,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "GP vs LP Roles and Conflicts",
+  "question": "What are the roles of General Partners (GPs) and Limited Partners (LPs), and what potential conflicts can arise?",
+  "modelAnswer": "**General Partners (GPs)** are the fund managers responsible for sourcing, executing, and managing investments. They have unlimited liability and make all investment decisions.\n  \n  **Limited Partners (LPs)** are investors (pension funds, endowments, insurance companies, wealthy individuals) who provide capital but have limited liability and no day‑to‑day control.\n  \n  **Roles**:\n  - **GP**: Deal sourcing, due diligence, negotiation, portfolio company oversight, value‑add, exit planning, fundraising, investor reporting.\n  - **LP**: Capital commitment, monitoring fund performance, conducting due diligence on GPs, attending annual meetings, providing strategic input.\n  \n  **Potential Conflicts**:\n  1. **Fee Structure**: Management fees may incentivize GPs to raise larger funds (more fee income) rather than optimize returns for LPs.\n  2. **Deal‑by‑Deal Carry**: In American waterfalls, GPs can earn carry on individual successful deals even if the overall fund underperforms.\n  3. **Cross‑Fund Investing**: GPs may allocate a promising deal to a newer fund (with higher carry) rather than an older fund.\n  4. **Time Horizon**: GPs may rush exits to raise a successor fund, while LPs prefer longer‑term value creation.\n  5. **Co‑Investment Opportunities**: GPs may offer co‑investments selectively, favoring certain LPs.\n  6. **Valuation of Unrealized Investments**: GPs may mark portfolio companies optimistically to show higher IRRs, affecting performance fees.\n  7. **Expense Allocation**: Whether certain expenses are borne by the fund or the GP.\n  8. **Key‑Person Risk**: Departure of key GP members may harm fund performance.\n  \n  **Mitigations**:\n  - Strong limited partnership agreement (LPA) with clear terms.\n  - Independent advisory boards representing LPs.\n  - Regular transparency and reporting.\n  - Clawback provisions and hurdle rates.\n  - Alignment through GP co‑investment (GP commits 1–5% of fund capital).\n  \n  Understanding these roles and conflicts is essential for both fund managers and investors.",
+  "scoringKeywords": {
+    "deal sourcing": 20,
+    "fee structure conflicts": 20,
+    "deal‑by‑deal carry": 15,
+    "cross‑fund investing": 15,
+    "time horizon": 10,
+    "valuation conflicts": 10,
+    "mitigations": 10
+  },
+  "expectedStructure": [
+    "GP roles and responsibilities",
+    "LP roles and responsibilities",
+    "List of potential conflicts",
+    "Examples of each conflict",
+    "Mitigation mechanisms"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "**General Partners (GPs)** are the fund managers responsible for sourcing, executing, and managing investments. They have unlimited liability and make all investment decisions.\n  \n  **Limited Partners (LPs)** are investors (pension funds, endowments, insurance companies, wealthy individuals) who provide capital but have limited liability and no day‑to‑day control.\n  \n  **Roles**:\n  - **GP**: Deal sourcing, due diligence, negotiation, portfolio company oversight, value‑add, exit planning, fundraising, investor reporting.\n  - **LP**: Capital commitment, monitoring fund performance, conducting due diligence on GPs, attending annual meetings, providing strategic input.\n  \n  **Potential Conflicts**:\n  1. **Fee Structure**: Management fees may incentivize GPs to raise larger funds (more fee income) rather than optimize returns for LPs.\n  2. **Deal‑by‑Deal Carry**: In American waterfalls, GPs can earn carry on individual successful deals even if the overall fund underperforms.\n  3. **Cross‑Fund Investing**: GPs may allocate a promising deal to a newer fund (with higher carry) rather than an older fund.\n  4. **Time Horizon**: GPs may rush exits to raise a successor fund, while LPs prefer longer‑term value creation.\n  5. **Co‑Investment Opportunities**: GPs may offer co‑investments selectively, favoring certain LPs.\n  6. **Valuation of Unrealized Investments**: GPs may mark portfolio companies optimistically to show higher IRRs, affecting performance fees.\n  7. **Expense Allocation**: Whether certain expenses are borne by the fund or the GP.\n  8. **Key‑Person Risk**: Departure of key GP members may harm fund performance.\n  \n  **Mitigations**:\n  - Strong limited partnership agreement (LPA) with clear terms.\n  - Independent advisory boards representing LPs.\n  - Regular transparency and reporting.\n  - Clawback provisions and hurdle rates.\n  - Alignment through GP co‑investment (GP commits 1–5% of fund capital).\n  \n  Understanding these roles and conflicts is essential for both fund managers and investors.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+},
+  {
+  "id": 2109,
+  "role": "pe",
+  "category": "technical",
+  "difficulty": "medium",
+  "title": "Deal Sourcing in Private Equity",
+  "question": "How do private equity firms source investment opportunities?",
+  "modelAnswer": "Deal sourcing is the process of identifying and accessing potential investment targets. Effective sourcing is a competitive advantage for PE firms.\n  \n  **Primary Channels**:\n  1. **Proprietary Networks**:\n     - Industry executives, former portfolio company management, board members, and advisors.\n     - Alumni networks from top business schools and previous firms.\n  \n  2. **Intermediaries**:\n     - Investment banks (sell‑side M&A) run formal auctions. PE firms participate in broad processes but often face high competition and prices.\n     - Boutique advisory firms and business brokers provide off‑market opportunities.\n  \n  3. **Direct Outreach**:\n     - \"Cold‑calling\" or targeted approach to family‑owned businesses, corporate divestitures, or companies in fragmented industries.\n     - Building relationships with owners over years before they decide to sell.\n  \n  4. **Industry Specialization**:\n     - Deep focus on a specific sector (e.g., healthcare, technology) allows firms to spot trends early and build relationships with key players.\n     - Attending industry conferences, trade shows, and publishing research.\n  \n  5. **Add‑on Acquisitions**:\n     - Once a platform company is acquired, the PE firm sources smaller \"bolt‑on\" acquisitions to grow the platform.\n  \n  6. **Secondary & Distressed Situations**:\n     - Purchasing assets from other PE funds, distressed sellers, or corporate restructuring.\n  \n  7. **Public‑to‑Private**:\n     - Taking public companies private, often during periods of undervaluation.\n  \n  **Sourcing Strategy**:\n  - **Geography**: Regional offices to cover local markets.\n  - **Team**: Dedicated sourcing professionals (principals, associates) who focus exclusively on origination.\n  - **Technology**: Using data analytics, CRM systems, and AI to screen companies and identify targets.\n  \n  The best deals often come from proprietary channels where competition is limited, allowing for more favorable pricing and terms.",
+  "scoringKeywords": {
+    "proprietary networks": 25,
+    "intermediaries": 20,
+    "direct outreach": 20,
+    "industry specialization": 15,
+    "add‑on acquisitions": 10,
+    "sourcing strategy": 10
+  },
+  "expectedStructure": [
+    "Primary sourcing channels",
+    "Role of intermediaries",
+    "Direct outreach methods",
+    "Industry specialization",
+    "Add‑on acquisition sourcing",
+    "Sourcing strategy and team"
+  ],
+  "detailedAnalysis": {
+    "overview": "This medium technical question evaluates the candidate's understanding of private equity concepts.",
+    "whyWorks": "A strong answer combines theoretical knowledge with practical examples, demonstrating both depth and relevance to real‑world PE investing.",
+    "commonMistakes": [
+      "Providing generic definitions without PE‑specific context",
+      "Neglecting current industry developments or regulatory changes",
+      "Overusing jargon without clear explanations",
+      "Failing to structure the answer logically"
+    ],
+    "improvementTips": [
+      "Reference recent PE deals, market trends, or regulatory updates",
+      "Use established frameworks to structure complex concepts",
+      "Balance depth with clarity for interviewers of varying expertise",
+      "Connect theory to specific PE job functions and responsibilities"
+    ]
+  },
+  "metadata": {
+    "generatedBy": "finterview_english_expert",
+    "generatedAt": "2026-03-25T03:45:48.762Z",
+    "confidence": "high",
+    "sources": [
+      "PitchBook Private Equity Reports",
+      "CFA Institute Alternative Investments",
+      "Private Equity International",
+      "Bain & Company Global Private Equity Report"
+    ],
+    "needsReview": false,
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "ratingDimensions": {
+      "frequency": 85,
+      "differentiation": 80,
+      "sourceAuthority": 80,
+      "answerClarity": 85,
+      "marketRelevance": 90,
+      "regionalApplicability": 80,
+      "difficulty": 60
+    },
+    "weightedScore": 82.5,
+    "starRating": 4,
+    "tags": [
+      "核心题",
+      "理解题",
+      "权威题"
+    ]
+  },
+  "entryLevel": false,
+  "stars": 4,
+  "answers": {
+    "concise": {
+      "answer": "Deal sourcing is the process of identifying and accessing potential investment targets. Effective sourcing is a competitive advantage for PE firms.\n  \n  **Primary Channels**:\n  1. **Proprietary Networks**:\n     - Industry executives, former portfolio company management, board members, and advisors.\n     - Alumni networks from top business schools and previous firms.\n  \n  2. **Intermediaries**:\n     - Investment banks (sell‑side M&A) run formal auctions. PE firms participate in broad processes but often face high competition and prices.\n     - Boutique advisory firms and business brokers provide off‑market opportunities.\n  \n  3. **Direct Outreach**:\n     - \"Cold‑calling\" or targeted approach to family‑owned businesses, corporate divestitures, or companies in fragmented industries.\n     - Building relationships with owners over years before they decide to sell.\n  \n  4. **Industry Specialization**:\n     - Deep focus on a specific sector (e.g., healthcare, technology) allows firms to spot trends early and build relationships with key players.\n     - Attending industry conferences, trade shows, and publishing research.\n  \n  5. **Add‑on Acquisitions**:\n     - Once a platform company is acquired, the PE firm sources smaller \"bolt‑on\" acquisitions to grow the platform.\n  \n  6. **Secondary & Distressed Situations**:\n     - Purchasing assets from other PE funds, distressed sellers, or corporate restructuring.\n  \n  7. **Public‑to‑Private**:\n     - Taking public companies private, often during periods of undervaluation.\n  \n  **Sourcing Strategy**:\n  - **Geography**: Regional offices to cover local markets.\n  - **Team**: Dedicated sourcing professionals (principals, associates) who focus exclusively on origination.\n  - **Technology**: Using data analytics, CRM systems, and AI to screen companies and identify targets.\n  \n  The best deals often come from proprietary channels where competition is limited, allowing for more favorable pricing and terms.",
+      "format": "concise",
+      "source": "generated"
+    }
+  }
+}
+
 ];
 
 // Export for browser
