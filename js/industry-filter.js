@@ -738,11 +738,11 @@
                 </div>
             </div>
             
-            <div class="question-actions" style="margin-top: 1rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-                <button class="btn btn-primary practice-card-btn" data-question-id="${question.id || number}" style="flex: 1; min-width: 140px; white-space: nowrap;">
+            <div class="question-actions" style="margin-top: 1rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+                <button class="btn btn-primary practice-card-btn" data-question-id="${question.id || number}" style="width: 100%; max-width: 260px; padding: 0.6rem 1rem; box-sizing: border-box;">
                     <i class="fas fa-play"></i> Practice This Question
                 </button>
-                <button class="btn btn-outline more-industry-btn" data-industry="${question.role || 'ib'}" style="flex: 0 1 auto; min-width: 120px; white-space: nowrap;">
+                <button class="btn btn-outline more-industry-btn" data-industry="${question.role || 'ib'}" style="width: 100%; max-width: 260px; padding: 0.6rem 1rem; box-sizing: border-box;">
                     <i class="fas fa-industry"></i> More ${getIndustryName(question.role)}
                 </button>
             </div>
