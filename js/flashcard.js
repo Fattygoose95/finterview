@@ -225,7 +225,13 @@
         const concise = question.answers?.concise?.answer;
         const fallback = question.modelAnswer || 'No answer available.';
         const answer = (concise && concise.length > 20) ? concise : fallback;
-        flashcardAnswer.textContent = answer;
+        
+        // Truncate to first 3-4 bullet points for flashcard readability
+        const bullets = answer.split('•').filter(b => b.trim().length > 0);
+        const shortAnswer = bullets.length > 3 
+            ? '• ' + bullets.slice(0, 3).map(b => b.trim()).join('\n• ') + '\n…' 
+            : answer;
+        flashcardAnswer.textContent = shortAnswer;
         
         // Reset card to front
         flashcard.classList.remove('flipped');
