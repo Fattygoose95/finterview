@@ -31084,7 +31084,7 @@ const questionBank = [
     "modelAnswer": "## Compliance Monitoring - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "Break down into key concepts, explain theoretical foundations, describe methodologies, discuss practical applications, and mention limitations/alternatives.",
+        "answer": "• Surveillance systems monitor trading activity in real-time for patterns indicating market abuse (insider trading, front-running, spoofing)\n• Trade reconstruction and voice surveillance capture all communications and order flow for regulatory review (SEC, FINRA, ESMA)\n• Automated control testing validates that compliance rules (position limits, concentration limits, restricted list) are enforced pre-trade\n• Exception reporting flags unusual activity for compliance officer review with escalation procedures for confirmed violations",
         "format": "concise",
         "source": "systematic-generation"
       }
@@ -31270,7 +31270,7 @@ const questionBank = [
     "modelAnswer": "## Regulatory Knowledge - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
     "answers": {
       "concise": {
-        "answer": "Break down into key concepts, explain theoretical foundations, describe methodologies, discuss practical applications, and mention limitations/alternatives.",
+        "answer": "• Basel III framework sets minimum capital requirements (CET1 ratio > 4.5%, Tier 1 > 6%, Total > 8%) and leverage ratio > 3%\n• Dodd-Frank mandates central clearing for standardized OTC derivatives and requires stress testing (CCAR/DFAST) for large banks\n• MiFID II governs European market structure, requiring best execution, transaction reporting, and MiFID passporting for cross-border activity\n• Key risk regulations: Volcker Rule restricts proprietary trading, EMIR governs European derivative clearing, and AML/KYC rules mandate customer due diligence",
         "format": "concise",
         "source": "systematic-generation"
       }
