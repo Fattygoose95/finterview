@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Mode - finterview</title>
+    <link rel="stylesheet" href="css/unified-design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+    <style>
+        .flashcard-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .flashcard-header {
+            text-align: center;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .flashcard-header h1 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+        
+        .flashcard-header p {
+            color: var(--text-secondary);
+            font-size: var(--font-size-lg);
+        }
+        
+        .flashcard-stats {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+        
+        .flashcard-wrapper {
+            perspective: 1000px;
+            margin-bottom: var(--spacing-2xl);
+        }
+        
+        .flashcard {
+            width: 100%;
+            min-height: 400px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--card-shadow);
+        }
+        
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+        
+        .flashcard-front, .flashcard-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-2xl);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .flashcard-front {
+            background-color: var(--card-bg);
+            border: 1px solid var(--light-border);
+        }
+        
+        .flashcard-back {
+            background-color: var(--card-bg);
+            border: 1px solid var(--light-border);
+            transform: rotateY(180deg);
+            overflow-y: auto;
+        }
+        
+        .flashcard-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .flashcard-question {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-lg);
+            line-height: var(--line-height-relaxed);
+        }
+        
+        .flashcard-industry {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-semibold);
+            color: var(--white);
+            margin-bottom: var(--spacing-lg);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .flashcard-difficulty {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-semibold);
+            color: var(--white);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .difficulty-easy {
+            background-color: var(--success-color);
+        }
+        
+        .difficulty-medium {
+            background-color: var(--warning-color);
+        }
+        
+        .difficulty-hard {
+            background-color: var(--error-color);
+        }
+        
+        .flashcard-answer {
+            font-size: var(--font-size-lg);
+            color: var(--text-primary);
+            line-height: var(--line-height-relaxed);
+            text-align: left;
+            width: 100%;
+        }
+        
+        .flashcard-instruction {
+            color: var(--text-light);
+            font-size: var(--font-size-sm);
+            margin-top: var(--spacing-lg);
+            font-style: italic;
+        }
+        
+        .flashcard-controls {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+        
+        .rating-btn {
+            padding: var(--spacing-md) var(--spacing-xl);
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .rating-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--hover-shadow);
+        }
+        
+        .rating-btn.easy {
+            background-color: var(--success-color);
+            color: var(--white);
+        }
+        
+        .rating-btn.medium {
+            background-color: var(--warning-color);
+            color: var(--white);
+        }
+        
+        .rating-btn.hard {
+            background-color: var(--error-color);
+            color: var(--white);
+        }
+        
+        .flashcard-progress {
+            margin-top: var(--spacing-2xl);
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: var(--light-border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background-color: var(--primary-color);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+        }
+        
+        .flashcard-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+        
+        .action-btn {
+            padding: var(--spacing-md) var(--spacing-xl);
+            background-color: var(--card-bg);
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius);
+            color: var(--text-primary);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-medium);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        
+        .action-btn:hover {
+            background-color: var(--light-bg);
+        }
+        
+        .action-btn.primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .action-btn.primary:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .industry-selector {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .industry-tag {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            cursor: pointer;
+            border: 1px solid var(--light-border);
+            background-color: var(--card-bg);
+            color: var(--text-primary);
+            transition: all 0.2s ease;
+        }
+        
+        .industry-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--card-shadow);
+        }
+        
+        .industry-tag.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .flashcard {
+                min-height: 300px;
+            }
+            
+            .flashcard-question {
+                font-size: var(--font-size-lg);
+            }
+            
+            .flashcard-answer {
+                font-size: var(--font-size-base);
+            }
+            
+            .flashcard-controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .rating-btn {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Flashcard Mode</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry-practice.html">Practice Mode</a></li>
+                        <li><a href="industry-filter.html">Advanced Filters</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                        <li><a href="finance-bro.html">Finance Bro AI</a></li>
+                        <li><a href="flashcard.html" class="active">Flashcards</a></li>
+                        <li class="search-toggle-item">
+                            <button id="search-toggle" class="search-toggle-btn" aria-label="Search questions">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </li>
+                        <li class="theme-toggle-item">
+                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch theme">
+                                <i id="theme-icon" class="fas fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container flashcard-container">
+                <div class="flashcard-header">
+                    <h1><i class="fas fa-layer-group"></i> Flashcard Mode</h1>
+                    <p>Spaced repetition learning for finance interview questions</p>
+                </div>
+                
+                <!-- Industry Selector -->
+                <div class="industry-selector" id="industrySelector">
+                    <div class="industry-tag active" data-industry="all">All Industries</div>
+                    <!-- Industry tags will be populated dynamically -->
+                </div>
+                
+                <!-- Statistics -->
+                <div class="flashcard-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalCards">0</div>
+                        <div class="stat-label">Total Cards</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="reviewedCards">0</div>
+                        <div class="stat-label">Reviewed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="masteryRate">0%</div>
+                        <div class="stat-label">Mastery</div>
+                    </div>
+                </div>
+                
+                <!-- Flashcard -->
+                <div class="flashcard-wrapper">
+                    <div class="flashcard" id="flashcard">
+                        <div class="flashcard-front">
+                            <div class="flashcard-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="flashcard-question" id="flashcardQuestion">
+                                Loading question...
+                            </div>
+                            <div class="flashcard-industry" id="flashcardIndustry">
+                                Industry
+                            </div>
+                            <div class="flashcard-difficulty difficulty-medium" id="flashcardDifficulty">
+                                Medium
+                            </div>
+                            <div class="flashcard-instruction">
+                                Click card to reveal answer
+                            </div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="flashcard-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="flashcard-answer" id="flashcardAnswer">
+                                Loading answer...
+                            </div>
+                            <div class="flashcard-instruction">
+                                Rate your knowledge to schedule next review
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rating Controls (shown after flip) -->
+                <div class="flashcard-controls" id="ratingControls" style="display: none;">
+                    <button class="rating-btn easy" data-rating="easy">
+                        <i class="fas fa-smile"></i> Easy
+                    </button>
+                    <button class="rating-btn medium" data-rating="medium">
+                        <i class="fas fa-meh"></i> Medium
+                    </button>
+                    <button class="rating-btn hard" data-rating="hard">
+                        <i class="fas fa-frown"></i> Hard
+                    </button>
+                </div>
+                
+                <!-- Progress -->
+                <div class="flashcard-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span>Session Progress</span>
+                        <span id="progressText">0/0</span>
+                    </div>
+                </div>
+                
+                <!-- Actions -->
+                <div class="flashcard-actions">
+                    <button class="action-btn" id="prevBtn">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <button class="action-btn primary" id="nextBtn">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="action-btn" id="shuffleBtn">
+                        <i class="fas fa-random"></i> Shuffle
+                    </button>
+                    <button class="action-btn" id="resetBtn">
+                        <i class="fas fa-redo"></i> Reset Session
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <h3>finterview</h3>
+                        <p>Flashcard Learning System</p>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry-practice.html">Practice</a></li>
+                        <li><a href="flashcard.html">Flashcards</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="text-sm text-secondary">© 2024 finterview. Spaced repetition algorithm for effective learning.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/search.js"></script>
+    <script src="questions.js?v=v20260324_feedback_fixed"></script>
+    
+    <!-- Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-container">
+                    <i class="fas fa-search search-input-icon"></i>
+                    <input type="text" id="search-input" class="search-input" 
+                           placeholder="Search across all finance interview questions..." 
+                           autocomplete="off">
+                </div>
+                <button id="search-close" class="search-close" aria-label="Close search">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-body">
+                <div class="search-filters" id="search-filters">
+                    <!-- Filters will be added dynamically -->
+                </div>
+                <div class="search-results" id="search-results">
+                    <!-- Search results will appear here -->
+                    <div class="search-empty">
+                        <i class="fas fa-search"></i>
+                        <h3>Search Finance Questions</h3>
+                        <p>Type to search across all questions. Filter by industry or difficulty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/flashcard.js"></script>
+</body>
+</html>

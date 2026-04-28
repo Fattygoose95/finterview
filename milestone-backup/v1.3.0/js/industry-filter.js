@@ -231,7 +231,7 @@
      * Setup event listeners
      */
     function setupEventListeners() {
-        // Filter tag clicks + practice/more-industry button clicks (delegated)
+        // Filter tag clicks
         document.addEventListener('click', function(e) {
             const filterTag = e.target.closest('.filter-tag');
             if (filterTag) {
@@ -251,24 +251,6 @@
                 const filterType = tag.dataset.filterType;
                 const filterId = tag.dataset.filterId;
                 removeFilter(filterType, filterId);
-                return;
-            }
-            
-            // Practice This Question button
-            const practiceBtn = e.target.closest('.practice-card-btn');
-            if (practiceBtn) {
-                e.stopPropagation();
-                const qId = practiceBtn.dataset.questionId;
-                if (qId) navigateToPractice(parseInt(qId));
-                return;
-            }
-            
-            // More [Industry] button
-            const moreBtn = e.target.closest('.more-industry-btn');
-            if (moreBtn) {
-                e.stopPropagation();
-                const industryId = moreBtn.dataset.industry;
-                if (industryId) navigateToIndustryPractice(industryId);
                 return;
             }
         });
@@ -670,12 +652,6 @@
         card.className = 'question-card';
         card.dataset.questionId = question.id || number;
         
-        // Store filter context in sessionStorage before navigating
-        function navToPractice(targetId) {
-            saveFilterStateToSession();
-            window.location.href = `industry-practice.html?questionId=${targetId}`;
-        }
-        
         // Make card clickable to go to practice mode
         card.style.cursor = 'pointer';
         card.addEventListener('click', function(e) {
@@ -683,7 +659,11 @@
             if (e.target.tagName === 'BUTTON' || e.target.tagName === 'A' || e.target.closest('button') || e.target.closest('a')) {
                 return;
             }
-            navToPractice(question.id || number);
+            
+            // Get current filter state for navigation order
+            const filterState = getFilterStateForUrl();
+            const practiceUrl = `industry.html?questionId=${question.id || number}&${filterState}`;
+            window.location.href = practiceUrl;
         });
         
         // Industry color
@@ -739,10 +719,10 @@
             </div>
             
             <div class="question-actions" style="margin-top: 1rem;">
-                <button class="btn btn-primary practice-card-btn" data-question-id="${question.id || number}">
+                <button class="btn btn-primary" onclick="event.stopPropagation(); window.location.href='industry.html?questionId=${question.id || number}&${getFilterStateForUrl()}'">
                     <i class="fas fa-play"></i> Practice This Question
                 </button>
-                <button class="btn btn-outline more-industry-btn" data-industry="${question.role || 'ib'}" style="margin-left: 0.5rem;">
+                <button class="btn btn-outline" onclick="event.stopPropagation(); window.location.href='industry.html?industry=${question.role || 'ib'}'" style="margin-left: 0.5rem;">
                     <i class="fas fa-industry"></i> More ${getIndustryName(question.role)}
                 </button>
             </div>
@@ -772,39 +752,36 @@
     }
     
     /**
-     * Save current filter state to sessionStorage (avoids URI-too-long errors)
-     * Practice mode reads this to maintain filter context
+     * Get current filter state as URL parameters
+     * This encodes the filter state so practice mode can know the filter order
      */
-    function saveFilterStateToSession() {
-        const filterState = {
-            industries: Array.from(State.activeFilters.industry),
-            difficulties: Array.from(State.activeFilters.difficulty),
-            types: Array.from(State.activeFilters.type),
-            frequencies: Array.from(State.activeFilters.frequency),
-            sort: State.currentSort,
-            filteredIds: State.filteredQuestions.map(q => q.id || q._index).filter(id => id)
-        };
-        try {
-            sessionStorage.setItem('finterview_filter_state', JSON.stringify(filterState));
-        } catch (e) {
-            // sessionStorage full or unavailable — fall back to minimal URL param
-            console.warn('Could not save filter state to sessionStorage:', e.message);
+    function getFilterStateForUrl() {
+        const params = new URLSearchParams();
+        
+        // Add active filters
+        if (State.activeFilters.industry.size > 0) {
+            params.set('filter_industries', Array.from(State.activeFilters.industry).join(','));
         }
-    }
-    
-    /**
-     * Navigate to practice mode with stored filter context
-     */
-    function navigateToPractice(questionId) {
-        saveFilterStateToSession();
-        window.location.href = `industry-practice.html?questionId=${questionId}`;
-    }
-    
-    /**
-     * Navigate to practice mode filtered by industry
-     */
-    function navigateToIndustryPractice(industryId) {
-        window.location.href = `industry-practice.html?industry=${industryId}`;
+        if (State.activeFilters.difficulty.size > 0) {
+            params.set('filter_difficulties', Array.from(State.activeFilters.difficulty).join(','));
+        }
+        if (State.activeFilters.type.size > 0) {
+            params.set('filter_types', Array.from(State.activeFilters.type).join(','));
+        }
+        if (State.activeFilters.frequency.size > 0) {
+            params.set('filter_frequencies', Array.from(State.activeFilters.frequency).join(','));
+        }
+        
+        // Add sort order
+        params.set('sort', State.currentSort);
+        
+        // Add filtered question IDs (in current order)
+        if (State.filteredQuestions.length > 0) {
+            const questionIds = State.filteredQuestions.map(q => q.id || q._index).filter(id => id);
+            params.set('filtered_ids', questionIds.join(','));
+        }
+        
+        return params.toString();
     }
     
     /**
