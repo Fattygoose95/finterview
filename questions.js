@@ -766,7 +766,7 @@ const questionBank = [
   },
   {
     "id": 1036,
-    "role": "ib",
+    "role": "markets",
     "category": "technical",
     "difficulty": "easy",
     "title": "Bond Pricing Concepts",
@@ -818,7 +818,7 @@ const questionBank = [
   },
   {
     "id": 1037,
-    "role": "ib",
+    "role": "markets",
     "category": "technical",
     "difficulty": "medium",
     "title": "Market Trends (Simple)",
@@ -1182,7 +1182,7 @@ const questionBank = [
   },
   {
     "id": 1044,
-    "role": "ib",
+    "role": "markets",
     "category": "market",
     "difficulty": "medium",
     "title": "Current Market Trends (Simplified)",
@@ -1286,7 +1286,7 @@ const questionBank = [
   },
   {
     "id": 1046,
-    "role": "ib",
+    "role": "am",
     "category": "technical",
     "difficulty": "easy",
     "title": "Portfolio Diversification",
@@ -1338,7 +1338,7 @@ const questionBank = [
   },
   {
     "id": 1047,
-    "role": "ib",
+    "role": "markets",
     "category": "market",
     "difficulty": "medium",
     "title": "Regional Market Characteristics",
@@ -1548,7 +1548,7 @@ const questionBank = [
     "id": 1051,
     "role": "ib",
     "category": "technical",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "title": "Basic DCF Steps",
     "question": "Explain the basic steps of a discounted cash flow (DCF) valuation.",
     "modelAnswer": "DCF values a company by forecasting its future free cash flows and discounting them to present value. Key steps: 1) Project free cash flows for 5-10 years based on revenue growth and margins. 2) Estimate terminal value using a perpetual growth formula. 3) Determine the discount rate (weighted average cost of capital). 4) Discount all cash flows to present value. 5) Sum present values to get enterprise value, then adjust for debt and cash to derive equity value. For example, valuing a stable company might use 3% long-term growth. Common mistakes: using unrealistic growth rates, ignoring working capital changes, or mismatching discount rate with cash flow type.",
@@ -3746,7 +3746,7 @@ const questionBank = [
     "id": 1094,
     "role": "ib",
     "category": "technical",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "title": "Loan Structuring Basics",
     "question": "What are the main components of a commercial loan structure?",
     "modelAnswer": "A commercial loan structure includes the principal amount, interest rate (fixed or floating), repayment schedule (amortizing vs. bullet), maturity date, collateral, and covenants. Covenants are conditions the borrower must meet, such as maintaining certain financial ratios. Collateral secures the loan (real estate, inventory, receivables). Pricing depends on credit risk, market conditions, and relationship. For entry‑level interviews, candidates should mention the trade‑off between risk and return: higher risk loans have higher rates and stricter covenants. Common mistakes include forgetting about fees (origination, commitment) or not understanding the purpose of financial covenants.",
@@ -4640,7 +4640,7 @@ const questionBank = [
     "id": 2005,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "DCF core components",
     "question": "What are the three main components of a DCF valuation?",
     "modelAnswer": "1) Free Cash Flow projections, 2) Terminal Value calculation, 3) Discount Rate (WACC). FCF is projected for 5-10 years, terminal value captures value beyond, and WACC reflects risk.",
@@ -4789,7 +4789,7 @@ const questionBank = [
     "id": 2007,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "Terminal value methods",
     "question": "Describe the two common methods for calculating terminal value in DCF.",
     "modelAnswer": "1) Perpetuity growth method: TV = FCFn * (1+g) / (WACC - g). 2) Exit multiple method: TV = EBITDA_n * trading multiple. Both assume steady state after projection period.",
@@ -4940,7 +4940,7 @@ const questionBank = [
     "id": 2009,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "DCF sensitivity analysis",
     "question": "Why is sensitivity analysis important in DCF valuation?",
     "modelAnswer": "DCF relies on assumptions (growth, WACC). Sensitivity analysis shows how valuation changes with varying inputs, highlighting key drivers and providing a valuation range.",
@@ -5015,7 +5015,7 @@ const questionBank = [
     "id": 2010,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "LBO structure",
     "question": "What is the typical capital structure in an LBO?",
     "modelAnswer": "LBO uses high debt (60-80%) and minimal equity (20-40%). Debt includes senior secured (bank loans), mezzanine (subordinated), and high-yield bonds. Equity comes from PE fund and management.",
@@ -5092,7 +5092,7 @@ const questionBank = [
     "id": 2011,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "LBO returns drivers",
     "question": "What are the main drivers of returns in an LBO?",
     "modelAnswer": "1) Financial leverage (amplifies equity returns), 2) Operational improvements (cost cutting, revenue growth), 3) Multiple expansion (buy low, sell high), 4) Debt paydown (increases equity value).",
@@ -5167,7 +5167,7 @@ const questionBank = [
     "id": 2012,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "Ideal LBO candidate characteristics",
     "question": "What makes a company a good LBO candidate?",
     "modelAnswer": "Stable cash flows, low capex, strong asset base (collateral), experienced management, growth potential, and industry resilience. Defensive sectors like healthcare and consumer staples are favored.",
@@ -5244,7 +5244,7 @@ const questionBank = [
     "id": 2013,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "Debt covenants",
     "question": "What are typical debt covenants in LBO financing?",
     "modelAnswer": "Covenants include: 1) Leverage ratio (debt/EBITDA), 2) Interest coverage (EBIT/interest), 3) Debt service coverage (cash flow/debt payments). Breaching covenants can trigger defaults.",
@@ -5320,7 +5320,7 @@ const questionBank = [
     "id": 2014,
     "role": "ib",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "Exit strategies",
     "question": "What are common exit strategies for LBO investors?",
     "modelAnswer": "1) Sale to strategic buyer, 2) Sale to another PE fund (secondary buyout), 3) IPO, 4) Recapitalization (refinancing to take dividends). Exits typically occur in 3-7 years.",
@@ -10990,7 +10990,7 @@ const questionBank = [
     "id": 2093,
     "role": "quant",
     "category": "technical",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "title": "Black‑Scholes assumptions",
     "question": "List the key assumptions of the Black‑Scholes option pricing model.",
     "modelAnswer": "Assumptions: 1) No arbitrage, 2) Constant volatility, 3) Log‑normal stock returns, 4) No dividends, 5) Risk‑free rate constant, 6) Continuous trading, 7) No transaction costs.",
@@ -11486,7 +11486,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_0",
     "role": "am",
-    "title": "Fundamental Question 1",
+    "title": "Explain the difference between active and pas",
     "question": "Explain the difference between active and passive investment management.",
     "difficulty": "easy",
     "category": "technical",
@@ -11546,7 +11546,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_1",
     "role": "am",
-    "title": "Fundamental Question 2",
+    "title": "What factors would you consider when construc",
     "question": "What factors would you consider when constructing a diversified portfolio?",
     "difficulty": "easy",
     "category": "technical",
@@ -11606,7 +11606,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_2",
     "role": "am",
-    "title": "Fundamental Question 3",
+    "title": "How do you evaluate the performance of an inv",
     "question": "How do you evaluate the performance of an investment fund?",
     "difficulty": "easy",
     "category": "technical",
@@ -11666,7 +11666,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_3",
     "role": "am",
-    "title": "Fundamental Question 4",
+    "title": "Describe the key principles of modern portfol",
     "question": "Describe the key principles of modern portfolio theory.",
     "difficulty": "easy",
     "category": "technical",
@@ -11726,7 +11726,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_4",
     "role": "am",
-    "title": "Fundamental Question 5",
+    "title": "What is asset allocation and why is it import",
     "question": "What is asset allocation and why is it important?",
     "difficulty": "easy",
     "category": "technical",
@@ -11786,7 +11786,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_5",
     "role": "am",
-    "title": "Fundamental Question 6",
+    "title": "",
     "question": "How do you assess the risk of a particular investment?",
     "difficulty": "easy",
     "category": "technical",
@@ -11846,7 +11846,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_6",
     "role": "am",
-    "title": "Fundamental Question 7",
+    "title": "",
     "question": "What are the main types of mutual funds and their characteristics?",
     "difficulty": "easy",
     "category": "technical",
@@ -11907,7 +11907,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_7",
     "role": "am",
-    "title": "Fundamental Question 8",
+    "title": "",
     "question": "Explain the concept of alpha and beta in investment management.",
     "difficulty": "easy",
     "category": "technical",
@@ -11967,7 +11967,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_8",
     "role": "am",
-    "title": "Fundamental Question 9",
+    "title": "",
     "question": "How does dollar-cost averaging work as an investment strategy?",
     "difficulty": "easy",
     "category": "technical",
@@ -12027,7 +12027,7 @@ const questionBank = [
   {
     "id": "gen_am_1773306469454_9",
     "role": "am",
-    "title": "Fundamental Question 10",
+    "title": "",
     "question": "What role does macroeconomic analysis play in asset management?",
     "difficulty": "easy",
     "category": "technical",
@@ -12085,610 +12085,9 @@ const questionBank = [
     }
   },
   {
-    "id": "gen_am_1773306469454_10",
-    "role": "am",
-    "title": "Fundamental Question 11",
-    "question": "Explain the difference between active and passive investment management.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Active management: fund managers make investment decisions to outperform a benchmark — higher fees (0.5-1.5% annually), requires skill and research\n• Passive management: track an index (S&P 500) via ETFs or index funds — lower fees (0.03-0.10%), market returns minus costs\n• Active has potential for alpha but most active managers underperform benchmarks (85-90% over 10+ years per SPIVA)\n• Passive is cost-efficient and tax-efficient (lower turnover) but never outperforms the market\n• Choose depends on belief in market efficiency: efficient markets favor passive, inefficient markets create active opportunities",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Define first concept",
-      "Define second concept",
-      "Identify key similarities",
-      "Explain key differences",
-      "Discuss practical implications"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates am knowledge of Fundamental Question 11.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current am practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_11",
-    "role": "am",
-    "title": "Fundamental Question 12",
-    "question": "What factors would you consider when constructing a diversified portfolio?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Asset class diversification: equities (growth), bonds (income, safety), real estate (inflation hedge, income), cash (liquidity), alternatives (diversification)\n• Sector diversification: spread across technology, healthcare, financials, consumer, energy, industrials\n• Geographic diversification: US (50-70%), developed international (20-30%), emerging markets (5-15%)\n• Correlation matters: choose assets that don't move together — bonds often rise when stocks fall, providing portfolio ballast\n• Risk capacity and time horizon: longer horizons can handle more equity risk and illiquid assets",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates am knowledge of Fundamental Question 12.",
-      "whyWorks": "Strong answers combine theoretical knowledge with am-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_12",
-    "role": "am",
-    "title": "Fundamental Question 13",
-    "question": "How do you evaluate the performance of an investment fund?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Risk-adjusted returns: Sharpe ratio (return per unit of total risk), Sortino (per unit of downside risk), Information ratio (per unit of tracking error)\n• Relative performance: compare to relevant benchmark and category peer group over 1, 3, 5, 10 years\n• Consistency: rolling returns, up-market and down-market capture ratios, batting average (months beating benchmark)\n• Risk metrics: max drawdown, downside deviation, beta, tracking error — low volatility relative to returns is positive\n• Qualitative factors: manager tenure, process consistency, AUM changes (large inflows can dilute returns), fee changes",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates am knowledge of Fundamental Question 13.",
-      "whyWorks": "Strong answers combine theoretical knowledge with am-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_13",
-    "role": "am",
-    "title": "Fundamental Question 14",
-    "question": "Describe the key principles of modern portfolio theory.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• MPT (Markowitz 1952) shows optimal portfolios maximize expected return for a given risk level\n• Key insight: diversification across uncorrelated assets reduces portfolio risk without sacrificing expected return\n• Efficient frontier: the set of portfolios offering the highest expected return for each level of risk — portfolios below are suboptimal\n• The risky asset portfolio on the frontier combined with risk-free asset creates the Capital Market Line (CML): tangency is the market portfolio\n• Limitations: assumes normal distributions, stable correlations, and that mean and variance fully capture investor preferences",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates am knowledge of Fundamental Question 14.",
-      "whyWorks": "Strong answers combine theoretical knowledge with am-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_14",
-    "role": "am",
-    "title": "Fundamental Question 15",
-    "question": "What is asset allocation and why is it important?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Asset allocation splits investments across asset classes (stocks, bonds, cash, real estate, alternatives)\n• It determines over 90% of portfolio return variation according to the Brinson, Hood, and Beebower (1986) study\n• Strategic AA: set long-term targets based on risk tolerance, time horizon, and return objectives\n• Tactical AA: short-term deviations from targets to exploit market opportunities or reduce risk\n• Key factors: age (younger = more stocks), goals (retirement, education, wealth transfer), risk tolerance, income needs, tax situation",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates am knowledge of Fundamental Question 15.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current am practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_15",
-    "role": "am",
-    "title": "Fundamental Question 16",
-    "question": "How do you assess the risk of a particular investment?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Volatility metrics: standard deviation of returns (annualized, 15-20% typical for equities), downside deviation, semi-variance\n• Market-relative risk: beta (sensitivity to market, S&P 500 β=1, growth stocks β>1, utilities β<1)\n• Drawdown analysis: maximum peak-to-trough decline, average drawdown, recovery time (worst-case: -50% in 2008)\n• Fundamental risk: business model risk, competitive position, financial leverage, management quality, regulatory exposure\n• Scenario analysis: what happens in recession, rate hike cycle, inflation spike, industry disruption",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates am knowledge of Fundamental Question 16.",
-      "whyWorks": "Strong answers combine theoretical knowledge with am-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_16",
-    "role": "am",
-    "title": "Fundamental Question 17",
-    "question": "What are the main types of mutual funds and their characteristics?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Equity funds: growth (high P/E, earnings momentum), value (low P/E, undervalued), blend (mix), sector-specific (tech, healthcare, energy), market-cap (large, mid, small)\n• Fixed income funds: government (Treasuries, agencies), corporate investment grade (BBB+), high yield (BB and below, higher risk), municipal (tax-free income)\n• Balanced funds: fixed allocation (60/40, 50/50) or target-date (glide path adjusts with retirement date)\n• Index funds: track specific benchmarks (S&P 500, total market) with low fees (0.03-0.10% ER) — passive management\n• Money market funds: short-term debt (<1 year), stable $1 NAV, low returns (3-5% in current rate environment)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "_needs_concise_fix": true,
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates am knowledge of Fundamental Question 17.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current am practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_17",
-    "role": "am",
-    "title": "Fundamental Question 18",
-    "question": "Explain the concept of alpha and beta in investment management.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Beta (β): measure of systematic market risk — β=1.0 moves with market, β>1.0 is more volatile, β<1.0 is less volatile\n• Alpha (α): excess return above what CAPM predicts given the stock's beta — measures manager skill vs passive investing\n• Jensen's alpha: α = R_portfolio - (R_f + β × (R_m - R_f)) — positive alpha means outperformance after adjusting for market risk\n• An active manager with β=1.0 and α=2% returned 2% more than the market after risk adjustment\n• Beta is easily achieved through passive index investing; alpha is the value active managers seek to generate",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates am knowledge of Fundamental Question 18.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current am practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_18",
-    "role": "am",
-    "title": "Fundamental Question 19",
-    "question": "How does dollar-cost averaging work as an investment strategy?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• DCA: investing a fixed dollar amount at regular intervals regardless of market price — buys more shares when price is low, fewer when high\n• Benefit: reduces emotional impact of market timing, avoids buying all at market peaks, reduces timing risk\n• Mathematical note: DCA underperforms lump-sum investing ~2/3 of the time in rising markets (Vanguard study) but reduces regret risk\n• Best for: accumulating wealth (401k contributions), investing a windfall cautiously, volatile markets where timing is uncertain\n• Key metric: over 10+ years, lump sum beats DCA by ~2-3% on average — DCA is behavioral, not mathematically optimal",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates am knowledge of Fundamental Question 19.",
-      "whyWorks": "Strong answers combine theoretical knowledge with am-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_am_1773306469454_19",
-    "role": "am",
-    "title": "Fundamental Question 20",
-    "question": "What role does macroeconomic analysis play in asset management?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
-    "answers": {
-      "concise": {
-        "answer": "• GDP growth: strong growth → bullish equities (earnings grow), neutral-bearish bonds (rates rise to control inflation)\n• Inflation: low stable inflation (2%) is positive; high inflation hurts bonds (fixed payments worth less) and growth stocks (future cash flows discounted at higher rates)\n• Interest rates: falling rates → bonds rally (prices inversely related to yields), equities rise (lower discount rate increases present value of earnings)\n• Employment: strong job market supports consumer spending and corporate earnings; weak jobs signal recession risk\n• Central bank policy: Fed tightening (rate hikes, QT) → cautious risk positioning; easing → supportive for risk assets",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Asset Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "asset": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates am knowledge of Fundamental Question 20.",
-      "whyWorks": "Strong answers combine theoretical knowledge with am-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without am-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical am applications"
-      ],
-      "improvementTips": [
-        "Reference recent am deals, products, or regulatory changes",
-        "Use established frameworks to structure complex am concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific am job functions and responsibilities"
-      ]
-    }
-  },
-  {
     "id": "gen_quant_1773306469454_0",
     "role": "quant",
-    "title": "Fundamental Question 1",
+    "title": "",
     "question": "Explain the concept of value at risk (VaR) and its limitations.",
     "difficulty": "easy",
     "category": "technical",
@@ -12748,7 +12147,7 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_1",
     "role": "quant",
-    "title": "Fundamental Question 2",
+    "title": "",
     "question": "What is Monte Carlo simulation and how is it used in finance?",
     "difficulty": "easy",
     "category": "technical",
@@ -12808,9 +12207,9 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_2",
     "role": "quant",
-    "title": "Fundamental Question 3",
+    "title": "",
     "question": "Describe the Black-Scholes option pricing model.",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "category": "technical",
     "frequencyScore": 2,
     "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
@@ -12868,7 +12267,7 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_3",
     "role": "quant",
-    "title": "Fundamental Question 4",
+    "title": "",
     "question": "How do you test the validity of a quantitative trading strategy?",
     "difficulty": "easy",
     "category": "technical",
@@ -12928,7 +12327,7 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_4",
     "role": "quant",
-    "title": "Fundamental Question 5",
+    "title": "",
     "question": "What is statistical arbitrage and how does it work?",
     "difficulty": "easy",
     "category": "technical",
@@ -12988,7 +12387,7 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_5",
     "role": "quant",
-    "title": "Fundamental Question 6",
+    "title": "",
     "question": "Explain the concept of mean reversion in financial markets.",
     "difficulty": "easy",
     "category": "technical",
@@ -13048,9 +12447,9 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_6",
     "role": "quant",
-    "title": "Fundamental Question 7",
+    "title": "",
     "question": "How are machine learning techniques applied in quantitative finance?",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "category": "technical",
     "frequencyScore": 2,
     "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
@@ -13108,7 +12507,7 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_7",
     "role": "quant",
-    "title": "Fundamental Question 8",
+    "title": "",
     "question": "What is high-frequency trading and what are its key characteristics?",
     "difficulty": "easy",
     "category": "technical",
@@ -13169,7 +12568,7 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_8",
     "role": "quant",
-    "title": "Fundamental Question 9",
+    "title": "",
     "question": "Describe the process of backtesting a trading algorithm.",
     "difficulty": "easy",
     "category": "technical",
@@ -13229,7 +12628,7 @@ const questionBank = [
   {
     "id": "gen_quant_1773306469454_9",
     "role": "quant",
-    "title": "Fundamental Question 10",
+    "title": "",
     "question": "What are the main challenges in building quantitative models?",
     "difficulty": "easy",
     "category": "technical",
@@ -13288,611 +12687,9 @@ const questionBank = [
     }
   },
   {
-    "id": "gen_quant_1773306469454_10",
-    "role": "quant",
-    "title": "Fundamental Question 11",
-    "question": "Explain the concept of value at risk (VaR) and its limitations.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• VaR estimates maximum portfolio loss at a given confidence level over a specified time horizon (e.g., 95% 1-day VaR = $1M means 5% chance of losing >$1M in one day)\n• Parametric VaR: assumes normal returns, uses portfolio variance = portfolio value × z-score × σ — fast but misses fat tails\n• Historical VaR: uses actual historical returns (percentile method) — no distribution assumption but assumes past represents future\n• Monte Carlo VaR: simulate thousands of price paths using stochastic processes — most flexible, computationally intensive\n• Limitations: assumes normal market conditions (fails in crises), not sub-additive (can discourage diversification), misses tail risk beyond VaR",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates quant knowledge of Fundamental Question 11.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current quant practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without quant-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical quant applications"
-      ],
-      "improvementTips": [
-        "Reference recent quant deals, products, or regulatory changes",
-        "Use established frameworks to structure complex quant concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific quant job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_11",
-    "role": "quant",
-    "title": "Fundamental Question 12",
-    "question": "What is Monte Carlo simulation and how is it used in finance?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Monte Carlo simulation uses random sampling to model the probability distribution of outcomes\n• In finance: price path-dependent options (Asian, barrier), calculate portfolio VaR, simulate retirement savings outcomes, risk analysis\n• Process: define stochastic process for each risk factor → generate 10K-100K random paths → compute portfolio value → analyze distribution\n• Variance reduction: antithetic variates (paired opposite random draws), importance sampling (focus on tail scenarios), control variates\n• Convergence: error decreases as √(n) — quadrupling the number of simulations halves the error; 100,000 paths typical for options pricing",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates quant knowledge of Fundamental Question 12.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current quant practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without quant-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical quant applications"
-      ],
-      "improvementTips": [
-        "Reference recent quant deals, products, or regulatory changes",
-        "Use established frameworks to structure complex quant concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific quant job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_12",
-    "role": "quant",
-    "title": "Fundamental Question 13",
-    "question": "Describe the Black-Scholes option pricing model.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Black-Scholes formula: C = S₀N(d₁) - Ke^{-rt}N(d₂) — values a European call option on a non-dividend-paying stock\n• d₁ = [ln(S₀/K) + (r + σ²/2)t] / (σ√t), d₂ = d₁ - σ√t — these determine the probability of exercise under risk-neutral measure\n• Assumptions: constant volatility, continuous trading, no transaction costs, lognormal returns, European exercise only, constant risk-free rate\n• The model is widely used despite violations of assumptions — practitioners calibrate σ (implied volatility) to match market prices\n• Key insight: dynamic hedging by shorting Δ shares makes the option position risk-free → option price = expected payoff under risk-neutral measure",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This hard quantitative question evaluates quant knowledge of Fundamental Question 13.",
-      "whyWorks": "Clear, logical derivations with attention to detail show the analytical rigor required for hard quant roles.",
-      "commonMistakes": [
-        "Skipping intermediate steps or assuming interviewer knowledge",
-        "Not explaining the rationale behind model or formula choices",
-        "Ignoring assumptions, limitations, or sensitivity analysis",
-        "Focusing only on calculations without business context"
-      ],
-      "improvementTips": [
-        "Practice common quant calculations until they become automatic",
-        "Explain each step clearly, highlighting key assumptions",
-        "Discuss alternative approaches and justify your chosen method",
-        "Always contextualize quantitative results within business decisions"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_13",
-    "role": "quant",
-    "title": "Fundamental Question 14",
-    "question": "How do you test the validity of a quantitative trading strategy?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Backtest on multiple years including crisis periods (2008, 2020, 2022), use walk-forward analysis (train on rolling window, test forward)\n• Out-of-sample testing: hold out the most recent 20-30% of data as pure out-of-sample (never peek)\n• Transaction costs: realistic slippage, commission, and market impact — reduce backtested returns by 30-50%\n• Statistical significance: test Sharpe ratio for significance (t-stat > 2, or better > 3 at monthly frequency), check for data snooping bias\n• Overfitting prevention: limit number of parameters (parsimony principle), use regularization, avoid multiple comparison inflation (FDR control)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates quant knowledge of Fundamental Question 14.",
-      "whyWorks": "Strong answers combine theoretical knowledge with quant-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without quant-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical quant applications"
-      ],
-      "improvementTips": [
-        "Reference recent quant deals, products, or regulatory changes",
-        "Use established frameworks to structure complex quant concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific quant job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_14",
-    "role": "quant",
-    "title": "Fundamental Question 15",
-    "question": "What is statistical arbitrage and how does it work?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Statistical arbitrage exploits temporary price deviations from statistical relationships (e.g., cointegrated pairs)\n• Pairs trading: find two cointegrated stocks, short the outperformer and buy the underperformer when the spread widens beyond 2 standard deviations\n• Mean reversion: assumes prices revert to historical mean — trade when Z-score exceeds ±2, exit when Z-score returns to 0\n• Key tools: cointegration testing (Engle-Granger, Johansen), half-life estimation for mean reversion speed, Kalman filter for time-varying hedge ratios\n• Risks: structural breaks break the statistical relationship (banking crisis breaks bank-insurance pair trade), transaction costs erode small stat-arb edges",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates quant knowledge of Fundamental Question 15.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current quant practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without quant-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical quant applications"
-      ],
-      "improvementTips": [
-        "Reference recent quant deals, products, or regulatory changes",
-        "Use established frameworks to structure complex quant concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific quant job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_15",
-    "role": "quant",
-    "title": "Fundamental Question 16",
-    "question": "Explain the concept of mean reversion in financial markets.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Mean reversion: prices and returns tend to revert to their long-term average over time — opposite of momentum\n• In practice: stock returns show weak mean reversion at monthly horizons, stronger at 3-5 year horizons (De Bondt & Thaler 1985 showed long-term losers outperform)\n• Trading strategy: when a stock's price deviates more than 2σ from its moving average (e.g., 20-day), bet on reversal\n• Half-life: measures how quickly the deviation reverts — shorter half-life = faster reversal = better for mean reversion trading\n• Works best in: range-bound, low-trend markets; fails in trending markets (buying a downtrending stock hoping for reversal = catching a falling knife)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates quant knowledge of Fundamental Question 16.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current quant practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without quant-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical quant applications"
-      ],
-      "improvementTips": [
-        "Reference recent quant deals, products, or regulatory changes",
-        "Use established frameworks to structure complex quant concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific quant job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_16",
-    "role": "quant",
-    "title": "Fundamental Question 17",
-    "question": "How are machine learning techniques applied in quantitative finance?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Supervised learning: regression for price prediction (XGBoost, LightGBM), classification for direction prediction (Random Forest, SVM)\n• Time series specific: LSTM neural networks for sequential pattern recognition, attention mechanisms for long-range dependencies\n• Feature engineering: lagged returns, volatility measures, volume momentum, technical indicators — feature quality > model complexity\n• Alternative data: satellite imagery (retail traffic), credit card transactions (revenue nowcasting), job postings (company growth), news sentiment\n• Overfitting risk: financial data has low signal-to-noise ratio — regularization, walk-forward CV, and simple models often beat complex ones",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates quant knowledge of Fundamental Question 17.",
-      "whyWorks": "Strong answers combine theoretical knowledge with quant-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without quant-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical quant applications"
-      ],
-      "improvementTips": [
-        "Reference recent quant deals, products, or regulatory changes",
-        "Use established frameworks to structure complex quant concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific quant job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_17",
-    "role": "quant",
-    "title": "Fundamental Question 18",
-    "question": "What is high-frequency trading and what are its key characteristics?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• HFT uses ultra-low-latency technology to execute trading strategies in microseconds — co-located servers next to exchange matching engines\n• Strategies: market making (automated quoting with millisecond inventory management), arbitrage (price differences across venues), latency arbitrage (front-running slow limit orders)\n• Infrastructure: FPGA (field-programmable gate array) for hardware-level order processing, microwave links (faster than fiber) between Chicago and NY (7.5ms vs 13ms fiber)\n• Profit margins are measured in fractions of a penny per share — but multiplied by billions of shares per day, HFT firms generate $1-5B/year in profits\n• Controversy: critics argue HFT creates phantom liquidity (cancellation rates >90%), flash crash risks (2010), unfair advantage; supporters argue narrower spreads benefit all investors",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "_needs_concise_fix": true,
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates quant knowledge of Fundamental Question 18.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current quant practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without quant-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical quant applications"
-      ],
-      "improvementTips": [
-        "Reference recent quant deals, products, or regulatory changes",
-        "Use established frameworks to structure complex quant concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific quant job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_18",
-    "role": "quant",
-    "title": "Fundamental Question 19",
-    "question": "Describe the process of backtesting a trading algorithm.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Backtest: simulate a trading strategy on historical data to evaluate its performance before live trading\n• Steps: define strategy rules → implement in code → simulate trades on historical data → compute performance metrics (Sharpe, max DD, hit rate, CAGR)\n• Key biases to avoid: look-ahead bias (using future info), survivorship bias (only including still-listed stocks), selection bias (cherry-picking parameters), optimization bias (overfitting)\n• Walk-forward analysis: divide data into rolling windows, optimize on training window, test on subsequent validation window → produces robust performance estimate\n• Critical metrics: Sharpe ratio > 1.0 (good), > 2.0 (rare, suspicious), Calmar ratio (CAGR / max drawdown > 1), consistency of returns across sub-periods",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This hard quantitative question evaluates quant knowledge of Fundamental Question 19.",
-      "whyWorks": "Clear, logical derivations with attention to detail show the analytical rigor required for hard quant roles.",
-      "commonMistakes": [
-        "Skipping intermediate steps or assuming interviewer knowledge",
-        "Not explaining the rationale behind model or formula choices",
-        "Ignoring assumptions, limitations, or sensitivity analysis",
-        "Focusing only on calculations without business context"
-      ],
-      "improvementTips": [
-        "Practice common quant calculations until they become automatic",
-        "Explain each step clearly, highlighting key assumptions",
-        "Discuss alternative approaches and justify your chosen method",
-        "Always contextualize quantitative results within business decisions"
-      ]
-    }
-  },
-  {
-    "id": "gen_quant_1773306469454_19",
-    "role": "quant",
-    "title": "Fundamental Question 20",
-    "question": "What are the main challenges in building quantitative models?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
-    "answers": {
-      "concise": {
-        "answer": "• Overfitting: models that perfectly fit historical data but fail forward — the #1 risk; use parsimony, regularization, out-of-sample testing\n• Transaction costs: real-world costs (slippage, commission, market impact) reduce backtested returns by 30-50% — model market impact realistically\n• Regime changes: statistical relationships that worked in 2010-2020 may not work in 2025+ — models need periodic retraining and regime detection\n• Data quality: errors in historical data (corporate actions, splits, delistings) can create false signals — data cleaning is 60-80% of quant work\n• Competition: good quant strategies attract capital and the edge decays — continuous research is required to maintain performance",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Quantitative Finance question bank. Refine with industry-specific details.",
-    "_needs_concise_fix": true,
-    "scoringKeywords": {
-      "quantitative": 22,
-      "finance": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This hard quantitative question evaluates quant knowledge of Fundamental Question 20.",
-      "whyWorks": "Clear, logical derivations with attention to detail show the analytical rigor required for hard quant roles.",
-      "commonMistakes": [
-        "Skipping intermediate steps or assuming interviewer knowledge",
-        "Not explaining the rationale behind model or formula choices",
-        "Ignoring assumptions, limitations, or sensitivity analysis",
-        "Focusing only on calculations without business context"
-      ],
-      "improvementTips": [
-        "Practice common quant calculations until they become automatic",
-        "Explain each step clearly, highlighting key assumptions",
-        "Discuss alternative approaches and justify your chosen method",
-        "Always contextualize quantitative results within business decisions"
-      ]
-    }
-  },
-  {
     "id": "gen_markets_1773306469454_0",
     "role": "markets",
-    "title": "Fundamental Question 1",
+    "title": "",
     "question": "Explain the role of a market maker in financial markets.",
     "difficulty": "easy",
     "category": "technical",
@@ -13953,7 +12750,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_1",
     "role": "markets",
-    "title": "Fundamental Question 2",
+    "title": "",
     "question": "What factors affect the bid-ask spread in trading?",
     "difficulty": "easy",
     "category": "technical",
@@ -14013,7 +12810,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_2",
     "role": "markets",
-    "title": "Fundamental Question 3",
+    "title": "",
     "question": "How do you manage risk when taking trading positions?",
     "difficulty": "easy",
     "category": "technical",
@@ -14073,7 +12870,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_3",
     "role": "markets",
-    "title": "Fundamental Question 4",
+    "title": "",
     "question": "Describe the different types of orders in securities trading.",
     "difficulty": "easy",
     "category": "technical",
@@ -14133,7 +12930,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_4",
     "role": "markets",
-    "title": "Fundamental Question 5",
+    "title": "",
     "question": "What is algorithmic trading and how does it work?",
     "difficulty": "easy",
     "category": "technical",
@@ -14193,7 +12990,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_5",
     "role": "markets",
-    "title": "Fundamental Question 6",
+    "title": "",
     "question": "How do you analyze market liquidity for a particular security?",
     "difficulty": "easy",
     "category": "technical",
@@ -14253,7 +13050,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_6",
     "role": "markets",
-    "title": "Fundamental Question 7",
+    "title": "",
     "question": "Explain the concept of market microstructure.",
     "difficulty": "easy",
     "category": "technical",
@@ -14314,7 +13111,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_7",
     "role": "markets",
-    "title": "Fundamental Question 8",
+    "title": "",
     "question": "What are the key differences between equity and fixed income trading?",
     "difficulty": "easy",
     "category": "technical",
@@ -14375,7 +13172,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_8",
     "role": "markets",
-    "title": "Fundamental Question 9",
+    "title": "",
     "question": "How do you develop and test a trading idea?",
     "difficulty": "easy",
     "category": "technical",
@@ -14435,7 +13232,7 @@ const questionBank = [
   {
     "id": "gen_markets_1773306469454_9",
     "role": "markets",
-    "title": "Fundamental Question 10",
+    "title": "",
     "question": "What role does technology play in modern trading operations?",
     "difficulty": "easy",
     "category": "technical",
@@ -14493,612 +13290,9 @@ const questionBank = [
     }
   },
   {
-    "id": "gen_markets_1773306469454_10",
-    "role": "markets",
-    "title": "Fundamental Question 11",
-    "question": "Explain the role of a market maker in financial markets.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Market makers provide liquidity by continuously quoting bid and ask prices for securities\n• Profit from spread (bid-ask difference) but face adverse selection risk when trading against informed participants\n• Obligations: maintain two-sided quotes within maximum spread limits during market hours (Reg NMS requires continuous quoting for designated market makers)\n• Risk management: maintain near-neutral inventory, delta-hedge options, adjust quotes based on order flow and volatility\n• Electronic market makers (Citadel Securities, Virtu) use algorithms for millisecond-level quotes across hundreds of securities",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "_needs_concise_fix": true,
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates markets knowledge of Fundamental Question 11.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current markets practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_11",
-    "role": "markets",
-    "title": "Fundamental Question 12",
-    "question": "What factors affect the bid-ask spread in trading?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Liquidity: more liquid securities (large cap stocks, FX majors, Treasuries) have tighter spreads; illiquid (small caps, distressed bonds) have wider spreads\n• Volatility: higher uncertainty → market makers widen spreads to compensate for inventory risk (VIX above 30 implies 2-3x normal spread)\n• Information asymmetry: stocks with more information risk (earnings week, M&A rumors) have wider spreads\n• Competition: more market makers competing for order flow narrows spreads (primary motivation for maker-taker fee structures)\n• Tick size: minimum price increment (smaller tick = potentially narrower spreads but less compensation for liquidity provision)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates markets knowledge of Fundamental Question 12.",
-      "whyWorks": "Strong answers combine theoretical knowledge with markets-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_12",
-    "role": "markets",
-    "title": "Fundamental Question 13",
-    "question": "How do you manage risk when taking trading positions?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Position sizing: never risk more than 1-2% of capital on a single trade — prevents any single loss from being catastrophic\n• Stop-losses: pre-define exit prices at which positions are automatically liquidated regardless of short-term fluctuations\n• Correlation monitoring: a portfolio of 10 correlated positions (all long tech) is not diversified — one event hits all\n• Stress testing: what happens to positions if volatility doubles, if rates move 100bp, if correlations break down\n• Dynamic risk limits: reduce size after a string of losses (to avoid revenge trading) and after a string of wins (to avoid overconfidence)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates markets knowledge of Fundamental Question 13.",
-      "whyWorks": "Strong answers combine theoretical knowledge with markets-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_13",
-    "role": "markets",
-    "title": "Fundamental Question 14",
-    "question": "Describe the different types of orders in securities trading.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Market order: execute immediately at best available price — guarantees execution but not price (slippage risk in volatile or illiquid markets)\n• Limit order: execute only at specified price or better — guarantees price but not execution\n• Stop order (stop-loss): becomes market order when price hits stop level — protects against losses but can execute at worse than stop level (slippage in fast markets)\n• Stop-limit order: becomes limit order at stop price — combines stop protection with limit price control but may not execute in fast markets\n• IOC (Immediate-or-Cancel): fills what's available at limit price, cancels the rest — used for large orders where only partial fill is acceptable",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates markets knowledge of Fundamental Question 14.",
-      "whyWorks": "Strong answers combine theoretical knowledge with markets-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_14",
-    "role": "markets",
-    "title": "Fundamental Question 15",
-    "question": "What is algorithmic trading and how does it work?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Algorithmic trading uses computer programs to execute trades based on pre-programmed rules and market data\n• Execution algorithms: VWAP (Volume-Weighted Average Price), TWAP (Time-Weighted Average Price), Implementation Shortfall (minimize market impact + timing risk)\n• Signal generation: momentum (buy winners), mean reversion (buy losers), pairs trading, statistical arbitrage\n• High-frequency trading (HFT): subsets of algo trading using ultra-low latency infrastructure at millisecond/microsecond timescales\n• Key risks: programming errors, stale models, overfitting, market regime changes that make historical patterns obsolete",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This hard quantitative question evaluates markets knowledge of Fundamental Question 15.",
-      "whyWorks": "Clear, logical derivations with attention to detail show the analytical rigor required for hard markets roles.",
-      "commonMistakes": [
-        "Skipping intermediate steps or assuming interviewer knowledge",
-        "Not explaining the rationale behind model or formula choices",
-        "Ignoring assumptions, limitations, or sensitivity analysis",
-        "Focusing only on calculations without business context"
-      ],
-      "improvementTips": [
-        "Practice common markets calculations until they become automatic",
-        "Explain each step clearly, highlighting key assumptions",
-        "Discuss alternative approaches and justify your chosen method",
-        "Always contextualize quantitative results within business decisions"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_15",
-    "role": "markets",
-    "title": "Fundamental Question 16",
-    "question": "How do you analyze market liquidity for a particular security?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Trading volume: daily dollar volume traded — higher volume = deeper liquidity (S&P 500 stocks trade $1B+/day, small caps < $10M/day)\n• Bid-ask spread: tighter spreads indicate better liquidity (AAPL: 1-2 cents, small cap: 10-50 cents)\n• Market depth: number of shares available at each price level in the order book — deeper book = lower market impact\n• Price impact: how much the price moves per dollar of order flow — measured by Kyle's lambda or Amihud illiquidity ratio\n• Time-to-execution: how fast an order fills at a reasonable price — days for large illiquid blocks, seconds for liquid names",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium market question evaluates markets knowledge of Fundamental Question 16.",
-      "whyWorks": "Insightful analysis that synthesizes data, trends, and markets implications shows market awareness and strategic thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_16",
-    "role": "markets",
-    "title": "Fundamental Question 17",
-    "question": "Explain the concept of market microstructure.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Order book: collection of limit orders (bid side = buy orders, ask side = sell orders) that represent available liquidity\n• Price formation: how information is incorporated into prices through order flow and quote updates\n• Market participants: liquidity providers (market makers, limit order traders) vs liquidity demanders (retail, institutional, informed traders)\n• Trading rules: order types, priority rules (price-time vs pro-rata), circuit breakers, auction mechanisms (open/close)\n• Fragmentation: same security trades across multiple venues (NYSE, NASDAQ, dark pools, ECNs) — requires smart order routing to optimize execution",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "_needs_concise_fix": true,
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates markets knowledge of Fundamental Question 17.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current markets practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_17",
-    "role": "markets",
-    "title": "Fundamental Question 18",
-    "question": "What are the key differences between equity and fixed income trading?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Equities: ownership stake, unlimited upside/downside, dividends (discretionary), higher long-term returns (~10% annually), higher volatility (15-20% SD)\n• Fixed income: debt claim, fixed coupon payments, principal repayment at maturity, lower returns (~4-6%), lower volatility (3-8% SD)\n• Trading: equities on exchanges (continuous trading), bonds mostly OTC (negotiated with dealers, less transparent pricing)\n• Liquidity: equities more liquid (instant execution), corporate bonds less liquid (minutes to hours to fill institutional size)\n• Risk factors: equities = earnings risk, sentiment, valuation; fixed income = interest rate risk (duration), credit risk (spread), prepayment risk (MBS)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "_needs_concise_fix": true,
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Define first concept",
-      "Define second concept",
-      "Identify key similarities",
-      "Explain key differences",
-      "Discuss practical implications"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates markets knowledge of Fundamental Question 18.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current markets practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_18",
-    "role": "markets",
-    "title": "Fundamental Question 19",
-    "question": "How do you develop and test a trading idea?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Generate idea: market observation, data screen (momentum, value, mean reversion signals), event catalyst (earnings, M&A, macro data)\n• Research: analyze historical patterns, test hypothesis against 3-5 years of data, validate in different market regimes\n• Risk/reward: define upside scenario (target price) and downside (stop-loss) — aim for 2:1 minimum risk/reward ratio\n• Define entry/exit: specific price levels, timeframes, and conditions for entry and exit\n• Paper trade: test the idea in a simulated environment before committing real capital, track performance metrics (hit rate, average win/loss)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates markets knowledge of Fundamental Question 19.",
-      "whyWorks": "Strong answers combine theoretical knowledge with markets-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_markets_1773306469454_19",
-    "role": "markets",
-    "title": "Fundamental Question 20",
-    "question": "What role does technology play in modern trading operations?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
-    "answers": {
-      "concise": {
-        "answer": "• Electronic trading platforms: Bloomberg EMSX, Fidessa, proprietary OMS — enable efficient multi-asset execution across venues\n• Co-location: locate trading servers next to exchange matching engines — reduces latency from milliseconds to microseconds\n• Real-time market data: Level II order book data for granular visibility into supply/demand dynamics\n• Risk systems: real-time P&L tracking, VaR monitoring, position limits, automated stop-losses\n• AI/ML: natural language processing for news sentiment analysis, machine learning for pattern recognition, deep learning for price prediction",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Sales & Trading question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "sales": 22,
-      "trading": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates markets knowledge of Fundamental Question 20.",
-      "whyWorks": "Strong answers combine theoretical knowledge with markets-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without markets-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical markets applications"
-      ],
-      "improvementTips": [
-        "Reference recent markets deals, products, or regulatory changes",
-        "Use established frameworks to structure complex markets concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific markets job functions and responsibilities"
-      ]
-    }
-  },
-  {
     "id": "gen_risk_1773306469454_0",
     "role": "risk",
-    "title": "Fundamental Question 1",
+    "title": "",
     "question": "What are the main types of financial risk that institutions face?",
     "difficulty": "easy",
     "category": "technical",
@@ -15158,7 +13352,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_1",
     "role": "risk",
-    "title": "Fundamental Question 2",
+    "title": "",
     "question": "Explain the concept of credit risk and how it is measured.",
     "difficulty": "easy",
     "category": "technical",
@@ -15218,7 +13412,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_2",
     "role": "risk",
-    "title": "Fundamental Question 3",
+    "title": "",
     "question": "How do you calculate and interpret value at risk (VaR)?",
     "difficulty": "easy",
     "category": "technical",
@@ -15278,7 +13472,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_3",
     "role": "risk",
-    "title": "Fundamental Question 4",
+    "title": "",
     "question": "What is stress testing and why is it important for risk management?",
     "difficulty": "easy",
     "category": "technical",
@@ -15338,7 +13532,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_4",
     "role": "risk",
-    "title": "Fundamental Question 5",
+    "title": "",
     "question": "Describe the key principles of the Basel regulatory framework.",
     "difficulty": "easy",
     "category": "technical",
@@ -15398,7 +13592,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_5",
     "role": "risk",
-    "title": "Fundamental Question 6",
+    "title": "",
     "question": "How do you assess operational risk in a financial institution?",
     "difficulty": "easy",
     "category": "technical",
@@ -15458,7 +13652,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_6",
     "role": "risk",
-    "title": "Fundamental Question 7",
+    "title": "",
     "question": "What is counterparty risk and how is it managed?",
     "difficulty": "easy",
     "category": "technical",
@@ -15518,7 +13712,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_7",
     "role": "risk",
-    "title": "Fundamental Question 8",
+    "title": "",
     "question": "Explain the difference between systematic and unsystematic risk.",
     "difficulty": "easy",
     "category": "technical",
@@ -15578,7 +13772,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_8",
     "role": "risk",
-    "title": "Fundamental Question 9",
+    "title": "",
     "question": "How do you establish an appropriate risk appetite for an organization?",
     "difficulty": "easy",
     "category": "technical",
@@ -15638,7 +13832,7 @@ const questionBank = [
   {
     "id": "gen_risk_1773306469454_9",
     "role": "risk",
-    "title": "Fundamental Question 10",
+    "title": "",
     "question": "What role does risk management play in the overall business strategy?",
     "difficulty": "easy",
     "category": "technical",
@@ -15680,606 +13874,6 @@ const questionBank = [
     ],
     "detailedAnalysis": {
       "overview": "This medium technical question evaluates risk knowledge of Fundamental Question 10.",
-      "whyWorks": "Strong answers combine theoretical knowledge with risk-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_10",
-    "role": "risk",
-    "title": "Fundamental Question 11",
-    "question": "What are the main types of financial risk that institutions face?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Market risk: losses from adverse movements in market prices (equities, rates, FX, commodities) — measured by VaR, stress scenarios\n• Credit risk: losses from counterparty default — measured by PD (probability of default), LGD (loss given default), EAD (exposure at default)\n• Liquidity risk: inability to trade at fair price (market liquidity) or meet cash flow obligations (funding liquidity)\n• Operational risk: losses from inadequate or failed internal processes, people, systems, or external events (Basel definition — includes fraud, cyber, legal)\n• Model risk: losses from using incorrect or misapplied models — increasingly important in quantitative finance and AI/ML applications",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates risk knowledge of Fundamental Question 11.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current risk practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_11",
-    "role": "risk",
-    "title": "Fundamental Question 12",
-    "question": "Explain the concept of credit risk and how it is measured.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Credit risk is the risk of loss when a borrower fails to repay principal or interest as agreed\n• Measurement: Probability of Default (PD) — historical default rates by rating (AAA: 0.01%, BBB: 0.2%, CCC: 20%+ over 1 year)\n• Loss Given Default (LGD) — percentage of exposure lost if default occurs (senior secured: 30-50%, subordinated: 70-90%)\n• Exposure at Default (EAD) — total amount at risk when default happens (includes drawn + undrawn commitment)\n• Mitigation: collateral (secured lending), covenants (minimum coverage ratios), credit derivatives (CDS), loan syndication to diversify",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates risk knowledge of Fundamental Question 12.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current risk practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_12",
-    "role": "risk",
-    "title": "Fundamental Question 13",
-    "question": "How do you calculate and interpret value at risk (VaR)?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• VaR at 95% confidence over 1 day: 5% chance of losing more than the VaR amount in any single day\n• Parametric (delta-normal): assumes normal returns, uses portfolio variance — VaR = portfolio value × z-score × portfolio σ; fast but misses fat tails\n• Historical simulation: rank actual historical daily returns, take the 5th percentile (for 95% VaR) — no distribution assumptions, but assumes past repeats\n• Monte Carlo VaR: simulate portfolio returns using assumed distributions (often with fat tails via t-distribution) — most flexible, computationally intensive\n• Key limitations: not sub-additive (can create perverse incentives), fails in crises (VaR underestimates tail risk), uses normal market assumptions",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This hard quantitative question evaluates risk knowledge of Fundamental Question 13.",
-      "whyWorks": "Clear, logical derivations with attention to detail show the analytical rigor required for hard risk roles.",
-      "commonMistakes": [
-        "Skipping intermediate steps or assuming interviewer knowledge",
-        "Not explaining the rationale behind model or formula choices",
-        "Ignoring assumptions, limitations, or sensitivity analysis",
-        "Focusing only on calculations without business context"
-      ],
-      "improvementTips": [
-        "Practice common risk calculations until they become automatic",
-        "Explain each step clearly, highlighting key assumptions",
-        "Discuss alternative approaches and justify your chosen method",
-        "Always contextualize quantitative results within business decisions"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_13",
-    "role": "risk",
-    "title": "Fundamental Question 14",
-    "question": "What is stress testing and why is it important for risk management?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Stress testing evaluates portfolio behavior under extreme but plausible adverse scenarios\n• Historical scenarios: apply actual crisis conditions — 2008 Global Financial Crisis (S&P -38%), 2020 COVID (-30%), 2022 rate shock (bonds -15%), 1998 LTCM\n• Hypothetical scenarios: design specific shocks — oil price spike (+100%), hyperinflation (+10% rates), stagflation, geopolitical crisis\n• Reverse stress testing: start from a loss level (e.g., -30% portfolio decline) and determine what scenarios would cause it\n• Key metric: the worst loss over any historical/hypothetical stress period — sets capital and risk limits\n• Regulatory requirement: CCAR (Fed) and ICAAP (Basel) mandate stress testing for large banks — results determine capital adequacy",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates risk knowledge of Fundamental Question 14.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current risk practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_14",
-    "role": "risk",
-    "title": "Fundamental Question 15",
-    "question": "Describe the key principles of the Basel regulatory framework.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Basel III (fully phased in 2023): strengthens bank capital and liquidity requirements in response to 2008 crisis\n• Capital requirements: Common Equity Tier 1 (CET1) minimum 4.5% + capital conservation buffer 2.5% = 7% minimum; CCyB (0-2.5%) cyclically adjusted; G-SIB surcharge (1-3.5% for systemic banks)\n• Risk-weighted assets (RWA): standardized approach (regulatory risk weights) vs IRB approach (banks' own models, subject to supervisory approval)\n• Liquidity requirements: LCR (Liquidity Coverage Ratio — high-quality liquid assets / 30-day net cash outflows > 100%), NSFR (Net Stable Funding Ratio — available stable funding > required stable funding over 1 year)\n• Leverage ratio: Tier 1 capital / total exposure > 3% (5% for G-SIBs) — non-risk-based backstop to the risk-weighted framework",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates risk knowledge of Fundamental Question 15.",
-      "whyWorks": "Strong answers combine theoretical knowledge with risk-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_15",
-    "role": "risk",
-    "title": "Fundamental Question 16",
-    "question": "How do you assess operational risk in a financial institution?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Operational risk: risk of loss from failed internal processes, people, systems, or external events (Basel II definition)\n• Categories: internal fraud (trading unauthorized, misappropriation), external fraud (cyber, theft), employment practices (discrimination), business disruption (systems failure, natural disasters), process management (failed transactions, model errors)\n• Measurement: Basic Indicator Approach (15% of gross income), Standardized Approach (by business line), Advanced Measurement Approach (internal models using loss data)\n• Mitigation: strong internal controls, segregation of duties, dual approval for large transactions, system redundancy, cybersecurity framework\n• Capital charge: typically 15-25% of total regulatory capital for large banks — significantly higher since 2008 operational failures",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates risk knowledge of Fundamental Question 16.",
-      "whyWorks": "Strong answers combine theoretical knowledge with risk-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_16",
-    "role": "risk",
-    "title": "Fundamental Question 17",
-    "question": "What is counterparty risk and how is it managed?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Counterparty credit risk (CCR): risk that a trading counterparty defaults before final settlement of a transaction\n• Applies to: OTC derivatives (most significant), securities financing (repos, securities lending), unsettled trades\n• Measurement: Potential Future Exposure (PFE — statistical estimate of future replacement cost at given confidence) + Current Exposure (mark-to-market) = EAD\n• Mitigation: collateral agreements (CSA under ISDA — regular margin calls), netting (close-out netting reduces exposure by 60-80%), central clearing (CCPs for standardized derivatives)\n• CVA (Credit Valuation Adjustment): mark-to-market of counterparty credit risk — banks charge CVA to reflect the cost of hedging counterparty default risk",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates risk knowledge of Fundamental Question 17.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current risk practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_17",
-    "role": "risk",
-    "title": "Fundamental Question 18",
-    "question": "Explain the difference between systematic and unsystematic risk.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Systematic risk (market risk, undiversifiable): risk inherent to the entire market — recessions, interest rates, geopolitical events, inflation. Affects all securities, cannot be eliminated through diversification\n• Unsystematic risk (idiosyncratic, diversifiable): risk specific to an individual company or industry — management changes, product failure, regulatory action, competition. Can be reduced through diversification (10-30 stocks eliminates most unsystematic risk)\n• CAPM: only systematic risk is priced — investors are compensated for bearing market risk (beta) but not for idiosyncratic risk (can be diversified away)\n• VaR decomposition: systematic risk typically accounts for 30-60% of portfolio volatility (higher for equity-heavy portfolios)\n• Key insight: holding 20-30 stocks eliminates ~95% of unsystematic risk, leaving primarily systematic exposure",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Define first concept",
-      "Define second concept",
-      "Identify key similarities",
-      "Explain key differences",
-      "Discuss practical implications"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates risk knowledge of Fundamental Question 18.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current risk practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_18",
-    "role": "risk",
-    "title": "Fundamental Question 19",
-    "question": "How do you establish an appropriate risk appetite for an organization?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Risk appetite: the amount and type of risk an organization is willing to accept in pursuit of its strategic objectives (board-level policy)\n• Expressed quantitatively: maximum VaR ($50M), maximum leverage ratio (10:1), minimum credit rating (A-), maximum sector concentration (20%), maximum single-counterparty exposure ($100M)\n• Risk tolerance: specific, measurable risk limits derived from the risk appetite statement (e.g., VaR limit $5M per desk, maximum position size 2% of portfolio)\n• Risk capacity: the maximum amount of risk the organization can absorb without threatening viability — determined by capital, liquidity, and franchise strength\n• Framework: risk appetite → risk limits → risk monitoring → breach escalation → governance review — documented in the Risk Appetite Statement (RAS)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates risk knowledge of Fundamental Question 19.",
-      "whyWorks": "Strong answers combine theoretical knowledge with risk-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without risk-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical risk applications"
-      ],
-      "improvementTips": [
-        "Reference recent risk deals, products, or regulatory changes",
-        "Use established frameworks to structure complex risk concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific risk job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_risk_1773306469454_19",
-    "role": "risk",
-    "title": "Fundamental Question 20",
-    "question": "What role does risk management play in the overall business strategy?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
-    "answers": {
-      "concise": {
-        "answer": "• Enterprise Risk Management (ERM): integrated framework for identifying, measuring, managing, and monitoring all risks across the organization\n• Risk management is a strategic function: it protects the franchise value, ensures capital adequacy, maintains stakeholder confidence, and enables informed risk-taking\n• The three lines of defense: business units (own risk), risk/compliance (oversight and framework), internal audit (independent assurance)\n• Risk culture: tone from the top matters — if senior management doesn't prioritize risk, the risk function is ineffective regardless of structure\n• Regulatory expectation: regulators expect risk management to be integrated into strategic planning and compensation, not a standalone compliance exercise",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "entry-level",
-      "fundamentals",
-      "basic"
-    ],
-    "notes": "Generated question to expand Risk Management question bank. Refine with industry-specific details.",
-    "scoringKeywords": {
-      "risk": 22,
-      "management": 21,
-      "topic": 20,
-      "industry": 19,
-      "answer": 16,
-      "applications": 15,
-      "practices": 14,
-      "entry-level": 13,
-      "fundamental": 12,
-      "question": 11,
-      "comprehensive": 10,
-      "cover": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates risk knowledge of Fundamental Question 20.",
       "whyWorks": "Strong answers combine theoretical knowledge with risk-specific applications, demonstrating both depth and practical relevance.",
       "commonMistakes": [
         "Providing generic definitions without risk-specific context",
@@ -16613,7 +14207,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473010_0",
     "role": "am",
-    "title": "Portfolio Construction & Optimization - Technical Question",
+    "title": "Portfolio Construction & Optimization",
     "question": "Explain the key concepts and applications of Portfolio Construction & Optimization in Asset Management.",
     "difficulty": "medium",
     "category": "technical",
@@ -16674,7 +14268,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_1",
     "role": "am",
-    "title": "Active vs Passive Management Debate - Behavioral Question",
+    "title": "Active vs Passive Management Debate",
     "question": "How do you stay updated with developments in Active vs Passive Management Debate and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -16735,7 +14329,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_2",
     "role": "am",
-    "title": "Factor Investing & Smart Beta - Case Question",
+    "title": "Factor Investing & Smart Beta",
     "question": "Design an approach to address a business problem using Factor Investing & Smart Beta concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -16796,7 +14390,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_3",
     "role": "am",
-    "title": "ESG Integration in Investment Process - Technical Question",
+    "title": "ESG Integration in Investment Process",
     "question": "What are the common challenges in implementing ESG Integration in Investment Process and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -16857,7 +14451,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_4",
     "role": "am",
-    "title": "Risk-Adjusted Performance Measurement - Behavioral Question",
+    "title": "Risk-Adjusted Performance Measurement",
     "question": "Share an example of how you've used Risk-Adjusted Performance Measurement to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -16918,7 +14512,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_5",
     "role": "am",
-    "title": "Client Reporting & Communication - Case Question",
+    "title": "Client Reporting & Communication",
     "question": "Given a scenario where a client wants to shift from active to passive management, how would you apply principles of Client Reporting & Communication?",
     "difficulty": "easy",
     "category": "case",
@@ -16979,7 +14573,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_6",
     "role": "am",
-    "title": "Investment Committee Presentations - Technical Question",
+    "title": "Investment Committee Presentations",
     "question": "How would you approach a problem involving Investment Committee Presentations in an entry-level Asset Management role?",
     "difficulty": "medium",
     "category": "technical",
@@ -17040,7 +14634,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_7",
     "role": "am",
-    "title": "Due Diligence on Fund Managers - Behavioral Question",
+    "title": "Due Diligence on Fund Managers",
     "question": "What excites you most about working with Due Diligence on Fund Managers in Asset Management?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -17101,7 +14695,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_8",
     "role": "am",
-    "title": "Market Timing vs Time in Market - Case Question",
+    "title": "Market Timing vs Time in Market",
     "question": "Evaluate the trade-offs in different strategies related to Market Timing vs Time in Market.",
     "difficulty": "easy",
     "category": "case",
@@ -17162,7 +14756,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_9",
     "role": "am",
-    "title": "Behavioral Biases in Investing - Technical Question",
+    "title": "Behavioral Biases in Investing",
     "question": "Compare and contrast different approaches to Behavioral Biases in Investing in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -17223,7 +14817,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_10",
     "role": "am",
-    "title": "Portfolio Construction & Optimization - Behavioral Question",
+    "title": "Portfolio Construction & Optimization",
     "question": "Describe a situation where you applied knowledge of Portfolio Construction & Optimization to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -17284,7 +14878,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_11",
     "role": "am",
-    "title": "Active vs Passive Management Debate - Case Question",
+    "title": "Active vs Passive Management Debate",
     "question": "Analyze a case study involving Active vs Passive Management Debate and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -17345,7 +14939,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_12",
     "role": "am",
-    "title": "Factor Investing & Smart Beta - Technical Question",
+    "title": "Factor Investing & Smart Beta",
     "question": "Describe the main methodologies used in Factor Investing & Smart Beta and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -17406,7 +15000,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_13",
     "role": "am",
-    "title": "ESG Integration in Investment Process - Behavioral Question",
+    "title": "ESG Integration in Investment Process",
     "question": "How would you explain ESG Integration in Investment Process to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -17467,7 +15061,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_14",
     "role": "am",
-    "title": "Risk-Adjusted Performance Measurement - Case Question",
+    "title": "Risk-Adjusted Performance Measurement",
     "question": "Develop a recommendation for implementing Risk-Adjusted Performance Measurement in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -17528,7 +15122,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_15",
     "role": "am",
-    "title": "Client Reporting & Communication - Technical Question",
+    "title": "Client Reporting & Communication",
     "question": "Explain the key concepts and applications of Client Reporting & Communication in Asset Management.",
     "difficulty": "medium",
     "category": "technical",
@@ -17589,7 +15183,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_16",
     "role": "am",
-    "title": "Investment Committee Presentations - Behavioral Question",
+    "title": "Investment Committee Presentations",
     "question": "How do you stay updated with developments in Investment Committee Presentations and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -17650,7 +15244,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_17",
     "role": "am",
-    "title": "Due Diligence on Fund Managers - Case Question",
+    "title": "Due Diligence on Fund Managers",
     "question": "Design an approach to address a business problem using Due Diligence on Fund Managers concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -17711,7 +15305,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_18",
     "role": "am",
-    "title": "Market Timing vs Time in Market - Technical Question",
+    "title": "Market Timing vs Time in Market",
     "question": "What are the common challenges in implementing Market Timing vs Time in Market and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -17772,7 +15366,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_19",
     "role": "am",
-    "title": "Behavioral Biases in Investing - Behavioral Question",
+    "title": "Behavioral Biases in Investing",
     "question": "Share an example of how you've used Behavioral Biases in Investing to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -17833,7 +15427,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_20",
     "role": "am",
-    "title": "Portfolio Construction & Optimization - Case Question",
+    "title": "Portfolio Construction & Optimization",
     "question": "Given a scenario where a client wants to shift from active to passive management, how would you apply principles of Portfolio Construction & Optimization?",
     "difficulty": "easy",
     "category": "case",
@@ -17894,7 +15488,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_21",
     "role": "am",
-    "title": "Active vs Passive Management Debate - Technical Question",
+    "title": "Active vs Passive Management Debate",
     "question": "How would you approach a problem involving Active vs Passive Management Debate in an entry-level Asset Management role?",
     "difficulty": "medium",
     "category": "technical",
@@ -17955,7 +15549,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_22",
     "role": "am",
-    "title": "Factor Investing & Smart Beta - Behavioral Question",
+    "title": "Factor Investing & Smart Beta",
     "question": "What excites you most about working with Factor Investing & Smart Beta in Asset Management?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -18016,7 +15610,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_23",
     "role": "am",
-    "title": "ESG Integration in Investment Process - Case Question",
+    "title": "ESG Integration in Investment Process",
     "question": "Evaluate the trade-offs in different strategies related to ESG Integration in Investment Process.",
     "difficulty": "easy",
     "category": "case",
@@ -18077,7 +15671,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_24",
     "role": "am",
-    "title": "Risk-Adjusted Performance Measurement - Technical Question",
+    "title": "Risk-Adjusted Performance Measurement",
     "question": "Compare and contrast different approaches to Risk-Adjusted Performance Measurement in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -18138,7 +15732,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_25",
     "role": "am",
-    "title": "Client Reporting & Communication - Behavioral Question",
+    "title": "Client Reporting & Communication",
     "question": "Describe a situation where you applied knowledge of Client Reporting & Communication to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -18199,7 +15793,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_26",
     "role": "am",
-    "title": "Investment Committee Presentations - Case Question",
+    "title": "Investment Committee Presentations",
     "question": "Analyze a case study involving Investment Committee Presentations and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -18260,7 +15854,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_27",
     "role": "am",
-    "title": "Due Diligence on Fund Managers - Technical Question",
+    "title": "Due Diligence on Fund Managers",
     "question": "Describe the main methodologies used in Due Diligence on Fund Managers and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -18321,7 +15915,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_28",
     "role": "am",
-    "title": "Financial Analysis - Behavioral Question",
+    "title": "Financial Analysis",
     "question": "How would you explain Financial Analysis to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -18382,7 +15976,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_29",
     "role": "am",
-    "title": "Valuation Techniques - Case Question",
+    "title": "Valuation Techniques",
     "question": "Develop a recommendation for implementing Valuation Techniques in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -18443,7 +16037,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_30",
     "role": "am",
-    "title": "Market Research - Technical Question",
+    "title": "Market Research",
     "question": "Explain the key concepts and applications of Market Research in Asset Management.",
     "difficulty": "easy",
     "category": "technical",
@@ -18504,7 +16098,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_31",
     "role": "am",
-    "title": "Risk Assessment - Behavioral Question",
+    "title": "Risk Assessment",
     "question": "How do you stay updated with developments in Risk Assessment and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -18565,7 +16159,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_32",
     "role": "am",
-    "title": "Performance Attribution - Case Question",
+    "title": "Performance Attribution",
     "question": "Design an approach to address a business problem using Performance Attribution concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -18626,7 +16220,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_33",
     "role": "am",
-    "title": "Client Relationship Management - Technical Question",
+    "title": "Client Relationship Management",
     "question": "What are the common challenges in implementing Client Relationship Management and how would you address them?",
     "difficulty": "easy",
     "category": "technical",
@@ -18687,7 +16281,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_34",
     "role": "am",
-    "title": "Regulatory Compliance - Behavioral Question",
+    "title": "Regulatory Compliance",
     "question": "Share an example of how you've used Regulatory Compliance to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -18748,7 +16342,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_35",
     "role": "am",
-    "title": "Investment Strategy Development - Case Question",
+    "title": "Investment Strategy Development",
     "question": "Given a scenario where a client wants to shift from active to passive management, how would you apply principles of Investment Strategy Development?",
     "difficulty": "easy",
     "category": "case",
@@ -18809,7 +16403,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_36",
     "role": "am",
-    "title": "Financial Analysis - Technical Question",
+    "title": "Financial Analysis",
     "question": "How would you approach a problem involving Financial Analysis in an entry-level Asset Management role?",
     "difficulty": "easy",
     "category": "technical",
@@ -18870,7 +16464,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_37",
     "role": "am",
-    "title": "Valuation Techniques - Behavioral Question",
+    "title": "Valuation Techniques",
     "question": "What excites you most about working with Valuation Techniques in Asset Management?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -18931,7 +16525,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_38",
     "role": "am",
-    "title": "Market Research - Case Question",
+    "title": "Market Research",
     "question": "Evaluate the trade-offs in different strategies related to Market Research.",
     "difficulty": "easy",
     "category": "case",
@@ -18992,7 +16586,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_39",
     "role": "am",
-    "title": "Risk Assessment - Technical Question",
+    "title": "Risk Assessment",
     "question": "Compare and contrast different approaches to Risk Assessment in the current market environment.",
     "difficulty": "easy",
     "category": "technical",
@@ -19053,7 +16647,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_40",
     "role": "am",
-    "title": "Performance Attribution - Behavioral Question",
+    "title": "Performance Attribution",
     "question": "Describe a situation where you applied knowledge of Performance Attribution to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -19114,7 +16708,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_41",
     "role": "am",
-    "title": "Client Relationship Management - Case Question",
+    "title": "Client Relationship Management",
     "question": "Analyze a case study involving Client Relationship Management and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -19175,7 +16769,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_42",
     "role": "am",
-    "title": "Regulatory Compliance - Technical Question",
+    "title": "Regulatory Compliance",
     "question": "Describe the main methodologies used in Regulatory Compliance and their practical implications.",
     "difficulty": "easy",
     "category": "technical",
@@ -19236,7 +16830,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_43",
     "role": "am",
-    "title": "Investment Strategy Development - Behavioral Question",
+    "title": "Investment Strategy Development",
     "question": "How would you explain Investment Strategy Development to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -19297,7 +16891,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_44",
     "role": "am",
-    "title": "Financial Analysis - Case Question",
+    "title": "Financial Analysis",
     "question": "Develop a recommendation for implementing Financial Analysis in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -19358,7 +16952,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_45",
     "role": "am",
-    "title": "Valuation Techniques - Technical Question",
+    "title": "Valuation Techniques",
     "question": "Explain the key concepts and applications of Valuation Techniques in Asset Management.",
     "difficulty": "easy",
     "category": "technical",
@@ -19419,7 +17013,7 @@ const questionBank = [
   {
     "id": "sys_am_1773307473011_46",
     "role": "am",
-    "title": "Market Research - Behavioral Question",
+    "title": "Market Research",
     "question": "How do you stay updated with developments in Market Research and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -19480,7 +17074,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_0",
     "role": "quant",
-    "title": "Statistical Arbitrage Strategies - Technical Question",
+    "title": "Statistical Arbitrage Strategies",
     "question": "Explain the key concepts and applications of Statistical Arbitrage Strategies in Quantitative Finance.",
     "difficulty": "medium",
     "category": "technical",
@@ -19541,7 +17135,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_1",
     "role": "quant",
-    "title": "High-Frequency Trading Models - Behavioral Question",
+    "title": "High-Frequency Trading Models",
     "question": "How do you stay updated with developments in High-Frequency Trading Models and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -19602,9 +17196,9 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_2",
     "role": "quant",
-    "title": "Machine Learning in Finance - Case Question",
+    "title": "Machine Learning in Finance",
     "question": "Design an approach to address a business problem using Machine Learning in Finance concepts.",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "category": "case",
     "frequencyScore": 3,
     "modelAnswer": "## Machine Learning in Finance - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Machine Learning in Finance principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
@@ -19663,7 +17257,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_3",
     "role": "quant",
-    "title": "Risk Model Validation - Technical Question",
+    "title": "Risk Model Validation",
     "question": "What are the common challenges in implementing Risk Model Validation and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -19724,7 +17318,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_4",
     "role": "quant",
-    "title": "Backtesting Methodology - Behavioral Question",
+    "title": "Backtesting Methodology",
     "question": "Share an example of how you've used Backtesting Methodology to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -19785,7 +17379,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_5",
     "role": "quant",
-    "title": "Market Microstructure Analysis - Case Question",
+    "title": "Market Microstructure Analysis",
     "question": "Given a scenario where a trading strategy shows decaying alpha, how would you apply principles of Market Microstructure Analysis?",
     "difficulty": "easy",
     "category": "case",
@@ -19846,7 +17440,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_6",
     "role": "quant",
-    "title": "Derivatives Pricing Models - Technical Question",
+    "title": "Derivatives Pricing Models",
     "question": "How would you approach a problem involving Derivatives Pricing Models in an entry-level Quantitative Finance role?",
     "difficulty": "medium",
     "category": "technical",
@@ -19907,7 +17501,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_7",
     "role": "quant",
-    "title": "Portfolio Optimization Algorithms - Behavioral Question",
+    "title": "Portfolio Optimization Algorithms",
     "question": "What excites you most about working with Portfolio Optimization Algorithms in Quantitative Finance?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -19968,7 +17562,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_8",
     "role": "quant",
-    "title": "Signal Generation & Processing - Case Question",
+    "title": "Signal Generation & Processing",
     "question": "Evaluate the trade-offs in different strategies related to Signal Generation & Processing.",
     "difficulty": "easy",
     "category": "case",
@@ -20029,7 +17623,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_9",
     "role": "quant",
-    "title": "Quantitative Research Process - Technical Question",
+    "title": "Quantitative Research Process",
     "question": "Compare and contrast different approaches to Quantitative Research Process in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -20090,7 +17684,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_10",
     "role": "quant",
-    "title": "Statistical Arbitrage Strategies - Behavioral Question",
+    "title": "Statistical Arbitrage Strategies",
     "question": "Describe a situation where you applied knowledge of Statistical Arbitrage Strategies to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -20151,7 +17745,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_11",
     "role": "quant",
-    "title": "High-Frequency Trading Models - Case Question",
+    "title": "High-Frequency Trading Models",
     "question": "Analyze a case study involving High-Frequency Trading Models and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -20212,9 +17806,9 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_12",
     "role": "quant",
-    "title": "Machine Learning in Finance - Technical Question",
+    "title": "Machine Learning in Finance",
     "question": "Describe the main methodologies used in Machine Learning in Finance and their practical implications.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "category": "technical",
     "frequencyScore": 3,
     "modelAnswer": "## Machine Learning in Finance - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Quantitative Finance\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
@@ -20273,7 +17867,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_13",
     "role": "quant",
-    "title": "Risk Model Validation - Behavioral Question",
+    "title": "Risk Model Validation",
     "question": "How would you explain Risk Model Validation to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -20334,7 +17928,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_14",
     "role": "quant",
-    "title": "Backtesting Methodology - Case Question",
+    "title": "Backtesting Methodology",
     "question": "Develop a recommendation for implementing Backtesting Methodology in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -20395,7 +17989,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_15",
     "role": "quant",
-    "title": "Market Microstructure Analysis - Technical Question",
+    "title": "Market Microstructure Analysis",
     "question": "Explain the key concepts and applications of Market Microstructure Analysis in Quantitative Finance.",
     "difficulty": "medium",
     "category": "technical",
@@ -20456,7 +18050,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_16",
     "role": "quant",
-    "title": "Derivatives Pricing Models - Behavioral Question",
+    "title": "Derivatives Pricing Models",
     "question": "How do you stay updated with developments in Derivatives Pricing Models and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -20517,7 +18111,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_17",
     "role": "quant",
-    "title": "Portfolio Optimization Algorithms - Case Question",
+    "title": "Portfolio Optimization Algorithms",
     "question": "Design an approach to address a business problem using Portfolio Optimization Algorithms concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -20578,7 +18172,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_18",
     "role": "quant",
-    "title": "Signal Generation & Processing - Technical Question",
+    "title": "Signal Generation & Processing",
     "question": "What are the common challenges in implementing Signal Generation & Processing and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -20639,7 +18233,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_19",
     "role": "quant",
-    "title": "Quantitative Research Process - Behavioral Question",
+    "title": "Quantitative Research Process",
     "question": "Share an example of how you've used Quantitative Research Process to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -20700,7 +18294,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_20",
     "role": "quant",
-    "title": "Statistical Arbitrage Strategies - Case Question",
+    "title": "Statistical Arbitrage Strategies",
     "question": "Given a scenario where a trading strategy shows decaying alpha, how would you apply principles of Statistical Arbitrage Strategies?",
     "difficulty": "easy",
     "category": "case",
@@ -20761,7 +18355,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_21",
     "role": "quant",
-    "title": "High-Frequency Trading Models - Technical Question",
+    "title": "High-Frequency Trading Models",
     "question": "How would you approach a problem involving High-Frequency Trading Models in an entry-level Quantitative Finance role?",
     "difficulty": "medium",
     "category": "technical",
@@ -20822,9 +18416,9 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_22",
     "role": "quant",
-    "title": "Machine Learning in Finance - Behavioral Question",
+    "title": "Machine Learning in Finance",
     "question": "What excites you most about working with Machine Learning in Finance in Quantitative Finance?",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "category": "behavioral",
     "frequencyScore": 3,
     "modelAnswer": "## Machine Learning in Finance - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Machine Learning in Finance\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Machine Learning in Finance interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
@@ -20883,7 +18477,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_23",
     "role": "quant",
-    "title": "Risk Model Validation - Case Question",
+    "title": "Risk Model Validation",
     "question": "Evaluate the trade-offs in different strategies related to Risk Model Validation.",
     "difficulty": "easy",
     "category": "case",
@@ -20944,7 +18538,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_24",
     "role": "quant",
-    "title": "Backtesting Methodology - Technical Question",
+    "title": "Backtesting Methodology",
     "question": "Compare and contrast different approaches to Backtesting Methodology in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -21005,7 +18599,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_25",
     "role": "quant",
-    "title": "Market Microstructure Analysis - Behavioral Question",
+    "title": "Market Microstructure Analysis",
     "question": "Describe a situation where you applied knowledge of Market Microstructure Analysis to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -21066,7 +18660,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_26",
     "role": "quant",
-    "title": "Derivatives Pricing Models - Case Question",
+    "title": "Derivatives Pricing Models",
     "question": "Analyze a case study involving Derivatives Pricing Models and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -21127,7 +18721,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_27",
     "role": "quant",
-    "title": "Portfolio Optimization Algorithms - Technical Question",
+    "title": "Portfolio Optimization Algorithms",
     "question": "Describe the main methodologies used in Portfolio Optimization Algorithms and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -21188,7 +18782,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_28",
     "role": "quant",
-    "title": "Signal Generation & Processing - Behavioral Question",
+    "title": "Signal Generation & Processing",
     "question": "How would you explain Signal Generation & Processing to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -21249,7 +18843,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_29",
     "role": "quant",
-    "title": "Quantitative Research Process - Case Question",
+    "title": "Quantitative Research Process",
     "question": "Develop a recommendation for implementing Quantitative Research Process in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -21310,7 +18904,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_30",
     "role": "quant",
-    "title": "Statistical Arbitrage Strategies - Technical Question",
+    "title": "Statistical Arbitrage Strategies",
     "question": "Explain the key concepts and applications of Statistical Arbitrage Strategies in Quantitative Finance.",
     "difficulty": "medium",
     "category": "technical",
@@ -21371,7 +18965,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_31",
     "role": "quant",
-    "title": "High-Frequency Trading Models - Behavioral Question",
+    "title": "High-Frequency Trading Models",
     "question": "How do you stay updated with developments in High-Frequency Trading Models and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -21432,9 +19026,9 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_32",
     "role": "quant",
-    "title": "Machine Learning in Finance - Case Question",
+    "title": "Machine Learning in Finance",
     "question": "Design an approach to address a business problem using Machine Learning in Finance concepts.",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "category": "case",
     "frequencyScore": 3,
     "modelAnswer": "## Machine Learning in Finance - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Machine Learning in Finance principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
@@ -21493,7 +19087,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_33",
     "role": "quant",
-    "title": "Risk Model Validation - Technical Question",
+    "title": "Risk Model Validation",
     "question": "What are the common challenges in implementing Risk Model Validation and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -21554,7 +19148,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_34",
     "role": "quant",
-    "title": "Backtesting Methodology - Behavioral Question",
+    "title": "Backtesting Methodology",
     "question": "Share an example of how you've used Backtesting Methodology to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -21615,7 +19209,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_35",
     "role": "quant",
-    "title": "Market Microstructure Analysis - Case Question",
+    "title": "Market Microstructure Analysis",
     "question": "Given a scenario where a trading strategy shows decaying alpha, how would you apply principles of Market Microstructure Analysis?",
     "difficulty": "easy",
     "category": "case",
@@ -21676,7 +19270,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_36",
     "role": "quant",
-    "title": "Derivatives Pricing Models - Technical Question",
+    "title": "Derivatives Pricing Models",
     "question": "How would you approach a problem involving Derivatives Pricing Models in an entry-level Quantitative Finance role?",
     "difficulty": "medium",
     "category": "technical",
@@ -21737,7 +19331,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_37",
     "role": "quant",
-    "title": "Portfolio Optimization Algorithms - Behavioral Question",
+    "title": "Portfolio Optimization Algorithms",
     "question": "What excites you most about working with Portfolio Optimization Algorithms in Quantitative Finance?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -21798,7 +19392,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_38",
     "role": "quant",
-    "title": "Signal Generation & Processing - Case Question",
+    "title": "Signal Generation & Processing",
     "question": "Evaluate the trade-offs in different strategies related to Signal Generation & Processing.",
     "difficulty": "easy",
     "category": "case",
@@ -21859,7 +19453,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_39",
     "role": "quant",
-    "title": "Quantitative Research Process - Technical Question",
+    "title": "Quantitative Research Process",
     "question": "Compare and contrast different approaches to Quantitative Research Process in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -21920,7 +19514,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_40",
     "role": "quant",
-    "title": "Statistical Modeling - Behavioral Question",
+    "title": "Statistical Modeling",
     "question": "Describe a situation where you applied knowledge of Statistical Modeling to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -21981,7 +19575,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_41",
     "role": "quant",
-    "title": "Programming (Python/R) - Case Question",
+    "title": "Programming (Python/R)",
     "question": "Analyze a case study involving Programming (Python/R) and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -22042,7 +19636,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_42",
     "role": "quant",
-    "title": "Data Analysis - Technical Question",
+    "title": "Data Analysis",
     "question": "Describe the main methodologies used in Data Analysis and their practical implications.",
     "difficulty": "easy",
     "category": "technical",
@@ -22103,7 +19697,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_43",
     "role": "quant",
-    "title": "Algorithm Design - Behavioral Question",
+    "title": "Algorithm Design",
     "question": "How would you explain Algorithm Design to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -22164,7 +19758,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_44",
     "role": "quant",
-    "title": "Mathematical Finance - Case Question",
+    "title": "Mathematical Finance",
     "question": "Develop a recommendation for implementing Mathematical Finance in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -22225,7 +19819,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_45",
     "role": "quant",
-    "title": "Time Series Analysis - Technical Question",
+    "title": "Time Series Analysis",
     "question": "Explain the key concepts and applications of Time Series Analysis in Quantitative Finance.",
     "difficulty": "easy",
     "category": "technical",
@@ -22286,7 +19880,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_46",
     "role": "quant",
-    "title": "Model Validation - Behavioral Question",
+    "title": "Model Validation",
     "question": "How do you stay updated with developments in Model Validation and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -22347,7 +19941,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_47",
     "role": "quant",
-    "title": "Risk Management - Case Question",
+    "title": "Risk Management",
     "question": "Design an approach to address a business problem using Risk Management concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -22408,7 +20002,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_48",
     "role": "quant",
-    "title": "Statistical Modeling - Technical Question",
+    "title": "Statistical Modeling",
     "question": "What are the common challenges in implementing Statistical Modeling and how would you address them?",
     "difficulty": "easy",
     "category": "technical",
@@ -22469,7 +20063,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_49",
     "role": "quant",
-    "title": "Programming (Python/R) - Behavioral Question",
+    "title": "Programming (Python/R)",
     "question": "Share an example of how you've used Programming (Python/R) to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -22530,7 +20124,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_50",
     "role": "quant",
-    "title": "Data Analysis - Case Question",
+    "title": "Data Analysis",
     "question": "Given a scenario where a trading strategy shows decaying alpha, how would you apply principles of Data Analysis?",
     "difficulty": "easy",
     "category": "case",
@@ -22591,7 +20185,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_51",
     "role": "quant",
-    "title": "Algorithm Design - Technical Question",
+    "title": "Algorithm Design",
     "question": "How would you approach a problem involving Algorithm Design in an entry-level Quantitative Finance role?",
     "difficulty": "easy",
     "category": "technical",
@@ -22652,7 +20246,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_52",
     "role": "quant",
-    "title": "Mathematical Finance - Behavioral Question",
+    "title": "Mathematical Finance",
     "question": "What excites you most about working with Mathematical Finance in Quantitative Finance?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -22713,7 +20307,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_53",
     "role": "quant",
-    "title": "Time Series Analysis - Case Question",
+    "title": "Time Series Analysis",
     "question": "Evaluate the trade-offs in different strategies related to Time Series Analysis.",
     "difficulty": "easy",
     "category": "case",
@@ -22774,7 +20368,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_54",
     "role": "quant",
-    "title": "Model Validation - Technical Question",
+    "title": "Model Validation",
     "question": "Compare and contrast different approaches to Model Validation in the current market environment.",
     "difficulty": "easy",
     "category": "technical",
@@ -22835,7 +20429,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_55",
     "role": "quant",
-    "title": "Risk Management - Behavioral Question",
+    "title": "Risk Management",
     "question": "Describe a situation where you applied knowledge of Risk Management to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -22896,7 +20490,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_56",
     "role": "quant",
-    "title": "Statistical Modeling - Case Question",
+    "title": "Statistical Modeling",
     "question": "Analyze a case study involving Statistical Modeling and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -22957,7 +20551,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_57",
     "role": "quant",
-    "title": "Programming (Python/R) - Technical Question",
+    "title": "Programming (Python/R)",
     "question": "Describe the main methodologies used in Programming (Python/R) and their practical implications.",
     "difficulty": "easy",
     "category": "technical",
@@ -23018,7 +20612,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_58",
     "role": "quant",
-    "title": "Data Analysis - Behavioral Question",
+    "title": "Data Analysis",
     "question": "How would you explain Data Analysis to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -23079,7 +20673,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_59",
     "role": "quant",
-    "title": "Algorithm Design - Case Question",
+    "title": "Algorithm Design",
     "question": "Develop a recommendation for implementing Algorithm Design in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -23140,7 +20734,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_60",
     "role": "quant",
-    "title": "Mathematical Finance - Technical Question",
+    "title": "Mathematical Finance",
     "question": "Explain the key concepts and applications of Mathematical Finance in Quantitative Finance.",
     "difficulty": "easy",
     "category": "technical",
@@ -23201,7 +20795,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_61",
     "role": "quant",
-    "title": "Time Series Analysis - Behavioral Question",
+    "title": "Time Series Analysis",
     "question": "How do you stay updated with developments in Time Series Analysis and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -23262,7 +20856,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_62",
     "role": "quant",
-    "title": "Model Validation - Case Question",
+    "title": "Model Validation",
     "question": "Design an approach to address a business problem using Model Validation concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -23323,7 +20917,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_63",
     "role": "quant",
-    "title": "Risk Management - Technical Question",
+    "title": "Risk Management",
     "question": "What are the common challenges in implementing Risk Management and how would you address them?",
     "difficulty": "easy",
     "category": "technical",
@@ -23384,7 +20978,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_64",
     "role": "quant",
-    "title": "Statistical Modeling - Behavioral Question",
+    "title": "Statistical Modeling",
     "question": "Share an example of how you've used Statistical Modeling to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -23445,7 +21039,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_65",
     "role": "quant",
-    "title": "Programming (Python/R) - Case Question",
+    "title": "Programming (Python/R)",
     "question": "Given a scenario where a trading strategy shows decaying alpha, how would you apply principles of Programming (Python/R)?",
     "difficulty": "easy",
     "category": "case",
@@ -23506,7 +21100,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_66",
     "role": "quant",
-    "title": "Data Analysis - Technical Question",
+    "title": "Data Analysis",
     "question": "How would you approach a problem involving Data Analysis in an entry-level Quantitative Finance role?",
     "difficulty": "easy",
     "category": "technical",
@@ -23567,7 +21161,7 @@ const questionBank = [
   {
     "id": "sys_quant_1773307473011_67",
     "role": "quant",
-    "title": "Algorithm Design - Behavioral Question",
+    "title": "Algorithm Design",
     "question": "What excites you most about working with Algorithm Design in Quantitative Finance?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -23628,7 +21222,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_0",
     "role": "markets",
-    "title": "Market Making Strategies - Technical Question",
+    "title": "Market Making Strategies",
     "question": "Explain the key concepts and applications of Market Making Strategies in Sales & Trading.",
     "difficulty": "medium",
     "category": "technical",
@@ -23689,7 +21283,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_1",
     "role": "markets",
-    "title": "Client Coverage & Relationship Building - Behavioral Question",
+    "title": "Client Coverage & Relationship Building",
     "question": "How do you stay updated with developments in Client Coverage & Relationship Building and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -23750,7 +21344,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_2",
     "role": "markets",
-    "title": "Trade Idea Generation & Pitching - Case Question",
+    "title": "Trade Idea Generation & Pitching",
     "question": "Design an approach to address a business problem using Trade Idea Generation & Pitching concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -23812,7 +21406,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_3",
     "role": "markets",
-    "title": "Risk Management in Trading - Technical Question",
+    "title": "Risk Management in Trading",
     "question": "What are the common challenges in implementing Risk Management in Trading and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -23873,7 +21467,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_4",
     "role": "markets",
-    "title": "Electronic Trading Systems - Behavioral Question",
+    "title": "Electronic Trading Systems",
     "question": "Share an example of how you've used Electronic Trading Systems to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -23934,7 +21528,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_5",
     "role": "markets",
-    "title": "Market Structure Analysis - Case Question",
+    "title": "Market Structure Analysis",
     "question": "Given a scenario where market liquidity dries up unexpectedly, how would you apply principles of Market Structure Analysis?",
     "difficulty": "easy",
     "category": "case",
@@ -23996,7 +21590,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_6",
     "role": "markets",
-    "title": "Fixed Income Trading Mechanics - Technical Question",
+    "title": "Fixed Income Trading Mechanics",
     "question": "How would you approach a problem involving Fixed Income Trading Mechanics in an entry-level Sales & Trading role?",
     "difficulty": "medium",
     "category": "technical",
@@ -24057,7 +21651,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_7",
     "role": "markets",
-    "title": "Derivatives Trading Strategies - Behavioral Question",
+    "title": "Derivatives Trading Strategies",
     "question": "What excites you most about working with Derivatives Trading Strategies in Sales & Trading?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -24118,7 +21712,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_8",
     "role": "markets",
-    "title": "Regulatory Landscape - Case Question",
+    "title": "Regulatory Landscape",
     "question": "Evaluate the trade-offs in different strategies related to Regulatory Landscape.",
     "difficulty": "easy",
     "category": "case",
@@ -24179,7 +21773,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_9",
     "role": "markets",
-    "title": "Trading Psychology - Technical Question",
+    "title": "Trading Psychology",
     "question": "Compare and contrast different approaches to Trading Psychology in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -24241,7 +21835,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_10",
     "role": "markets",
-    "title": "Market Making Strategies - Behavioral Question",
+    "title": "Market Making Strategies",
     "question": "Describe a situation where you applied knowledge of Market Making Strategies to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -24302,7 +21896,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_11",
     "role": "markets",
-    "title": "Client Coverage & Relationship Building - Case Question",
+    "title": "Client Coverage & Relationship Building",
     "question": "Analyze a case study involving Client Coverage & Relationship Building and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -24363,7 +21957,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_12",
     "role": "markets",
-    "title": "Trade Idea Generation & Pitching - Technical Question",
+    "title": "Trade Idea Generation & Pitching",
     "question": "Describe the main methodologies used in Trade Idea Generation & Pitching and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -24424,7 +22018,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_13",
     "role": "markets",
-    "title": "Risk Management in Trading - Behavioral Question",
+    "title": "Risk Management in Trading",
     "question": "How would you explain Risk Management in Trading to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -24485,7 +22079,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_14",
     "role": "markets",
-    "title": "Electronic Trading Systems - Case Question",
+    "title": "Electronic Trading Systems",
     "question": "Develop a recommendation for implementing Electronic Trading Systems in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -24546,7 +22140,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_15",
     "role": "markets",
-    "title": "Market Structure Analysis - Technical Question",
+    "title": "Market Structure Analysis",
     "question": "Explain the key concepts and applications of Market Structure Analysis in Sales & Trading.",
     "difficulty": "medium",
     "category": "technical",
@@ -24608,7 +22202,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_16",
     "role": "markets",
-    "title": "Fixed Income Trading Mechanics - Behavioral Question",
+    "title": "Fixed Income Trading Mechanics",
     "question": "How do you stay updated with developments in Fixed Income Trading Mechanics and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -24669,7 +22263,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_17",
     "role": "markets",
-    "title": "Derivatives Trading Strategies - Case Question",
+    "title": "Derivatives Trading Strategies",
     "question": "Design an approach to address a business problem using Derivatives Trading Strategies concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -24730,7 +22324,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_18",
     "role": "markets",
-    "title": "Regulatory Landscape - Technical Question",
+    "title": "Regulatory Landscape",
     "question": "What are the common challenges in implementing Regulatory Landscape and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -24792,7 +22386,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_19",
     "role": "markets",
-    "title": "Trading Psychology - Behavioral Question",
+    "title": "Trading Psychology",
     "question": "Share an example of how you've used Trading Psychology to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -24853,7 +22447,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_20",
     "role": "markets",
-    "title": "Market Making Strategies - Case Question",
+    "title": "Market Making Strategies",
     "question": "Given a scenario where market liquidity dries up unexpectedly, how would you apply principles of Market Making Strategies?",
     "difficulty": "easy",
     "category": "case",
@@ -24914,7 +22508,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_21",
     "role": "markets",
-    "title": "Client Coverage & Relationship Building - Technical Question",
+    "title": "Client Coverage & Relationship Building",
     "question": "How would you approach a problem involving Client Coverage & Relationship Building in an entry-level Sales & Trading role?",
     "difficulty": "medium",
     "category": "technical",
@@ -24976,7 +22570,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_22",
     "role": "markets",
-    "title": "Trade Idea Generation & Pitching - Behavioral Question",
+    "title": "Trade Idea Generation & Pitching",
     "question": "What excites you most about working with Trade Idea Generation & Pitching in Sales & Trading?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -25037,7 +22631,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_23",
     "role": "markets",
-    "title": "Risk Management in Trading - Case Question",
+    "title": "Risk Management in Trading",
     "question": "Evaluate the trade-offs in different strategies related to Risk Management in Trading.",
     "difficulty": "easy",
     "category": "case",
@@ -25098,7 +22692,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_24",
     "role": "markets",
-    "title": "Electronic Trading Systems - Technical Question",
+    "title": "Electronic Trading Systems",
     "question": "Compare and contrast different approaches to Electronic Trading Systems in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -25160,7 +22754,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_25",
     "role": "markets",
-    "title": "Market Structure Analysis - Behavioral Question",
+    "title": "Market Structure Analysis",
     "question": "Describe a situation where you applied knowledge of Market Structure Analysis to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -25221,7 +22815,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_26",
     "role": "markets",
-    "title": "Fixed Income Trading Mechanics - Case Question",
+    "title": "Fixed Income Trading Mechanics",
     "question": "Analyze a case study involving Fixed Income Trading Mechanics and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -25282,7 +22876,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_27",
     "role": "markets",
-    "title": "Derivatives Trading Strategies - Technical Question",
+    "title": "Derivatives Trading Strategies",
     "question": "Describe the main methodologies used in Derivatives Trading Strategies and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -25343,7 +22937,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_28",
     "role": "markets",
-    "title": "Regulatory Landscape - Behavioral Question",
+    "title": "Regulatory Landscape",
     "question": "How would you explain Regulatory Landscape to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -25405,7 +22999,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_29",
     "role": "markets",
-    "title": "Trading Psychology - Case Question",
+    "title": "Trading Psychology",
     "question": "Develop a recommendation for implementing Trading Psychology in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -25466,7 +23060,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_30",
     "role": "markets",
-    "title": "Market Making Strategies - Technical Question",
+    "title": "Market Making Strategies",
     "question": "Explain the key concepts and applications of Market Making Strategies in Sales & Trading.",
     "difficulty": "medium",
     "category": "technical",
@@ -25527,7 +23121,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_31",
     "role": "markets",
-    "title": "Client Coverage & Relationship Building - Behavioral Question",
+    "title": "Client Coverage & Relationship Building",
     "question": "How do you stay updated with developments in Client Coverage & Relationship Building and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -25588,7 +23182,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_32",
     "role": "markets",
-    "title": "Trade Idea Generation & Pitching - Case Question",
+    "title": "Trade Idea Generation & Pitching",
     "question": "Design an approach to address a business problem using Trade Idea Generation & Pitching concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -25650,7 +23244,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_33",
     "role": "markets",
-    "title": "Risk Management in Trading - Technical Question",
+    "title": "Risk Management in Trading",
     "question": "What are the common challenges in implementing Risk Management in Trading and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -25711,7 +23305,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_34",
     "role": "markets",
-    "title": "Electronic Trading Systems - Behavioral Question",
+    "title": "Electronic Trading Systems",
     "question": "Share an example of how you've used Electronic Trading Systems to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -25772,7 +23366,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_35",
     "role": "markets",
-    "title": "Market Structure Analysis - Case Question",
+    "title": "Market Structure Analysis",
     "question": "Given a scenario where market liquidity dries up unexpectedly, how would you apply principles of Market Structure Analysis?",
     "difficulty": "easy",
     "category": "case",
@@ -25834,7 +23428,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_36",
     "role": "markets",
-    "title": "Fixed Income Trading Mechanics - Technical Question",
+    "title": "Fixed Income Trading Mechanics",
     "question": "How would you approach a problem involving Fixed Income Trading Mechanics in an entry-level Sales & Trading role?",
     "difficulty": "medium",
     "category": "technical",
@@ -25895,7 +23489,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_37",
     "role": "markets",
-    "title": "Derivatives Trading Strategies - Behavioral Question",
+    "title": "Derivatives Trading Strategies",
     "question": "What excites you most about working with Derivatives Trading Strategies in Sales & Trading?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -25956,7 +23550,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_38",
     "role": "markets",
-    "title": "Regulatory Landscape - Case Question",
+    "title": "Regulatory Landscape",
     "question": "Evaluate the trade-offs in different strategies related to Regulatory Landscape.",
     "difficulty": "easy",
     "category": "case",
@@ -26017,7 +23611,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_39",
     "role": "markets",
-    "title": "Trading Psychology - Technical Question",
+    "title": "Trading Psychology",
     "question": "Compare and contrast different approaches to Trading Psychology in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -26079,7 +23673,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_40",
     "role": "markets",
-    "title": "Market Making Strategies - Behavioral Question",
+    "title": "Market Making Strategies",
     "question": "Describe a situation where you applied knowledge of Market Making Strategies to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -26140,7 +23734,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_41",
     "role": "markets",
-    "title": "Client Coverage & Relationship Building - Case Question",
+    "title": "Client Coverage & Relationship Building",
     "question": "Analyze a case study involving Client Coverage & Relationship Building and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -26201,7 +23795,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_42",
     "role": "markets",
-    "title": "Trade Idea Generation & Pitching - Technical Question",
+    "title": "Trade Idea Generation & Pitching",
     "question": "Describe the main methodologies used in Trade Idea Generation & Pitching and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -26262,7 +23856,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_43",
     "role": "markets",
-    "title": "Risk Management in Trading - Behavioral Question",
+    "title": "Risk Management in Trading",
     "question": "How would you explain Risk Management in Trading to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -26323,7 +23917,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_44",
     "role": "markets",
-    "title": "Electronic Trading Systems - Case Question",
+    "title": "Electronic Trading Systems",
     "question": "Develop a recommendation for implementing Electronic Trading Systems in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -26384,7 +23978,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_45",
     "role": "markets",
-    "title": "Market Structure Analysis - Technical Question",
+    "title": "Market Structure Analysis",
     "question": "Explain the key concepts and applications of Market Structure Analysis in Sales & Trading.",
     "difficulty": "medium",
     "category": "technical",
@@ -26446,7 +24040,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_46",
     "role": "markets",
-    "title": "Fixed Income Trading Mechanics - Behavioral Question",
+    "title": "Fixed Income Trading Mechanics",
     "question": "How do you stay updated with developments in Fixed Income Trading Mechanics and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -26507,7 +24101,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_47",
     "role": "markets",
-    "title": "Market Analysis - Case Question",
+    "title": "Market Analysis",
     "question": "Design an approach to address a business problem using Market Analysis concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -26569,7 +24163,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_48",
     "role": "markets",
-    "title": "Client Communication - Technical Question",
+    "title": "Client Communication",
     "question": "What are the common challenges in implementing Client Communication and how would you address them?",
     "difficulty": "easy",
     "category": "technical",
@@ -26631,7 +24225,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_49",
     "role": "markets",
-    "title": "Risk Assessment - Behavioral Question",
+    "title": "Risk Assessment",
     "question": "Share an example of how you've used Risk Assessment to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -26692,7 +24286,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_50",
     "role": "markets",
-    "title": "Trade Execution - Case Question",
+    "title": "Trade Execution",
     "question": "Given a scenario where market liquidity dries up unexpectedly, how would you apply principles of Trade Execution?",
     "difficulty": "easy",
     "category": "case",
@@ -26753,7 +24347,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_51",
     "role": "markets",
-    "title": "Product Knowledge - Technical Question",
+    "title": "Product Knowledge",
     "question": "How would you approach a problem involving Product Knowledge in an entry-level Sales & Trading role?",
     "difficulty": "easy",
     "category": "technical",
@@ -26815,7 +24409,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_52",
     "role": "markets",
-    "title": "Compliance Understanding - Behavioral Question",
+    "title": "Compliance Understanding",
     "question": "What excites you most about working with Compliance Understanding in Sales & Trading?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -26876,7 +24470,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_53",
     "role": "markets",
-    "title": "Technology Proficiency - Case Question",
+    "title": "Technology Proficiency",
     "question": "Evaluate the trade-offs in different strategies related to Technology Proficiency.",
     "difficulty": "easy",
     "category": "case",
@@ -26937,7 +24531,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_54",
     "role": "markets",
-    "title": "Stress Management - Technical Question",
+    "title": "Stress Management",
     "question": "Compare and contrast different approaches to Stress Management in the current market environment.",
     "difficulty": "easy",
     "category": "technical",
@@ -26999,7 +24593,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_55",
     "role": "markets",
-    "title": "Market Analysis - Behavioral Question",
+    "title": "Market Analysis",
     "question": "Describe a situation where you applied knowledge of Market Analysis to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -27060,7 +24654,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_56",
     "role": "markets",
-    "title": "Client Communication - Case Question",
+    "title": "Client Communication",
     "question": "Analyze a case study involving Client Communication and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -27121,7 +24715,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_57",
     "role": "markets",
-    "title": "Risk Assessment - Technical Question",
+    "title": "Risk Assessment",
     "question": "Describe the main methodologies used in Risk Assessment and their practical implications.",
     "difficulty": "easy",
     "category": "technical",
@@ -27182,7 +24776,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_58",
     "role": "markets",
-    "title": "Trade Execution - Behavioral Question",
+    "title": "Trade Execution",
     "question": "How would you explain Trade Execution to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -27243,7 +24837,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_59",
     "role": "markets",
-    "title": "Product Knowledge - Case Question",
+    "title": "Product Knowledge",
     "question": "Develop a recommendation for implementing Product Knowledge in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -27304,7 +24898,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_60",
     "role": "markets",
-    "title": "Compliance Understanding - Technical Question",
+    "title": "Compliance Understanding",
     "question": "Explain the key concepts and applications of Compliance Understanding in Sales & Trading.",
     "difficulty": "easy",
     "category": "technical",
@@ -27366,7 +24960,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_61",
     "role": "markets",
-    "title": "Technology Proficiency - Behavioral Question",
+    "title": "Technology Proficiency",
     "question": "How do you stay updated with developments in Technology Proficiency and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -27427,7 +25021,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_62",
     "role": "markets",
-    "title": "Stress Management - Case Question",
+    "title": "Stress Management",
     "question": "Design an approach to address a business problem using Stress Management concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -27489,7 +25083,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_63",
     "role": "markets",
-    "title": "Market Analysis - Technical Question",
+    "title": "Market Analysis",
     "question": "What are the common challenges in implementing Market Analysis and how would you address them?",
     "difficulty": "easy",
     "category": "technical",
@@ -27551,7 +25145,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_64",
     "role": "markets",
-    "title": "Client Communication - Behavioral Question",
+    "title": "Client Communication",
     "question": "Share an example of how you've used Client Communication to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -27612,7 +25206,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_65",
     "role": "markets",
-    "title": "Risk Assessment - Case Question",
+    "title": "Risk Assessment",
     "question": "Given a scenario where market liquidity dries up unexpectedly, how would you apply principles of Risk Assessment?",
     "difficulty": "easy",
     "category": "case",
@@ -27674,7 +25268,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_66",
     "role": "markets",
-    "title": "Trade Execution - Technical Question",
+    "title": "Trade Execution",
     "question": "How would you approach a problem involving Trade Execution in an entry-level Sales & Trading role?",
     "difficulty": "easy",
     "category": "technical",
@@ -27735,7 +25329,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_67",
     "role": "markets",
-    "title": "Product Knowledge - Behavioral Question",
+    "title": "Product Knowledge",
     "question": "What excites you most about working with Product Knowledge in Sales & Trading?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -27796,7 +25390,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_68",
     "role": "markets",
-    "title": "Compliance Understanding - Case Question",
+    "title": "Compliance Understanding",
     "question": "Evaluate the trade-offs in different strategies related to Compliance Understanding.",
     "difficulty": "easy",
     "category": "case",
@@ -27857,7 +25451,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_69",
     "role": "markets",
-    "title": "Technology Proficiency - Technical Question",
+    "title": "Technology Proficiency",
     "question": "Compare and contrast different approaches to Technology Proficiency in the current market environment.",
     "difficulty": "easy",
     "category": "technical",
@@ -27919,7 +25513,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_70",
     "role": "markets",
-    "title": "Stress Management - Behavioral Question",
+    "title": "Stress Management",
     "question": "Describe a situation where you applied knowledge of Stress Management to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -27980,7 +25574,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_71",
     "role": "markets",
-    "title": "Market Analysis - Case Question",
+    "title": "Market Analysis",
     "question": "Analyze a case study involving Market Analysis and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -28041,7 +25635,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_72",
     "role": "markets",
-    "title": "Client Communication - Technical Question",
+    "title": "Client Communication",
     "question": "Describe the main methodologies used in Client Communication and their practical implications.",
     "difficulty": "easy",
     "category": "technical",
@@ -28102,7 +25696,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_73",
     "role": "markets",
-    "title": "Risk Assessment - Behavioral Question",
+    "title": "Risk Assessment",
     "question": "How would you explain Risk Assessment to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -28164,7 +25758,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_74",
     "role": "markets",
-    "title": "Trade Execution - Case Question",
+    "title": "Trade Execution",
     "question": "Develop a recommendation for implementing Trade Execution in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -28225,7 +25819,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_75",
     "role": "markets",
-    "title": "Product Knowledge - Technical Question",
+    "title": "Product Knowledge",
     "question": "Explain the key concepts and applications of Product Knowledge in Sales & Trading.",
     "difficulty": "easy",
     "category": "technical",
@@ -28287,7 +25881,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_76",
     "role": "markets",
-    "title": "Compliance Understanding - Behavioral Question",
+    "title": "Compliance Understanding",
     "question": "How do you stay updated with developments in Compliance Understanding and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -28348,7 +25942,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_77",
     "role": "markets",
-    "title": "Technology Proficiency - Case Question",
+    "title": "Technology Proficiency",
     "question": "Design an approach to address a business problem using Technology Proficiency concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -28410,7 +26004,7 @@ const questionBank = [
   {
     "id": "sys_markets_1773307473011_78",
     "role": "markets",
-    "title": "Stress Management - Technical Question",
+    "title": "Stress Management",
     "question": "What are the common challenges in implementing Stress Management and how would you address them?",
     "difficulty": "easy",
     "category": "technical",
@@ -28472,7 +26066,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_0",
     "role": "risk",
-    "title": "Value at Risk (VaR) Calculation & Limitations - Technical Question",
+    "title": "Value at Risk (VaR) Calculation & Limitations",
     "question": "Explain the key concepts and applications of Value at Risk (VaR) Calculation & Limitations in Risk Management.",
     "difficulty": "medium",
     "category": "technical",
@@ -28534,7 +26128,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_1",
     "role": "risk",
-    "title": "Stress Testing Scenarios - Behavioral Question",
+    "title": "Stress Testing Scenarios",
     "question": "How do you stay updated with developments in Stress Testing Scenarios and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -28596,7 +26190,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_2",
     "role": "risk",
-    "title": "Counterparty Credit Risk - Case Question",
+    "title": "Counterparty Credit Risk",
     "question": "Design an approach to address a business problem using Counterparty Credit Risk concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -28658,7 +26252,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_3",
     "role": "risk",
-    "title": "Model Risk Management - Technical Question",
+    "title": "Model Risk Management",
     "question": "What are the common challenges in implementing Model Risk Management and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -28720,7 +26314,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_4",
     "role": "risk",
-    "title": "Operational Risk Framework - Behavioral Question",
+    "title": "Operational Risk Framework",
     "question": "Share an example of how you've used Operational Risk Framework to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -28782,7 +26376,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_5",
     "role": "risk",
-    "title": "Basel Regulations & Capital Requirements - Case Question",
+    "title": "Basel Regulations & Capital Requirements",
     "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Basel Regulations & Capital Requirements?",
     "difficulty": "easy",
     "category": "case",
@@ -28844,7 +26438,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_6",
     "role": "risk",
-    "title": "Liquidity Risk Measurement - Technical Question",
+    "title": "Liquidity Risk Measurement",
     "question": "How would you approach a problem involving Liquidity Risk Measurement in an entry-level Risk Management role?",
     "difficulty": "medium",
     "category": "technical",
@@ -28906,7 +26500,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_7",
     "role": "risk",
-    "title": "Enterprise Risk Management - Behavioral Question",
+    "title": "Enterprise Risk Management",
     "question": "What excites you most about working with Enterprise Risk Management in Risk Management?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -28968,7 +26562,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_8",
     "role": "risk",
-    "title": "Risk Appetite Statement - Case Question",
+    "title": "Risk Appetite Statement",
     "question": "Evaluate the trade-offs in different strategies related to Risk Appetite Statement.",
     "difficulty": "easy",
     "category": "case",
@@ -29030,7 +26624,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_9",
     "role": "risk",
-    "title": "Climate Risk Assessment - Technical Question",
+    "title": "Climate Risk Assessment",
     "question": "Compare and contrast different approaches to Climate Risk Assessment in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -29092,7 +26686,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_10",
     "role": "risk",
-    "title": "Value at Risk (VaR) Calculation & Limitations - Behavioral Question",
+    "title": "Value at Risk (VaR) Calculation & Limitations",
     "question": "Describe a situation where you applied knowledge of Value at Risk (VaR) Calculation & Limitations to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -29154,7 +26748,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_11",
     "role": "risk",
-    "title": "Stress Testing Scenarios - Case Question",
+    "title": "Stress Testing Scenarios",
     "question": "Analyze a case study involving Stress Testing Scenarios and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -29216,7 +26810,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_12",
     "role": "risk",
-    "title": "Counterparty Credit Risk - Technical Question",
+    "title": "Counterparty Credit Risk",
     "question": "Describe the main methodologies used in Counterparty Credit Risk and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -29278,7 +26872,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_13",
     "role": "risk",
-    "title": "Model Risk Management - Behavioral Question",
+    "title": "Model Risk Management",
     "question": "How would you explain Model Risk Management to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -29340,7 +26934,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_14",
     "role": "risk",
-    "title": "Operational Risk Framework - Case Question",
+    "title": "Operational Risk Framework",
     "question": "Develop a recommendation for implementing Operational Risk Framework in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -29402,7 +26996,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_15",
     "role": "risk",
-    "title": "Basel Regulations & Capital Requirements - Technical Question",
+    "title": "Basel Regulations & Capital Requirements",
     "question": "Explain the key concepts and applications of Basel Regulations & Capital Requirements in Risk Management.",
     "difficulty": "medium",
     "category": "technical",
@@ -29464,7 +27058,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_16",
     "role": "risk",
-    "title": "Liquidity Risk Measurement - Behavioral Question",
+    "title": "Liquidity Risk Measurement",
     "question": "How do you stay updated with developments in Liquidity Risk Measurement and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -29526,7 +27120,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_17",
     "role": "risk",
-    "title": "Enterprise Risk Management - Case Question",
+    "title": "Enterprise Risk Management",
     "question": "Design an approach to address a business problem using Enterprise Risk Management concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -29588,7 +27182,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_18",
     "role": "risk",
-    "title": "Risk Appetite Statement - Technical Question",
+    "title": "Risk Appetite Statement",
     "question": "What are the common challenges in implementing Risk Appetite Statement and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -29650,7 +27244,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_19",
     "role": "risk",
-    "title": "Climate Risk Assessment - Behavioral Question",
+    "title": "Climate Risk Assessment",
     "question": "Share an example of how you've used Climate Risk Assessment to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -29712,7 +27306,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_20",
     "role": "risk",
-    "title": "Value at Risk (VaR) Calculation & Limitations - Case Question",
+    "title": "Value at Risk (VaR) Calculation & Limitations",
     "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Value at Risk (VaR) Calculation & Limitations?",
     "difficulty": "easy",
     "category": "case",
@@ -29774,7 +27368,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_21",
     "role": "risk",
-    "title": "Stress Testing Scenarios - Technical Question",
+    "title": "Stress Testing Scenarios",
     "question": "How would you approach a problem involving Stress Testing Scenarios in an entry-level Risk Management role?",
     "difficulty": "medium",
     "category": "technical",
@@ -29836,7 +27430,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_22",
     "role": "risk",
-    "title": "Counterparty Credit Risk - Behavioral Question",
+    "title": "Counterparty Credit Risk",
     "question": "What excites you most about working with Counterparty Credit Risk in Risk Management?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -29898,7 +27492,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_23",
     "role": "risk",
-    "title": "Model Risk Management - Case Question",
+    "title": "Model Risk Management",
     "question": "Evaluate the trade-offs in different strategies related to Model Risk Management.",
     "difficulty": "easy",
     "category": "case",
@@ -29960,7 +27554,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_24",
     "role": "risk",
-    "title": "Operational Risk Framework - Technical Question",
+    "title": "Operational Risk Framework",
     "question": "Compare and contrast different approaches to Operational Risk Framework in the current market environment.",
     "difficulty": "medium",
     "category": "technical",
@@ -30022,7 +27616,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_25",
     "role": "risk",
-    "title": "Basel Regulations & Capital Requirements - Behavioral Question",
+    "title": "Basel Regulations & Capital Requirements",
     "question": "Describe a situation where you applied knowledge of Basel Regulations & Capital Requirements to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -30084,7 +27678,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_26",
     "role": "risk",
-    "title": "Liquidity Risk Measurement - Case Question",
+    "title": "Liquidity Risk Measurement",
     "question": "Analyze a case study involving Liquidity Risk Measurement and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -30146,7 +27740,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_27",
     "role": "risk",
-    "title": "Enterprise Risk Management - Technical Question",
+    "title": "Enterprise Risk Management",
     "question": "Describe the main methodologies used in Enterprise Risk Management and their practical implications.",
     "difficulty": "medium",
     "category": "technical",
@@ -30208,7 +27802,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_28",
     "role": "risk",
-    "title": "Risk Appetite Statement - Behavioral Question",
+    "title": "Risk Appetite Statement",
     "question": "How would you explain Risk Appetite Statement to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -30270,7 +27864,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_29",
     "role": "risk",
-    "title": "Climate Risk Assessment - Case Question",
+    "title": "Climate Risk Assessment",
     "question": "Develop a recommendation for implementing Climate Risk Assessment in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -30332,7 +27926,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_30",
     "role": "risk",
-    "title": "Value at Risk (VaR) Calculation & Limitations - Technical Question",
+    "title": "Value at Risk (VaR) Calculation & Limitations",
     "question": "Explain the key concepts and applications of Value at Risk (VaR) Calculation & Limitations in Risk Management.",
     "difficulty": "medium",
     "category": "technical",
@@ -30394,7 +27988,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_31",
     "role": "risk",
-    "title": "Stress Testing Scenarios - Behavioral Question",
+    "title": "Stress Testing Scenarios",
     "question": "How do you stay updated with developments in Stress Testing Scenarios and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -30456,7 +28050,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_32",
     "role": "risk",
-    "title": "Counterparty Credit Risk - Case Question",
+    "title": "Counterparty Credit Risk",
     "question": "Design an approach to address a business problem using Counterparty Credit Risk concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -30518,7 +28112,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_33",
     "role": "risk",
-    "title": "Model Risk Management - Technical Question",
+    "title": "Model Risk Management",
     "question": "What are the common challenges in implementing Model Risk Management and how would you address them?",
     "difficulty": "medium",
     "category": "technical",
@@ -30580,7 +28174,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_34",
     "role": "risk",
-    "title": "Operational Risk Framework - Behavioral Question",
+    "title": "Operational Risk Framework",
     "question": "Share an example of how you've used Operational Risk Framework to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -30642,7 +28236,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_35",
     "role": "risk",
-    "title": "Basel Regulations & Capital Requirements - Case Question",
+    "title": "Basel Regulations & Capital Requirements",
     "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Basel Regulations & Capital Requirements?",
     "difficulty": "easy",
     "category": "case",
@@ -30704,7 +28298,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_36",
     "role": "risk",
-    "title": "Risk Measurement - Technical Question",
+    "title": "Risk Measurement",
     "question": "How would you approach a problem involving Risk Measurement in an entry-level Risk Management role?",
     "difficulty": "easy",
     "category": "technical",
@@ -30766,7 +28360,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_37",
     "role": "risk",
-    "title": "Regulatory Knowledge - Behavioral Question",
+    "title": "Regulatory Knowledge",
     "question": "What excites you most about working with Regulatory Knowledge in Risk Management?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -30828,7 +28422,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_38",
     "role": "risk",
-    "title": "Data Analysis - Case Question",
+    "title": "Data Analysis",
     "question": "Evaluate the trade-offs in different strategies related to Data Analysis.",
     "difficulty": "easy",
     "category": "case",
@@ -30890,7 +28484,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_39",
     "role": "risk",
-    "title": "Model Development - Technical Question",
+    "title": "Model Development",
     "question": "Compare and contrast different approaches to Model Development in the current market environment.",
     "difficulty": "easy",
     "category": "technical",
@@ -30952,7 +28546,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_40",
     "role": "risk",
-    "title": "Reporting & Communication - Behavioral Question",
+    "title": "Reporting & Communication",
     "question": "Describe a situation where you applied knowledge of Reporting & Communication to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -31014,7 +28608,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_41",
     "role": "risk",
-    "title": "Stress Testing - Case Question",
+    "title": "Stress Testing",
     "question": "Analyze a case study involving Stress Testing and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -31076,7 +28670,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_42",
     "role": "risk",
-    "title": "Compliance Monitoring - Technical Question",
+    "title": "Compliance Monitoring",
     "question": "Describe the main methodologies used in Compliance Monitoring and their practical implications.",
     "difficulty": "easy",
     "category": "technical",
@@ -31138,7 +28732,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_43",
     "role": "risk",
-    "title": "Governance Understanding - Behavioral Question",
+    "title": "Governance Understanding",
     "question": "How would you explain Governance Understanding to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -31200,7 +28794,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_44",
     "role": "risk",
-    "title": "Risk Measurement - Case Question",
+    "title": "Risk Measurement",
     "question": "Develop a recommendation for implementing Risk Measurement in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -31262,7 +28856,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_45",
     "role": "risk",
-    "title": "Regulatory Knowledge - Technical Question",
+    "title": "Regulatory Knowledge",
     "question": "Explain the key concepts and applications of Regulatory Knowledge in Risk Management.",
     "difficulty": "easy",
     "category": "technical",
@@ -31324,7 +28918,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_46",
     "role": "risk",
-    "title": "Data Analysis - Behavioral Question",
+    "title": "Data Analysis",
     "question": "How do you stay updated with developments in Data Analysis and related areas?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -31386,7 +28980,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_47",
     "role": "risk",
-    "title": "Model Development - Case Question",
+    "title": "Model Development",
     "question": "Design an approach to address a business problem using Model Development concepts.",
     "difficulty": "easy",
     "category": "case",
@@ -31448,7 +29042,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_48",
     "role": "risk",
-    "title": "Reporting & Communication - Technical Question",
+    "title": "Reporting & Communication",
     "question": "What are the common challenges in implementing Reporting & Communication and how would you address them?",
     "difficulty": "easy",
     "category": "technical",
@@ -31510,7 +29104,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_49",
     "role": "risk",
-    "title": "Stress Testing - Behavioral Question",
+    "title": "Stress Testing",
     "question": "Share an example of how you've used Stress Testing to add value in a team setting.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -31572,7 +29166,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_50",
     "role": "risk",
-    "title": "Compliance Monitoring - Case Question",
+    "title": "Compliance Monitoring",
     "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Compliance Monitoring?",
     "difficulty": "easy",
     "category": "case",
@@ -31634,7 +29228,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_51",
     "role": "risk",
-    "title": "Governance Understanding - Technical Question",
+    "title": "Governance Understanding",
     "question": "How would you approach a problem involving Governance Understanding in an entry-level Risk Management role?",
     "difficulty": "easy",
     "category": "technical",
@@ -31696,7 +29290,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_52",
     "role": "risk",
-    "title": "Risk Measurement - Behavioral Question",
+    "title": "Risk Measurement",
     "question": "What excites you most about working with Risk Measurement in Risk Management?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -31758,7 +29352,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_53",
     "role": "risk",
-    "title": "Regulatory Knowledge - Case Question",
+    "title": "Regulatory Knowledge",
     "question": "Evaluate the trade-offs in different strategies related to Regulatory Knowledge.",
     "difficulty": "easy",
     "category": "case",
@@ -31820,7 +29414,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_54",
     "role": "risk",
-    "title": "Data Analysis - Technical Question",
+    "title": "Data Analysis",
     "question": "Compare and contrast different approaches to Data Analysis in the current market environment.",
     "difficulty": "easy",
     "category": "technical",
@@ -31882,7 +29476,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_55",
     "role": "risk",
-    "title": "Model Development - Behavioral Question",
+    "title": "Model Development",
     "question": "Describe a situation where you applied knowledge of Model Development to solve a real-world problem.",
     "difficulty": "easy",
     "category": "behavioral",
@@ -31944,7 +29538,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_56",
     "role": "risk",
-    "title": "Reporting & Communication - Case Question",
+    "title": "Reporting & Communication",
     "question": "Analyze a case study involving Reporting & Communication and propose a solution.",
     "difficulty": "easy",
     "category": "case",
@@ -32006,7 +29600,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_57",
     "role": "risk",
-    "title": "Stress Testing - Technical Question",
+    "title": "Stress Testing",
     "question": "Describe the main methodologies used in Stress Testing and their practical implications.",
     "difficulty": "easy",
     "category": "technical",
@@ -32068,7 +29662,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_58",
     "role": "risk",
-    "title": "Compliance Monitoring - Behavioral Question",
+    "title": "Compliance Monitoring",
     "question": "How would you explain Compliance Monitoring to someone without a technical background?",
     "difficulty": "easy",
     "category": "behavioral",
@@ -32130,7 +29724,7 @@ const questionBank = [
   {
     "id": "sys_risk_1773307473011_59",
     "role": "risk",
-    "title": "Governance Understanding - Case Question",
+    "title": "Governance Understanding",
     "question": "Develop a recommendation for implementing Governance Understanding in a specific context.",
     "difficulty": "easy",
     "category": "case",
@@ -32830,2566 +30424,6 @@ const questionBank = [
     }
   },
   {
-    "id": "gen_corpfin_1773311903261_10",
-    "role": "corpfin",
-    "title": "Corporate Governance - Corporate Finance Question",
-    "question": "Explain the key concepts of Corporate Governance in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Corporate Governance is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate governance.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate governance within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Corporate governance is the system of rules, practices, and processes by which a company is directed and controlled\n• Agency theory: separation of ownership and control creates conflicts between managers and shareholders\n• Effective boards provide oversight without meddling in day-to-day operations\n• Compensation design should align executive incentives with long-term shareholder value\n• Strong governance is associated with lower cost of capital, higher valuations, and better operating performance",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-governance",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate governance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "governance": 19,
-      "concepts": 18,
-      "fundamental": 15,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Corporate Governance - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_11",
-    "role": "corpfin",
-    "title": "Strategic Financial Decisions - Corporate Finance Question",
-    "question": "How would you approach a problem related to Strategic Financial Decisions in corporate finance?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Strategic Financial Decisions is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to strategic financial decisions.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of strategic financial decisions within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "strategic-financial-decisions",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers strategic financial decisions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "strategic": 20,
-      "finance": 19,
-      "industry": 18,
-      "decisions": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Strategic Financial Decisions - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_12",
-    "role": "corpfin",
-    "title": "Cost of Capital Calculation - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Cost of Capital Calculation in corporate finance?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Cost of Capital Calculation is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to cost of capital calculation.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of cost of capital calculation within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• WACC = E/V × Re + D/V × Rd × (1 - t) — where Re = cost of equity, Rd = pre-tax cost of debt, t = corporate tax rate\n• CAPM: Re = Rf + β × ERP — where Rf = risk-free rate (10-year Treasury ~4-4.5%), β = levered equity beta, ERP = equity risk premium (~5-6% historically)\n• β calculation: regress stock returns on market returns (3-5 years monthly data), un-lever (β_u = β_l / (1 + (1-t)×D/E)), re-lever for target capital structure\n• Cost of debt: yield on comparable corporate bonds, swap curve + credit spread, or synthetic rating approach\n• Country risk premium: add sovereign CDS spread × equity volatility ratio for international investments",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "cost-of-capital-calculation",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers cost of capital calculation.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "cost": 19,
-      "capital": 18,
-      "calculation": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Cost of Capital Calculation - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_13",
-    "role": "corpfin",
-    "title": "Financial Reporting Analysis - Corporate Finance Question",
-    "question": "Describe a practical application of Financial Reporting Analysis in corporate finance.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial Reporting Analysis is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial reporting analysis.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of financial reporting analysis within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Financial statement analysis evaluates a company's performance, financial health, and cash generation\n• Double-entry accounting means every transaction affects two accounts — balance sheet always balances\n• Accrual accounting recognizes revenue when earned, not when cash is received — can diverge from economic reality\n• Free Cash Flow (FCF = CFO - CapEx) is the most important measure of value creation\n• Ratio analysis is most meaningful when compared against peers, industry averages, and historical trends",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "financial-reporting-analysis",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers financial reporting analysis.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "finance": 20,
-      "industry": 19,
-      "reporting": 18,
-      "analysis": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Financial Reporting Analysis - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_14",
-    "role": "corpfin",
-    "title": "Corporate Restructuring - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Corporate Restructuring and how would you address them?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Corporate Restructuring is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate restructuring.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate restructuring within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Spin-off: distribute shares of subsidiary to existing shareholders tax-free (Section 355) — creates pure-play, better strategic focus\n• Carve-out: IPO of minority stake in subsidiary — raises cash while retaining control, establishes market value\n• Divestiture: sell division or asset to third party — simplifies business, raises cash for core investment or debt reduction\n• Share repurchase: open market buyback or tender offer — returns capital, increases EPS, signals undervaluation\n• Recapitalization: change capital structure via increased leverage (recap), equity issuance, or dual-class creation",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-restructuring",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate restructuring.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "restructuring": 19,
-      "concepts": 18,
-      "fundamental": 15,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Corporate Restructuring - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_15",
-    "role": "corpfin",
-    "title": "Capital Structure Optimization - Corporate Finance Question",
-    "question": "Explain the key concepts of Capital Structure Optimization in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Capital Structure Optimization is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to capital structure optimization.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of capital structure optimization within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Optimal capital structure balances tax benefits of debt (interest tax shield ~21% US corporate rate) vs financial distress costs\n• Trade-off theory: firms target a debt ratio where marginal tax benefit = marginal distress cost (typically 20-40% D/E)\n• Pecking order theory: firms prefer internal financing, then debt, then equity as last resort (asymmetric information)\n• Market timing theory: firms issue equity when stock prices are high, buy back when low\n• Key ratios: D/E (total debt/total equity), Debt/EBITDA (2-4x typical investment grade), Interest Coverage (EBIT/interest > 3x for IG)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "capital-structure-optimization",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers capital structure optimization.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "capital": 19,
-      "structure": 18,
-      "optimization": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Capital Structure Optimization - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_16",
-    "role": "corpfin",
-    "title": "Capital Budgeting Techniques - Corporate Finance Question",
-    "question": "How would you approach a problem related to Capital Budgeting Techniques in corporate finance?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Capital Budgeting Techniques is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to capital budgeting techniques.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of capital budgeting techniques within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "capital-budgeting-techniques",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers capital budgeting techniques.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "capital": 19,
-      "budgeting": 18,
-      "techniques": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Capital Budgeting Techniques - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_17",
-    "role": "corpfin",
-    "title": "Working Capital Management - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Working Capital Management in corporate finance?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Working Capital Management is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to working capital management.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of working capital management within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Cash conversion cycle = DSO (Days Sales Outstanding) + DIO (Days Inventory Outstanding) - DPO (Days Payable Outstanding)\n• Optimal CCC varies by industry: retail (30-60 days), manufacturing (60-90 days), tech (0-30 days for SaaS)\n• Cash management: zero-balance accounts, notional pooling, lockbox systems for accelerated collections\n• Inventory management: JIT (lean, lower holding costs) vs safety stock (buffer against supply disruption) — trade-off\n• Trade credit: extending payment terms improves DPO (cash preservation) but strains supplier relationships",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "working-capital-management",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers working capital management.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "management": 21,
-      "finance": 20,
-      "industry": 19,
-      "working": 18,
-      "capital": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Working Capital Management - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_18",
-    "role": "corpfin",
-    "title": "Dividend Policy Decisions - Corporate Finance Question",
-    "question": "Describe a practical application of Dividend Policy Decisions in corporate finance.",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Dividend Policy Decisions is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to dividend policy decisions.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of dividend policy decisions within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Dividend irrelevance (Miller-Modigliani): in perfect markets, dividend policy doesn't affect firm value — value comes from investment policy\n• Bird-in-hand theory: investors prefer certain dividends over uncertain capital gains → higher dividends = higher value\n• Tax preference theory: capital gains are taxed at lower rates than dividends (currently 20% vs 23.8% in US) → lower payouts preferred\n• Clientele effect: different investors prefer different payout policies — retirees want dividends, growth investors want capital gains\n• Signaling theory: dividend increases signal management's confidence in future earnings (positive signal); cuts signal trouble (strong negative signal)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "dividend-policy-decisions",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers dividend policy decisions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "dividend": 19,
-      "policy": 18,
-      "decisions": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Dividend Policy Decisions - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_19",
-    "role": "corpfin",
-    "title": "Mergers & Acquisitions Strategy - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Mergers & Acquisitions Strategy and how would you address them?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Mergers & Acquisitions Strategy is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to mergers & acquisitions strategy.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of mergers & acquisitions strategy within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• M&A creates value when the combined entity is worth more than the sum of standalone parts (synergy)\n• The acquirer's stock price typically drops ~1-3% on announcement of stock-funded deals (signaling overvaluation)\n• Cash-funded deals typically see neutral or slightly positive acquirer returns\n• Target shareholders capture most of the value from M&A (30-50% premium on average)\n• The winner's curse: the winning bidder in competitive auctions systematically overpays",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "mergers-&-acquisitions-strategy",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers mergers & acquisitions strategy.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "mergers": 19,
-      "acquisitions": 18,
-      "strategy": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Mergers & Acquisitions Strategy - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_20",
-    "role": "corpfin",
-    "title": "Corporate Valuation Methods - Corporate Finance Question",
-    "question": "Explain the key concepts of Corporate Valuation Methods in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Corporate Valuation Methods is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate valuation methods.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate valuation methods within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• DCF: project FCF = EBIT(1-t) + D&A - CapEx - ΔWC; discount by WACC; terminal value (Gordon Growth or terminal multiples)\n• DCF sensitivities: WACC ±0.5%, terminal growth rate ±0.5%, revenue growth ±2%; triangulate assumptions\n• Comparable companies: EV/EBITDA (most common), P/E (earnings), EV/Sales (growth or distressed), P/B (financials)\n• Precedent transactions: acquisition multiples include control premium (20-35% typical) — use for takeout valuation\n• LBO: determine max purchase price given leverage (4-6x EBITDA), exit multiple (10-12x), and IRR target (15-20%)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-valuation-methods",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate valuation methods.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "valuation": 19,
-      "methods": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Corporate Valuation Methods - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_21",
-    "role": "corpfin",
-    "title": "Financial Planning & Analysis - Corporate Finance Question",
-    "question": "How would you approach a problem related to Financial Planning & Analysis in corporate finance?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Financial Planning & Analysis is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial planning & analysis.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of financial planning & analysis within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "financial-planning-&-analysis",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers financial planning & analysis.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "finance": 20,
-      "industry": 19,
-      "planning": 18,
-      "analysis": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Financial Planning & Analysis - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_22",
-    "role": "corpfin",
-    "title": "Treasury Management - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Treasury Management in corporate finance?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Treasury Management is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to treasury management.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of treasury management within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Treasury management oversees a company's liquidity, funding, and financial risk\n• Working capital management optimizes cash conversion cycle: reduce DSO/DIO, manage DPO\n• Cash is the most important asset — running out of cash means bankruptcy regardless of profitability\n• The precautionary motive for holding cash: buffer against revenue volatility and credit market disruptions\n• Centralized treasury (one global function) is generally more efficient than decentralized (regional silos)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "treasury-management",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers treasury management.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to treasury management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to treasury management.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "management": 21,
-      "finance": 20,
-      "industry": 19,
-      "treasury": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Treasury Management - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_23",
-    "role": "corpfin",
-    "title": "Risk Management in Corporations - Corporate Finance Question",
-    "question": "Describe a practical application of Risk Management in Corporations in corporate finance.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Risk Management is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to risk management in corporations.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of risk management in corporations within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Risk identification: financial risks (FX, interest rate, commodity price, credit), operational risks (supply chain, IT, regulatory, reputational), strategic risks (competition, technology disruption)\n• Market risk hedging: FX forwards/options for transaction exposure, interest rate swaps for floating rate exposure, commodity futures/options for input cost exposure\n• Credit risk management: customer credit limits, trade credit insurance, factoring receivables, payment terms negotiation\n• Operational risk: business continuity planning, disaster recovery, IT security, internal controls (SOX compliance)\n• Insurance: property/casualty, D&O liability, cyber insurance, business interruption — transfer insurable risks",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "risk-management-in-corporations",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers risk management in corporations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "management": 21,
-      "finance": 20,
-      "industry": 19,
-      "risk": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "corporations": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Risk Management in Corporations - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_24",
-    "role": "corpfin",
-    "title": "Investor Relations - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Investor Relations and how would you address them?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Investor Relations is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to investor relations.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of investor relations within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Communication channels: earnings calls (quarterly), investor days (annual), one-on-one meetings, roadshows, SEC filings (10-K, 10-Q, 8-K)\n• Earnings call script: CEO discusses strategic progress and business trends → CFO reviews financial results → Q&A from analysts\n• Guidance: management provides forward-looking estimates for revenue, margins, earnings — or no guidance for flexibility\n• Earnings surprise: actual vs consensus — positive surprise of 5%+ typically yields +2-3% stock move; negative yields -3-5%\n• Sell-side coverage: number of analysts, rating changes, price target changes directly impact institutional investor interest",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "investor-relations",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers investor relations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investor relations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investor relations.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "investor": 19,
-      "relations": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Investor Relations - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_25",
-    "role": "corpfin",
-    "title": "Corporate Governance - Corporate Finance Question",
-    "question": "Explain the key concepts of Corporate Governance in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Corporate Governance is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate governance.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate governance within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Corporate governance is the system of rules, practices, and processes by which a company is directed and controlled\n• Agency theory: separation of ownership and control creates conflicts between managers and shareholders\n• Effective boards provide oversight without meddling in day-to-day operations\n• Compensation design should align executive incentives with long-term shareholder value\n• Strong governance is associated with lower cost of capital, higher valuations, and better operating performance",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-governance",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate governance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "governance": 19,
-      "concepts": 18,
-      "fundamental": 15,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Corporate Governance - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_26",
-    "role": "corpfin",
-    "title": "Strategic Financial Decisions - Corporate Finance Question",
-    "question": "How would you approach a problem related to Strategic Financial Decisions in corporate finance?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Strategic Financial Decisions is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to strategic financial decisions.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of strategic financial decisions within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "strategic-financial-decisions",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers strategic financial decisions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "strategic": 20,
-      "finance": 19,
-      "industry": 18,
-      "decisions": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Strategic Financial Decisions - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_27",
-    "role": "corpfin",
-    "title": "Cost of Capital Calculation - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Cost of Capital Calculation in corporate finance?",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Cost of Capital Calculation is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to cost of capital calculation.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of cost of capital calculation within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• WACC = E/V × Re + D/V × Rd × (1 - t) — where Re = cost of equity, Rd = pre-tax cost of debt, t = corporate tax rate\n• CAPM: Re = Rf + β × ERP — where Rf = risk-free rate (10-year Treasury ~4-4.5%), β = levered equity beta, ERP = equity risk premium (~5-6% historically)\n• β calculation: regress stock returns on market returns (3-5 years monthly data), un-lever (β_u = β_l / (1 + (1-t)×D/E)), re-lever for target capital structure\n• Cost of debt: yield on comparable corporate bonds, swap curve + credit spread, or synthetic rating approach\n• Country risk premium: add sovereign CDS spread × equity volatility ratio for international investments",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "cost-of-capital-calculation",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers cost of capital calculation.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "cost": 19,
-      "capital": 18,
-      "calculation": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Cost of Capital Calculation - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_28",
-    "role": "corpfin",
-    "title": "Financial Reporting Analysis - Corporate Finance Question",
-    "question": "Describe a practical application of Financial Reporting Analysis in corporate finance.",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial Reporting Analysis is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial reporting analysis.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of financial reporting analysis within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Financial statement analysis evaluates a company's performance, financial health, and cash generation\n• Double-entry accounting means every transaction affects two accounts — balance sheet always balances\n• Accrual accounting recognizes revenue when earned, not when cash is received — can diverge from economic reality\n• Free Cash Flow (FCF = CFO - CapEx) is the most important measure of value creation\n• Ratio analysis is most meaningful when compared against peers, industry averages, and historical trends",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "financial-reporting-analysis",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers financial reporting analysis.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "finance": 20,
-      "industry": 19,
-      "reporting": 18,
-      "analysis": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Financial Reporting Analysis - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_29",
-    "role": "corpfin",
-    "title": "Corporate Restructuring - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Corporate Restructuring and how would you address them?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Corporate Restructuring is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate restructuring.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate restructuring within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Spin-off: distribute shares of subsidiary to existing shareholders tax-free (Section 355) — creates pure-play, better strategic focus\n• Carve-out: IPO of minority stake in subsidiary — raises cash while retaining control, establishes market value\n• Divestiture: sell division or asset to third party — simplifies business, raises cash for core investment or debt reduction\n• Share repurchase: open market buyback or tender offer — returns capital, increases EPS, signals undervaluation\n• Recapitalization: change capital structure via increased leverage (recap), equity issuance, or dual-class creation",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-restructuring",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate restructuring.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "restructuring": 19,
-      "concepts": 18,
-      "fundamental": 15,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Corporate Restructuring - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_30",
-    "role": "corpfin",
-    "title": "Capital Structure Optimization - Corporate Finance Question",
-    "question": "Explain the key concepts of Capital Structure Optimization in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Capital Structure Optimization is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to capital structure optimization.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of capital structure optimization within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Optimal capital structure balances tax benefits of debt (interest tax shield ~21% US corporate rate) vs financial distress costs\n• Trade-off theory: firms target a debt ratio where marginal tax benefit = marginal distress cost (typically 20-40% D/E)\n• Pecking order theory: firms prefer internal financing, then debt, then equity as last resort (asymmetric information)\n• Market timing theory: firms issue equity when stock prices are high, buy back when low\n• Key ratios: D/E (total debt/total equity), Debt/EBITDA (2-4x typical investment grade), Interest Coverage (EBIT/interest > 3x for IG)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "capital-structure-optimization",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers capital structure optimization.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "capital": 19,
-      "structure": 18,
-      "optimization": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Capital Structure Optimization - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_31",
-    "role": "corpfin",
-    "title": "Capital Budgeting Techniques - Corporate Finance Question",
-    "question": "How would you approach a problem related to Capital Budgeting Techniques in corporate finance?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Capital Budgeting Techniques is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to capital budgeting techniques.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of capital budgeting techniques within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "capital-budgeting-techniques",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers capital budgeting techniques.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "capital": 19,
-      "budgeting": 18,
-      "techniques": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Capital Budgeting Techniques - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_32",
-    "role": "corpfin",
-    "title": "Working Capital Management - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Working Capital Management in corporate finance?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Working Capital Management is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to working capital management.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of working capital management within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Cash conversion cycle = DSO (Days Sales Outstanding) + DIO (Days Inventory Outstanding) - DPO (Days Payable Outstanding)\n• Optimal CCC varies by industry: retail (30-60 days), manufacturing (60-90 days), tech (0-30 days for SaaS)\n• Cash management: zero-balance accounts, notional pooling, lockbox systems for accelerated collections\n• Inventory management: JIT (lean, lower holding costs) vs safety stock (buffer against supply disruption) — trade-off\n• Trade credit: extending payment terms improves DPO (cash preservation) but strains supplier relationships",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "working-capital-management",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers working capital management.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "management": 21,
-      "finance": 20,
-      "industry": 19,
-      "working": 18,
-      "capital": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Working Capital Management - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_33",
-    "role": "corpfin",
-    "title": "Dividend Policy Decisions - Corporate Finance Question",
-    "question": "Describe a practical application of Dividend Policy Decisions in corporate finance.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Dividend Policy Decisions is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to dividend policy decisions.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of dividend policy decisions within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Dividend irrelevance (Miller-Modigliani): in perfect markets, dividend policy doesn't affect firm value — value comes from investment policy\n• Bird-in-hand theory: investors prefer certain dividends over uncertain capital gains → higher dividends = higher value\n• Tax preference theory: capital gains are taxed at lower rates than dividends (currently 20% vs 23.8% in US) → lower payouts preferred\n• Clientele effect: different investors prefer different payout policies — retirees want dividends, growth investors want capital gains\n• Signaling theory: dividend increases signal management's confidence in future earnings (positive signal); cuts signal trouble (strong negative signal)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "dividend-policy-decisions",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers dividend policy decisions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "dividend": 19,
-      "policy": 18,
-      "decisions": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Dividend Policy Decisions - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_34",
-    "role": "corpfin",
-    "title": "Mergers & Acquisitions Strategy - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Mergers & Acquisitions Strategy and how would you address them?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Mergers & Acquisitions Strategy is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to mergers & acquisitions strategy.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of mergers & acquisitions strategy within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• M&A creates value when the combined entity is worth more than the sum of standalone parts (synergy)\n• The acquirer's stock price typically drops ~1-3% on announcement of stock-funded deals (signaling overvaluation)\n• Cash-funded deals typically see neutral or slightly positive acquirer returns\n• Target shareholders capture most of the value from M&A (30-50% premium on average)\n• The winner's curse: the winning bidder in competitive auctions systematically overpays",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "mergers-&-acquisitions-strategy",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers mergers & acquisitions strategy.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "mergers": 19,
-      "acquisitions": 18,
-      "strategy": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Mergers & Acquisitions Strategy - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_35",
-    "role": "corpfin",
-    "title": "Corporate Valuation Methods - Corporate Finance Question",
-    "question": "Explain the key concepts of Corporate Valuation Methods in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Corporate Valuation Methods is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate valuation methods.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate valuation methods within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• DCF: project FCF = EBIT(1-t) + D&A - CapEx - ΔWC; discount by WACC; terminal value (Gordon Growth or terminal multiples)\n• DCF sensitivities: WACC ±0.5%, terminal growth rate ±0.5%, revenue growth ±2%; triangulate assumptions\n• Comparable companies: EV/EBITDA (most common), P/E (earnings), EV/Sales (growth or distressed), P/B (financials)\n• Precedent transactions: acquisition multiples include control premium (20-35% typical) — use for takeout valuation\n• LBO: determine max purchase price given leverage (4-6x EBITDA), exit multiple (10-12x), and IRR target (15-20%)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-valuation-methods",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate valuation methods.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate valuation methods.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "valuation": 19,
-      "methods": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Corporate Valuation Methods - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_36",
-    "role": "corpfin",
-    "title": "Financial Planning & Analysis - Corporate Finance Question",
-    "question": "How would you approach a problem related to Financial Planning & Analysis in corporate finance?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Financial Planning & Analysis is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial planning & analysis.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of financial planning & analysis within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "financial-planning-&-analysis",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers financial planning & analysis.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial planning & analysis.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "finance": 20,
-      "industry": 19,
-      "planning": 18,
-      "analysis": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Financial Planning & Analysis - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_37",
-    "role": "corpfin",
-    "title": "Treasury Management - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Treasury Management in corporate finance?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Treasury Management is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to treasury management.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of treasury management within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Treasury management oversees a company's liquidity, funding, and financial risk\n• Working capital management optimizes cash conversion cycle: reduce DSO/DIO, manage DPO\n• Cash is the most important asset — running out of cash means bankruptcy regardless of profitability\n• The precautionary motive for holding cash: buffer against revenue volatility and credit market disruptions\n• Centralized treasury (one global function) is generally more efficient than decentralized (regional silos)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "treasury-management",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers treasury management.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to treasury management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to treasury management.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "management": 21,
-      "finance": 20,
-      "industry": 19,
-      "treasury": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Treasury Management - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_38",
-    "role": "corpfin",
-    "title": "Risk Management in Corporations - Corporate Finance Question",
-    "question": "Describe a practical application of Risk Management in Corporations in corporate finance.",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Risk Management is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to risk management in corporations.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of risk management in corporations within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Risk identification: financial risks (FX, interest rate, commodity price, credit), operational risks (supply chain, IT, regulatory, reputational), strategic risks (competition, technology disruption)\n• Market risk hedging: FX forwards/options for transaction exposure, interest rate swaps for floating rate exposure, commodity futures/options for input cost exposure\n• Credit risk management: customer credit limits, trade credit insurance, factoring receivables, payment terms negotiation\n• Operational risk: business continuity planning, disaster recovery, IT security, internal controls (SOX compliance)\n• Insurance: property/casualty, D&O liability, cyber insurance, business interruption — transfer insurable risks",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "risk-management-in-corporations",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers risk management in corporations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management in corporations.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "management": 21,
-      "finance": 20,
-      "industry": 19,
-      "risk": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "corporations": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Risk Management in Corporations - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_39",
-    "role": "corpfin",
-    "title": "Investor Relations - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Investor Relations and how would you address them?",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Investor Relations is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to investor relations.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of investor relations within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Communication channels: earnings calls (quarterly), investor days (annual), one-on-one meetings, roadshows, SEC filings (10-K, 10-Q, 8-K)\n• Earnings call script: CEO discusses strategic progress and business trends → CFO reviews financial results → Q&A from analysts\n• Guidance: management provides forward-looking estimates for revenue, margins, earnings — or no guidance for flexibility\n• Earnings surprise: actual vs consensus — positive surprise of 5%+ typically yields +2-3% stock move; negative yields -3-5%\n• Sell-side coverage: number of analysts, rating changes, price target changes directly impact institutional investor interest",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "investor-relations",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers investor relations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investor relations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investor relations.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "investor": 19,
-      "relations": 18,
-      "concepts": 17,
-      "fundamental": 14,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Investor Relations - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_40",
-    "role": "corpfin",
-    "title": "Corporate Governance - Corporate Finance Question",
-    "question": "Explain the key concepts of Corporate Governance in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Corporate Governance is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate governance.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate governance within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Corporate governance is the system of rules, practices, and processes by which a company is directed and controlled\n• Agency theory: separation of ownership and control creates conflicts between managers and shareholders\n• Effective boards provide oversight without meddling in day-to-day operations\n• Compensation design should align executive incentives with long-term shareholder value\n• Strong governance is associated with lower cost of capital, higher valuations, and better operating performance",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-governance",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate governance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate governance.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "governance": 19,
-      "concepts": 18,
-      "fundamental": 15,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Corporate Governance - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_41",
-    "role": "corpfin",
-    "title": "Strategic Financial Decisions - Corporate Finance Question",
-    "question": "How would you approach a problem related to Strategic Financial Decisions in corporate finance?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Strategic Financial Decisions is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to strategic financial decisions.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of strategic financial decisions within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "strategic-financial-decisions",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers strategic financial decisions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to strategic financial decisions.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "strategic": 20,
-      "finance": 19,
-      "industry": 18,
-      "decisions": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Strategic Financial Decisions - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_42",
-    "role": "corpfin",
-    "title": "Cost of Capital Calculation - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Cost of Capital Calculation in corporate finance?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Cost of Capital Calculation is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to cost of capital calculation.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of cost of capital calculation within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• WACC = E/V × Re + D/V × Rd × (1 - t) — where Re = cost of equity, Rd = pre-tax cost of debt, t = corporate tax rate\n• CAPM: Re = Rf + β × ERP — where Rf = risk-free rate (10-year Treasury ~4-4.5%), β = levered equity beta, ERP = equity risk premium (~5-6% historically)\n• β calculation: regress stock returns on market returns (3-5 years monthly data), un-lever (β_u = β_l / (1 + (1-t)×D/E)), re-lever for target capital structure\n• Cost of debt: yield on comparable corporate bonds, swap curve + credit spread, or synthetic rating approach\n• Country risk premium: add sovereign CDS spread × equity volatility ratio for international investments",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "cost-of-capital-calculation",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers cost of capital calculation.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cost of capital calculation.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "cost": 19,
-      "capital": 18,
-      "calculation": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Cost of Capital Calculation - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_43",
-    "role": "corpfin",
-    "title": "Financial Reporting Analysis - Corporate Finance Question",
-    "question": "Describe a practical application of Financial Reporting Analysis in corporate finance.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial Reporting Analysis is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial reporting analysis.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of financial reporting analysis within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Financial statement analysis evaluates a company's performance, financial health, and cash generation\n• Double-entry accounting means every transaction affects two accounts — balance sheet always balances\n• Accrual accounting recognizes revenue when earned, not when cash is received — can diverge from economic reality\n• Free Cash Flow (FCF = CFO - CapEx) is the most important measure of value creation\n• Ratio analysis is most meaningful when compared against peers, industry averages, and historical trends",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "financial-reporting-analysis",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers financial reporting analysis.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial reporting analysis.",
-    "scoringKeywords": {
-      "financial": 22,
-      "corporate": 21,
-      "finance": 20,
-      "industry": 19,
-      "reporting": 18,
-      "analysis": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Financial Reporting Analysis - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_44",
-    "role": "corpfin",
-    "title": "Corporate Restructuring - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Corporate Restructuring and how would you address them?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Corporate Restructuring is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to corporate restructuring.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of corporate restructuring within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Spin-off: distribute shares of subsidiary to existing shareholders tax-free (Section 355) — creates pure-play, better strategic focus\n• Carve-out: IPO of minority stake in subsidiary — raises cash while retaining control, establishes market value\n• Divestiture: sell division or asset to third party — simplifies business, raises cash for core investment or debt reduction\n• Share repurchase: open market buyback or tender offer — returns capital, increases EPS, signals undervaluation\n• Recapitalization: change capital structure via increased leverage (recap), equity issuance, or dual-class creation",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "corporate-restructuring",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers corporate restructuring.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to corporate restructuring.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "restructuring": 19,
-      "concepts": 18,
-      "fundamental": 15,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Corporate Restructuring - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_45",
-    "role": "corpfin",
-    "title": "Capital Structure Optimization - Corporate Finance Question",
-    "question": "Explain the key concepts of Capital Structure Optimization in the context of corporate finance.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Capital Structure Optimization is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to capital structure optimization.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of capital structure optimization within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Optimal capital structure balances tax benefits of debt (interest tax shield ~21% US corporate rate) vs financial distress costs\n• Trade-off theory: firms target a debt ratio where marginal tax benefit = marginal distress cost (typically 20-40% D/E)\n• Pecking order theory: firms prefer internal financing, then debt, then equity as last resort (asymmetric information)\n• Market timing theory: firms issue equity when stock prices are high, buy back when low\n• Key ratios: D/E (total debt/total equity), Debt/EBITDA (2-4x typical investment grade), Interest Coverage (EBIT/interest > 3x for IG)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "capital-structure-optimization",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers capital structure optimization.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital structure optimization.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "capital": 19,
-      "structure": 18,
-      "optimization": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Capital Structure Optimization - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_46",
-    "role": "corpfin",
-    "title": "Capital Budgeting Techniques - Corporate Finance Question",
-    "question": "How would you approach a problem related to Capital Budgeting Techniques in corporate finance?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Capital Budgeting Techniques is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to capital budgeting techniques.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of capital budgeting techniques within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Corporate Finance context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "capital-budgeting-techniques",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers capital budgeting techniques.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to capital budgeting techniques.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "capital": 19,
-      "budgeting": 18,
-      "techniques": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Capital Budgeting Techniques - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_47",
-    "role": "corpfin",
-    "title": "Working Capital Management - Corporate Finance Question",
-    "question": "What are the main considerations when dealing with Working Capital Management in corporate finance?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Working Capital Management is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to working capital management.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of working capital management within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Cash conversion cycle = DSO (Days Sales Outstanding) + DIO (Days Inventory Outstanding) - DPO (Days Payable Outstanding)\n• Optimal CCC varies by industry: retail (30-60 days), manufacturing (60-90 days), tech (0-30 days for SaaS)\n• Cash management: zero-balance accounts, notional pooling, lockbox systems for accelerated collections\n• Inventory management: JIT (lean, lower holding costs) vs safety stock (buffer against supply disruption) — trade-off\n• Trade credit: extending payment terms improves DPO (cash preservation) but strains supplier relationships",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "working-capital-management",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers working capital management.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to working capital management.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "management": 21,
-      "finance": 20,
-      "industry": 19,
-      "working": 18,
-      "capital": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates corpfin knowledge of Working Capital Management - Corporate Finance Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current corpfin practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_48",
-    "role": "corpfin",
-    "title": "Dividend Policy Decisions - Corporate Finance Question",
-    "question": "Describe a practical application of Dividend Policy Decisions in corporate finance.",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Dividend Policy Decisions is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to dividend policy decisions.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of dividend policy decisions within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• Dividend irrelevance (Miller-Modigliani): in perfect markets, dividend policy doesn't affect firm value — value comes from investment policy\n• Bird-in-hand theory: investors prefer certain dividends over uncertain capital gains → higher dividends = higher value\n• Tax preference theory: capital gains are taxed at lower rates than dividends (currently 20% vs 23.8% in US) → lower payouts preferred\n• Clientele effect: different investors prefer different payout policies — retirees want dividends, growth investors want capital gains\n• Signaling theory: dividend increases signal management's confidence in future earnings (positive signal); cuts signal trouble (strong negative signal)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "dividend-policy-decisions",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers dividend policy decisions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to dividend policy decisions.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "dividend": 19,
-      "policy": 18,
-      "decisions": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Dividend Policy Decisions - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_corpfin_1773311903261_49",
-    "role": "corpfin",
-    "title": "Mergers & Acquisitions Strategy - Corporate Finance Question",
-    "question": "What challenges might arise in implementing Mergers & Acquisitions Strategy and how would you address them?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Mergers & Acquisitions Strategy is a fundamental aspect of corporate financial management that involves strategic decision-making to optimize business value and financial performance.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to mergers & acquisitions strategy.\n\n**Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n**Industry Context**: The relevance and importance of mergers & acquisitions strategy within the broader Corporate Finance field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
-    "answers": {
-      "concise": {
-        "answer": "• M&A creates value when the combined entity is worth more than the sum of standalone parts (synergy)\n• The acquirer's stock price typically drops ~1-3% on announcement of stock-funded deals (signaling overvaluation)\n• Cash-funded deals typically see neutral or slightly positive acquirer returns\n• Target shareholders capture most of the value from M&A (30-50% premium on average)\n• The winner's curse: the winning bidder in competitive auctions systematically overpays",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "corpfin",
-      "mergers-&-acquisitions-strategy",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Corporate Finance industry. Covers mergers & acquisitions strategy.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mergers & acquisitions strategy.",
-    "scoringKeywords": {
-      "corporate": 22,
-      "finance": 21,
-      "industry": 20,
-      "mergers": 19,
-      "acquisitions": 18,
-      "strategy": 17,
-      "concepts": 16,
-      "fundamental": 13,
-      "principles": 12,
-      "understand": 11,
-      "related": 10,
-      "applications": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates corpfin knowledge of Mergers & Acquisitions Strategy - Corporate Finance Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with corpfin-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without corpfin-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical corpfin applications"
-      ],
-      "improvementTips": [
-        "Reference recent corpfin deals, products, or regulatory changes",
-        "Use established frameworks to structure complex corpfin concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific corpfin job functions and responsibilities"
-      ]
-    }
-  },
-  {
     "id": "gen_fintech_1773311903261_0",
     "role": "fintech",
     "title": "Digital Payments Systems - FinTech Question",
@@ -36014,2566 +31048,6 @@ const questionBank = [
     ],
     "detailedAnalysis": {
       "overview": "This medium technical question evaluates fintech knowledge of Mobile Banking Solutions - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_10",
-    "role": "fintech",
-    "title": "Digital Wallets & Neobanks - FinTech Question",
-    "question": "Explain the key concepts of Digital Wallets & Neobanks in the context of fintech.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Digital Wallets & Neobanks represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to digital wallets & neobanks.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of digital wallets & neobanks within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Digital wallets: store payment credentials (card tokens), enable contactless (NFC), online (tokenized checkout), and P2P transfers (linked to bank account or stored balance)\n• Tokenization: card number replaced with a device-specific token — if merchant database is breached, token is useless on other devices\n• Open banking (PSD2): AISP (account information service provider) reads transaction data, PISP (payment initiation service provider) initiates payments\n• Revenue models: interchange (card-linked transactions, 0.2-0.3% debit, 1.5-2.5% credit), subscription (Revolut Premium $10/mo), FX fees (0-0.5%), lending (BNPL, personal loans)\n• Customer acquisition: digital wallet users have 2-3x higher engagement and 30-50% lower churn vs traditional banking app users",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "digital-wallets-&-neobanks",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers digital wallets & neobanks.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "digital": 20,
-      "wallets": 19,
-      "neobanks": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Digital Wallets & Neobanks - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_11",
-    "role": "fintech",
-    "title": "Smart Contracts - FinTech Question",
-    "question": "How would you approach a problem related to Smart Contracts in fintech?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Smart Contracts represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to smart contracts.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of smart contracts within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "smart-contracts",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers smart contracts.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "smart": 20,
-      "contracts": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Smart Contracts - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_12",
-    "role": "fintech",
-    "title": "Decentralized Finance (DeFi) - FinTech Question",
-    "question": "What are the main considerations when dealing with Decentralized Finance (DeFi) in fintech?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Decentralized Finance (DeFi) represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to decentralized finance (defi).\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of decentralized finance (defi) within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Smart contracts: self-executing code on blockchain (Ethereum, Solana) — automate lending, trading, and other financial services without intermediaries\n• DeFi protocols: lending (Aave, Compound — supply liquidity, earn interest; borrow with overcollateralization), DEXs (Uniswap — automated market maker), yield aggregators (Yearn — auto-harvest highest yields)\n• Automated Market Makers (AMM): constant product formula x*y=k, liquidity providers earn fees from trades but risk impermanent loss\n• Stablecoins: USDT/USDC (fiat-collateralized), DAI (crypto-collateralized, overcollateralized >150%), algorithmic (UST — failed May 2022)\n• Risks: smart contract risk (hacks lost $3.8B in 2022), oracle manipulation, regulatory uncertainty, impermanent loss, wash trading on low-liquidity DEXs",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "decentralized-finance-(defi)",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers decentralized finance (defi).",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "decentralized": 20,
-      "finance": 19,
-      "defi": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Decentralized Finance (DeFi) - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_13",
-    "role": "fintech",
-    "title": "Financial Inclusion Technologies - FinTech Question",
-    "question": "Describe a practical application of Financial Inclusion Technologies in fintech.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial inclusion technologies.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of financial inclusion technologies within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Mobile money: M-Pesa (Kenya, 50M+ users) enables P2P transfers, bill payments, microloans via basic feature phones — no bank account needed\n• Digital credit: algorithmic scoring using mobile phone data (airtime top-up patterns, call frequency, social network) — Tala, Branch issue loans in minutes\n• Agent banking: retail agents handle cash-in/cash-out for unbanked populations — M-Pesa has 400K+ agents vs 100K bank branches in Sub-Saharan Africa\n• Biometric identification: Aadhaar (India, 1.3B+ registered) enables eKYC and direct benefit transfers — reduces identity verification costs from $10 to $0.15\n• Microinsurance: digital-first microinsurance (BIMA, MicroEnsure) for health, life, crop — premiums as low as $0.50/month via mobile airtime deductions",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "financial-inclusion-technologies",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers financial inclusion technologies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "scoringKeywords": {
-      "financial": 22,
-      "fintech": 21,
-      "industry": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "inclusion": 13,
-      "technologies": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Financial Inclusion Technologies - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_14",
-    "role": "fintech",
-    "title": "Quantum Computing in Finance - FinTech Question",
-    "question": "What challenges might arise in implementing Quantum Computing in Finance and how would you address them?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Quantum Computing in Finance represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to quantum computing in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of quantum computing in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Quantum advantage: Shor's algorithm (factoring large numbers → breaks RSA encryption), Grover's algorithm (search unsorted database → O(√N) vs O(N))\n• Financial applications: portfolio optimization (quantum annealing for large-scale optimization — D-Wave), Monte Carlo simulation (quadratic speedup for pricing complex derivatives)\n• Risk management: quantum Monte Carlo can price complex path-dependent options exponentially faster — McAfee estimates $50B+ annual savings in risk management\n• Current limitations: qubit coherence times (currently microseconds), error rates (need 9+ logical qubits per physical qubit), extreme cooling requirements (near absolute zero)\n• Post-quantum cryptography: NIST selected CRYSTALS-Kyber (key encapsulation) and CRYSTALS-Dilithium (digital signatures) as new standards — financial institutions must migrate before fault-tolerant quantum arrives",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "quantum-computing-in-finance",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers quantum computing in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "quantum": 20,
-      "computing": 19,
-      "finance": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Quantum Computing in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_15",
-    "role": "fintech",
-    "title": "Digital Payments Systems - FinTech Question",
-    "question": "Explain the key concepts of Digital Payments Systems in the context of fintech.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Digital Payments Systems represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to digital payments systems.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of digital payments systems within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Payment ecosystem: payer → payment gateway → processor → card network (Visa/Mastercard) → acquiring bank → merchant\n• Interchange fees: 1.5-3.5% of transaction value — split among card network, issuing bank, and processor\n• Real-time payments: FedNow (US), UPI (India, ~10B transactions/month), Faster Payments (UK) — instant 24/7 settlement\n• Digital wallets: Apple Pay/Google Pay tokenize card numbers — device-specific tokens reduce fraud liability\n• Cross-border payments: correspondent banking (slow, expensive 3-7 days, 3-7% fees) vs challengers (Wise, Airwallex, 0.5-1%, real-time)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "digital-payments-systems",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers digital payments systems.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "digital": 20,
-      "payments": 19,
-      "systems": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Digital Payments Systems - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_16",
-    "role": "fintech",
-    "title": "Blockchain & Cryptocurrency - FinTech Question",
-    "question": "How would you approach a problem related to Blockchain & Cryptocurrency in fintech?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Blockchain & Cryptocurrency represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to blockchain & cryptocurrency.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of blockchain & cryptocurrency within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "blockchain-&-cryptocurrency",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers blockchain & cryptocurrency.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "blockchain": 20,
-      "cryptocurrency": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Blockchain & Cryptocurrency - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_17",
-    "role": "fintech",
-    "title": "Peer-to-Peer Lending - FinTech Question",
-    "question": "What are the main considerations when dealing with Peer-to-Peer Lending in fintech?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Peer-to-Peer Lending represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to peer-to-peer lending.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of peer-to-peer lending within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Platform model: marketplace connects borrowers (higher yield) with investors (principal at risk) — revenue from origination (1-5%) and servicing fees (0.5-1%)\n• Credit assessment: AI/ML models analyze bank transaction data, digital footprint, employment data for credit scoring (often alternative data for thin-file borrowers)\n• Risk and return: typical loan rates 6-36% APR, expected net loss rates 2-10%, investor returns 4-12% after fees and losses\n• Securitization: platforms pool loans into ABS to access capital markets — Lending Club, Prosper issue rated tranches\n• Regulatory framework: SEC registration (notes are securities), state lending licenses, Truth in Lending Act (TILA) disclosure requirements",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "peer-to-peer-lending",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers peer-to-peer lending.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "peer-to-peer": 20,
-      "lending": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Peer-to-Peer Lending - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_18",
-    "role": "fintech",
-    "title": "Robo-Advisors & AI in Finance - FinTech Question",
-    "question": "Describe a practical application of Robo-Advisors & AI in Finance in fintech.",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Robo-Advisors & AI represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to robo-advisors & ai in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of robo-advisors & ai in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Robo-advisor model: questionnaire → risk score → portfolio allocation using Modern Portfolio Theory → automatic rebalancing → tax-loss harvesting\n• Portfolio construction: 7-12 ETF portfolios across US equities, international equities, bonds, real estate, commodities\n• Fee structure: typically 0.25% AUM (Betterment, Wealthfront) vs 1%+ for human advisors — lower cost enables small accounts\n• Tax-loss harvesting: automatically sell losing positions to offset capital gains, buy similar (not substantially identical) securities to maintain exposure\n• AI in credit scoring: gradient boosting models (XGBoost, LightGBM) on alternative data — improved default prediction by 15-30% over traditional FICO models",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "robo-advisors-&-ai-in-finance",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers robo-advisors & ai in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "robo-advisors": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "finance": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Robo-Advisors & AI in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_19",
-    "role": "fintech",
-    "title": "Regulatory Technology (RegTech) - FinTech Question",
-    "question": "What challenges might arise in implementing Regulatory Technology (RegTech) and how would you address them?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Regulatory Technology (RegTech) represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to regulatory technology (regtech).\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of regulatory technology (regtech) within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• KYC/AML automation: identity verification (OCR + liveness detection), PEP/sanctions screening, transaction monitoring for suspicious activity patterns\n• Regulatory reporting: automated generation of regulatory filings (MiFID II transaction reporting, EMIR trade reporting, FATCA/CRS)\n• Surveillance: trade surveillance (market abuse detection, spoofing/layering patterns), communications surveillance (voice, email, chat)\n• Risk management: automated capital calculations (Basel III/IV CRR, SA-CCR for derivatives), stress testing\n• Compliance monitoring: policy management, training tracking, conflict of interest checks, personal account dealing surveillance",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "regulatory-technology-(regtech)",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers regulatory technology (regtech).",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "scoringKeywords": {
-      "technology": 22,
-      "fintech": 21,
-      "industry": 20,
-      "regulatory": 19,
-      "regtech": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Regulatory Technology (RegTech) - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_20",
-    "role": "fintech",
-    "title": "InsurTech Innovations - FinTech Question",
-    "question": "Explain the key concepts of InsurTech Innovations in the context of fintech.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "InsurTech Innovations represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to insurtech innovations.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of insurtech innovations within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Distribution: direct-to-consumer digital platforms (Lemonade, PolicyPal) bypass traditional agent/broker channels, reducing acquisition cost by 30-50%\n• Underwriting: telematics (usage-based auto insurance tracking driving behavior), IoT sensors (property insurance for water damage, fire), health wearables\n• Claims processing: AI-powered damage assessment (photo-based auto claims estimate in seconds), fraud detection (network analysis, anomaly detection)\n• Products: on-demand insurance (get covered for specific activities or time periods), parametric insurance (automatic payout when index triggers)\n• Peer-to-peer insurance: pool premiums, unused premiums returned as dividends (aligns incentives, reduces fraud)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "insurtech-innovations",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers insurtech innovations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "insurtech": 20,
-      "innovations": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of InsurTech Innovations - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_21",
-    "role": "fintech",
-    "title": "Open Banking & APIs - FinTech Question",
-    "question": "How would you approach a problem related to Open Banking & APIs in fintech?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Open Banking & APIs represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to open banking & apis.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of open banking & apis within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "open-banking-&-apis",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers open banking & apis.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "open": 20,
-      "banking": 19,
-      "apis": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Open Banking & APIs - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_22",
-    "role": "fintech",
-    "title": "Financial Data Analytics - FinTech Question",
-    "question": "What are the main considerations when dealing with Financial Data Analytics in fintech?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial Data Analytics represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial data analytics.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of financial data analytics within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Data types: transactional (account activity, payment history), behavioral (app usage, clickstream), alternative (utility payments, social media, browser history)\n• Analytics methods: regression (credit scoring), clustering (customer segmentation), time series (transaction pattern analysis for fraud detection)\n• Real-time analytics: streaming data processing (Kafka, Flink) for fraud detection — a fraudulent transaction must be detected and blocked in <100ms\n• Data privacy: anonymization (k-anonymity, differential privacy), encryption (homomorphic for analysis on encrypted data), consent management (GDPR, CCPA)\n• Use cases: credit underwriting (alternative data improves acceptance rate 15-20% without increasing default rates), personal financial management (spending categorization, budgeting insights)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "financial-data-analytics",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers financial data analytics.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics.",
-    "scoringKeywords": {
-      "financial": 22,
-      "fintech": 21,
-      "industry": 20,
-      "data": 19,
-      "analytics": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Financial Data Analytics - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_23",
-    "role": "fintech",
-    "title": "Cybersecurity in Finance - FinTech Question",
-    "question": "Describe a practical application of Cybersecurity in Finance in fintech.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Cybersecurity represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to cybersecurity in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of cybersecurity in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Threat landscape: phishing (most common entry), ransomware (lock critical systems until payment, average cost $4.5M), DDoS, insider threats\n• Security controls: MFA (multi-factor authentication), encryption (AES-256 at rest, TLS 1.3 in transit), SIEM (Security Information and Event Management)\n• Network security: firewalls, IDS/IPS, segmentation, zero-trust architecture (never trust, always verify)\n• Application security: secure coding practices (OWASP Top 10), penetration testing, bug bounty programs\n• Incident response: preparation → detection & analysis → containment → eradication → recovery → post-incident review",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "cybersecurity-in-finance",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers cybersecurity in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "cybersecurity": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "finance": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Cybersecurity in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_24",
-    "role": "fintech",
-    "title": "Mobile Banking Solutions - FinTech Question",
-    "question": "What challenges might arise in implementing Mobile Banking Solutions and how would you address them?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Mobile Banking Solutions represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to mobile banking solutions.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of mobile banking solutions within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Neobank features: instant onboarding (eKYC with document scan + selfie), virtual cards, spending categorization, budgeting tools, savings goals\n• Payment integrations: Apple Pay/Google Pay (tokenized), ACH/SEPA instant transfers, P2P via phone/email, bill pay with smart scheduling\n• Data aggregation: account aggregation via Plaid/Yodhee — see all external accounts in one dashboard\n• Credit building: some neobanks report rent and utility payments to credit bureaus to build credit history\n• Financial health: credit score tracking, spending insights, savings automation with rounding or scheduled transfers",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "mobile-banking-solutions",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers mobile banking solutions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions.",
-    "scoringKeywords": {
-      "solutions": 22,
-      "fintech": 21,
-      "industry": 20,
-      "mobile": 19,
-      "banking": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Mobile Banking Solutions - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_25",
-    "role": "fintech",
-    "title": "Digital Wallets & Neobanks - FinTech Question",
-    "question": "Explain the key concepts of Digital Wallets & Neobanks in the context of fintech.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Digital Wallets & Neobanks represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to digital wallets & neobanks.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of digital wallets & neobanks within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Digital wallets: store payment credentials (card tokens), enable contactless (NFC), online (tokenized checkout), and P2P transfers (linked to bank account or stored balance)\n• Tokenization: card number replaced with a device-specific token — if merchant database is breached, token is useless on other devices\n• Open banking (PSD2): AISP (account information service provider) reads transaction data, PISP (payment initiation service provider) initiates payments\n• Revenue models: interchange (card-linked transactions, 0.2-0.3% debit, 1.5-2.5% credit), subscription (Revolut Premium $10/mo), FX fees (0-0.5%), lending (BNPL, personal loans)\n• Customer acquisition: digital wallet users have 2-3x higher engagement and 30-50% lower churn vs traditional banking app users",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "digital-wallets-&-neobanks",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers digital wallets & neobanks.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "digital": 20,
-      "wallets": 19,
-      "neobanks": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Digital Wallets & Neobanks - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_26",
-    "role": "fintech",
-    "title": "Smart Contracts - FinTech Question",
-    "question": "How would you approach a problem related to Smart Contracts in fintech?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Smart Contracts represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to smart contracts.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of smart contracts within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "smart-contracts",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers smart contracts.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "smart": 20,
-      "contracts": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Smart Contracts - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_27",
-    "role": "fintech",
-    "title": "Decentralized Finance (DeFi) - FinTech Question",
-    "question": "What are the main considerations when dealing with Decentralized Finance (DeFi) in fintech?",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Decentralized Finance (DeFi) represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to decentralized finance (defi).\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of decentralized finance (defi) within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Smart contracts: self-executing code on blockchain (Ethereum, Solana) — automate lending, trading, and other financial services without intermediaries\n• DeFi protocols: lending (Aave, Compound — supply liquidity, earn interest; borrow with overcollateralization), DEXs (Uniswap — automated market maker), yield aggregators (Yearn — auto-harvest highest yields)\n• Automated Market Makers (AMM): constant product formula x*y=k, liquidity providers earn fees from trades but risk impermanent loss\n• Stablecoins: USDT/USDC (fiat-collateralized), DAI (crypto-collateralized, overcollateralized >150%), algorithmic (UST — failed May 2022)\n• Risks: smart contract risk (hacks lost $3.8B in 2022), oracle manipulation, regulatory uncertainty, impermanent loss, wash trading on low-liquidity DEXs",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "decentralized-finance-(defi)",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers decentralized finance (defi).",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "decentralized": 20,
-      "finance": 19,
-      "defi": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Decentralized Finance (DeFi) - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_28",
-    "role": "fintech",
-    "title": "Financial Inclusion Technologies - FinTech Question",
-    "question": "Describe a practical application of Financial Inclusion Technologies in fintech.",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial inclusion technologies.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of financial inclusion technologies within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Mobile money: M-Pesa (Kenya, 50M+ users) enables P2P transfers, bill payments, microloans via basic feature phones — no bank account needed\n• Digital credit: algorithmic scoring using mobile phone data (airtime top-up patterns, call frequency, social network) — Tala, Branch issue loans in minutes\n• Agent banking: retail agents handle cash-in/cash-out for unbanked populations — M-Pesa has 400K+ agents vs 100K bank branches in Sub-Saharan Africa\n• Biometric identification: Aadhaar (India, 1.3B+ registered) enables eKYC and direct benefit transfers — reduces identity verification costs from $10 to $0.15\n• Microinsurance: digital-first microinsurance (BIMA, MicroEnsure) for health, life, crop — premiums as low as $0.50/month via mobile airtime deductions",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "financial-inclusion-technologies",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers financial inclusion technologies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "scoringKeywords": {
-      "financial": 22,
-      "fintech": 21,
-      "industry": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "inclusion": 13,
-      "technologies": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Financial Inclusion Technologies - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_29",
-    "role": "fintech",
-    "title": "Quantum Computing in Finance - FinTech Question",
-    "question": "What challenges might arise in implementing Quantum Computing in Finance and how would you address them?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Quantum Computing in Finance represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to quantum computing in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of quantum computing in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Quantum advantage: Shor's algorithm (factoring large numbers → breaks RSA encryption), Grover's algorithm (search unsorted database → O(√N) vs O(N))\n• Financial applications: portfolio optimization (quantum annealing for large-scale optimization — D-Wave), Monte Carlo simulation (quadratic speedup for pricing complex derivatives)\n• Risk management: quantum Monte Carlo can price complex path-dependent options exponentially faster — McAfee estimates $50B+ annual savings in risk management\n• Current limitations: qubit coherence times (currently microseconds), error rates (need 9+ logical qubits per physical qubit), extreme cooling requirements (near absolute zero)\n• Post-quantum cryptography: NIST selected CRYSTALS-Kyber (key encapsulation) and CRYSTALS-Dilithium (digital signatures) as new standards — financial institutions must migrate before fault-tolerant quantum arrives",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "quantum-computing-in-finance",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers quantum computing in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "quantum": 20,
-      "computing": 19,
-      "finance": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Quantum Computing in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_30",
-    "role": "fintech",
-    "title": "Digital Payments Systems - FinTech Question",
-    "question": "Explain the key concepts of Digital Payments Systems in the context of fintech.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Digital Payments Systems represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to digital payments systems.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of digital payments systems within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Payment ecosystem: payer → payment gateway → processor → card network (Visa/Mastercard) → acquiring bank → merchant\n• Interchange fees: 1.5-3.5% of transaction value — split among card network, issuing bank, and processor\n• Real-time payments: FedNow (US), UPI (India, ~10B transactions/month), Faster Payments (UK) — instant 24/7 settlement\n• Digital wallets: Apple Pay/Google Pay tokenize card numbers — device-specific tokens reduce fraud liability\n• Cross-border payments: correspondent banking (slow, expensive 3-7 days, 3-7% fees) vs challengers (Wise, Airwallex, 0.5-1%, real-time)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "digital-payments-systems",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers digital payments systems.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "digital": 20,
-      "payments": 19,
-      "systems": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Digital Payments Systems - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_31",
-    "role": "fintech",
-    "title": "Blockchain & Cryptocurrency - FinTech Question",
-    "question": "How would you approach a problem related to Blockchain & Cryptocurrency in fintech?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Blockchain & Cryptocurrency represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to blockchain & cryptocurrency.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of blockchain & cryptocurrency within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "blockchain-&-cryptocurrency",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers blockchain & cryptocurrency.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "blockchain": 20,
-      "cryptocurrency": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Blockchain & Cryptocurrency - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_32",
-    "role": "fintech",
-    "title": "Peer-to-Peer Lending - FinTech Question",
-    "question": "What are the main considerations when dealing with Peer-to-Peer Lending in fintech?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Peer-to-Peer Lending represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to peer-to-peer lending.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of peer-to-peer lending within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Platform model: marketplace connects borrowers (higher yield) with investors (principal at risk) — revenue from origination (1-5%) and servicing fees (0.5-1%)\n• Credit assessment: AI/ML models analyze bank transaction data, digital footprint, employment data for credit scoring (often alternative data for thin-file borrowers)\n• Risk and return: typical loan rates 6-36% APR, expected net loss rates 2-10%, investor returns 4-12% after fees and losses\n• Securitization: platforms pool loans into ABS to access capital markets — Lending Club, Prosper issue rated tranches\n• Regulatory framework: SEC registration (notes are securities), state lending licenses, Truth in Lending Act (TILA) disclosure requirements",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "peer-to-peer-lending",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers peer-to-peer lending.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "peer-to-peer": 20,
-      "lending": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Peer-to-Peer Lending - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_33",
-    "role": "fintech",
-    "title": "Robo-Advisors & AI in Finance - FinTech Question",
-    "question": "Describe a practical application of Robo-Advisors & AI in Finance in fintech.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Robo-Advisors & AI represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to robo-advisors & ai in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of robo-advisors & ai in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Robo-advisor model: questionnaire → risk score → portfolio allocation using Modern Portfolio Theory → automatic rebalancing → tax-loss harvesting\n• Portfolio construction: 7-12 ETF portfolios across US equities, international equities, bonds, real estate, commodities\n• Fee structure: typically 0.25% AUM (Betterment, Wealthfront) vs 1%+ for human advisors — lower cost enables small accounts\n• Tax-loss harvesting: automatically sell losing positions to offset capital gains, buy similar (not substantially identical) securities to maintain exposure\n• AI in credit scoring: gradient boosting models (XGBoost, LightGBM) on alternative data — improved default prediction by 15-30% over traditional FICO models",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "robo-advisors-&-ai-in-finance",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers robo-advisors & ai in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "robo-advisors": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "finance": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Robo-Advisors & AI in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_34",
-    "role": "fintech",
-    "title": "Regulatory Technology (RegTech) - FinTech Question",
-    "question": "What challenges might arise in implementing Regulatory Technology (RegTech) and how would you address them?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Regulatory Technology (RegTech) represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to regulatory technology (regtech).\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of regulatory technology (regtech) within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• KYC/AML automation: identity verification (OCR + liveness detection), PEP/sanctions screening, transaction monitoring for suspicious activity patterns\n• Regulatory reporting: automated generation of regulatory filings (MiFID II transaction reporting, EMIR trade reporting, FATCA/CRS)\n• Surveillance: trade surveillance (market abuse detection, spoofing/layering patterns), communications surveillance (voice, email, chat)\n• Risk management: automated capital calculations (Basel III/IV CRR, SA-CCR for derivatives), stress testing\n• Compliance monitoring: policy management, training tracking, conflict of interest checks, personal account dealing surveillance",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "regulatory-technology-(regtech)",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers regulatory technology (regtech).",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "scoringKeywords": {
-      "technology": 22,
-      "fintech": 21,
-      "industry": 20,
-      "regulatory": 19,
-      "regtech": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Regulatory Technology (RegTech) - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_35",
-    "role": "fintech",
-    "title": "InsurTech Innovations - FinTech Question",
-    "question": "Explain the key concepts of InsurTech Innovations in the context of fintech.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "InsurTech Innovations represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to insurtech innovations.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of insurtech innovations within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Distribution: direct-to-consumer digital platforms (Lemonade, PolicyPal) bypass traditional agent/broker channels, reducing acquisition cost by 30-50%\n• Underwriting: telematics (usage-based auto insurance tracking driving behavior), IoT sensors (property insurance for water damage, fire), health wearables\n• Claims processing: AI-powered damage assessment (photo-based auto claims estimate in seconds), fraud detection (network analysis, anomaly detection)\n• Products: on-demand insurance (get covered for specific activities or time periods), parametric insurance (automatic payout when index triggers)\n• Peer-to-peer insurance: pool premiums, unused premiums returned as dividends (aligns incentives, reduces fraud)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "insurtech-innovations",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers insurtech innovations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to insurtech innovations.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "insurtech": 20,
-      "innovations": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of InsurTech Innovations - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_36",
-    "role": "fintech",
-    "title": "Open Banking & APIs - FinTech Question",
-    "question": "How would you approach a problem related to Open Banking & APIs in fintech?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Open Banking & APIs represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to open banking & apis.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of open banking & apis within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "open-banking-&-apis",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers open banking & apis.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to open banking & apis.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "open": 20,
-      "banking": 19,
-      "apis": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Open Banking & APIs - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_37",
-    "role": "fintech",
-    "title": "Financial Data Analytics - FinTech Question",
-    "question": "What are the main considerations when dealing with Financial Data Analytics in fintech?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial Data Analytics represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial data analytics.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of financial data analytics within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Data types: transactional (account activity, payment history), behavioral (app usage, clickstream), alternative (utility payments, social media, browser history)\n• Analytics methods: regression (credit scoring), clustering (customer segmentation), time series (transaction pattern analysis for fraud detection)\n• Real-time analytics: streaming data processing (Kafka, Flink) for fraud detection — a fraudulent transaction must be detected and blocked in <100ms\n• Data privacy: anonymization (k-anonymity, differential privacy), encryption (homomorphic for analysis on encrypted data), consent management (GDPR, CCPA)\n• Use cases: credit underwriting (alternative data improves acceptance rate 15-20% without increasing default rates), personal financial management (spending categorization, budgeting insights)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "financial-data-analytics",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers financial data analytics.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial data analytics.",
-    "scoringKeywords": {
-      "financial": 22,
-      "fintech": 21,
-      "industry": 20,
-      "data": 19,
-      "analytics": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Financial Data Analytics - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_38",
-    "role": "fintech",
-    "title": "Cybersecurity in Finance - FinTech Question",
-    "question": "Describe a practical application of Cybersecurity in Finance in fintech.",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Cybersecurity represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to cybersecurity in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of cybersecurity in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Threat landscape: phishing (most common entry), ransomware (lock critical systems until payment, average cost $4.5M), DDoS, insider threats\n• Security controls: MFA (multi-factor authentication), encryption (AES-256 at rest, TLS 1.3 in transit), SIEM (Security Information and Event Management)\n• Network security: firewalls, IDS/IPS, segmentation, zero-trust architecture (never trust, always verify)\n• Application security: secure coding practices (OWASP Top 10), penetration testing, bug bounty programs\n• Incident response: preparation → detection & analysis → containment → eradication → recovery → post-incident review",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "cybersecurity-in-finance",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers cybersecurity in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to cybersecurity in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "cybersecurity": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "finance": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Cybersecurity in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_39",
-    "role": "fintech",
-    "title": "Mobile Banking Solutions - FinTech Question",
-    "question": "What challenges might arise in implementing Mobile Banking Solutions and how would you address them?",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Mobile Banking Solutions represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to mobile banking solutions.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of mobile banking solutions within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Neobank features: instant onboarding (eKYC with document scan + selfie), virtual cards, spending categorization, budgeting tools, savings goals\n• Payment integrations: Apple Pay/Google Pay (tokenized), ACH/SEPA instant transfers, P2P via phone/email, bill pay with smart scheduling\n• Data aggregation: account aggregation via Plaid/Yodhee — see all external accounts in one dashboard\n• Credit building: some neobanks report rent and utility payments to credit bureaus to build credit history\n• Financial health: credit score tracking, spending insights, savings automation with rounding or scheduled transfers",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "mobile-banking-solutions",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers mobile banking solutions.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to mobile banking solutions.",
-    "scoringKeywords": {
-      "solutions": 22,
-      "fintech": 21,
-      "industry": 20,
-      "mobile": 19,
-      "banking": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Mobile Banking Solutions - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_40",
-    "role": "fintech",
-    "title": "Digital Wallets & Neobanks - FinTech Question",
-    "question": "Explain the key concepts of Digital Wallets & Neobanks in the context of fintech.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Digital Wallets & Neobanks represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to digital wallets & neobanks.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of digital wallets & neobanks within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Digital wallets: store payment credentials (card tokens), enable contactless (NFC), online (tokenized checkout), and P2P transfers (linked to bank account or stored balance)\n• Tokenization: card number replaced with a device-specific token — if merchant database is breached, token is useless on other devices\n• Open banking (PSD2): AISP (account information service provider) reads transaction data, PISP (payment initiation service provider) initiates payments\n• Revenue models: interchange (card-linked transactions, 0.2-0.3% debit, 1.5-2.5% credit), subscription (Revolut Premium $10/mo), FX fees (0-0.5%), lending (BNPL, personal loans)\n• Customer acquisition: digital wallet users have 2-3x higher engagement and 30-50% lower churn vs traditional banking app users",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "digital-wallets-&-neobanks",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers digital wallets & neobanks.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital wallets & neobanks.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "digital": 20,
-      "wallets": 19,
-      "neobanks": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Digital Wallets & Neobanks - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_41",
-    "role": "fintech",
-    "title": "Smart Contracts - FinTech Question",
-    "question": "How would you approach a problem related to Smart Contracts in fintech?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Smart Contracts represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to smart contracts.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of smart contracts within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "smart-contracts",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers smart contracts.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to smart contracts.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "smart": 20,
-      "contracts": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Smart Contracts - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_42",
-    "role": "fintech",
-    "title": "Decentralized Finance (DeFi) - FinTech Question",
-    "question": "What are the main considerations when dealing with Decentralized Finance (DeFi) in fintech?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Decentralized Finance (DeFi) represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to decentralized finance (defi).\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of decentralized finance (defi) within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Smart contracts: self-executing code on blockchain (Ethereum, Solana) — automate lending, trading, and other financial services without intermediaries\n• DeFi protocols: lending (Aave, Compound — supply liquidity, earn interest; borrow with overcollateralization), DEXs (Uniswap — automated market maker), yield aggregators (Yearn — auto-harvest highest yields)\n• Automated Market Makers (AMM): constant product formula x*y=k, liquidity providers earn fees from trades but risk impermanent loss\n• Stablecoins: USDT/USDC (fiat-collateralized), DAI (crypto-collateralized, overcollateralized >150%), algorithmic (UST — failed May 2022)\n• Risks: smart contract risk (hacks lost $3.8B in 2022), oracle manipulation, regulatory uncertainty, impermanent loss, wash trading on low-liquidity DEXs",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "decentralized-finance-(defi)",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers decentralized finance (defi).",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to decentralized finance (defi).",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "decentralized": 20,
-      "finance": 19,
-      "defi": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Decentralized Finance (DeFi) - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_43",
-    "role": "fintech",
-    "title": "Financial Inclusion Technologies - FinTech Question",
-    "question": "Describe a practical application of Financial Inclusion Technologies in fintech.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Financial represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to financial inclusion technologies.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of financial inclusion technologies within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Mobile money: M-Pesa (Kenya, 50M+ users) enables P2P transfers, bill payments, microloans via basic feature phones — no bank account needed\n• Digital credit: algorithmic scoring using mobile phone data (airtime top-up patterns, call frequency, social network) — Tala, Branch issue loans in minutes\n• Agent banking: retail agents handle cash-in/cash-out for unbanked populations — M-Pesa has 400K+ agents vs 100K bank branches in Sub-Saharan Africa\n• Biometric identification: Aadhaar (India, 1.3B+ registered) enables eKYC and direct benefit transfers — reduces identity verification costs from $10 to $0.15\n• Microinsurance: digital-first microinsurance (BIMA, MicroEnsure) for health, life, crop — premiums as low as $0.50/month via mobile airtime deductions",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "financial-inclusion-technologies",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers financial inclusion technologies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to financial inclusion technologies.",
-    "scoringKeywords": {
-      "financial": 22,
-      "fintech": 21,
-      "industry": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "inclusion": 13,
-      "technologies": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Financial Inclusion Technologies - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_44",
-    "role": "fintech",
-    "title": "Quantum Computing in Finance - FinTech Question",
-    "question": "What challenges might arise in implementing Quantum Computing in Finance and how would you address them?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Quantum Computing in Finance represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to quantum computing in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of quantum computing in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Quantum advantage: Shor's algorithm (factoring large numbers → breaks RSA encryption), Grover's algorithm (search unsorted database → O(√N) vs O(N))\n• Financial applications: portfolio optimization (quantum annealing for large-scale optimization — D-Wave), Monte Carlo simulation (quadratic speedup for pricing complex derivatives)\n• Risk management: quantum Monte Carlo can price complex path-dependent options exponentially faster — McAfee estimates $50B+ annual savings in risk management\n• Current limitations: qubit coherence times (currently microseconds), error rates (need 9+ logical qubits per physical qubit), extreme cooling requirements (near absolute zero)\n• Post-quantum cryptography: NIST selected CRYSTALS-Kyber (key encapsulation) and CRYSTALS-Dilithium (digital signatures) as new standards — financial institutions must migrate before fault-tolerant quantum arrives",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "quantum-computing-in-finance",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers quantum computing in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to quantum computing in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "quantum": 20,
-      "computing": 19,
-      "finance": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Quantum Computing in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_45",
-    "role": "fintech",
-    "title": "Digital Payments Systems - FinTech Question",
-    "question": "Explain the key concepts of Digital Payments Systems in the context of fintech.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Digital Payments Systems represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to digital payments systems.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of digital payments systems within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Payment ecosystem: payer → payment gateway → processor → card network (Visa/Mastercard) → acquiring bank → merchant\n• Interchange fees: 1.5-3.5% of transaction value — split among card network, issuing bank, and processor\n• Real-time payments: FedNow (US), UPI (India, ~10B transactions/month), Faster Payments (UK) — instant 24/7 settlement\n• Digital wallets: Apple Pay/Google Pay tokenize card numbers — device-specific tokens reduce fraud liability\n• Cross-border payments: correspondent banking (slow, expensive 3-7 days, 3-7% fees) vs challengers (Wise, Airwallex, 0.5-1%, real-time)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "digital-payments-systems",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers digital payments systems.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to digital payments systems.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "digital": 20,
-      "payments": 19,
-      "systems": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Digital Payments Systems - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_46",
-    "role": "fintech",
-    "title": "Blockchain & Cryptocurrency - FinTech Question",
-    "question": "How would you approach a problem related to Blockchain & Cryptocurrency in fintech?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Blockchain & Cryptocurrency represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to blockchain & cryptocurrency.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of blockchain & cryptocurrency within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a FinTech context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "blockchain-&-cryptocurrency",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers blockchain & cryptocurrency.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to blockchain & cryptocurrency.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "blockchain": 20,
-      "cryptocurrency": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Blockchain & Cryptocurrency - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_47",
-    "role": "fintech",
-    "title": "Peer-to-Peer Lending - FinTech Question",
-    "question": "What are the main considerations when dealing with Peer-to-Peer Lending in fintech?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Peer-to-Peer Lending represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to peer-to-peer lending.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of peer-to-peer lending within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Platform model: marketplace connects borrowers (higher yield) with investors (principal at risk) — revenue from origination (1-5%) and servicing fees (0.5-1%)\n• Credit assessment: AI/ML models analyze bank transaction data, digital footprint, employment data for credit scoring (often alternative data for thin-file borrowers)\n• Risk and return: typical loan rates 6-36% APR, expected net loss rates 2-10%, investor returns 4-12% after fees and losses\n• Securitization: platforms pool loans into ABS to access capital markets — Lending Club, Prosper issue rated tranches\n• Regulatory framework: SEC registration (notes are securities), state lending licenses, Truth in Lending Act (TILA) disclosure requirements",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "peer-to-peer-lending",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers peer-to-peer lending.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to peer-to-peer lending.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "peer-to-peer": 20,
-      "lending": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fintech knowledge of Peer-to-Peer Lending - FinTech Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fintech practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_48",
-    "role": "fintech",
-    "title": "Robo-Advisors & AI in Finance - FinTech Question",
-    "question": "Describe a practical application of Robo-Advisors & AI in Finance in fintech.",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Robo-Advisors & AI represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to robo-advisors & ai in finance.\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of robo-advisors & ai in finance within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• Robo-advisor model: questionnaire → risk score → portfolio allocation using Modern Portfolio Theory → automatic rebalancing → tax-loss harvesting\n• Portfolio construction: 7-12 ETF portfolios across US equities, international equities, bonds, real estate, commodities\n• Fee structure: typically 0.25% AUM (Betterment, Wealthfront) vs 1%+ for human advisors — lower cost enables small accounts\n• Tax-loss harvesting: automatically sell losing positions to offset capital gains, buy similar (not substantially identical) securities to maintain exposure\n• AI in credit scoring: gradient boosting models (XGBoost, LightGBM) on alternative data — improved default prediction by 15-30% over traditional FICO models",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "robo-advisors-&-ai-in-finance",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers robo-advisors & ai in finance.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to robo-advisors & ai in finance.",
-    "scoringKeywords": {
-      "fintech": 22,
-      "industry": 21,
-      "robo-advisors": 20,
-      "concepts": 19,
-      "principles": 16,
-      "understand": 15,
-      "related": 14,
-      "finance": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Robo-Advisors & AI in Finance - FinTech Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fintech-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fintech applications"
-      ],
-      "improvementTips": [
-        "Reference recent fintech deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fintech concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fintech job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fintech_1773311903261_49",
-    "role": "fintech",
-    "title": "Regulatory Technology (RegTech) - FinTech Question",
-    "question": "What challenges might arise in implementing Regulatory Technology (RegTech) and how would you address them?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Regulatory Technology (RegTech) represents a key innovation in financial technology that combines technological advancement with financial services to create efficient, accessible solutions.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to regulatory technology (regtech).\n\n**Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n**Industry Context**: The relevance and importance of regulatory technology (regtech) within the broader FinTech field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
-    "answers": {
-      "concise": {
-        "answer": "• KYC/AML automation: identity verification (OCR + liveness detection), PEP/sanctions screening, transaction monitoring for suspicious activity patterns\n• Regulatory reporting: automated generation of regulatory filings (MiFID II transaction reporting, EMIR trade reporting, FATCA/CRS)\n• Surveillance: trade surveillance (market abuse detection, spoofing/layering patterns), communications surveillance (voice, email, chat)\n• Risk management: automated capital calculations (Basel III/IV CRR, SA-CCR for derivatives), stress testing\n• Compliance monitoring: policy management, training tracking, conflict of interest checks, personal account dealing surveillance",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fintech",
-      "regulatory-technology-(regtech)",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for FinTech industry. Covers regulatory technology (regtech).",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to regulatory technology (regtech).",
-    "scoringKeywords": {
-      "technology": 22,
-      "fintech": 21,
-      "industry": 20,
-      "regulatory": 19,
-      "regtech": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fintech knowledge of Regulatory Technology (RegTech) - FinTech Question.",
       "whyWorks": "Strong answers combine theoretical knowledge with fintech-specific applications, demonstrating both depth and practical relevance.",
       "commonMistakes": [
         "Providing generic definitions without fintech-specific context",
@@ -39230,2566 +31704,6 @@ const questionBank = [
     }
   },
   {
-    "id": "gen_fo_1773311903261_10",
-    "role": "fo",
-    "title": "Multi-Generational Wealth Transfer - Family Office Question",
-    "question": "Explain the key concepts of Multi-Generational Wealth Transfer in the context of family office.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Multi-Generational Wealth Transfer is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to multi-generational wealth transfer.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of multi-generational wealth transfer within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Trust structures: dynastic trust (multi-generational, GST-exempt, avoids estate tax at each generation), GRAT (transfer appreciation tax-free, 10+ year life), IDGT (installment sale to trust, freeze estate value), SLAT (spousal lifetime access trust)\n• Estate tax planning: use lifetime exemption ($13.61M, scheduled to revert to ~$7M in 2026) before sunset, make annual exclusion gifts ($18K/year/donee), pay tuition/medical expenses directly (unlimited gift tax exclusion)\n• Family communication: wealth transfer timeline discussion (when to tell next-gen about inheritance), financial literacy education, shared family values and purpose for wealth\n• The 'shirtsleeves' problem: structure wealth so it supports productive activity rather than disincentivizing work — tied trusts (incentive trusts rewarding education, entrepreneurship, community service)\n• International families: US estate tax applies to worldwide assets for US persons, non-US persons have $60K exemption — cross-border trusts, foreign grantor trusts, dual-residency planning",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "multi-generational-wealth-transfer",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers multi-generational wealth transfer.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "scoringKeywords": {
-      "family": 22,
-      "wealth": 21,
-      "office": 20,
-      "industry": 19,
-      "multi-generational": 18,
-      "transfer": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Multi-Generational Wealth Transfer - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_11",
-    "role": "fo",
-    "title": "Asset Protection Strategies - Family Office Question",
-    "question": "How would you approach a problem related to Asset Protection Strategies in family office?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Asset Protection Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to asset protection strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of asset protection strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "asset-protection-strategies",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers asset protection strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "asset": 19,
-      "protection": 18,
-      "strategies": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Asset Protection Strategies - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_12",
-    "role": "fo",
-    "title": "Family Business Advisory - Family Office Question",
-    "question": "What are the main considerations when dealing with Family Business Advisory in family office?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Family Business Advisory is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family business advisory.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family business advisory within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Business continuity planning: succession planning (identifying next-gen leaders, grooming timeline, transition plan), buy-sell agreements (pre-funding with life insurance, valuation formula), key person insurance\n• Ownership structure: direct ownership, holding company (for multiple businesses or assets), trusts as shareholders, family limited partnership (units with voting/non-voting shares for gifting)\n• Non-family management: professional CEO vs family CEO — independent board with outside directors brings objectivity and strategic guidance\n• Liquidity management: dividend policy (family income needs vs reinvestment), share buyback program (allow exiting family members to sell), stock sales to third parties\n• Next-gen preparation: summer internships, operations rotation, external experience (3-5 years at outside company), board observer role before board seat",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-business-advisory",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family business advisory.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "business": 19,
-      "advisory": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Family Business Advisory - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_13",
-    "role": "fo",
-    "title": "Concierge Services for Families - Family Office Question",
-    "question": "Describe a practical application of Concierge Services for Families in family office.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Concierge Services for Families is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to concierge services for families.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of concierge services for families within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Travel: private aviation (Wheels Up, NetJets, Flexjet — fractional, jet card, charter), luxury hotels (Four Seasons Preferred Partner, Aman brand access, Virtuoso benefits), cruise charters (yacht rental, expedition cruises)\n• Events: private dining with Michelin-starred chefs, VIP access to fashion weeks, art fairs (Art Basel VIP), sports events (Super Bowl, Wimbledon, Olympics), cultural events (Met Gala, Cannes)\n• Health: executive health programs (Mayo Clinic, Cleveland Clinic Executive Health), medical concierge (appointment booking, second opinions, treatment coordination), wellness retreats\n• Education: private tutoring, executive education (Stanford, Harvard programs), language instruction, specialized coaching (music, sports, arts)\n• Lifestyle: personal shopping (fashion, art, jewelry), home aesthetics (interior design, landscaping, art curation), pet care, membership management (golf clubs, social clubs)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "concierge-services-for-families",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers concierge services for families.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "concierge": 19,
-      "services": 18,
-      "families": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Concierge Services for Families - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_14",
-    "role": "fo",
-    "title": "Educational Planning for Heirs - Family Office Question",
-    "question": "What challenges might arise in implementing Educational Planning for Heirs and how would you address them?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Educational Planning for Heirs is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to educational planning for heirs.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of educational planning for heirs within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Educational funding: 529 plans (tax-free growth for qualified education expenses, up to $18K/year gift-tax-free, >$300K per beneficiary in some states), Coverdell ESA (limited to $2K/year, more investment options), UTMAs/UGMAs (custodial accounts, become child's property at 18/21)\n• School selection: academic assessment, educational consultant engagement, school visits (boarding schools: Phillips Exeter, St. Paul's, Deerfield — 5-10+ applications each)\n• University preparation: standardized testing (SAT/ACT prep, subject tests), admissions consulting, extracurricular portfolio building, internship placement\n• Graduate education: MBA (Harvard, Stanford, Wharton), law school (Yale, Harvard), medical school, executive education — funded through family loans or gifts\n• Practical education: financial literacy programs (teaching budgeting, investing, credit), family business internship, philanthropic board participation, trustee meetings observation",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "educational-planning-for-heirs",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers educational planning for heirs.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "educational": 19,
-      "planning": 18,
-      "heirs": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Educational Planning for Heirs - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_15",
-    "role": "fo",
-    "title": "Wealth Preservation Strategies - Family Office Question",
-    "question": "Explain the key concepts of Wealth Preservation Strategies in the context of family office.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Wealth Preservation Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to wealth preservation strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of wealth preservation strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Asset allocation for wealth preservation: 30-50% fixed income (govt bonds, TIPS, munis), 20-40% equities (large cap, dividend stocks), 10-25% alternatives (PE, real estate, hedge funds), 5-10% inflation hedges (gold, TIPS, real assets)\n• Trust structures: revocable living trust (avoid probate), irrevocable trust (asset protection, estate tax savings), GRAT (grantor retained annuity trust for tax-efficient wealth transfer), dynasty trust (multi-generational, skips estate tax generation-skipping transfer tax)\n• Asset protection: offshore trusts (Cook Islands, Nevis), domestic asset protection trusts (NV, DE), family limited partnerships (FLP discount on minority interest)\n• Tax minimization: muni bonds (federal/state tax-free), life insurance policies (tax-deferred growth), charitable trusts (CRAT, CRUT for income + charitable deduction)\n• Multi-jurisdiction planning: different countries have different tax, legal, and reporting regimes — dual residency planning, tax treaty optimization",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "wealth-preservation-strategies",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers wealth preservation strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "wealth": 21,
-      "office": 20,
-      "industry": 19,
-      "preservation": 18,
-      "strategies": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Wealth Preservation Strategies - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_16",
-    "role": "fo",
-    "title": "Estate Planning & Trusts - Family Office Question",
-    "question": "How would you approach a problem related to Estate Planning & Trusts in family office?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Estate Planning & Trusts is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to estate planning & trusts.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of estate planning & trusts within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "estate-planning-&-trusts",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers estate planning & trusts.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "estate": 19,
-      "planning": 18,
-      "trusts": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Estate Planning & Trusts - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_17",
-    "role": "fo",
-    "title": "Family Governance Structures - Family Office Question",
-    "question": "What are the main considerations when dealing with Family Governance Structures in family office?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Family Governance Structures is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family governance structures.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family governance structures within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Family constitution: written document defining family values, vision, wealth purpose, governance principles, conflict resolution process\n• Family council: elected representatives from family branches meet quarterly to discuss family matters, policy changes, and strategic decisions\n• Family office board: independent directors + family members — provides oversight, ensures professional management, avoids family-driven decisions\n• Family employment policy: criteria for family members to work in the family office (education, external experience >3-5 years, merit-based)\n• Next-gen education: financial literacy programs from age 18, family investment committee participation, externships at external asset managers",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-governance-structures",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family governance structures.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "governance": 19,
-      "structures": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Family Governance Structures - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_18",
-    "role": "fo",
-    "title": "Philanthropic Planning - Family Office Question",
-    "question": "Describe a practical application of Philanthropic Planning in family office.",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Philanthropic Planning is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to philanthropic planning.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of philanthropic planning within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Vehicles: Donor Advised Funds (DAF - simplest, 60% AGI deduction, no required annual distribution), Private Foundation (full control, 5% annual distribution required, 30% AGI limit), Charitable Trusts (CRAT/CRUT - income for donor, remainder to charity)\n• Impact investing: program-related investments (PRIs, count toward foundation's 5% distribution), mission-related investments (MRI, market-rate returns + impact)\n• Tax strategy: donate appreciated stock (deduct fair market value, avoid capital gains tax — saves up to 40% on combined fed + state capital gains), bunching strategy (combine multiple years of giving into one for itemized deduction)\n• Giving strategy: strategic philanthropy (measurable outcomes, theory of change) vs responsive giving (donor's passion areas)\n• Family philanthropy: family foundation board gives next-gen hands-on experience with wealth stewardship and community engagement",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "philanthropic-planning",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers philanthropic planning.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "philanthropic": 19,
-      "planning": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Philanthropic Planning - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_19",
-    "role": "fo",
-    "title": "Investment Management for UHNW - Family Office Question",
-    "question": "What challenges might arise in implementing Investment Management for UHNW and how would you address them?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Investment Management for UHNW is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to investment management for uhnw.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of investment management for uhnw within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Asset allocation for UHNW: 20-40% public equities, 15-25% private equity (direct, co-investment, fund), 10-20% real estate, 10-20% fixed income, 5-15% hedge funds, 3-10% real assets (gold, timber, farmland, infrastructure)\n• Direct investments: co-invest alongside top PE firms (0-0.5% fee vs 2/20 for fund investment), direct real estate (value-add, opportunistic), direct lending\n• Alternative asset access: UHNW families get access to top-tier funds (Sequoia, KKR, Blackstone) that are closed to smaller investors — minimums $5-25M for direct commitments\n• Tax-aware investing: municipal bonds (state-specific for double tax-free), tax-loss harvesting, qualified opportunity zones (defer capital gains, reduce through 2026)\n• Benchmarking total portfolio: absolute return target (6-8% real return) rather than relative to public market indices — due to high allocation to illiquid alternatives",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "investment-management-for-uhnw",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers investment management for uhnw.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "scoringKeywords": {
-      "family": 22,
-      "management": 21,
-      "office": 20,
-      "industry": 19,
-      "investment": 18,
-      "uhnw": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Investment Management for UHNW - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_20",
-    "role": "fo",
-    "title": "Tax Optimization Strategies - Family Office Question",
-    "question": "Explain the key concepts of Tax Optimization Strategies in the context of family office.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Tax Optimization Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to tax optimization strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of tax optimization strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Income tax strategies: municipal bond portfolios (triple tax-free for state residents), tax-loss harvesting (offset capital gains with realized losses, carry forward $3K/year against ordinary income), asset location (tax-efficient investments in taxable accounts, tax-inefficient in retirement accounts)\n• Estate tax strategies: annual exclusion gifts ($18K/year per donee in 2025), lifetime exemption ($13.61M in 2025, scheduled to revert to ~$7M in 2026), GRAT (zero out to freeze gift value), IDGT (installment sale to defective grantor trust), charitable lead trust (CLT)\n• Generation-skipping transfer tax (GST): 40% tax on transfers to grandchildren — GST exemption ($13.61M) combined with dynasty trusts can avoid\n• International tax: Foreign Account Tax Compliance Act (FATCA) reporting, PFIC (passive foreign investment company) rules make foreign mutual funds tax-disadvantaged, exit tax for giving up US citizenship\n• State tax considerations: move to no-income-tax states (FL, TX, NV, WY) before realizing large capital gains, state-level estate tax (some states have $1M exemption vs $13.61M federal)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "tax-optimization-strategies",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers tax optimization strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "optimization": 19,
-      "strategies": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Tax Optimization Strategies - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_21",
-    "role": "fo",
-    "title": "Succession Planning - Family Office Question",
-    "question": "How would you approach a problem related to Succession Planning in family office?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Succession Planning is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to succession planning.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of succession planning within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "succession-planning",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers succession planning.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to succession planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to succession planning.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "succession": 19,
-      "planning": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Succession Planning - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_22",
-    "role": "fo",
-    "title": "Risk Management for Family Wealth - Family Office Question",
-    "question": "What are the main considerations when dealing with Risk Management for Family Wealth in family office?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Risk Management for Family Wealth is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to risk management for family wealth.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of risk management for family wealth within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Market risk: diversification across asset classes (50+ positions in 6+ asset classes), currency diversification (30-50% non-USD), scenario analysis, tail hedging (long VIX options, trend-following strategies)\n• Concentration risk: single stock positions (limit to <10% of net worth, hedge with collars, monetize with prepaid variable forwards)\n• Liability risk: umbrella insurance ($10-50M excess liability), D&O insurance for family office board members, cyber insurance, kidnap & ransom for high-profile families\n• Longevity risk: the family may need wealth to last 100+ years (multi-generational) — growth assets needed but sequence of returns risk in first decade\n• Family litigation risk: prenuptial agreements (for children's marriages), no-contest clauses in trusts (punishes heirs who challenge will), confidentiality agreements",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "risk-management-for-family-wealth",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers risk management for family wealth.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth.",
-    "scoringKeywords": {
-      "family": 22,
-      "management": 21,
-      "wealth": 20,
-      "office": 19,
-      "industry": 18,
-      "risk": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Risk Management for Family Wealth - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_23",
-    "role": "fo",
-    "title": "Lifestyle Management Services - Family Office Question",
-    "question": "Describe a practical application of Lifestyle Management Services in family office.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Lifestyle Management Services is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to lifestyle management services.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of lifestyle management services within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Property management: staff management (household staff hiring, payroll, benefits), maintenance coordination (contractor vetting, project management, emergency systems), property portfolio oversight (multiple domestic + international residences)\n• Travel coordination: private aviation (fractional ownership NetJets, jet cards, charter), yacht management (crew, maintenance, itinerary planning), global concierge (visa, security, medical evacuation planning)\n• Security: residential security (surveillance systems, perimeter security, safe rooms), travel security (secure transport, advance team, local threat assessment), cybersecurity (family member digital protection, social media monitoring)\n• Education planning: school selection (boarding schools, universities), admissions consulting, tutoring coordination, internship placement\n• Household budgeting: annual lifestyle budget (typically 2-5% of liquid net worth), expense tracking, vendor management, cost optimization",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "lifestyle-management-services",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers lifestyle management services.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services.",
-    "scoringKeywords": {
-      "family": 22,
-      "management": 21,
-      "office": 20,
-      "industry": 19,
-      "lifestyle": 18,
-      "services": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Lifestyle Management Services - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_24",
-    "role": "fo",
-    "title": "Family Office Operations - Family Office Question",
-    "question": "What challenges might arise in implementing Family Office Operations and how would you address them?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Family Office Operations is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family office operations.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family office operations within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Office structure: single-family office (SFO, dedicated team), multi-family office (MFO, shared costs with other families, $50-100M minimum), virtual family office (outsourced services, cost-effective for $30-100M)\n• Service model: investment management (direct deals, fund allocation, manager selection), financial planning (tax, estate, insurance), administrative (bill pay, property management, concierge), family governance (council, constitution, next-gen education)\n• Technology stack: accounting (QuickBooks, NetSuite), portfolio reporting (Addepar, Altoo, Vestmark), CRM (Salesforce, Notion), document management (Sharefile, Dropbox Business), security (enterprise MDM, encrypted communications)\n• Staffing: typical SFO team for $100M-500M: 2-5 investment professionals, CFO/accountant, admin/lifestyle manager; for $500M+: 5-15 investment, 3-5 legal/tax, 2-5 back office\n• Cost structure: SFO costs 0.5-1.5% of AUM, MFO costs 0.3-0.8% of AUM, virtual family office 0.1-0.3% of AUM — economies of scale kick in above $500M",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-office-operations",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family office operations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family office operations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family office operations.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "operations": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Family Office Operations - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_25",
-    "role": "fo",
-    "title": "Multi-Generational Wealth Transfer - Family Office Question",
-    "question": "Explain the key concepts of Multi-Generational Wealth Transfer in the context of family office.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Multi-Generational Wealth Transfer is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to multi-generational wealth transfer.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of multi-generational wealth transfer within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Trust structures: dynastic trust (multi-generational, GST-exempt, avoids estate tax at each generation), GRAT (transfer appreciation tax-free, 10+ year life), IDGT (installment sale to trust, freeze estate value), SLAT (spousal lifetime access trust)\n• Estate tax planning: use lifetime exemption ($13.61M, scheduled to revert to ~$7M in 2026) before sunset, make annual exclusion gifts ($18K/year/donee), pay tuition/medical expenses directly (unlimited gift tax exclusion)\n• Family communication: wealth transfer timeline discussion (when to tell next-gen about inheritance), financial literacy education, shared family values and purpose for wealth\n• The 'shirtsleeves' problem: structure wealth so it supports productive activity rather than disincentivizing work — tied trusts (incentive trusts rewarding education, entrepreneurship, community service)\n• International families: US estate tax applies to worldwide assets for US persons, non-US persons have $60K exemption — cross-border trusts, foreign grantor trusts, dual-residency planning",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "multi-generational-wealth-transfer",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers multi-generational wealth transfer.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "scoringKeywords": {
-      "family": 22,
-      "wealth": 21,
-      "office": 20,
-      "industry": 19,
-      "multi-generational": 18,
-      "transfer": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Multi-Generational Wealth Transfer - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_26",
-    "role": "fo",
-    "title": "Asset Protection Strategies - Family Office Question",
-    "question": "How would you approach a problem related to Asset Protection Strategies in family office?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Asset Protection Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to asset protection strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of asset protection strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "asset-protection-strategies",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers asset protection strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "asset": 19,
-      "protection": 18,
-      "strategies": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Asset Protection Strategies - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_27",
-    "role": "fo",
-    "title": "Family Business Advisory - Family Office Question",
-    "question": "What are the main considerations when dealing with Family Business Advisory in family office?",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Family Business Advisory is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family business advisory.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family business advisory within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Business continuity planning: succession planning (identifying next-gen leaders, grooming timeline, transition plan), buy-sell agreements (pre-funding with life insurance, valuation formula), key person insurance\n• Ownership structure: direct ownership, holding company (for multiple businesses or assets), trusts as shareholders, family limited partnership (units with voting/non-voting shares for gifting)\n• Non-family management: professional CEO vs family CEO — independent board with outside directors brings objectivity and strategic guidance\n• Liquidity management: dividend policy (family income needs vs reinvestment), share buyback program (allow exiting family members to sell), stock sales to third parties\n• Next-gen preparation: summer internships, operations rotation, external experience (3-5 years at outside company), board observer role before board seat",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-business-advisory",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family business advisory.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "business": 19,
-      "advisory": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Family Business Advisory - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_28",
-    "role": "fo",
-    "title": "Concierge Services for Families - Family Office Question",
-    "question": "Describe a practical application of Concierge Services for Families in family office.",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Concierge Services for Families is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to concierge services for families.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of concierge services for families within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Travel: private aviation (Wheels Up, NetJets, Flexjet — fractional, jet card, charter), luxury hotels (Four Seasons Preferred Partner, Aman brand access, Virtuoso benefits), cruise charters (yacht rental, expedition cruises)\n• Events: private dining with Michelin-starred chefs, VIP access to fashion weeks, art fairs (Art Basel VIP), sports events (Super Bowl, Wimbledon, Olympics), cultural events (Met Gala, Cannes)\n• Health: executive health programs (Mayo Clinic, Cleveland Clinic Executive Health), medical concierge (appointment booking, second opinions, treatment coordination), wellness retreats\n• Education: private tutoring, executive education (Stanford, Harvard programs), language instruction, specialized coaching (music, sports, arts)\n• Lifestyle: personal shopping (fashion, art, jewelry), home aesthetics (interior design, landscaping, art curation), pet care, membership management (golf clubs, social clubs)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "concierge-services-for-families",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers concierge services for families.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "concierge": 19,
-      "services": 18,
-      "families": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Concierge Services for Families - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_29",
-    "role": "fo",
-    "title": "Educational Planning for Heirs - Family Office Question",
-    "question": "What challenges might arise in implementing Educational Planning for Heirs and how would you address them?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Educational Planning for Heirs is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to educational planning for heirs.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of educational planning for heirs within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Educational funding: 529 plans (tax-free growth for qualified education expenses, up to $18K/year gift-tax-free, >$300K per beneficiary in some states), Coverdell ESA (limited to $2K/year, more investment options), UTMAs/UGMAs (custodial accounts, become child's property at 18/21)\n• School selection: academic assessment, educational consultant engagement, school visits (boarding schools: Phillips Exeter, St. Paul's, Deerfield — 5-10+ applications each)\n• University preparation: standardized testing (SAT/ACT prep, subject tests), admissions consulting, extracurricular portfolio building, internship placement\n• Graduate education: MBA (Harvard, Stanford, Wharton), law school (Yale, Harvard), medical school, executive education — funded through family loans or gifts\n• Practical education: financial literacy programs (teaching budgeting, investing, credit), family business internship, philanthropic board participation, trustee meetings observation",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "educational-planning-for-heirs",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers educational planning for heirs.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "educational": 19,
-      "planning": 18,
-      "heirs": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Educational Planning for Heirs - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_30",
-    "role": "fo",
-    "title": "Wealth Preservation Strategies - Family Office Question",
-    "question": "Explain the key concepts of Wealth Preservation Strategies in the context of family office.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Wealth Preservation Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to wealth preservation strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of wealth preservation strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Asset allocation for wealth preservation: 30-50% fixed income (govt bonds, TIPS, munis), 20-40% equities (large cap, dividend stocks), 10-25% alternatives (PE, real estate, hedge funds), 5-10% inflation hedges (gold, TIPS, real assets)\n• Trust structures: revocable living trust (avoid probate), irrevocable trust (asset protection, estate tax savings), GRAT (grantor retained annuity trust for tax-efficient wealth transfer), dynasty trust (multi-generational, skips estate tax generation-skipping transfer tax)\n• Asset protection: offshore trusts (Cook Islands, Nevis), domestic asset protection trusts (NV, DE), family limited partnerships (FLP discount on minority interest)\n• Tax minimization: muni bonds (federal/state tax-free), life insurance policies (tax-deferred growth), charitable trusts (CRAT, CRUT for income + charitable deduction)\n• Multi-jurisdiction planning: different countries have different tax, legal, and reporting regimes — dual residency planning, tax treaty optimization",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "wealth-preservation-strategies",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers wealth preservation strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "wealth": 21,
-      "office": 20,
-      "industry": 19,
-      "preservation": 18,
-      "strategies": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Wealth Preservation Strategies - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_31",
-    "role": "fo",
-    "title": "Estate Planning & Trusts - Family Office Question",
-    "question": "How would you approach a problem related to Estate Planning & Trusts in family office?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Estate Planning & Trusts is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to estate planning & trusts.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of estate planning & trusts within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "estate-planning-&-trusts",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers estate planning & trusts.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "estate": 19,
-      "planning": 18,
-      "trusts": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Estate Planning & Trusts - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_32",
-    "role": "fo",
-    "title": "Family Governance Structures - Family Office Question",
-    "question": "What are the main considerations when dealing with Family Governance Structures in family office?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Family Governance Structures is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family governance structures.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family governance structures within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Family constitution: written document defining family values, vision, wealth purpose, governance principles, conflict resolution process\n• Family council: elected representatives from family branches meet quarterly to discuss family matters, policy changes, and strategic decisions\n• Family office board: independent directors + family members — provides oversight, ensures professional management, avoids family-driven decisions\n• Family employment policy: criteria for family members to work in the family office (education, external experience >3-5 years, merit-based)\n• Next-gen education: financial literacy programs from age 18, family investment committee participation, externships at external asset managers",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-governance-structures",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family governance structures.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "governance": 19,
-      "structures": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Family Governance Structures - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_33",
-    "role": "fo",
-    "title": "Philanthropic Planning - Family Office Question",
-    "question": "Describe a practical application of Philanthropic Planning in family office.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Philanthropic Planning is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to philanthropic planning.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of philanthropic planning within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Vehicles: Donor Advised Funds (DAF - simplest, 60% AGI deduction, no required annual distribution), Private Foundation (full control, 5% annual distribution required, 30% AGI limit), Charitable Trusts (CRAT/CRUT - income for donor, remainder to charity)\n• Impact investing: program-related investments (PRIs, count toward foundation's 5% distribution), mission-related investments (MRI, market-rate returns + impact)\n• Tax strategy: donate appreciated stock (deduct fair market value, avoid capital gains tax — saves up to 40% on combined fed + state capital gains), bunching strategy (combine multiple years of giving into one for itemized deduction)\n• Giving strategy: strategic philanthropy (measurable outcomes, theory of change) vs responsive giving (donor's passion areas)\n• Family philanthropy: family foundation board gives next-gen hands-on experience with wealth stewardship and community engagement",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "philanthropic-planning",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers philanthropic planning.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "philanthropic": 19,
-      "planning": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Philanthropic Planning - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_34",
-    "role": "fo",
-    "title": "Investment Management for UHNW - Family Office Question",
-    "question": "What challenges might arise in implementing Investment Management for UHNW and how would you address them?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Investment Management for UHNW is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to investment management for uhnw.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of investment management for uhnw within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Asset allocation for UHNW: 20-40% public equities, 15-25% private equity (direct, co-investment, fund), 10-20% real estate, 10-20% fixed income, 5-15% hedge funds, 3-10% real assets (gold, timber, farmland, infrastructure)\n• Direct investments: co-invest alongside top PE firms (0-0.5% fee vs 2/20 for fund investment), direct real estate (value-add, opportunistic), direct lending\n• Alternative asset access: UHNW families get access to top-tier funds (Sequoia, KKR, Blackstone) that are closed to smaller investors — minimums $5-25M for direct commitments\n• Tax-aware investing: municipal bonds (state-specific for double tax-free), tax-loss harvesting, qualified opportunity zones (defer capital gains, reduce through 2026)\n• Benchmarking total portfolio: absolute return target (6-8% real return) rather than relative to public market indices — due to high allocation to illiquid alternatives",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "investment-management-for-uhnw",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers investment management for uhnw.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "scoringKeywords": {
-      "family": 22,
-      "management": 21,
-      "office": 20,
-      "industry": 19,
-      "investment": 18,
-      "uhnw": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Investment Management for UHNW - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_35",
-    "role": "fo",
-    "title": "Tax Optimization Strategies - Family Office Question",
-    "question": "Explain the key concepts of Tax Optimization Strategies in the context of family office.",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Tax Optimization Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to tax optimization strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of tax optimization strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Income tax strategies: municipal bond portfolios (triple tax-free for state residents), tax-loss harvesting (offset capital gains with realized losses, carry forward $3K/year against ordinary income), asset location (tax-efficient investments in taxable accounts, tax-inefficient in retirement accounts)\n• Estate tax strategies: annual exclusion gifts ($18K/year per donee in 2025), lifetime exemption ($13.61M in 2025, scheduled to revert to ~$7M in 2026), GRAT (zero out to freeze gift value), IDGT (installment sale to defective grantor trust), charitable lead trust (CLT)\n• Generation-skipping transfer tax (GST): 40% tax on transfers to grandchildren — GST exemption ($13.61M) combined with dynasty trusts can avoid\n• International tax: Foreign Account Tax Compliance Act (FATCA) reporting, PFIC (passive foreign investment company) rules make foreign mutual funds tax-disadvantaged, exit tax for giving up US citizenship\n• State tax considerations: move to no-income-tax states (FL, TX, NV, WY) before realizing large capital gains, state-level estate tax (some states have $1M exemption vs $13.61M federal)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "tax-optimization-strategies",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers tax optimization strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to tax optimization strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "optimization": 19,
-      "strategies": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Tax Optimization Strategies - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_36",
-    "role": "fo",
-    "title": "Succession Planning - Family Office Question",
-    "question": "How would you approach a problem related to Succession Planning in family office?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Succession Planning is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to succession planning.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of succession planning within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "succession-planning",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers succession planning.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to succession planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to succession planning.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "succession": 19,
-      "planning": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Succession Planning - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_37",
-    "role": "fo",
-    "title": "Risk Management for Family Wealth - Family Office Question",
-    "question": "What are the main considerations when dealing with Risk Management for Family Wealth in family office?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Risk Management for Family Wealth is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to risk management for family wealth.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of risk management for family wealth within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Market risk: diversification across asset classes (50+ positions in 6+ asset classes), currency diversification (30-50% non-USD), scenario analysis, tail hedging (long VIX options, trend-following strategies)\n• Concentration risk: single stock positions (limit to <10% of net worth, hedge with collars, monetize with prepaid variable forwards)\n• Liability risk: umbrella insurance ($10-50M excess liability), D&O insurance for family office board members, cyber insurance, kidnap & ransom for high-profile families\n• Longevity risk: the family may need wealth to last 100+ years (multi-generational) — growth assets needed but sequence of returns risk in first decade\n• Family litigation risk: prenuptial agreements (for children's marriages), no-contest clauses in trusts (punishes heirs who challenge will), confidentiality agreements",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "risk-management-for-family-wealth",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers risk management for family wealth.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to risk management for family wealth.",
-    "scoringKeywords": {
-      "family": 22,
-      "management": 21,
-      "wealth": 20,
-      "office": 19,
-      "industry": 18,
-      "risk": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Risk Management for Family Wealth - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_38",
-    "role": "fo",
-    "title": "Lifestyle Management Services - Family Office Question",
-    "question": "Describe a practical application of Lifestyle Management Services in family office.",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Lifestyle Management Services is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to lifestyle management services.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of lifestyle management services within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Property management: staff management (household staff hiring, payroll, benefits), maintenance coordination (contractor vetting, project management, emergency systems), property portfolio oversight (multiple domestic + international residences)\n• Travel coordination: private aviation (fractional ownership NetJets, jet cards, charter), yacht management (crew, maintenance, itinerary planning), global concierge (visa, security, medical evacuation planning)\n• Security: residential security (surveillance systems, perimeter security, safe rooms), travel security (secure transport, advance team, local threat assessment), cybersecurity (family member digital protection, social media monitoring)\n• Education planning: school selection (boarding schools, universities), admissions consulting, tutoring coordination, internship placement\n• Household budgeting: annual lifestyle budget (typically 2-5% of liquid net worth), expense tracking, vendor management, cost optimization",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "lifestyle-management-services",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers lifestyle management services.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to lifestyle management services.",
-    "scoringKeywords": {
-      "family": 22,
-      "management": 21,
-      "office": 20,
-      "industry": 19,
-      "lifestyle": 18,
-      "services": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Lifestyle Management Services - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_39",
-    "role": "fo",
-    "title": "Family Office Operations - Family Office Question",
-    "question": "What challenges might arise in implementing Family Office Operations and how would you address them?",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Family Office Operations is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family office operations.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family office operations within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Office structure: single-family office (SFO, dedicated team), multi-family office (MFO, shared costs with other families, $50-100M minimum), virtual family office (outsourced services, cost-effective for $30-100M)\n• Service model: investment management (direct deals, fund allocation, manager selection), financial planning (tax, estate, insurance), administrative (bill pay, property management, concierge), family governance (council, constitution, next-gen education)\n• Technology stack: accounting (QuickBooks, NetSuite), portfolio reporting (Addepar, Altoo, Vestmark), CRM (Salesforce, Notion), document management (Sharefile, Dropbox Business), security (enterprise MDM, encrypted communications)\n• Staffing: typical SFO team for $100M-500M: 2-5 investment professionals, CFO/accountant, admin/lifestyle manager; for $500M+: 5-15 investment, 3-5 legal/tax, 2-5 back office\n• Cost structure: SFO costs 0.5-1.5% of AUM, MFO costs 0.3-0.8% of AUM, virtual family office 0.1-0.3% of AUM — economies of scale kick in above $500M",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-office-operations",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family office operations.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family office operations.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family office operations.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "operations": 19,
-      "concepts": 18,
-      "principles": 15,
-      "understand": 14,
-      "related": 13,
-      "applications": 12,
-      "practices": 11,
-      "standards": 10,
-      "regulations": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Family Office Operations - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_40",
-    "role": "fo",
-    "title": "Multi-Generational Wealth Transfer - Family Office Question",
-    "question": "Explain the key concepts of Multi-Generational Wealth Transfer in the context of family office.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Multi-Generational Wealth Transfer is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to multi-generational wealth transfer.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of multi-generational wealth transfer within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Trust structures: dynastic trust (multi-generational, GST-exempt, avoids estate tax at each generation), GRAT (transfer appreciation tax-free, 10+ year life), IDGT (installment sale to trust, freeze estate value), SLAT (spousal lifetime access trust)\n• Estate tax planning: use lifetime exemption ($13.61M, scheduled to revert to ~$7M in 2026) before sunset, make annual exclusion gifts ($18K/year/donee), pay tuition/medical expenses directly (unlimited gift tax exclusion)\n• Family communication: wealth transfer timeline discussion (when to tell next-gen about inheritance), financial literacy education, shared family values and purpose for wealth\n• The 'shirtsleeves' problem: structure wealth so it supports productive activity rather than disincentivizing work — tied trusts (incentive trusts rewarding education, entrepreneurship, community service)\n• International families: US estate tax applies to worldwide assets for US persons, non-US persons have $60K exemption — cross-border trusts, foreign grantor trusts, dual-residency planning",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "multi-generational-wealth-transfer",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers multi-generational wealth transfer.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to multi-generational wealth transfer.",
-    "scoringKeywords": {
-      "family": 22,
-      "wealth": 21,
-      "office": 20,
-      "industry": 19,
-      "multi-generational": 18,
-      "transfer": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Multi-Generational Wealth Transfer - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_41",
-    "role": "fo",
-    "title": "Asset Protection Strategies - Family Office Question",
-    "question": "How would you approach a problem related to Asset Protection Strategies in family office?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Asset Protection Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to asset protection strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of asset protection strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "asset-protection-strategies",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers asset protection strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to asset protection strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "asset": 19,
-      "protection": 18,
-      "strategies": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Asset Protection Strategies - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_42",
-    "role": "fo",
-    "title": "Family Business Advisory - Family Office Question",
-    "question": "What are the main considerations when dealing with Family Business Advisory in family office?",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Family Business Advisory is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family business advisory.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family business advisory within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Business continuity planning: succession planning (identifying next-gen leaders, grooming timeline, transition plan), buy-sell agreements (pre-funding with life insurance, valuation formula), key person insurance\n• Ownership structure: direct ownership, holding company (for multiple businesses or assets), trusts as shareholders, family limited partnership (units with voting/non-voting shares for gifting)\n• Non-family management: professional CEO vs family CEO — independent board with outside directors brings objectivity and strategic guidance\n• Liquidity management: dividend policy (family income needs vs reinvestment), share buyback program (allow exiting family members to sell), stock sales to third parties\n• Next-gen preparation: summer internships, operations rotation, external experience (3-5 years at outside company), board observer role before board seat",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-business-advisory",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family business advisory.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family business advisory.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "business": 19,
-      "advisory": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Family Business Advisory - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_43",
-    "role": "fo",
-    "title": "Concierge Services for Families - Family Office Question",
-    "question": "Describe a practical application of Concierge Services for Families in family office.",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Concierge Services for Families is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to concierge services for families.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of concierge services for families within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Travel: private aviation (Wheels Up, NetJets, Flexjet — fractional, jet card, charter), luxury hotels (Four Seasons Preferred Partner, Aman brand access, Virtuoso benefits), cruise charters (yacht rental, expedition cruises)\n• Events: private dining with Michelin-starred chefs, VIP access to fashion weeks, art fairs (Art Basel VIP), sports events (Super Bowl, Wimbledon, Olympics), cultural events (Met Gala, Cannes)\n• Health: executive health programs (Mayo Clinic, Cleveland Clinic Executive Health), medical concierge (appointment booking, second opinions, treatment coordination), wellness retreats\n• Education: private tutoring, executive education (Stanford, Harvard programs), language instruction, specialized coaching (music, sports, arts)\n• Lifestyle: personal shopping (fashion, art, jewelry), home aesthetics (interior design, landscaping, art curation), pet care, membership management (golf clubs, social clubs)",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "concierge-services-for-families",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers concierge services for families.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to concierge services for families.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "concierge": 19,
-      "services": 18,
-      "families": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Concierge Services for Families - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_44",
-    "role": "fo",
-    "title": "Educational Planning for Heirs - Family Office Question",
-    "question": "What challenges might arise in implementing Educational Planning for Heirs and how would you address them?",
-    "difficulty": "easy",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Educational Planning for Heirs is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to educational planning for heirs.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of educational planning for heirs within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Educational funding: 529 plans (tax-free growth for qualified education expenses, up to $18K/year gift-tax-free, >$300K per beneficiary in some states), Coverdell ESA (limited to $2K/year, more investment options), UTMAs/UGMAs (custodial accounts, become child's property at 18/21)\n• School selection: academic assessment, educational consultant engagement, school visits (boarding schools: Phillips Exeter, St. Paul's, Deerfield — 5-10+ applications each)\n• University preparation: standardized testing (SAT/ACT prep, subject tests), admissions consulting, extracurricular portfolio building, internship placement\n• Graduate education: MBA (Harvard, Stanford, Wharton), law school (Yale, Harvard), medical school, executive education — funded through family loans or gifts\n• Practical education: financial literacy programs (teaching budgeting, investing, credit), family business internship, philanthropic board participation, trustee meetings observation",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "educational-planning-for-heirs",
-      "easy",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers educational planning for heirs.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to educational planning for heirs.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "educational": 19,
-      "planning": 18,
-      "heirs": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Educational Planning for Heirs - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_45",
-    "role": "fo",
-    "title": "Wealth Preservation Strategies - Family Office Question",
-    "question": "Explain the key concepts of Wealth Preservation Strategies in the context of family office.",
-    "difficulty": "easy",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Wealth Preservation Strategies is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to wealth preservation strategies.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of wealth preservation strategies within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Asset allocation for wealth preservation: 30-50% fixed income (govt bonds, TIPS, munis), 20-40% equities (large cap, dividend stocks), 10-25% alternatives (PE, real estate, hedge funds), 5-10% inflation hedges (gold, TIPS, real assets)\n• Trust structures: revocable living trust (avoid probate), irrevocable trust (asset protection, estate tax savings), GRAT (grantor retained annuity trust for tax-efficient wealth transfer), dynasty trust (multi-generational, skips estate tax generation-skipping transfer tax)\n• Asset protection: offshore trusts (Cook Islands, Nevis), domestic asset protection trusts (NV, DE), family limited partnerships (FLP discount on minority interest)\n• Tax minimization: muni bonds (federal/state tax-free), life insurance policies (tax-deferred growth), charitable trusts (CRAT, CRUT for income + charitable deduction)\n• Multi-jurisdiction planning: different countries have different tax, legal, and reporting regimes — dual residency planning, tax treaty optimization",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "wealth-preservation-strategies",
-      "easy",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers wealth preservation strategies.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to wealth preservation strategies.",
-    "scoringKeywords": {
-      "family": 22,
-      "wealth": 21,
-      "office": 20,
-      "industry": 19,
-      "preservation": 18,
-      "strategies": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Wealth Preservation Strategies - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_46",
-    "role": "fo",
-    "title": "Estate Planning & Trusts - Family Office Question",
-    "question": "How would you approach a problem related to Estate Planning & Trusts in family office?",
-    "difficulty": "easy",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Estate Planning & Trusts is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to estate planning & trusts.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of estate planning & trusts within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Problem analysis: define the scope and key variables of the problem in a Family Office context\n• Methodology selection: choose the appropriate framework, model, or approach based on the specific requirements\n• Step-by-step process: outline the systematic approach professionals would follow in practice\n• Potential challenges: identify common pitfalls, data limitations, and risk factors that may arise\n• Expected outcomes: describe the anticipated results, success metrics, and how to evaluate effectiveness",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "estate-planning-&-trusts",
-      "easy",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers estate planning & trusts.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to estate planning & trusts.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "estate": 19,
-      "planning": 18,
-      "trusts": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Analyze the problem",
-      "Select appropriate methodology",
-      "Outline step-by-step process",
-      "Identify potential challenges",
-      "Describe expected outcomes"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Estate Planning & Trusts - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_47",
-    "role": "fo",
-    "title": "Family Governance Structures - Family Office Question",
-    "question": "What are the main considerations when dealing with Family Governance Structures in family office?",
-    "difficulty": "medium",
-    "category": "practical",
-    "frequencyScore": 4,
-    "modelAnswer": "Family Governance Structures is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to family governance structures.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of family governance structures within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Family constitution: written document defining family values, vision, wealth purpose, governance principles, conflict resolution process\n• Family council: elected representatives from family branches meet quarterly to discuss family matters, policy changes, and strategic decisions\n• Family office board: independent directors + family members — provides oversight, ensures professional management, avoids family-driven decisions\n• Family employment policy: criteria for family members to work in the family office (education, external experience >3-5 years, merit-based)\n• Next-gen education: financial literacy programs from age 18, family investment committee participation, externships at external asset managers",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "family-governance-structures",
-      "medium",
-      "practical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers family governance structures.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to family governance structures.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "governance": 19,
-      "structures": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This easy conceptual question evaluates fo knowledge of Family Governance Structures - Family Office Question.",
-      "whyWorks": "Well-structured explanations that connect fundamentals to current fo practices demonstrate both knowledge and critical thinking.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_48",
-    "role": "fo",
-    "title": "Philanthropic Planning - Family Office Question",
-    "question": "Describe a practical application of Philanthropic Planning in family office.",
-    "difficulty": "medium",
-    "category": "technical",
-    "frequencyScore": 2,
-    "modelAnswer": "Philanthropic Planning is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to philanthropic planning.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of philanthropic planning within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Vehicles: Donor Advised Funds (DAF - simplest, 60% AGI deduction, no required annual distribution), Private Foundation (full control, 5% annual distribution required, 30% AGI limit), Charitable Trusts (CRAT/CRUT - income for donor, remainder to charity)\n• Impact investing: program-related investments (PRIs, count toward foundation's 5% distribution), mission-related investments (MRI, market-rate returns + impact)\n• Tax strategy: donate appreciated stock (deduct fair market value, avoid capital gains tax — saves up to 40% on combined fed + state capital gains), bunching strategy (combine multiple years of giving into one for itemized deduction)\n• Giving strategy: strategic philanthropy (measurable outcomes, theory of change) vs responsive giving (donor's passion areas)\n• Family philanthropy: family foundation board gives next-gen hands-on experience with wealth stewardship and community engagement",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "philanthropic-planning",
-      "medium",
-      "technical",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers philanthropic planning.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to philanthropic planning.",
-    "scoringKeywords": {
-      "family": 22,
-      "office": 21,
-      "industry": 20,
-      "philanthropic": 19,
-      "planning": 18,
-      "concepts": 17,
-      "principles": 14,
-      "understand": 13,
-      "related": 12,
-      "applications": 11,
-      "practices": 10,
-      "standards": 9
-    },
-    "expectedStructure": [
-      "Provide clear definition",
-      "Break down key components",
-      "Give relevant examples",
-      "Explain practical applications",
-      "Connect to broader context"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Philanthropic Planning - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
-    "id": "gen_fo_1773311903261_49",
-    "role": "fo",
-    "title": "Investment Management for UHNW - Family Office Question",
-    "question": "What challenges might arise in implementing Investment Management for UHNW and how would you address them?",
-    "difficulty": "medium",
-    "category": "conceptual",
-    "frequencyScore": 3,
-    "modelAnswer": "Investment Management for UHNW is a critical consideration for high-net-worth wealth management that focuses on preserving and growing family assets across generations.\n\n**Key Concepts:**\n**Fundamental Principles**: Understand the core principles and theories related to investment management for uhnw.\n\n**Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n**Industry Context**: The relevance and importance of investment management for uhnw within the broader Family Office field.\n\n**Current Trends**: Recent developments and evolving practices in this area.\n\n**Best Practices**: Industry standards and recommended approaches.\n\n**Career Application:**\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n**Professional Development:**\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
-    "answers": {
-      "concise": {
-        "answer": "• Asset allocation for UHNW: 20-40% public equities, 15-25% private equity (direct, co-investment, fund), 10-20% real estate, 10-20% fixed income, 5-15% hedge funds, 3-10% real assets (gold, timber, farmland, infrastructure)\n• Direct investments: co-invest alongside top PE firms (0-0.5% fee vs 2/20 for fund investment), direct real estate (value-add, opportunistic), direct lending\n• Alternative asset access: UHNW families get access to top-tier funds (Sequoia, KKR, Blackstone) that are closed to smaller investors — minimums $5-25M for direct commitments\n• Tax-aware investing: municipal bonds (state-specific for double tax-free), tax-loss harvesting, qualified opportunity zones (defer capital gains, reduce through 2026)\n• Benchmarking total portfolio: absolute return target (6-8% real return) rather than relative to public market indices — due to high allocation to illiquid alternatives",
-        "format": "concise",
-        "source": "generated"
-      }
-    },
-    "tags": [
-      "fo",
-      "investment-management-for-uhnw",
-      "medium",
-      "conceptual",
-      "entry-level"
-    ],
-    "notes": "Generated question for Family Office industry. Covers investment management for uhnw.",
-    "conciseAnswer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "answer": "Fundamental Principles: Understand the core principles and theories related to investment management for uhnw.",
-    "scoringKeywords": {
-      "family": 22,
-      "management": 21,
-      "office": 20,
-      "industry": 19,
-      "investment": 18,
-      "uhnw": 17,
-      "concepts": 16,
-      "principles": 13,
-      "understand": 12,
-      "related": 11,
-      "applications": 10,
-      "practices": 9
-    },
-    "expectedStructure": [
-      "Provide direct answer",
-      "Elaborate with key points",
-      "Support with evidence/examples",
-      "Address potential follow-ups",
-      "Summarize key takeaways"
-    ],
-    "detailedAnalysis": {
-      "overview": "This medium technical question evaluates fo knowledge of Investment Management for UHNW - Family Office Question.",
-      "whyWorks": "Strong answers combine theoretical knowledge with fo-specific applications, demonstrating both depth and practical relevance.",
-      "commonMistakes": [
-        "Providing generic definitions without fo-specific context",
-        "Neglecting current industry developments or regulatory changes",
-        "Overusing jargon without clear explanations for mixed audiences",
-        "Failing to connect concepts to practical fo applications"
-      ],
-      "improvementTips": [
-        "Reference recent fo deals, products, or regulatory changes",
-        "Use established frameworks to structure complex fo concepts",
-        "Balance depth with clarity for interviewers of varying expertise",
-        "Connect theory to specific fo job functions and responsibilities"
-      ]
-    }
-  },
-  {
     "id": 2100,
     "role": "pe",
     "category": "technical",
@@ -42354,7 +32268,7 @@ const questionBank = [
     "id": 2107,
     "role": "pe",
     "category": "technical",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "title": "Private Equity Fund Structure",
     "question": "Describe the typical structure of a private equity fund (management fees, carried interest, hurdle rate).",
     "modelAnswer": "Private equity funds are structured as limited partnerships with a finite life (usually 10–12 years). The General Partner (GP) manages the fund, and Limited Partners (LPs) provide capital.\n  \n  **Key Components**:\n  1. **Management Fees**:\n     - Annual fee (typically 1.5–2% of committed capital) paid by LPs to cover GP's operational expenses.\n     - Often calculated on committed capital during the investment period (first 3–5 years), then on invested capital or net asset value thereafter.\n     - Fees are usually paid quarterly.\n  \n  2. **Carried Interest (\"Carry\")**:\n     - The GP's share of profits, typically 20% of fund profits after returning LPs' contributed capital and preferred return.\n     - Carried interest aligns GP and LP interests; GP only profits if the fund succeeds.\n     - \"Hurdle Rate\" (Preferred Return): The minimum annual return (e.g., 8%) that must be paid to LPs before carry is calculated.\n     - \"Catch‑Up\": Once the hurdle is met, a higher percentage (e.g., 100%) of subsequent profits goes to the GP until the GP has received its full 20% share of total profits.\n  \n  3. **Waterfall Distribution**:\n     - The order in which cash flows are distributed:\n       a) Return of LP capital.\n       b) Payment of preferred return (hurdle).\n       c) Catch‑up to GP.\n       d) 80/20 split (LP/GP) thereafter.\n     - Two common structures: \"European\" (whole‑fund) waterfall vs. \"American\" (deal‑by‑deal) waterfall.\n  \n  4. **Fund Lifecycle**:\n     - **Investment Period**: 3–5 years during which the fund makes new acquisitions.\n     - **Holding Period**: Portfolio companies are managed and improved.\n     - **Exit Period**: Companies are sold via IPO, trade sale, or secondary buyout.\n     - **Extension**: Possible 1–2 year extension if needed.\n  \n  5. **Other Terms**:\n     - **Commitment Period**: LPs commit capital that is \"called\" as needed (capital calls).\n     - **Key‑Person Clause**: If key GP members leave, investment may be paused.\n     - **Clawback**: If early distributions exceed eventual profits, GP may have to return excess carry.\n  \n  This structure ensures alignment, incentivizes performance, and provides clarity on economics.",
