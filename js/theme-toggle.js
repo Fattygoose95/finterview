@@ -91,6 +91,11 @@
         updateToggleState(newTheme);
     }
     
+    // Attach click handler
+    if (themeToggle) {
+        themeToggle.addEventListener('click', toggleTheme);
+    }
+    
     // Initialize when DOM is ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initTheme);
