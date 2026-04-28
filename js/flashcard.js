@@ -221,12 +221,11 @@
         flashcardDifficulty.textContent = question.difficulty.charAt(0).toUpperCase() + question.difficulty.slice(1);
         flashcardDifficulty.className = `flashcard-difficulty difficulty-${question.difficulty}`;
         
-        // Update answer (truncate if too long)
-        const answer = question.modelAnswer || 'No answer available.';
-        const maxLength = 1500;
-        const displayAnswer = answer.length > maxLength ? 
-            answer.substring(0, maxLength) + '...' : answer;
-        flashcardAnswer.textContent = displayAnswer;
+        // Use concise answer for flashcards (short and punchy)
+        const concise = question.answers?.concise?.answer;
+        const fallback = question.modelAnswer || 'No answer available.';
+        const answer = (concise && concise.length > 20) ? concise : fallback;
+        flashcardAnswer.textContent = answer;
         
         // Reset card to front
         flashcard.classList.remove('flipped');
