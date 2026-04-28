@@ -280,12 +280,7 @@
             display: inline-block;
             margin-right: var(--spacing-sm);
         }
-            /* Match footer logo size with header */
-        .logo h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        </style>
+    </style>
 </head>
 <body>
     <div class="page-wrapper">
@@ -294,7 +289,7 @@
             <div class="container">
                 <div class="logo">
                     <h1>finterview</h1>
-                    <p>Finance Interview Preparation</p>
+                    <p>Advanced Filter</p>
                 </div>
                 
                 <nav class="main-nav">
@@ -309,17 +304,6 @@
                         <li><a href="industry-filter.html" class="active">Advanced Filters</a></li>
                         <li><a href="profile.html">My Profile</a></li>
                         <li><a href="finance-bro.html">Finance Bro AI</a></li>
-                        <li><a href="flashcard.html">Flashcards</a></li>
-                        <li class="search-toggle-item">
-                            <button id="search-toggle" class="search-toggle-btn" aria-label="Search questions">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </li>
-                        <li class="theme-toggle-item">
-                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch theme">
-                                <i id="theme-icon" class="fas fa-moon"></i>
-                            </button>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -450,7 +434,7 @@
                 <div class="flex justify-between items-center">
                     <div class="logo">
                         <h3>finterview</h3>
-                        <p>Finance Interview Platform</p>
+                        <p>Advanced Filter System</p>
                     </div>
                     
                     <ul class="nav-list">
@@ -470,8 +454,6 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="js/theme-toggle.js"></script>
-    <script src="js/search.js"></script>
     <script src="js/industry-filter.js"></script>
     
     <!-- Initialize -->
@@ -481,56 +463,5 @@
             // IndustryFilter will auto-initialize from js/industry-filter.js
         });
     </script>
-    
-    <!-- Back to Top Button -->
-    <button id="backToTop" title="Back to top" aria-label="Back to top"
-            style="position: fixed; bottom: 2rem; right: 2rem; width: 44px; height: 44px; border-radius: 50%; border: none; background: #6366f1; color: white; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(99,102,241,0.3); display: none; z-index: 999; transition: opacity 0.3s;">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    
-    <script>
-        // Back to Top
-        const backToTopBtn = document.getElementById('backToTop');
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 400) {
-                backToTopBtn.style.display = 'block';
-            } else {
-                backToTopBtn.style.display = 'none';
-            }
-        });
-        backToTopBtn.addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
-
-    <!-- Search Overlay -->
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-container">
-            <div class="search-header">
-                <div class="search-input-container">
-                    <i class="fas fa-search search-input-icon"></i>
-                    <input type="text" id="search-input" class="search-input" 
-                           placeholder="Search across all 668 finance interview questions..." 
-                           autocomplete="off">
-                </div>
-                <button id="search-close" class="search-close" aria-label="Close search">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="search-body">
-                <div class="search-filters" id="search-filters">
-                    <!-- Filters will be added dynamically -->
-                </div>
-                <div class="search-results" id="search-results">
-                    <!-- Search results will appear here -->
-                    <div class="search-empty">
-                        <i class="fas fa-search"></i>
-                        <h3>Search Finance Questions</h3>
-                        <p>Type to search across all 668 questions. Filter by industry or difficulty.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

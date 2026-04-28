@@ -280,12 +280,7 @@
             display: inline-block;
             margin-right: var(--spacing-sm);
         }
-            /* Match footer logo size with header */
-        .logo h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        </style>
+    </style>
 </head>
 <body>
     <div class="page-wrapper">
@@ -294,7 +289,7 @@
             <div class="container">
                 <div class="logo">
                     <h1>finterview</h1>
-                    <p>Finance Interview Preparation</p>
+                    <p>Advanced Filter</p>
                 </div>
                 
                 <nav class="main-nav">
@@ -450,7 +445,7 @@
                 <div class="flex justify-between items-center">
                     <div class="logo">
                         <h3>finterview</h3>
-                        <p>Finance Interview Platform</p>
+                        <p>Advanced Filter System</p>
                     </div>
                     
                     <ul class="nav-list">
@@ -482,27 +477,6 @@
         });
     </script>
     
-    <!-- Back to Top Button -->
-    <button id="backToTop" title="Back to top" aria-label="Back to top"
-            style="position: fixed; bottom: 2rem; right: 2rem; width: 44px; height: 44px; border-radius: 50%; border: none; background: #6366f1; color: white; font-size: 1.2rem; cursor: pointer; box-shadow: 0 4px 12px rgba(99,102,241,0.3); display: none; z-index: 999; transition: opacity 0.3s;">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-    
-    <script>
-        // Back to Top
-        const backToTopBtn = document.getElementById('backToTop');
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 400) {
-                backToTopBtn.style.display = 'block';
-            } else {
-                backToTopBtn.style.display = 'none';
-            }
-        });
-        backToTopBtn.addEventListener('click', function() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
-
     <!-- Search Overlay -->
     <div id="search-overlay" class="search-overlay">
         <div class="search-container">

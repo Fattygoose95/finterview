@@ -286,12 +286,7 @@
                 padding: var(--spacing-xl) var(--spacing-md);
             }
         }
-            /* Match footer logo size with header */
-        .logo h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        </style>
+    </style>
 </head>
 <body>
     <div class="page-wrapper">
@@ -315,17 +310,6 @@
                         <li><a href="industry-filter.html">Advanced Filters</a></li>
                         <li class="active"><a href="profile.html">My Profile</a></li>
                         <li><a href="finance-bro.html">Finance Bro AI</a></li>
-                        <li><a href="flashcard.html">Flashcards</a></li>
-                        <li class="search-toggle-item">
-                            <button id="search-toggle" class="search-toggle-btn" aria-label="Search questions">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </li>
-                        <li class="theme-toggle-item">
-                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch theme">
-                                <i id="theme-icon" class="fas fa-moon"></i>
-                            </button>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -484,7 +468,7 @@
                 <div class="footer-content">
                     <div class="footer-logo">
                         <h3>finterview</h3>
-                        <p>Finance Interview Platform</p>
+                        <p>Finance interview preparation platform</p>
                     </div>
                     
                     <div class="footer-links">
@@ -522,8 +506,6 @@
     </div>
 
     <!-- JavaScript -->
-    <script src="js/theme-toggle.js"></script>
-    <script src="js/search.js"></script>
     <script>
         // Profile Statistics and Analytics
         document.addEventListener('DOMContentLoaded', function() {
@@ -933,35 +915,5 @@
     
     <!-- Load questions.js for question data reference -->
     <script src="questions.js?v=v20260324_feedback_fixed"></script>
-    
-    <!-- Search Overlay -->
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-container">
-            <div class="search-header">
-                <div class="search-input-container">
-                    <i class="fas fa-search search-input-icon"></i>
-                    <input type="text" id="search-input" class="search-input" 
-                           placeholder="Search across all 668 finance interview questions..." 
-                           autocomplete="off">
-                </div>
-                <button id="search-close" class="search-close" aria-label="Close search">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="search-body">
-                <div class="search-filters" id="search-filters">
-                    <!-- Filters will be added dynamically -->
-                </div>
-                <div class="search-results" id="search-results">
-                    <!-- Search results will appear here -->
-                    <div class="search-empty">
-                        <i class="fas fa-search"></i>
-                        <h3>Search Finance Questions</h3>
-                        <p>Type to search across all 668 questions. Filter by industry or difficulty.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

@@ -419,12 +419,7 @@
                 gap: var(--spacing-sm);
             }
         }
-            /* Match footer logo size with header */
-        .logo h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        </style>
+    </style>
 </head>
 <body>
     <div class="page-wrapper">
@@ -433,7 +428,7 @@
             <div class="container">
                 <div class="logo">
                     <h1>finterview</h1>
-                    <p>Finance Interview Preparation</p>
+                    <p>Finance Interview Practice</p>
                 </div>
                 
                 <nav class="main-nav">
@@ -714,7 +709,7 @@
                 <div class="flex justify-between items-center">
                     <div class="logo">
                         <h3>finterview</h3>
-                        <p>Finance Interview Platform</p>
+                        <p>Professional Finance Interview Prep</p>
                     </div>
                     
                     <ul class="nav-list">
@@ -2468,12 +2463,7 @@
         .fa-grin-beam-sweat {
             color: var(--warning-color);
         }
-            /* Match footer logo size with header */
-        .logo h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        </style>
+    </style>
     
     <div class="finance-bro-assistant">
         <button class="assistant-toggle" id="assistantToggle">
@@ -2983,8 +2973,10 @@
         });
     </script>
 
-    <!-- Data loading status (hidden - visible only in console) -->
-    <div id="dataLoadingStatus" style="display: none;"></div>
+    <!-- Data loading status -->
+    <div style="position: fixed; bottom: 10px; right: 10px; background: #f8f9fa; padding: 8px 12px; border-radius: 6px; font-size: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 1000;">
+        <div id="dataLoadingStatus">Checking data status...</div>
+    </div>
     
     <!-- Search Overlay -->
     <div id="search-overlay" class="search-overlay">

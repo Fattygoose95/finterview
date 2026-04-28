@@ -135,45 +135,6 @@
             text-align: right;
         }
         
-        .main-footer {
-            border-top: 1px solid #e5e7eb;
-            padding: 2rem 0;
-            margin-top: 2rem;
-        }
-        
-        .main-footer ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
-        
-        .main-footer ul li {
-            margin-bottom: 6px;
-        }
-        
-        .main-footer a {
-            color: #6366f1;
-            text-decoration: none;
-            font-size: 0.9rem;
-        }
-        
-        .main-footer a:hover {
-            text-decoration: underline;
-            color: #4f46e5;
-        }
-        
-        .main-footer h4 {
-            margin-bottom: 0.75rem;
-            font-size: 0.95rem;
-            color: #1f2937;
-        }
-        
-        /* Match footer logo size with header */
-        .logo h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        
         .chat-input-area {
             border-top: 1px solid var(--border-color);
             padding: var(--spacing-lg);
@@ -340,17 +301,6 @@
                         <li><a href="industry-filter.html">Advanced Filters</a></li>
                         <li><a href="profile.html">My Profile</a></li>
                         <li class="active"><a href="finance-bro.html">Finance Bro AI</a></li>
-                        <li><a href="flashcard.html">Flashcards</a></li>
-                        <li class="search-toggle-item">
-                            <button id="search-toggle" class="search-toggle-btn" aria-label="Search questions">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </li>
-                        <li class="theme-toggle-item">
-                            <button id="theme-toggle" class="theme-toggle-btn" aria-label="Switch theme">
-                                <i id="theme-icon" class="fas fa-moon"></i>
-                            </button>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -452,7 +402,7 @@
                 <div class="footer-content">
                     <div class="footer-logo">
                         <h3>finterview</h3>
-                        <p>Finance Interview Platform</p>
+                        <p>Finance interview preparation platform</p>
                     </div>
                     
                     <div class="footer-links">
@@ -493,8 +443,6 @@
     <script src="questions.js?v=v20260324_feedback_fixed"></script>
     
     <!-- JavaScript -->
-    <script src="js/theme-toggle.js"></script>
-    <script src="js/search.js"></script>
     <script>
         // Finance Bro AI Chat
         document.addEventListener('DOMContentLoaded', function() {
@@ -584,7 +532,7 @@
                 
                 if (isUser) {
                     messageDiv.innerHTML = `
-                        <div class="message-content">${formatFinanceText(content)}</div>
+                        <div class="message-content">${escapeHtml(content)}</div>
                         <div class="message-time">${time}</div>
                     `;
                 } else {
@@ -595,7 +543,7 @@
                             </div>
                             <div class="bot-name">Finance Bro</div>
                         </div>
-                        <div class="message-content">${formatFinanceText(content)}</div>
+                        <div class="message-content">${escapeHtml(content)}</div>
                         <div class="message-time">${time}</div>
                     `;
                 }
@@ -604,26 +552,11 @@
                 chatMessages.scrollTop = chatMessages.scrollHeight;
             }
             
-            // Convert markdown-style text to HTML safely
-            function formatFinanceText(text) {
-                // First escape HTML to prevent XSS
+            // Escape HTML to prevent XSS
+            function escapeHtml(text) {
                 const div = document.createElement('div');
                 div.textContent = text;
-                let safeText = div.innerHTML;
-                
-                // Convert **bold** to <strong>
-                safeText = safeText.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-                
-                // Convert markdown headers (##, etc.)
-                safeText = safeText.replace(/^(#{1,3})\s+(.+)$/gm, '<strong>$2</strong>');
-                
-                // Convert bullet points
-                safeText = safeText.replace(/^-\s+(.+)$/gm, '• $1');
-                
-                // Convert line breaks - handle both \n and actual newlines
-                safeText = safeText.replace(/\n/g, '<br>');
-                
-                return safeText;
+                return div.innerHTML;
             }
             
             // Find best matching question from questionBank with improved matching
@@ -1040,39 +973,9 @@
                 });
             }
             
-            // Focus on input without scrolling the page down
-            chatInput.focus({ preventScroll: true });
+            // Focus on input
+            chatInput.focus();
         });
     </script>
-    
-    <!-- Search Overlay -->
-    <div id="search-overlay" class="search-overlay">
-        <div class="search-container">
-            <div class="search-header">
-                <div class="search-input-container">
-                    <i class="fas fa-search search-input-icon"></i>
-                    <input type="text" id="search-input" class="search-input" 
-                           placeholder="Search across all 668 finance interview questions..." 
-                           autocomplete="off">
-                </div>
-                <button id="search-close" class="search-close" aria-label="Close search">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="search-body">
-                <div class="search-filters" id="search-filters">
-                    <!-- Filters will be added dynamically -->
-                </div>
-                <div class="search-results" id="search-results">
-                    <!-- Search results will appear here -->
-                    <div class="search-empty">
-                        <i class="fas fa-search"></i>
-                        <h3>Search Finance Questions</h3>
-                        <p>Type to search across all 668 questions. Filter by industry or difficulty.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
