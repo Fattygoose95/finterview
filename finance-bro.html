@@ -984,7 +984,10 @@
             }
             
             // Send message
-            function sendMessage() {
+            const AI_SERVER_URL = window.location.origin;
+            let chatContext = [];
+            
+            async function sendMessage() {
                 const message = chatInput.value.trim();
                 if (!message) return;
                 
@@ -998,18 +1001,41 @@
                 sendButton.disabled = true;
                 sendButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Thinking...';
                 
-                // Simulate typing delay
-                setTimeout(() => {
-                    // Get response
-                    const response = getResponse(message);
+                try {
+                    // Try AI server first
+                    const response = await fetch(`${AI_SERVER_URL}/api/chat`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            message: message,
+                            context: chatContext
+                        })
+                    });
                     
-                    // Add bot response
-                    addMessage(response, false);
-                    
-                    // Re-enable send button
-                    sendButton.disabled = false;
-                    sendButton.innerHTML = '<i class="fas fa-paper-plane"></i> Send';
-                }, 1000 + Math.random() * 1000); // 1-2 second delay
+                    if (response.ok) {
+                        const data = await response.json();
+                        // Update conversation context (keep last 10 messages)
+                        chatContext.push({ role: 'user', content: message });
+                        chatContext.push({ role: 'assistant', content: data.response });
+                        if (chatContext.length > 20) {
+                            chatContext = chatContext.slice(-20);
+                        }
+                        addMessage(data.response, false);
+                    } else {
+                        throw new Error('Server error');
+                    }
+                } catch (err) {
+                    console.log('AI server unavailable, using local responses:', err.message);
+                    // Fallback to hardcoded responses
+                    setTimeout(() => {
+                        const response = getResponse(message);
+                        addMessage(response, false);
+                    }, 800 + Math.random() * 600);
+                }
+                
+                // Re-enable send button
+                sendButton.disabled = false;
+                sendButton.innerHTML = '<i class="fas fa-paper-plane"></i> Send';
             }
             
             // Event listeners

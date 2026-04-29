@@ -46,10 +46,10 @@
 
 | Status | Feature | Priority | Effort | Notes |
 |--------|---------|----------|--------|-------|
-| 📋 | Replace hardcoded Finance Bro with real AI API (GPT-4o-mini / Claude Haiku) | P0 | 2 days | Core — first thing to do |
-| 📋 | AI answer analysis in Practice Mode — real scoring + specific feedback | P0 | 2 days | Not keyword matching, actual AI |
-| 📋 | Streaming response (SSE) for real-time answer display | P1 | 1 day | Eliminates perceived latency |
-| 📋 | Quality prompt engineering — "ex-VP at GS" persona | P0 | 1 day | Makes feedback feel authentic |
+| 🚧 | Replace hardcoded Finance Bro with real AI API (GPT-4o-mini / Claude Haiku) | P0 | 2 days | Server + Frontend done ✅ |
+| 🚧 | AI answer analysis in Practice Mode — real scoring + specific feedback | P0 | 2 days | Server + Frontend done ✅ |
+| 📋 | Streaming response (SSE) for real-time answer display | P1 | 1 day | |
+| ✅ | Quality prompt engineering — "ex-VP at GS" persona | P0 | 1 day | Done — in server prompt |
 | 💡 | Multi-model support (GPT-4o for deep, GPT-4o-mini for fast) | P2 | 1 day | User can toggle speed vs depth |
 
 ### AI Mock Interview (Text)

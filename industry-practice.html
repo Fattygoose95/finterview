@@ -1733,14 +1733,21 @@
                         answerFeedbackSection.style.display = 'block';
                         
                         // Analyze the answer
-                        analyzeAnswer(userAnswer, currentQuestion);
-                        
-                        // Update hint to show success
-                        const inputHint = document.getElementById('inputHint');
-                        if (inputHint) {
-                            inputHint.className = 'input-hint success';
-                            inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Analysis complete! Check feedback below`;
-                        }
+                        analyzeAnswer(userAnswer, currentQuestion).then(() => {
+                            // Update hint to show success
+                            const inputHint = document.getElementById('inputHint');
+                            if (inputHint) {
+                                inputHint.className = 'input-hint success';
+                                const score = document.getElementById('scoreValue').textContent;
+                                if (score === '...') {
+                                    // AI was attempted but might have failed
+                                } else {
+                                    inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Analysis complete! Check feedback below`;
+                                }
+                            }
+                        }).catch(err => {
+                            console.error('Analysis error:', err);
+                        });
                     });
                 }
                 
@@ -2299,6 +2306,16 @@
             gap: var(--spacing-xs);
         }
         
+        .analysis-section-title {
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+            color: var(--text-primary);
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+        }
+
         .keyword-item.matched, .structure-item.matched {
             background-color: var(--success-light);
             color: var(--success-color);
@@ -2715,13 +2732,169 @@
             }, 1000);
             
             // Answer Analysis Function
-            function analyzeAnswer(userAnswer, question) {
+            // ========================================
+            // AI-Powered Answer Analysis
+            // Calls the local AI server for real feedback
+            // Falls back to local analysis if server unavailable
+            // ========================================
+            // AI server URL — auto-detect when on same origin
+            const AI_SERVER_URL = window.location.origin;
+            
+            async function analyzeAnswerWithAI(userAnswer, question) {
+                console.log('=== AI analyzeAnswer called ===');
+                
+                // Show loading state
+                const scoreEl = document.getElementById('scoreValue');
+                const descEl = document.getElementById('scoreDescription');
+                if (scoreEl) scoreEl.textContent = '...';
+                if (descEl) descEl.textContent = 'Analyzing with AI...';
+                
+                try {
+                    // 3 second timeout for faster fallback
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 3000);
+                    
+                    const response = await fetch(`${AI_SERVER_URL}/api/analyze`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        signal: controller.signal,
+                        body: JSON.stringify({
+                            question: question.title || question.question,
+                            userAnswer: userAnswer,
+                            questionData: {
+                                modelAnswer: question.modelAnswer || (question.answers && question.answers.modelAnswer),
+                                difficulty: question.difficulty,
+                                role: question.role,
+                                category: question.category,
+                                title: question.title
+                            }
+                        })
+                    });
+                    
+                    clearTimeout(timeoutId);
+                    if (!response.ok) throw new Error('Server returned ' + response.status);
+                    
+                    const aiResult = await response.json();
+                    console.log('AI Analysis result:', aiResult);
+                    return aiResult;
+                    
+                } catch (err) {
+                    console.warn('AI server unavailable, falling back to local analysis:', err.message);
+                    if (scoreEl) scoreEl.textContent = '0';
+                    if (descEl) descEl.textContent = 'AI server not found. Using local analysis.';
+                    return null;
+                }
+            }
+            
+            function displayAIAnalysis(aiResult, question) {
+                const scoreValue = document.getElementById('scoreValue');
+                const scoreDescription = document.getElementById('scoreDescription');
+                const keywordsList = document.getElementById('keywordsList');
+                const structureList = document.getElementById('structureList');
+                const tipsContent = document.getElementById('tipsContent');
+                const analysisContent = document.getElementById('analysisContent');
+                
+                // Score
+                const score = aiResult.score || 0;
+                scoreValue.textContent = score;
+                
+                if (score >= 85) {
+                    scoreDescription.textContent = '🔥 Excellent! You crushed this answer. Interview-ready.';
+                } else if (score >= 70) {
+                    scoreDescription.textContent = '💪 Solid answer! A few tweaks and you\'re golden.';
+                } else if (score >= 50) {
+                    scoreDescription.textContent = '📝 Decent foundation. You\'re missing some key elements.';
+                } else {
+                    scoreDescription.textContent = '🔄 Needs work. Review the fundamentals and try again.';
+                }
+                
+                // Strengths & Weaknesses (replaces keyword list)
+                keywordsList.innerHTML = '';
+                
+                if (aiResult.strengths && aiResult.strengths.length > 0) {
+                    const strengthTitle = document.createElement('div');
+                    strengthTitle.className = 'analysis-section-title';
+                    strengthTitle.innerHTML = '<i class="fas fa-check-circle" style="color: var(--success-color);"></i> Strengths';
+                    keywordsList.appendChild(strengthTitle);
+                    
+                    aiResult.strengths.forEach(s => {
+                        const el = document.createElement('div');
+                        el.className = 'keyword-item matched';
+                        el.innerHTML = `<i class="fas fa-check"></i> ${s}`;
+                        keywordsList.appendChild(el);
+                    });
+                }
+                
+                if (aiResult.weaknesses && aiResult.weaknesses.length > 0) {
+                    const weakTitle = document.createElement('div');
+                    weakTitle.className = 'analysis-section-title';
+                    weakTitle.style.marginTop = '12px';
+                    weakTitle.innerHTML = '<i class="fas fa-exclamation-triangle" style="color: var(--warning-color);"></i> Areas to Improve';
+                    keywordsList.appendChild(weakTitle);
+                    
+                    aiResult.weaknesses.forEach(w => {
+                        const el = document.createElement('div');
+                        el.className = 'keyword-item missing';
+                        el.innerHTML = `<i class="fas fa-times"></i> ${w}`;
+                        keywordsList.appendChild(el);
+                    });
+                }
+                
+                // Missed Concepts (replaces structure list)
+                structureList.innerHTML = '';
+                if (aiResult.missedConcepts && aiResult.missedConcepts.length > 0) {
+                    const missedTitle = document.createElement('div');
+                    missedTitle.className = 'analysis-section-title';
+                    missedTitle.innerHTML = '<i class="fas fa-lightbulb" style="color: var(--primary-color);"></i> You Missed These Concepts';
+                    structureList.appendChild(missedTitle);
+                    
+                    aiResult.missedConcepts.forEach(m => {
+                        const el = document.createElement('div');
+                        el.className = 'structure-item missing';
+                        el.innerHTML = `<i class="fas fa-plus-circle"></i> ${m}`;
+                        structureList.appendChild(el);
+                    });
+                } else {
+                    structureList.innerHTML = '<div class="empty-state">Great coverage — you hit all the key concepts!</div>';
+                }
+                
+                // Improved Answer (replaces tips)
+                tipsContent.innerHTML = '';
+                if (aiResult.improvedAnswer) {
+                    const improvedTitle = document.createElement('div');
+                    improvedTitle.className = 'analysis-section-title';
+                    improvedTitle.innerHTML = '<i class="fas fa-edit" style="color: var(--success-color);"></i> How a Stronger Answer Would Look';
+                    tipsContent.appendChild(improvedTitle);
+                    
+                    const improvedText = document.createElement('div');
+                    improvedText.style.cssText = 'padding: 12px; background: var(--light-bg); border-radius: 8px; margin-top: 8px; line-height: 1.6; font-size: 0.95rem;';
+                    improvedText.textContent = aiResult.improvedAnswer;
+                    tipsContent.appendChild(improvedText);
+                } else {
+                    tipsContent.innerHTML = '<div class="empty-state">No improved answer available.</div>';
+                }
+                
+                // Key Advice (replaces detailed analysis)
+                analysisContent.innerHTML = '';
+                if (aiResult.keyAdvice) {
+                    const adviceTitle = document.createElement('div');
+                    adviceTitle.className = 'analysis-section-title';
+                    adviceTitle.innerHTML = '<i class="fas fa-star" style="color: #f59e0b;"></i> One Thing to Work On';
+                    analysisContent.appendChild(adviceTitle);
+                    
+                    const adviceEl = document.createElement('div');
+                    adviceEl.style.cssText = 'padding: 12px; background: linear-gradient(135deg, #fffbeb, #fef3c7); border-radius: 8px; margin-top: 8px; border-left: 4px solid #f59e0b; line-height: 1.6;';
+                    adviceEl.textContent = aiResult.keyAdvice;
+                    analysisContent.appendChild(adviceEl);
+                } else {
+                    analysisContent.innerHTML = '<div class="empty-state">Keep practicing! Review the feedback above for specific improvements.</div>';
+                }
+            }
+            
+            async function analyzeAnswer(userAnswer, question) {
                 console.log('=== analyzeAnswer called ===');
                 console.log('User answer length:', userAnswer.length);
                 console.log('Question:', question.title);
-                console.log('Question has scoringKeywords:', question.scoringKeywords && Object.keys(question.scoringKeywords).length > 0);
-                console.log('Question has expectedStructure:', question.expectedStructure && question.expectedStructure.length > 0);
-                console.log('Question has detailedAnalysis:', question.detailedAnalysis && Object.keys(question.detailedAnalysis).length > 0);
                 
                 // Initialize feedback elements
                 const scoreValue = document.getElementById('scoreValue');
@@ -2737,13 +2910,23 @@
                 tipsContent.innerHTML = '';
                 analysisContent.innerHTML = '';
                 
+                // Try AI analysis first
+                const aiResult = await analyzeAnswerWithAI(userAnswer, question);
+                
+                if (aiResult) {
+                    displayAIAnalysis(aiResult, question);
+                    return;
+                }
+                
+                // ========== FALLBACK: Local analysis (server unreachable) ==========
+                console.log('Using local fallback analysis');
+                
                 // Calculate basic metrics
                 const answerLength = userAnswer.length;
                 const wordCount = userAnswer.split(/\s+/).filter(word => word.length > 0).length;
-                const hasStructure = answerLength > 50 && (userAnswer.includes(':') || userAnswer.includes('•') || userAnswer.includes('-') || userAnswer.includes('1.'));
+                const hasStructure = answerLength > 50 && (userAnswer.includes(':') || userAnswer.includes('\u2022') || userAnswer.includes('-') || userAnswer.includes('1.'));
                 
                 let totalScore = 0;
-                let maxPossibleScore = 100;
                 const feedback = [];
                 
                 // 1. Keyword Matching (if available)
@@ -2754,7 +2937,6 @@
                     let keywordScore = 0;
                     let maxKeywordScore = 0;
                     
-                    // Calculate scores
                     Object.entries(keywords).forEach(([keyword, weight]) => {
                         maxKeywordScore += weight;
                         const regex = new RegExp(`\\b${keyword}\\b`, 'i');
@@ -2766,18 +2948,13 @@
                         }
                     });
                     
-                    // Display keyword matches
                     keywordsList.innerHTML = '';
-                    
-                    // Show matched keywords
                     matchedKeywords.forEach(item => {
                         const keywordEl = document.createElement('div');
                         keywordEl.className = 'keyword-item matched';
                         keywordEl.innerHTML = `<i class="fas fa-check"></i> ${item.keyword} <span class="keyword-weight">${item.weight}pts</span>`;
                         keywordsList.appendChild(keywordEl);
                     });
-                    
-                    // Show missing keywords
                     missingKeywords.forEach(item => {
                         const keywordEl = document.createElement('div');
                         keywordEl.className = 'keyword-item missing';
@@ -2785,188 +2962,36 @@
                         keywordsList.appendChild(keywordEl);
                     });
                     
-                    // Calculate keyword percentage
                     const keywordPercentage = maxKeywordScore > 0 ? Math.round((keywordScore / maxKeywordScore) * 100) : 0;
-                    totalScore += keywordPercentage * 0.4; // 40% of total score from keywords
-                    
+                    totalScore += keywordPercentage * 0.4;
                     feedback.push(`Keyword Coverage: ${keywordPercentage}% (${matchedKeywords.length}/${matchedKeywords.length + missingKeywords.length} keywords)`);
                 } else {
-                    keywordsList.innerHTML = '<div class="empty-state">No keyword data available for this question</div>';
+                    keywordsList.innerHTML = '<div class="empty-state">AI server unavailable. Local analysis limited.</div>';
                 }
                 
-                // 2. Structure Assessment (if available)
-                if (question.expectedStructure && question.expectedStructure.length > 0) {
-                    const expectedStructure = question.expectedStructure;
-                    const matchedStructure = [];
-                    const missingStructure = [];
-                    let structureScore = 0;
-                    
-                    expectedStructure.forEach(item => {
-                        // Check if the structure element is mentioned
-                        const hasItem = userAnswer.toLowerCase().includes(item.toLowerCase()) || 
-                                       item.toLowerCase().split(' ').some(word => 
-                                           word.length > 4 && userAnswer.toLowerCase().includes(word.toLowerCase())
-                                       );
-                        
-                        if (hasItem) {
-                            structureScore++;
-                            matchedStructure.push({ item, matched: true });
-                        } else {
-                            missingStructure.push({ item, matched: false });
-                        }
-                    });
-                    
-                    // Display structure assessment
-                    structureList.innerHTML = '';
-                    
-                    // Show matched structure elements
-                    matchedStructure.forEach(item => {
-                        const structureEl = document.createElement('div');
-                        structureEl.className = 'structure-item matched';
-                        structureEl.innerHTML = `<i class="fas fa-check"></i> ${item.item}`;
-                        structureList.appendChild(structureEl);
-                    });
-                    
-                    // Show missing structure elements
-                    missingStructure.forEach(item => {
-                        const structureEl = document.createElement('div');
-                        structureEl.className = 'structure-item missing';
-                        structureEl.innerHTML = `<i class="fas fa-times"></i> ${item.item}`;
-                        structureList.appendChild(structureEl);
-                    });
-                    
-                    // Calculate structure percentage
-                    const structurePercentage = expectedStructure.length > 0 ? Math.round((structureScore / expectedStructure.length) * 100) : 0;
-                    totalScore += structurePercentage * 0.3; // 30% of total score from structure
-                    
-                    feedback.push(`Structure: ${structurePercentage}% (${matchedStructure.length}/${expectedStructure.length} elements)`);
-                } else {
-                    structureList.innerHTML = '<div class="empty-state">No structure data available for this question</div>';
-                    
-                    // Fallback structure assessment based on general criteria
-                    if (hasStructure) {
-                        totalScore += 20; // Bonus for having some structure
-                        feedback.push('Good: Your answer shows some structure (bullets, numbering, or colons)');
-                    } else if (answerLength > 100) {
-                        feedback.push('Tip: Consider adding structure to your answer (use bullets, numbering, or clear sections)');
-                    }
-                }
-                
-                // 3. Answer Length Assessment
+                // 2-4. Length, word count, general structure
                 if (answerLength < 50) {
                     feedback.push('Warning: Your answer is very short. Try to provide more detail.');
                 } else if (answerLength < 150) {
                     totalScore += 10;
                     feedback.push('Good: Your answer has reasonable length');
-                } else if (answerLength >= 150) {
+                } else {
                     totalScore += 20;
                     feedback.push('Excellent: Your answer is comprehensive in length');
                 }
+                if (wordCount > 100) totalScore += 10;
+                else if (wordCount > 50) totalScore += 5;
                 
-                // 4. Word Count Bonus
-                if (wordCount > 100) {
-                    totalScore += 10;
-                } else if (wordCount > 50) {
-                    totalScore += 5;
-                }
-                
-                // Cap score at 100
                 totalScore = Math.min(Math.max(Math.round(totalScore), 0), 100);
                 
-                // Set score and description
                 scoreValue.textContent = totalScore;
+                if (totalScore >= 90) scoreDescription.textContent = 'Good answer based on local analysis. Start the AI server for deeper feedback: node server/index.js';
+                else if (totalScore >= 70) scoreDescription.textContent = 'Decent answer. For detailed AI feedback, start the AI server.';
+                else scoreDescription.textContent = 'Needs improvement. AI server can provide specific guidance.';
                 
-                // Determine score category
-                let description = '';
-                if (totalScore >= 90) {
-                    description = 'Excellent answer! You covered most key points with good structure.';
-                } else if (totalScore >= 70) {
-                    description = 'Good answer! With some improvements, you can make it even better.';
-                } else if (totalScore >= 50) {
-                    description = 'Average answer. Consider reviewing the key concepts and structure.';
-                } else {
-                    description = 'Needs improvement. Focus on covering the key concepts mentioned.';
-                }
-                scoreDescription.textContent = description;
-                
-                // 5. Improvement Tips (if available)
-                if (question.detailedAnalysis && question.detailedAnalysis.improvementTips) {
-                    tipsContent.innerHTML = '';
-                    const tips = question.detailedAnalysis.improvementTips;
-                    
-                    // Handle different tip formats
-                    if (typeof tips === 'string') {
-                        // Split by numbered points or newlines
-                        const tipItems = tips.split(/\d+\.\s+/).filter(item => item.trim().length > 0);
-                        if (tipItems.length > 0) {
-                            const ul = document.createElement('ul');
-                            tipItems.forEach(tip => {
-                                const li = document.createElement('li');
-                                li.textContent = tip.trim();
-                                ul.appendChild(li);
-                            });
-                            tipsContent.appendChild(ul);
-                        } else {
-                            tipsContent.textContent = tips;
-                        }
-                    } else {
-                        tipsContent.textContent = JSON.stringify(tips);
-                    }
-                } else {
-                    // Generate generic tips based on score
-                    tipsContent.innerHTML = '';
-                    const ul = document.createElement('ul');
-                    
-                    if (totalScore < 70) {
-                        ul.innerHTML += '<li>Review the key concepts mentioned in the question</li>';
-                        ul.innerHTML += '<li>Structure your answer with clear sections or bullet points</li>';
-                        ul.innerHTML += '<li>Provide specific examples or data points when possible</li>';
-                        ul.innerHTML += '<li>Make sure to address all parts of the question</li>';
-                    } else {
-                        ul.innerHTML += '<li>Excellent work! Consider adding more specific examples</li>';
-                        ul.innerHTML += '<li>Try to connect your answer to recent market developments</li>';
-                        ul.innerHTML += '<li>Consider how your answer would apply in a real-world scenario</li>';
-                    }
-                    
-                    tipsContent.appendChild(ul);
-                }
-                
-                // 6. Detailed Analysis (if available)
-                if (question.detailedAnalysis) {
-                    analysisContent.innerHTML = '';
-                    const analysis = question.detailedAnalysis;
-                    
-                    // Create analysis sections
-                    if (analysis.overview) {
-                        const overview = document.createElement('div');
-                        overview.innerHTML = `<strong>Overview:</strong> ${analysis.overview}`;
-                        analysisContent.appendChild(overview);
-                    }
-                    
-                    if (analysis.whyWorks) {
-                        const whyWorks = document.createElement('div');
-                        whyWorks.innerHTML = `<strong>What makes a strong answer:</strong> ${analysis.whyWorks}`;
-                        whyWorks.style.marginTop = '10px';
-                        analysisContent.appendChild(whyWorks);
-                    }
-                    
-                    if (analysis.commonMistakes) {
-                        const mistakes = document.createElement('div');
-                        mistakes.innerHTML = `<strong>Common mistakes to avoid:</strong> ${analysis.commonMistakes}`;
-                        mistakes.style.marginTop = '10px';
-                        analysisContent.appendChild(mistakes);
-                    }
-                } else {
-                    analysisContent.innerHTML = '<div class="empty-state">No detailed analysis available for this question</div>';
-                }
-                
-                // Add feedback summary to console for debugging
-                console.log('Answer Analysis:', {
-                    score: totalScore,
-                    length: answerLength,
-                    wordCount: wordCount,
-                    feedback: feedback
-                });
+                structureList.innerHTML = '<div class="empty-state">⚠️ AI server not connected. Start with: node server/index.js</div>';
+                tipsContent.innerHTML = '<div class="empty-state">Set OPENAI_API_KEY and run node server/index.js for AI-powered analysis</div>';
+                analysisContent.innerHTML = '<div class="empty-state">Local analysis is limited to keyword matching. Run the AI server for real feedback.</div>';
             }
             
             // Close feedback button functionality
