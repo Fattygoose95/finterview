@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="finterview - Random finance interview questions across all industries. Practice with randomized questions to test your knowledge comprehensively.">
+    <title>Random Practice - finterview</title>
+    <link rel="stylesheet" href="css/unified-design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load questions.js early -->
+    <script src="questions.js?v=20260313_2251"></script>
+    <style>
+        .random-mode-badge {
+            background-color: #4cc9f0;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-bold);
+            display: inline-block;
+            margin-right: var(--spacing-sm);
+        }
+        
+        .question-card.random-mode {
+            border-left: 4px solid #4cc9f0;
+        }
+        
+        .filter-section {
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 1px solid var(--light-border);
+        }
+        
+        .filter-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .filter-section h4 {
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            color: var(--text-primary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .filter-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+        
+        .filter-option {
+            padding: 6px 12px;
+            background-color: var(--white);
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .filter-option:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .filter-option.selected {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .sort-select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius-sm);
+            font-size: var(--font-size-sm);
+            color: var(--text-primary);
+            background-color: var(--white);
+            cursor: pointer;
+        }
+        
+        .sort-select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .results-count {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+            font-weight: var(--font-weight-medium);
+        }
+        
+        .mobile-filter-toggle {
+            display: none;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            margin-bottom: var(--spacing-lg);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-sm);
+        }
+        
+        .reset-filters {
+            width: 100%;
+            padding: var(--spacing-md);
+            background-color: var(--white);
+            color: var(--text-secondary);
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: var(--spacing-lg);
+        }
+        
+        .reset-filters:hover {
+            background-color: var(--light-bg);
+            border-color: var(--text-secondary);
+        }
+        
+        .star-rating {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .star {
+            color: #FFD700;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-filter-toggle {
+                display: flex;
+            }
+            
+            .filter-panel {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: var(--white);
+                z-index: 1000;
+                padding: var(--spacing-xl);
+                overflow-y: auto;
+            }
+            
+            .filter-panel.active {
+                display: block;
+            }
+            
+            .results-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Random Practice</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice Mode</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html" class="active">Random Practice</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <div class="mb-6">
+                    <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h2 class="text-3xl font-bold mt-2">Random Practice Questions</h2>
+                    <p class="text-lg text-secondary mt-1">Test your knowledge across all finance industries with randomized questions.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <!-- Filter Panel -->
+                    <aside class="lg:col-span-1">
+                        <button class="mobile-filter-toggle" id="mobileFilterToggle">
+                            <i class="fas fa-filter"></i> Filter Questions
+                        </button>
+                        
+                        <div class="filter-panel" id="filterPanel">
+                            <div class="filter-section">
+                                <h4>Star Rating</h4>
+                                <div class="filter-options" id="starFilter">
+                                    <!-- Star rating options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Ratings</span>
+                                    <span class="filter-option" data-value="5">★★★★★</span>
+                                    <span class="filter-option" data-value="4">★★★★☆+</span>
+                                    <span class="filter-option" data-value="3">★★★☆☆+</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Question Type</h4>
+                                <div class="filter-options" id="typeFilter">
+                                    <!-- Question type options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Types</span>
+                                    <span class="filter-option" data-value="technical">Technical</span>
+                                    <span class="filter-option" data-value="behavioral">Behavioral</span>
+                                    <span class="filter-option" data-value="case">Case Study</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Difficulty</h4>
+                                <div class="filter-options" id="difficultyFilter">
+                                    <!-- Difficulty options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Levels</span>
+                                    <span class="filter-option" data-value="easy">Easy</span>
+                                    <span class="filter-option" data-value="medium">Medium</span>
+                                    <span class="filter-option" data-value="hard">Hard</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Tags</h4>
+                                <div class="filter-options" id="tagFilter">
+                                    <!-- Tag options will be populated by JavaScript -->
+                                    <span class="filter-option selected" data-value="all">All Tags</span>
+                                    <span class="filter-option" data-value="high-frequency">High Frequency</span>
+                                    <span class="filter-option" data-value="interview">Common Interview</span>
+                                </div>
+                            </div>
+                            
+                            <div class="filter-section">
+                                <h4>Sort By</h4>
+                                <select class="sort-select" id="sortSelect">
+                                    <option value="random">Random</option>
+                                    <option value="star-desc">Highest Rated</option>
+                                    <option value="difficulty-asc">Easiest First</option>
+                                    <option value="difficulty-desc">Hardest First</option>
+                                    <option value="industry">By Industry</option>
+                                </select>
+                            </div>
+                            
+                            <button class="reset-filters" id="resetFilters">
+                                <i class="fas fa-undo"></i> Reset All Filters
+                            </button>
+                        </div>
+                    </aside>
+                    
+                    <!-- Main Content Area -->
+                    <div class="lg:col-span-3">
+                        <div class="results-header">
+                            <div class="results-count">
+                                Showing <span id="resultsCount">0</span> questions
+                            </div>
+                            <div>
+                                <button class="btn btn-outline" onclick="refreshRandomQuestions()">
+                                    <i class="fas fa-sync-alt"></i> Refresh Questions
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Questions Grid -->
+                        <div class="question-grid" id="questionsGrid">
+                            <div class="loading-state">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <h3>Loading Random Questions</h3>
+                                <p>Preparing your randomized practice session...</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Info Section -->
+                        <div class="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">
+                                <i class="fas fa-info-circle"></i> About Random Practice
+                            </h4>
+                            <p class="text-blue-700 text-sm">
+                                This mode randomly selects questions from all finance industries to test your comprehensive knowledge. 
+                                Use filters to focus on specific areas, or embrace the randomness to simulate a real interview experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <h3>finterview</h3>
+                        <p>Master Finance Interviews</p>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice</a></li>
+                        <li><a href="high-frequency-list.html">High Frequency</a></li>
+                        <li><a href="random-list.html" class="active">Random</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <p class="text-sm text-secondary">© 2024 finterview. Embrace the challenge.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Load JavaScript files -->
+    <script src="js/random-list-unified.js"></script>
+    
+    <!-- Initialize page -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('.nav-list');
+        
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', function() {
+                navList.classList.toggle('show');
+            });
+        }
+        
+        // Mobile filter toggle
+        const mobileFilterToggle = document.getElementById('mobileFilterToggle');
+        const filterPanel = document.getElementById('filterPanel');
+        
+        if (mobileFilterToggle && filterPanel) {
+            mobileFilterToggle.addEventListener('click', function() {
+                filterPanel.classList.toggle('active');
+                mobileFilterToggle.innerHTML = filterPanel.classList.contains('active') 
+                    ? '<i class="fas fa-times"></i> Close Filters' 
+                    : '<i class="fas fa-filter"></i> Filter Questions';
+            });
+        }
+        
+        // Global function to refresh random questions
+        window.refreshRandomQuestions = function() {
+            // This function should be implemented in random-list.js
+            // For now, just reload the page
+            window.location.reload();
+        };
+        
+        // Close mobile filter panel when clicking outside
+        document.addEventListener('click', function(event) {
+            if (filterPanel && filterPanel.classList.contains('active') && 
+                !filterPanel.contains(event.target) && 
+                event.target !== mobileFilterToggle && 
+                !mobileFilterToggle.contains(event.target)) {
+                filterPanel.classList.remove('active');
+                mobileFilterToggle.innerHTML = '<i class="fas fa-filter"></i> Filter Questions';
+            }
+        });
+        
+        // Initialize active navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop();
+            document.querySelectorAll('.nav-list a').forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

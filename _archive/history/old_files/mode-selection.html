@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择练习模式 - finterview</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --high-frequency-color: #f72585;
+            --random-mode-color: #4cc9f0;
+            --light-bg: #f8f9fa;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            --border-radius: 16px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .mode-selection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .mode-card {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            padding: 40px 30px;
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 6px solid;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mode-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        .mode-card.high-frequency {
+            border-color: var(--high-frequency-color);
+        }
+        
+        .mode-card.random {
+            border-color: var(--random-mode-color);
+        }
+        
+        .mode-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .high-frequency .mode-icon {
+            color: var(--high-frequency-color);
+        }
+        
+        .random .mode-icon {
+            color: var(--random-mode-color);
+        }
+        
+        .mode-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .mode-card .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .features {
+            margin-bottom: 30px;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .feature i {
+            margin-right: 10px;
+            margin-top: 4px;
+            color: #28a745;
+        }
+        
+        .feature-text {
+            line-height: 1.5;
+        }
+        
+        .recommended-for {
+            background: var(--light-bg);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #999;
+        }
+        
+        .recommended-for strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        .mode-button {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .high-frequency .mode-button {
+            background: var(--high-frequency-color);
+            color: white;
+        }
+        
+        .high-frequency .mode-button:hover {
+            background: #e01e75;
+        }
+        
+        .random .mode-button {
+            background: var(--random-mode-color);
+            color: white;
+        }
+        
+        .random .mode-button:hover {
+            background: #00b4d8;
+        }
+        
+        .remember-option {
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--card-shadow);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .checkbox-container input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .checkbox-container label {
+            font-size: 1rem;
+            color: #555;
+            cursor: pointer;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-button:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .mode-selection {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .mode-card {
+                max-width: 100%;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
+            .back-button {
+                top: 10px;
+                left: 10px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .mode-card {
+                padding: 30px 20px;
+            }
+            
+            .mode-icon {
+                font-size: 2.8rem;
+            }
+            
+            .mode-card h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    
+    <div class="container">
+        <div class="header">
+            <h1>选择练习模式</h1>
+            <p>请根据您的需求选择合适的模式，两种模式提供不同的学习体验和题目筛选方式</p>
+        </div>
+        
+        <div class="mode-selection">
+            <div class="mode-card high-frequency">
+                <div class="mode-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h2>高频题模式 ⚡️</h2>
+                <p class="subtitle">快速面试准备 - 只练习高频出现的题目</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">按面试出现频率排序，效率最高</div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">简洁界面，无星级和题型分类干扰</div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">适合时间紧迫的面试准备者</div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">专注练习面试中最常出现的题目</div>
+                    </div>
+                </div>
+                
+                <div class="recommended-for">
+                    <strong>推荐给：</strong>
+                    <span>24小时内即将面试、时间紧迫、想快速过一遍高频题目的用户</span>
+                </div>
+                
+                <a href="high-frequency-list.html" class="mode-button" onclick="setMode('high-frequency')">
+                    进入高频题模式
+                </a>
+            </div>
+            
+            <div class="mode-card random">
+                <div class="mode-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h2>随机模式 📚</h2>
+                <p class="subtitle">系统知识提升 - 全面提升专业知识深度</p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">显示星级和维度标签，全面评估</div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">多维度筛选（星级、题型、难度、标签）</div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">适合系统性学习和长期专业提升</div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div class="feature-text">全面覆盖各维度题目，深入理解专业知识</div>
+                    </div>
+                </div>
+                
+                <div class="recommended-for">
+                    <strong>推荐给：</strong>
+                    <span>希望系统性提升专业知识、不急于面试、想全面学习的用户</span>
+                </div>
+                
+                <a href="random-list.html" class="mode-button" onclick="setMode('random')">
+                    进入随机模式
+                </a>
+            </div>
+        </div>
+        
+        <div class="remember-option">
+            <div class="checkbox-container">
+                <input type="checkbox" id="rememberMode" checked>
+                <label for="rememberMode">记住我的选择，下次不再询问（使用本地存储）</label>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function setMode(mode) {
+            const remember = document.getElementById('rememberMode').checked;
+            if (remember) {
+                localStorage.setItem('finterview-preferred-mode', mode);
+                localStorage.setItem('finterview-mode-remember', 'true');
+            } else {
+                localStorage.removeItem('finterview-preferred-mode');
+                localStorage.removeItem('finterview-mode-remember');
+            }
+            
+            // 实际应用中，这里会调用API保存用户偏好
+            console.log(`模式已选择: ${mode}, 记住: ${remember}`);
+        }
+        
+        function goBack() {
+            // 返回行业选择页面
+            window.location.href = 'industry-selection.html';
+        }
+        
+        // 页面加载时检查是否有已保存的模式偏好
+        document.addEventListener('DOMContentLoaded', function() {
+            const remembered = localStorage.getItem('finterview-mode-remember');
+            const savedMode = localStorage.getItem('finterview-preferred-mode');
+            
+            if (remembered === 'true' && savedMode) {
+                document.getElementById('rememberMode').checked = true;
+                console.log(`已保存的偏好模式: ${savedMode}`);
+            }
+        });
+    </script>
+</body>
+</html>

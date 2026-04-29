@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="finterview - High frequency finance interview questions. Most commonly asked questions across all finance industries.">
+    <title>High Frequency Questions - finterview</title>
+    <link rel="stylesheet" href="css/unified-design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load questions.js early -->
+    <script src="questions.js?v=20260313_2251"></script>
+    <style>
+        .high-frequency-badge {
+            background-color: #f72585;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-bold);
+            display: inline-block;
+            margin-right: var(--spacing-sm);
+        }
+        
+        .frequency-filter {
+            display: flex;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-xl);
+            flex-wrap: wrap;
+        }
+        
+        .frequency-btn {
+            padding: 8px 16px;
+            background-color: var(--white);
+            border: 2px solid var(--light-border);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-medium);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .frequency-btn.active {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-color: var(--primary-color);
+        }
+        
+        .frequency-btn:hover:not(.active) {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .frequency-score {
+            font-size: var(--font-size-xs);
+            color: var(--text-light);
+            font-weight: var(--font-weight-medium);
+            margin-left: auto;
+        }
+        
+        .question-card.high-frequency {
+            border-left: 4px solid #f72585;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>High Frequency Questions</p>
+                </div>
+                
+                <nav class="main-nav">
+                    <button class="menu-toggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice Mode</a></li>
+                        <li><a href="high-frequency-list.html" class="active">High Frequency</a></li>
+                        <li><a href="random-list.html">Random Practice</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Header -->
+                <div class="mb-6">
+                    <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h2 class="text-3xl font-bold mt-2">High Frequency Interview Questions</h2>
+                    <p class="text-lg text-secondary mt-1" id="pageStats">Loading most commonly asked questions...</p>
+                </div>
+                
+                <!-- Filter Section -->
+                <div class="frequency-filter">
+                    <button class="frequency-btn active" data-frequency="all">All Questions</button>
+                    <button class="frequency-btn" data-frequency="high">High Frequency Only</button>
+                    <button class="frequency-btn" data-frequency="ib">Investment Banking</button>
+                    <button class="frequency-btn" data-frequency="am">Asset Management</button>
+                    <div class="frequency-score" id="frequencyScore">Score: --</div>
+                </div>
+                
+                <!-- Questions Grid -->
+                <div class="question-grid" id="questionGrid">
+                    <div class="loading-state">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <h3>Loading High Frequency Questions</h3>
+                        <p>Fetching the most commonly asked interview questions...</p>
+                    </div>
+                </div>
+                
+                <!-- Info Section -->
+                <div class="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                    <h4 class="font-semibold text-blue-800 mb-2">
+                        <i class="fas fa-info-circle"></i> About High Frequency Questions
+                    </h4>
+                    <p class="text-blue-700 text-sm">
+                        These questions are compiled from actual finance interviews and represent the most commonly asked questions across various finance roles. 
+                        Mastering these questions will prepare you for 80% of what you'll encounter in interviews.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="logo">
+                        <h3>finterview</h3>
+                        <p>Master High Frequency Questions</p>
+                    </div>
+                    
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry.html">Practice</a></li>
+                        <li><a href="high-frequency-list.html" class="active">High Frequency</a></li>
+                        <li><a href="random-list.html">Random</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <p class="text-sm text-secondary">© 2024 finterview. Focus on what matters most.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // High Frequency Questions
+        (function() {
+            'use strict';
+            
+            console.log('High Frequency Page Initializing...');
+            
+            // State
+            let allQuestions = [];
+            let filteredQuestions = [];
+            let currentFilter = 'all';
+            
+            // DOM Elements
+            const questionGrid = document.getElementById('questionGrid');
+            const pageStats = document.getElementById('pageStats');
+            const frequencyScore = document.getElementById('frequencyScore');
+            
+            // Initialize
+            document.addEventListener('DOMContentLoaded', init);
+            
+            function init() {
+                console.log('Initializing high frequency page...');
+                
+                // Load questions
+                loadQuestions();
+                
+                // Bind events
+                bindEvents();
+            }
+            
+            function loadQuestions() {
+                // Check if questions.js is loaded
+                if (typeof window.questionBank === 'undefined') {
+                    showError('Data not loaded. Please check if questions.js is properly loaded.');
+                    return;
+                }
+                
+                allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) {
+                    showError('Invalid data format.');
+                    return;
+                }
+                
+                console.log(`Total questions loaded: ${allQuestions.length}`);
+                
+                // Calculate frequency score for each question
+                allQuestions.forEach((q, index) => {
+                    // Simple frequency score based on difficulty and category
+                    let score = 5; // Base score
+                    
+                    if (q.difficulty === 'easy') score += 2;
+                    if (q.difficulty === 'medium') score += 1;
+                    if (q.category === 'technical') score += 3;
+                    if (q.role === 'ib') score += 2; // IB questions are more common
+                    
+                    // Add frequencyScore property
+                    q.frequencyScore = score;
+                });
+                
+                // Sort by frequency score (highest first)
+                allQuestions.sort((a, b) => b.frequencyScore - a.frequencyScore);
+                
+                // Update stats
+                updateStats();
+                
+                // Apply initial filter
+                applyFilter('all');
+            }
+            
+            function applyFilter(filterType) {
+                currentFilter = filterType;
+                console.log(`Applying filter: ${filterType}`);
+                
+                // Update active filter button
+                document.querySelectorAll('.frequency-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.dataset.frequency === filterType) {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // Filter questions
+                switch(filterType) {
+                    case 'all':
+                        filteredQuestions = allQuestions.slice(0, 50); // Top 50 by frequency
+                        break;
+                    case 'high':
+                        filteredQuestions = allQuestions.filter(q => q.frequencyScore >= 7).slice(0, 30);
+                        break;
+                    case 'ib':
+                        filteredQuestions = allQuestions.filter(q => q.role === 'ib').slice(0, 30);
+                        break;
+                    case 'am':
+                        filteredQuestions = allQuestions.filter(q => q.role === 'am').slice(0, 30);
+                        break;
+                    default:
+                        filteredQuestions = allQuestions.slice(0, 30);
+                }
+                
+                console.log(`Filtered to ${filteredQuestions.length} questions`);
+                
+                // Render questions
+                renderQuestions();
+                
+                // Update frequency score display
+                if (filteredQuestions.length > 0) {
+                    const avgScore = (filteredQuestions.reduce((sum, q) => sum + q.frequencyScore, 0) / filteredQuestions.length).toFixed(1);
+                    frequencyScore.textContent = `Avg. Frequency Score: ${avgScore}/10`;
+                }
+            }
+            
+            function renderQuestions() {
+                if (filteredQuestions.length === 0) {
+                    questionGrid.innerHTML = `
+                        <div class="empty-state">
+                            <i class="fas fa-search"></i>
+                            <h3>No Questions Found</h3>
+                            <p>No questions match your filter criteria.</p>
+                            <button class="btn btn-outline" onclick="applyFilter('all')" style="margin-top: 1rem;">
+                                Show All Questions
+                            </button>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                questionGrid.innerHTML = '';
+                
+                filteredQuestions.forEach((question, index) => {
+                    const card = createQuestionCard(question, index + 1);
+                    questionGrid.appendChild(card);
+                });
+                
+                // Bind answer toggle events
+                bindAnswerEvents();
+            }
+            
+            function createQuestionCard(question, number) {
+                const card = document.createElement('div');
+                card.className = `question-card ${question.frequencyScore >= 7 ? 'high-frequency' : ''}`;
+                
+                // Get answer
+                const answer = getAnswer(question);
+                
+                // Frequency badge
+                const frequencyBadge = question.frequencyScore >= 7 ? 
+                    '<span class="high-frequency-badge">High Frequency</span>' : '';
+                
+                // Difficulty color
+                const difficulty = question.difficulty || 'medium';
+                const difficultyColor = getDifficultyColor(difficulty);
+                
+                card.innerHTML = `
+                    <div class="question-header">
+                        <h4 class="question-title">
+                            ${frequencyBadge}
+                            ${number}. ${escapeHtml(question.title || 'Question')}
+                        </h4>
+                        <div class="question-tags">
+                            <span class="tag ${question.category || 'technical'}">${question.category || 'technical'}</span>
+                            <span class="tag difficulty" style="background: ${difficultyColor}">${difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}</span>
+                            <span class="tag" style="background: #e0f2fe; color: #0369a1;">${question.role || 'general'}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-content">
+                        <p>${escapeHtml(question.question || '')}</p>
+                    </div>
+                    
+                    <div class="question-meta">
+                        <div class="difficulty">
+                            <span class="label">Frequency Score:</span>
+                            <span class="text">${question.frequencyScore}/10</span>
+                        </div>
+                        <div class="rating">
+                            <span class="label">Industry:</span>
+                            <span class="text">${getIndustryName(question.role)}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="answer-section" style="display: none;" id="answer-${question.id || number}">
+                        <h4><i class="fas fa-lightbulb"></i> Answer</h4>
+                        <div class="answer-content">${escapeHtml(answer)}</div>
+                    </div>
+                    
+                    <div class="question-actions" style="margin-top: 1rem;">
+                        <button class="btn btn-primary" onclick="window.toggleAnswer(${question.id || number})">
+                            <i class="fas fa-eye"></i> Show Answer
+                        </button>
+                        <a href="industry.html?industry=${question.role || 'ib'}" class="btn btn-outline" style="margin-left: 0.5rem;">
+                            <i class="fas fa-industry"></i> More ${getIndustryName(question.role)}
+                        </a>
+                    </div>
+                `;
+                
+                return card;
+            }
+            
+            function getAnswer(question) {
+                if (question.answers?.concise?.answer) return question.answers.concise.answer;
+                if (question.answers?.detailed?.answer) return question.answers.detailed.answer;
+                if (question.conciseAnswer) return question.conciseAnswer;
+                if (question.modelAnswer) return question.modelAnswer;
+                if (question.answer) return question.answer;
+                return 'No answer available.';
+            }
+            
+            function getDifficultyColor(difficulty) {
+                switch(difficulty) {
+                    case 'easy': return '#27ae60';
+                    case 'hard': return '#e74c3c';
+                    default: return '#f39c12';
+                }
+            }
+            
+            function getIndustryName(industryId) {
+                const industries = {
+                    'ib': 'Investment Banking',
+                    'am': 'Asset Management',
+                    'quant': 'Quantitative Finance',
+                    'markets': 'Sales & Trading',
+                    'corpfin': 'Corporate Finance',
+                    'risk': 'Risk Management',
+                    'fintech': 'FinTech',
+                    'fo': 'Family Office'
+                };
+                return industries[industryId] || 'Finance';
+            }
+            
+            function bindAnswerEvents() {
+                // Already bound via inline onclick
+            }
+            
+            function bindEvents() {
+                // Filter buttons
+                document.querySelectorAll('.frequency-btn').forEach(btn => {
+                    btn.addEventListener('click', function() {
+                        applyFilter(this.dataset.frequency);
+                    });
+                });
+                
+                // Mobile menu toggle
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navList = document.querySelector('.nav-list');
+                
+                if (menuToggle && navList) {
+                    menuToggle.addEventListener('click', function() {
+                        navList.classList.toggle('show');
+                    });
+                }
+            }
+            
+            function updateStats() {
+                if (pageStats) {
+                    const highFreqCount = allQuestions.filter(q => q.frequencyScore >= 7).length;
+                    pageStats.textContent = `${allQuestions.length} total questions • ${highFreqCount} high frequency questions`;
+                }
+            }
+            
+            function showError(message) {
+                questionGrid.innerHTML = `
+                    <div class="error-state">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Error Loading Questions</h3>
+                        <p>${escapeHtml(message)}</p>
+                        <button class="btn btn-primary" onclick="window.location.reload()" style="margin-top: 1rem;">
+                            <i class="fas fa-sync-alt"></i> Reload Page
+                        </button>
+                    </div>
+                `;
+            }
+            
+            function escapeHtml(text) {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+            
+            // Global functions
+            window.toggleAnswer = function(questionId) {
+                const answerSection = document.getElementById(`answer-${questionId}`);
+                if (!answerSection) return;
+                
+                const isVisible = answerSection.style.display !== 'none';
+                answerSection.style.display = isVisible ? 'none' : 'block';
+                
+                // Find and update button
+                const card = answerSection.closest('.question-card');
+                if (card) {
+                    const button = card.querySelector('button');
+                    if (button) {
+                        button.innerHTML = isVisible ? 
+                            '<i class="fas fa-eye"></i> Show Answer' : 
+                            '<i class="fas fa-eye-slash"></i> Hide Answer';
+                    }
+                }
+            };
+            
+            window.applyFilter = applyFilter;
+            
+        })();
+    </script>
+</body>
+</html>

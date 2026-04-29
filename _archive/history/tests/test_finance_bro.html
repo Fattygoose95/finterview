@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Finance Bro Interaction</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #5a67d8;
+        }
+        
+        .answer-box {
+            margin: 20px 0;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 6px;
+            display: none;
+        }
+        
+        .answer-box.show {
+            display: block;
+        }
+        
+        .finance-bro-hint {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            position: relative;
+            border: 2px solid white;
+        }
+        
+        @keyframes breathing {
+            0%, 100% { 
+                transform: scale(1);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            }
+            50% { 
+                transform: scale(1.1);
+                box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            }
+        }
+        
+        .breathing-effect {
+            animation: breathing 1.5s ease-in-out infinite !important;
+            border: 2px solid #667eea !important;
+        }
+        
+        .finance-bro-icon {
+            width: 60px;
+            height: 60px;
+            background: #667eea;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Finance Bro Interaction Test</h1>
+        <p>Testing the Finance Bro hint system and breathing effect.</p>
+        
+        <div class="status success">
+            ✅ Risk Management questions have been updated with concise answers
+        </div>
+        
+        <div class="status warning">
+            ⚠️ 406 concise answers remaining to generate for other categories
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 1: Finance Bro Hint Display</h2>
+            <p>Click the "Show Detailed Answer" button to trigger the Finance Bro hint:</p>
+            
+            <button onclick="showDetailedAnswer()">Show Detailed Answer</button>
+            
+            <div id="detailedAnswerContent" class="answer-box">
+                <!-- Finance Bro hint will appear here -->
+            </div>
+            
+            <div id="testResult1" class="status" style="display: none;"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 2: Breathing Effect</h2>
+            <p>Click to trigger breathing animation on Finance Bro icon:</p>
+            
+            <button onclick="triggerBreathingEffect()">Trigger Breathing Effect</button>
+            
+            <div id="testResult2" class="status" style="display: none;"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Test 3: Local Storage</h2>
+            <p>Check if hint display tracking works:</p>
+            
+            <button onclick="checkLocalStorage()">Check Local Storage</button>
+            <button onclick="clearLocalStorage()">Clear Local Storage</button>
+            
+            <div id="testResult3" class="status" style="display: none;"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Sample Risk Management Question</h2>
+            <p><strong>Question:</strong> What are the primary components of market risk?</p>
+            <p><strong>Concise Answer:</strong> Focus on the 5 main categories: market, credit, operational, liquidity, and strategic risk. Mention how they differ and provide examples for each.</p>
+            <p><strong>Detailed Answer:</strong> Need detailed explanation? Ask your Finance Bro assistant for personalized help! Click the Finance Bro icon in the bottom right corner.</p>
+        </div>
+    </div>
+    
+    <!-- Finance Bro Icon -->
+    <div id="financeBroIcon" class="finance-bro-icon" onclick="toggleFinanceBro()">
+        💬
+    </div>
+
+    <script>
+        const FINANCE_BRO_HINT_KEY = 'finterview_finance_bro_hint_shown';
+        
+        function showDetailedAnswer() {
+            const detailedContent = document.getElementById('detailedAnswerContent');
+            detailedContent.classList.add('show');
+            
+            // Clear previous content
+            detailedContent.innerHTML = '';
+            
+            // Show Finance Bro hint
+            showFinanceBroHint();
+            
+            // Show test result
+            const resultDiv = document.getElementById('testResult1');
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'status success';
+            resultDiv.textContent = '✅ Finance Bro hint displayed successfully! Check for the purple hint box above.';
+        }
+        
+        function showFinanceBroHint() {
+            // Check if hint already shown
+            if (localStorage.getItem(FINANCE_BRO_HINT_KEY) === 'true') {
+                console.log('Hint already shown (stored in localStorage)');
+                return false;
+            }
+            
+            // Mark as shown
+            localStorage.setItem(FINANCE_BRO_HINT_KEY, 'true');
+            
+            // Create and show hint message
+            const detailedContent = document.getElementById('detailedAnswerContent');
+            if (detailedContent) {
+                const hintHtml = `
+                    <div class="finance-bro-hint">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div style="font-size: 24px;">💬</div>
+                            <div style="flex: 1;">
+                                <div style="font-weight: bold; margin-bottom: 4px;">Need more detailed explanation?</div>
+                                <div style="font-size: 14px;">Ask your Finance Bro for personalized help!</div>
+                            </div>
+                            <button class="close-hint" style="
+                                background: none;
+                                border: none;
+                                color: white;
+                                font-size: 20px;
+                                cursor: pointer;
+                                opacity: 0.7;
+                            " onclick="this.parentElement.parentElement.style.display='none'">×</button>
+                        </div>
+                        <div style="
+                            position: absolute;
+                            bottom: -10px;
+                            right: 60px;
+                            width: 20px;
+                            height: 20px;
+                            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                            transform: rotate(45deg);
+                            border-right: 2px solid white;
+                            border-bottom: 2px solid white;
+                        "></div>
+                    </div>
+                    <div style="margin-top: 20px; padding: 15px; background: #e9ecef; border-radius: 6px;">
+                        <p>This is where the detailed answer would normally appear.</p>
+                        <p>Since we're using the Finance Bro system, detailed answers are provided through the assistant.</p>
+                    </div>
+                `;
+                
+                detailedContent.innerHTML = hintHtml;
+            }
+            
+            // Add breathing effect to Finance Bro icon
+            const financeBroIcon = document.getElementById('financeBroIcon');
+            if (financeBroIcon) {
+                financeBroIcon.classList.add('breathing-effect');
+                
+                // Remove after 5 seconds
+                setTimeout(() => {
+                    financeBroIcon.classList.remove('breathing-effect');
+                }, 5000);
+            }
+            
+            return true;
+        }
+        
+        function triggerBreathingEffect() {
+            const financeBroIcon = document.getElementById('financeBroIcon');
+            if (financeBroIcon) {
+                financeBroIcon.classList.add('breathing-effect');
+                
+                // Remove after 3 seconds
+                setTimeout(() => {
+                    financeBroIcon.classList.remove('breathing-effect');
+                }, 3000);
+                
+                const resultDiv = document.getElementById('testResult2');
+                resultDiv.style.display = 'block';
+                resultDiv.className = 'status success';
+                resultDiv.textContent = '✅ Breathing effect triggered! Check the Finance Bro icon in the bottom right.';
+            }
+        }
+        
+        function checkLocalStorage() {
+            const hintShown = localStorage.getItem(FINANCE_BRO_HINT_KEY);
+            const resultDiv = document.getElementById('testResult3');
+            resultDiv.style.display = 'block';
+            
+            if (hintShown === 'true') {
+                resultDiv.className = 'status warning';
+                resultDiv.textContent = '⚠️ Hint has been shown before (stored in localStorage). Clear storage to see hint again.';
+            } else {
+                resultDiv.className = 'status success';
+                resultDiv.textContent = '✅ Hint has NOT been shown yet. Click "Show Detailed Answer" to see it.';
+            }
+        }
+        
+        function clearLocalStorage() {
+            localStorage.removeItem(FINANCE_BRO_HINT_KEY);
+            const resultDiv = document.getElementById('testResult3');
+            resultDiv.style.display = 'block';
+            resultDiv.className = 'status success';
+            resultDiv.textContent = '✅ Local storage cleared! You can now see the hint again.';
+        }
+        
+        function toggleFinanceBro() {
+            alert('Finance Bro assistant would open here. In the actual app, this would launch a chat interface.');
+        }
+        
+        // Initialize
+        console.log('Finance Bro test initialized');
+    </script>
+</body>
+</html>

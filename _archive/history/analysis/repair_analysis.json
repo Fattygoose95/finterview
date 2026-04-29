@@ -1,0 +1,56 @@
+{
+  "total_questions": 668,
+  "roles": {
+    "ib": 113,
+    "am": 100,
+    "quant": 100,
+    "markets": 100,
+    "risk": 100,
+    "general": 5,
+    "corpfin": 50,
+    "fintech": 50,
+    "fo": 50
+  },
+  "repair_plan": {
+    "corpfin": {
+      "total": 50,
+      "needs_fix": 50,
+      "percentage": 100.0
+    },
+    "fintech": {
+      "total": 50,
+      "needs_fix": 50,
+      "percentage": 100.0
+    },
+    "fo": {
+      "total": 50,
+      "needs_fix": 50,
+      "percentage": 100.0
+    },
+    "risk": {
+      "total": 100,
+      "needs_fix": 77,
+      "percentage": 77.0
+    },
+    "am": {
+      "total": 100,
+      "needs_fix": 100,
+      "percentage": 100.0
+    },
+    "markets": {
+      "total": 100,
+      "needs_fix": 100,
+      "percentage": 100.0
+    },
+    "quant": {
+      "total": 100,
+      "needs_fix": 100,
+      "percentage": 100.0
+    },
+    "ib": {
+      "total": 113,
+      "needs_fix": 113,
+      "percentage": 100.0
+    }
+  }
+}

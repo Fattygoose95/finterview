@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1062,
+    "role": "ib",
+    "title": "Corporate Banking Products",
+    "question": "What are the main products and services offered by a corporate banking division?",
+    "modelAnswer": "Corporate banking provides loans (term loans, revolving credit facilities), cash management, trade finance, foreign exchange, interest rate hedging, and advisory services. Products are tailored to mid‑sized and large corporations. Relationship managers coordinate offerings to meet client needs. For entry‑level interviews, candidates should differentiate corporate banking from investment banking (less focus on M&A/IPOs) and commercial banking (more complex, larger tickets). Understanding how products link to the client's business cycle (e.g., seasonal working capital loans) is valuable. Common mistakes include listing retail products, or not mentioning the cross‑sell strategy.",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Corporate Banking Products': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": 1090,
+    "role": "ib",
+    "title": "Order Types and Execution",
+    "question": "What are the most common order types used in equity trading?",
+    "modelAnswer": "Common order types include market orders (execute immediately at best available price), limit orders (execute only at specified price or better), stop‑loss orders (become market orders when price hits a trigger), and iceberg orders (show only part of the total quantity). Each serves different objectives: market orders prioritize speed, limit orders control price, stop‑loss limits downside. For entry‑level interviews, candidates should know that execution quality depends on liquidity and order type. Common mistakes include not understanding that stop‑loss orders do not guarantee execution price during gaps, or confusing a limit order with a stop‑limit order.",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Order Types and Execution': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_am_1773306469454_6",
+    "role": "am",
+    "title": "Fundamental Question 7",
+    "question": "What are the main types of mutual funds and their characteristics?",
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 7': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_am_1773306469454_16",
+    "role": "am",
+    "title": "Fundamental Question 17",
+    "question": "What are the main types of mutual funds and their characteristics?",
+    "modelAnswer": "This is a fundamental question in Asset Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Asset Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Asset Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Asset Management.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 17': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_quant_1773306469454_7",
+    "role": "quant",
+    "title": "Fundamental Question 8",
+    "question": "What is high-frequency trading and what are its key characteristics?",
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 8': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_quant_1773306469454_9",
+    "role": "quant",
+    "title": "Fundamental Question 10",
+    "question": "What are the main challenges in building quantitative models?",
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 10': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_quant_1773306469454_17",
+    "role": "quant",
+    "title": "Fundamental Question 18",
+    "question": "What is high-frequency trading and what are its key characteristics?",
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 18': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_quant_1773306469454_19",
+    "role": "quant",
+    "title": "Fundamental Question 20",
+    "question": "What are the main challenges in building quantitative models?",
+    "modelAnswer": "This is a fundamental question in Quantitative Finance. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Quantitative Finance scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Quantitative Finance industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Quantitative Finance.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 20': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_markets_1773306469454_7",
+    "role": "markets",
+    "title": "Fundamental Question 8",
+    "question": "What are the key differences between equity and fixed income trading?",
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 8': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_markets_1773306469454_17",
+    "role": "markets",
+    "title": "Fundamental Question 18",
+    "question": "What are the key differences between equity and fixed income trading?",
+    "modelAnswer": "This is a fundamental question in Sales & Trading. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Sales & Trading scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Sales & Trading industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Sales & Trading.",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Fundamental Question 18': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_am_1773307473011_3",
+    "role": "am",
+    "title": "ESG Integration in Investment Process - Technical Question",
+    "question": "What are the common challenges in implementing ESG Integration in Investment Process and how would you address them?",
+    "modelAnswer": "## ESG Integration in Investment Process - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Asset Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'ESG Integration in Investment Process - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_am_1773307473011_18",
+    "role": "am",
+    "title": "Market Timing vs Time in Market - Technical Question",
+    "question": "What are the common challenges in implementing Market Timing vs Time in Market and how would you address them?",
+    "modelAnswer": "## Market Timing vs Time in Market - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Asset Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Market Timing vs Time in Market - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_am_1773307473011_33",
+    "role": "am",
+    "title": "Client Relationship Management - Technical Question",
+    "question": "What are the common challenges in implementing Client Relationship Management and how would you address them?",
+    "modelAnswer": "## Client Relationship Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Asset Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Client Relationship Management - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_quant_1773307473011_3",
+    "role": "quant",
+    "title": "Risk Model Validation - Technical Question",
+    "question": "What are the common challenges in implementing Risk Model Validation and how would you address them?",
+    "modelAnswer": "## Risk Model Validation - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Quantitative Finance\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Risk Model Validation - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_quant_1773307473011_18",
+    "role": "quant",
+    "title": "Signal Generation & Processing - Technical Question",
+    "question": "What are the common challenges in implementing Signal Generation & Processing and how would you address them?",
+    "modelAnswer": "## Signal Generation & Processing - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Quantitative Finance\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Signal Generation & Processing - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_quant_1773307473011_33",
+    "role": "quant",
+    "title": "Risk Model Validation - Technical Question",
+    "question": "What are the common challenges in implementing Risk Model Validation and how would you address them?",
+    "modelAnswer": "## Risk Model Validation - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Quantitative Finance\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Risk Model Validation - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_quant_1773307473011_48",
+    "role": "quant",
+    "title": "Statistical Modeling - Technical Question",
+    "question": "What are the common challenges in implementing Statistical Modeling and how would you address them?",
+    "modelAnswer": "## Statistical Modeling - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Quantitative Finance\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Statistical Modeling - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_quant_1773307473011_63",
+    "role": "quant",
+    "title": "Risk Management - Technical Question",
+    "question": "What are the common challenges in implementing Risk Management and how would you address them?",
+    "modelAnswer": "## Risk Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Quantitative Finance\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Risk Management - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_markets_1773307473011_3",
+    "role": "markets",
+    "title": "Risk Management in Trading - Technical Question",
+    "question": "What are the common challenges in implementing Risk Management in Trading and how would you address them?",
+    "modelAnswer": "## Risk Management in Trading - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Risk Management in Trading - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_markets_1773307473011_18",
+    "role": "markets",
+    "title": "Regulatory Landscape - Technical Question",
+    "question": "What are the common challenges in implementing Regulatory Landscape and how would you address them?",
+    "modelAnswer": "## Regulatory Landscape - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Regulatory Landscape - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_markets_1773307473011_33",
+    "role": "markets",
+    "title": "Risk Management in Trading - Technical Question",
+    "question": "What are the common challenges in implementing Risk Management in Trading and how would you address them?",
+    "modelAnswer": "## Risk Management in Trading - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Risk Management in Trading - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_markets_1773307473011_48",
+    "role": "markets",
+    "title": "Client Communication - Technical Question",
+    "question": "What are the common challenges in implementing Client Communication and how would you address them?",
+    "modelAnswer": "## Client Communication - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Client Communication - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_markets_1773307473011_63",
+    "role": "markets",
+    "title": "Market Analysis - Technical Question",
+    "question": "What are the common challenges in implementing Market Analysis and how would you address them?",
+    "modelAnswer": "## Market Analysis - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Market Analysis - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "sys_markets_1773307473011_78",
+    "role": "markets",
+    "title": "Stress Management - Technical Question",
+    "question": "What are the common challenges in implementing Stress Management and how would you address them?",
+    "modelAnswer": "## Stress Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Sales & Trading\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Stress Management - Technical Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_2",
+    "role": "corpfin",
+    "title": "Working Capital Management - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Working Capital Management in corporate finance?",
+    "modelAnswer": "## Working Capital Management - Detailed Answer\n\nThis question covers important aspects of Working Capital Management in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to working capital management.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of working capital management within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "practical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Working Capital Management - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_7",
+    "role": "corpfin",
+    "title": "Treasury Management - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Treasury Management in corporate finance?",
+    "modelAnswer": "## Treasury Management - Detailed Answer\n\nThis question covers important aspects of Treasury Management in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to treasury management.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of treasury management within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "currentConcise": "For 'Treasury Management - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_12",
+    "role": "corpfin",
+    "title": "Cost of Capital Calculation - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Cost of Capital Calculation in corporate finance?",
+    "modelAnswer": "## Cost of Capital Calculation - Detailed Answer\n\nThis question covers important aspects of Cost of Capital Calculation in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to cost of capital calculation.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of cost of capital calculation within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Cost of Capital Calculation - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_17",
+    "role": "corpfin",
+    "title": "Working Capital Management - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Working Capital Management in corporate finance?",
+    "modelAnswer": "## Working Capital Management - Detailed Answer\n\nThis question covers important aspects of Working Capital Management in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to working capital management.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of working capital management within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "practical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Working Capital Management - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_22",
+    "role": "corpfin",
+    "title": "Treasury Management - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Treasury Management in corporate finance?",
+    "modelAnswer": "## Treasury Management - Detailed Answer\n\nThis question covers important aspects of Treasury Management in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to treasury management.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of treasury management within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "conceptual",
+    "difficulty": "easy",
+    "currentConcise": "For 'Treasury Management - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_27",
+    "role": "corpfin",
+    "title": "Cost of Capital Calculation - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Cost of Capital Calculation in corporate finance?",
+    "modelAnswer": "## Cost of Capital Calculation - Detailed Answer\n\nThis question covers important aspects of Cost of Capital Calculation in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to cost of capital calculation.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of cost of capital calculation within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Cost of Capital Calculation - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_32",
+    "role": "corpfin",
+    "title": "Working Capital Management - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Working Capital Management in corporate finance?",
+    "modelAnswer": "## Working Capital Management - Detailed Answer\n\nThis question covers important aspects of Working Capital Management in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to working capital management.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of working capital management within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "practical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Working Capital Management - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_37",
+    "role": "corpfin",
+    "title": "Treasury Management - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Treasury Management in corporate finance?",
+    "modelAnswer": "## Treasury Management - Detailed Answer\n\nThis question covers important aspects of Treasury Management in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to treasury management.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of treasury management within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "currentConcise": "For 'Treasury Management - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_42",
+    "role": "corpfin",
+    "title": "Cost of Capital Calculation - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Cost of Capital Calculation in corporate finance?",
+    "modelAnswer": "## Cost of Capital Calculation - Detailed Answer\n\nThis question covers important aspects of Cost of Capital Calculation in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to cost of capital calculation.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of cost of capital calculation within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Cost of Capital Calculation - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_corpfin_1773311903261_47",
+    "role": "corpfin",
+    "title": "Working Capital Management - Corporate Finance Question",
+    "question": "What are the main considerations when dealing with Working Capital Management in corporate finance?",
+    "modelAnswer": "## Working Capital Management - Detailed Answer\n\nThis question covers important aspects of Working Capital Management in Corporate Finance.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to working capital management.\n\n2. **Practical Applications**: How these concepts are applied in real-world corporate finance scenarios.\n\n3. **Industry Context**: The relevance and importance of working capital management within the broader Corporate Finance field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Corporate Finance, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Corporate Finance",
+    "category": "practical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Working Capital Management - Corporate Finance Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_2",
+    "role": "fintech",
+    "title": "Peer-to-Peer Lending - FinTech Question",
+    "question": "What are the main considerations when dealing with Peer-to-Peer Lending in fintech?",
+    "modelAnswer": "## Peer-to-Peer Lending - Detailed Answer\n\nThis question covers important aspects of Peer-to-Peer Lending in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to peer-to-peer lending.\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of peer-to-peer lending within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "practical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Peer-to-Peer Lending - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_7",
+    "role": "fintech",
+    "title": "Financial Data Analytics - FinTech Question",
+    "question": "What are the main considerations when dealing with Financial Data Analytics in fintech?",
+    "modelAnswer": "## Financial Data Analytics - Detailed Answer\n\nThis question covers important aspects of Financial Data Analytics in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to financial data analytics.\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of financial data analytics within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "currentConcise": "For 'Financial Data Analytics - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_12",
+    "role": "fintech",
+    "title": "Decentralized Finance (DeFi) - FinTech Question",
+    "question": "What are the main considerations when dealing with Decentralized Finance (DeFi) in fintech?",
+    "modelAnswer": "## Decentralized Finance (DeFi) - Detailed Answer\n\nThis question covers important aspects of Decentralized Finance (DeFi) in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to decentralized finance (defi).\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of decentralized finance (defi) within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Decentralized Finance (DeFi) - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_17",
+    "role": "fintech",
+    "title": "Peer-to-Peer Lending - FinTech Question",
+    "question": "What are the main considerations when dealing with Peer-to-Peer Lending in fintech?",
+    "modelAnswer": "## Peer-to-Peer Lending - Detailed Answer\n\nThis question covers important aspects of Peer-to-Peer Lending in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to peer-to-peer lending.\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of peer-to-peer lending within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "practical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Peer-to-Peer Lending - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_22",
+    "role": "fintech",
+    "title": "Financial Data Analytics - FinTech Question",
+    "question": "What are the main considerations when dealing with Financial Data Analytics in fintech?",
+    "modelAnswer": "## Financial Data Analytics - Detailed Answer\n\nThis question covers important aspects of Financial Data Analytics in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to financial data analytics.\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of financial data analytics within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "conceptual",
+    "difficulty": "easy",
+    "currentConcise": "For 'Financial Data Analytics - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_27",
+    "role": "fintech",
+    "title": "Decentralized Finance (DeFi) - FinTech Question",
+    "question": "What are the main considerations when dealing with Decentralized Finance (DeFi) in fintech?",
+    "modelAnswer": "## Decentralized Finance (DeFi) - Detailed Answer\n\nThis question covers important aspects of Decentralized Finance (DeFi) in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to decentralized finance (defi).\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of decentralized finance (defi) within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Decentralized Finance (DeFi) - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_32",
+    "role": "fintech",
+    "title": "Peer-to-Peer Lending - FinTech Question",
+    "question": "What are the main considerations when dealing with Peer-to-Peer Lending in fintech?",
+    "modelAnswer": "## Peer-to-Peer Lending - Detailed Answer\n\nThis question covers important aspects of Peer-to-Peer Lending in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to peer-to-peer lending.\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of peer-to-peer lending within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "practical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Peer-to-Peer Lending - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_37",
+    "role": "fintech",
+    "title": "Financial Data Analytics - FinTech Question",
+    "question": "What are the main considerations when dealing with Financial Data Analytics in fintech?",
+    "modelAnswer": "## Financial Data Analytics - Detailed Answer\n\nThis question covers important aspects of Financial Data Analytics in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to financial data analytics.\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of financial data analytics within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "currentConcise": "For 'Financial Data Analytics - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_42",
+    "role": "fintech",
+    "title": "Decentralized Finance (DeFi) - FinTech Question",
+    "question": "What are the main considerations when dealing with Decentralized Finance (DeFi) in fintech?",
+    "modelAnswer": "## Decentralized Finance (DeFi) - Detailed Answer\n\nThis question covers important aspects of Decentralized Finance (DeFi) in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to decentralized finance (defi).\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of decentralized finance (defi) within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Decentralized Finance (DeFi) - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fintech_1773311903261_47",
+    "role": "fintech",
+    "title": "Peer-to-Peer Lending - FinTech Question",
+    "question": "What are the main considerations when dealing with Peer-to-Peer Lending in fintech?",
+    "modelAnswer": "## Peer-to-Peer Lending - Detailed Answer\n\nThis question covers important aspects of Peer-to-Peer Lending in FinTech.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to peer-to-peer lending.\n\n2. **Practical Applications**: How these concepts are applied in real-world fintech scenarios.\n\n3. **Industry Context**: The relevance and importance of peer-to-peer lending within the broader FinTech field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in FinTech, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of FinTech",
+    "category": "practical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Peer-to-Peer Lending - FinTech Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_2",
+    "role": "fo",
+    "title": "Family Governance Structures - Family Office Question",
+    "question": "What are the main considerations when dealing with Family Governance Structures in family office?",
+    "modelAnswer": "## Family Governance Structures - Detailed Answer\n\nThis question covers important aspects of Family Governance Structures in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to family governance structures.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of family governance structures within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "practical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Family Governance Structures - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_7",
+    "role": "fo",
+    "title": "Risk Management for Family Wealth - Family Office Question",
+    "question": "What are the main considerations when dealing with Risk Management for Family Wealth in family office?",
+    "modelAnswer": "## Risk Management for Family Wealth - Detailed Answer\n\nThis question covers important aspects of Risk Management for Family Wealth in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to risk management for family wealth.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of risk management for family wealth within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "currentConcise": "For 'Risk Management for Family Wealth - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_12",
+    "role": "fo",
+    "title": "Family Business Advisory - Family Office Question",
+    "question": "What are the main considerations when dealing with Family Business Advisory in family office?",
+    "modelAnswer": "## Family Business Advisory - Detailed Answer\n\nThis question covers important aspects of Family Business Advisory in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to family business advisory.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of family business advisory within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Family Business Advisory - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_17",
+    "role": "fo",
+    "title": "Family Governance Structures - Family Office Question",
+    "question": "What are the main considerations when dealing with Family Governance Structures in family office?",
+    "modelAnswer": "## Family Governance Structures - Detailed Answer\n\nThis question covers important aspects of Family Governance Structures in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to family governance structures.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of family governance structures within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "practical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Family Governance Structures - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_22",
+    "role": "fo",
+    "title": "Risk Management for Family Wealth - Family Office Question",
+    "question": "What are the main considerations when dealing with Risk Management for Family Wealth in family office?",
+    "modelAnswer": "## Risk Management for Family Wealth - Detailed Answer\n\nThis question covers important aspects of Risk Management for Family Wealth in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to risk management for family wealth.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of risk management for family wealth within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "conceptual",
+    "difficulty": "easy",
+    "currentConcise": "For 'Risk Management for Family Wealth - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_27",
+    "role": "fo",
+    "title": "Family Business Advisory - Family Office Question",
+    "question": "What are the main considerations when dealing with Family Business Advisory in family office?",
+    "modelAnswer": "## Family Business Advisory - Detailed Answer\n\nThis question covers important aspects of Family Business Advisory in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to family business advisory.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of family business advisory within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "technical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Family Business Advisory - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_32",
+    "role": "fo",
+    "title": "Family Governance Structures - Family Office Question",
+    "question": "What are the main considerations when dealing with Family Governance Structures in family office?",
+    "modelAnswer": "## Family Governance Structures - Detailed Answer\n\nThis question covers important aspects of Family Governance Structures in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to family governance structures.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of family governance structures within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "practical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Family Governance Structures - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_37",
+    "role": "fo",
+    "title": "Risk Management for Family Wealth - Family Office Question",
+    "question": "What are the main considerations when dealing with Risk Management for Family Wealth in family office?",
+    "modelAnswer": "## Risk Management for Family Wealth - Detailed Answer\n\nThis question covers important aspects of Risk Management for Family Wealth in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to risk management for family wealth.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of risk management for family wealth within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "conceptual",
+    "difficulty": "medium",
+    "currentConcise": "For 'Risk Management for Family Wealth - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_42",
+    "role": "fo",
+    "title": "Family Business Advisory - Family Office Question",
+    "question": "What are the main considerations when dealing with Family Business Advisory in family office?",
+    "modelAnswer": "## Family Business Advisory - Detailed Answer\n\nThis question covers important aspects of Family Business Advisory in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to family business advisory.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of family business advisory within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "technical",
+    "difficulty": "easy",
+    "currentConcise": "For 'Family Business Advisory - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  },
+  {
+    "id": "gen_fo_1773311903261_47",
+    "role": "fo",
+    "title": "Family Governance Structures - Family Office Question",
+    "question": "What are the main considerations when dealing with Family Governance Structures in family office?",
+    "modelAnswer": "## Family Governance Structures - Detailed Answer\n\nThis question covers important aspects of Family Governance Structures in Family Office.\n\n### Key Concepts:\n1. **Fundamental Principles**: Understand the core principles and theories related to family governance structures.\n\n2. **Practical Applications**: How these concepts are applied in real-world family office scenarios.\n\n3. **Industry Context**: The relevance and importance of family governance structures within the broader Family Office field.\n\n4. **Current Trends**: Recent developments and evolving practices in this area.\n\n5. **Best Practices**: Industry standards and recommended approaches.\n\n### Entry-Level Perspective:\nFor someone starting in Family Office, focus on:\n- Understanding basic terminology and concepts\n- Knowing common applications and use cases\n- Being aware of industry standards and regulations\n- Developing problem-solving skills related to this topic\n\n### Further Learning:\n- Research industry case studies\n- Study relevant regulations and compliance requirements\n- Understand how this topic connects to other areas of Family Office",
+    "category": "practical",
+    "difficulty": "medium",
+    "currentConcise": "For 'Family Governance Structures - Family Office Question': provide clear definitions, categorize components, give examples, and explain practical significance."
+  }
+]

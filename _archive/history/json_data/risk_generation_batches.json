@@ -1,0 +1,796 @@
+[
+  {
+    "role": "risk",
+    "batch_number": 1,
+    "questions": [
+      {
+        "id": "gen_risk_1773306469454_0",
+        "role": "risk",
+        "title": "Fundamental Question 1",
+        "question": "What are the main types of financial risk that institutions face?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_1",
+        "role": "risk",
+        "title": "Fundamental Question 2",
+        "question": "Explain the concept of credit risk and how it is measured.",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_2",
+        "role": "risk",
+        "title": "Fundamental Question 3",
+        "question": "How do you calculate and interpret value at risk (VaR)?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_3",
+        "role": "risk",
+        "title": "Fundamental Question 4",
+        "question": "What is stress testing and why is it important for risk management?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_4",
+        "role": "risk",
+        "title": "Fundamental Question 5",
+        "question": "Describe the key principles of the Basel regulatory framework.",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_5",
+        "role": "risk",
+        "title": "Fundamental Question 6",
+        "question": "How do you assess operational risk in a financial institution?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_6",
+        "role": "risk",
+        "title": "Fundamental Question 7",
+        "question": "What is counterparty risk and how is it managed?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_7",
+        "role": "risk",
+        "title": "Fundamental Question 8",
+        "question": "Explain the difference between systematic and unsystematic risk.",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_8",
+        "role": "risk",
+        "title": "Fundamental Question 9",
+        "question": "How do you establish an appropriate risk appetite for an organization?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_9",
+        "role": "risk",
+        "title": "Fundamental Question 10",
+        "question": "What role does risk management play in the overall business strategy?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_10",
+        "role": "risk",
+        "title": "Fundamental Question 11",
+        "question": "What are the main types of financial risk that institutions face?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_11",
+        "role": "risk",
+        "title": "Fundamental Question 12",
+        "question": "Explain the concept of credit risk and how it is measured.",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_12",
+        "role": "risk",
+        "title": "Fundamental Question 13",
+        "question": "How do you calculate and interpret value at risk (VaR)?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_13",
+        "role": "risk",
+        "title": "Fundamental Question 14",
+        "question": "What is stress testing and why is it important for risk management?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_14",
+        "role": "risk",
+        "title": "Fundamental Question 15",
+        "question": "Describe the key principles of the Basel regulatory framework.",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_15",
+        "role": "risk",
+        "title": "Fundamental Question 16",
+        "question": "How do you assess operational risk in a financial institution?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_16",
+        "role": "risk",
+        "title": "Fundamental Question 17",
+        "question": "What is counterparty risk and how is it managed?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_17",
+        "role": "risk",
+        "title": "Fundamental Question 18",
+        "question": "Explain the difference between systematic and unsystematic risk.",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_18",
+        "role": "risk",
+        "title": "Fundamental Question 19",
+        "question": "How do you establish an appropriate risk appetite for an organization?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      },
+      {
+        "id": "gen_risk_1773306469454_19",
+        "role": "risk",
+        "title": "Fundamental Question 20",
+        "question": "What role does risk management play in the overall business strategy?",
+        "modelAnswer": "This is a fundamental question in Risk Management. A comprehensive answer would cover:\n\n1. **Key Concepts**: Explain the core principles and definitions related to this topic.\n\n2. **Practical Applications**: Describe how this concept is applied in real-world Risk Management scenarios.\n\n3. **Industry Context**: Discuss the importance of this topic within the broader Risk Management industry.\n\n4. **Current Trends**: Mention any recent developments or evolving practices in this area.\n\n5. **Entry-Level Perspective**: As an entry-level professional, focus on understanding the basics and showing willingness to learn more advanced applications.\n\nFor a complete answer, research industry best practices, study relevant case examples, and understand how this topic connects to other areas of Risk Management.",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "• Understand the fundamental concepts and definitions\n• Know practical applications in real-world scenarios  \n• Recognize the importance within the broader industry\n• Stay informed about current trends and developments\n• Demonstrate foundational knowledge with openness to learning"
+      }
+    ]
+  },
+  {
+    "role": "risk",
+    "batch_number": 2,
+    "questions": [
+      {
+        "id": "sys_risk_1773307473011_3",
+        "role": "risk",
+        "title": "Model Risk Management - Technical Question",
+        "question": "What are the common challenges in implementing Model Risk Management and how would you address them?",
+        "modelAnswer": "## Model Risk Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Model Risk Management - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_4",
+        "role": "risk",
+        "title": "Operational Risk Framework - Behavioral Question",
+        "question": "Share an example of how you've used Operational Risk Framework to add value in a team setting.",
+        "modelAnswer": "## Operational Risk Framework - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Operational Risk Framework\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Operational Risk Framework interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Operational Risk Framework - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_5",
+        "role": "risk",
+        "title": "Basel Regulations & Capital Requirements - Case Question",
+        "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Basel Regulations & Capital Requirements?",
+        "modelAnswer": "## Basel Regulations & Capital Requirements - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Basel Regulations & Capital Requirements principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Basel Regulations & Capital Requirements - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_6",
+        "role": "risk",
+        "title": "Liquidity Risk Measurement - Technical Question",
+        "question": "How would you approach a problem involving Liquidity Risk Measurement in an entry-level Risk Management role?",
+        "modelAnswer": "## Liquidity Risk Measurement - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Liquidity Risk Measurement - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_7",
+        "role": "risk",
+        "title": "Enterprise Risk Management - Behavioral Question",
+        "question": "What excites you most about working with Enterprise Risk Management in Risk Management?",
+        "modelAnswer": "## Enterprise Risk Management - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Enterprise Risk Management\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Enterprise Risk Management interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Enterprise Risk Management - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_8",
+        "role": "risk",
+        "title": "Risk Appetite Statement - Case Question",
+        "question": "Evaluate the trade-offs in different strategies related to Risk Appetite Statement.",
+        "modelAnswer": "## Risk Appetite Statement - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Risk Appetite Statement principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Risk Appetite Statement - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_9",
+        "role": "risk",
+        "title": "Climate Risk Assessment - Technical Question",
+        "question": "Compare and contrast different approaches to Climate Risk Assessment in the current market environment.",
+        "modelAnswer": "## Climate Risk Assessment - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Climate Risk Assessment - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_10",
+        "role": "risk",
+        "title": "Value at Risk (VaR) Calculation & Limitations - Behavioral Question",
+        "question": "Describe a situation where you applied knowledge of Value at Risk (VaR) Calculation & Limitations to solve a real-world problem.",
+        "modelAnswer": "## Value at Risk (VaR) Calculation & Limitations - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Value at Risk (VaR) Calculation & Limitations\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Value at Risk (VaR) Calculation & Limitations interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Value at Risk (VaR) Calculation & Limitations - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_11",
+        "role": "risk",
+        "title": "Stress Testing Scenarios - Case Question",
+        "question": "Analyze a case study involving Stress Testing Scenarios and propose a solution.",
+        "modelAnswer": "## Stress Testing Scenarios - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Stress Testing Scenarios principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Stress Testing Scenarios - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_12",
+        "role": "risk",
+        "title": "Counterparty Credit Risk - Technical Question",
+        "question": "Describe the main methodologies used in Counterparty Credit Risk and their practical implications.",
+        "modelAnswer": "## Counterparty Credit Risk - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Counterparty Credit Risk - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_13",
+        "role": "risk",
+        "title": "Model Risk Management - Behavioral Question",
+        "question": "How would you explain Model Risk Management to someone without a technical background?",
+        "modelAnswer": "## Model Risk Management - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Model Risk Management\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Model Risk Management interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Model Risk Management - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_14",
+        "role": "risk",
+        "title": "Operational Risk Framework - Case Question",
+        "question": "Develop a recommendation for implementing Operational Risk Framework in a specific context.",
+        "modelAnswer": "## Operational Risk Framework - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Operational Risk Framework principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Operational Risk Framework - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_15",
+        "role": "risk",
+        "title": "Basel Regulations & Capital Requirements - Technical Question",
+        "question": "Explain the key concepts and applications of Basel Regulations & Capital Requirements in Risk Management.",
+        "modelAnswer": "## Basel Regulations & Capital Requirements - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Basel Regulations & Capital Requirements - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_16",
+        "role": "risk",
+        "title": "Liquidity Risk Measurement - Behavioral Question",
+        "question": "How do you stay updated with developments in Liquidity Risk Measurement and related areas?",
+        "modelAnswer": "## Liquidity Risk Measurement - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Liquidity Risk Measurement\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Liquidity Risk Measurement interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Liquidity Risk Measurement - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_17",
+        "role": "risk",
+        "title": "Enterprise Risk Management - Case Question",
+        "question": "Design an approach to address a business problem using Enterprise Risk Management concepts.",
+        "modelAnswer": "## Enterprise Risk Management - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Enterprise Risk Management principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Enterprise Risk Management - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_18",
+        "role": "risk",
+        "title": "Risk Appetite Statement - Technical Question",
+        "question": "What are the common challenges in implementing Risk Appetite Statement and how would you address them?",
+        "modelAnswer": "## Risk Appetite Statement - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Risk Appetite Statement - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_19",
+        "role": "risk",
+        "title": "Climate Risk Assessment - Behavioral Question",
+        "question": "Share an example of how you've used Climate Risk Assessment to add value in a team setting.",
+        "modelAnswer": "## Climate Risk Assessment - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Climate Risk Assessment\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Climate Risk Assessment interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Climate Risk Assessment - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_20",
+        "role": "risk",
+        "title": "Value at Risk (VaR) Calculation & Limitations - Case Question",
+        "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Value at Risk (VaR) Calculation & Limitations?",
+        "modelAnswer": "## Value at Risk (VaR) Calculation & Limitations - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Value at Risk (VaR) Calculation & Limitations principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Value at Risk (VaR) Calculation & Limitations - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_21",
+        "role": "risk",
+        "title": "Stress Testing Scenarios - Technical Question",
+        "question": "How would you approach a problem involving Stress Testing Scenarios in an entry-level Risk Management role?",
+        "modelAnswer": "## Stress Testing Scenarios - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Stress Testing Scenarios - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_22",
+        "role": "risk",
+        "title": "Counterparty Credit Risk - Behavioral Question",
+        "question": "What excites you most about working with Counterparty Credit Risk in Risk Management?",
+        "modelAnswer": "## Counterparty Credit Risk - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Counterparty Credit Risk\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Counterparty Credit Risk interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Counterparty Credit Risk - Behavioral Question"
+      }
+    ]
+  },
+  {
+    "role": "risk",
+    "batch_number": 3,
+    "questions": [
+      {
+        "id": "sys_risk_1773307473011_23",
+        "role": "risk",
+        "title": "Model Risk Management - Case Question",
+        "question": "Evaluate the trade-offs in different strategies related to Model Risk Management.",
+        "modelAnswer": "## Model Risk Management - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Model Risk Management principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Model Risk Management - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_24",
+        "role": "risk",
+        "title": "Operational Risk Framework - Technical Question",
+        "question": "Compare and contrast different approaches to Operational Risk Framework in the current market environment.",
+        "modelAnswer": "## Operational Risk Framework - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Operational Risk Framework - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_25",
+        "role": "risk",
+        "title": "Basel Regulations & Capital Requirements - Behavioral Question",
+        "question": "Describe a situation where you applied knowledge of Basel Regulations & Capital Requirements to solve a real-world problem.",
+        "modelAnswer": "## Basel Regulations & Capital Requirements - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Basel Regulations & Capital Requirements\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Basel Regulations & Capital Requirements interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Basel Regulations & Capital Requirements - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_26",
+        "role": "risk",
+        "title": "Liquidity Risk Measurement - Case Question",
+        "question": "Analyze a case study involving Liquidity Risk Measurement and propose a solution.",
+        "modelAnswer": "## Liquidity Risk Measurement - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Liquidity Risk Measurement principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Liquidity Risk Measurement - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_27",
+        "role": "risk",
+        "title": "Enterprise Risk Management - Technical Question",
+        "question": "Describe the main methodologies used in Enterprise Risk Management and their practical implications.",
+        "modelAnswer": "## Enterprise Risk Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Enterprise Risk Management - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_28",
+        "role": "risk",
+        "title": "Risk Appetite Statement - Behavioral Question",
+        "question": "How would you explain Risk Appetite Statement to someone without a technical background?",
+        "modelAnswer": "## Risk Appetite Statement - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Risk Appetite Statement\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Risk Appetite Statement interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Risk Appetite Statement - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_29",
+        "role": "risk",
+        "title": "Climate Risk Assessment - Case Question",
+        "question": "Develop a recommendation for implementing Climate Risk Assessment in a specific context.",
+        "modelAnswer": "## Climate Risk Assessment - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Climate Risk Assessment principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Climate Risk Assessment - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_30",
+        "role": "risk",
+        "title": "Value at Risk (VaR) Calculation & Limitations - Technical Question",
+        "question": "Explain the key concepts and applications of Value at Risk (VaR) Calculation & Limitations in Risk Management.",
+        "modelAnswer": "## Value at Risk (VaR) Calculation & Limitations - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Value at Risk (VaR) Calculation & Limitations - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_31",
+        "role": "risk",
+        "title": "Stress Testing Scenarios - Behavioral Question",
+        "question": "How do you stay updated with developments in Stress Testing Scenarios and related areas?",
+        "modelAnswer": "## Stress Testing Scenarios - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Stress Testing Scenarios\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Stress Testing Scenarios interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Stress Testing Scenarios - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_32",
+        "role": "risk",
+        "title": "Counterparty Credit Risk - Case Question",
+        "question": "Design an approach to address a business problem using Counterparty Credit Risk concepts.",
+        "modelAnswer": "## Counterparty Credit Risk - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Counterparty Credit Risk principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Counterparty Credit Risk - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_33",
+        "role": "risk",
+        "title": "Model Risk Management - Technical Question",
+        "question": "What are the common challenges in implementing Model Risk Management and how would you address them?",
+        "modelAnswer": "## Model Risk Management - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "medium",
+        "currentConcise": "[TO GENERATE] Concise hint for Model Risk Management - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_34",
+        "role": "risk",
+        "title": "Operational Risk Framework - Behavioral Question",
+        "question": "Share an example of how you've used Operational Risk Framework to add value in a team setting.",
+        "modelAnswer": "## Operational Risk Framework - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Operational Risk Framework\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Operational Risk Framework interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Operational Risk Framework - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_35",
+        "role": "risk",
+        "title": "Basel Regulations & Capital Requirements - Case Question",
+        "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Basel Regulations & Capital Requirements?",
+        "modelAnswer": "## Basel Regulations & Capital Requirements - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Basel Regulations & Capital Requirements principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Basel Regulations & Capital Requirements - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_36",
+        "role": "risk",
+        "title": "Risk Measurement - Technical Question",
+        "question": "How would you approach a problem involving Risk Measurement in an entry-level Risk Management role?",
+        "modelAnswer": "## Risk Measurement - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Risk Measurement - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_37",
+        "role": "risk",
+        "title": "Regulatory Knowledge - Behavioral Question",
+        "question": "What excites you most about working with Regulatory Knowledge in Risk Management?",
+        "modelAnswer": "## Regulatory Knowledge - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Regulatory Knowledge\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Regulatory Knowledge interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Regulatory Knowledge - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_38",
+        "role": "risk",
+        "title": "Data Analysis - Case Question",
+        "question": "Evaluate the trade-offs in different strategies related to Data Analysis.",
+        "modelAnswer": "## Data Analysis - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Data Analysis principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Data Analysis - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_39",
+        "role": "risk",
+        "title": "Model Development - Technical Question",
+        "question": "Compare and contrast different approaches to Model Development in the current market environment.",
+        "modelAnswer": "## Model Development - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Model Development - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_40",
+        "role": "risk",
+        "title": "Reporting & Communication - Behavioral Question",
+        "question": "Describe a situation where you applied knowledge of Reporting & Communication to solve a real-world problem.",
+        "modelAnswer": "## Reporting & Communication - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Reporting & Communication\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Reporting & Communication interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Reporting & Communication - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_41",
+        "role": "risk",
+        "title": "Stress Testing - Case Question",
+        "question": "Analyze a case study involving Stress Testing and propose a solution.",
+        "modelAnswer": "## Stress Testing - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Stress Testing principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Stress Testing - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_42",
+        "role": "risk",
+        "title": "Compliance Monitoring - Technical Question",
+        "question": "Describe the main methodologies used in Compliance Monitoring and their practical implications.",
+        "modelAnswer": "## Compliance Monitoring - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Compliance Monitoring - Technical Question"
+      }
+    ]
+  },
+  {
+    "role": "risk",
+    "batch_number": 4,
+    "questions": [
+      {
+        "id": "sys_risk_1773307473011_43",
+        "role": "risk",
+        "title": "Governance Understanding - Behavioral Question",
+        "question": "How would you explain Governance Understanding to someone without a technical background?",
+        "modelAnswer": "## Governance Understanding - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Governance Understanding\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Governance Understanding interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Governance Understanding - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_44",
+        "role": "risk",
+        "title": "Risk Measurement - Case Question",
+        "question": "Develop a recommendation for implementing Risk Measurement in a specific context.",
+        "modelAnswer": "## Risk Measurement - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Risk Measurement principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Risk Measurement - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_45",
+        "role": "risk",
+        "title": "Regulatory Knowledge - Technical Question",
+        "question": "Explain the key concepts and applications of Regulatory Knowledge in Risk Management.",
+        "modelAnswer": "## Regulatory Knowledge - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Regulatory Knowledge - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_46",
+        "role": "risk",
+        "title": "Data Analysis - Behavioral Question",
+        "question": "How do you stay updated with developments in Data Analysis and related areas?",
+        "modelAnswer": "## Data Analysis - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Data Analysis\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Data Analysis interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Data Analysis - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_47",
+        "role": "risk",
+        "title": "Model Development - Case Question",
+        "question": "Design an approach to address a business problem using Model Development concepts.",
+        "modelAnswer": "## Model Development - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Model Development principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Model Development - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_48",
+        "role": "risk",
+        "title": "Reporting & Communication - Technical Question",
+        "question": "What are the common challenges in implementing Reporting & Communication and how would you address them?",
+        "modelAnswer": "## Reporting & Communication - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Reporting & Communication - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_49",
+        "role": "risk",
+        "title": "Stress Testing - Behavioral Question",
+        "question": "Share an example of how you've used Stress Testing to add value in a team setting.",
+        "modelAnswer": "## Stress Testing - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Stress Testing\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Stress Testing interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Stress Testing - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_50",
+        "role": "risk",
+        "title": "Compliance Monitoring - Case Question",
+        "question": "Given a scenario where a risk model fails during a stress event, how would you apply principles of Compliance Monitoring?",
+        "modelAnswer": "## Compliance Monitoring - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Compliance Monitoring principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Compliance Monitoring - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_51",
+        "role": "risk",
+        "title": "Governance Understanding - Technical Question",
+        "question": "How would you approach a problem involving Governance Understanding in an entry-level Risk Management role?",
+        "modelAnswer": "## Governance Understanding - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Governance Understanding - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_52",
+        "role": "risk",
+        "title": "Risk Measurement - Behavioral Question",
+        "question": "What excites you most about working with Risk Measurement in Risk Management?",
+        "modelAnswer": "## Risk Measurement - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Risk Measurement\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Risk Measurement interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Risk Measurement - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_53",
+        "role": "risk",
+        "title": "Regulatory Knowledge - Case Question",
+        "question": "Evaluate the trade-offs in different strategies related to Regulatory Knowledge.",
+        "modelAnswer": "## Regulatory Knowledge - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Regulatory Knowledge principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Regulatory Knowledge - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_54",
+        "role": "risk",
+        "title": "Data Analysis - Technical Question",
+        "question": "Compare and contrast different approaches to Data Analysis in the current market environment.",
+        "modelAnswer": "## Data Analysis - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Data Analysis - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_55",
+        "role": "risk",
+        "title": "Model Development - Behavioral Question",
+        "question": "Describe a situation where you applied knowledge of Model Development to solve a real-world problem.",
+        "modelAnswer": "## Model Development - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Model Development\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Model Development interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Model Development - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_56",
+        "role": "risk",
+        "title": "Reporting & Communication - Case Question",
+        "question": "Analyze a case study involving Reporting & Communication and propose a solution.",
+        "modelAnswer": "## Reporting & Communication - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Reporting & Communication principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Reporting & Communication - Case Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_57",
+        "role": "risk",
+        "title": "Stress Testing - Technical Question",
+        "question": "Describe the main methodologies used in Stress Testing and their practical implications.",
+        "modelAnswer": "## Stress Testing - Technical Answer Framework\n\n### 1. Core Concepts\n- Define key terms and principles\n- Explain theoretical foundations\n- Identify relevant models/methodologies\n\n### 2. Practical Applications\n- Real-world use cases in Risk Management\n- Industry best practices\n- Common implementation approaches\n\n### 3. Critical Analysis\n- Strengths and limitations\n- Current industry debates\n- Emerging trends and developments\n\n### 4. Entry-Level Perspective\n- Foundational knowledge requirements\n- Learning pathways and resources\n- Initial practical applications\n\n### Key Takeaways:\n- Demonstrate understanding of fundamentals\n- Show awareness of practical considerations\n- Express curiosity about advanced applications",
+        "category": "technical",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Stress Testing - Technical Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_58",
+        "role": "risk",
+        "title": "Compliance Monitoring - Behavioral Question",
+        "question": "How would you explain Compliance Monitoring to someone without a technical background?",
+        "modelAnswer": "## Compliance Monitoring - Behavioral Answer Framework\n\n### 1. Personal Experience\n- Relevant background or exposure\n- Specific examples of application\n- Lessons learned from experience\n\n### 2. Knowledge Development\n- How you built understanding of Compliance Monitoring\n- Ongoing learning strategies\n- Staying current with developments\n\n### 3. Professional Application\n- Applying knowledge in work settings\n- Collaboration with others on related topics\n- Contribution to team or organizational goals\n\n### 4. Career Motivation\n- Why Compliance Monitoring interests you\n- How it fits with your career goals\n- Areas you want to develop further\n\n### Interview Tips:\n- Be specific with examples\n- Show genuine enthusiasm\n- Connect to broader industry context",
+        "category": "behavioral",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Compliance Monitoring - Behavioral Question"
+      },
+      {
+        "id": "sys_risk_1773307473011_59",
+        "role": "risk",
+        "title": "Governance Understanding - Case Question",
+        "question": "Develop a recommendation for implementing Governance Understanding in a specific context.",
+        "modelAnswer": "## Governance Understanding - Case Study Answer Framework\n\n### 1. Problem Analysis\n- Understand the core issues\n- Identify key stakeholders and objectives\n- Gather relevant data and context\n\n### 2. Solution Development\n- Apply Governance Understanding principles appropriately\n- Consider multiple alternatives\n- Evaluate trade-offs and risks\n\n### 3. Implementation Plan\n- Step-by-step approach\n- Resource requirements\n- Timeline and milestones\n\n### 4. Expected Outcomes\n- Quantitative and qualitative results\n- Success metrics and KPIs\n- Potential challenges and mitigations\n\n### Presentation Tips:\n- Structure your answer clearly\n- Use logical reasoning throughout\n- Demonstrate practical thinking",
+        "category": "case",
+        "difficulty": "easy",
+        "currentConcise": "[TO GENERATE] Concise hint for Governance Understanding - Case Question"
+      }
+    ]
+  }
+]

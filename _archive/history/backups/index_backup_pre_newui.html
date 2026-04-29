@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finterview - 金融面试准备平台</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- 页眉 -->
+        <header class="main-header">
+            <div class="container">
+                <div class="flex items-center justify-between">
+                    <div class="logo">
+                        <h1>finterview</h1>
+                        <p>金融面试准备平台</p>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <button class="menu-toggle" aria-label="菜单">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="nav-list">
+                            <li><a href="index.html" class="active">首页</a></li>
+                            <li><a href="industry.html">行业题库</a></li>
+                            <li><a href="#">学习指南</a></li>
+                            <li><a href="#">关于我们</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- 主要内容 -->
+        <main class="main-content">
+            <div class="container">
+                <!-- 英雄区域 -->
+                <section class="hero-section text-center py-12">
+                    <h2 class="text-3xl font-bold mb-4">选择你的目标行业</h2>
+                    <p class="text-lg text-secondary mb-8">专注金融领域，覆盖8大行业，26道精选题目</p>
+                    
+                    <div class="search-box">
+                        <input type="text" placeholder="搜索行业或题目..." id="searchInput">
+                        <button id="searchButton">
+                            <i class="fas fa-search"></i> 搜索
+                        </button>
+                    </div>
+                </section>
+
+                <!-- 行业网格区域 -->
+                <section class="industry-section">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-semibold">热门行业</h3>
+                        <div class="text-sm text-secondary">
+                            共 <span id="industryCount">8</span> 个行业
+                        </div>
+                    </div>
+                    
+                    <!-- 行业网格 -->
+                    <div class="industry-grid" id="industryGrid">
+                        <!-- 行业卡片将通过JavaScript动态生成 -->
+                        <!-- 示例卡片结构 -->
+                        <div class="industry-card" data-industry="ib">
+                            <div class="industry-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="industry-name">投资银行</h4>
+                            <p class="industry-en">Investment Banking</p>
+                            <div class="industry-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">4.2/5.0</span>
+                            </div>
+                            <div class="question-count">8题</div>
+                        </div>
+                        
+                        <div class="industry-card" data-industry="am">
+                            <div class="industry-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h4 class="industry-name">资产管理</h4>
+                            <p class="industry-en">Asset Management</p>
+                            <div class="industry-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">4.1/5.0</span>
+                            </div>
+                            <div class="question-count">6题</div>
+                        </div>
+                        
+                        <div class="industry-card" data-industry="rm">
+                            <div class="industry-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="industry-name">风险管理</h4>
+                            <p class="industry-en">Risk Management</p>
+                            <div class="industry-rating">
+                                <span class="stars">★★★☆☆</span>
+                                <span class="rating-text">3.5/5.0</span>
+                            </div>
+                            <div class="question-count">4题</div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <button class="btn btn-outline px-8">
+                            <i class="fas fa-arrow-right"></i> 查看更多行业
+                        </button>
+                    </div>
+                </section>
+
+                <!-- 功能特色区域 -->
+                <section class="features-section py-12">
+                    <h3 class="text-2xl font-semibold text-center mb-8">为什么选择 finterview？</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="text-primary text-3xl mb-4">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-3">星级评分系统</h4>
+                                <p class="text-secondary">每道题目都有综合评分和维度评分，帮助您了解题目质量</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="text-primary text-3xl mb-4">
+                                    <i class="fas fa-filter"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-3">智能筛选</h4>
+                                <p class="text-secondary">按星级、类型、难度等多维度筛选，快速找到目标题目</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <div class="text-primary text-3xl mb-4">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold mb-3">行业聚焦</h4>
+                                <p class="text-secondary">专注金融领域，覆盖投行、资管、风控等8大核心行业</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <p class="text-sm text-secondary">© 2024 finterview. 金融面试准备平台</p>
+                    </div>
+                    
+                    <ul class="footer-links">
+                        <li><a href="#">使用指南</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../../questions.js"></script>
+    <script src="../js/data-loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

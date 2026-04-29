@@ -1,0 +1,541 @@
+[
+  {
+    "id": "gen_risk_1773306469454_0",
+    "title": "Fundamental Question 1",
+    "conciseAnswer": "Focus on the 5 main categories: market, credit, operational, liquidity, and strategic risk. Mention how they differ and provide examples for each.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_1",
+    "title": "Fundamental Question 2",
+    "conciseAnswer": "Key points: 1) Definition - risk of loss from borrower default 2) Measurement - PD, LGD, EAD 3) Mitigation - collateral, covenants, diversification.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_2",
+    "title": "Fundamental Question 3",
+    "conciseAnswer": "Remember VaR basics: 1) What it measures (potential loss at confidence level) 2) Key parameters (confidence, time horizon) 3) Limitations (tail risk, assumptions).",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_3",
+    "title": "Fundamental Question 4",
+    "conciseAnswer": "Stress testing involves: 1) Designing extreme scenarios 2) Assessing impact on portfolio 3) Informing risk appetite. Mention regulatory requirements and practical applications.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_4",
+    "title": "Fundamental Question 5",
+    "conciseAnswer": "Basel framework pillars: 1) Minimum capital requirements 2) Supervisory review 3) Market discipline. Know the progression from Basel I to III/IV.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_5",
+    "title": "Fundamental Question 6",
+    "conciseAnswer": "Operational risk categories: people, processes, systems, external events. Measurement approaches: basic indicator, standardized, advanced measurement.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_6",
+    "title": "Fundamental Question 7",
+    "conciseAnswer": "Counterparty risk management: exposure measurement, credit limits, collateralization, netting agreements, credit valuation adjustment (CVA).",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_7",
+    "title": "Fundamental Question 8",
+    "conciseAnswer": "Key distinction: Systematic (market-wide, non-diversifiable) vs. unsystematic (firm-specific, diversifiable). CAPM framework: beta measures systematic risk exposure.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_8",
+    "title": "Fundamental Question 9",
+    "conciseAnswer": "Risk appetite framework: 1) Define tolerance levels 2) Align with strategy 3) Communicate across organization 4) Monitor compliance.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_9",
+    "title": "Fundamental Question 10",
+    "conciseAnswer": "Risk management supports: 1) Strategic decision-making 2) Capital allocation 3) Regulatory compliance 4) Stakeholder confidence 5) Sustainable growth.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_10",
+    "title": "Fundamental Question 11",
+    "conciseAnswer": "Focus on the 5 main categories: market, credit, operational, liquidity, and strategic risk. Mention how they differ and provide examples for each.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_11",
+    "title": "Fundamental Question 12",
+    "conciseAnswer": "Key points: 1) Definition - risk of loss from borrower default 2) Measurement - PD, LGD, EAD 3) Mitigation - collateral, covenants, diversification.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_12",
+    "title": "Fundamental Question 13",
+    "conciseAnswer": "Remember VaR basics: 1) What it measures (potential loss at confidence level) 2) Key parameters (confidence, time horizon) 3) Limitations (tail risk, assumptions).",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_13",
+    "title": "Fundamental Question 14",
+    "conciseAnswer": "Stress testing involves: 1) Designing extreme scenarios 2) Assessing impact on portfolio 3) Informing risk appetite. Mention regulatory requirements and practical applications.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_14",
+    "title": "Fundamental Question 15",
+    "conciseAnswer": "Basel framework pillars: 1) Minimum capital requirements 2) Supervisory review 3) Market discipline. Know the progression from Basel I to III/IV.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_15",
+    "title": "Fundamental Question 16",
+    "conciseAnswer": "Operational risk categories: people, processes, systems, external events. Measurement approaches: basic indicator, standardized, advanced measurement.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_16",
+    "title": "Fundamental Question 17",
+    "conciseAnswer": "Counterparty risk management: exposure measurement, credit limits, collateralization, netting agreements, credit valuation adjustment (CVA).",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_17",
+    "title": "Fundamental Question 18",
+    "conciseAnswer": "Key distinction: Systematic (market-wide, non-diversifiable) vs. unsystematic (firm-specific, diversifiable). CAPM framework: beta measures systematic risk exposure.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_18",
+    "title": "Fundamental Question 19",
+    "conciseAnswer": "Risk appetite framework: 1) Define tolerance levels 2) Align with strategy 3) Communicate across organization 4) Monitor compliance.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "gen_risk_1773306469454_19",
+    "title": "Fundamental Question 20",
+    "conciseAnswer": "Risk management supports: 1) Strategic decision-making 2) Capital allocation 3) Regulatory compliance 4) Stakeholder confidence 5) Sustainable growth.",
+    "role": "risk",
+    "batch": 1
+  },
+  {
+    "id": "sys_risk_1773307473011_3",
+    "title": "Model Risk Management - Technical Question",
+    "conciseAnswer": "Model risk management challenges: model validation, documentation, governance, ongoing monitoring. Address through robust frameworks and independent review.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_4",
+    "title": "Operational Risk Framework - Behavioral Question",
+    "conciseAnswer": "Share specific example: process improvement that reduced errors, system implementation that enhanced controls, or incident response that minimized losses.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_5",
+    "title": "Basel Regulations & Capital Requirements - Case Question",
+    "conciseAnswer": "Basel principles: risk-based capital, leverage ratio, liquidity requirements. Know the three pillars and their implementation challenges.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_6",
+    "title": "Liquidity Risk Measurement - Technical Question",
+    "conciseAnswer": "Liquidity metrics: LCR, NSFR, liquidity gaps, funding concentration. Stress testing for liquidity scenarios is crucial.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_7",
+    "title": "Enterprise Risk Management - Behavioral Question",
+    "conciseAnswer": "ERM integrates risk across organization: strategic, operational, financial, compliance risks. Focus on value protection and creation.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_8",
+    "title": "Risk Appetite Statement - Case Question",
+    "conciseAnswer": "Risk appetite statement should be: 1) Quantitative and qualitative 2) Board-approved 3) Cascaded to business units 4) Regularly reviewed.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_9",
+    "title": "Climate Risk Assessment - Technical Question",
+    "conciseAnswer": "Climate risk approaches: physical (acute/chronic) vs. transition risks. TCFD framework: governance, strategy, risk management, metrics/targets.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_10",
+    "title": "Value at Risk (VaR) Calculation & Limitations - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_11",
+    "title": "Stress Testing Scenarios - Case Question",
+    "conciseAnswer": "Scenario design: historical, hypothetical, reverse stress tests. Include market shocks, economic downturns, operational failures.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_12",
+    "title": "Counterparty Credit Risk - Technical Question",
+    "conciseAnswer": "Counterparty risk measures: exposure at default, potential future exposure, credit valuation adjustment. Mitigation via collateral, netting, clearing.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_13",
+    "title": "Model Risk Management - Behavioral Question",
+    "conciseAnswer": "Explain model risk simply: 'garbage in, garbage out' concept. Emphasize importance of understanding model limitations and assumptions.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_14",
+    "title": "Operational Risk Framework - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_15",
+    "title": "Basel Regulations & Capital Requirements - Technical Question",
+    "conciseAnswer": "Basel principles: risk-based capital, leverage ratio, liquidity requirements. Know the three pillars and their implementation challenges.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_16",
+    "title": "Liquidity Risk Measurement - Behavioral Question",
+    "conciseAnswer": "Liquidity metrics: LCR, NSFR, liquidity gaps, funding concentration. Stress testing for liquidity scenarios is crucial.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_17",
+    "title": "Enterprise Risk Management - Case Question",
+    "conciseAnswer": "ERM integrates risk across organization: strategic, operational, financial, compliance risks. Focus on value protection and creation.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_18",
+    "title": "Risk Appetite Statement - Technical Question",
+    "conciseAnswer": "Risk appetite statement should be: 1) Quantitative and qualitative 2) Board-approved 3) Cascaded to business units 4) Regularly reviewed.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_19",
+    "title": "Climate Risk Assessment - Behavioral Question",
+    "conciseAnswer": "Climate risk approaches: physical (acute/chronic) vs. transition risks. TCFD framework: governance, strategy, risk management, metrics/targets.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_20",
+    "title": "Value at Risk (VaR) Calculation & Limitations - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_21",
+    "title": "Stress Testing Scenarios - Technical Question",
+    "conciseAnswer": "Scenario design: historical, hypothetical, reverse stress tests. Include market shocks, economic downturns, operational failures.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_22",
+    "title": "Counterparty Credit Risk - Behavioral Question",
+    "conciseAnswer": "Counterparty risk measures: exposure at default, potential future exposure, credit valuation adjustment. Mitigation via collateral, netting, clearing.",
+    "role": "risk",
+    "batch": 2
+  },
+  {
+    "id": "sys_risk_1773307473011_23",
+    "title": "Model Risk Management - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_24",
+    "title": "Operational Risk Framework - Technical Question",
+    "conciseAnswer": "Operational risk frameworks: 1) Identify risks 2) Assess magnitude 3) Control/mitigate 4) Monitor/report. Know key frameworks like COSO, ISO 31000.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_25",
+    "title": "Basel Regulations & Capital Requirements - Behavioral Question",
+    "conciseAnswer": "Basel principles: risk-based capital, leverage ratio, liquidity requirements. Know the three pillars and their implementation challenges.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_26",
+    "title": "Liquidity Risk Measurement - Case Question",
+    "conciseAnswer": "Liquidity metrics: LCR, NSFR, liquidity gaps, funding concentration. Stress testing for liquidity scenarios is crucial.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_27",
+    "title": "Enterprise Risk Management - Technical Question",
+    "conciseAnswer": "ERM integrates risk across organization: strategic, operational, financial, compliance risks. Focus on value protection and creation.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_28",
+    "title": "Risk Appetite Statement - Behavioral Question",
+    "conciseAnswer": "Risk appetite statement should be: 1) Quantitative and qualitative 2) Board-approved 3) Cascaded to business units 4) Regularly reviewed.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_29",
+    "title": "Climate Risk Assessment - Case Question",
+    "conciseAnswer": "Climate risk approaches: physical (acute/chronic) vs. transition risks. TCFD framework: governance, strategy, risk management, metrics/targets.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_30",
+    "title": "Value at Risk (VaR) Calculation & Limitations - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_31",
+    "title": "Stress Testing Scenarios - Behavioral Question",
+    "conciseAnswer": "Scenario design: historical, hypothetical, reverse stress tests. Include market shocks, economic downturns, operational failures.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_32",
+    "title": "Counterparty Credit Risk - Case Question",
+    "conciseAnswer": "Counterparty risk measures: exposure at default, potential future exposure, credit valuation adjustment. Mitigation via collateral, netting, clearing.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_33",
+    "title": "Model Risk Management - Technical Question",
+    "conciseAnswer": "Model risk management challenges: model validation, documentation, governance, ongoing monitoring. Address through robust frameworks and independent review.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_34",
+    "title": "Operational Risk Framework - Behavioral Question",
+    "conciseAnswer": "Share specific example: process improvement that reduced errors, system implementation that enhanced controls, or incident response that minimized losses.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_35",
+    "title": "Basel Regulations & Capital Requirements - Case Question",
+    "conciseAnswer": "Basel principles: risk-based capital, leverage ratio, liquidity requirements. Know the three pillars and their implementation challenges.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_36",
+    "title": "Risk Measurement - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_37",
+    "title": "Regulatory Knowledge - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_38",
+    "title": "Data Analysis - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_39",
+    "title": "Model Development - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_40",
+    "title": "Reporting & Communication - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_41",
+    "title": "Stress Testing - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_42",
+    "title": "Compliance Monitoring - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 3
+  },
+  {
+    "id": "sys_risk_1773307473011_43",
+    "title": "Governance Understanding - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_44",
+    "title": "Risk Measurement - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_45",
+    "title": "Regulatory Knowledge - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_46",
+    "title": "Data Analysis - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_47",
+    "title": "Model Development - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_48",
+    "title": "Reporting & Communication - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_49",
+    "title": "Stress Testing - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_50",
+    "title": "Compliance Monitoring - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_51",
+    "title": "Governance Understanding - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_52",
+    "title": "Risk Measurement - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_53",
+    "title": "Regulatory Knowledge - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_54",
+    "title": "Data Analysis - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_55",
+    "title": "Model Development - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_56",
+    "title": "Reporting & Communication - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_57",
+    "title": "Stress Testing - Technical Question",
+    "conciseAnswer": "Focus on: 1) Key concepts and definitions 2) Methodologies and models 3) Practical applications 4) Current industry practices.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_58",
+    "title": "Compliance Monitoring - Behavioral Question",
+    "conciseAnswer": "Structure with STAR: Situation, Task, Action, Result. Be specific about your role, challenges faced, and impact created.",
+    "role": "risk",
+    "batch": 4
+  },
+  {
+    "id": "sys_risk_1773307473011_59",
+    "title": "Governance Understanding - Case Question",
+    "conciseAnswer": "Framework: 1) Analyze the problem 2) Identify key issues 3) Propose solutions 4) Evaluate trade-offs 5) Recommend implementation plan.",
+    "role": "risk",
+    "batch": 4
+  }
+]

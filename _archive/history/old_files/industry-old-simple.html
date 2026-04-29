@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Questions - finterview</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Load questions.js FIRST -->
+    <script src="questions.js?v=20260313_2251"></script>
+    <style>
+        .simple-loading, .simple-error, .simple-empty {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .simple-loading i { color: #3498db; font-size: 3rem; }
+        .simple-error i { color: #e74c3c; font-size: 3rem; }
+        .simple-empty i { color: #95a5a6; font-size: 3rem; }
+        .answer-box {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        .industry-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .industry-nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .industry-nav a:hover {
+            background: #2980b9;
+        }
+        .industry-nav a.active {
+            background: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <h1>finterview</h1>
+                    <p>Finance Interview Prep Platform</p>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="industry-simple-direct.html" class="active">Industry Questions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="container">
+                <div class="mb-8">
+                    <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                        <i class="fas fa-arrow-left"></i> Back to Home
+                    </a>
+                    <h2 class="text-3xl font-bold mt-2" id="pageTitle">Industry Questions</h2>
+                    <p class="text-lg text-secondary mt-1" id="pageStats">Loading...</p>
+                </div>
+
+                <!-- Industry Navigation -->
+                <div class="industry-nav" id="industryNav">
+                    <a href="industry-simple-direct.html?industry=ib" class="active">Investment Banking</a>
+                    <a href="industry-simple-direct.html?industry=am">Asset Management</a>
+                    <a href="industry-simple-direct.html?industry=quant">Quantitative Finance</a>
+                    <a href="industry-simple-direct.html?industry=markets">Sales & Trading</a>
+                    <a href="industry-simple-direct.html?industry=corpfin">Corporate Finance</a>
+                    <a href="industry-simple-direct.html?industry=risk">Risk Management</a>
+                </div>
+
+                <!-- Questions Grid -->
+                <div class="question-grid" id="questionGrid">
+                    <div class="simple-loading">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <h3>Loading Questions</h3>
+                        <p>Please wait while we load questions...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <p class="text-sm text-secondary">© 2024 finterview</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple, direct industry page
+        (function() {
+            'use strict';
+            
+            console.log('Simple Industry Page Loading...');
+            
+            // Wait for DOM
+            document.addEventListener('DOMContentLoaded', init);
+            
+            function init() {
+                console.log('Initializing simple industry page');
+                
+                // Get industry from URL
+                const urlParams = new URLSearchParams(window.location.search);
+                const industryId = urlParams.get('industry') || 'ib';
+                console.log('Industry ID:', industryId);
+                
+                // Update UI
+                updateUI(industryId);
+                
+                // Load questions
+                loadQuestions(industryId);
+            }
+            
+            function updateUI(industryId) {
+                // Industry names
+                const industries = {
+                    'ib': { name: 'Investment Banking', chinese: '投资银行' },
+                    'am': { name: 'Asset Management', chinese: '资产管理' },
+                    'quant': { name: 'Quantitative Finance', chinese: '量化金融' },
+                    'markets': { name: 'Sales & Trading', chinese: '销售交易' },
+                    'corpfin': { name: 'Corporate Finance', chinese: '公司金融' },
+                    'risk': { name: 'Risk Management', chinese: '风险管理' },
+                    'fintech': { name: 'FinTech', chinese: '金融科技' },
+                    'fo': { name: 'Family Office', chinese: '家族办公室' }
+                };
+                
+                const industry = industries[industryId] || industries.ib;
+                
+                // Update title
+                const titleEl = document.getElementById('pageTitle');
+                if (titleEl) {
+                    titleEl.textContent = `${industry.chinese} (${industry.name}) Questions`;
+                }
+                
+                // Update active nav link
+                document.querySelectorAll('#industryNav a').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href')?.includes(`industry=${industryId}`)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            function loadQuestions(industryId) {
+                console.log(`Loading questions for ${industryId}...`);
+                
+                const grid = document.getElementById('questionGrid');
+                if (!grid) return;
+                
+                // Check data
+                if (typeof window.questionBank === 'undefined') {
+                    showError('Data not loaded. questions.js may be missing.');
+                    return;
+                }
+                
+                const allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) {
+                    showError('Invalid data format.');
+                    return;
+                }
+                
+                console.log(`Total questions: ${allQuestions.length}`);
+                
+                // Filter by industry
+                const industryQuestions = allQuestions.filter(q => q.role === industryId);
+                console.log(`Questions for ${industryId}: ${industryQuestions.length}`);
+                
+                // Update stats
+                updateStats(industryQuestions.length, allQuestions.length);
+                
+                // Render
+                if (industryQuestions.length === 0) {
+                    showNoQuestions(industryId);
+                } else {
+                    renderQuestions(industryQuestions);
+                }
+            }
+            
+            function updateStats(industryCount, totalCount) {
+                const statsEl = document.getElementById('pageStats');
+                if (statsEl) {
+                    statsEl.textContent = `Showing ${industryCount} questions (${totalCount} total in database)`;
+                }
+            }
+            
+            function renderQuestions(questions) {
+                console.log(`Rendering ${questions.length} questions`);
+                
+                const grid = document.getElementById('questionGrid');
+                grid.innerHTML = '';
+                
+                questions.forEach((question, index) => {
+                    const card = createCard(question, index + 1);
+                    grid.appendChild(card);
+                });
+                
+                // If more than 20, add note
+                if (questions.length > 20) {
+                    const note = document.createElement('div');
+                    note.style.cssText = 'grid-column: 1 / -1; text-align: center; padding: 20px; color: #7f8c8d;';
+                    note.textContent = `Showing ${Math.min(20, questions.length)} of ${questions.length} questions`;
+                    grid.appendChild(note);
+                }
+            }
+            
+            function createCard(question, number) {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.dataset.id = question.id || number;
+                
+                // Get answer
+                const answer = getAnswer(question);
+                
+                // Difficulty
+                const difficulty = question.difficulty || 'medium';
+                const difficultyText = difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+                const difficultyColor = getDifficultyColor(difficulty);
+                
+                card.innerHTML = `
+                    <div class="question-header">
+                        <h4 class="question-title">${number}. ${escapeHtml(question.title || 'Question')}</h4>
+                        <div style="display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap;">
+                            <span style="background: ${difficultyColor}; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">
+                                ${difficultyText}
+                            </span>
+                            <span style="background: #3498db; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">
+                                ${question.category || 'technical'}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="question-content" style="margin: 15px 0;">
+                        <p>${escapeHtml(question.question || '')}</p>
+                    </div>
+                    
+                    <div class="answer-box" id="answer-${question.id || number}">
+                        <h5 style="margin: 0 0 10px 0; color: #2c3e50;">
+                            <i class="fas fa-lightbulb"></i> Answer
+                        </h5>
+                        <div style="white-space: pre-wrap;">${escapeHtml(answer)}</div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 10px;">
+                        <button class="btn btn-primary" onclick="window.toggleAnswer('${question.id || number}')">
+                            <i class="fas fa-eye"></i> Show Answer
+                        </button>
+                    </div>
+                `;
+                
+                return card;
+            }
+            
+            function getAnswer(question) {
+                if (question.answers?.concise?.answer) return question.answers.concise.answer;
+                if (question.answers?.detailed?.answer) return question.answers.detailed.answer;
+                if (question.conciseAnswer) return question.conciseAnswer;
+                if (question.modelAnswer) return question.modelAnswer;
+                if (question.answer) return question.answer;
+                return 'No answer available.';
+            }
+            
+            function getDifficultyColor(difficulty) {
+                switch(difficulty) {
+                    case 'easy': return '#27ae60';
+                    case 'hard': return '#e74c3c';
+                    default: return '#f39c12';
+                }
+            }
+            
+            function showError(message) {
+                console.error('Error:', message);
+                
+                const grid = document.getElementById('questionGrid');
+                if (!grid) return;
+                
+                grid.innerHTML = `
+                    <div class="simple-error">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Error Loading Questions</h3>
+                        <p>${escapeHtml(message)}</p>
+                        <button class="btn btn-primary" onclick="window.location.reload()" style="margin-top: 15px;">
+                            <i class="fas fa-sync-alt"></i> Reload Page
+                        </button>
+                    </div>
+                `;
+            }
+            
+            function showNoQuestions(industryId) {
+                const grid = document.getElementById('questionGrid');
+                if (!grid) return;
+                
+                grid.innerHTML = `
+                    <div class="simple-empty">
+                        <i class="fas fa-search"></i>
+                        <h3>No Questions Found</h3>
+                        <p>No questions available for ${industryId} yet.</p>
+                        <p>Try another industry or check back later.</p>
+                        <div style="margin-top: 20px;">
+                            <button class="btn btn-primary" onclick="window.location.href='industry-simple-direct.html?industry=ib'">
+                                View Investment Banking
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            function escapeHtml(text) {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+            
+            // Global functions
+            window.toggleAnswer = function(questionId) {
+                const answerBox = document.getElementById(`answer-${questionId}`);
+                if (!answerBox) return;
+                
+                const isVisible = answerBox.style.display !== 'none';
+                answerBox.style.display = isVisible ? 'none' : 'block';
+                
+                // Find and update button
+                const card = answerBox.closest('.question-card');
+                if (card) {
+                    const button = card.querySelector('button');
+                    if (button) {
+                        button.innerHTML = isVisible ? 
+                            '<i class="fas fa-eye"></i> Show Answer' : 
+                            '<i class="fas fa-eye-slash"></i> Hide Answer';
+                    }
+                }
+            };
+            
+        })();
+    </script>
+</body>
+</html>

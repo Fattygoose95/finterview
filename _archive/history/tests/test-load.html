@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Questions.js Load</title>
+    <meta charset="UTF-8">
+    <script src="questions.js?v=20260313_2251"></script>
+</head>
+<body>
+    <h1>Test Questions.js Load</h1>
+    <div id="output"></div>
+    
+    <script>
+        console.log('Testing questions.js load...');
+        
+        function testQuestionsLoad() {
+            const output = document.getElementById('output');
+            
+            // Check if questionBank exists
+            if (typeof window.questionBank === 'undefined') {
+                output.innerHTML = '<p style="color: red;">❌ ERROR: questionBank is not defined</p>';
+                output.innerHTML += '<p>Make sure questions.js is properly loaded.</p>';
+                return;
+            }
+            
+            if (!Array.isArray(window.questionBank)) {
+                output.innerHTML = '<p style="color: red;">❌ ERROR: questionBank is not an array</p>';
+                output.innerHTML += '<p>Actual type: ' + typeof window.questionBank + '</p>';
+                return;
+            }
+            
+            const count = window.questionBank.length;
+            output.innerHTML = '<p style="color: green;">✅ SUCCESS: questionBank loaded</p>';
+            output.innerHTML += '<p>Total questions: ' + count + '</p>';
+            
+            // Show first few questions
+            const sampleCount = Math.min(5, count);
+            output.innerHTML += '<h3>Sample Questions (' + sampleCount + ' of ' + count + '):</h3>';
+            output.innerHTML += '<ul>';
+            
+            for (let i = 0; i < sampleCount; i++) {
+                const q = window.questionBank[i];
+                output.innerHTML += '<li>';
+                output.innerHTML += '<strong>ID ' + q.id + ':</strong> ' + q.title;
+                output.innerHTML += '<br><small>Role: ' + q.role + ', Difficulty: ' + (q.difficulty || 'N/A') + '</small>';
+                
+                // Check concise answer
+                if (q.answers && q.answers.concise && q.answers.concise.answer) {
+                    const concise = q.answers.concise.answer;
+                    const isComplete = !concise.includes('...') && concise.length > 50;
+                    output.innerHTML += '<br><small>Concise answer: ' + (isComplete ? '✅ Complete' : '❌ Incomplete') + ' (' + concise.length + ' chars)</small>';
+                } else {
+                    output.innerHTML += '<br><small>Concise answer: ❌ Missing</small>';
+                }
+                
+                output.innerHTML += '</li>';
+            }
+            output.innerHTML += '</ul>';
+            
+            // Count by role
+            const roleCounts = {};
+            window.questionBank.forEach(q => {
+                roleCounts[q.role] = (roleCounts[q.role] || 0) + 1;
+            });
+            
+            output.innerHTML += '<h3>Questions by Role:</h3>';
+            output.innerHTML += '<ul>';
+            for (const [role, count] of Object.entries(roleCounts)) {
+                output.innerHTML += '<li>' + role + ': ' + count + ' questions</li>';
+            }
+            output.innerHTML += '</ul>';
+            
+            // Check for truncated concise answers
+            const truncatedCount = window.questionBank.filter(q => {
+                if (!q.answers || !q.answers.concise || !q.answers.concise.answer) return true;
+                const concise = q.answers.concise.answer;
+                return concise.includes('...') || concise.length < 100;
+            }).length;
+            
+            output.innerHTML += '<h3>Quality Check:</h3>';
+            output.innerHTML += '<ul>';
+            output.innerHTML += '<li>Questions with concise answers: ' + (count - truncatedCount) + '/' + count + '</li>';
+            output.innerHTML += '<li>Questions with missing/truncated concise answers: ' + truncatedCount + '/' + count + '</li>';
+            output.innerHTML += '</ul>';
+        }
+        
+        // Run test after page loads
+        window.addEventListener('DOMContentLoaded', testQuestionsLoad);
+    </script>
+</body>
+</html>

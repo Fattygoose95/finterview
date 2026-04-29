@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="finterview - Finance interview preparation platform with curated questions across 8 industries including Investment Banking, Asset Management, Quantitative Finance, Sales & Trading, Corporate Finance, Risk Management, FinTech, and Family Office.">
+    <title>Industry Questions - finterview</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 简单加载和错误状态 */
+        .loading-state, .error-state, .empty-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        
+        .loading-state i, .error-state i, .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+        
+        .error-state i { color: #e74c3c; }
+        .empty-state i { color: #3498db; }
+        
+        .retry-btn, .back-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        
+        .retry-btn:hover, .back-btn:hover {
+            background: #2980b9;
+        }
+        
+        .answer-toggle {
+            margin-top: 15px;
+        }
+        
+        .answer-content {
+            margin-top: 10px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+            display: none;
+        }
+        
+        .answer-content.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container">
+                <div class="flex items-center justify-between">
+                    <div class="logo">
+                        <h1>finterview</h1>
+                        <p>Finance Interview Prep Platform</p>
+                    </div>
+                    
+                    <nav class="main-nav">
+                        <button class="menu-toggle" aria-label="Menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="industry.html" class="active">Industry Questions</a></li>
+                            <li><a href="high-frequency-list.html">High Frequency</a></li>
+                            <li><a href="random-list.html">Random Practice</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <!-- Page Title & Navigation -->
+                <div class="flex items-center justify-between mb-8">
+                    <div>
+                        <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
+                            <i class="fas fa-arrow-left"></i> Back to Industry List
+                        </a>
+                        <h2 class="text-3xl font-bold mt-2" id="industryTitle">Industry Questions</h2>
+                        <p class="text-lg text-secondary mt-1" id="industryStats">Loading questions...</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <!-- Filter Panel (简化版) -->
+                    <aside class="lg:col-span-1">
+                        <div class="filter-panel">
+                            <div class="filter-header">
+                                <h3>Filter Options</h3>
+                                <button class="btn-clear" id="clearFilters">Clear All</button>
+                            </div>
+                            
+                            <!-- Difficulty Filter -->
+                            <div class="filter-section">
+                                <h4 class="section-title">Difficulty</h4>
+                                <div class="difficulty-filters">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="difficulty" value="easy" checked>
+                                        <span>Easy</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="difficulty" value="medium" checked>
+                                        <span>Medium</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="difficulty" value="hard" checked>
+                                        <span>Hard</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Question Type Filter -->
+                            <div class="filter-section">
+                                <h4 class="section-title">Question Type</h4>
+                                <div class="type-filters">
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="type" value="technical" checked>
+                                        <span>Technical</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="type" value="behavioral" checked>
+                                        <span>Behavioral</span>
+                                    </label>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" name="type" value="case-study" checked>
+                                        <span>Case Study</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Actions -->
+                            <div class="filter-section">
+                                <button class="btn btn-primary w-full" id="applyFilters">
+                                    <i class="fas fa-filter"></i> Apply Filters
+                                </button>
+                                <button class="btn btn-outline w-full mt-2" onclick="window.location.reload()">
+                                    <i class="fas fa-sync-alt"></i> Refresh
+                                </button>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Question List -->
+                    <div class="lg:col-span-3">
+                        <!-- Question Grid -->
+                        <div class="question-grid" id="questionGrid">
+                            <div class="loading-state">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <h3>Loading Questions...</h3>
+                                <p>Please wait while we load questions for this industry.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Info Panel -->
+                        <div class="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg" id="infoPanel">
+                            <h4 class="font-semibold text-blue-800 mb-2"><i class="fas fa-info-circle"></i> How to Use This Page</h4>
+                            <ul class="text-blue-700 text-sm list-disc pl-5">
+                                <li>Click "Show Answer" to view the answer for each question</li>
+                                <li>Use filters on the left to narrow down questions</li>
+                                <li>Questions are tailored for entry-level finance roles (0-2 years experience)</li>
+                                <li>Answers are concise - bullet points or 2-3 sentences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <p class="text-sm text-secondary">© 2024 finterview. Finance Interview Prep Platform</p>
+                    </div>
+                    
+                    <ul class="footer-links">
+                        <li><a href="test-industry-simple.html">Test Page</a></li>
+                        <li><a href="error-check.html">Error Check</a></li>
+                        <li><a href="https://github.com/Fattygoose95/finterview">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="questions.js"></script>
+    <script>
+        // 行业页面 - 简单直接的数据加载
+        (function() {
+            'use strict';
+            
+            console.log('Industry Page - Simple Solution');
+            
+            // 等待DOM加载
+            document.addEventListener('DOMContentLoaded', function() {
+                initPage();
+            });
+            
+            function initPage() {
+                console.log('Initializing industry page...');
+                
+                // 获取URL参数
+                const urlParams = new URLSearchParams(window.location.search);
+                const industryId = urlParams.get('industry') || 'ib';
+                console.log(`Industry ID from URL: ${industryId}`);
+                
+                // 更新页面标题
+                updatePageTitle(industryId);
+                
+                // 加载题目
+                loadQuestions(industryId);
+                
+                // 绑定筛选器事件
+                bindFilterEvents(industryId);
+                
+                // 绑定导航事件
+                bindNavigationEvents();
+            }
+            
+            function updatePageTitle(industryId) {
+                // 行业名称映射
+                const industryNames = {
+                    'ib': { name: 'Investment Banking', chinese: '投资银行' },
+                    'am': { name: 'Asset Management', chinese: '资产管理' },
+                    'quant': { name: 'Quantitative Finance', chinese: '量化金融' },
+                    'markets': { name: 'Sales & Trading', chinese: '销售交易' },
+                    'corpfin': { name: 'Corporate Finance', chinese: '公司金融' },
+                    'risk': { name: 'Risk Management', chinese: '风险管理' },
+                    'fintech': { name: 'FinTech', chinese: '金融科技' },
+                    'fo': { name: 'Family Office', chinese: '家族办公室' }
+                };
+                
+                const industry = industryNames[industryId] || industryNames['ib'];
+                const titleElement = document.getElementById('industryTitle');
+                const statsElement = document.getElementById('industryStats');
+                
+                if (titleElement) {
+                    titleElement.textContent = `${industry.chinese} (${industry.name}) Questions`;
+                }
+                
+                if (statsElement) {
+                    statsElement.textContent = `Loading questions...`;
+                }
+            }
+            
+            function loadQuestions(industryId) {
+                console.log(`Loading questions for industry: ${industryId}`);
+                
+                const questionGrid = document.getElementById('questionGrid');
+                if (!questionGrid) {
+                    console.error('Question grid element not found');
+                    return;
+                }
+                
+                // 显示加载状态
+                questionGrid.innerHTML = `
+                    <div class="loading-state">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <h3>Loading Questions...</h3>
+                        <p>Fetching questions for ${industryId}...</p>
+                    </div>
+                `;
+                
+                // 检查数据是否已加载
+                if (typeof window.questionBank === 'undefined') {
+                    showError('Data not loaded. Please check if questions.js is properly loaded.');
+                    console.error('questionBank is undefined');
+                    return;
+                }
+                
+                const allQuestions = window.questionBank;
+                if (!Array.isArray(allQuestions)) {
+                    showError('Invalid data format. Expected array of questions.');
+                    console.error('questionBank is not an array:', typeof allQuestions);
+                    return;
+                }
+                
+                console.log(`Total questions in database: ${allQuestions.length}`);
+                
+                // 过滤题目：按role字段
+                const filteredQuestions = allQuestions.filter(q => {
+                    return q.role === industryId;
+                });
+                
+                console.log(`Questions for ${industryId}: ${filteredQuestions.length}`);
+                
+                // 更新统计
+                updateStats(filteredQuestions.length, allQuestions.length);
+                
+                // 渲染题目
+                if (filteredQuestions.length === 0) {
+                    showNoQuestions(industryId);
+                } else {
+                    renderQuestions(filteredQuestions);
+                }
+            }
+            
+            function updateStats(industryCount, totalCount) {
+                const statsElement = document.getElementById('industryStats');
+                if (statsElement) {
+                    statsElement.textContent = `Total ${industryCount} questions (${totalCount} in total database)`;
+                }
+            }
+            
+            function renderQuestions(questions) {
+                console.log(`Rendering ${questions.length} questions`);
+                
+                const questionGrid = document.getElementById('questionGrid');
+                questionGrid.innerHTML = '';
+                
+                // 渲染每个题目
+                questions.forEach((question, index) => {
+                    const card = createQuestionCard(question, index + 1);
+                    questionGrid.appendChild(card);
+                });
+                
+                // 如果题目很多，添加分页提示
+                if (questions.length > 20) {
+                    const note = document.createElement('div');
+                    note.className = 'text-center text-secondary mt-4';
+                    note.textContent = `Showing ${Math.min(20, questions.length)} of ${questions.length} questions. Use filters to narrow down results.`;
+                    questionGrid.appendChild(note);
+                }
+                
+                // 绑定题目交互事件
+                bindQuestionEvents();
+            }
+            
+            function createQuestionCard(question, index) {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.dataset.id = question.id || index;
+                card.dataset.difficulty = question.difficulty || 'medium';
+                card.dataset.type = question.category || 'technical';
+                
+                // 获取答案
+                const answer = getQuestionAnswer(question);
+                
+                // 难度标签
+                const difficulty = question.difficulty || 'medium';
+                const difficultyText = difficulty.charAt(0).toUpperCase() + difficulty.slice(1);
+                const difficultyColor = getDifficultyColor(difficulty);
+                
+                // 星级评分
+                const rating = question.overallRating || question.metadata?.stars || 4.0;
+                const starsHTML = generateStarsHTML(rating);
+                
+                card.innerHTML = `
+                    <div class="question-header">
+                        <h4 class="question-title">${index}. ${escapeHtml(question.title || 'Untitled Question')}</h4>
+                        <div class="question-tags">
+                            <span class="tag ${question.category || 'technical'}">${question.category || 'technical'}</span>
+                            <span class="tag difficulty" style="background: ${difficultyColor}">${difficultyText}</span>
+                            ${question.frequencyScore ? '<span class="tag frequent">High Frequency</span>' : ''}
+                        </div>
+                    </div>
+                    
+                    <div class="question-content">
+                        <p>${escapeHtml(question.question || '')}</p>
+                    </div>
+                    
+                    <div class="question-meta">
+                        <div class="difficulty">
+                            <span class="label">Difficulty:</span>
+                            <span class="stars">${starsHTML}</span>
+                            <span class="text">${difficultyText}</span>
+                        </div>
+                        <div class="overall-rating">
+                            <span class="label">Rating:</span>
+                            <span class="stars">${starsHTML}</span>
+                            <span class="score">${rating.toFixed(1)}/5.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="answer-toggle">
+                        <button class="btn btn-view" data-action="toggle-answer">
+                            <i class="fas fa-eye"></i> Show Answer
+                        </button>
+                    </div>
+                    
+                    <div class="answer-content" id="answer-${question.id || index}">
+                        <h5><i class="fas fa-lightbulb"></i> Answer</h5>
+                        <div class="answer-text">${escapeHtml(answer)}</div>
+                    </div>
+                `;
+                
+                return card;
+            }
+            
+            function getQuestionAnswer(question) {
+                // 支持多种答案格式
+                if (question.answers) {
+                    if (question.answers.concise && question.answers.concise.answer) {
+                        return question.answers.concise.answer;
+                    }
+                    if (question.answers.detailed && question.answers.detailed.answer) {
+                        return question.answers.detailed.answer;
+                    }
+                }
+                
+                if (question.conciseAnswer) {
+                    return question.conciseAnswer;
+                }
+                
+                if (question.modelAnswer) {
+                    return question.modelAnswer;
+                }
+                
+                if (question.answer) {
+                    return question.answer;
+                }
+                
+                return 'No answer available for this question.';
+            }
+            
+            function getDifficultyColor(difficulty) {
+                const colors = {
+                    easy: '#27ae60',
+                    medium: '#f39c12',
+                    hard: '#e74c3c'
+                };
+                return colors[difficulty] || '#f39c12';
+            }
+            
+            function generateStarsHTML(rating) {
+                const fullStars = Math.floor(rating);
+                const hasHalfStar = rating % 1 >= 0.5;
+                const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+                
+                let stars = '';
+                for (let i = 0; i < fullStars; i++) stars += '<i class="fas fa-star"></i>';
+                if (hasHalfStar) stars += '<i class="fas fa-star-half-alt"></i>';
+                for (let i = 0; i < emptyStars; i++) stars += '<i class="far fa-star"></i>';
+                
+                return stars;
+            }
+            
+            function bindQuestionEvents() {
+                // 绑定"显示答案"按钮
+                document.querySelectorAll('[data-action="toggle-answer"]').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const card = this.closest('.question-card');
+                        const answerId = `answer-${card.dataset.id}`;
+                        const answerSection = document.getElementById(answerId);
+                        
+                        if (answerSection) {
+                            const isVisible = answerSection.classList.contains('show');
+                            
+                            if (isVisible) {
+                                answerSection.classList.remove('show');
+                                this.innerHTML = '<i class="fas fa-eye"></i> Show Answer';
+                            } else {
+                                answerSection.classList.add('show');
+                                this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                            }
+                        }
+                    });
+                });
+            }
+            
+            function bindFilterEvents(industryId) {
+                const applyFiltersBtn = document.getElementById('applyFilters');
+                const clearFiltersBtn = document.getElementById('clearFilters');
+                
+                if (applyFiltersBtn) {
+                    applyFiltersBtn.addEventListener('click', function() {
+                        applyFilters(industryId);
+                    });
+                }
+                
+                if (clearFiltersBtn) {
+                    clearFiltersBtn.addEventListener('click', function() {
+                        clearFilters(industryId);
+                    });
+                }
+            }
+            
+            function applyFilters(industryId) {
+                console.log('Applying filters...');
+                
+                // 获取所有选中的筛选条件
+                const difficultyFilters = Array.from(document.querySelectorAll('input[name="difficulty"]:checked'))
+                    .map(cb => cb.value);
+                
+                const typeFilters = Array.from(document.querySelectorAll('input[name="type"]:checked'))
+                    .map(cb => cb.value);
+                
+                console.log('Difficulty filters:', difficultyFilters);
+                console.log('Type filters:', typeFilters);
+                
+                // 重新加载并应用筛选
+                reloadWithFilters(industryId, difficultyFilters, typeFilters);
+            }
+            
+            function reloadWithFilters(industryId, difficultyFilters, typeFilters) {
+                if (typeof window.questionBank === 'undefined') return;
+                
+                const allQuestions = window.questionBank;
+                const filteredQuestions = allQuestions.filter(q => {
+                    // 行业筛选
+                    if (q.role !== industryId) return false;
+                    
+                    // 难度筛选
+                    if (difficultyFilters.length > 0 && !difficultyFilters.includes(q.difficulty)) {
+                        return false;
+                    }
+                    
+                    // 类型筛选
+                    if (typeFilters.length > 0 && !typeFilters.includes(q.category)) {
+                        return false;
+                    }
+                    
+                    return true;
+                });
+                
+                console.log(`After filtering: ${filteredQuestions.length} questions`);
+                
+                if (filteredQuestions.length === 0) {
+                    showNoQuestions(industryId, true);
+                } else {
+                    renderQuestions(filteredQuestions);
+                }
+            }
+            
+            function clearFilters(industryId) {
+                console.log('Clearing all filters...');
+                
+                // 重置所有复选框
+                document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+                    cb.checked = true;
+                });
+                
+                // 重新加载原始题目
+                loadQuestions(industryId);
+            }
+            
+            function bindNavigationEvents() {
+                // 简单导航，如果需要可以添加
+            }
+            
+            function showError(message) {
+                const questionGrid = document.getElementById('questionGrid');
+                if (!questionGrid) return;
+                
+                questionGrid.innerHTML = `
+                    <div class="error-state">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Error Loading Questions</h3>
+                        <p>${escapeHtml(message)}</p>
+                        <button class="retry-btn" onclick="window.location.reload()">
+                            <i class="fas fa-sync-alt"></i> Retry
+                        </button>
+                    </div>
+                `;
+            }
+            
+            function showNoQuestions(industryId, isFiltered = false) {
+                const questionGrid = document.getElementById('questionGrid');
+                if (!questionGrid) return;
+                
+                let message = `No questions available for ${industryId}.`;
+                if (isFiltered) {
+                    message = 'No questions match your filter criteria. Try adjusting your filters.';
+                }
+                
+                questionGrid.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-search"></i>
+                        <h3>No Questions Found</h3>
+                        <p>${message}</p>
+                        ${isFiltered ? 
+                            '<button class="back-btn" onclick="clearFilters(\'' + industryId + '\')">Clear Filters</button>' :
+                            '<button class="back-btn" onclick="window.history.back()">Back to Industries</button>'
+                        }
+                    </div>
+                `;
+            }
+            
+            function escapeHtml(text) {
+                if (!text) return '';
+                const div = document.createElement('div');
+                div.textContent = text;
+                return div.innerHTML;
+            }
+            
+            // 全局导出
+            window.IndustryPage = {
+                reload: function() {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const industryId = urlParams.get('industry') || 'ib';
+                    loadQuestions(industryId);
+                },
+                toggleAnswer: function(button) {
+                    const card = button.closest('.question-card');
+                    const answerId = `answer-${card.dataset.id}`;
+                    const answerSection = document.getElementById(answerId);
+                    
+                    if (answerSection) {
+                        const isVisible = answerSection.classList.contains('show');
+                        
+                        if (isVisible) {
+                            answerSection.classList.remove('show');
+                            button.innerHTML = '<i class="fas fa-eye"></i> Show Answer';
+                        } else {
+                            answerSection.classList.add('show');
+                            button.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                        }
+                    }
+                }
+            };
+            
+        })();
+    </script>
+</body>
+</html>

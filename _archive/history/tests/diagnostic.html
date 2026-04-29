@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>finterview 数据诊断</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Inter', sans-serif; margin: 40px; line-height: 1.6; color: #333; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .test { background: #f8f9fa; border-left: 4px solid #3498db; padding: 15px; margin: 20px 0; border-radius: 4px; }
+        .pass { border-left-color: #27ae60; }
+        .fail { border-left-color: #e74c3c; }
+        .warn { border-left-color: #f39c12; }
+        pre { background: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; overflow: auto; }
+        .summary { background: #e8f4fc; padding: 20px; border-radius: 8px; margin: 30px 0; }
+        .role-stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; margin: 15px 0; }
+        .role-item { background: white; padding: 10px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .hidden { display: none; }
+        button { background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #2980b9; }
+    </style>
+    <script src="questions.js?v=20260313_2251"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 finterview 数据诊断工具</h1>
+        <p>检查 questions.js 加载状态、数据完整性和格式问题</p>
+        
+        <div class="summary">
+            <h3>诊断摘要</h3>
+            <div id="summary">运行诊断中...</div>
+        </div>
+        
+        <div class="test" id="test-load">
+            <h3>📂 1. 文件加载测试</h3>
+            <div id="load-result">检查中...</div>
+        </div>
+        
+        <div class="test" id="test-structure">
+            <h3>📊 2. 数据结构测试</h3>
+            <div id="structure-result">检查中...</div>
+        </div>
+        
+        <div class="test" id="test-answers">
+            <h3>📝 3. 答案格式测试</h3>
+            <div id="answers-result">检查中...</div>
+        </div>
+        
+        <div class="test" id="test-bolds">
+            <h3>⭐ 4. 星号问题检测</h3>
+            <div id="bolds-result">检查中...</div>
+        </div>
+        
+        <div class="test" id="test-roles">
+            <h3>🏷️ 5. 角色分类统计</h3>
+            <div id="roles-result">检查中...</div>
+        </div>
+        
+        <div class="test" id="test-samples">
+            <h3>🔬 6. 样本检查</h3>
+            <div id="samples-result">检查中...</div>
+        </div>
+        
+        <div class="test" id="test-cache">
+            <h3>🔄 7. 缓存检测</h3>
+            <div id="cache-result">检查中...</div>
+        </div>
+        
+        <button onclick="runDiagnostics()">🔄 重新运行诊断</button>
+        <button onclick="showDetails()">📋 显示详细数据</button>
+        
+        <div id="details" class="hidden">
+            <h3>详细数据</h3>
+            <pre id="details-content"></pre>
+        </div>
+    </div>
+    
+    <script>
+        let diagnostics = {};
+        
+        function runDiagnostics() {
+            console.clear();
+            console.log('=== finterview 诊断开始 ===');
+            
+            // 测试1: 文件加载
+            const loadResult = testLoad();
+            updateTest('load', loadResult);
+            
+            // 测试2: 数据结构
+            const structureResult = testStructure();
+            updateTest('structure', structureResult);
+            
+            // 测试3: 答案格式
+            const answersResult = testAnswers();
+            updateTest('answers', answersResult);
+            
+            // 测试4: 星号检测
+            const boldsResult = testBolds();
+            updateTest('bolds', boldsResult);
+            
+            // 测试5: 角色统计
+            const rolesResult = testRoles();
+            updateTest('roles', rolesResult);
+            
+            // 测试6: 样本检查
+            const samplesResult = testSamples();
+            updateTest('samples', samplesResult);
+            
+            // 测试7: 缓存检测
+            const cacheResult = testCache();
+            updateTest('cache', cacheResult);
+            
+            updateSummary();
+        }
+        
+        function testLoad() {
+            const result = { pass: false, message: '', details: {} };
+            
+            if (typeof window.questionBank === 'undefined') {
+                result.message = '❌ questionBank 未定义。questions.js 可能未加载。';
+                return result;
+            }
+            
+            if (!Array.isArray(window.questionBank)) {
+                result.message = `❌ questionBank 不是数组（类型：${typeof window.questionBank}）。`;
+                return result;
+            }
+            
+            const count = window.questionBank.length;
+            result.pass = true;
+            result.message = `✅ questionBank 加载成功，包含 ${count} 个问题`;
+            result.details = { count };
+            
+            console.log(`问题总数: ${count}`);
+            return result;
+        }
+        
+        function testStructure() {
+            const result = { pass: false, message: '', details: {} };
+            const questions = window.questionBank;
+            
+            if (!questions || questions.length === 0) {
+                result.message = '❌ 无问题数据';
+                return result;
+            }
+            
+            let missingId = 0;
+            let missingRole = 0;
+            let missingQuestion = 0;
+            let missingAnswers = 0;
+            
+            questions.forEach(q => {
+                if (!q.id) missingId++;
+                if (!q.role) missingRole++;
+                if (!q.question) missingQuestion++;
+                if (!q.answers) missingAnswers++;
+            });
+            
+            const issues = [];
+            if (missingId) issues.push(`${missingId} 个问题缺少ID`);
+            if (missingRole) issues.push(`${missingRole} 个问题缺少role`);
+            if (missingQuestion) issues.push(`${missingQuestion} 个问题缺少question`);
+            if (missingAnswers) issues.push(`${missingAnswers} 个问题缺少answers`);
+            
+            if (issues.length > 0) {
+                result.message = `⚠️ 结构问题: ${issues.join('; ')}`;
+                result.pass = true; // 仍算通过，但有警告
+            } else {
+                result.message = '✅ 数据结构完整';
+                result.pass = true;
+            }
+            
+            result.details = { missingId, missingRole, missingQuestion, missingAnswers };
+            return result;
+        }
+        
+        function testAnswers() {
+            const result = { pass: false, message: '', details: {} };
+            const questions = window.questionBank;
+            
+            if (!questions) return result;
+            
+            let missingConcise = 0;
+            let missingDetailed = 0;
+            let truncatedConcise = 0;
+            let totalConciseLength = 0;
+            
+            questions.forEach(q => {
+                if (!q.answers) {
+                    missingConcise++;
+                    missingDetailed++;
+                    return;
+                }
+                
+                if (!q.answers.concise || !q.answers.concise.answer) {
+                    missingConcise++;
+                } else {
+                    const concise = q.answers.concise.answer;
+                    totalConciseLength += concise.length;
+                    // 检查是否被截断
+                    if (concise.includes('...') || concise.length < 80 || /[,(-]\s*$/.test(concise.trim())) {
+                        truncatedConcise++;
+                    }
+                }
+                
+                if (!q.answers.detailed || !q.answers.detailed.answer) {
+                    missingDetailed++;
+                }
+            });
+            
+            const avgLength = questions.length > 0 ? Math.round(totalConciseLength / questions.length) : 0;
+            const issues = [];
+            if (missingConcise) issues.push(`${missingConcise} 个缺少简洁答案`);
+            if (missingDetailed) issues.push(`${missingDetailed} 个缺少详细答案`);
+            if (truncatedConcise) issues.push(`${truncatedConcise} 个简洁答案不完整`);
+            
+            if (issues.length > 0) {
+                result.message = `⚠️ 答案问题: ${issues.join('; ')} (平均长度: ${avgLength} 字符)`;
+                result.pass = truncatedConcise === 0; // 只有不完整答案才算失败
+            } else {
+                result.message = `✅ 答案格式完整 (平均长度: ${avgLength} 字符)`;
+                result.pass = true;
+            }
+            
+            result.details = { missingConcise, missingDetailed, truncatedConcise, avgLength };
+            return result;
+        }
+        
+        function testBolds() {
+            const result = { pass: false, message: '', details: {} };
+            const questions = window.questionBank;
+            
+            if (!questions) return result;
+            
+            let boldCount = 0;
+            const boldQuestions = [];
+            
+            // 检查答案中的 ** 标记
+            questions.forEach(q => {
+                let found = false;
+                
+                // 检查详细答案
+                if (q.answers?.detailed?.answer && q.answers.detailed.answer.includes('**')) {
+                    found = true;
+                }
+                // 检查简洁答案
+                if (q.answers?.concise?.answer && q.answers.concise.answer.includes('**')) {
+                    found = true;
+                }
+                // 检查modelAnswer
+                if (q.modelAnswer && q.modelAnswer.includes('**')) {
+                    found = true;
+                }
+                
+                if (found) {
+                    boldCount++;
+                    boldQuestions.push(q.id);
+                }
+            });
+            
+            if (boldCount > 0) {
+                result.message = `❌ 发现 ${boldCount} 个问题包含 ** 标记 (ID: ${boldQuestions.slice(0,5).join(', ')}${boldQuestions.length > 5 ? '...' : ''})`;
+                result.pass = false;
+            } else {
+                result.message = '✅ 未发现 ** 标记';
+                result.pass = true;
+            }
+            
+            result.details = { boldCount, boldQuestions: boldQuestions.slice(0, 10) };
+            return result;
+        }
+        
+        function testRoles() {
+            const result = { pass: false, message: '', details: {} };
+            const questions = window.questionBank;
+            
+            if (!questions) return result;
+            
+            const roleCounts = {};
+            questions.forEach(q => {
+                const role = q.role || 'unknown';
+                roleCounts[role] = (roleCounts[role] || 0) + 1;
+            });
+            
+            // 生成HTML显示
+            let html = '<div class="role-stats">';
+            for (const [role, count] of Object.entries(roleCounts)) {
+                html += `<div class="role-item"><strong>${role}</strong>: ${count}</div>`;
+            }
+            html += '</div>';
+            
+            result.message = `✅ 共 ${Object.keys(roleCounts).length} 个角色分类`;
+            result.pass = true;
+            result.details = { roleCounts, html };
+            
+            return result;
+        }
+        
+        function testSamples() {
+            const result = { pass: false, message: '', details: {} };
+            const questions = window.questionBank;
+            
+            if (!questions || questions.length === 0) {
+                result.message = '❌ 无样本数据';
+                return result;
+            }
+            
+            const samples = [];
+            const sampleCount = Math.min(3, questions.length);
+            
+            for (let i = 0; i < sampleCount; i++) {
+                const q = questions[i];
+                samples.push({
+                    id: q.id,
+                    title: q.title,
+                    role: q.role,
+                    difficulty: q.difficulty,
+                    hasConcise: !!(q.answers?.concise?.answer),
+                    conciseLength: q.answers?.concise?.answer?.length || 0,
+                    hasDetailed: !!(q.answers?.detailed?.answer),
+                    hasBold: (q.answers?.detailed?.answer?.includes('**') || 
+                             q.answers?.concise?.answer?.includes('**') || 
+                             q.modelAnswer?.includes('**'))
+                });
+            }
+            
+            let html = '<ul>';
+            samples.forEach(s => {
+                html += `<li><strong>ID ${s.id}</strong>: ${s.title}<br>`;
+                html += `<small>Role: ${s.role}, Difficulty: ${s.difficulty || 'N/A'}`;
+                html += `, Concise: ${s.hasConcise ? `✅ (${s.conciseLength} chars)` : '❌'}`;
+                html += `, Bold: ${s.hasBold ? '❌' : '✅'}</small></li>`;
+            });
+            html += '</ul>';
+            
+            result.message = `✅ 前 ${sampleCount} 个样本检查`;
+            result.pass = true;
+            result.details = { samples, html };
+            
+            return result;
+        }
+        
+        function testCache() {
+            const result = { pass: false, message: '', details: {} };
+            
+            // 尝试检测缓存：检查文件大小（通过performance API）
+            const scripts = document.querySelectorAll('script[src*="questions.js"]');
+            let cacheInfo = '未知';
+            
+            if (scripts.length > 0) {
+                const src = scripts[0].src;
+                if (src.includes('?')) {
+                    cacheInfo = `已添加版本号: ${src.split('?')[1]}`;
+                } else {
+                    cacheInfo = '⚠️ 未添加版本号，可能被缓存';
+                }
+            }
+            
+            // 检查加载时间
+            const loadTime = performance.now();
+            result.message = `✅ 缓存检测: ${cacheInfo}`;
+            result.pass = true;
+            result.details = { cacheInfo, loadTime };
+            
+            return result;
+        }
+        
+        function updateTest(testId, result) {
+            const element = document.getElementById(`${testId}-result`);
+            if (!element) return;
+            
+            element.innerHTML = `<p>${result.message}</p>`;
+            if (result.details && result.details.html) {
+                element.innerHTML += result.details.html;
+            }
+            
+            const testDiv = document.getElementById(`test-${testId}`);
+            testDiv.className = 'test ' + (result.pass ? 'pass' : 'fail');
+            
+            diagnostics[testId] = result;
+        }
+        
+        function updateSummary() {
+            const totalTests = 7;
+            const passed = Object.values(diagnostics).filter(d => d.pass).length;
+            
+            const summary = document.getElementById('summary');
+            summary.innerHTML = `
+                <p><strong>测试通过率:</strong> ${passed}/${totalTests}</p>
+                <p><strong>问题总数:</strong> ${window.questionBank?.length || 0}</p>
+                <p><strong>加载状态:</strong> ${typeof window.questionBank !== 'undefined' ? '✅ 已加载' : '❌ 未加载'}</p>
+            `;
+            
+            // 如果发现问题，显示建议
+            const issues = [];
+            if (diagnostics.load && !diagnostics.load.pass) {
+                issues.push('• questions.js 未加载 - 清除缓存并硬刷新');
+            }
+            if (diagnostics.bolds && !diagnostics.bolds.pass) {
+                issues.push('• 发现 ** 标记 - 需要更新 questions.js');
+            }
+            if (diagnostics.answers && diagnostics.answers.details.truncatedConcise > 0) {
+                issues.push(`• ${diagnostics.answers.details.truncatedConcise} 个简洁答案不完整`);
+            }
+            
+            if (issues.length > 0) {
+                summary.innerHTML += `<div style="background:#ffeaa7;padding:10px;border-radius:5px;margin-top:10px;">
+                    <strong>⚠️ 需要处理的问题:</strong><br>${issues.join('<br>')}
+                </div>`;
+            }
+        }
+        
+        function showDetails() {
+            const details = document.getElementById('details');
+            const content = document.getElementById('details-content');
+            
+            const data = {
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent,
+                questionBankLength: window.questionBank?.length || 0,
+                diagnostics: diagnostics
+            };
+            
+            content.textContent = JSON.stringify(data, null, 2);
+            details.classList.remove('hidden');
+        }
+        
+        // 页面加载后自动运行
+        window.addEventListener('DOMContentLoaded', runDiagnostics);
+    </script>
+</body>
+</html>
