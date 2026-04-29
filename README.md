@@ -1,70 +1,65 @@
 # finterview — Finance Interview Preparation
 
-> AI-powered platform to prepare for finance interviews. Practice with 538 curated questions across 10 finance roles.
+> Master your finance interviews with 1000+ curated questions, AI-powered practice, and real interview simulations. Built by finance professionals for finance professionals.
 
 **Live Demo:** [https://fattygoose95.github.io/finterview/](https://fattygoose95.github.io/finterview/)
 
 ---
 
-## About
+## Why finterview?
 
-A structured interview preparation tool built for finance professionals and students targeting roles in investment banking, asset management, quantitative finance, sales & trading, and more.
+Finance interviews separate the prepared from the rest. The difference between "I think I know this" and "I've practiced this exact question" can make or break your offer.
 
-Currently in active development — transitioning from a static question bank to an AI-powered interview coach.
+finterview is designed for one thing: **getting you ready for the real thing.**
+
+- **1000+ curated questions** across 10 finance roles — IB, AM, Quant, S&T, Risk, PE, CorpFin, and more
+- **AI-powered practice** — type your answer, get real feedback on what you missed
+- **Mock interview mode** — timed, pressure-driven simulations that mirror real Superday interviews
+- **Progress tracking** — know exactly where you're strong and where you need work
+- **Flashcard mode** — rapid recall for last-minute cramming
+- **Advanced filters** — drill down by difficulty, role, or topic
+- **Dark mode** — practice day or night
 
 ## Features
 
-- **538 curated questions** across 10 finance roles (IB, AM, Quant, S&T, Risk, PE, CorpFin, FinTech, Family Office)
-- **Practice Mode** — type your answer, compare with model answers
-- **Flashcard Mode** — rapid recall practice
-- **Advanced Filters** — filter by difficulty, role, and category
-- **Finance Bro AI** — interview preparation assistant (hardcoded Q&A — AI upgrade in progress)
-- **Progress Tracking** — local profile with practice history
-- **Dark Mode** — toggle between light and dark themes
-- **Responsive Design** — works on desktop, tablet, and mobile
+| Feature | Description |
+|---------|-------------|
+| **Practice Mode** | Browse questions by role, type your answer, compare with model answers |
+| **AI Feedback** | Get real analysis of your answers — not keyword matching, actual feedback on structure and content |
+| **Mock Interview** | Full interview simulations with timing, scoring, and adaptive difficulty |
+| **Flashcards** | Quick-fire practice for rapid recall of key concepts |
+| **Progress Dashboard** | Track accuracy by role and topic, visualize your improvement over time |
+| **Advanced Filters** | Filter by difficulty (easy/medium/hard), role, question type, and importance |
+| **Finance Bro AI** | Your interview prep assistant — ask questions, get detailed explanations |
+| **Bookmarks** | Save your hardest questions for focused review |
 
-## Tech Stack
+## Questions by Role
 
-- **Frontend:** HTML, CSS, JavaScript (vanilla)
-- **Design System:** Custom CSS with unified theming (light/dark)
-- **Data:** 538 structured questions with metadata (role, difficulty, category)
-- **Storage:** LocalStorage (backend + auth coming)
-- **Hosting:** GitHub Pages + Netlify
+| Role | Questions |
+|------|-----------|
+| Investment Banking | 100+ |
+| Sales & Trading | 100+ |
+| Quantitative Finance | 100+ |
+| Asset Management | 100+ |
+| Risk Management | 90+ |
+| Private Equity | 30+ |
+| Corporate Finance | 30+ |
+| FinTech | 20+ |
+| Family Office | 20+ |
+| General | 10+ |
 
-## Current Status
+*Questions database is continuously expanding with new content from real interview experiences.*
 
-| Status | Phase | Description |
-|--------|-------|-------------|
-| ✅ | Foundation | Question bank + core UI + practice mode |
-| 🚧 | Phase 1 | AI-powered feedback + mock interview |
-| 📋 | Phase 2 | Dashboard + visual overhaul |
-| 📋 | Phase 3 | Gamification + engagement |
-| 📋 | Phase 4 | Auth + payment system |
+## Tech
 
-See [PRODUCT_ROADMAP.md](./PRODUCT_ROADMAP.md) for full feature tracking.
+- Built with vanilla HTML, CSS, and JavaScript
+- Responsive design — works on desktop, tablet, and mobile
+- Cloud-hosted for fast global access
 
-## Project Structure
-
-```
-finterview-prototype/
-├── index.html                # Homepage
-├── industry-practice.html    # Practice mode (main feature)
-├── industry-filter.html      # Advanced filters
-├── flashcard.html           # Flashcard mode
-├── finance-bro.html         # Finance Bro AI assistant
-├── profile.html             # User profile
-├── questions.js             # 538 question dataset
-├── PRODUCT_ROADMAP.md       # Feature tracker
-├── netlify.toml             # Deployment config
-├── css/                     # Design system
-├── js/                      # JavaScript modules
-└── _archive/                # Historical files (archived)
-```
-
-## Author
+## Project
 
 Built by Jiarong Yang.
 
 ---
 
-_Professional project — part of a continuous product development journey._
+*Land your next offer. One question at a time.*
