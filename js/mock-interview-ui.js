@@ -543,28 +543,29 @@ Key achievements: ..." maxlength="5000"></textarea>
       }
 
       case 'feedback': {
-        const q = MockInterviewEngine.getCurrentQuestion();
-        const a = MockInterviewEngine.getAnswers()[MockInterviewEngine.getCurrentIndex()];
         const idx = MockInterviewEngine.getCurrentIndex();
         const total = MockInterviewEngine.getQuestions().length;
 
         removeTypingIndicator();
 
-        // Short pause for realism
+        // Brief pause, then move on — all analysis in final report
         setTimeout(() => {
-          addFeedbackMessage(a.feedback);
-
           if (idx < total - 1) {
-            addNextButton('<i class="fas fa-arrow-right"></i> Next Question', function() {
-              MockInterviewEngine.nextQuestion();
-            });
-          } else {
-            addSystemMessage('That was your last question.');
-            addNextButton('<i class="fas fa-chart-bar"></i> View Full Report', function() {
-              MockInterviewEngine.endSession();
-            });
+            addSystemMessage('Answer recorded. Moving to the next question.');
           }
-        }, 600);
+          addNextButton(
+            idx < total - 1
+              ? '<i class="fas fa-arrow-right"></i> Next Question'
+              : '<i class="fas fa-chart-bar"></i> View Full Report',
+            function() {
+              if (idx < total - 1) {
+                MockInterviewEngine.nextQuestion();
+              } else {
+                MockInterviewEngine.endSession();
+              }
+            }
+          );
+        }, 500);
         break;
       }
 
