@@ -3,144 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="finterview - AI‑powered finance interview preparation platform with 1000+ expert‑curated questions across 8 major industries. Real‑time interview simulation, intelligent feedback, and enterprise‑grade analytics for finance professionals.">
+    <meta name="description" content="finterview - AI-powered finance interview prep. Mock interviews with real-time feedback + 1000+ practice questions. Your edge for every round.">
     <title>finterview - Finance Interview Preparation</title>
     <link rel="stylesheet" href="css/unified-design.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Additional styles for homepage */
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: var(--spacing-3xl);
-            margin-top: var(--spacing-2xl);
-            flex-wrap: wrap;
-        }
-        
-        .stat-item {
+        /* ── Hero ── */
+        .hero-section {
             text-align: center;
+            padding: var(--spacing-3xl) 0 var(--spacing-2xl);
         }
-        
-        .stat-number {
+        .hero-section h1 {
             font-size: 2.5rem;
-            font-weight: var(--font-weight-bold);
-            color: var(--primary-color);
-            line-height: 1;
-        }
-        
-        .stat-label {
-            font-size: var(--font-size-sm);
-            color: var(--text-secondary);
-            margin-top: var(--spacing-xs);
-            font-weight: var(--font-weight-medium);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-2xl);
-        }
-        
-        .feature-card {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            padding: var(--spacing-xl);
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--light-border);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--hover-shadow);
-        }
-        
-        .feature-icon {
-            width: 64px;
-            height: 64px;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto var(--spacing-md);
-            font-size: 1.5rem;
-            color: var(--white);
-        }
-        
-        .feature-icon.ai { background-color: var(--primary-color); }
-        .feature-icon.expert { background-color: var(--success-color); }
-        .feature-icon.track { background-color: var(--industry-quant); }
-        .feature-icon.custom { background-color: var(--industry-markets); }
-        
-        .feature-card h3 {
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            margin-bottom: var(--spacing-sm);
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
             color: var(--text-primary);
         }
-        
-        .feature-card p {
-            font-size: var(--font-size-sm);
+        .hero-section h1 .highlight {
+            background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-sub {
+            font-size: 1.05rem;
             color: var(--text-secondary);
-            line-height: var(--line-height-normal);
-        }
-        
-        .cta-section {
-            text-align: center;
-            padding: var(--spacing-3xl) 0;
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-            color: var(--white);
-            border-radius: var(--border-radius-lg);
-            margin-top: var(--spacing-3xl);
-        }
-        
-        .cta-section h2 {
-            font-size: var(--font-size-3xl);
-            font-weight: var(--font-weight-bold);
-            margin-bottom: var(--spacing-lg);
-        }
-        
-        .cta-section p {
-            font-size: var(--font-size-lg);
-            margin-bottom: var(--spacing-2xl);
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0.9;
+            margin: 0 auto var(--spacing-xl);
+            line-height: 1.6;
         }
-        
-        .cta-buttons {
+
+        .hero-cta {
             display: flex;
             gap: var(--spacing-md);
             justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: var(--spacing-xl);
         }
-        
-        .cta-buttons .btn {
-            min-width: 180px;
+        .hero-cta .btn { min-width: 200px; padding: 0.85rem 1.5rem; font-size: 1rem; }
+        .hero-cta .btn i { margin-right: 0.4rem; }
+        .btn-glow {
+            background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
         }
-        
-        .btn-secondary {
-            background-color: var(--white);
+        .btn-glow::after {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+            animation: glowPulse 3s ease-in-out infinite;
+        }
+        @keyframes glowPulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        .badge-new {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 700;
+            background: #f59e0b;
+            color: white;
+            padding: 0.15rem 0.45rem;
+            border-radius: 6px;
+            margin-left: 0.3rem;
+            vertical-align: middle;
+            -webkit-text-fill-color: white;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-3xl);
+            flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 800; color: var(--primary-color); line-height: 1; }
+        .stat-label { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.2rem; font-weight: 500; }
+
+        /* ── Feature Spotlight (Two Core Modes) ── */
+        .spotlight-section {
+            margin-top: var(--spacing-3xl);
+        }
+        .spotlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+        }
+        @media (max-width: 700px) { .spotlight-grid { grid-template-columns: 1fr; } }
+
+        .spotlight-card {
+            background: var(--white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--spacing-2xl);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--light-border);
+            transition: all 0.3s;
+        }
+        .spotlight-card:hover { transform: translateY(-3px); box-shadow: var(--hover-shadow); }
+
+        .spotlight-card.mock {
+            border-top: 4px solid var(--primary-color);
+            position: relative;
+        }
+        .spotlight-card.mock::before {
+            content: '✨ NEW';
+            position: absolute;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            background: var(--primary-color);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 0.2rem 0.6rem;
+            border-radius: 8px;
+        }
+        .spotlight-card.practice { border-top: 4px solid var(--success-color, #28a745); }
+
+        .spotlight-icon {
+            width: 56px; height: 56px;
+            border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem; color: var(--white);
+            margin-bottom: var(--spacing-md);
+        }
+        .spotlight-icon.mock { background: linear-gradient(135deg, #4361ee, #3a0ca3); }
+        .spotlight-icon.practice { background: linear-gradient(135deg, #28a745, #1e7e34); }
+        .spotlight-icon.ai { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .spotlight-icon.flash { background: linear-gradient(135deg, #f59e0b, #d97706); }
+
+        .spotlight-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-primary); }
+        .spotlight-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--spacing-lg); }
+        .spotlight-features {
+            list-style: none; padding: 0; margin: 0 0 var(--spacing-lg);
+        }
+        .spotlight-features li {
+            font-size: 0.85rem;
+            color: var(--text-primary);
+            padding: 0.35rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .spotlight-features li i {
             color: var(--primary-color);
+            font-size: 0.75rem;
+            width: 16px;
         }
-        
-        .btn-secondary:hover {
-            background-color: var(--light-bg);
-            color: var(--primary-dark);
+
+        .spotlight-card .btn {
+            width: 100%;
         }
-            /* Match footer logo size with header */
-        .logo h3 {
+
+        /* ── Features Mini ── */
+        .features-mini {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+        @media (max-width: 700px) { .features-mini { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 450px) { .features-mini { grid-template-columns: 1fr; } }
+
+        .feature-mini-card {
+            background: var(--white);
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-lg);
+            text-align: center;
+        }
+        .feature-mini-card i {
             font-size: 1.5rem;
-            margin: 0;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-sm);
         }
-        </style>
+        .feature-mini-card h4 { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.2rem; }
+        .feature-mini-card p { font-size: 0.78rem; color: var(--text-secondary); line-height: 1.4; margin: 0; }
+
+        /* ── FAQ ── */
+        .faq-section {
+            max-width: 700px;
+            margin: var(--spacing-3xl) auto;
+        }
+        .faq-section h2 {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+        .faq-item {
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-sm);
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            background: var(--white);
+            border: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            transition: background 0.15s;
+        }
+        .faq-question:hover { background: #f9fafb; }
+        .faq-question i { transition: transform 0.3s; font-size: 0.75rem; color: var(--text-light); }
+        .faq-item.open .faq-question i { transform: rotate(180deg); }
+        .faq-answer {
+            display: none;
+            padding: 0 1.25rem 1rem;
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .faq-item.open .faq-answer { display: block; }
+        .faq-answer a { color: var(--primary-color); text-decoration: underline; }
+
+        /* ── Industry Grid ── */
+        .industry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+        }
+        /* Reuse existing industry-card styles from unified-design.css */
+        .section-label { text-align: center; margin-bottom: var(--spacing-lg); }
+        .section-label h2 { margin-bottom: 0.3rem; }
+        .section-label p { color: var(--text-secondary); font-size: 0.95rem; }
+
+        /* ── Final CTA ── */
+        .final-cta {
+            text-align: center;
+            padding: var(--spacing-3xl) var(--spacing-xl);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: var(--border-radius-lg);
+            color: var(--white);
+            margin-top: var(--spacing-3xl);
+        }
+        .final-cta h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .final-cta p { opacity: 0.9; margin-bottom: var(--spacing-xl); font-size: 1rem; }
+        .final-cta .cta-btns { display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap; }
+        .final-cta .btn-white {
+            background: var(--white); color: var(--primary-color); padding: 0.8rem 2rem;
+            border-radius: var(--border-radius); font-weight: 600; display: inline-flex;
+            align-items: center; gap: 0.5rem; text-decoration: none; transition: all 0.2s;
+        }
+        .final-cta .btn-white:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+        .final-cta .btn-outline-white {
+            background: transparent; color: var(--white); padding: 0.8rem 2rem;
+            border: 2px solid rgba(255,255,255,0.6); border-radius: var(--border-radius);
+            font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem;
+            text-decoration: none; transition: all 0.2s;
+        }
+        .final-cta .btn-outline-white:hover { border-color: white; }
+
+        .logo h3 { font-size: 1.5rem; margin: 0; }
+
+        @media (max-width: 600px) {
+            .hero-section h1 { font-size: 1.7rem; }
+            .hero-cta .btn { min-width: 100%; }
+            .spotlight-card { padding: var(--spacing-xl); }
+        }
+    </style>
 </head>
 <body>
     <div class="page-wrapper">
@@ -151,20 +285,12 @@
                     <h1>finterview</h1>
                     <p>Finance Interview Preparation</p>
                 </div>
-                
                 <nav class="main-nav">
                     <button class="menu-toggle" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span></span><span></span><span></span>
                     </button>
                     <ul class="nav-list">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="industry-practice.html">Practice Mode</a></li>
-                        <li><a href="industry-filter.html">Advanced Filters</a></li>
-                        <li><a href="profile.html">My Profile</a></li>
-                        <li><a href="finance-bro.html">Finance Bro AI</a></li>
-                        <li><a href="flashcard.html">Flashcards</a></li>
                         <li class="search-toggle-item">
                             <button id="search-toggle" class="search-toggle-btn" aria-label="Search questions">
                                 <i class="fas fa-search"></i>
@@ -183,49 +309,105 @@
         <!-- Main Content -->
         <main class="main-content">
             <div class="container">
-                <!-- Hero Section -->
+
+                <!-- ═══ HERO ═══ -->
                 <section class="hero-section">
-                    <h1>Dominate Finance Interviews with <span class="highlight">AI‑Powered Intelligence</span></h1>
-                    <p>1000+ expert‑curated questions across 8 finance industries, powered by real‑time interview simulation and intelligent feedback. The most advanced platform built by finance professionals for finance professionals.</p>
-                    
-                    <div class="cta-buttons">
-                        <a href="#industries" class="btn btn-primary btn-lg">
-                            <i class="fas fa-play-circle"></i> Start Practicing
+                    <h1>Mock <span class="highlight">smarter</span>, not harder.</h1>
+                    <p class="hero-sub">
+                        AI-powered mock interviews that feel real + 1000+ practice questions across every finance industry. 
+                        Your edge for every round — from first screen to offer letter.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="mock-interview.html" class="btn btn-glow">
+                            <i class="fas fa-microphone-alt"></i> Try Mock Interview <span class="badge-new">NEW</span>
                         </a>
-                        <a href="industry-practice.html?industry=ib" class="btn btn-outline btn-lg">
-                            <i class="fas fa-eye"></i> View Sample Questions
+                        <a href="#industries" class="btn btn-outline">
+                            <i class="fas fa-book-open"></i> Browse Practice Questions
                         </a>
                     </div>
-                    
+
                     <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">1000+</div>
-                            <div class="stat-label">Expert Questions</div>
+                        <div class="stat-item"><div class="stat-number">1K+</div><div class="stat-label">Expert Questions</div></div>
+                        <div class="stat-item"><div class="stat-number">8</div><div class="stat-label">Finance Industries</div></div>
+                        <div class="stat-item"><div class="stat-number">AI</div><div class="stat-label">Mock Interviews</div></div>
+                        <div class="stat-item"><div class="stat-number">RF</div><div class="stat-label">Real-Time Feedback</div></div>
+                    </div>
+                </section>
+
+                <!-- ═══ FEATURE SPOTLIGHT: Two Core Modes ═══ -->
+                <section class="spotlight-section">
+                    <div class="section-label">
+                        <h2>Two modes. One goal: your offer letter.</h2>
+                        <p>Whether you're learning the basics or simulating the real thing — we've got you covered.</p>
+                    </div>
+                    <div class="spotlight-grid">
+                        <!-- Mock Interview -->
+                        <div class="spotlight-card mock">
+                            <div class="spotlight-icon mock"><i class="fas fa-microphone-alt"></i></div>
+                            <h3>Mock Interview <span class="badge-new" style="position:static;display:inline-block;margin-left:0.3rem;">NEW</span></h3>
+                            <p>AI-driven interview simulation based on your actual resume. Timed questions, follow-up pressure, and detailed feedback on every answer.</p>
+                            <ul class="spotlight-features">
+                                <li><i class="fas fa-check"></i> Paste your resume — AI generates personalized questions</li>
+                                <li><i class="fas fa-check"></i> Timed answers + follow-up questions (Medium/Hard difficulty)</li>
+                                <li><i class="fas fa-check"></i> Per-question feedback: strengths, improvements, model answer</li>
+                                <li><i class="fas fa-check"></i> End report: overall score + ability radar chart</li>
+                                <li><i class="fas fa-check-circle" style="color: #f59e0b;"></i> <strong>Privacy first</strong> — processed in memory, not stored</li>
+                            </ul>
+                            <a href="mock-interview.html" class="btn btn-primary">
+                                <i class="fas fa-rocket"></i> Start Mock Interview
+                            </a>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">8</div>
-                            <div class="stat-label">Finance Industries</div>
+
+                        <!-- Practice Mode -->
+                        <div class="spotlight-card practice">
+                            <div class="spotlight-icon practice"><i class="fas fa-book-open"></i></div>
+                            <h3>Practice Mode</h3>
+                            <p>Browse 1,000+ curated questions by industry. Reveal model answers at your own pace. Bookmark, track progress, and learn with Finance Bro assistant.</p>
+                            <ul class="spotlight-features">
+                                <li><i class="fas fa-check"></i> Filter by industry, difficulty, and type</li>
+                                <li><i class="fas fa-check"></i> Reveal/hide model answers with concise & detailed views</li>
+                                <li><i class="fas fa-check"></i> Progress tracking + bookmarks + flashcards</li>
+                                <li><i class="fas fa-check"></i> Finance Bro AI assistant for on-demand help</li>
+                            </ul>
+                            <a href="#industries" class="btn btn-outline">
+                                <i class="fas fa-arrow-right"></i> Browse Questions
+                            </a>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">Success Rate</div>
+                    </div>
+
+                    <!-- Mini Feature Row: Finance Bro + Flashcards -->
+                    <div class="features-mini">
+                        <div class="feature-mini-card">
+                            <i class="fas fa-robot"></i>
+                            <h4>Finance Bro AI</h4>
+                            <p>Ask questions, get tips, and learn on the fly with your AI co-pilot.</p>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number">AI</div>
-                            <div class="stat-label">Intelligent Agent</div>
+                        <div class="feature-mini-card">
+                            <i class="fas fa-layer-group"></i>
+                            <h4>Smart Flashcards</h4>
+                            <p>Spaced repetition for rapid recall of key finance concepts.</p>
+                        </div>
+                        <div class="feature-mini-card">
+                            <i class="fas fa-search"></i>
+                            <h4>Cross-Industry Search</h4>
+                            <p>Search all 1K+ questions instantly by keyword or concept.</p>
+                        </div>
+                        <div class="feature-mini-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Privacy First</h4>
+                            <p>Your data stays in memory. No storage. No AI training.</p>
                         </div>
                     </div>
                 </section>
 
-                <!-- Industries Section -->
-                <section id="industries" class="mt-6">
-                    <div class="text-center">
-                        <h2>Master Every Finance Industry</h2>
-                        <p class="text-secondary">Comprehensive coverage across all major finance sectors with industry‑specific questions, case studies, and real‑world scenarios used by top firms.</p>
+                <!-- ═══ INDUSTRIES ═══ -->
+                <section id="industries">
+                    <div class="section-label">
+                        <h2>Every finance industry, covered.</h2>
+                        <p>Industry-specific questions, case studies, and real-world scenarios used by top firms.</p>
                     </div>
-                    
                     <div class="industry-grid" id="industryGrid">
-                        <!-- Industry cards will be loaded by JavaScript -->
                         <div class="loading-state">
                             <i class="fas fa-spinner fa-spin"></i>
                             <span>Loading industries...</span>
@@ -233,258 +415,185 @@
                     </div>
                 </section>
 
-                <!-- Features Section -->
-                <section class="mt-6">
-                    <div class="text-center">
-                        <h2>Enterprise‑Grade Interview Platform</h2>
-                        <p class="text-secondary">Used by top finance firms and thousands of successful candidates. The most advanced AI‑powered preparation system available.</p>
+                <!-- ═══ FAQ ═══ -->
+                <section class="faq-section">
+                    <h2>Frequently asked questions</h2>
+
+                    <div class="faq-item">
+                        <button class="faq-question">What is Mock Interview and how does it work? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Mock Interview is our AI-powered interview simulator. You paste your resume or use a sample profile,
+                            choose your focus industry, and start a timed interview. The AI generates personalized questions based
+                            on your background, asks follow-ups on Medium/Hard difficulty, and provides detailed feedback with
+                            model answers after each round. At the end, you get a comprehensive report with an ability radar chart.
+                            <a href="mock-interview.html">Try it →</a>
+                        </div>
                     </div>
-                    
-                    <div class="features-grid">
-                        <div class="feature-card">
-                            <div class="feature-icon ai">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <h3>AI Interview Simulation</h3>
-                            <p>Real‑time interview practice with adaptive AI that provides instant feedback on content, structure, and delivery.</p>
+
+                    <div class="faq-item">
+                        <button class="faq-question">What's the difference between Practice Mode and Mock Interview? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            <strong>Practice Mode:</strong> Browse questions by industry, reveal model answers at your own pace.
+                            Perfect for learning fundamentals and building knowledge.<br><br>
+                            <strong>Mock Interview:</strong> Timed, AI-driven simulation based on your resume. You answer live,
+                            get follow-up pressure, and receive structured feedback. This is where you stress-test your readiness.
+                            <br><em>Use both: learn in Practice Mode, then pressure-test in Mock Interview.</em>
                         </div>
-                        
-                        <div class="feature-card">
-                            <div class="feature-icon expert">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <h3>Expert Question Database</h3>
-                            <p>1000+ questions curated by experienced finance professionals with backgrounds in investment banking, asset management, and quantitative finance.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Is my resume / personal data safe? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Yes. Your resume is processed entirely in memory during your session. We do not store it in any database
+                            or use it for AI training. You can also use our sample resumes (Goldman Sachs Analyst, HKU Student profile)
+                            to experience the full feature without sharing any personal data.
                         </div>
-                        
-                        <div class="feature-card">
-                            <div class="feature-icon track">
-                                <i class="fas fa-chart-bar"></i>
-                            </div>
-                            <h3>Performance Analytics</h3>
-                            <p>Advanced analytics dashboard tracking 50+ metrics with benchmarking against successful candidates.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">What industries are covered? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Investment Banking, Asset Management, Quantitative Finance, Sales & Trading, Corporate Finance,
+                            Risk Management, FinTech, and Family Office. Each industry has dedicated questions and scenarios.
+                            New content is added regularly.
                         </div>
-                        
-                        <div class="feature-card">
-                            <div class="feature-icon custom">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <h3>Enterprise Integration</h3>
-                            <p>Seamless integration with corporate HR systems, LMS platforms, and recruitment pipelines.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Is this really free? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            All practice questions, flashcards, and Finance Bro AI are completely free. Mock Interview is also free
+                            in its current phase — no credit card, no sign-up. Just open the page and start.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Can I use it on mobile? <i class="fas fa-chevron-down"></i></button>
+                        <div class="faq-answer">
+                            Yes — the entire platform is fully responsive and works seamlessly on phone, tablet, and desktop.
+                            Mock Interview, Practice Mode, flashcards, and search all work on mobile.
                         </div>
                     </div>
                 </section>
 
-                <!-- CTA Section -->
-                <section class="cta-section">
-                    <h2>Ready to Dominate Your Next Interview?</h2>
-                    <p>Join 10,000+ finance professionals who transformed their interview performance with finterview. Experience the most advanced AI‑powered interview platform.</p>
-                    
-                    <div class="cta-buttons">
-                        <a href="#industries" class="btn btn-secondary btn-lg">
-                            <i class="fas fa-rocket"></i> Get Started Free
-                        </a>
-                        <a href="industry-practice.html?industry=ib" class="btn btn-outline btn-lg" style="border-color: white; color: white;">
-                            <i class="fas fa-play"></i> Try Demo
-                        </a>
-                        <a href="industry-filter.html" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.5); color: white;">
-                            <i class="fas fa-filter"></i> Browse with Filters
-                        </a>
+                <!-- ═══ FINAL CTA ═══ -->
+                <section class="final-cta">
+                    <h2>Ready to ace your next interview?</h2>
+                    <p>Whether you're just starting or going into final rounds — you've got the right tool.</p>
+                    <div class="cta-btns">
+                        <a href="mock-interview.html" class="btn-white"><i class="fas fa-rocket"></i> Start Mock Interview</a>
+                        <a href="industry-practice.html?industry=ib" class="btn-outline-white"><i class="fas fa-book-open"></i> Browse Practice Questions</a>
                     </div>
                 </section>
+
             </div>
         </main>
 
         <!-- Footer -->
         <footer class="main-footer">
             <div class="container">
-                <div class="flex justify-between items-center">
+                <div class="flex justify-between items-center" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
                     <div class="logo">
                         <h3>finterview</h3>
                         <p>Finance Interview Platform</p>
                     </div>
-                    
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="industry-practice.html">Practice Mode</a></li>
-                        <li><a href="industry-filter.html">Advanced Filters</a></li>
-                        <li><a href="profile.html">My Profile</a></li>
-                        <li><a href="finance-bro.html">Finance Bro AI</a></li>
+                        <li><a href="mock-interview.html">Mock Interview</a></li>
+                        <li><a href="industry-practice.html">Practice</a></li>
+                        <li><a href="profile.html">Profile</a></li>
                     </ul>
                 </div>
-                
-                <div class="text-center mt-4">
-                    <p class="text-sm text-secondary">© 2026 finterview. All rights reserved.</p>
+                <div class="text-center mt-4" style="text-align:center;margin-top:1rem;">
+                    <p class="text-sm text-secondary">© 2026 finterview. Practice makes perfect.</p>
                 </div>
             </div>
         </footer>
     </div>
 
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script src="js/theme-toggle.js"></script>
     <script src="js/search.js"></script>
     <script>
-        // Load industries data and create cards
+        // ── Industry Cards ──
         document.addEventListener('DOMContentLoaded', function() {
-            // Industry data
             const industries = [
-                {
-                    id: 'ib',
-                    name: 'Investment Banking',
-                    description: 'M&A, valuation, financial modeling, and deal execution questions',
-                    icon: 'fas fa-building',
-                    color: 'industry-ib'
-                },
-                {
-                    id: 'am',
-                    name: 'Asset Management',
-                    description: 'Portfolio management, investment strategies, and risk assessment',
-                    icon: 'fas fa-chart-pie',
-                    color: 'industry-am'
-                },
-                {
-                    id: 'quant',
-                    name: 'Quantitative Finance',
-                    description: 'Math, statistics, algorithms, and quantitative modeling',
-                    icon: 'fas fa-calculator',
-                    color: 'industry-quant'
-                },
-                {
-                    id: 'markets',
-                    name: 'Sales & Trading',
-                    description: 'Market making, trading strategies, and financial instruments',
-                    icon: 'fas fa-chart-line',
-                    color: 'industry-markets'
-                },
-                {
-                    id: 'corpfin',
-                    name: 'Corporate Finance',
-                    description: 'Capital structure, budgeting, and corporate strategy',
-                    icon: 'fas fa-briefcase',
-                    color: 'industry-corpfin'
-                },
-                {
-                    id: 'risk',
-                    name: 'Risk Management',
-                    description: 'Risk assessment, modeling, and regulatory compliance',
-                    icon: 'fas fa-shield-alt',
-                    color: 'industry-risk'
-                },
-                {
-                    id: 'fintech',
-                    name: 'FinTech',
-                    description: 'Digital finance, blockchain, and financial technology',
-                    icon: 'fas fa-laptop-code',
-                    color: 'industry-fintech'
-                },
-                {
-                    id: 'fo',
-                    name: 'Family Office',
-                    description: 'Wealth management, estate planning, and family governance',
-                    icon: 'fas fa-home',
-                    color: 'industry-fo'
-                }
+                { id: 'ib', name: 'Investment Banking', desc: 'M&A, valuation, financial modeling', icon: 'fas fa-building', color: 'industry-ib' },
+                { id: 'am', name: 'Asset Management', desc: 'Portfolio management, investment strategies', icon: 'fas fa-chart-pie', color: 'industry-am' },
+                { id: 'quant', name: 'Quantitative Finance', desc: 'Math, statistics, algo trading', icon: 'fas fa-calculator', color: 'industry-quant' },
+                { id: 'markets', name: 'Sales & Trading', desc: 'Market making, trading, risk', icon: 'fas fa-chart-line', color: 'industry-markets' },
+                { id: 'corpfin', name: 'Corporate Finance', desc: 'Capital structure, budgeting', icon: 'fas fa-briefcase', color: 'industry-corpfin' },
+                { id: 'risk', name: 'Risk Management', desc: 'Risk assessment, compliance', icon: 'fas fa-shield-alt', color: 'industry-risk' },
+                { id: 'fintech', name: 'FinTech', desc: 'Digital finance, blockchain', icon: 'fas fa-laptop-code', color: 'industry-fintech' },
+                { id: 'fo', name: 'Family Office', desc: 'Wealth management, governance', icon: 'fas fa-home', color: 'industry-fo' }
             ];
 
-            // Get industry grid
-            const industryGrid = document.getElementById('industryGrid');
-            
-            // Clear loading state
-            industryGrid.innerHTML = '';
-            
-            // Create industry cards with hover options
-            industries.forEach(industry => {
+            const grid = document.getElementById('industryGrid');
+            grid.innerHTML = '';
+
+            industries.forEach(function(ind) {
                 const card = document.createElement('div');
-                card.className = `industry-card ${industry.color}`;
-                
+                card.className = 'industry-card ' + ind.color;
                 card.innerHTML = `
-                    <div class="industry-icon">
-                        <i class="${industry.icon}"></i>
-                    </div>
-                    <h3>${industry.name}</h3>
-                    <p>${industry.description}</p>
-                    
-                    <!-- Hover overlay with mode options -->
+                    <div class="industry-icon"><i class="${ind.icon}"></i></div>
+                    <h3>${ind.name}</h3>
+                    <p>${ind.desc}</p>
                     <div class="industry-hover-overlay">
                         <div class="hover-content">
-                            <button class="hover-btn random-btn" data-industry="${industry.id}">
-                                <i class="fas fa-random"></i>
-                                Random Practice
+                            <button class="hover-btn random-btn" data-industry="${ind.id}">
+                                <i class="fas fa-random"></i> Random Practice
                             </button>
-                            <button class="hover-btn filter-btn" data-industry="${industry.id}">
-                                <i class="fas fa-filter"></i>
-                                Browse with Filters
+                            <button class="hover-btn filter-btn" data-industry="${ind.id}">
+                                <i class="fas fa-filter"></i> Browse with Filters
                             </button>
                         </div>
                     </div>
                 `;
-                
-                // Add event listeners for buttons
-                const randomBtn = card.querySelector('.random-btn');
-                const filterBtn = card.querySelector('.filter-btn');
-                
-                // Random Practice: jump to practice mode page
-                randomBtn.addEventListener('click', function(e) {
+                card.querySelector('.random-btn').addEventListener('click', function(e) {
                     e.stopPropagation();
-                    const industryId = this.getAttribute('data-industry');
-                    window.location.href = `industry-practice.html?industry=${industryId}`;
+                    window.location.href = 'industry-practice.html?industry=' + this.dataset.industry;
                 });
-                
-                // Browse with Filters: jump to advanced filters page
-                filterBtn.addEventListener('click', function(e) {
+                card.querySelector('.filter-btn').addEventListener('click', function(e) {
                     e.stopPropagation();
-                    const industryId = this.getAttribute('data-industry');
-                    window.location.href = `industry-filter.html?industry=${industryId}`;
+                    window.location.href = 'industry-filter.html?industry=' + this.dataset.industry;
                 });
-                
-                // Optional: Keep card clickable as backup (goes to practice mode page)
                 card.addEventListener('click', function() {
-                    window.location.href = `industry-practice.html?industry=${industry.id}`;
+                    window.location.href = 'industry-practice.html?industry=' + ind.id;
                 });
-                
-                industryGrid.appendChild(card);
+                grid.appendChild(card);
             });
 
-            // Mobile menu toggle
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navList = document.querySelector('.nav-list');
-            
-            if (menuToggle && navList) {
-                menuToggle.addEventListener('click', function() {
-                    navList.classList.toggle('show');
+            // ── FAQ Accordion ──
+            document.querySelectorAll('.faq-question').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    this.closest('.faq-item').classList.toggle('open');
                 });
-            }
+            });
 
-            // Update active nav link
-            const currentPage = window.location.pathname.split('/').pop();
-            document.querySelectorAll('.nav-list a').forEach(link => {
-                if (link.getAttribute('href') === currentPage) {
-                    link.classList.add('active');
-                }
+            // ── Mobile menu ──
+            document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+                document.querySelector('.nav-list')?.classList.toggle('show');
             });
         });
     </script>
-    
+
     <!-- Search Overlay -->
     <div id="search-overlay" class="search-overlay">
         <div class="search-container">
             <div class="search-header">
                 <div class="search-input-container">
                     <i class="fas fa-search search-input-icon"></i>
-                    <input type="text" id="search-input" class="search-input" 
-                           placeholder="Search across all 668 finance interview questions..." 
-                           autocomplete="off">
+                    <input type="text" id="search-input" class="search-input"
+                        placeholder="Search across all 668 finance interview questions..."
+                        autocomplete="off">
                 </div>
                 <button id="search-close" class="search-close" aria-label="Close search">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="search-body">
-                <div class="search-filters" id="search-filters">
-                    <!-- Filters will be added dynamically -->
-                </div>
+                <div class="search-filters" id="search-filters"></div>
                 <div class="search-results" id="search-results">
-                    <!-- Search results will appear here -->
                     <div class="search-empty">
                         <i class="fas fa-search"></i>
                         <h3>Search Finance Questions</h3>
