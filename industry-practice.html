@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="finterview - Practice finance interview questions with helpful answer hints. Answer box, navigation, and answer toggles for effective learning.">
-    <title>Industry Questions - Practice Mode - finterview</title>
+    <meta name="description" content="finterview - Practice finance interview questions. Browse, reveal answers, bookmark, and track progress.">
+    <title>Practice Mode - finterview</title>
     <link rel="stylesheet" href="css/unified-design.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Load questions.js early -->
     <script src="questions.js?v=v20260324_feedback_fixed"></script>
     <style>
-        /* Practice mode specific styles */
         .practice-container {
             display: flex;
             flex-direction: column;
             gap: var(--spacing-xl);
         }
-        
+
         .question-display {
             background-color: var(--white);
             border-radius: var(--border-radius-lg);
@@ -28,70 +26,54 @@
             box-shadow: var(--card-shadow);
             border: 1px solid var(--light-border);
         }
-        
+
         .question-number {
             font-size: var(--font-size-sm);
             color: var(--text-secondary);
             font-weight: var(--font-weight-medium);
             margin-bottom: var(--spacing-sm);
         }
-        
+
         .question-text {
             font-size: var(--font-size-xl);
             line-height: var(--line-height-relaxed);
             color: var(--text-primary);
             margin-bottom: var(--spacing-xl);
         }
-        
-        .answer-input-section {
+
+        /* --- Answer Reveal Section --- */
+        .answer-reveal-section {
             margin-top: var(--spacing-xl);
-            padding-top: var(--spacing-xl);
-            border-top: 1px solid var(--light-border);
-        }
-        
-        .answer-input-label {
-            display: block;
-            font-size: var(--font-size-lg);
-            font-weight: var(--font-weight-semibold);
-            color: var(--text-primary);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .answer-textarea {
-            width: 100%;
-            min-height: 150px;
-            padding: var(--spacing-lg);
-            border: 2px solid var(--light-border);
+            padding: var(--spacing-xl);
+            background-color: var(--light-bg);
             border-radius: var(--border-radius);
-            font-family: var(--font-family-sans);
+            border-left: 4px solid var(--success-color);
+        }
+
+        .answer-content {
             font-size: var(--font-size-base);
-            line-height: var(--line-height-normal);
+            line-height: var(--line-height-relaxed);
             color: var(--text-primary);
-            background-color: var(--white);
-            resize: vertical;
-            transition: border-color 0.2s ease;
         }
-        
-        .answer-textarea:focus {
-            outline: none;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+
+        .answer-content.concise ul {
+            padding-left: var(--spacing-xl);
+            margin-top: var(--spacing-md);
         }
-        
-        .answer-controls {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: var(--spacing-lg);
+
+        .answer-content.concise li {
+            margin-bottom: var(--spacing-sm);
         }
-        
+
+        /* --- Answer Controls (single button) --- */
         .answer-actions {
             display: flex;
-            gap: var(--spacing-sm);
+            justify-content: center;
+            margin-top: var(--spacing-lg);
         }
-        
+
         .action-btn {
-            padding: var(--spacing-md) var(--spacing-lg);
+            padding: var(--spacing-md) var(--spacing-2xl);
             font-size: var(--font-size-base);
             font-weight: var(--font-weight-semibold);
             border: none;
@@ -102,90 +84,28 @@
             align-items: center;
             gap: var(--spacing-sm);
         }
-        
+
         .action-btn.primary {
             background-color: var(--primary-color);
             color: var(--white);
         }
-        
+
         .action-btn.primary:hover {
             background-color: var(--primary-dark);
         }
-        
-        .action-btn.secondary {
+
+        .action-btn.outline {
             background-color: var(--white);
             color: var(--primary-color);
             border: 2px solid var(--primary-color);
         }
-        
-        .action-btn.secondary:hover {
+
+        .action-btn.outline:hover {
             background-color: var(--primary-color);
             color: var(--white);
         }
-        
-        .action-btn.hint {
-            background-color: var(--info-color);
-            color: var(--white);
-        }
-        
-        .action-btn.hint:hover {
-            background-color: #2563eb;
-        }
-        
-        .answer-reveal-section {
-            margin-top: var(--spacing-xl);
-            padding: var(--spacing-xl);
-            background-color: var(--light-bg);
-            border-radius: var(--border-radius);
-            border-left: 4px solid var(--success-color);
-        }
-        
-        .answer-toggle-section {
-            display: flex;
-            justify-content: center;
-            gap: var(--spacing-md);
-            margin-bottom: var(--spacing-lg);
-        }
-        
-        .answer-type-btn {
-            padding: var(--spacing-sm) var(--spacing-lg);
-            font-size: var(--font-size-base);
-            font-weight: var(--font-weight-semibold);
-            background-color: var(--white);
-            color: var(--text-secondary);
-            border: 2px solid var(--light-border);
-            border-radius: var(--border-radius);
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        
-        .answer-type-btn.active {
-            background-color: var(--primary-color);
-            color: var(--white);
-            border-color: var(--primary-color);
-        }
-        
-        .answer-type-btn:hover:not(.active) {
-            background-color: var(--light-bg);
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-        }
-        
-        .answer-content {
-            font-size: var(--font-size-base);
-            line-height: var(--line-height-relaxed);
-            color: var(--text-primary);
-        }
-        
-        .answer-content.concise ul {
-            padding-left: var(--spacing-xl);
-            margin-top: var(--spacing-md);
-        }
-        
-        .answer-content.concise li {
-            margin-bottom: var(--spacing-sm);
-        }
-        
+
+        /* --- Navigation --- */
         .navigation-controls {
             display: flex;
             justify-content: space-between;
@@ -194,7 +114,7 @@
             padding-top: var(--spacing-xl);
             border-top: 1px solid var(--light-border);
         }
-        
+
         .nav-btn {
             display: flex;
             align-items: center;
@@ -211,40 +131,40 @@
             min-width: 140px;
             justify-content: center;
         }
-        
+
         .nav-btn:hover:not(:disabled) {
             background-color: var(--primary-color);
             color: var(--white);
         }
-        
+
         .nav-btn:disabled {
             opacity: 0.5;
             cursor: not-allowed;
         }
-        
+
         .progress-info {
             text-align: center;
         }
-        
+
         .progress-text {
             font-size: var(--font-size-base);
             font-weight: var(--font-weight-semibold);
             color: var(--text-primary);
         }
-        
+
         .progress-subtext {
             font-size: var(--font-size-sm);
             color: var(--text-secondary);
             margin-top: 2px;
         }
-        
+
         .industry-info {
             display: flex;
             align-items: center;
             gap: var(--spacing-md);
             margin-bottom: var(--spacing-xl);
         }
-        
+
         .industry-badge {
             padding: 4px 12px;
             background-color: var(--light-bg);
@@ -253,10 +173,10 @@
             font-size: var(--font-size-sm);
             font-weight: var(--font-weight-medium);
         }
-        
-        /* Loading and error states */
+
+        /* Loading/error/empty states */
         .loading-state, .error-state, .empty-state {
-            grid-column: 1 / -1;
+            grid-column: 1/-1;
             text-align: center;
             padding: var(--spacing-3xl);
             background-color: var(--white);
@@ -264,17 +184,17 @@
             box-shadow: var(--card-shadow);
             border: 1px solid var(--light-border);
         }
-        
+
         .loading-state i, .error-state i, .empty-state i {
             font-size: 3rem;
             margin-bottom: var(--spacing-lg);
         }
-        
+
         .loading-state i { color: var(--primary-color); }
         .error-state i { color: var(--error-color); }
         .empty-state i { color: var(--text-light); }
-        
-        /* Utility Classes for Search/Filter */
+
+        /* Filter controls */
         .filter-controls {
             background-color: var(--white);
             padding: var(--spacing-lg);
@@ -282,65 +202,41 @@
             box-shadow: var(--card-shadow);
             border: 1px solid var(--light-border);
         }
-        
+
         .flex { display: flex; }
         .flex-col { flex-direction: column; }
         .flex-row { flex-direction: row; }
         .flex-1 { flex: 1; }
-        
         .gap-2 { gap: 0.5rem; }
         .gap-4 { gap: 1rem; }
         .gap-6 { gap: 1.5rem; }
-        
         .mb-6 { margin-bottom: 1.5rem; }
         .mt-4 { margin-top: 1rem; }
         .ml-2 { margin-left: 0.5rem; }
-        
         .w-full { width: 100%; }
-        
         .relative { position: relative; }
         .absolute { position: absolute; }
-        
-        .transform { transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)); }
-        .-translate-y-1\/2 { --tw-translate-y: -50%; }
-        
         .left-3 { left: 0.75rem; }
         .top-1\/2 { top: 50%; }
-        
         .px-4 { padding-left: 1rem; padding-right: 1rem; }
         .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
         .pl-10 { padding-left: 2.5rem; }
-        .pr-4 { padding-right: 1rem; }
-        
         .border { border-width: 1px; border-style: solid; }
         .border-gray-300 { border-color: #d1d5db; }
-        
         .rounded-lg { border-radius: 0.5rem; }
-        
-        .focus\:ring-2:focus { box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); }
-        .focus\:ring-blue-500:focus { --tw-ring-color: #3b82f6; }
-        .focus\:border-blue-500:focus { border-color: #3b82f6; }
-        
         .bg-gray-100 { background-color: #f3f4f6; }
         .text-gray-700 { color: #374151; }
         .text-gray-600 { color: #4b5563; }
         .text-gray-400 { color: #9ca3af; }
-        
-        .hover\:bg-gray-200:hover { background-color: #e5e7eb; }
-        
-        .hidden { display: none; }
-        
         .text-sm { font-size: 0.875rem; }
         .text-lg { font-size: 1.125rem; }
         .text-3xl { font-size: 1.875rem; }
-        
         .font-bold { font-weight: 700; }
-        
         .justify-center { justify-content: center; }
         .justify-between { justify-content: space-between; }
         .items-center { align-items: center; }
-        
-        /* Progress tags */
+        .hidden { display: none; }
+
         .tag.viewed {
             background-color: #dbeafe !important;
             color: #1e40af !important;
@@ -351,19 +247,11 @@
             align-items: center;
             gap: 4px;
         }
-        
         .tag.answered {
             background-color: #d1fae5 !important;
             color: #065f46 !important;
-            font-size: 0.75rem;
-            padding: 2px 8px;
-            border-radius: 12px;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
         }
-        
-        /* Bookmark button */
+
         .bookmark-btn {
             background: none;
             border: none;
@@ -374,73 +262,40 @@
             padding: 4px;
             border-radius: 4px;
         }
-        
         .bookmark-btn:hover {
             color: #f59e0b;
-            background-color: rgba(245, 158, 11, 0.1);
+            background-color: rgba(245,158,11,0.1);
         }
-        
-        .bookmark-btn.bookmarked {
-            color: #f59e0b;
-        }
-        
-        @media (min-width: 768px) {
-            .md\:flex-row {
-                flex-direction: row;
-            }
-        }
-        
+        .bookmark-btn.bookmarked { color: #f59e0b; }
+
+        .md\:flex-row { flex-direction: row; }
+        @media (min-width: 768px) { .md\:flex-row { flex-direction: row; } }
+
         @media (max-width: 768px) {
-            .question-display {
-                padding: var(--spacing-xl);
-            }
-            
-            .question-text {
-                font-size: var(--font-size-lg);
-            }
-            
-            .answer-controls, .navigation-controls {
-                flex-direction: column;
-                gap: var(--spacing-md);
-            }
-            
-            .nav-btn, .action-btn {
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .answer-toggle-section {
-                flex-wrap: wrap;
-            }
-            
-            .industry-info {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: var(--spacing-sm);
-            }
+            .question-display { padding: var(--spacing-xl); }
+            .question-text { font-size: var(--font-size-lg); }
+            .navigation-controls { flex-direction: column; gap: var(--spacing-md); }
+            .nav-btn, .action-btn { width: 100%; justify-content: center; }
+            .industry-info { flex-direction: column; align-items: flex-start; gap: var(--spacing-sm); }
         }
-            /* Match footer logo size with header */
+
         .logo h3 {
             font-size: 1.5rem;
             margin: 0;
         }
-        </style>
+    </style>
 </head>
 <body>
     <div class="page-wrapper">
-        <!-- Header -->
         <header class="main-header">
             <div class="container">
                 <div class="logo">
                     <h1>finterview</h1>
                     <p>Finance Interview Preparation</p>
                 </div>
-                
                 <nav class="main-nav">
                     <button class="menu-toggle" aria-label="Menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span></span><span></span><span></span>
                     </button>
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
@@ -464,10 +319,8 @@
             </div>
         </header>
 
-        <!-- Main Content -->
         <main class="main-content">
             <div class="container">
-                <!-- Page Header -->
                 <div class="mb-6">
                     <a href="index.html" class="text-primary hover:underline flex items-center gap-2">
                         <i class="fas fa-arrow-left"></i> Back to Industries
@@ -482,32 +335,20 @@
                 <!-- Search and Filter Controls -->
                 <div class="filter-controls mb-6">
                     <div class="flex flex-col md:flex-row gap-4">
-                        <!-- Search Box -->
                         <div class="flex-1">
                             <div class="relative">
-                                <input 
-                                    type="text" 
-                                    id="questionSearch" 
-                                    placeholder="Search questions (e.g., 'M&A', 'valuation', 'DCF')..."
-                                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                >
-                                <div class="absolute left-3 top-1/2 transform -translate-y-1/2">
-                                    <i class="fas fa-search text-gray-400"></i>
-                                </div>
+                                <input type="text" id="questionSearch" placeholder="Search questions (e.g., 'M&A', 'valuation', 'DCF')..."
+                                    class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <div class="absolute left-3 top-1/2 transform -translate-y-1/2"><i class="fas fa-search text-gray-400"></i></div>
                             </div>
                         </div>
-                        
-                        <!-- Filter Dropdowns -->
                         <div class="flex gap-2">
-                            <!-- Difficulty Filter -->
                             <select id="difficultyFilter" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                                 <option value="all">All Difficulty</option>
                                 <option value="easy">Easy</option>
                                 <option value="medium">Medium</option>
                                 <option value="hard">Hard</option>
                             </select>
-                            
-                            <!-- Question Type Filter -->
                             <select id="typeFilter" class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                                 <option value="all">All Types</option>
                                 <option value="technical">Technical</option>
@@ -515,28 +356,22 @@
                                 <option value="case">Case Study</option>
                                 <option value="market">Market Insight</option>
                             </select>
-                            
-                            <!-- Clear Filters Button -->
                             <button id="clearFilters" class="px-4 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 flex items-center gap-2">
                                 <i class="fas fa-times"></i> Clear
                             </button>
                         </div>
                     </div>
-                    
-                    <!-- Filter Summary -->
                     <div class="mt-4 hidden" id="filterSummary">
                         <div class="text-sm text-gray-600">
                             Showing <span id="filteredCount">0</span> of <span id="totalCount">0</span> questions
                             <span id="activeFilters" class="ml-2"></span>
                         </div>
                     </div>
-                    
-                    <!-- Progress Bar -->
                     <div class="mt-4" id="progressBarContainer">
                         <div class="text-sm text-gray-600 mb-1">Your Progress</div>
                         <div class="flex items-center gap-2">
                             <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                <div id="progressBar" class="h-full bg-green-500 transition-all duration-300" style="width: 0%"></div>
+                                <div id="progressBar" class="h-full bg-green-500 transition-all duration-300" style="width:0%"></div>
                             </div>
                             <div class="text-xs text-gray-600" id="progressTextSmall">0/0</div>
                         </div>
@@ -548,7 +383,6 @@
                     </div>
                 </div>
 
-                <!-- Practice Container -->
                 <div class="practice-container">
                     <!-- Question Display -->
                     <div class="question-display" id="questionDisplay">
@@ -559,126 +393,27 @@
                         </div>
                     </div>
 
-                    <!-- Answer Input Section -->
-                    <div class="answer-input-section" id="answerInputSection" style="display: none;">
-                        <label class="answer-input-label">
-                            <i class="fas fa-edit"></i> Your Answer
-                        </label>
-                        <textarea 
-                            class="answer-textarea" 
-                            id="answerTextarea" 
-                            placeholder="Type your answer here... Then click 'Analyze Answer' to get detailed feedback on how to improve."
-                            rows="4"
-                        ></textarea>
-                        
-                        <div class="answer-input-footer">
-                            <div class="char-count" id="charCount">
-                                <span id="currentChars">0</span>/<span id="minChars">50</span> characters (minimum 50 for analysis)
-                            </div>
-                            <div class="input-hint" id="inputHint">
-                                <i class="fas fa-info-circle"></i> Write at least 50 characters for meaningful analysis
-                            </div>
-                        </div>
-                        
-                        <div class="answer-controls">
-                            <div class="answer-actions">
-                                <button class="action-btn primary" id="revealAnswerBtn">
-                                    <i class="fas fa-lightbulb"></i> Reveal Answer
-                                </button>
-                                <button class="action-btn hint" id="showHintBtn">
-                                    <i class="fas fa-question-circle"></i> Show Hint
-                                </button>
-                                <button class="action-btn info" id="analyzeAnswerBtn">
-                                    <i class="fas fa-chart-line"></i> Analyze Answer
-                                </button>
-                                <button class="action-btn secondary" id="clearAnswerBtn">
-                                    <i class="fas fa-eraser"></i> Clear
-                                </button>
-                            </div>
-                            
-                            <div class="submit-guidance">
-                                <i class="fas fa-arrow-right"></i> Type your answer above, then click <strong>Analyze Answer</strong> for feedback
-                            </div>
-                        </div>
+                    <!-- Reveal Answer Button (always visible) -->
+                    <div class="answer-actions" id="answerActionsContainer">
+                        <button class="action-btn primary" id="revealAnswerBtn">
+                            <i class="fas fa-lightbulb"></i> Reveal Answer
+                        </button>
                     </div>
 
                     <!-- Answer Reveal Section -->
-                    <div class="answer-reveal-section" id="answerRevealSection" style="display: none;">
-                        <div class="answer-toggle-section">
-                            <div class="answer-label">
-                                <i class="fas fa-bars"></i> Answer
-                            </div>
-                        </div>
-                        
-                        <div class="answer-content concise" id="conciseAnswerContent">
-                            <!-- Concise answer will be loaded here -->
-                        </div>
-                        
-                        
-                    </div>
-
-                    <!-- Answer Feedback Section -->
-                    <div class="answer-feedback-section" id="answerFeedbackSection" style="display: none;">
-                        <div class="feedback-header">
-                            <i class="fas fa-chart-bar"></i> Answer Analysis
-                            <button class="feedback-close-btn" id="closeFeedbackBtn">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                        
-                        <div class="feedback-content">
-                            <!-- Score Card -->
-                            <div class="score-card">
-                                <div class="score-value" id="scoreValue">0</div>
-                                <div class="score-label">Overall Score</div>
-                                <div class="score-description" id="scoreDescription">Submit your answer for analysis</div>
-                            </div>
-                            
-                            <!-- Keyword Matching -->
-                            <div class="feedback-section" id="keywordSection">
-                                <h4><i class="fas fa-key"></i> Keyword Coverage</h4>
-                                <div class="keywords-list" id="keywordsList">
-                                    <div class="empty-state">No keyword data available for this question</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Structure Assessment -->
-                            <div class="feedback-section" id="structureSection">
-                                <h4><i class="fas fa-sitemap"></i> Structure Assessment</h4>
-                                <div class="structure-list" id="structureList">
-                                    <div class="empty-state">No structure data available for this question</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Improvement Tips -->
-                            <div class="feedback-section" id="tipsSection">
-                                <h4><i class="fas fa-lightbulb"></i> Improvement Tips</h4>
-                                <div class="tips-content" id="tipsContent">
-                                    <div class="empty-state">Submit your answer to receive personalized feedback</div>
-                                </div>
-                            </div>
-                            
-                            <!-- Detailed Analysis -->
-                            <div class="feedback-section" id="analysisSection">
-                                <h4><i class="fas fa-search"></i> Detailed Analysis</h4>
-                                <div class="analysis-content" id="analysisContent">
-                                    <div class="empty-state">Detailed analysis will appear here after submission</div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="answer-reveal-section" id="answerRevealSection" style="display:none;">
+                        <div class="answer-content concise" id="conciseAnswerContent"></div>
                     </div>
 
                     <!-- Navigation Controls -->
-                    <div class="navigation-controls" id="navigationControls" style="display: none;">
+                    <div class="navigation-controls" id="navigationControls" style="display:none;">
                         <button class="nav-btn" id="prevBtn" disabled>
                             <i class="fas fa-chevron-left"></i> Previous
                         </button>
-                        
                         <div class="progress-info">
                             <div class="progress-text" id="progressText">Question 1 of 10</div>
                             <div class="progress-subtext" id="progressSubtext">Investment Banking</div>
                         </div>
-                        
                         <button class="nav-btn" id="nextBtn">
                             Next <i class="fas fa-chevron-right"></i>
                         </button>
@@ -694,21 +429,16 @@
                     <div>
                         <h4 class="font-medium text-gray-700 mb-1">Keyboard Shortcuts</h4>
                         <div class="text-sm text-gray-600 flex flex-wrap gap-3">
-                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">←</kbd> Previous question</span>
-                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">→</kbd> Next question</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">←</kbd> Previous</span>
+                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">→</kbd> Next</span>
                             <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">Space</kbd> Reveal/Hide answer</span>
-                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">1</kbd> Concise answer</span>
-                            <span><kbd class="px-2 py-1 bg-gray-200 rounded text-xs">2</kbd> Detailed answer</span>
                         </div>
                     </div>
-                    <button id="toggleHelp" class="text-gray-500 hover:text-gray-700">
-                        <i class="fas fa-times"></i>
-                    </button>
+                    <button id="toggleHelp" class="text-gray-500 hover:text-gray-700"><i class="fas fa-times"></i></button>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
         <footer class="main-footer">
             <div class="container">
                 <div class="flex justify-between items-center">
@@ -716,7 +446,6 @@
                         <h3>finterview</h3>
                         <p>Finance Interview Platform</p>
                     </div>
-                    
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="industry-practice.html">Practice Mode</a></li>
@@ -725,7 +454,6 @@
                         <li><a href="finance-bro.html">Finance Bro AI</a></li>
                     </ul>
                 </div>
-                
                 <div class="text-center mt-4">
                     <p class="text-sm text-secondary">© 2024 finterview. Practice makes perfect.</p>
                 </div>
@@ -733,54 +461,35 @@
         </footer>
     </div>
 
-    <!-- JavaScript -->
     <script src="js/theme-toggle.js"></script>
     <script src="js/search.js"></script>
+
     <script>
-        // Practice Mode Application
         (function() {
             'use strict';
-            
-            console.log('Practice Mode Initializing...');
-            
-            // State variables
+
+            console.log('Practice Mode Initializing (simplified)...');
+
             let currentIndustry = 'ib';
             let currentQuestions = [];
             let currentIndex = 0;
             let answerRevealed = false;
-            
-            // Expose variables for Finance Bro assistant
+
             window.currentQuestions = currentQuestions;
             window.currentIndex = currentIndex;
-            
-            // DOM Elements
+
             const questionDisplay = document.getElementById('questionDisplay');
-            const answerInputSection = document.getElementById('answerInputSection');
             const answerRevealSection = document.getElementById('answerRevealSection');
             const navigationControls = document.getElementById('navigationControls');
-            
-            // Buttons
             const revealAnswerBtn = document.getElementById('revealAnswerBtn');
-            const showHintBtn = document.getElementById('showHintBtn');
-            const clearAnswerBtn = document.getElementById('clearAnswerBtn');
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
-            
-            // Answer content
             const conciseAnswerContent = document.getElementById('conciseAnswerContent');
-            // Note: detailedAnswerContent removed as per Charlie's request - only concise answers now
-            
-            // Text area
-            const answerTextarea = document.getElementById('answerTextarea');
-            
-            // Info elements
             const industryTitle = document.getElementById('industryTitle');
             const industryBadge = document.getElementById('industryBadge');
             const industryStats = document.getElementById('industryStats');
             const progressText = document.getElementById('progressText');
             const progressSubtext = document.getElementById('progressSubtext');
-            
-            // Search and Filter elements
             const questionSearch = document.getElementById('questionSearch');
             const difficultyFilter = document.getElementById('difficultyFilter');
             const typeFilter = document.getElementById('typeFilter');
@@ -789,2248 +498,616 @@
             const filteredCountEl = document.getElementById('filteredCount');
             const totalCount = document.getElementById('totalCount');
             const activeFilters = document.getElementById('activeFilters');
-            
-            // Progress elements
-            const progressBarContainer = document.getElementById('progressBarContainer');
             const progressBar = document.getElementById('progressBar');
             const progressTextSmall = document.getElementById('progressTextSmall');
             const viewedCount = document.getElementById('viewedCount');
             const answeredCount = document.getElementById('answeredCount');
             const bookmarkedCount = document.getElementById('bookmarkedCount');
-            
-            // Help toggle
             const toggleHelp = document.getElementById('toggleHelp');
-            
-            // Filter state
-            let currentFilters = {
-                search: '',
-                difficulty: 'all',
-                type: 'all'
-            };
+
+            let currentFilters = { search: '', difficulty: 'all', type: 'all' };
             let filteredQuestions = [];
-            
-            // Progress tracking
             const PROGRESS_STORAGE_KEY = 'finterview_progress';
             let userProgress = {};
-            
-            // Initialize
+
             document.addEventListener('DOMContentLoaded', init);
-            
+
             function init() {
-                console.log('Initializing practice mode...');
-                
-                // Get parameters from URL
-                const urlParams = new URLSearchParams(window.location.search);
-                let industryId = urlParams.get('industry');
-                const questionId = urlParams.get('questionId');
-                
-                // If questionId is provided, find the question and its industry first
-                let targetQuestionId = null;
+                console.log('Init...');
+                const params = new URLSearchParams(window.location.search);
+                let industryId = params.get('industry') || 'ib';
+                const questionId = params.get('questionId');
+                let targetId = null;
+
                 if (questionId) {
                     const qId = parseInt(questionId);
                     if (window.questionBank && Array.isArray(window.questionBank)) {
-                        const targetQuestion = window.questionBank.find(q => q.id === qId);
-                        if (targetQuestion) {
-                            industryId = industryId || targetQuestion.role;
-                            targetQuestionId = qId;
-                            console.log(`Found question ${qId} in industry ${industryId}`);
-                        }
+                        const tq = window.questionBank.find(q => q.id === qId);
+                        if (tq) { industryId = industryId || tq.role; targetId = qId; }
                     }
                 }
-                
-                // Default to IB if no industry specified
-                if (!industryId) industryId = 'ib';
                 currentIndustry = industryId;
-                
-                console.log(`Industry: ${industryId}, Target question: ${targetQuestionId}`);
-                
-                // Read filter state from sessionStorage (set by filter page)
+
                 readFilterStateFromSession();
-                
-                // Update UI
                 updateIndustryInfo(industryId);
-                
-                // Load questions
-                loadQuestions(industryId, targetQuestionId);
-                
-                // Bind events
+                loadQuestions(industryId, targetId);
                 bindEvents();
-                
-                // Load user progress
                 loadProgress();
-                
-                // Add keyboard shortcuts
-                document.addEventListener('keydown', handleKeyboardShortcuts);
-                
-                // Check if help should be hidden
+
                 if (localStorage.getItem('finterview_hide_help') === 'true') {
-                    const helpPanel = document.querySelector('.container.mb-6');
-                    if (helpPanel) {
-                        helpPanel.style.display = 'none';
-                    }
+                    const h = document.querySelector('.container.mb-6');
+                    if (h) h.style.display = 'none';
                 }
             }
-            
-            // Read filter context saved by filter page via sessionStorage
+
             function readFilterStateFromSession() {
                 try {
                     const saved = sessionStorage.getItem('finterview_filter_state');
                     if (saved) {
-                        const filterState = JSON.parse(saved);
-                        if (filterState.filteredIds && filterState.filteredIds.length > 0) {
-                            currentFilters._filteredIds = filterState.filteredIds;
-                            console.log('Loaded filter state with', filterState.filteredIds.length, 'questions');
-                        }
+                        const st = JSON.parse(saved);
+                        if (st.filteredIds && st.filteredIds.length > 0)
+                            currentFilters._filteredIds = st.filteredIds;
                     }
-                } catch (e) {
-                    console.warn('Could not read filter state:', e.message);
-                }
+                } catch(e) { console.warn('filter state:', e.message); }
             }
-            
-            // Keyboard shortcuts for navigation
-            function handleKeyboardShortcuts(e) {
-                // Only handle if not typing in textarea
-                if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') {
-                    return;
-                }
-                
-                switch(e.key) {
-                    case 'ArrowLeft':
-                        if (currentIndex > 0) {
-                            currentIndex--;
-                            window.currentIndex = currentIndex;
-                            loadQuestion(currentIndex);
-                            e.preventDefault();
-                        }
-                        break;
-                    case 'ArrowRight':
-                        if (currentIndex < currentQuestions.length - 1) {
-                            currentIndex++;
-                            window.currentIndex = currentIndex;
-                            loadQuestion(currentIndex);
-                            e.preventDefault();
-                        }
-                        break;
-                    case ' ':
-                        // Space to reveal/hide answer
-                        if (answerRevealSection.style.display === 'none') {
-                            // Reveal answer
-                            answerRevealed = true;
-                            answerRevealSection.style.display = 'block';
-                            // Mark as answered
-                            if (currentQuestions && currentQuestions[currentIndex]) {
-                                const question = currentQuestions[currentIndex];
-                                const userAnswer = answerTextarea ? answerTextarea.value : '';
-                                markQuestionAnswered(question, userAnswer);
-                            }
-                        } else {
-                            // Hide answer
-                            answerRevealSection.style.display = 'none';
-                        }
-                        e.preventDefault();
-                        break;
-                    // Note: '1' and '2' shortcuts removed - only concise answers now
-                }
-            }
-            
-            // Progress tracking functions
+
             function loadProgress() {
                 try {
                     const saved = localStorage.getItem(PROGRESS_STORAGE_KEY);
-                    if (saved) {
-                        userProgress = JSON.parse(saved);
-                        console.log('Loaded user progress:', Object.keys(userProgress).length, 'items');
-                    }
-                } catch (e) {
-                    console.error('Failed to load progress:', e);
-                    userProgress = {};
-                }
+                    if (saved) userProgress = JSON.parse(saved);
+                } catch(e) { userProgress = {}; }
             }
-            
+
             function saveProgress() {
-                try {
-                    localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(userProgress));
-                } catch (e) {
-                    console.error('Failed to save progress:', e);
-                }
+                try { localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(userProgress)); }
+                catch(e) { console.error('save progress:', e); }
             }
-            
-            function getQuestionKey(question) {
-                return `${question.role}_${question.id}`;
+
+            function getQuestionKey(q) { return `${q.role}_${q.id}`; }
+
+            function markQuestionViewed(q) {
+                const k = getQuestionKey(q);
+                userProgress[k] = userProgress[k] || {};
+                userProgress[k].viewed = true;
+                userProgress[k].viewedAt = new Date().toISOString();
+                saveProgress(); updateProgressBar();
             }
-            
-            function markQuestionViewed(question) {
-                const key = getQuestionKey(question);
-                if (!userProgress[key]) {
-                    userProgress[key] = { viewed: true, viewedAt: new Date().toISOString() };
-                } else {
-                    userProgress[key].viewed = true;
-                    userProgress[key].viewedAt = new Date().toISOString();
-                }
-                saveProgress();
-                updateProgressBar();
+
+            function markQuestionAnswered(q) {
+                const k = getQuestionKey(q);
+                userProgress[k] = userProgress[k] || {};
+                userProgress[k].answered = true;
+                userProgress[k].answeredAt = new Date().toISOString();
+                saveProgress(); updateProgressBar();
             }
-            
-            function markQuestionAnswered(question, userAnswer) {
-                const key = getQuestionKey(question);
-                if (!userProgress[key]) {
-                    userProgress[key] = { answered: true, answeredAt: new Date().toISOString() };
-                } else {
-                    userProgress[key].answered = true;
-                    userProgress[key].answeredAt = new Date().toISOString();
-                }
-                if (userAnswer) {
-                    userProgress[key].userAnswer = userAnswer.substring(0, 500); // Limit length
-                }
-                saveProgress();
-                updateProgressBar();
+
+            function getQuestionProgress(q) {
+                return userProgress[getQuestionKey(q)] || {};
             }
-            
-            function getQuestionProgress(question) {
-                const key = getQuestionKey(question);
-                return userProgress[key] || {};
+
+            function toggleBookmark(q) {
+                const k = getQuestionKey(q);
+                userProgress[k] = userProgress[k] || {};
+                userProgress[k].bookmarked = !userProgress[k].bookmarked;
+                userProgress[k].bookmarkedAt = userProgress[k].bookmarked ? new Date().toISOString() : null;
+                saveProgress(); updateProgressBar();
             }
-            
-            function toggleBookmark(question) {
-                const key = getQuestionKey(question);
-                if (!userProgress[key]) {
-                    userProgress[key] = { bookmarked: true, bookmarkedAt: new Date().toISOString() };
-                } else {
-                    userProgress[key].bookmarked = !userProgress[key].bookmarked;
-                    userProgress[key].bookmarkedAt = userProgress[key].bookmarked ? new Date().toISOString() : null;
-                }
-                saveProgress();
-                console.log(`Question ${question.id} bookmarked: ${userProgress[key].bookmarked}`);
-                updateProgressBar();
-            }
-            
-            // Update progress bar display
+
             function updateProgressBar() {
-                if (!progressBarContainer || !currentQuestions.length) return;
-                
-                const industryQuestions = currentQuestions;
-                let viewed = 0;
-                let answered = 0;
-                let bookmarked = 0;
-                
-                // Count progress for current industry questions
-                industryQuestions.forEach(q => {
-                    const progress = getQuestionProgress(q);
-                    if (progress.viewed) viewed++;
-                    if (progress.answered) answered++;
-                    if (progress.bookmarked) bookmarked++;
+                if (!currentQuestions.length) return;
+                let v = 0, a = 0, b = 0;
+                currentQuestions.forEach(q => {
+                    const p = getQuestionProgress(q);
+                    if (p.viewed) v++;
+                    if (p.answered) a++;
+                    if (p.bookmarked) b++;
                 });
-                
-                // Calculate percentages
-                const total = industryQuestions.length;
-                const viewedPercent = total > 0 ? Math.round((viewed / total) * 100) : 0;
-                const answeredPercent = total > 0 ? Math.round((answered / total) * 100) : 0;
-                
-                // Update progress bar (use answered percentage)
-                if (progressBar) {
-                    progressBar.style.width = `${answeredPercent}%`;
-                }
-                
-                // Update text
-                if (progressTextSmall) {
-                    progressTextSmall.textContent = `${answered}/${total}`;
-                }
-                
-                if (viewedCount) {
-                    viewedCount.textContent = `${viewed} viewed`;
-                }
-                
-                if (answeredCount) {
-                    answeredCount.textContent = `${answered} answered`;
-                }
-                
-                if (bookmarkedCount) {
-                    bookmarkedCount.textContent = `${bookmarked} bookmarked`;
-                }
+                const total = currentQuestions.length;
+                const pct = total > 0 ? Math.round((a / total) * 100) : 0;
+                if (progressBar) progressBar.style.width = pct + '%';
+                if (progressTextSmall) progressTextSmall.textContent = `${a}/${total}`;
+                if (viewedCount) viewedCount.textContent = `${v} viewed`;
+                if (answeredCount) answeredCount.textContent = `${a} answered`;
+                if (bookmarkedCount) bookmarkedCount.textContent = `${b} bookmarked`;
             }
-            
-            function updateIndustryInfo(industryId) {
-                const industryNames = {
-                    'ib': { name: 'Investment Banking', badge: 'IB' },
-                    'am': { name: 'Asset Management', badge: 'AM' },
-                    'quant': { name: 'Quantitative Finance', badge: 'Quant' },
-                    'markets': { name: 'Sales & Trading', badge: 'S&T' },
-                    'corpfin': { name: 'Corporate Finance', badge: 'CorpFin' },
-                    'risk': { name: 'Risk Management', badge: 'Risk' },
-                    'fintech': { name: 'FinTech', badge: 'FinTech' },
-                    'fo': { name: 'Family Office', badge: 'FO' }
+
+            function updateIndustryInfo(id) {
+                const names = {
+                    ib: { name: 'Investment Banking', badge: 'IB' },
+                    am: { name: 'Asset Management', badge: 'AM' },
+                    quant: { name: 'Quantitative Finance', badge: 'Quant' },
+                    markets: { name: 'Sales & Trading', badge: 'S&T' },
+                    corpfin: { name: 'Corporate Finance', badge: 'CorpFin' },
+                    risk: { name: 'Risk Management', badge: 'Risk' },
+                    fintech: { name: 'FinTech', badge: 'FinTech' },
+                    fo: { name: 'Family Office', badge: 'FO' }
                 };
-                
-                const industry = industryNames[industryId] || industryNames.ib;
-                
-                if (industryTitle) industryTitle.textContent = `${industry.name} Practice`;
-                if (industryBadge) industryBadge.textContent = industry.badge;
+                const info = names[id] || names.ib;
+                if (industryTitle) industryTitle.textContent = `${info.name} Practice`;
+                if (industryBadge) industryBadge.textContent = info.badge;
                 if (industryStats) industryStats.textContent = 'Loading practice questions...';
             }
-            
-            // Apply search and filters to questions
+
             function applyFilters(questions, filters, industryId) {
                 let filtered = questions.filter(q => q.role === industryId);
-                
-                // If filter state was passed from advanced filter page, restrict to those IDs
                 if (filters._filteredIds && filters._filteredIds.length > 0) {
-                    const idSet = new Set(filters._filteredIds);
-                    filtered = filtered.filter(q => idSet.has(q.id));
+                    const s = new Set(filters._filteredIds);
+                    filtered = filtered.filter(q => s.has(q.id));
                 }
-                
-                // Apply search filter
                 if (filters.search && filters.search.trim()) {
-                    const searchTerm = filters.search.toLowerCase().trim();
-                    filtered = filtered.filter(q => 
-                        (q.question && q.question.toLowerCase().includes(searchTerm)) ||
-                        (q.title && q.title.toLowerCase().includes(searchTerm)) ||
-                        (q.modelAnswer && q.modelAnswer.toLowerCase().includes(searchTerm))
+                    const t = filters.search.toLowerCase().trim();
+                    filtered = filtered.filter(q =>
+                        (q.question && q.question.toLowerCase().includes(t)) ||
+                        (q.title && q.title.toLowerCase().includes(t))
                     );
                 }
-                
-                // Apply difficulty filter
-                if (filters.difficulty !== 'all') {
-                    filtered = filtered.filter(q => q.difficulty === filters.difficulty);
-                }
-                
-                // Apply type filter
-                if (filters.type !== 'all') {
-                    filtered = filtered.filter(q => q.category === filters.type);
-                }
-                
+                if (filters.difficulty !== 'all') filtered = filtered.filter(q => q.difficulty === filters.difficulty);
+                if (filters.type !== 'all') filtered = filtered.filter(q => q.category === filters.type);
                 return filtered;
             }
-            
-            // Update filter summary UI
+
             function updateFilterSummary(originalCount, filteredCount, filters) {
                 if (!filterSummary) return;
-                
-                if (originalCount === filteredCount && 
-                    filters.search === '' && 
-                    filters.difficulty === 'all' && 
-                    filters.type === 'all') {
-                    filterSummary.classList.add('hidden');
-                    return;
+                if (originalCount === filteredCount && !filters.search && filters.difficulty === 'all' && filters.type === 'all') {
+                    filterSummary.classList.add('hidden'); return;
                 }
-                
                 filterSummary.classList.remove('hidden');
                 if (totalCount) totalCount.textContent = originalCount;
                 if (filteredCountEl) filteredCountEl.textContent = filteredCount;
-                
-                // Show active filters
-                const activeFiltersList = [];
-                if (filters.search) activeFiltersList.push(`Search: "${filters.search}"`);
-                if (filters.difficulty !== 'all') activeFiltersList.push(`Difficulty: ${filters.difficulty}`);
-                if (filters.type !== 'all') activeFiltersList.push(`Type: ${filters.type}`);
-                
-                if (activeFilters) {
-                    if (activeFiltersList.length > 0) {
-                        activeFilters.textContent = `(${activeFiltersList.join(', ')})`;
-                    } else {
-                        activeFilters.textContent = '';
-                    }
-                }
+                const list = [];
+                if (filters.search) list.push(`Search: "${filters.search}"`);
+                if (filters.difficulty !== 'all') list.push(`Difficulty: ${filters.difficulty}`);
+                if (filters.type !== 'all') list.push(`Type: ${filters.type}`);
+                if (activeFilters) activeFilters.textContent = list.length ? `(${list.join(', ')})` : '';
             }
-            
-            // Add data loading status indicator
-            function updateDataLoadingStatus() {
-                const statusElement = document.getElementById('dataLoadingStatus');
-                if (!statusElement) return;
-                
-                if (typeof window.questionBank === 'undefined') {
-                    statusElement.innerHTML = '<span style="color: #ef4444;"><i class="fas fa-exclamation-circle"></i> Data not loaded. questions.js may not be properly loaded.</span>';
-                    console.error('window.questionBank is undefined');
-                } else if (!Array.isArray(window.questionBank)) {
-                    statusElement.innerHTML = '<span style="color: #ef4444;"><i class="fas fa-exclamation-circle"></i> Invalid data format.</span>';
-                    console.error('window.questionBank is not an array:', typeof window.questionBank);
-                } else {
-                    statusElement.innerHTML = `<span style="color: #10b981;"><i class="fas fa-check-circle"></i> Data loaded: ${window.questionBank.length} questions</span>`;
-                    console.log('Data loaded successfully:', window.questionBank.length, 'questions');
-                }
-            }
-            
-            // Call status update on load
-            document.addEventListener('DOMContentLoaded', function() {
-                setTimeout(updateDataLoadingStatus, 1000);
-            });
-            
-            // Fisher-Yates shuffle for random question order
-            function shuffleArray(array) {
-                const shuffled = [...array];
-                for (let i = shuffled.length - 1; i > 0; i--) {
+
+            function shuffleArray(arr) {
+                const s = [...arr];
+                for (let i = s.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                    [s[i], s[j]] = [s[j], s[i]];
                 }
-                return shuffled;
+                return s;
             }
-            
+
             function loadQuestions(industryId, targetQuestionId) {
-                console.log(`Loading questions for ${industryId}...`);
-                
-                // Check if questions.js is loaded
                 if (typeof window.questionBank === 'undefined') {
-                    showError('Data not loaded. Please check if questions.js is properly loaded.');
+                    showError('Data not loaded. Check if questions.js is loaded.');
                     return;
                 }
-                
-                const allQuestions = window.questionBank;
-                if (!Array.isArray(allQuestions)) {
-                    showError('Invalid data format.');
-                    return;
-                }
-                
-                console.log(`Total questions: ${allQuestions.length}`);
-                
-                // Get industry-filtered questions
-                const industryQuestions = allQuestions.filter(q => q.role === industryId);
-                console.log(`Questions for ${industryId} before filters: ${industryQuestions.length}`);
-                
-                // Apply current filters and shuffle for random practice
-                filteredQuestions = applyFilters(allQuestions, currentFilters, industryId);
+                const all = window.questionBank;
+                if (!Array.isArray(all)) { showError('Invalid data.'); return; }
+
+                const industryQuestions = all.filter(q => q.role === industryId);
+                filteredQuestions = applyFilters(all, currentFilters, industryId);
                 filteredQuestions = shuffleArray(filteredQuestions);
                 currentQuestions = filteredQuestions;
                 window.currentQuestions = currentQuestions;
-                
-                // Update stats and filter summary
-                if (industryStats) {
-                    industryStats.textContent = `${currentQuestions.length} questions available`;
-                }
-                
+
+                if (industryStats) industryStats.textContent = `${currentQuestions.length} questions available`;
                 updateFilterSummary(industryQuestions.length, currentQuestions.length, currentFilters);
-                
-                if (currentQuestions.length === 0) {
+
+                if (!currentQuestions.length) {
                     showNoQuestions(industryId);
                 } else {
-                    // If target question ID provided, find its index
                     if (targetQuestionId) {
-                        const targetIndex = currentQuestions.findIndex(q => q.id === targetQuestionId);
-                        if (targetIndex >= 0) {
-                            currentIndex = targetIndex;
-                            console.log(`Navigating to target question at index ${targetIndex}`);
-                        } else {
-                            currentIndex = Math.floor(Math.random() * currentQuestions.length);
-                            console.log('Target question not found in filtered list, using random');
-                        }
+                        const idx = currentQuestions.findIndex(q => q.id === targetQuestionId);
+                        currentIndex = idx >= 0 ? idx : Math.floor(Math.random() * currentQuestions.length);
                     } else {
-                        // Start with random question for true random practice
                         currentIndex = Math.floor(Math.random() * currentQuestions.length);
                     }
                     window.currentIndex = currentIndex;
                     loadQuestion(currentIndex);
-                    
-                    // Show answer input section
-                    answerInputSection.style.display = 'block';
+                    // Show reveal button always
+                    document.getElementById('answerActionsContainer').style.display = 'flex';
                     navigationControls.style.display = 'flex';
                 }
             }
-            
+
             function loadQuestion(index) {
-                if (index < 0 || index >= currentQuestions.length) {
-                    console.error('Invalid question index:', index);
-                    return;
-                }
-                
-                const question = currentQuestions[index];
-                console.log(`Loading question ${index + 1}/${currentQuestions.length}:`, question.title);
-                
-                // Mark question as viewed
-                markQuestionViewed(question);
-                
-                // Reset answer state
+                if (index < 0 || index >= currentQuestions.length) return;
+                const q = currentQuestions[index];
+
+                markQuestionViewed(q);
                 answerRevealed = false;
                 answerRevealSection.style.display = 'none';
-                conciseAnswerContent.style.display = 'block';
-                // Note: detailedAnswerContent removed - only concise answers now
-                
-                // Note: Answer type buttons removed - only concise answers now
-                
-                // Clear textarea
-                if (answerTextarea) {
-                    answerTextarea.value = '';
-                }
-                
-                // Get progress for this question
-                const progress = getQuestionProgress(question);
-                
-                // Update question display
+                revealAnswerBtn.innerHTML = '<i class="fas fa-lightbulb"></i> Reveal Answer';
+                revealAnswerBtn.className = 'action-btn primary';
+
+                const progress = getQuestionProgress(q);
+
                 questionDisplay.innerHTML = `
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+                    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem;">
                         <div class="question-number">Question ${index + 1} of ${currentQuestions.length}</div>
-                        <div style="display: flex; gap: 0.5rem; align-items: center;">
-                            ${progress.viewed ? '<span class="tag viewed" style="background-color: #dbeafe; color: #1e40af;"><i class="fas fa-eye"></i> Viewed</span>' : ''}
-                            ${progress.answered ? '<span class="tag answered" style="background-color: #d1fae5; color: #065f46;"><i class="fas fa-check-circle"></i> Answered</span>' : ''}
-                            <button class="bookmark-btn" data-question-id="${question.id}" style="background: none; border: none; color: ${progress.bookmarked ? '#f59e0b' : '#9ca3af'}; cursor: pointer; font-size: 1.2rem;" title="${progress.bookmarked ? 'Remove bookmark' : 'Bookmark this question'}">
+                        <div style="display:flex;gap:0.5rem;align-items:center;">
+                            ${progress.viewed ? '<span class="tag viewed"><i class="fas fa-eye"></i> Viewed</span>' : ''}
+                            ${progress.answered ? '<span class="tag answered"><i class="fas fa-check-circle"></i> Answered</span>' : ''}
+                            <button class="bookmark-btn" data-qid="${q.id}"
+                                style="background:none;border:none;color:${progress.bookmarked ? '#f59e0b' : '#9ca3af'};cursor:pointer;font-size:1.2rem;"
+                                title="${progress.bookmarked ? 'Remove bookmark' : 'Bookmark'}">
                                 <i class="${progress.bookmarked ? 'fas' : 'far'} fa-star"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="question-text">${escapeHtml(question.question || '')}</div>
+                    <div class="question-text">${escapeHtml(q.question || '')}</div>
                     <div class="question-tags">
-                        <span class="tag ${question.category || 'technical'}">${question.category || 'technical'}</span>
-                        <span class="tag difficulty">${question.difficulty || 'medium'}</span>
-                        ${question.frequencyScore ? '<span class="tag frequent">High Frequency</span>' : ''}
+                        <span class="tag ${q.category || 'technical'}">${q.category || 'technical'}</span>
+                        <span class="tag difficulty">${q.difficulty || 'medium'}</span>
+                        ${q.frequencyScore ? '<span class="tag frequent">High Frequency</span>' : ''}
                     </div>
                 `;
-                
-                // Load answers
-                loadAnswers(question);
-                
-                // Update navigation
+
+                loadAnswers(q);
                 updateNavigation(index);
-                
-                // Update progress
                 updateProgress(index);
-                
-                // Update progress bar
                 updateProgressBar();
             }
-            
+
             function loadAnswers(question) {
-                // Get concise answer
-                let conciseAnswer = 'No concise answer available.';
-                if (question.answers?.concise?.answer) {
-                    conciseAnswer = question.answers.concise.answer;
-                } else if (question.conciseAnswer) {
-                    conciseAnswer = question.conciseAnswer;
-                }
-                
-                // Convert answer to safe HTML with robust formatting
-                function formatAnswerAsSafeHTML(text) {
-                    // If text is empty, return placeholder
-                    if (!text || text.trim() === '') {
-                        return '<em>No answer available.</em>';
-                    }
-                    
-                    // Check if text contains nested bullet points (indented with 2+ spaces)
-                    const lines = text.split('\n');
-                    const hasNestedBullets = lines.some(line => {
-                        const trimmed = line.trim();
-                        // Check if line starts with bullet after some spaces
-                        if (line.match(/^\s{2,}[•\-]/)) {
-                            return true;
-                        }
-                        // Check for sub-bullets (dash after bullet line)
-                        return false;
-                    });
-                    
-                    // For nested bullets or complex formatting, use simple pre-wrap style
-                    if (hasNestedBullets || text.length > 500) {
-                        // Escape HTML and preserve line breaks with <br>
-                        const tempDiv = document.createElement('div');
-                        tempDiv.textContent = text;
-                        let escaped = tempDiv.innerHTML;
-                        
-                        // Preserve multiple spaces by replacing leading spaces with &nbsp;
-                        // Replace newlines with <br>
-                        escaped = escaped.replace(/\n/g, '<br>');
-                        
-                        // Replace leading spaces (before bullets) with &nbsp; to maintain indentation
-                        // This regex matches spaces at the beginning of a line (after <br> or start)
-                        escaped = escaped.replace(/(^|<br>)( +)/g, function(match, prefix, spaces) {
-                            return prefix + '&nbsp;'.repeat(spaces.length);
-                        });
-                        
-                        // Wrap in a div with pre-wrap style for better formatting
-                        return `<div style="white-space: pre-wrap; font-family: inherit;">${escaped}</div>`;
-                    }
-                    
-                    // For simple bullet lists, convert to HTML list
-                    const bulletLines = lines.filter(line => {
-                        const trimmed = line.trim();
-                        return trimmed.startsWith('•') || trimmed.startsWith('-');
-                    });
-                    
-                    // If most lines are bullets, convert to list
-                    if (bulletLines.length >= lines.length * 0.3 && bulletLines.length >= 2) {
-                        let result = '<ul>';
-                        for (const line of lines) {
-                            const trimmed = line.trim();
-                            if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
-                                const content = trimmed.substring(1).trim();
-                                const tempDiv = document.createElement('div');
-                                tempDiv.textContent = content;
-                                const escaped = tempDiv.innerHTML;
-                                result += `<li>${escaped}</li>`;
-                            } else if (trimmed === '') {
-                                // Empty line - close list if we have content
-                                if (result.endsWith('</li>')) {
-                                    result += '</ul><br><ul>';
-                                }
-                            }
-                        }
-                        result += '</ul>';
-                        return result;
-                    }
-                    
-                    // Default: escape HTML and preserve line breaks
-                    const tempDiv = document.createElement('div');
-                    tempDiv.textContent = text;
-                    let escaped = tempDiv.innerHTML;
-                    escaped = escaped.replace(/\n/g, '<br>');
-                    return escaped;
-                }
-                
+                let concise = 'No answer available.';
+                if (question.answers?.concise?.answer) concise = question.answers.concise.answer;
+                else if (question.conciseAnswer) concise = question.conciseAnswer;
+
                 try {
-                    const safeHTML = formatAnswerAsSafeHTML(conciseAnswer);
-                    conciseAnswerContent.innerHTML = safeHTML;
-                } catch (error) {
-                    console.error('Error formatting answer:', error);
-                    conciseAnswerContent.innerHTML = '<span style="color: #e74c3c;">Error loading answer. Please try another question.</span>';
+                    const safe = formatAnswerAsSafeHTML(concise);
+                    conciseAnswerContent.innerHTML = safe;
+                } catch(e) {
+                    conciseAnswerContent.innerHTML = '<span style="color:#e74c3c;">Error loading answer.</span>';
                 }
             }
-            
+
+            function formatAnswerAsSafeHTML(text) {
+                if (!text || !text.trim()) return '<em>No answer available.</em>';
+                const lines = text.split('\n');
+                const hasNested = lines.some(l => l.match(/^\s{2,}[•\-]/));
+
+                if (hasNested || text.length > 500) {
+                    const d = document.createElement('div');
+                    d.textContent = text;
+                    let esc = d.innerHTML;
+                    esc = esc.replace(/\n/g, '<br>');
+                    esc = esc.replace(/(^|<br>)( +)/g, (m, p, sp) => p + '&nbsp;'.repeat(sp.length));
+                    return `<div style="white-space:pre-wrap;font-family:inherit;">${esc}</div>`;
+                }
+
+                const bullets = lines.filter(l => { const t = l.trim(); return t.startsWith('•') || t.startsWith('-'); });
+                if (bullets.length >= lines.length * 0.3 && bullets.length >= 2) {
+                    let r = '<ul>';
+                    for (const l of lines) {
+                        const t = l.trim();
+                        if (t.startsWith('•') || t.startsWith('-')) {
+                            const c = t.substring(1).trim();
+                            const d = document.createElement('div');
+                            d.textContent = c;
+                            r += `<li>${d.innerHTML}</li>`;
+                        } else if (!t) { if (r.endsWith('</li>')) r += '</ul><br><ul>'; }
+                    }
+                    return r + '</ul>';
+                }
+
+                const d = document.createElement('div');
+                d.textContent = text;
+                return d.innerHTML.replace(/\n/g, '<br>');
+            }
+
             function updateNavigation(index) {
-                // Update button states
                 prevBtn.disabled = index === 0;
                 nextBtn.disabled = index === currentQuestions.length - 1;
-                
-                // Update button text for last question
-                if (index === currentQuestions.length - 1) {
-                    nextBtn.innerHTML = 'Finish <i class="fas fa-check"></i>';
-                } else {
-                    nextBtn.innerHTML = 'Next <i class="fas fa-chevron-right"></i>';
-                }
+                nextBtn.innerHTML = index === currentQuestions.length - 1
+                    ? 'Finish <i class="fas fa-check"></i>'
+                    : 'Next <i class="fas fa-chevron-right"></i>';
             }
-            
+
             function updateProgress(index) {
-                if (progressText) {
-                    progressText.textContent = `Question ${index + 1} of ${currentQuestions.length}`;
-                }
-                
+                if (progressText) progressText.textContent = `Question ${index + 1} of ${currentQuestions.length}`;
                 if (progressSubtext) {
-                    const industryNames = {
-                        'ib': 'Investment Banking',
-                        'am': 'Asset Management',
-                        'quant': 'Quantitative Finance',
-                        'markets': 'Sales & Trading'
-                    };
-                    const industryName = industryNames[currentIndustry] || 'Finance';
-                    progressSubtext.textContent = `${industryName} • ${currentQuestions[index].difficulty || 'medium'} difficulty`;
+                    const names = { ib: 'Investment Banking', am: 'Asset Management', quant: 'Quantitative Finance', markets: 'Sales & Trading' };
+                    progressSubtext.textContent = `${names[currentIndustry] || 'Finance'} • ${currentQuestions[index].difficulty || 'medium'} difficulty`;
                 }
             }
-            
+
             function bindEvents() {
-                // Reveal/Hide answer button
-                if (revealAnswerBtn) {
-                    // Store original state
-                    const originalHTML = revealAnswerBtn.innerHTML;
-                    
-                    revealAnswerBtn.addEventListener('click', function() {
-                        const isAnswerVisible = answerRevealSection.style.display === 'block';
-                        
-                        if (!isAnswerVisible) {
-                            // Show answer
-                            answerRevealed = true;
-                            answerRevealSection.style.display = 'block';
-                            this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
-                            
-                            // Mark as answered
-                            if (currentQuestions && currentQuestions[currentIndex]) {
-                                const question = currentQuestions[currentIndex];
-                                const userAnswer = answerTextarea ? answerTextarea.value : '';
-                                markQuestionAnswered(question, userAnswer);
-                            }
-                        } else {
-                            // Hide answer
-                            answerRevealed = false;
-                            answerRevealSection.style.display = 'none';
-                            this.innerHTML = originalHTML;
-                        }
-                    });
-                }
-                
-                // Show hint button
-                if (showHintBtn) {
-                    showHintBtn.addEventListener('click', function() {
-                        alert('Hint: Try to break down the question into key concepts. For technical questions, think about formulas or frameworks you know.');
-                    });
-                }
-                
-                // Clear answer button
-                if (clearAnswerBtn) {
-                    clearAnswerBtn.addEventListener('click', function() {
-                        if (answerTextarea) {
-                            answerTextarea.value = '';
-                            updateCharCount(); // Update character count when cleared
-                        }
-                    });
-                }
-                
-                // Character count and input validation
-                function updateCharCount() {
-                    const answerTextarea = document.getElementById('answerTextarea');
-                    const charCount = document.getElementById('charCount');
-                    const currentChars = document.getElementById('currentChars');
-                    const inputHint = document.getElementById('inputHint');
-                    
-                    if (!answerTextarea || !charCount || !currentChars || !inputHint) return;
-                    
-                    const text = answerTextarea.value;
-                    const charLength = text.length;
-                    const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
-                    
-                    // Update character count
-                    currentChars.textContent = charLength;
-                    
-                    // Update styles based on length
-                    if (charLength === 0) {
-                        charCount.className = 'char-count';
-                        answerTextarea.className = 'answer-textarea';
-                        inputHint.className = 'input-hint';
-                        inputHint.innerHTML = '<i class="fas fa-info-circle"></i> Write at least 50 characters for meaningful analysis';
-                    } else if (charLength < 50) {
-                        charCount.className = 'char-count warning';
-                        answerTextarea.className = 'answer-textarea error';
-                        inputHint.className = 'input-hint error';
-                        inputHint.innerHTML = `<i class="fas fa-exclamation-circle"></i> Write ${50 - charLength} more characters for analysis`;
-                    } else if (charLength < 150) {
-                        charCount.className = 'char-count';
-                        answerTextarea.className = 'answer-textarea success';
-                        inputHint.className = 'input-hint success';
-                        inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Good! ${wordCount} words - ready for analysis`;
+                // Reveal/Hide answer
+                revealAnswerBtn.addEventListener('click', function() {
+                    const visible = answerRevealSection.style.display === 'block';
+                    if (!visible) {
+                        answerRevealed = true;
+                        answerRevealSection.style.display = 'block';
+                        this.innerHTML = '<i class="fas fa-eye-slash"></i> Hide Answer';
+                        this.className = 'action-btn outline';
+                        if (currentQuestions && currentQuestions[currentIndex])
+                            markQuestionAnswered(currentQuestions[currentIndex]);
                     } else {
-                        charCount.className = 'char-count success';
-                        answerTextarea.className = 'answer-textarea success';
-                        inputHint.className = 'input-hint success';
-                        inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Excellent! ${wordCount} words - detailed answer`;
-                    }
-                }
-                
-                // Function to detect nonsense/random input
-                function isNonsenseInput(text) {
-                    if (text.length < 50) return false; // Already handled by length check
-                    
-                    // Clean the text for analysis
-                    const cleanedText = text.trim();
-                    const charCount = cleanedText.length;
-                    
-                    // Quick pass for legitimate finance answers (length > 100 and contains finance keywords)
-                    if (charCount > 100) {
-                        const financeKeywords = [
-                            'capital', 'debt', 'equity', 'valuation', 'financial', 'analysis', 
-                            'investment', 'banking', 'markets', 'risk', 'return', 'portfolio',
-                            'structure', 'optimization', 'cost', 'benefit', 'tax', 'revenue',
-                            'profit', 'margin', 'ratio', 'growth', 'strategy', 'model', 'forecast',
-                            'projection', 'discount', 'cash', 'flow', 'balance', 'sheet', 'income',
-                            'statement', 'valuation', 'multiple', 'premium', 'discount', 'yield',
-                            'spread', 'liquidity', 'volatility', 'hedge', 'derivative', 'option'
-                        ];
-                        
-                        const lowerText = cleanedText.toLowerCase();
-                        let keywordCount = 0;
-                        for (const keyword of financeKeywords) {
-                            if (lowerText.includes(keyword)) {
-                                keywordCount++;
-                                if (keywordCount >= 3) {
-                                    // Has at least 3 finance keywords, likely legitimate
-                                    return false;
-                                }
-                            }
-                        }
-                    }
-                    
-                    // If text is all spaces or mostly spaces
-                    if (cleanedText.replace(/\s/g, '').length < 10) return true;
-                    
-                    // 1. Check for excessive repetition of single character
-                    const charMap = {};
-                    for (const char of cleanedText) {
-                        charMap[char] = (charMap[char] || 0) + 1;
-                    }
-                    
-                    // Find most common character and its percentage
-                    let maxCharCount = 0;
-                    for (const count of Object.values(charMap)) {
-                        if (count > maxCharCount) maxCharCount = count;
-                    }
-                    
-                    const maxCharPercentage = (maxCharCount / charCount) * 100;
-                    
-                    // If a single character makes up more than 35% of the text, likely nonsense
-                    if (maxCharPercentage > 35) return true;
-                    
-                    // 2. Check for keyboard pattern sequences (like "asdfghjkl" or "qwertyuiop")
-                    const keyboardPatterns = [
-                        'asdfghjkl', 'qwertyuiop', 'zxcvbnm', '1234567890',
-                        'abcdefghijklmnopqrstuvwxyz', 'йцукенгшщзхъфывапролджэячсмитьбю',
-                        'qazwsxedc', 'rfvtgbyhn', 'ujmikolp', '123123123', '1111111111',
-                        'aaaaaaaaaa', 'bbbbbbbbbb', 'cccccccccc', 'testtesttest', 'testingtesting'
-                    ];
-                    
-                    const lowerText = cleanedText.toLowerCase();
-                    for (const pattern of keyboardPatterns) {
-                        if (pattern.length > 6 && lowerText.includes(pattern)) {
-                            return true;
-                        }
-                    }
-                    
-                    // 3. Check for excessive repetition of short phrases
-                    const words = cleanedText.split(/\s+/);
-                    if (words.length > 8) {
-                        const wordFrequency = {};
-                        for (const word of words) {
-                            if (word.length > 2) { // Ignore short words
-                                const cleanWord = word.toLowerCase().replace(/[^\w]/g, '');
-                                if (cleanWord.length > 2) {
-                                    wordFrequency[cleanWord] = (wordFrequency[cleanWord] || 0) + 1;
-                                }
-                            }
-                        }
-                        
-                        // Check if any word appears too many times relative to total words
-                        for (const [word, count] of Object.entries(wordFrequency)) {
-                            if (count > words.length * 0.25) { // Same word > 25% of all words
-                                return true;
-                            }
-                        }
-                    }
-                    
-                    // 4. Check for gibberish by measuring character diversity
-                    const textWithoutSpaces = cleanedText.replace(/\s/g, '');
-                    if (textWithoutSpaces.length > 20) {
-                        const uniqueChars = new Set(textWithoutSpaces);
-                        const diversityRatio = uniqueChars.size / textWithoutSpaces.length;
-                        
-                        // Very low diversity (like "aaaaa" or "11111")
-                        if (diversityRatio < 0.15) return true;
-                    }
-                    
-                    // 5. Check for excessive punctuation or special characters
-                    const punctuationRegex = /[^\w\s]/gu; // Non-word, non-space characters
-                    const punctuationMatches = (cleanedText.match(punctuationRegex) || []).length;
-                    if (punctuationMatches > charCount * 0.4) { // > 40% punctuation
-                        return true;
-                    }
-                    
-                    // 6. Check for all numbers or mostly numbers
-                    const numbersRegex = /\d/g;
-                    const numbersMatches = (cleanedText.match(numbersRegex) || []).length;
-                    if (numbersMatches > charCount * 0.7) { // > 70% numbers
-                        return true;
-                    }
-                    
-                    return false;
-                }
-                
-                // Function to get a finance bro style message for nonsense input
-                function getNonsenseMessage() {
-                    const messages = [
-                        "C'mon rookie! At least pretend you're trying. This isn't keyboard testing hour. 💼",
-                        "Bro, Wall Street isn't built on 'asdfghjkl'. Give me something real. 📈",
-                        "Detected 'interview avoidance' behavior. Try answering the actual question, bro. 🤓",
-                        "Your keyboard skills are 🔥, but your answer needs some alpha. Think like a finance pro. 🦅",
-                        "Even a monkey could type better gibberish. Show me you're smarter than that. 🐒",
-                        "That's not an answer, that's a cry for help. Let me help you - write something meaningful. 🆘",
-                        "If you type like that in a trading pit, you'd be laughed off the floor. Step up your game. 🏦",
-                        "I've seen better analysis from a broken Bloomberg terminal. Try again, but seriously. 💻"
-                    ];
-                    return messages[Math.floor(Math.random() * messages.length)];
-                }
-                
-                // Add input event listener for character count
-                if (answerTextarea) {
-                    answerTextarea.addEventListener('input', updateCharCount);
-                    answerTextarea.addEventListener('focus', updateCharCount);
-                    answerTextarea.addEventListener('blur', updateCharCount);
-                    
-                    // Initialize character count
-                    setTimeout(updateCharCount, 100);
-                }
-                
-                // Analyze answer button with improved validation
-                if (analyzeAnswerBtn) {
-                    analyzeAnswerBtn.addEventListener('click', function() {
-                        const userAnswer = answerTextarea ? answerTextarea.value.trim() : '';
-                        const charLength = userAnswer.length;
-                        
-                        if (!userAnswer) {
-                            // Show error in input hint instead of alert
-                            const inputHint = document.getElementById('inputHint');
-                            if (inputHint) {
-                                inputHint.className = 'input-hint error';
-                                inputHint.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please enter your answer before analyzing';
-                            }
-                            
-                            // Highlight textarea
-                            if (answerTextarea) {
-                                answerTextarea.className = 'answer-textarea error';
-                                answerTextarea.focus();
-                            }
-                            return;
-                        }
-                        
-                        if (charLength < 50) {
-                            const inputHint = document.getElementById('inputHint');
-                            if (inputHint) {
-                                inputHint.className = 'input-hint error';
-                                inputHint.innerHTML = `<i class="fas fa-exclamation-circle"></i> Please write at least 50 characters (currently ${charLength})`;
-                            }
-                            
-                            if (answerTextarea) {
-                                answerTextarea.className = 'answer-textarea error';
-                                answerTextarea.focus();
-                            }
-                            return;
-                        }
-                        
-                        // Check for nonsense/random input (幽默检测)
-                        if (isNonsenseInput(userAnswer)) {
-                        const inputHint = document.getElementById('inputHint');
-                        const answerFeedbackSection = document.getElementById('answerFeedbackSection');
-                        const nonsenseMessage = getNonsenseMessage();
-                        
-                        if (inputHint) {
-                            inputHint.className = 'input-hint error';
-                            inputHint.innerHTML = `<i class="fas fa-grin-beam-sweat"></i> ${nonsenseMessage}`;
-                        }
-                        
-                        if (answerTextarea) {
-                            answerTextarea.className = 'answer-textarea error';
-                            answerTextarea.focus();
-                            
-                            // Briefly shake the textarea for emphasis (幽默效果)
-                            answerTextarea.classList.add('shake-animation');
-                            setTimeout(() => {
-                                answerTextarea.classList.remove('shake-animation');
-                            }, 500);
-                        }
-                        
-                        // Show feedback section with explanation
-                        if (answerFeedbackSection) {
-                            answerFeedbackSection.style.display = 'block';
-                            
-                            // Clear previous feedback
-                            const scoreValue = document.getElementById('scoreValue');
-                            const scoreDescription = document.getElementById('scoreDescription');
-                            const keywordsList = document.getElementById('keywordsList');
-                            const structureList = document.getElementById('structureList');
-                            const tipsContent = document.getElementById('tipsContent');
-                            const analysisContent = document.getElementById('analysisContent');
-                            
-                            if (scoreValue) scoreValue.textContent = 'N/A';
-                            if (scoreDescription) scoreDescription.textContent = nonsenseMessage;
-                            if (keywordsList) keywordsList.innerHTML = '<div class="empty-state">Input detected as random typing. Please provide a meaningful answer.</div>';
-                            if (structureList) structureList.innerHTML = '<div class="empty-state">No structure analysis for random input.</div>';
-                            if (tipsContent) tipsContent.innerHTML = '<div class="tip"><strong>Tip:</strong> Try answering with actual finance concepts or examples.</div>';
-                            if (analysisContent) analysisContent.innerHTML = '<div class="empty-state">Cannot analyze random keyboard input.</div>';
-                        }
-                        
-                        // Don't proceed to analysis
-                        return;
-                    }
-                    
-                    const currentQuestion = currentQuestions && currentQuestions[currentIndex];
-                        if (!currentQuestion) {
-                            const inputHint = document.getElementById('inputHint');
-                            if (inputHint) {
-                                inputHint.className = 'input-hint error';
-                                inputHint.innerHTML = '<i class="fas fa-exclamation-circle"></i> No question loaded. Please reload the page.';
-                            }
-                            return;
-                        }
-                        
-                        // Show feedback section
-                        answerFeedbackSection.style.display = 'block';
-                        
-                        // Analyze the answer
-                        analyzeAnswer(userAnswer, currentQuestion).then(() => {
-                            // Update hint to show success
-                            const inputHint = document.getElementById('inputHint');
-                            if (inputHint) {
-                                inputHint.className = 'input-hint success';
-                                const score = document.getElementById('scoreValue').textContent;
-                                if (score === '...') {
-                                    // AI was attempted but might have failed
-                                } else {
-                                    inputHint.innerHTML = `<i class="fas fa-check-circle"></i> Analysis complete! Check feedback below`;
-                                }
-                            }
-                        }).catch(err => {
-                            console.error('Analysis error:', err);
-                        });
-                    });
-                }
-                
-                // Navigation buttons
-                if (prevBtn) {
-                    prevBtn.addEventListener('click', function() {
-                        if (currentIndex > 0) {
-                            currentIndex--;
-                            window.currentIndex = currentIndex;
-                            loadQuestion(currentIndex);
-                        }
-                    });
-                }
-                
-                if (nextBtn) {
-                    nextBtn.addEventListener('click', function() {
-                        if (currentIndex < currentQuestions.length - 1) {
-                            currentIndex++;
-                            window.currentIndex = currentIndex;
-                            loadQuestion(currentIndex);
-                        } else {
-                            // Last question - show completion message
-                            alert('Congratulations! You have completed all questions in this category. Great job!');
-                        }
-                    });
-                }
-                
-                                // Answer display (only concise now)
-                // No toggle needed since we only have concise answers
-                
-                // Mobile menu toggle
-                const menuToggle = document.querySelector('.menu-toggle');
-                const navList = document.querySelector('.nav-list');
-                
-                if (menuToggle && navList) {
-                    menuToggle.addEventListener('click', function() {
-                        navList.classList.toggle('show');
-                    });
-                }
-                
-                // Search and Filter events
-                // Search input with debounce
-                if (questionSearch) {
-                    let searchTimeout;
-                    questionSearch.addEventListener('input', function() {
-                        clearTimeout(searchTimeout);
-                        searchTimeout = setTimeout(() => {
-                            currentFilters.search = this.value.trim().toLowerCase();
-                            refreshQuestions();
-                        }, 300);
-                    });
-                }
-                
-                // Difficulty filter
-                if (difficultyFilter) {
-                    difficultyFilter.addEventListener('change', function() {
-                        currentFilters.difficulty = this.value;
-                        refreshQuestions();
-                    });
-                }
-                
-                // Type filter
-                if (typeFilter) {
-                    typeFilter.addEventListener('change', function() {
-                        currentFilters.type = this.value;
-                        refreshQuestions();
-                    });
-                }
-                
-                // Clear filters button
-                if (clearFiltersBtn) {
-                    clearFiltersBtn.addEventListener('click', function() {
-                        currentFilters = {
-                            search: '',
-                            difficulty: 'all',
-                            type: 'all'
-                        };
-                        
-                        // Reset UI
-                        if (questionSearch) questionSearch.value = '';
-                        if (difficultyFilter) difficultyFilter.value = 'all';
-                        if (typeFilter) typeFilter.value = 'all';
-                        
-                        refreshQuestions();
-                    });
-                }
-                
-                // Bookmark button event delegation
-                document.addEventListener('click', function(e) {
-                    if (e.target.closest('.bookmark-btn')) {
-                        const btn = e.target.closest('.bookmark-btn');
-                        const questionId = btn.dataset.questionId;
-                        const currentQuestion = currentQuestions[currentIndex];
-                        if (currentQuestion && currentQuestion.id == questionId) {
-                            toggleBookmark(currentQuestion);
-                            // Update button appearance
-                            const isBookmarked = getQuestionProgress(currentQuestion).bookmarked;
-                            btn.innerHTML = `<i class="${isBookmarked ? 'fas' : 'far'} fa-star"></i>`;
-                            btn.style.color = isBookmarked ? '#f59e0b' : '#9ca3af';
-                            btn.title = isBookmarked ? 'Remove bookmark' : 'Bookmark this question';
-                        }
+                        answerRevealed = false;
+                        answerRevealSection.style.display = 'none';
+                        this.innerHTML = '<i class="fas fa-lightbulb"></i> Reveal Answer';
+                        this.className = 'action-btn primary';
                     }
                 });
-                
-                // Toggle help panel
-                if (toggleHelp) {
-                    toggleHelp.addEventListener('click', function() {
-                        const helpPanel = this.closest('.container.mb-6');
-                        if (helpPanel) {
-                            helpPanel.style.display = 'none';
-                            // Save preference
-                            localStorage.setItem('finterview_hide_help', 'true');
-                        }
-                    });
-                }
+
+                prevBtn.addEventListener('click', function() {
+                    if (currentIndex > 0) { currentIndex--; window.currentIndex = currentIndex; loadQuestion(currentIndex); }
+                });
+
+                nextBtn.addEventListener('click', function() {
+                    if (currentIndex < currentQuestions.length - 1) { currentIndex++; window.currentIndex = currentIndex; loadQuestion(currentIndex); }
+                });
+
+                // Mobile menu
+                document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+                    document.querySelector('.nav-list')?.classList.toggle('show');
+                });
+
+                // Bookmarks (delegated)
+                document.addEventListener('click', function(e) {
+                    const btn = e.target.closest('.bookmark-btn');
+                    if (!btn) return;
+                    const qid = parseInt(btn.dataset.qid);
+                    const q = currentQuestions[currentIndex];
+                    if (q && q.id === qid) {
+                        toggleBookmark(q);
+                        const bp = getQuestionProgress(q).bookmarked;
+                        btn.innerHTML = `<i class="${bp ? 'fas' : 'far'} fa-star"></i>`;
+                        btn.style.color = bp ? '#f59e0b' : '#9ca3af';
+                        btn.title = bp ? 'Remove bookmark' : 'Bookmark this question';
+                    }
+                });
+
+                // Filters
+                let searchTimeout;
+                questionSearch?.addEventListener('input', function() {
+                    clearTimeout(searchTimeout);
+                    searchTimeout = setTimeout(() => { currentFilters.search = this.value.trim().toLowerCase(); refreshQuestions(); }, 300);
+                });
+                difficultyFilter?.addEventListener('change', function() { currentFilters.difficulty = this.value; refreshQuestions(); });
+                typeFilter?.addEventListener('change', function() { currentFilters.type = this.value; refreshQuestions(); });
+                clearFiltersBtn?.addEventListener('click', function() {
+                    currentFilters = { search: '', difficulty: 'all', type: 'all' };
+                    if (questionSearch) questionSearch.value = '';
+                    if (difficultyFilter) difficultyFilter.value = 'all';
+                    if (typeFilter) typeFilter.value = 'all';
+                    refreshQuestions();
+                });
+
+                toggleHelp?.addEventListener('click', function() {
+                    const p = this.closest('.container.mb-6');
+                    if (p) { p.style.display = 'none'; localStorage.setItem('finterview_hide_help', 'true'); }
+                });
+
+                // Keyboard shortcuts
+                document.addEventListener('keydown', function(e) {
+                    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+                    if (e.key === 'ArrowLeft' && currentIndex > 0) { currentIndex--; window.currentIndex = currentIndex; loadQuestion(currentIndex); e.preventDefault(); }
+                    if (e.key === 'ArrowRight' && currentIndex < currentQuestions.length - 1) { currentIndex++; window.currentIndex = currentIndex; loadQuestion(currentIndex); e.preventDefault(); }
+                    if (e.key === ' ') { revealAnswerBtn.click(); e.preventDefault(); }
+                });
             }
-            
-            // Refresh questions based on current filters
+
             function refreshQuestions() {
-                const allQuestions = window.questionBank;
-                if (!Array.isArray(allQuestions)) return;
-                
-                // Apply filters
-                filteredQuestions = applyFilters(allQuestions, currentFilters, currentIndustry);
+                const all = window.questionBank;
+                if (!Array.isArray(all)) return;
+                const industryQuestions = all.filter(q => q.role === currentIndustry);
+                filteredQuestions = applyFilters(all, currentFilters, currentIndustry);
                 currentQuestions = filteredQuestions;
                 window.currentQuestions = currentQuestions;
-                
-                // Update UI
-                if (currentQuestions.length === 0) {
+
+                if (!currentQuestions.length) {
                     showNoQuestions(currentIndustry);
-                    answerInputSection.style.display = 'none';
+                    document.getElementById('answerActionsContainer').style.display = 'none';
                     navigationControls.style.display = 'none';
                 } else {
-                    // Reset to first question
-                    currentIndex = 0;
-                    window.currentIndex = currentIndex;
+                    currentIndex = 0; window.currentIndex = currentIndex;
                     loadQuestion(currentIndex);
-                    
-                    // Show sections
-                    answerInputSection.style.display = 'block';
+                    document.getElementById('answerActionsContainer').style.display = 'flex';
                     navigationControls.style.display = 'flex';
                 }
-                
-                // Update stats
-                if (industryStats) {
-                    industryStats.textContent = `${currentQuestions.length} questions available`;
-                }
-                
-                // Update filter summary
-                const industryQuestions = allQuestions.filter(q => q.role === currentIndustry);
+                if (industryStats) industryStats.textContent = `${currentQuestions.length} questions available`;
                 updateFilterSummary(industryQuestions.length, currentQuestions.length, currentFilters);
-                
-                // Update progress bar
                 updateProgressBar();
             }
-            
-            function showError(message) {
-                console.error('Error:', message);
-                
+
+            function showError(msg) {
                 questionDisplay.innerHTML = `
                     <div class="error-state">
                         <i class="fas fa-exclamation-triangle"></i>
                         <h3>Error Loading Questions</h3>
-                        <p>${escapeHtml(message)}</p>
-                        <button class="btn btn-primary" onclick="window.location.reload()" style="margin-top: 1rem;">
-                            <i class="fas fa-sync-alt"></i> Reload Page
+                        <p>${escapeHtml(msg)}</p>
+                        <button class="btn btn-primary" onclick="window.location.reload()" style="margin-top:1rem;">
+                            <i class="fas fa-sync-alt"></i> Reload
                         </button>
-                    </div>
-                `;
+                    </div>`;
             }
-            
-            function showNoQuestions(industryId) {
+
+            function showNoQuestions(id) {
                 questionDisplay.innerHTML = `
                     <div class="empty-state">
                         <i class="fas fa-search"></i>
                         <h3>No Questions Available</h3>
-                        <p>There are no questions for ${industryId} yet.</p>
-                        <p>Try another industry or check back later.</p>
-                        <div style="margin-top: 1.5rem;">
+                        <p>No questions for ${id} yet.</p>
+                        <div style="margin-top:1.5rem;">
                             <button class="btn btn-outline" onclick="window.location.href='industry-practice.html?industry=ib'">
                                 <i class="fas fa-building"></i> Try Investment Banking
                             </button>
                         </div>
-                    </div>
-                `;
+                    </div>`;
             }
-            
+
             function escapeHtml(text) {
                 if (!text) return '';
-                const div = document.createElement('div');
-                div.textContent = text;
-                return div.innerHTML;
+                const d = document.createElement('div');
+                d.textContent = text;
+                return d.innerHTML;
             }
-            
-            // Global functions
+
             window.practiceMode = {
                 reload: function() {
-                    const urlParams = new URLSearchParams(window.location.search);
-                    const industryId = urlParams.get('industry') || 'ib';
-                    const questionId = urlParams.get('questionId');
-                    const targetId = questionId ? parseInt(questionId) : null;
+                    const p = new URLSearchParams(window.location.search);
                     readFilterStateFromSession();
-                    loadQuestions(industryId, targetId);
+                    loadQuestions(p.get('industry') || 'ib', p.get('questionId') ? parseInt(p.get('questionId')) : null);
                 },
-                nextQuestion: function() {
-                    if (currentIndex < currentQuestions.length - 1) {
-                        currentIndex++;
-                        window.currentIndex = currentIndex;
-                        loadQuestion(currentIndex);
-                    }
-                },
-                prevQuestion: function() {
-                    if (currentIndex > 0) {
-                        currentIndex--;
-                        window.currentIndex = currentIndex;
-                        loadQuestion(currentIndex);
-                    }
-                }
+                nextQuestion: function() { if (currentIndex < currentQuestions.length - 1) { currentIndex++; window.currentIndex = currentIndex; loadQuestion(currentIndex); } },
+                prevQuestion: function() { if (currentIndex > 0) { currentIndex--; window.currentIndex = currentIndex; loadQuestion(currentIndex); } }
             };
-            
         })();
     </script>
-    
+
     <!-- Finance Bro Assistant -->
     <style>
         .finance-bro-assistant {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
-            font-family: 'Inter', sans-serif;
+            position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: 'Inter', sans-serif;
         }
-        
         .assistant-toggle {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
+            width: 60px; height: 60px; border-radius: 50%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s ease;
+            border: none; color: white; font-size: 1.5rem; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s ease;
         }
-        
-        .assistant-toggle:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-        }
-        
+        .assistant-toggle:hover { transform: scale(1.1); box-shadow: 0 6px 16px rgba(0,0,0,0.2); }
         .assistant-panel {
-            position: absolute;
-            bottom: 70px;
-            right: 0;
-            width: 320px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            display: none;
-            flex-direction: column;
-            overflow: hidden;
-            border: 1px solid #e9ecef;
+            position: absolute; bottom: 70px; right: 0; width: 320px;
+            background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: none; flex-direction: column; overflow: hidden; border: 1px solid #e9ecef;
         }
-        
-        .assistant-panel.open {
-            display: flex;
-            animation: slideUp 0.3s ease;
-        }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
+        .assistant-panel.open { display: flex; animation: slideUp 0.3s ease; }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
         .assistant-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 16px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;
+            padding: 16px; display: flex; align-items: center; gap: 12px;
         }
-        
-        .assistant-header i {
-            font-size: 1.2rem;
-        }
-        
-        .assistant-header h4 {
-            margin: 0;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-        
-        .assistant-close {
-            margin-left: auto;
-            background: none;
-            border: none;
-            color: white;
-            cursor: pointer;
-            font-size: 1rem;
-            opacity: 0.8;
-        }
-        
-        .assistant-close:hover {
-            opacity: 1;
-        }
-        
-        .assistant-messages {
-            flex: 1;
-            max-height: 300px;
-            overflow-y: auto;
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .assistant-message {
-            max-width: 80%;
-            padding: 10px 14px;
-            border-radius: 18px;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-        
-        .message-user {
-            align-self: flex-end;
-            background: #667eea;
-            color: white;
-            border-bottom-right-radius: 4px;
-        }
-        
-        .message-bro {
-            align-self: flex-start;
-            background: #f8f9fa;
-            color: #212529;
-            border-bottom-left-radius: 4px;
-            border: 1px solid #e9ecef;
-        }
-        
-        .message-bro .bro-name {
-            font-weight: 600;
-            font-size: 0.8rem;
-            color: #667eea;
-            margin-bottom: 4px;
-        }
-        
-        .assistant-input {
-            padding: 16px;
-            border-top: 1px solid #e9ecef;
-            display: flex;
-            gap: 8px;
-        }
-        
-        .assistant-input input {
-            flex: 1;
-            padding: 10px 14px;
-            border: 1px solid #e9ecef;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        
-        .assistant-input input:focus {
-            border-color: #667eea;
-        }
-        
-        .assistant-send {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #667eea;
-            border: none;
-            color: white;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
-        }
-        
-        .assistant-send:hover {
-            background: #5a67d8;
-        }
-        
-        .quick-questions {
-            padding: 0 16px 12px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-        }
-        
+        .assistant-header h4 { margin: 0; font-size: 1rem; font-weight: 600; }
+        .assistant-close { margin-left: auto; background: none; border: none; color: white; cursor: pointer; opacity: 0.8; }
+        .assistant-close:hover { opacity: 1; }
+        .assistant-messages { flex: 1; max-height: 300px; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+        .assistant-message { max-width: 80%; padding: 10px 14px; border-radius: 18px; font-size: 0.9rem; line-height: 1.4; }
+        .message-user { align-self: flex-end; background: #667eea; color: white; border-bottom-right-radius: 4px; }
+        .message-bro { align-self: flex-start; background: #f8f9fa; color: #212529; border-bottom-left-radius: 4px; border: 1px solid #e9ecef; }
+        .message-bro .bro-name { font-weight: 600; font-size: 0.8rem; color: #667eea; margin-bottom: 4px; }
+        .assistant-input { padding: 16px; border-top: 1px solid #e9ecef; display: flex; gap: 8px; }
+        .assistant-input input { flex: 1; padding: 10px 14px; border: 1px solid #e9ecef; border-radius: 20px; font-size: 0.9rem; outline: none; }
+        .assistant-input input:focus { border-color: #667eea; }
+        .assistant-send { width: 40px; height: 40px; border-radius: 50%; background: #667eea; border: none; color: white; cursor: pointer; }
+        .quick-questions { padding: 0 16px 12px; display: flex; flex-wrap: wrap; gap: 6px; }
         .quick-question-btn {
-            padding: 6px 12px;
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            color: #495057;
-            cursor: pointer;
-            transition: all 0.2s;
+            padding: 6px 12px; background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 15px;
+            font-size: 0.8rem; color: #495057; cursor: pointer; transition: all 0.2s;
         }
-        
-        .quick-question-btn:hover {
-            background: #e9ecef;
-            border-color: #dee2e6;
-        }
-        
-        .empty-messages {
-            text-align: center;
-            padding: 20px;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-        
-        .empty-messages i {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-            color: #adb5bd;
-        }
-        
+        .quick-question-btn:hover { background: #e9ecef; }
+        .empty-messages { text-align: center; padding: 20px; color: #6c757d; font-size: 0.9rem; }
+        .empty-messages i { font-size: 1.5rem; margin-bottom: 8px; color: #adb5bd; }
         @media (max-width: 768px) {
-            .finance-bro-assistant {
-                bottom: 15px;
-                right: 15px;
-            }
-            
-            .assistant-panel {
-                width: 280px;
-                bottom: 65px;
-            }
-            
-            .assistant-toggle {
-                width: 55px;
-                height: 55px;
-                font-size: 1.3rem;
-            }
+            .finance-bro-assistant { bottom: 15px; right: 15px; }
+            .assistant-panel { width: 280px; bottom: 65px; }
+            .assistant-toggle { width: 55px; height: 55px; font-size: 1.3rem; }
         }
-        
-        /* Answer Feedback Styles */
-        .answer-feedback-section {
-            background-color: var(--white);
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-            border: 1px solid var(--light-border);
-            margin-top: var(--spacing-lg);
-            overflow: hidden;
-        }
-        
-        .feedback-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: var(--spacing-md) var(--spacing-lg);
-            background-color: var(--light-bg);
-            border-bottom: 1px solid var(--light-border);
-            font-weight: var(--font-weight-semibold);
-            color: var(--text-primary);
-        }
-        
-        .feedback-header i {
-            margin-right: var(--spacing-sm);
-            color: var(--info-color);
-        }
-        
-        .feedback-close-btn {
-            background: none;
-            border: none;
-            color: var(--text-light);
-            cursor: pointer;
-            font-size: var(--font-size-base);
-            padding: 4px 8px;
-            border-radius: var(--border-radius-sm);
-            transition: all 0.2s ease;
-        }
-        
-        .feedback-close-btn:hover {
-            background-color: var(--light-border);
-            color: var(--text-primary);
-        }
-        
-        .feedback-content {
-            padding: var(--spacing-lg);
-        }
-        
-        .score-card {
-            text-align: center;
-            padding: var(--spacing-lg);
-            background: linear-gradient(135deg, var(--light-bg) 0%, #f8f9fa 100%);
-            border-radius: var(--border-radius);
-            border: 1px solid var(--light-border);
-            margin-bottom: var(--spacing-lg);
-        }
-        
-        .score-value {
-            font-size: 3.5rem;
-            font-weight: var(--font-weight-bold);
-            color: var(--primary-color);
-            line-height: 1;
-        }
-        
-        .score-label {
-            font-size: var(--font-size-base);
-            color: var(--text-secondary);
-            margin-bottom: var(--spacing-sm);
-        }
-        
-        .score-description {
-            font-size: var(--font-size-sm);
-            color: var(--text-light);
-            max-width: 300px;
-            margin: 0 auto;
-        }
-        
-        .feedback-section {
-            margin-bottom: var(--spacing-xl);
-        }
-        
-        .feedback-section h4 {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-sm);
-            margin-bottom: var(--spacing-md);
-            font-weight: var(--font-weight-semibold);
-            color: var(--text-primary);
-        }
-        
-        .feedback-section h4 i {
-            color: var(--info-color);
-        }
-        
-        .keywords-list, .structure-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--spacing-sm);
-        }
-        
-        .keyword-item, .structure-item {
-            padding: 6px 12px;
-            background-color: var(--light-bg);
-            border-radius: var(--border-radius-sm);
-            font-size: var(--font-size-sm);
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-xs);
-        }
-        
-        .analysis-section-title {
-            font-weight: 600;
-            font-size: var(--font-size-sm);
-            color: var(--text-primary);
-            padding: 4px 0;
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-xs);
-        }
+    </style>
 
-        .keyword-item.matched, .structure-item.matched {
-            background-color: var(--success-light);
-            color: var(--success-color);
-            border: 1px solid var(--success-border);
-        }
-        
-        .keyword-item.matched i, .structure-item.matched i {
-            color: var(--success-color);
-        }
-        
-        .keyword-item.missing, .structure-item.missing {
-            background-color: var(--warning-light);
-            color: var(--warning-color);
-            border: 1px solid var(--warning-border);
-        }
-        
-        .keyword-item.missing i, .structure-item.missing i {
-            color: var(--warning-color);
-        }
-        
-        .keyword-weight {
-            font-size: var(--font-size-xs);
-            color: var(--text-light);
-            margin-left: var(--spacing-xs);
-        }
-        
-        .tips-content, .analysis-content {
-            background-color: var(--light-bg);
-            padding: var(--spacing-md);
-            border-radius: var(--border-radius);
-            border-left: 3px solid var(--info-color);
-            font-size: var(--font-size-sm);
-            line-height: 1.5;
-        }
-        
-        .tips-content ul, .analysis-content ul {
-            margin-left: var(--spacing-lg);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .tips-content li, .analysis-content li {
-            margin-bottom: var(--spacing-xs);
-        }
-        
-        .empty-state {
-            text-align: center;
-            padding: var(--spacing-lg);
-            color: var(--text-light);
-            font-style: italic;
-        }
-        
-        /* Info button style */
-        .action-btn.info {
-            background-color: var(--info-color);
-            color: var(--white);
-        }
-        
-        .action-btn.info:hover:not(:disabled) {
-            background-color: var(--info-dark);
-        }
-        
-        /* Define info colors if not already defined */
-        :root {
-            --info-color: #17a2b8;
-            --info-dark: #138496;
-            --success-light: #d4edda;
-            --success-color: #28a745;
-            --success-border: #c3e6cb;
-            --warning-light: #fff3cd;
-            --warning-color: #ffc107;
-            --warning-border: #ffeaa7;
-            --error-color: #dc3545;
-            --error-light: #f8d7da;
-        }
-        
-        /* Answer input improvements */
-        .answer-input-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: var(--spacing-sm);
-            font-size: var(--font-size-sm);
-        }
-        
-        .char-count {
-            color: var(--text-light);
-        }
-        
-        .char-count.warning {
-            color: var(--warning-color);
-            font-weight: var(--font-weight-semibold);
-        }
-        
-        .char-count.success {
-            color: var(--success-color);
-        }
-        
-        .input-hint {
-            display: flex;
-            align-items: center;
-            gap: var(--spacing-xs);
-            color: var(--info-color);
-            font-size: var(--font-size-sm);
-        }
-        
-        .input-hint i {
-            font-size: var(--font-size-base);
-        }
-        
-        .input-hint.error {
-            color: var(--error-color);
-        }
-        
-        .input-hint.success {
-            color: var(--success-color);
-        }
-        
-        .submit-guidance {
-            text-align: center;
-            margin-top: var(--spacing-md);
-            padding: var(--spacing-sm);
-            background-color: var(--light-bg);
-            border-radius: var(--border-radius-sm);
-            font-size: var(--font-size-sm);
-            color: var(--text-secondary);
-            border-left: 3px solid var(--info-color);
-        }
-        
-        .submit-guidance i {
-            margin-right: var(--spacing-xs);
-            color: var(--info-color);
-        }
-        
-        .submit-guidance strong {
-            color: var(--info-dark);
-            font-weight: var(--font-weight-semibold);
-        }
-        
-        /* Textarea focus states */
-        .answer-textarea:focus {
-            border-color: var(--info-color);
-            box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.1);
-        }
-        
-        .answer-textarea.error {
-            border-color: var(--error-color);
-            box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
-        }
-        
-        .answer-textarea.success {
-            border-color: var(--success-color);
-            box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
-        }
-        
-        /* Shake animation for humorous effect when nonsense is detected */
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-            20%, 40%, 60%, 80% { transform: translateX(5px); }
-        }
-        
-        .shake-animation {
-            animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
-        }
-        
-        /* Style for the humor emoji icon */
-        .fa-grin-beam-sweat {
-            color: var(--warning-color);
-        }
-            /* Match footer logo size with header */
-        .logo h3 {
-            font-size: 1.5rem;
-            margin: 0;
-        }
-        </style>
-    
     <div class="finance-bro-assistant">
-        <button class="assistant-toggle" id="assistantToggle">
-            <i class="fas fa-vest"></i>
-        </button>
-        
+        <button class="assistant-toggle" id="assistantToggle"><i class="fas fa-vest"></i></button>
         <div class="assistant-panel" id="assistantPanel">
             <div class="assistant-header">
                 <i class="fas fa-vest"></i>
                 <h4>Finance Bro Assistant</h4>
-                <button class="assistant-close" id="assistantClose">
-                    <i class="fas fa-times"></i>
-                </button>
+                <button class="assistant-close" id="assistantClose"><i class="fas fa-times"></i></button>
             </div>
-            
             <div class="assistant-messages" id="assistantMessages">
                 <div class="empty-messages">
                     <i class="fas fa-comment-dots"></i>
                     <p>Ask Finance Bro for help with this question!</p>
                 </div>
             </div>
-            
             <div class="quick-questions">
-                <button class="quick-question-btn" data-question="How do I approach this question?">
-                    How to approach?
-                </button>
-                <button class="quick-question-btn" data-question="Explain this concept simply">
-                    Explain simply
-                </button>
-                <button class="quick-question-btn" data-question="What are common mistakes for this type of question?">
-                    Common mistakes
-                </button>
+                <button class="quick-question-btn" data-q="How do I approach this question?">How to approach?</button>
+                <button class="quick-question-btn" data-q="Explain this concept simply">Explain simply</button>
+                <button class="quick-question-btn" data-q="What are common mistakes?">Common mistakes</button>
             </div>
-            
             <div class="assistant-input">
                 <input type="text" id="assistantInput" placeholder="Ask Finance Bro..." maxlength="200">
-                <button class="assistant-send" id="assistantSend">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
+                <button class="assistant-send" id="assistantSend"><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
     </div>
-    
+
     <script>
-        // Finance Bro Assistant
         document.addEventListener('DOMContentLoaded', function() {
-            const assistantToggle = document.getElementById('assistantToggle');
-            const assistantPanel = document.getElementById('assistantPanel');
-            const assistantClose = document.getElementById('assistantClose');
-            const assistantMessages = document.getElementById('assistantMessages');
-            const assistantInput = document.getElementById('assistantInput');
-            const assistantSend = document.getElementById('assistantSend');
-            const quickQuestionBtns = document.querySelectorAll('.quick-question-btn');
-            
-            let isAssistantOpen = false;
-            
-            // Toggle assistant panel
-            assistantToggle.addEventListener('click', function() {
-                isAssistantOpen = !isAssistantOpen;
-                if (isAssistantOpen) {
-                    assistantPanel.classList.add('open');
-                } else {
-                    assistantPanel.classList.remove('open');
-                }
-            });
-            
-            // Close assistant panel
-            assistantClose.addEventListener('click', function() {
-                isAssistantOpen = false;
-                assistantPanel.classList.remove('open');
-            });
-            
-            // Knowledge base for Finance Bro (simplified version)
-            const knowledgeBase = [
-                {
-                    keywords: ['approach', 'how to', 'strategy', 'method'],
-                    response: "For this question, I'd recommend: 1) Break down key terms, 2) Identify the core concept, 3) Structure your answer logically, 4) Use relevant examples if possible."
-                },
-                {
-                    keywords: ['explain', 'simple', 'basics', 'concept'],
-                    response: "Let me simplify this: Focus on the fundamental idea without jargon. What's the main principle? How would you explain it to someone without finance background?"
-                },
-                {
-                    keywords: ['mistake', 'error', 'wrong', 'avoid'],
-                    response: "Common mistakes: 1) Not answering the actual question asked, 2) Being too vague, 3) Forgetting key assumptions, 4) Not structuring your answer clearly."
-                },
-                {
-                    keywords: ['answer', 'response', 'solution'],
-                    response: "Check the 'Reveal Answer' button for detailed guidance. My tip: Try answering yourself first, then compare with the model answer to identify gaps."
-                },
-                {
-                    keywords: ['industry', 'role', 'sector'],
-                    response: "This question is in the current industry category. Each finance sector has unique focus areas. Understanding industry context helps tailor your answer."
-                },
-                {
-                    keywords: ['difficulty', 'hard', 'easy', 'level'],
-                    response: "This question's difficulty level indicates what's expected. Easy = basic concepts, Medium = application, Hard = complex analysis. Adjust your answer depth accordingly."
-                },
-                {
-                    keywords: ['practice', 'improve', 'better', 'learn'],
-                    response: "Best practice tips: 1) Answer verbally first, 2) Write it down, 3) Compare with model answer, 4) Note areas for improvement, 5) Review regularly."
-                },
-                {
-                    keywords: ['hello', 'hi', 'hey', 'help'],
-                    response: "Hey bro! 👔 Need help with this question? Try the quick buttons or ask me anything about approach, explanation, or common mistakes!"
-                }
+            const toggle = document.getElementById('assistantToggle');
+            const panel = document.getElementById('assistantPanel');
+            const close = document.getElementById('assistantClose');
+            const msgs = document.getElementById('assistantMessages');
+            const input = document.getElementById('assistantInput');
+            const send = document.getElementById('assistantSend');
+            const qBtns = document.querySelectorAll('.quick-question-btn');
+            let open = false;
+
+            toggle.addEventListener('click', function() { open = !open; panel.classList.toggle('open', open); });
+            close.addEventListener('click', function() { open = false; panel.classList.remove('open'); });
+
+            const kb = [
+                { k: ['approach','how to','strategy','method'], r: 'Break it down: 1) Identify key terms, 2) Pinpoint the core concept, 3) Structure logically, 4) Use examples.' },
+                { k: ['explain','simple','basics','concept'], r: 'Focus on the fundamental principle without jargon. What\'s the main idea? How would you explain it to a non-finance person?' },
+                { k: ['mistake','error','wrong','avoid'], r: 'Common pitfalls: 1) Not answering the actual question, 2) Being too vague, 3) Forgetting key assumptions, 4) Poor structure.' },
+                { k: ['answer','response','solution'], r: 'Hit "Reveal Answer" to see the model answer. Try answering yourself first, then compare to spot gaps.' },
+                { k: ['practice','improve','better','learn'], r: 'Best approach: 1) Answer verbally first, 2) Write notes, 3) Compare with model answer, 4) Note gaps, 5) Review weekly.' },
+                { k: ['hello','hi','hey','help'], r: 'Hey bro! 👔 Need help? Try the quick buttons or ask me about approach, common mistakes, or key concepts!' }
             ];
-            
-            // Default responses
-            const defaultResponses = [
-                "Great question! Try using the 'Reveal Answer' button for detailed guidance, or ask me about how to approach this type of question.",
-                "I'm here to help with answering strategies! Ask about approach, common mistakes, or how to simplify complex concepts.",
-                "For this specific question, check the detailed answer. I can help with general answering techniques and preparation strategies."
+            const defaults = [
+                "Try the 'Reveal Answer' button for guidance, or ask me about approach and strategy.",
+                "I can help with answering techniques and prep strategies. What's on your mind?",
+                "Focus on structuring your answer clearly. Key frameworks help with common questions."
             ];
-            
-            // Add message to chat
-            function addMessage(content, isUser = false) {
-                // Remove empty state if present
-                const emptyState = assistantMessages.querySelector('.empty-messages');
-                if (emptyState) {
-                    emptyState.remove();
-                }
-                
-                const messageDiv = document.createElement('div');
-                messageDiv.className = `assistant-message ${isUser ? 'message-user' : 'message-bro'}`;
-                
-                if (isUser) {
-                    messageDiv.textContent = content;
-                } else {
-                    messageDiv.innerHTML = `
-                        <div class="bro-name">Finance Bro</div>
-                        <div>${content}</div>
-                    `;
-                }
-                
-                assistantMessages.appendChild(messageDiv);
-                assistantMessages.scrollTop = assistantMessages.scrollHeight;
+
+            function addMsg(content, isUser) {
+                const e = msgs.querySelector('.empty-messages');
+                if (e) e.remove();
+                const d = document.createElement('div');
+                d.className = 'assistant-message ' + (isUser ? 'message-user' : 'message-bro');
+                if (isUser) d.textContent = content;
+                else d.innerHTML = `<div class="bro-name">Finance Bro</div><div>${content}</div>`;
+                msgs.appendChild(d); msgs.scrollTop = msgs.scrollHeight;
             }
-            
-            // Get response from knowledge base
-            function getResponse(userMessage) {
-                const lowerMessage = userMessage.toLowerCase();
-                const currentQuestion = window.currentQuestions && window.currentQuestions[window.currentIndex];
-                
-                // Check knowledge base first (priority)
-                for (const item of knowledgeBase) {
-                    for (const keyword of item.keywords) {
-                        if (lowerMessage.includes(keyword)) {
-                            // Enhance with context if available
-                            if (currentQuestion) {
-                                return `${item.response} \n\n(Context: This is a "${currentQuestion.title}" question, ${currentQuestion.difficulty || 'medium'} difficulty.)`;
-                            }
-                            return item.response;
-                        }
-                    }
-                }
-                
-                // Check for context-specific queries if no knowledge base match
-                if (currentQuestion) {
-                    if (lowerMessage.includes('question') || lowerMessage.includes('this') || lowerMessage.includes('current')) {
-                        return `For this "${currentQuestion.title}" question (${currentQuestion.difficulty || 'medium'} difficulty), focus on ${currentQuestion.category || 'technical'} concepts. Try breaking down key terms and structuring your answer logically.`;
-                    }
-                }
-                
-                // Default response
-                return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+
+            function getResp(msg) {
+                const l = msg.toLowerCase();
+                for (const item of kb)
+                    for (const kw of item.k)
+                        if (l.includes(kw)) return item.r;
+                return defaults[Math.floor(Math.random() * defaults.length)];
             }
-            
-            // Send message
-            function sendMessage() {
-                const message = assistantInput.value.trim();
-                if (!message) return;
-                
-                // Add user message
-                addMessage(message, true);
-                
-                // Clear input
-                assistantInput.value = '';
-                
-                // Show typing indicator
-                const typingDiv = document.createElement('div');
-                typingDiv.className = 'assistant-message message-bro';
-                typingDiv.innerHTML = `
-                    <div class="bro-name">Finance Bro</div>
-                    <div><i class="fas fa-ellipsis-h"></i> Thinking...</div>
-                `;
-                assistantMessages.appendChild(typingDiv);
-                
-                // Simulate thinking delay
-                setTimeout(() => {
-                    // Remove typing indicator
-                    typingDiv.remove();
-                    
-                    // Get and add response
-                    const response = getResponse(message);
-                    addMessage(response, false);
-                }, 800 + Math.random() * 800);
+
+            function sendMsg() {
+                const m = input.value.trim();
+                if (!m) return;
+                addMsg(m, true); input.value = '';
+                const ty = document.createElement('div');
+                ty.className = 'assistant-message message-bro';
+                ty.innerHTML = `<div class="bro-name">Finance Bro</div><div><i class="fas fa-ellipsis-h"></i> Thinking...</div>`;
+                msgs.appendChild(ty);
+                setTimeout(() => { ty.remove(); addMsg(getResp(m)); }, 600 + Math.random() * 600);
             }
-            
-            // Event listeners
-            assistantSend.addEventListener('click', sendMessage);
-            
-            assistantInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    sendMessage();
-                }
-            });
-            
-            // Quick question buttons
-            quickQuestionBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const question = this.getAttribute('data-question');
-                    assistantInput.value = question;
-                    sendMessage();
-                });
-            });
-            
-            // Auto-open on first question load
-            setTimeout(() => {
-                // Add welcome message if panel is opened
-                const observer = new MutationObserver(function(mutations) {
-                    mutations.forEach(function(mutation) {
-                        if (mutation.attributeName === 'class') {
-                            if (assistantPanel.classList.contains('open')) {
-                                // Check if it's first open (no messages besides possible empty state)
-                                const hasMessages = assistantMessages.children.length > 0 && 
-                                                   !assistantMessages.querySelector('.empty-messages');
-                                if (!hasMessages) {
-                                    setTimeout(() => {
-                                        addMessage("Hey! I'm Finance Bro, your interview prep assistant. I can help you with answering strategies, common mistakes, and simplifying concepts. Try the quick buttons or ask me anything!", false);
-                                    }, 300);
-                                }
-                            }
-                        }
-                    });
-                });
-                
-                observer.observe(assistantPanel, { attributes: true });
-            }, 1000);
-            
-            // Answer Analysis Function
-            // ========================================
-            // AI-Powered Answer Analysis
-            // Calls the local AI server for real feedback
-            // Falls back to local analysis if server unavailable
-            // ========================================
-            // AI server URL — auto-detect when on same origin
-            const AI_SERVER_URL = window.location.origin;
-            
-            async function analyzeAnswerWithAI(userAnswer, question) {
-                console.log('=== AI analyzeAnswer called ===');
-                
-                // Show loading state
-                const scoreEl = document.getElementById('scoreValue');
-                const descEl = document.getElementById('scoreDescription');
-                if (scoreEl) scoreEl.textContent = '...';
-                if (descEl) descEl.textContent = 'Analyzing with AI...';
-                
-                try {
-                    // 3 second timeout for faster fallback
-                    const controller = new AbortController();
-                    const timeoutId = setTimeout(() => controller.abort(), 3000);
-                    
-                    const response = await fetch(`${AI_SERVER_URL}/api/analyze`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        signal: controller.signal,
-                        body: JSON.stringify({
-                            question: question.title || question.question,
-                            userAnswer: userAnswer,
-                            questionData: {
-                                modelAnswer: question.modelAnswer || (question.answers && question.answers.modelAnswer),
-                                difficulty: question.difficulty,
-                                role: question.role,
-                                category: question.category,
-                                title: question.title
-                            }
-                        })
-                    });
-                    
-                    clearTimeout(timeoutId);
-                    if (!response.ok) throw new Error('Server returned ' + response.status);
-                    
-                    const aiResult = await response.json();
-                    console.log('AI Analysis result:', aiResult);
-                    return aiResult;
-                    
-                } catch (err) {
-                    console.warn('AI server unavailable, falling back to local analysis:', err.message);
-                    if (scoreEl) scoreEl.textContent = '0';
-                    if (descEl) descEl.textContent = 'AI server not found. Using local analysis.';
-                    return null;
-                }
-            }
-            
-            function displayAIAnalysis(aiResult, question) {
-                const scoreValue = document.getElementById('scoreValue');
-                const scoreDescription = document.getElementById('scoreDescription');
-                const keywordsList = document.getElementById('keywordsList');
-                const structureList = document.getElementById('structureList');
-                const tipsContent = document.getElementById('tipsContent');
-                const analysisContent = document.getElementById('analysisContent');
-                
-                // Score
-                const score = aiResult.score || 0;
-                scoreValue.textContent = score;
-                
-                if (score >= 85) {
-                    scoreDescription.textContent = '🔥 Excellent! You crushed this answer. Interview-ready.';
-                } else if (score >= 70) {
-                    scoreDescription.textContent = '💪 Solid answer! A few tweaks and you\'re golden.';
-                } else if (score >= 50) {
-                    scoreDescription.textContent = '📝 Decent foundation. You\'re missing some key elements.';
-                } else {
-                    scoreDescription.textContent = '🔄 Needs work. Review the fundamentals and try again.';
-                }
-                
-                // Strengths & Weaknesses (replaces keyword list)
-                keywordsList.innerHTML = '';
-                
-                if (aiResult.strengths && aiResult.strengths.length > 0) {
-                    const strengthTitle = document.createElement('div');
-                    strengthTitle.className = 'analysis-section-title';
-                    strengthTitle.innerHTML = '<i class="fas fa-check-circle" style="color: var(--success-color);"></i> Strengths';
-                    keywordsList.appendChild(strengthTitle);
-                    
-                    aiResult.strengths.forEach(s => {
-                        const el = document.createElement('div');
-                        el.className = 'keyword-item matched';
-                        el.innerHTML = `<i class="fas fa-check"></i> ${s}`;
-                        keywordsList.appendChild(el);
-                    });
-                }
-                
-                if (aiResult.weaknesses && aiResult.weaknesses.length > 0) {
-                    const weakTitle = document.createElement('div');
-                    weakTitle.className = 'analysis-section-title';
-                    weakTitle.style.marginTop = '12px';
-                    weakTitle.innerHTML = '<i class="fas fa-exclamation-triangle" style="color: var(--warning-color);"></i> Areas to Improve';
-                    keywordsList.appendChild(weakTitle);
-                    
-                    aiResult.weaknesses.forEach(w => {
-                        const el = document.createElement('div');
-                        el.className = 'keyword-item missing';
-                        el.innerHTML = `<i class="fas fa-times"></i> ${w}`;
-                        keywordsList.appendChild(el);
-                    });
-                }
-                
-                // Missed Concepts (replaces structure list)
-                structureList.innerHTML = '';
-                if (aiResult.missedConcepts && aiResult.missedConcepts.length > 0) {
-                    const missedTitle = document.createElement('div');
-                    missedTitle.className = 'analysis-section-title';
-                    missedTitle.innerHTML = '<i class="fas fa-lightbulb" style="color: var(--primary-color);"></i> You Missed These Concepts';
-                    structureList.appendChild(missedTitle);
-                    
-                    aiResult.missedConcepts.forEach(m => {
-                        const el = document.createElement('div');
-                        el.className = 'structure-item missing';
-                        el.innerHTML = `<i class="fas fa-plus-circle"></i> ${m}`;
-                        structureList.appendChild(el);
-                    });
-                } else {
-                    structureList.innerHTML = '<div class="empty-state">Great coverage — you hit all the key concepts!</div>';
-                }
-                
-                // Improved Answer (replaces tips)
-                tipsContent.innerHTML = '';
-                if (aiResult.improvedAnswer) {
-                    const improvedTitle = document.createElement('div');
-                    improvedTitle.className = 'analysis-section-title';
-                    improvedTitle.innerHTML = '<i class="fas fa-edit" style="color: var(--success-color);"></i> How a Stronger Answer Would Look';
-                    tipsContent.appendChild(improvedTitle);
-                    
-                    const improvedText = document.createElement('div');
-                    improvedText.style.cssText = 'padding: 12px; background: var(--light-bg); border-radius: 8px; margin-top: 8px; line-height: 1.6; font-size: 0.95rem;';
-                    improvedText.textContent = aiResult.improvedAnswer;
-                    tipsContent.appendChild(improvedText);
-                } else {
-                    tipsContent.innerHTML = '<div class="empty-state">No improved answer available.</div>';
-                }
-                
-                // Key Advice (replaces detailed analysis)
-                analysisContent.innerHTML = '';
-                if (aiResult.keyAdvice) {
-                    const adviceTitle = document.createElement('div');
-                    adviceTitle.className = 'analysis-section-title';
-                    adviceTitle.innerHTML = '<i class="fas fa-star" style="color: #f59e0b;"></i> One Thing to Work On';
-                    analysisContent.appendChild(adviceTitle);
-                    
-                    const adviceEl = document.createElement('div');
-                    adviceEl.style.cssText = 'padding: 12px; background: linear-gradient(135deg, #fffbeb, #fef3c7); border-radius: 8px; margin-top: 8px; border-left: 4px solid #f59e0b; line-height: 1.6;';
-                    adviceEl.textContent = aiResult.keyAdvice;
-                    analysisContent.appendChild(adviceEl);
-                } else {
-                    analysisContent.innerHTML = '<div class="empty-state">Keep practicing! Review the feedback above for specific improvements.</div>';
-                }
-            }
-            
-            async function analyzeAnswer(userAnswer, question) {
-                console.log('=== analyzeAnswer called ===');
-                console.log('User answer length:', userAnswer.length);
-                console.log('Question:', question.title);
-                
-                // Initialize feedback elements
-                const scoreValue = document.getElementById('scoreValue');
-                const scoreDescription = document.getElementById('scoreDescription');
-                const keywordsList = document.getElementById('keywordsList');
-                const structureList = document.getElementById('structureList');
-                const tipsContent = document.getElementById('tipsContent');
-                const analysisContent = document.getElementById('analysisContent');
-                
-                // Reset previous feedback
-                keywordsList.innerHTML = '';
-                structureList.innerHTML = '';
-                tipsContent.innerHTML = '';
-                analysisContent.innerHTML = '';
-                
-                // Try AI analysis first
-                const aiResult = await analyzeAnswerWithAI(userAnswer, question);
-                
-                if (aiResult) {
-                    displayAIAnalysis(aiResult, question);
-                    return;
-                }
-                
-                // ========== FALLBACK: Local analysis (server unreachable) ==========
-                console.log('Using local fallback analysis');
-                
-                // Calculate basic metrics
-                const answerLength = userAnswer.length;
-                const wordCount = userAnswer.split(/\s+/).filter(word => word.length > 0).length;
-                const hasStructure = answerLength > 50 && (userAnswer.includes(':') || userAnswer.includes('\u2022') || userAnswer.includes('-') || userAnswer.includes('1.'));
-                
-                let totalScore = 0;
-                const feedback = [];
-                
-                // 1. Keyword Matching (if available)
-                if (question.scoringKeywords && Object.keys(question.scoringKeywords).length > 0) {
-                    const keywords = question.scoringKeywords;
-                    const matchedKeywords = [];
-                    const missingKeywords = [];
-                    let keywordScore = 0;
-                    let maxKeywordScore = 0;
-                    
-                    Object.entries(keywords).forEach(([keyword, weight]) => {
-                        maxKeywordScore += weight;
-                        const regex = new RegExp(`\\b${keyword}\\b`, 'i');
-                        if (regex.test(userAnswer)) {
-                            keywordScore += weight;
-                            matchedKeywords.push({ keyword, weight, matched: true });
-                        } else {
-                            missingKeywords.push({ keyword, weight, matched: false });
-                        }
-                    });
-                    
-                    keywordsList.innerHTML = '';
-                    matchedKeywords.forEach(item => {
-                        const keywordEl = document.createElement('div');
-                        keywordEl.className = 'keyword-item matched';
-                        keywordEl.innerHTML = `<i class="fas fa-check"></i> ${item.keyword} <span class="keyword-weight">${item.weight}pts</span>`;
-                        keywordsList.appendChild(keywordEl);
-                    });
-                    missingKeywords.forEach(item => {
-                        const keywordEl = document.createElement('div');
-                        keywordEl.className = 'keyword-item missing';
-                        keywordEl.innerHTML = `<i class="fas fa-times"></i> ${item.keyword} <span class="keyword-weight">${item.weight}pts</span>`;
-                        keywordsList.appendChild(keywordEl);
-                    });
-                    
-                    const keywordPercentage = maxKeywordScore > 0 ? Math.round((keywordScore / maxKeywordScore) * 100) : 0;
-                    totalScore += keywordPercentage * 0.4;
-                    feedback.push(`Keyword Coverage: ${keywordPercentage}% (${matchedKeywords.length}/${matchedKeywords.length + missingKeywords.length} keywords)`);
-                } else {
-                    keywordsList.innerHTML = '<div class="empty-state">AI server unavailable. Local analysis limited.</div>';
-                }
-                
-                // 2-4. Length, word count, general structure
-                if (answerLength < 50) {
-                    feedback.push('Warning: Your answer is very short. Try to provide more detail.');
-                } else if (answerLength < 150) {
-                    totalScore += 10;
-                    feedback.push('Good: Your answer has reasonable length');
-                } else {
-                    totalScore += 20;
-                    feedback.push('Excellent: Your answer is comprehensive in length');
-                }
-                if (wordCount > 100) totalScore += 10;
-                else if (wordCount > 50) totalScore += 5;
-                
-                totalScore = Math.min(Math.max(Math.round(totalScore), 0), 100);
-                
-                scoreValue.textContent = totalScore;
-                if (totalScore >= 90) scoreDescription.textContent = 'Good answer based on local analysis. Start the AI server for deeper feedback: node server/index.js';
-                else if (totalScore >= 70) scoreDescription.textContent = 'Decent answer. For detailed AI feedback, start the AI server.';
-                else scoreDescription.textContent = 'Needs improvement. AI server can provide specific guidance.';
-                
-                structureList.innerHTML = '<div class="empty-state">⚠️ AI server not connected. Start with: node server/index.js</div>';
-                tipsContent.innerHTML = '<div class="empty-state">Set OPENAI_API_KEY and run node server/index.js for AI-powered analysis</div>';
-                analysisContent.innerHTML = '<div class="empty-state">Local analysis is limited to keyword matching. Run the AI server for real feedback.</div>';
-            }
-            
-            // Close feedback button functionality
-            document.addEventListener('DOMContentLoaded', function() {
-                const closeFeedbackBtn = document.getElementById('closeFeedbackBtn');
-                const answerFeedbackSection = document.getElementById('answerFeedbackSection');
-                
-                if (closeFeedbackBtn && answerFeedbackSection) {
-                    closeFeedbackBtn.addEventListener('click', function() {
-                        answerFeedbackSection.style.display = 'none';
-                    });
-                }
-            });
+
+            send.addEventListener('click', sendMsg);
+            input.addEventListener('keypress', function(e) { if (e.key === 'Enter') sendMsg(); });
+            qBtns.forEach(b => b.addEventListener('click', function() { input.value = this.getAttribute('data-q'); sendMsg(); }));
         });
     </script>
 
-    <!-- Data loading status (hidden - visible only in console) -->
-    <div id="dataLoadingStatus" style="display: none;"></div>
-    
     <!-- Search Overlay -->
     <div id="search-overlay" class="search-overlay">
         <div class="search-container">
             <div class="search-header">
                 <div class="search-input-container">
                     <i class="fas fa-search search-input-icon"></i>
-                    <input type="text" id="search-input" class="search-input" 
-                           placeholder="Search across all 668 finance interview questions..." 
-                           autocomplete="off">
+                    <input type="text" id="search-input" class="search-input"
+                        placeholder="Search across all 668 finance interview questions..."
+                        autocomplete="off">
                 </div>
                 <button id="search-close" class="search-close" aria-label="Close search">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="search-body">
-                <div class="search-filters" id="search-filters">
-                    <!-- Filters will be added dynamically -->
-                </div>
+                <div class="search-filters" id="search-filters"></div>
                 <div class="search-results" id="search-results">
-                    <!-- Search results will appear here -->
                     <div class="search-empty">
                         <i class="fas fa-search"></i>
                         <h3>Search Finance Questions</h3>
