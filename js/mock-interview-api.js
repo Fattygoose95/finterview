@@ -535,7 +535,8 @@ Founder Securities, Investment Manager Assistant (2023)
 
     /** Generate overall report from all answers */
     generateOverallReport: function(questions, answers, config) {
-      const scores = answers.map(a => a.feedback.score);
+      const answered = answers.filter(a => a && a.feedback);
+      const scores = answered.map(a => a.feedback.score);
       const overallScore = scores.length > 0
         ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
         : 0;
@@ -550,7 +551,7 @@ Founder Securities, Investment Manager Assistant (2023)
         overallScore,
         totalTime: config.questionCount * config.timerMinutes * 60, // in seconds
         totalQuestions: questions.length,
-        answeredQuestions: answers.filter(a => a.userAnswer.length > 10).length,
+        answeredQuestions: answered.length,
         radarLabels,
         radarScores,
         questions: questions.map((q, i) => ({
