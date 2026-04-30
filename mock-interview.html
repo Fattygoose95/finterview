@@ -739,6 +739,73 @@
             font-size: 1.5rem;
             margin: 0;
         }
+
+        /* ── Dropdown Navigation ── */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown-toggle { cursor: pointer; }
+        .nav-dropdown-arrow {
+            font-size: 0.6rem;
+            margin-left: 2px;
+            transition: transform 0.2s;
+        }
+        .nav-dropdown:hover .nav-dropdown-arrow { transform: rotate(180deg); }
+
+        .nav-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--white);
+            border: 1px solid var(--light-border);
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            min-width: 220px;
+            padding: 0.5rem 0;
+            z-index: 100;
+            list-style: none;
+        }
+        .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+        
+        .nav-dropdown-menu li { padding: 0; margin: 0; }
+        .nav-dropdown-menu a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background 0.15s;
+            white-space: nowrap;
+        }
+        .nav-dropdown-menu a:hover { background: var(--light-bg); }
+        .nav-dropdown-menu a.active { color: var(--primary-color); font-weight: 600; }
+        .nav-desc {
+            font-size: 0.7rem;
+            color: var(--text-light);
+            margin-left: 1rem;
+        }
+        .nav-dropdown-menu a:hover .nav-desc { color: var(--text-secondary); }
+
+        /* Mobile: dropdown becomes expandable */
+        @media (max-width: 768px) {
+            .nav-dropdown-menu {
+                position: static;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                background: transparent;
+                padding-left: 1rem;
+                display: none;
+            }
+            .nav-dropdown.open .nav-dropdown-menu { display: block; }
+            .nav-dropdown-menu a {
+                font-size: 0.85rem;
+                padding: 0.5rem 1rem;
+            }
+            .nav-desc { display: none; }
+        }
     </style>
 </head>
 <body>
@@ -755,12 +822,17 @@
                     </button>
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="industry-practice.html">Practice Mode</a></li>
-                        <li><a href="industry-filter.html">Advanced Filters</a></li>
-                        <li><a href="profile.html">My Profile</a></li>
-                        <li><a href="finance-bro.html">Finance Bro AI</a></li>
-                        <li><a href="flashcard.html">Flashcards</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#" class="nav-dropdown-toggle">Practice <i class="fas fa-chevron-down nav-dropdown-arrow"></i></a>
+                            <ul class="nav-dropdown-menu">
+                                <li><a href="industry-practice.html">Practice Mode <span class="nav-desc">Flashcards & questions</span></a></li>
+                                <li><a href="flashcard.html">Flashcards <span class="nav-desc">Quick review</span></a></li>
+                                <li><a href="industry-filter.html">Advanced Filters <span class="nav-desc">Browse all questions</span></a></li>
+                            </ul>
+                        </li>
                         <li><a href="mock-interview.html" class="active">Mock Interview</a></li>
+                        <li><a href="finance-bro.html">Finance Bro AI</a></li>
+                        <li><a href="profile.html">Profile</a></li>
                     </ul>
                 </nav>
             </div>
@@ -783,11 +855,10 @@
                     </div>
                     <ul class="nav-list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="industry-practice.html">Practice Mode</a></li>
-                        <li><a href="industry-filter.html">Advanced Filters</a></li>
-                        <li><a href="profile.html">My Profile</a></li>
-                        <li><a href="finance-bro.html">Finance Bro AI</a></li>
+                        <li><a href="industry-practice.html">Practice</a></li>
                         <li><a href="mock-interview.html">Mock Interview</a></li>
+                        <li><a href="finance-bro.html">Finance Bro AI</a></li>
+                        <li><a href="profile.html">Profile</a></li>
                     </ul>
                 </div>
                 <div class="text-center mt-4" style="text-align:center;margin-top:1rem;">
@@ -806,8 +877,29 @@
             MockInterviewUI.init(document.getElementById('mockInterviewApp'));
 
             // Mobile menu
-            document.querySelector('.menu-toggle')?.addEventListener('click', function() {
-                document.querySelector('.nav-list')?.classList.toggle('show');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navList = document.querySelector('.nav-list');
+            menuToggle?.addEventListener('click', function() {
+                navList?.classList.toggle('show');
+            });
+
+            // Mobile dropdown toggle (click instead of hover)
+            document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (window.innerWidth <= 768) {
+                        this.closest('.nav-dropdown').classList.toggle('open');
+                    }
+                });
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.nav-dropdown')) {
+                    document.querySelectorAll('.nav-dropdown.open').forEach(function(d) {
+                        d.classList.remove('open');
+                    });
+                }
             });
         });
     </script>

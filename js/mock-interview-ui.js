@@ -34,8 +34,8 @@ Skills: ...
 Key achievements: ..." maxlength="5000"></textarea>
           <div class="resume-actions">
             <label class="resume-upload-btn">
-              <i class="fas fa-upload"></i> Upload PDF
-              <input type="file" accept=".pdf" style="display:none" id="resumePdfUpload">
+              <i class="fas fa-upload"></i> Upload .txt
+              <input type="file" accept=".txt,.text" style="display:none" id="resumePdfUpload">
             </label>
             <button class="resume-sample-btn" data-sample="mfin-student">
               <i class="fas fa-user-graduate"></i> Try: Student Profile
@@ -59,6 +59,16 @@ Key achievements: ..." maxlength="5000"></textarea>
                 <option value="mixed">Mixed</option>
                 <option value="general">General Questions</option>
                 <option value="resume-deep-dive">Resume Deep-Dive</option>
+                <option value="industry-specific">Industry Focus</option>
+              </select>
+            </div>
+            <div class="config-item">
+              <label for="interviewIndustry">Industry Focus</label>
+              <select id="interviewIndustry">
+                <option value="ib">Investment Banking</option>
+                <option value="snt">Sales & Trading</option>
+                <option value="am">Asset Management</option>
+                <option value="quant">Quantitative Finance</option>
               </select>
             </div>
             <div class="config-item">
@@ -132,17 +142,28 @@ Key achievements: ..." maxlength="5000"></textarea>
 
     document.getElementById('resumePdfUpload')?.addEventListener('change', function(e) {
       const file = e.target.files[0];
-      if (file) {
-        // Phase 1: just read as text (real PDF parsing in Phase 2)
+      if (!file) return;
+      
+      // Show parsing in progress
+      hint.textContent = 'Reading file...';
+      hint.className = 'start-hint ready';
+      
+      if (file.name.endsWith('.txt') || file.type === 'text/plain') {
         const reader = new FileReader();
         reader.onload = function(ev) {
-          document.getElementById('resumeInput').value += '\n[Uploaded: ' + file.name + ']\n' + ev.target.result.substring(0, 3000);
+          document.getElementById('resumeInput').value = '[Uploaded: ' + file.name + ']\n' + ev.target.result.substring(0, 4000);
           MockInterviewResume.setResume(document.getElementById('resumeInput').value);
           startBtn.disabled = false;
           hint.textContent = 'Ready! Click to start your interview';
           hint.className = 'start-hint ready';
         };
         reader.readAsText(file);
+      } else {
+        // PDF: show coming-soon message
+        hint.textContent = 'PDF parsing coming in Phase 2! For now, paste your resume text instead.';
+        hint.className = 'start-hint';
+        hint.style.color = 'var(--warning-color, #d97706)';
+        startBtn.disabled = true;
       }
     });
 
@@ -151,10 +172,24 @@ Key achievements: ..." maxlength="5000"></textarea>
         type: document.getElementById('interviewType').value,
         questionCount: parseInt(document.getElementById('questionCount').value),
         timerMinutes: parseInt(document.getElementById('timerMinutes').value),
-        difficulty: document.getElementById('difficulty').value
+        difficulty: document.getElementById('difficulty').value,
+        industry: document.getElementById('interviewIndustry').value
       };
       startInterview(config);
     });
+
+    // Toggle industry selector visibility
+    document.getElementById('interviewType').addEventListener('change', function() {
+      const industrySelect = document.getElementById('interviewIndustry').closest('.config-item');
+      if (industrySelect) {
+        industrySelect.style.display = ['industry-specific', 'mixed'].includes(this.value) ? '' : 'none';
+      }
+    });
+    // Initial state
+    setTimeout(function() {
+      const el = document.getElementById('interviewType');
+      if (el) el.dispatchEvent(new Event('change'));
+    }, 0);
   }
 
   function startInterview(config) {
@@ -355,12 +390,8 @@ Key achievements: ..." maxlength="5000"></textarea>
     container.innerHTML = `
       <div class="mock-feedback">
         <div class="feedback-header">
-          <div class="feedback-score ${f.score >= 80 ? 'score-high' : f.score >= 60 ? 'score-medium' : 'score-low'}">
-            <span class="score-number">${f.score}</span>
-            <span class="score-label">/100</span>
-          </div>
           <div class="feedback-question-ref">
-            <span class="progress-label">Question ${index + 1} of ${total}</span>
+            <span class="progress-label"><i class="fas fa-comment-dots"></i> Feedback for Question ${index + 1} of ${total}</span>
           </div>
         </div>
 

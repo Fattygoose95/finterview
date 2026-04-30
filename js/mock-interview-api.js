@@ -58,7 +58,7 @@ Founder Securities, Investment Manager Assistant (2023)
 
   const MOCK_QUESTIONS = {
 
-    // ── General ──
+    // ── General (no industry focus) ──
     'general': [
       {
         id: 'g1',
@@ -257,6 +257,148 @@ Founder Securities, Investment Manager Assistant (2023)
         },
         scoringContext: { focus: ['narrative coherence', 'self-awareness', 'preparation'], weight: 2 }
       }
+    ],
+
+    // ── Investment Banking ──
+    'ib': [
+      {
+        id: 'ib1',
+        text: "Walk me through a standard M&A process from pitch to close.",
+        difficulty: 'hard',
+        type: 'industry',
+        modelAnswer: "1) Pitch and mandate (pitch book, proposal), 2) Valuation analysis (DCF, comps, precedent transactions), 3) Due diligence (financial, legal, commercial), 4) Deal structuring and negotiation, 5) Definitive agreement, 6) Closing and integration. Each phase requires specific deliverables and stakeholder management.",
+        followUp: { enabled: true, text: "What's the most critical due diligence item in a cross-border M&A deal?" },
+        scoringContext: { focus: ['process knowledge', 'detail depth', 'practical insight'], weight: 3 }
+      },
+      {
+        id: 'ib2',
+        text: "How do you value a company in an IPO? What's different from a strategic M&A valuation?",
+        difficulty: 'hard',
+        type: 'industry',
+        modelAnswer: "IPO valuation relies heavily on comparable company analysis (comps) and recent IPOs. Unlike M&A, there's less emphasis on synergies and more on market reception. Key differences: 1) Discount for lack of marketability is smaller, 2) Price range vs fixed price, 3) Book-building process affects final price, 4) Underwriter's discount matters.",
+        followUp: { enabled: true, text: "How does the Greenshoe option affect IPO pricing and aftermarket stability?" },
+        scoringContext: { focus: ['valuation methodology', 'market understanding', 'nuance'], weight: 3 }
+      },
+      {
+        id: 'ib3',
+        text: "Explain accretion/dilution analysis in an M&A context.",
+        difficulty: 'medium',
+        type: 'industry',
+        modelAnswer: "Accretion/dilution analysis determines whether a deal increases or decreases the acquirer's EPS. Key inputs: 1) Purchase price, 2) Financing structure (cash, stock, debt), 3) Combined earnings, 4) Synergies. EPS accretion means the deal is immediately EPS-positive; dilution means it reduces EPS, which may need justification through long-term strategic value.",
+        followUp: { enabled: true, text: "If a deal is initially dilutive, what arguments would you make to the board to proceed?" },
+        scoringContext: { focus: ['conceptual clarity', 'practical application', 'strategic thinking'], weight: 2 }
+      },
+      {
+        id: 'ib4',
+        text: "What are the key sections of a pitch book?",
+        difficulty: 'easy',
+        type: 'industry',
+        modelAnswer: "1) Executive summary, 2) Company overview, 3) Industry overview and market trends, 4) Valuation analysis (comps, DCF, LBO), 5) Potential buyer/seller landscape, 6) Transaction structure, 7) Timeline and next steps. Each section tells part of a compelling story.",
+        followUp: { enabled: false },
+        scoringContext: { focus: ['completeness', 'storytelling logic'], weight: 1 }
+      },
+      {
+        id: 'ib5',
+        text: "What makes a company a good LBO candidate?",
+        difficulty: 'medium',
+        type: 'industry',
+        modelAnswer: "1) Stable, predictable cash flows, 2) Low capex requirements, 3) Strong market position, 4) Experienced management team, 5) Opportunity for operational improvements, 6) Reasonable entry multiple, 7) Clear exit strategy. The key is debt repayment capacity and EBITDA growth potential.",
+        followUp: { enabled: false },
+        scoringContext: { focus: ['criteria completeness', 'real-world examples'], weight: 2 }
+      }
+    ],
+
+    // ── Sales & Trading ──
+    'snt': [
+      {
+        id: 'st1',
+        text: "Explain the difference between a market maker and a proprietary trader.",
+        difficulty: 'medium',
+        type: 'industry',
+        modelAnswer: "Market makers provide liquidity by quoting bid-ask spreads, profiting from the spread. They manage inventory risk. Proprietary traders take directional bets using the firm's capital, profiting from price movements. Regulators distinguish them carefully (e.g., Volcker Rule).",
+        followUp: { enabled: true, text: "In a volatile market, how does a market maker adjust their quoting strategy?" },
+        scoringContext: { focus: ['role clarity', 'risk understanding', 'regulatory awareness'], weight: 2 }
+      },
+      {
+        id: 'st2',
+        text: "What factors affect the bid-ask spread?",
+        difficulty: 'easy',
+        type: 'industry',
+        modelAnswer: "1) Liquidity (volume traded), 2) Volatility, 3) Competition among market makers, 4) Stock price level, 5) News/events, 6) Time of day. Higher risk = wider spread.",
+        followUp: { enabled: false },
+        scoringContext: { focus: ['factor coverage', 'real-time examples'], weight: 1 }
+      },
+      {
+        id: 'st3',
+        text: "How would you hedge a large equity block trade?",
+        difficulty: 'hard',
+        type: 'industry',
+        modelAnswer: "Multiple strategies: 1) Sell in the open market (dark pools to minimize impact), 2) Use derivatives (total return swaps, futures, options), 3) VWAP or implementation shortfall algorithms, 4) Block trade through another broker, 5) Risk transfer via options. The approach depends on size, urgency, and market conditions.",
+        followUp: { enabled: true, text: "If you're hedging and the stock gaps down 5% overnight, what's your response?" },
+        scoringContext: { focus: ['hedging strategies', 'execution understanding', 'risk management'], weight: 3 }
+      }
+    ],
+
+    // ── Asset Management ──
+    'am': [
+      {
+        id: 'am1',
+        text: "Describe your investment philosophy in one sentence. Then expand.",
+        difficulty: 'medium',
+        type: 'industry',
+        modelAnswer: "'I invest in high-quality businesses at reasonable prices with a long-term horizon.' Expand: 1) Quality = competitive advantage, strong management, good capital allocation, 2) Reasonable = discounted cash flow valuation with margin of safety, 3) Long-term = 3-5 year holding period, ignoring short-term noise.",
+        followUp: { enabled: true, text: "Give me an example of a company you'd buy today and why it fits your philosophy." },
+        scoringContext: { focus: ['clarity', 'consistency', 'example support'], weight: 2 }
+      },
+      {
+        id: 'am2',
+        text: "What are the key differences between active and passive management? When does each make sense?",
+        difficulty: 'easy',
+        type: 'industry',
+        modelAnswer: "Active: aims to beat benchmarks through research and conviction; higher fees; works in less efficient markets (small cap, EM, credit). Passive: matches benchmark returns; low cost; works in efficient markets (large cap, developed). The fee-adjusted performance gap has narrowed significantly.",
+        followUp: { enabled: false },
+        scoringContext: { focus: ['balanced view', 'market efficiency understanding'], weight: 1 }
+      },
+      {
+        id: 'am3',
+        text: "How do you evaluate management quality during a fundamental investment process?",
+        difficulty: 'hard',
+        type: 'industry',
+        modelAnswer: "1) Capital allocation track record (buybacks, dividends, M&A, reinvestment), 2) Alignment with shareholders (ownership stake, compensation structure), 3) Communication transparency, 4) Operational execution (margins, ROIC trends), 5) Succession planning. Talk to competitors and former employees for independent view.",
+        followUp: { enabled: true, text: "What's a red flag in management that would make you pass on an otherwise attractive company?" },
+        scoringContext: { focus: ['analytical depth', 'qualitative assessment', 'independence'], weight: 3 }
+      }
+    ],
+
+    // ── Quantitative Finance ──
+    'quant': [
+      {
+        id: 'qt1',
+        text: "Explain the difference between alpha, beta, and Sharpe ratio.",
+        difficulty: 'easy',
+        type: 'industry',
+        modelAnswer: "Alpha: excess return vs benchmark (skill component). Beta: sensitivity to market moves. Sharpe ratio: risk-adjusted return (return minus risk-free rate divided by standard deviation). A Sharpe > 1 is good, > 2 is excellent.",
+        followUp: { enabled: false },
+        scoringContext: { focus: ['definition accuracy', 'practical interpretation'], weight: 1 }
+      },
+      {
+        id: 'qt2',
+        text: "What is overfitting and how do you prevent it in a quantitative strategy?",
+        difficulty: 'hard',
+        type: 'industry',
+        modelAnswer: "Overfitting: model fits noise instead of signal, performs poorly out-of-sample. Prevention: 1) Train/test split, 2) Cross-validation, 3) Simpler models (Occam's razor), 4) Economic rationale for each feature, 5) Out-of-time testing, 6) Paper trading before live, 7) Regularization (Lasso/Ridge).",
+        followUp: { enabled: true, text: "You backtest a strategy with Sharpe 3.0. Walk me through your skepticism checklist." },
+        scoringContext: { focus: ['technical depth', 'practical safeguards', 'skepticism'], weight: 3 }
+      },
+      {
+        id: 'qt3',
+        text: "What's the difference between a normal distribution and a fat-tailed distribution, and why does it matter in risk management?",
+        difficulty: 'medium',
+        type: 'industry',
+        modelAnswer: "Fat-tailed distributions have higher probability of extreme events (kurtosis). In finance: 1) VaR underestimates tail risk under normal assumption, 2) Black Monday, 2008, COVID all show fat tails, 3) Use Expected Shortfall instead of VaR, 4) Stress testing matters more for fat-tailed assets.",
+        followUp: { enabled: false },
+        scoringContext: { focus: ['statistical understanding', 'practical risk implications'], weight: 2 }
+      }
     ]
   };
 
@@ -335,7 +477,7 @@ Founder Securities, Investment Manager Assistant (2023)
 
     /** Generate questions for an interview session */
     generateQuestions: function(config, resumeData) {
-      const { type, difficulty, questionCount } = config;
+      const { type, difficulty, questionCount, industry } = config;
       const pool = [];
 
       // Collect questions from relevant pools
@@ -344,6 +486,13 @@ Founder Securities, Investment Manager Assistant (2023)
       }
       if (type === 'resume-deep-dive' || type === 'mixed') {
         pool.push(...MOCK_QUESTIONS['resume']);
+      }
+      // Industry-specific questions
+      if (type === 'industry-specific' || type === 'mixed') {
+        const industryKey = industry || 'ib';
+        if (MOCK_QUESTIONS[industryKey]) {
+          pool.push(...MOCK_QUESTIONS[industryKey]);
+        }
       }
 
       // Filter by difficulty
