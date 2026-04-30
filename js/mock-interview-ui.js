@@ -99,8 +99,9 @@ Key achievements: ..." maxlength="5000"></textarea>
             <div class="config-item">
               <label for="interviewType">Type</label>
               <select id="interviewType">
-                <option value="mixed">Mixed</option>
-                <option value="general">General</option>
+                <option value="" disabled selected>— Choose type —</option>
+                <option value="mixed">Mixed (General + Resume + Industry)</option>
+                <option value="general">General Questions</option>
                 <option value="resume-deep-dive">Resume Deep-Dive</option>
                 <option value="industry-specific">Industry Focus</option>
               </select>
@@ -108,6 +109,7 @@ Key achievements: ..." maxlength="5000"></textarea>
             <div class="config-item">
               <label for="interviewIndustry">Industry</label>
               <select id="interviewIndustry">
+                <option value="" disabled selected>— Choose industry —</option>
                 <option value="ib">Investment Banking</option>
                 <option value="snt">Sales & Trading</option>
                 <option value="am">Asset Management</option>
@@ -117,17 +119,19 @@ Key achievements: ..." maxlength="5000"></textarea>
             <div class="config-item">
               <label for="questionCount">Questions</label>
               <select id="questionCount">
+                <option value="" disabled selected>— How many? —</option>
                 <option value="3">3 (Quick)</option>
-                <option value="5" selected>5 (Standard)</option>
+                <option value="5">5 (Standard)</option>
                 <option value="10">10 (Intensive)</option>
               </select>
             </div>
             <div class="config-item">
               <label for="difficulty">Difficulty</label>
               <select id="difficulty">
+                <option value="" disabled selected>— Choose difficulty —</option>
                 <option value="mixed">Mixed</option>
                 <option value="easy">Easy</option>
-                <option value="medium" selected>Medium</option>
+                <option value="medium">Medium</option>
                 <option value="hard">Hard</option>
               </select>
             </div>
@@ -141,51 +145,65 @@ Key achievements: ..." maxlength="5000"></textarea>
     `;
 
     const resumeEl = document.getElementById('resumeInput');
-    const startBtn = document.getElementById('startInterviewBtn');
-    const hint = document.getElementById('startHint');
-
     if (MockInterviewResume.hasResume()) {
       resumeEl.value = MockInterviewResume.getResume();
-      startBtn.disabled = false;
-      hint.textContent = 'Ready';
-      hint.className = 'start-hint ready';
     }
 
     resumeEl.addEventListener('input', function() {
-      const ok = MockInterviewResume.setResume(this.value);
-      startBtn.disabled = !ok;
-      hint.textContent = ok ? 'Ready' : 'Paste a resume or try a sample';
-      hint.className = ok ? 'start-hint ready' : 'start-hint';
+      MockInterviewResume.setResume(this.value);
+      checkSetupReady();
     });
 
     document.querySelectorAll('.resume-sample-btn').forEach(btn => {
       btn.addEventListener('click', function() {
         MockInterviewResume.loadSample(this.dataset.sample);
         document.getElementById('resumeInput').value = MockInterviewResume.getResume();
-        startBtn.disabled = false;
-        hint.textContent = 'Ready';
-        hint.className = 'start-hint ready';
+        checkSetupReady();
       });
     });
 
     document.getElementById('resumePdfUpload')?.addEventListener('change', function(e) {
       const file = e.target.files[0];
       if (!file) return;
-      hint.textContent = 'Reading file...';
+      const h = document.getElementById('startHint');
+      if (h) h.textContent = 'Reading file...';
       if (file.name.endsWith('.txt') || file.type === 'text/plain') {
         const r = new FileReader();
         r.onload = function(ev) {
           document.getElementById('resumeInput').value = '[Uploaded: ' + file.name + ']\n' + ev.target.result.substring(0, 4000);
           MockInterviewResume.setResume(document.getElementById('resumeInput').value);
-          startBtn.disabled = false;
-          hint.textContent = 'Ready';
-          hint.className = 'start-hint ready';
+          checkSetupReady();
         };
         r.readAsText(file);
       } else {
-        hint.textContent = 'PDF parsing coming in Phase 2 — paste text instead';
-        hint.style.color = '#d97706';
+        if (h) { h.textContent = 'PDF parsing coming in Phase 2 — paste text instead'; h.style.color = '#d97706'; }
       }
+    });
+
+    function checkSetupReady() {
+      const type = document.getElementById('interviewType').value;
+      const count = document.getElementById('questionCount').value;
+      const diff = document.getElementById('difficulty').value;
+      const resume = MockInterviewResume.hasResume();
+      const ready = type && count && diff && resume;
+      document.getElementById('startInterviewBtn').disabled = !ready;
+      const hint = document.getElementById('startHint');
+      if (ready) {
+        hint.textContent = 'All set — start your interview';
+        hint.className = 'start-hint ready';
+      } else {
+        const missing = [];
+        if (!resume) missing.push('resume');
+        if (!type) missing.push('interview type');
+        if (!count) missing.push('question count');
+        if (!diff) missing.push('difficulty');
+        hint.textContent = 'Select: ' + missing.join(', ');
+        hint.className = 'start-hint';
+      }
+    }
+
+    ['interviewType','questionCount','difficulty'].forEach(function(id) {
+      document.getElementById(id).addEventListener('change', checkSetupReady);
     });
 
     document.getElementById('startInterviewBtn').addEventListener('click', function() {
@@ -194,7 +212,7 @@ Key achievements: ..." maxlength="5000"></textarea>
         questionCount: parseInt(document.getElementById('questionCount').value),
         timerMinutes: 2,
         difficulty: document.getElementById('difficulty').value,
-        industry: document.getElementById('interviewIndustry').value
+        industry: document.getElementById('interviewIndustry').value || 'ib'
       };
       startInterview(config);
     });
@@ -203,6 +221,8 @@ Key achievements: ..." maxlength="5000"></textarea>
       const el = document.getElementById('interviewIndustry').closest('.config-item');
       if (el) el.style.display = ['industry-specific', 'mixed'].includes(this.value) ? '' : 'none';
     });
+
+    checkSetupReady();
   }
 
   // ── Parsing Animation ──
@@ -335,19 +355,14 @@ Key achievements: ..." maxlength="5000"></textarea>
 
   function addFeedbackMessage(feedback) {
     if (!chatListEl || !feedback) return;
-    const s = feedback.score;
-    const scoreClass = s >= 80 ? 'fb-high' : s >= 60 ? 'fb-med' : 'fb-low';
-    const scoreEmoji = s >= 80 ? '🔥' : s >= 60 ? '💪' : '📝';
-
     const div = document.createElement('div');
     div.className = 'chat-msg msg-ai';
     div.innerHTML = `
       <div class="msg-avatar ai">${PERSONA.avatar}</div>
       <div class="msg-body">
         <div class="msg-name">${PERSONA.name}</div>
-        <div class="msg-text">Here's what I think:</div>
+        <div class="msg-text">Noted. Here's how you could improve:</div>
         <div class="chat-feedback">
-          <div class="fb-score ${scoreClass}">${scoreEmoji} <span class="fb-score-num">${s}</span></div>
           <div class="fb-section">
             <div class="fb-section-title ok">✓ Strengths</div>
             <ul class="fb-list">${feedback.strengths.map(s => `<li>${esc(s)}</li>`).join('')}</ul>
